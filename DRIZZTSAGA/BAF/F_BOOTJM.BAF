@@ -1,0 +1,62 @@
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(6,1)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	RandomNum(6,2)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNum(6,3)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+END
+
+IF
+	See(FourthNearestEnemyOf(Myself))
+	RandomNum(6,4)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+END
+
+IF
+	See(FifthNearestEnemyOf(Myself))
+	RandomNum(6,5)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FifthNearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+END
+
+IF
+	See(SixthNearestEnemyOf(Myself))
+	RandomNum(6,6)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SixthNearestEnemyOf(Myself),PHASE_SPIDER_TELEPORT)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ChangeAIScript("",RACE)
+END
+
+

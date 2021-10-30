@@ -1,0 +1,10 @@
+IF
+	Detect([PC])
+	NumTimesTalkedTo(0)
+	Range(LastSeenBy(Myself),25)
+THEN
+	RESPONSE #100
+		StartDialog("F_BEARW2",LastSeenBy(Myself))
+END
+
+

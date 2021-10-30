@@ -1,0 +1,10 @@
+IF
+	Global("F_finalfight","GLOBAL",1)
+	!Exists("F_ROBED")
+THEN
+	RESPONSE #100
+		CreateCreature("F_ROBED",[660.850],8)
+		SetGlobal("F_finalfight","GLOBAL",2)
+END
+
+

@@ -1,0 +1,8 @@
+
+//Drizzt Saga new areas table
+SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
+
+F_7777      F_7777   F_7777     0      44        571    46     @DSW_786001  @DSW_786001  N        //Icewind Dale
+F_9898      F_9898   F_9898     0      22        382    33     @DSW_786002  @DSW_786002  N        //Mountain of the Dead
+F_0111      F_0111   F_0111     4      26        597    241    @DSW_786003  @DSW_786003  N        //Bear Tribe Village
+F_0222      F_0222   F_0222     0      39        599    299    @DSW_786004  @DSW_786004  N        //Storm March Mountains

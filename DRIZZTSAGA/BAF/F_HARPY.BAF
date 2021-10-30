@@ -1,0 +1,18 @@
+IF
+	See([PC])
+	Delay(12)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
+		ReallyForceSpell([PC],FEAR)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+

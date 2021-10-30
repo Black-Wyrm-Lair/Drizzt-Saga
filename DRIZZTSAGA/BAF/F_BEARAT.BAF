@@ -1,0 +1,15 @@
+IF
+	!Range([PC],4)
+THEN
+	RESPONSE #100
+		MoveToObject([PC])
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
+
+

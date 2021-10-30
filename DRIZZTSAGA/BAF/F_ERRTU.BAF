@@ -1,0 +1,25 @@
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)
+		AttackOneRound(NearestEnemyOf(Myself))
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TANARI_DEATH_GAZE)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(LastAttackerOf(Myself))
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(LastAttackerOf(Myself),TANARI_DEATH_GAZE)
+		ReallyForceSpell(LastAttackerOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		ReallyForceSpell(LastAttackerOf(Myself),WIZARD_HOLD_PERSON)
+		ReallyForceSpell(LastAttackerOf(Myself),TANARI_SILENCE)
+		AttackOneRound(LastAttackerOf(Myself))
+END
+
+
