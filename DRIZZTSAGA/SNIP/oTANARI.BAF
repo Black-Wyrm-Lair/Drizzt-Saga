@@ -1,8 +1,0 @@
-IF
-	See([PC])
-	Global("Paralyze","LOCALS",0)
-THEN
-	RESPONSE #100
-		ForceSpell([PC],TANARI_PARALYZE)
-		SetGlobal("Paralyze","LOCALS",1)
-END
