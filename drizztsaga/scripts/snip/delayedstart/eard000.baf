@@ -1,0 +1,13 @@
+IF
+	Global("F_CreatDRIZZT1","GLOBAL",0)
+	//Global("DurlagFinish","GLOBAL",1)			// << this var doesn't exist in Tutu/BGEE !
+	OR(2)
+	  Dead("DeathK")
+	  PartyHasItem("%_%dagg10")					// Soultaker dagger
+	Global("HelpDrizzt","GLOBAL",1)
+	!Dead("Drizzt")
+THEN
+	RESPONSE #100
+		CreateCreature("F_DRIZZT",[467.3546],0)
+		SetGlobal("F_CreatDRIZZT1","GLOBAL",1)
+END

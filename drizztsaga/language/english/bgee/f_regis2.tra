@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #REGIS2 translation file
+@1   = ~Drizzt! I knew that you would dance your way through the outer planes.~
+@2   = ~How did you manage to get to Icewind Dale with such haste.~
+@3   = ~The same way as you I figure, no less than Elminster of course. We could chatter all day but urgent matters call. Neither Bruenor nor Catti-Brie are to be found and the sun has an unnaturally piercing gaze today. We should check Bruenor's chest to see if perhaps there are any clues to be found.~
+@4   = ~Agreed.~
+@5   = ~I am afraid that other matters of importance call me and I must take my leave.~
+@6   = ~Greetings again. I don't see Drizzt by your side anymore. Surely hope that his boots are on their way here. Urgent matters calls because neither Bruenor nor Catti-Brie are to be found. We should check Bruenor's chest for clues.~
+@7   = ~I have other important matters that call me and I must take my leave.~

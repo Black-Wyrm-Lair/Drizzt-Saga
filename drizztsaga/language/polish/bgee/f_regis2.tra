@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #REGIS2 translation file
+@1   = ~Drizzcie! Wiedyiaem, że poradzisz sobie w tych zewnętrznych planach!~
+@2   = ~Jak udało ci się tak szybko dostać do Dolin?~
+@3   = ~Chyba tak samo jak i wam - z drobną pomocą Elminstera. Moglibyśmy tak sobie gwarzyć i cały dzień, ale obowiązki wzywają. Nie mogę odnaleźć Bruenora ani Catti-Brie, zaś słońce ma dziś nienaturalnie żarliwy blask. Powinniśmy przetrząść skrzynie i szuflady w domu krasnoluda, może znajdziemy jakieś wskazówki.~
+@4   = ~Zgadzam się.~
+@5   = ~Obawiam się jednak, że wzywają mnie inne obowiązki i musimy się pożegnać.~
+@6   = ~Witaj ponownie. Nie widzę u twego boku Drizzta... mam nadzieję, że jego buty już go niosą ku nam. Ale dosyć gadania, czas się zająć tym co się tutaj dzieje. Nigdzie nie ma ani Bruenora ani Catti-Brie. Powinniśmy przetrząść skrzynie Bruenora, może będą tam jakieś wskazówki.~
+@7   = ~Czas na mnie, mam inne ważne interesa!~

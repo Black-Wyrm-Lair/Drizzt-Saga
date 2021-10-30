@@ -1,0 +1,16 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+IF
+	See([PC])
+	Delay(3)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],RED_FIREBALL)
+		ReallyForceSpell([PC],WIZARD_AGANNAZAR_SCORCHER)
+END

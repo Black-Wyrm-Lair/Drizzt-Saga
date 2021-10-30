@@ -1,0 +1,15 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ELMINST translation file
+@1 = ~Ah, vous voila, Drizzt. J'étai à tout prix besoin de vous parler... Oh, je vois que l'enfant de Gorion, <CHARNAME>, voyage à vos côtés.~
+@2 = ~Il semblerait que nos routes se croisent de nouveau. J'espère vraiment que vous n'avez rien prévu qui vous conduise vers quelque chose ressemblant plus ou moins au voyage auquel j'ai eu peine à survivre.~
+@3 = ~Les paroles que j'apporte sont déstinées à Drizzt. <CHARNAME> a son propre chemin à suivre.~
+@4 = ~La décision du chemin que suivra <CHARNAME> doit venir de son propre esprit et de personne d'autre.~
+@5 = ~Trés bien, on dirait que nos routes se séparent ici, adieu.~
+@6 = ~Très bien, mon enfant. Maintenant Drizzt, vous devez partir en toute hâte en direction du ValBise en direction de la maison de votre ami Bruenor. Le Val est recouvert par les ténébres. L'équilibre à été remplacé par le chaos. Je ne suis pas en mesure d'intervenir. Je peux seulement vous proposer de vous téléporter à l'extérieur de sa maison.~
+@7 = ~Vous parlez de ténèbres, mais qu'est ce que cela implique exactement ?~
+@8 = ~Mes yeux sont incapables de voir si loin, les réponses restent à être trouvées. Mais le temps vient à manquer, débutons la téléportation.~
+@9 = ~Une sage décision car d'autres problèmes d'importances appellent <CHARNAME>.~
+@10 = ~Bonjour mon enfant, je vois que Drizzt n'est plus à vos côtés. J'espère que sa vie n'est nullement en danger. Si ce n'est pas le ca,s alors j'ai de bonnes raisons de m'inquiéter. Je dois vous quitter.~

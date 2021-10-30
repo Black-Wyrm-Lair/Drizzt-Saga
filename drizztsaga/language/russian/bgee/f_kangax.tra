@@ -1,0 +1,8 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #KANGAXX translation file
+@1   = ~Глупые маги Нетерила полагали, что могут заточить самого Кангакса! Теперь они пали во тьму, и навеки стали нежитью, и такая же награда будет ожидать вас всех, жадные до сокровищ идиоты.~ [%tutu_scripts%HAEL_01]
+@2   = ~Что это за грязная хитрость!?~
+@3   = ~Здесь падешь только ты!~ [%tutu_scripts%HAEL_03]

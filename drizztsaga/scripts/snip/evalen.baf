@@ -1,0 +1,7 @@
+IF
+  Global("F_CreatValen","MYAREA",0)
+THEN
+  RESPONSE #100
+    CreateCreature("F_VALEN",[4600.2044],0)
+    SetGlobal("F_CreatValen","MYAREA",1)
+END

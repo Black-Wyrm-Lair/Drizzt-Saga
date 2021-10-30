@@ -1,0 +1,34 @@
+
+/* Components: */
+
+@0 = ~The Drizzt Saga pour BGEE/Tutu/BGT~
+@1502 = ~Version par defaut : zones connectees par des declencheurs de voyage~
+@489  = ~Version BP-BGT Worldmap : ajout de toutes les zones a la carte du monde (requiert BP-BGT Worldmap)~
+@1507 = ~Eleve la limite d'XP~
+@1508 = ~Debut repousse : Drizzt revient apres la Tour de Durlag~
+
+/* Setup feedback:  */
+
+@353 = ~TUTU d‚tect‚, installation commenc‚e...~
+@354 = ~BGT d‚tect‚, installation commenc‚e...~
+@355 = ~BG1 original d‚tect‚, installation commenc‚e...~
+@356 = ~ce mod doit ˆtre install sur BGEE, BGT ou BG TUTU, et Totsc et ToB sont requis pour Tutu/BGT...~
+@357 = ~Installations des nouvelles rŠgles...~
+@358 = ~Installations des animations de cr‚atures...~
+@359 = ~Modification de la carte du monde avec les nouvelles zones...~
+@360 = ~Installations des fichiers des cr‚atures...~
+@361 = ~Installations des fichiers de sons...~
+@362 = ~Installations des fichiers de zones...~
+@363 = ~Installation des fichiers d'objets...~
+@364 = ~Copie des fichiers de sauvegardes de zones...~
+@369 = ~Compilation des scripts et dialogues...~
+@370 = ~Copie des autres dossiers...~
+@488 = ~Patch du BALDUR.GAM...~
+@1500 = ~BGEE d‚tect‚, installation commenc‚e...~
+@1503 = ~Vous devez d'abord installer le composant principal de Drizzt Saga !~
+@1504 = ~Decompactage des graphismes des zones...~
+@1505 = ~Creation de bif pour les donnees de zones...~
+@1506 = ~Ce composant n'est pas necessaire pour BGT.~
+
+/* Everything else from this file was moved to MAIN.TRA as of v3 */
+

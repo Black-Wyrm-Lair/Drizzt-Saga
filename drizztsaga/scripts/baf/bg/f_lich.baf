@@ -1,0 +1,131 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+	See([PC])
+	Global("Lichshield","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+		ReallyForceSpell(Myself,WIZARD_BLUR)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
+		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
+		ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
+		ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+		Wait(1)
+		ReallyForceSpell([PC],POWERWORD_KILL)
+		ReallyForceSpell([PC],POWERWORD_STUN)
+		ReallyForceSpell([PC],POWERWORD_BLIND)
+		ReallyForceSpellRES("F_WI936", Myself)
+		ReallyForceSpellRES("F_WI936", Myself)
+		ReallyForceSpellRES("F_WI936", Myself)
+		ReallyForceSpellRES("F_WI935", Myself)
+		ReallyForceSpellRES("F_WI935", Myself)
+		SetGlobal("Lichshield","LOCALS",1)
+END
+
+IF
+	Global("Lichshield","LOCALS",1)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],POWERWORD_STUN)
+		ReallyForceSpell([PC],WIZARD_CLOUDKILL)
+		ReallyForceSpell([PC],WIZARD_FIREBALL)
+		ReallyForceSpell([PC],GORION_MAGIC_MISSILE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		Wait(1)
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("Lichshield","LOCALS",2)
+END
+
+IF
+	Global("Lichshield","LOCALS",2)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],POWERWORD_KILL)
+		ReallyForceSpell([PC],TRAP_LIGHTNING_BOLT)
+		SetGlobal("LichShield","LOCALS",3)
+END
+
+IF
+	Global("Lichshield","LOCALS",3)
+	See(NearestEnemyOf(Myself))
+	RandomNum(6,1)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		ReallyForceSpell(NearestEnemyOf(Myself),POWERWORD_KILL)
+END
+
+IF
+	Global("Lichshield","LOCALS",3)
+	See(SecondNearestEnemyOf(Myself))
+	RandomNum(6,2)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),POWERWORD_KILL)
+END
+
+IF
+	Global("Lichshield","LOCALS",3)
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNum(6,3)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),POWERWORD_KILL)
+END
+
+IF
+	Global("Lichshield","LOCALS",3)
+	See(FourthNearestEnemyOf(Myself))
+	RandomNum(6,4)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),POWERWORD_KILL)
+END
+
+IF
+	Global("Lichshield","LOCALS",3)
+	See(FifthNearestEnemyOf(Myself))
+	RandomNum(6,5)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FifthNearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		ReallyForceSpell(FifthNearestEnemyOf(Myself),POWERWORD_KILL)
+END
+
+IF
+	Global("Lichshield","LOCALS",3)
+	See(SixthNearestEnemyOf(Myself))
+	RandomNum(6,6)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SixthNearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
+		ReallyForceSpell(SixthNearestEnemyOf(Myself),POWERWORD_KILL)
+END

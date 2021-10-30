@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// F_DRIZZT translation file
+@10  = ~Ahah <CHARNAME>! We meet again. I must soon depart for Icewind Dale. I woulds't that you join with me on this perilous journey.~
+@11  = ~Drizzt, my friend, I would be happy to join with you, however first I must find a suitable abode for my current travelling companions. Meet with me at the inn at Ulgoth's Beard in three days time and I will happily go with you.~
+@13  = ~Very well then, I will see you there.~
+@15  = ~Well met. Are you prepared, then?~
+@16  = ~I'm as ready as I'm likely to ever be. Let's go, shall we?~
+@17  = ~Let's go!~
+@19  = ~Not just yet, I still have a bit of preparation to do.~

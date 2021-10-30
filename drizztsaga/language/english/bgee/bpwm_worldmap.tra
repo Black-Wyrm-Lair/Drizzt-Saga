@@ -1,0 +1,11 @@
+// Drizzt Saga WM tra strings
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+@DSW_786001 = "Bruenor's###Cabin"
+@DSW_786002 = "Mountain###of###the###Dead"
+@DSW_786003 = "Bear###Tribe###Village"
+@DSW_786004 = "Storm###March###Mountains"
+@DSW_786005 = "Dragon###Caves"
+@DSW_786006 = "Frost###Giant###Hills"
+@DSW_786007 = "Winter###Wolf###Ritual"
+@DSW_786008 = "Drow###Caves"

@@ -1,0 +1,1274 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, with the exception
+// of item descriptions. Item descriptions in this file are missing the "Usable by:" blocks at the end
+// (those are generated and appended automatically by EE game engine).
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@1    = ~Nib's Store~
+@2    = ~Artemis Entreri~
+@3    = ~[MALE THREAT 9]  Fear my wrath for it is great indeed.~ [%_%GENMT09]
+@4    = ~Another time, another place!~ [F_ARTEM8]
+@5    = ~This will be a slow and painful process!~ [F_ARTEM3]
+@6    = ~Care to dance?~ [F_ARTEM2]
+@7    = ~You will suffer... oh yes.~ [F_ARTEM4]
+@8    = ~Plant a blade in your innards, I will!~ [F_ARTEM5]
+@9    = ~[GUARDS 5]~ [%_%GUARR05]
+@10   = ~[GUARDS 6]~ [%_%GUARR06]
+@11   = ~Artemis Entreri is a man of shadows and instant death and is a master of his chosen profession. An assassin. No target is too hard to kill. No amount of protection will stop him from eliminating his quarry. He dances a dance of death similar to Drizzt's but has a heart as cold and unfeeling as that of any of the Drow and those who cross him never do so twice. He is from the great southern city of Calimport in the province of Calimshan. Artemis Entreri's path crossed that of Drizzt when Regis stole a treasure of great value from Pasha Pook, the leader of the thief’s guild in Calimport and Artemis was commissioned to retrieve it. After three long years he finally tracked Regis to Ten Towns and another of the friends adventures began but this time, death followed them silently in the form of Artemis Entreri.~
+@12   = ~Bear Tribe Woman~
+@13   = ~Bear Tribe Elder~
+@14   = ~Spirit Bear~
+@15   = ~Bear Tribe Warrior~
+@16   = ~Belhifet~
+@17   = ~At your command!~ [F_DRSL12]
+@18   = ~Through destiny and might we shall rule supreme!~ [F_DRSL11]
+@19   = ~All glory for the Dark Mother!~ [F_DRWPR1]
+@20   = ~I shall feast on your heart!~ [F_VMPFX5]
+@21   = ~Be honored for you shall feed me!~ [F_VMPFX6]
+@22   = ~Bruenor~
+@23   = ~[DWARF 2] I need a swig 'o some strong dwarven ale.~ [%_%DWARF02]
+@24   = ~[DWARF 1] By Moradin's hammer.~ [%_%DWARF01]
+@25   = ~[DWARF 5]~ [%_%DWARF05]
+@26   = ~[DWARF 6]~ [%_%DWARF06]
+@27   = ~Bruenor Battlehammer grew up among the great halls of Mithril Mall but then watched as the halls were overrun and sacked by the dragon Shimmergloom. Both his Father and his Father's Father were slain trying to defend the halls and the rest of Clan Battlehammer was forced to flee to save their selves. They eventually arrived in Icewind Dale and over the next two hundred years Bruenor guided them as their king. Bruenor is as true a friend as anyone could hope to have. He is a typical Dwarf. He loves the treasures of the earth and has enormous love for those he considers his friends and family but like other dwarves he likes nothing more than bashing Goblin skulls with his axe. A seemingly rock solid dwarf, he is actually the opposite. Under his hard skull is a caring brain, but you couldn't tell him that: he'd deny it to the grave. With his rock thick stubbornness, he made sure that his adopted daughter, and his "adopted" son Wulfgar were brought up well.~
+@28   = ~Catti-Brie~
+@29   = ~[BLACK LILY 1] 'Twill be the darkest day ye never seen before I don't have what ye need.~ [%BLACK_LILY_SND%01]
+@30   = ~[FEMALE THREAT 6]  Your life means nothing to me.~ [%_%GENFT06]
+@31   = ~[BLACK LILY 3]~ [%BLACK_LILY_SND%03]
+@32   = ~[BLACK LILY 4]~ [%BLACK_LILY_SND%04]
+@33   = ~[BLACK LILY 2] Off wit ye now!  I've got counting to do.~ [%BLACK_LILY_SND%02]
+@34   = ~[FEMALE TOWNSFOLK OF BALDUR'S GATE 3 HOSTILE]  Get out of my sight!  I'll do nothing for you!~
+@35   = ~Catti-Brie grew up amongst the tough Dwarves of Icewind Dale. As a young girl her parents were killed in a Goblin raid but this beautiful, auburn haired human was taken in by Clan Battlehammer and grew up as tough as the rocks that surrounded her. Cattie-Brie was the first occupant of Icewind Dale to warmly greet Drizzt when he was out on Kelvins Cairn. She, perhaps more than anyone who knows Drizzt, can understand the struggles he goes through in his daily attempt to find acceptance among those goodly races of the Realms who see no further than his skin color. Cattie-Brie, under the tutelage of her friends, has become more than a match for any foe who wishes to oppose her and her great bow, Taulmaril the Heart Seeker..~
+@36   = ~Cornugon~
+@37   = ~Cyclops~
+@38   = ~Dead Child~
+@39   = ~Dead Horse~
+@40   = ~Wounded Man~
+@41   = ~Dead Woman~
+@42   = ~Demonknight~
+@43   = ~Lesser Demonknight~
+@44   = ~Greater Tanari~
+@45   = ~Demonic Astral Spider~
+@46   = ~Demonic Guardian~
+@47   = ~Nibby "Dipnose"~
+@48   = ~Baby Dragon~
+@49   = ~Drizzt~
+@50   = ~[DRIZZT DO'URDEN 1] All I wish is to continue my journey! Friends await, while I must suffer this tiresome dance?! Does the mere mention of Drizzt attract your ilk?!~ [%_%DRIZT01]
+@51   = ~[DRIZZT DO'URDEN 2]~ [%_%DRIZT02]
+@52   = ~[DRIZZT DO'URDEN 3] 'Tis your lives to waste!~ [%_%DRIZT03]
+@53   = ~[DRIZZT DO'URDEN 4] I am a gentle man at heart. At least, when I'm not slaughtering the stupid.~ [%_%DRIZT04]
+@54   = ~[DRIZZT DO'URDEN 5] I've sparred with demons from the nine hells themselves! I shall barely break a sweat here today!~ [%_%DRIZT05]
+@55   = ~[DRIZZT DO'URDEN 8]~ [%_%DRIZT08]
+@56   = ~[DRIZZT DO'URDEN 9]~ [%_%DRIZT09]
+@57   = ~[DRIZZT DO'URDEN 6] All this chatter is fine, but I've places I'd rather be.~ [%_%DRIZT06]
+@58   = ~[DRIZZT DO'URDEN 7] Don't poke Drizzt. 'Tis entirely unsociable.~ [%_%DRIZT07]
+@59   = ~[DRIZZT HOSTILE] I'll not spend another minute in the presence of such as you.~
+@60   = ~Drizzt worships Mielikki and makes war on the cruel city of his birth (Menzoberranzan), his fellow drow, and all who serve Lolth. He counts as friends human warriors of the North (Wulfgar and Cattie-brie) and the dwarf Bruenor Battlehammer, whom he helped to regain the rulership of Mithril Hall. He has slain dragons and drow matron mothers. He defied fiends (Errtu) and powers (Lolth), battled perhaps the most deadly assassin currently active in Faerûn (Artemis Entreri), and sought to forge his own life on the surface.
+
+Thoughtful and sensitive to others, Drizzt holds himself to the highest ideals but does not expect the same of others. Ever alert for treachery and danger, he speaks little but is apt to be polite (if terse) in his dealings. A perfectionist who yearns to be accepted into places and groups and to make friends widely, Drizzt is haunted by the danger he brings to those he befriends thanks to the scrutiny of Lolth and his other foes (notably Errtu and Entreri). Those he meets see his manner as grim.
+
+Early in his surface travels, Alustriel welcomed him as warmly and personally as she does all in need, but dared not let him openly into Silverymoon at that time. His deeds have, very slowly, made Drizzt Do’Urden more welcome in the Sword Coast North.~
+@61   = ~Drow Battle Mage~
+@62   = ~Drow Warrior~
+@63   = ~Drow Priestess~
+@64   = ~Dragon Golem Scull~
+@65   = ~Varlag Silverhammer~
+@66   = ~Elminster~
+@67   = ~Errtu~
+@68   = ~Ettin~
+@69   = ~Ghost~
+@70   = ~Frost Giant~
+@71   = ~Goblin Elite~
+@72   = ~Goblin~
+@73   = ~Guenhwyvar~
+@74   = ~Harpy~
+@75   = ~Jarlaxle~
+@76   = ~Through destiny and might we shall rule supreme!~ [F_DRSL11]
+@77   = ~The best surfacer is a dead surfacer!~ [F_DRSL14]
+@78   = ~In the name of Lolth we fight!~ [F_DRSL17]
+@79   = ~[DROW16]~
+@80   = ~[DROW15]~
+@81   = ~At your command!~ [F_DRSL12]
+@82   = ~Victory for the spider queen.~ [F_DRSL13]
+@83   = ~Jarlaxle is the leader of the mercenary group known as Bregan D'Aerthe. He is a Drow male who is charming, charismatic and breaks all the accepted rules concerning males in the female dominated Drow culture. Yet he seems to be able to get away with it because of his powerful contacts within the city's ruling elite. Unlike other drow, he wears garments of exotic colors and flouts his differences openly. Bregan D'Aerthe itself is made up of houseless nobles and commoners who would otherwise be easy prey in the Underdark, yet as a group they are a force of some influence and power. Jarlaxle and Bregan D'Aerthe are somewhat of an unknown as their only allegiance is to whoever is paying them at the moment and both can only profit from any ensuing chaos.~
+@84   = ~Kangaxx the Lich~
+@85   = ~Marilith~
+@86   = ~Mummy~
+@87   = ~Nib Jansen~
+@88   = ~Orc~
+@89   = ~Regis~
+@90   = ~[HALFLING 1] Nasty times are comin' I reckon.~ [%_%HALFL01]
+@91   = ~[HALFLING 5]~ [%_%HALFL05]
+@92   = ~[HALFLING 6]~ [%_%HALFL06]
+@93   = ~[HALFLING 4] I wish I had my old tobacco pipe.~ [%_%HALFL04]
+@94   = ~[HALFLING 2] You're rather outlandish folk to be wanderin' round here.~ [%_%HALFL02]
+@95   = ~[HALFLING 3] Queer things have been afoot lately.~ [%_%HALFL03]
+@96   = ~Regis (Rumblebelly), true to his race, prefers a life of peace, rest and vast quantities of food. He has a habit of "acquiring" items that aren't his to acquire and this in turn leads to his misfortune and one disaster after another. Regis grew up in Calimport among the dregs of society and became a very adept thief, even gaining membership of the local guild and gaining the confidence of Pasha Pook, the guild leader. His arrival in Ten Towns could only mean one thing - he's in trouble and running.~
+@97   = ~Robed Figure~
+@98   = ~Shadow Fiend~
+@99   = ~Slayer Shadow~
+@100  = ~Demonic Spider Queen~
+@101  = ~Demonic Skull~
+@102  = ~Phase Spider~
+@103  = ~Tanari~
+@104  = ~Valen~
+@105  = ~Vampire~
+@106  = ~Wailing Death~
+@107  = ~Greater Werewolf Leader~
+@108  = ~Were Winterwolf Spirit~
+@109  = ~Wulfgar~
+@110  = ~[GREYWOLF 4] No one meddles with my business, lest they become it!~ [%_%GREYW04]
+@111  = ~[GREYWOLF 2] You've not heard the last of this, ye worthless priggers!~ [%_%GREYW02]
+@112  = ~[GREYWOLF 3] Have at thee, ye thieving scoundrel!~ [%_%GREYW03]
+@113  = ~[GREYWOLF 6] Stupid cullys.~ [%_%GREYW06]
+@114  = ~[GREYWOLF 7] The back of my hand or the tip of my boot. Take your pick.~ [%_%GREYW07]
+@115  = ~[GREYWOLF 8]~ [%_%GREYW08]
+@116  = ~[GREYWOLF 9]~ [%_%GREYW09]
+@117  = ~[GREYWOLF 5] All 'o you deserve the morning drop on the gallows.~ [%_%GREYW05]
+@118  = ~[GREYWOLF HOSTILE] I'll take your head for what you've done!~
+@119  = ~As a young boy Wulfgar (Son of Beornegar) grew up among the fierce Barbarians of Icewind Dale but was captured by Bruenor in a barbarian raid on Ten Towns. Instead of killing him as a prisoner, Bruenor made Wulfgar serve him and Clan Battlehammer for 5 years to pay for the sins of his people. Wulfgar served well and grew into the huge man of barbarian legends. He now wields Aegis Fang, the magical war hammer, made for him by Bruenor, his adopted father.~
+@120  = ~Medusa~
+@121  = ~Demonknight~
+@122  = ~Greater Doppelganger~
+@123  = ~Doppelganger~
+@124  = ~Ghast~
+@125  = ~Ghoul~
+@126  = ~Greater Ghoul~
+@127  = ~Korax the Ghoul~
+@128  = ~Armored Figure~
+@129  = ~Sarevok~
+@130  = ~Tasloi~
+@131  = ~Greater Werewolf~
+@132  = ~Greater Wolfwere~
+
+@341 = ~[ELMINSTER 1] Ho there wanderer, stay thy course a moment to indulge an old man.~ [%_%ELMIN01]
+@342 = ~[ELMINSTER 2]~
+@343 = ~[ELMINSTER 3] It is most distressing that this is the course thou've chosen. I remove my support, and will have no further dealings with thee.~ [%_%ELMIN03]
+@344 = ~[ELMINSTER 8]~ [%_%ELMIN08]
+@345 = ~[ELMINSTER 9]~ [%_%ELMIN09]
+@346 = ~[ELMINSTER 4] I can offer some guidance, but I will not interfere in your destiny.~ [%_%ELMIN04]
+@347 = ~[ELMINSTER 5] Thy mission is urgent! Must thou waste thy time poking the elderly?~ [%_%ELMIN05]
+@348 = ~[ELMINSTER 6] The years I have seen number hundreds, and yet I put up with thy prodding.~ [%_%ELMIN06]
+@349 = ~[ELMINSTER 7] Whoa lord, it's hard to be humble, when you're perfect in every way.~ [%_%ELMIN07]
+@350 = ~Pardon. Turnip reflex.~ [F_JAN23]
+@351 = ~You can not hope to defeat me.~ [F_IREN03]
+@352 = ~Die all of you die!~ [F_IREN04]
+@365 = ~The wooden stairs have decayed from mold.~		// Changed in v3: fixed for english grammar (translations should be unaffected)
+@371 = ~[DEMONKNIGHT 01]  Death welcomes you.~ [%tutu_scripts%HAEL_01]
+@372 = ~[DEMONKNIGHT 03]  Here you will fall!~ [%tutu_scripts%HAEL_03]
+@373 = ~[DEMONKNIGHT 05]  ~ [%tutu_scripts%HAEL_05]
+@374 = ~[DEMONKNIGHT 06]  ~ [%tutu_scripts%HAEL_06]
+@375 = ~[DEMONKNIGHT 04]  ~ [%tutu_scripts%HAEL_04]
+@376 = ~[SLAVES 1] ~ [%_%SLAVE01]
+@377 = ~[VILLAGER, FEMALE 01d] You are from away? Welcome, then.~ [%tutu_scriptv%illf01d]
+@378 = ~[FEMALE TOWNSFOLK 5]~ [%_%ftown05]
+@379 = ~[FEMALE TOWNSFOLK 6]~ [%_%ftown06]
+@380 = ~[FEMALE GREETING 1]  Yeah?~ [%_%genfg01]
+@381 = ~[SONNER 1] Keep your heads about you and we'll work it out!  We just need a little help is all.~ [%_%SONNR01]
+@382 = ~[SONNER 3]~ [%_%SONNR03]
+@383 = ~[SONNER 4]~ [%_%SONNR04]
+@384 = ~[SONNER 2] Cool tempers will prevail.~ [%_%SONNR02]
+@385 = ~[BEAR, POLAR 03]~ [%_%pbear03]
+@386 = ~[BEAR, POLAR 04]~ [%_%pbear04]
+@387 = ~[BEAR, POLAR 05]~ [%_%pbear05]
+@388 = ~[BEAR, POLAR 06]~ [%_%pbear06]
+@389 = ~[BEAR, POLAR 08]~ [%_%pbear08]
+@390 = ~[BEAR, POLAR 09]~ [%_%pbear09]
+@391 = ~[BEAR, POLAR 01]~ [%_%pbear01]
+@392 = ~[BEAR, POLAR 02]~ [%_%pbear02]
+@393 = ~[THE WARRIOR 1] Help!  I need your aid!  There are too many!~
+@394 = ~[THE WARRIOR 5] ~
+@395 = ~[THE WARRIOR 6]~
+@396 = ~[THE WARRIOR 2] I am so cold . . .I . . .am dying. . .   Please . . ..stay with me awhile . . .~
+@397 = ~[THE WARRIOR 3] I don't want to die alone. . . ~
+@398 = ~[THE WARRIOR 4] Thank you . . .~
+@399 = ~[SLAVES 6]~ [%_%SLAVE06]
+@400 = ~~ [TANAR01]
+@401 = ~~ [TANAR02]
+@402 = ~~ [TANAR03]
+@403 = ~[BASILISK, GREATER 06] ~ [%_%GBASI06]
+@404 = ~[BASILISK, GREATER 09] ~ [%_%GBASI09]
+@405 = ~~ [TANAR05]
+@406 = ~~ [TANAR06]
+@407 = ~~ [TANAR04]
+@408 = ~~ [TANAR01]
+@409 = ~~ [TANAR02]
+@410 = ~[SPIDER, PHASE 03] ~ [%_%PSPID03]
+@411 = ~[SPIDER, PHASE 04] ~ [%_%PSPID04]
+@412 = ~[SPIDER, PHASE 05] ~ [%_%PSPID05]
+@413 = ~[SPIDER, PHASE 06] ~ [%_%PSPID06]
+@414 = ~[SPIDER, PHASE 08] ~ [%_%PSPID08]
+@415 = ~[SPIDER, PHASE 09] ~ [%_%PSPID09]
+@416 = ~[SPIDER, PHASE 01] ~ [%_%PSPID01]
+@417 = ~[SPIDER, PHASE 02] ~ [%_%PSPID02]
+@418 = ~[SPIDER, PHASE 10] ~ [%_%PSPID10]
+@419 = ~[METALLIC SOUND 1]~ [%_%HIT_01C]
+@420 = ~[METALLIC SOUND 2]~ [%_%HIT_02C]
+@421 = ~[METALLIC SOUND 3]~
+@422 = ~[METALLIC SOUND 4]~ [%_%HIT_03D]
+@423 = ~[SPIDER, WRAITH 03] ~ [%_%WSPID03]
+@424 = ~~ [%_%vicon38]
+@425 = ~~ [%_%vicon39]
+@427 = ~[WYVERN 03] ~ [%_%WYVER03]
+@428 = ~[WYVERN 04] ~ [%_%WYVER04]
+@429 = ~[WYVERN 05] ~ [%_%WYVER05]
+@430 = ~[WYVERN 06] ~ [%_%WYVER06]
+@431 = ~[WYVERN 07] ~ [%_%WYVER07]
+@432 = ~[WYVERN 08] ~ [%_%WYVER08]
+@433 = ~[WYVERN 09] ~ [%_%WYVER09]
+@434 = ~[WYVERN 01] ~ [%_%WYVER01]
+@435 = ~[WYVERN 02] ~ [%_%WYVER02]
+@436 = ~[WYVERN 10] ~ [%_%WYVER10]
+@437 = ~[SKELETON WARRIOR 02]~ [%_%SKELW02]
+@438 = ~[SKELETON WARRIOR 03] Die . . .~ [%_%SKELW03]
+@439 = ~[SKELETON WARRIOR 9] ~ [%_%SKELW09]
+@440 = ~[WOLF, WINTER 07]~ [%_%WWOLF07]
+@441 = ~[SKELETON WARRIOR 01]~ [%_%SKELW01]
+@443 = ~[MALE GREETING 3]  Hmm?~ [%_%GENMG03]
+@444 = ~[MONKS 5]~ [%_%MONKS05]
+@445 = ~[MONKS 6]~ [%_%MONKS06]
+@446 = ~[WEREWOLF 01]  ~ [%_%WEREW01]
+@447 = ~[WEREWOLF 02]  ~ [%_%WEREW02]
+@448 = ~[WEREWOLF 03]  ~ [%_%WEREW03]
+@449 = ~[WEREWOLF 04]  ~ [%_%WEREW04]
+@450 = ~[WEREWOLF 05]  ~ [%_%WEREW05]
+@451 = ~[WEREWOLF 06]  ~ [%_%WEREW06]
+@452 = ~[CENTEOL 1] My spiderssss!  Kill them.  Kill them all!~ [%_%CENTL01]
+@453 = ~[CENTEOL 2] ~ [%_%CENTL02]
+@454 = ~[CENTEOL 3]~ [%_%CENTL03]
+@455 = ~[CENTEOL 4]~ [%_%CENTL04]
+@456 = ~[WEREWOLF, GREATER 01]  I will bury you all!~ [%_%GWERE01]
+@457 = ~[WEREWOLF, GREATER 03]  ~ [%_%GWERE03]
+@458 = ~[WEREWOLF, GREATER 04]  ~ [%_%GWERE04]
+@459 = ~[WEREWOLF, GREATER 05]  ~ [%_%GWERE05]
+@460 = ~[WEREWOLF, GREATER 06]  ~ [%_%GWERE06]
+@461 = ~[WOLF, WINTER 03] ~ [%_%WWOLF03]
+@462 = ~[WOLF, WINTER 04] ~ [%_%WWOLF04]
+@463 = ~[WOLF, WINTER 05] ~ [%_%WWOLF05]
+@464 = ~[WOLF, WINTER 06] ~ [%_%WWOLF06]
+@465 = ~[WOLF, WINTER 08] ~ [%_%WWOLF08]
+@466 = ~[WOLF, WINTER 09] ~ [%_%WWOLF09]
+@467 = ~[WOLF, WINTER 01] ~ [%_%WWOLF01]
+@468 = ~[WOLF, WINTER 02] ~ [%_%WWOLF02]
+@469 = ~[SIRINE 05] ~ [%_%SIRIN05]
+@470 = ~[SKELETON WARRIOR 04] ~ [%_%SKELW04]
+@471 = ~[ZOMBIE 03]~ [%_%ZOMBI03]
+@472 = ~[ZOMBIE 04]~ [%_%ZOMBI04]
+@473 = ~[ZOMBIE 05]~ [%_%ZOMBI05]
+@474 = ~[ZOMBIE 06]~ [%_%ZOMBI06]
+@475 = ~[ZOMBIE 01]~ [%_%ZOMBI01]
+@476 = ~[ZOMBIE 02]~ [%_%ZOMBI02]
+
+@477 = ~The Bear Tribe Horn returns.~
+@478 = ~Summon Spirit Bear~
+@479 = ~Bleed~
+@480 = ~Blood Poisoned~
+@481 = ~Dispel Effects~
+@482 = ~Protected from Evil~
+@483 = ~Invisibility~
+@484 = ~The Panther Figurine Returns~
+@485 = ~Summon Guenhwyvar~
+@486 = ~Gulp!~
+
+//---------------------------------------------------------------------------------
+//  Item descriptions:
+//---------------------------------------------------------------------------------
+
+@133  = ~Dagger~
+@134  = ~Vampiric Dagger +5~
+@135  = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@136  = ~Vampiric Dagger +5
+
+This dagger is one of the most feared in the realm. Artemis Entreri got his hands on this dagger and the combination of this steel and Artemis’ deadly battle skills takes a hero to survive.
+
+STATISTICS:
+
+Combat abilities:
+– Each hit drains 5 hit points from its target and transfers it to the user.
+
+THACO: +5 
+Damage: 1d4+3 (piercing)
+Speed Factor: 2  
+Proficiency Type: Dagger
+Type: One-handed 
+
+Weight: 1~
+@137  = ~Studded Leather~
+@138  = ~Snake Soul +3~
+@139  = ~Studded leather armor has little in common with normal leather armor.  While leather armor is a hardened shell, studded leather armor is soft and supple with hundreds of metal rivets affixed.  The rivets are so close together that they form a flexible coating of hard metal that turns aside slashing and cutting attacks.  The soft leather backing is little more than a means of securing the rivets in place.  
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25~
+@140  = ~This leather armor is the personal armor of Artemis Entreri.
+
+STATISTICS:
+
+Equipped abilities:
+– Wearer is immune to poison
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+ 
+Weight: 25~
+@141  = ~Amulet~
+@142  = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain.  The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties.  Only one amulet can be dangled from the neck.~
+@143  = ~This medallion is highly sought after by both thieves and bards, though for different reasons.  In addition to providing powerful magical protection against physical attacks, the amulet increases the wearer's proficiency in several rogue skills.  But even more valuable, from the bard's perspective, is the amulet's ability to grant the wearer immunity to all forms of silence. 
+ 
+STATISTICS:
+
++20% to Find Traps and Pick Locks
++3 bonus to AC
+Wearer is immune to silence~
+@144  = ~Amulet of Vampiric Drain Protection~
+@145  = ~This amulet was enchanted by a mage when he was on his journey searching for an artifact rumored to be located within the Mountain of the Dead in Ice Wind Dale.
+
+Special Ability: Bless on wearer and immunity to Vampiric Constitution Drain.
+The wearer should keep in mind that while the amulet effectively protects against constitution drain, it also disables any constitution bonuses.~
+@146  = ~Spider Figurine~
+@147  = ~This small spider figurine glows with a red light.~
+@148  = ~This magical spider figurine allows the user to summon forth six phase spiders. 
+
+The figurine only holds 1 charge before it destroys itself and returns to the outer planes to its former owner the Demonic Spider Queen.~
+@149  = ~Short Sword~
+@150  = ~Snake Bite +4~
+@151  = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.    
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@152  = ~This is the personal sword of Artemis Entreri.
+
+STATISTICS:
+
+Combat abilities:
+– Inflicts poison to its target if failing save vs poison.
+
+THACO: +4
+Damage: 1d6+4 (piercing)
+Speed Factor: 3
+Proficiency Type: Short Sword 
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 3~
+@153  = ~Bear Tribe Leader's Child~
+@154  = ~This is the child of the Bear Tribe Leader, still alive even despite what he has been through.~
+@155  = ~Bear Tribe Horn~
+@156  = ~The sound of this mighty horn summons a powerful Spirit Bear to fight for the user. 
+
+ABILITIES: Summons a Spirit Bear once a day.~
+@157  = ~Girdle~
+@158  = ~Holy Symbol of Lathander~
+@159  = ~Girdles are generally similar to belts.  Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.  
+
+STATISTICS:
+
+Weight:  2~
+@160  = ~Only those most worthy and devoted servants of the Dawnbringer are granted these powerful holy symbols. 
+
+STATISTICS:
+
+   Grants an additional 6th and 7th level spell
+   5% Magic Resistance while worn
+   +1 to Strength while worn~
+@161  = ~Holy Symbol of Helm~
+@162  = ~Only those most worthy and devoted servants of the Watcher are granted these powerful holy symbols.
+
+STATISTICS:
+
+   Grants an additional 6th and 7th level spell
+   5% Magic Resistance while worn
+   +1 to Strength while worn~
+@163  = ~Holy Symbol of Talos~
+@164  = ~Only those most worthy and devoted servants of the Storm Lord are granted these powerful holy symbols.
+
+STATISTICS:
+
+   Grants an additional 6th and 7th level spell
+   5% Magic Resistance while worn
+   +1 to Strength while worn~
+@165  = ~Mace~
+@166  = ~Storm Star +3~
+@167  = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies; some being spiked, others flanged, and still others have pyramidal knobs.  
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+@168  = ~This magical weapon is of ancient design, thought to have been devised in Netheril.  It crackles with spectacular arcs of lightning when wielded.
+
+STATISTICS:
+
+THACO: +3 bonus
+Damage:  1d6+4 crushing, +1d6 electrical
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires: 10 Strength
+
+Weight: 6~
+@169  = ~Morning Star~
+@170  = ~Ice Star +4~
+@171  = ~The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath.  Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.    
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12~
+@172  = ~The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath.  Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+
+STATISTICS:
+
++20% Fire Resistance
+
+THACO: +4
+Damage: 2d4+4 crushing, +1d4 extra cold damage
+Speed Factor: 4
+Proficiency Type: Flail/Morningstar
+Type: One-handed
+Requires: 11 Strength
+
+Weight: 8~
+@173  = ~Boots~
+@174  = ~Boots of Haste~
+@175  = ~Boots are normally hand-made by cobblers.  Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight:  4~
+@176  = ~These boots are personal equipment to Artemis Entreri, the rumored and deadly assassin that holds great hatred towards Drizzt. Artemis wanders the realm from shadow to shadow planning how to backstab the drow ranger.
+
+Special Abilities:
+ Increased movement and Haste while worn.~
+@177  = ~Bruenor’s Diary~
+@178  = ~Day 1
+Strange things are upon us, the sky is swept of its clouded darkness which at a first glance might seem like a good thing. However, because of this the environment of the Dale has been affected. The ice and snow from the mountains starts to melt and the outcome will be that the whole Icewind Dale will drown.
+
+Day 2
+Catti-Brie has joined with the local rangers to look into what has caused the dramatic change in the weather.
+
+Day 3
+I haven’t heard any news from Catti-Brie today, though only one day has passed of course.
+
+Day 4
+There is still no news, not even a messenger telling me how it all goes.
+
+Day 5
+Still no news, Catti-Brie told me she would return in two days. If she had been delayed then some sort of message should have been sent.
+
+Day 6
+I sense that something ain’t right; I will try to track Catti-Brie. I also told Regis to try to find Drizzt. I heard that he is on his way back to the Dale from an errand on the Sword Coast. Tried to find Wulfgar but he seems to have gone up in smoke.~
+@179  = ~Battle Axe~
+@180  = ~Battle Axe +3~
+@181  = ~This particular axe was forged by Bruenor's own hand after reaching Icewind Dale.
+
+STATISTICS:
+
+THAC0: +3 bonus
+Damage: 1d8+3 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+
+Weight: 2~
+@182  = ~Helmet~
+@183  = ~Bruenor Battlehammer's Helmet~
+@184  = ~This helmet is quite dented, and even has one horn partially broken. But it still provides Bruenor with excellent protection.
+
+STATISTICS:
+
+Armor Class Bonus: 1
+Special:
+ +1 THAC0
+ +1 Saving Throws
+ Protection from critical hits
+ 
+Weight: 1~
+@185  = ~Full Plate Mail~
+@186  = ~Mithril Field Plate Armor +2~
+@187  = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+
+STATISTICS:
+
+Armor Class: 1 (-3 vs. slashing, -2 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 70~
+@188  = ~Mithril Field Plate +2
+
+This is the personal armor of Bruenor Battlehammer, and never a finer kit will you see. It is truly a marvel of battlefield craftsmanship.
+
+STATISTICS:
+
+Armor Class: -1 (-3 vs. slashing, -2 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 45~
+@189  = ~Heavy Crossbow~
+@190  = ~Heavy Crossbow +1~
+@191  = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).   
+
+STATISTICS:
+
+Damage: +2
+Speed Factor: 10
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 14~
+@192  = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).   
+
+STATISTICS:
+
+THAC0: +1
+Damage: +3
+Speed Factor: 9
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 11 Strength
+
+Weight: 12~
+@193  = ~Arrows~
+@194  = ~Cattie-Brie Quiver~
+@195  = ~The arrows in this quiver are magical and never run out. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long.
+
+STATISTICS:
+
+THACO: +1 bonus
+Damage: 1d6+1 (piercing)
+Launcher: Bow
+
+Weight: 0~
+@196  = ~Long Bow~
+@197  = ~Taurmaril +2~
+@198  = ~Long bow +2, Taurmaril: 'The Heartseeker'
+
+This is another famous artifact from the wayside of Icewindale. This particular bow has been carried by such a heroine, as Catti-Brie Battlehammer. The daughter of Bruenor, and love interest of two much acclaimed warriors. She wields this mighty silver artifact, with an intensity rarely matched. Beware the streaks of silver!
+
+STATISTICS:
+
+THAC0: +2
+Damage: +2
+Speed Factor: 2
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 6 Strength
+ 
+Weight: 2~
+@199  = ~Long Sword~
+@200  = ~Khazid-Zhea +3~
+@201  = ~A highly chaotic vorpal weapon, Catti-Brie bested the sword in a mental battle during the Time of Troubles, when gods walked among men. It now serves her well.
+
+STATISTICS:
+
+THACO: +3 bonus
+Damage: 1d8+3 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+
+Weight: 2~
+@202  = ~Enchanted Winter Wolf Pelt~
+@203  = ~This pure white pelt of the winter wolf is soft and luxurious. It is enchanted by the dwarven smith Silverhammer. It can be worn as a cloak.
+
+Special Abilities:
+ Cold Resistance: +50%~
+@204  = ~Flail~
+@205  = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link.  The weapon was originally used as a tool for threshing grain.    
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@206  = ~Skull~
+@207  = ~Throwing Dagger~
+@208  = ~Poisoned Throwing Dagger~
+@209  = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.  
+
+STATISTICS:
+
+Damage: 1d4 (missile)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@210  = ~These throwing daggers are dipped in poison and often used by goblins doing their ambush.~
+@211  = ~Blood-filled Goblet~
+@212  = ~Cornugon's Goblet~
+@213  = ~Dark and rancid blood lurks within this pewter goblet. The lip is black and caked where it appears others have tasted from it. Scratched deep into the pewter are the words "Taste My Soul."~
+@214  = ~Scratched deep into the side of this goblet are the words "Taste My Soul." It is said that one can regain lost health, cure disease and neutralize poison from the dark blood that lurks within its pewter depths. This comes with a price, however. Though not even identify magic can see through what this side effect might be. 
+
+STATISTICS:  
+ Special:  Heal imbiber by 5 hit points 
+ Special:  Cure Disease and Poison 
+
+ Side Effect: Unknown~
+@215  = ~Ring~
+@216  = ~Ring of Free Action:  'Edventar's Gift'~
+@217  = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
+@218  = ~Ring of Free Action:  'Edventar's Gift' 
+This ring was given to the reef scavenger and hunter known only as Edventar, by a group of aquatic elves long his friends.  His help in routing the "Pirate Queen" of Dambrath was instrumental in their survival, though Yenandra continues to be feared anywhere the water meets land.  
+
+STATISTICS:  
+
+Special:  The wearer is immune to everything, magical and otherwise, that effects mobility in any way, although can still be hasted. Be aware, however, this will also protect the wearer from beneficial effects such as those received from the boots of speed.~
+@219  = ~Ghoul Hand~
+@220  = ~Mace of Disruption +2~
+@221  = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end.  The head design varies; some being spiked, others flanged, and still others have pyramidal knobs.  
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+@222  = ~This mace was created for a specific purpose: to slay the undead. Any undead creature hit by it not only feels its sting but also has a chance of being blasted from existence.
+
+STATISTICS:
+
+Combat abilities:
+– Extra 1d6+3 damage vs. undead
+– Slay undead if failing save vs. death at -4 penalty
+
+THACO: +2 (strikes as a +5 weapon)
+Damage: 1d6+3 (crushing)
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed 
+Requires:
+ 10 Strength
+ 
+Weight: 8~
+@223  = ~Scale Armor~
+@224  = ~Green Dragon Scale~
+@225  = ~Green Dragon Scale armor is light of weight, strong, and resistant to acid and fire. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly green ones.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +50%
+- Acid Resistance: +50%
+
+Armor Class: -1 (-4 vs. slashing, -2 vs. piercing and missile)
+Requires: 8 Strength
+
+Weight: 25~
+
+@227  = ~Drizzt’s Scimitars~
+@228  = ~These are Drizzt personal scimitars Twinkle and Frostbrand.~
+@229  = ~Wardstone~
+@230  = ~Drow Wardstone~
+@231  = ~Often marked with magical glyphs, runes, or symbols, wardstones are powerfully enchanted items intended to grant their bearer passage through magically guarded areas. As most wardstones are quite unique and specific in their nature, it is rare to find one with more than one purpose.~
+@232  = ~Drow Wardstone.~
+@233  = ~Green Dragon Skull~
+@234  = ~The severed head of a green dragon is both a fearsome and a reassuring sight. The scales on the head can be used to forge dragon scale armor. Such armor is one of the most sought for though to slay a dragon is a near impossible task, though one could have the rare luck to find some scales or some already forged armor.~
+@235  = ~Potion~
+@236  = ~Potion of Death Ward~
+@237  = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.  ~
+@238  = ~This potion grants its user protection against death magic such as slay creature and petrification. It also shields against vampiric constitution drain.~
+@239  = ~Cloak~
+@240  = ~Cloak of Elvenkind~
+@241  = ~The cloak can be made in every possible shape with just about every type of fabric.  The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
+@242  = ~Cloak of Elvenkind
+This green cloak resembles a normal cloak.  Wearing it makes any person able to hide in shadows with astonishing abilities. 
+
+STATISTICS:
+
+Equipped abilities:
+ Stealth: +10% bonus~
+@243  = ~Girdle of Frost Giant Strength~
+@244  = ~This girdle made from the hair of a Frost Giant grants its wearer immense strength similar to a giant.
+
+Ability: Strength raised to 21~
+@245  = ~Winter Rune Scroll~
+@246  = ~This scroll combined with the Ice Slasher Axe results in a enormously powerful weapon.~
+@247  = ~Ring of Kangaxx~
+@248  = ~Ring of Kangaxx
+This ring is relatively unadorned, but the vile magic within radiates intense evil. Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power. It is said that a cadre of Netheril mages fought and imprisoned the lich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains. The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
+
+STATISTICS:
+
+Armor Class: +2 Bonus
+Saving Throws: +2 Bonus
+Magic Resistance: +10% Bonus
+Special Abilities: Immunity to Disease and Poison~
+@249  = ~Battle Axe +2~
+@250  = ~The Claw~
+@251  = ~Claw of Cornugon~
+@252  = ~This appears to be the claw of some great beast, perhaps a demon of sorts.~
+@253  = ~This is the claw from a Cornugon Demon.  It has multiple enchantments that all become activated when the claw is worn as a ring. It has drawbacks however, as it seems to fuel its power with the blood of its wearer.  Because of this, the wearer of the claw will often be sicklier and therefore more susceptible to poisons.  
+
+STATISTICS:
+
+Armor Class:  +1 bonus 
+Missile Armor Class bonus:  +4 bonus 
+Fire Resistance: 50%
+Cold Resistance: 50%
+Magic Resistance: 50%
+Save vs Death:  -4 penalty 
+Save vs Wands:  +3 bonus 
+Save vs Polymorph:  +3 bonus 
+Save vs Breath: +3 bonus 
+Save vs Spells:  +3 bonus 
+Constitution modifier:  -2 penalty
+Strength modifier:  -2 penalty~
+@254  = ~Ioun Stone~
+@255  = ~Pale Green Ioun Stone~
+@256  = ~This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.~
+@257  = ~On his deathbed, aged hero Rigar TrueBlood begged one last request of his mage companion Spectorial: that his skill and fortitude as a warrior live on. The reluctant friend consented and transferred these traits to an item, knowing the warrior's soul would then be lacking them. This pale green Ioun stone now holds these essences, and grants the owner TrueBlood's health and skill.
+
+STATISTICS:
+
+Equipped Abilities:
+ +10% bonus to hit points
+ +1 bonus to THAC0
+Armor Class Bonus: None
+
+Weight: 2~
+@258  = ~Throwing Axe~
+@259  = ~Ice Slasher +2~
+@260  = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point of the bottom and the head may have a spike on the top.    
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 5~
+@261  = ~This throwing axe has not only been finely balanced for use as a missile weapon but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style. Because its dwarven crafter Frostbeard hails from Icewind Dale this weapon holds enchantments of a cold chill. It is told that he used it on a journey through the Marching Mountains where he encountered Fire Giants. Frostbeard never completed the full forging of this weapon. If it should be combined with the Winter Rune Scroll then it’s full form would be completed.  
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THACO: +2
+Damage: 1d6+3, +2 extra cold damage
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+ 
+Weight: 3~
+@262  = ~Ice Slasher +5~
+@263  = ~This is the completed forging of Ice Slasher, now a weapon of immense power.  
+
+STATISTICS:
+
+Equipped abilities:
+– Strength set to 25
+
+Combat abilities:
+- Instant Slaying of Ogres
+– Returns to the wielder's hand when thrown
+
+THACO: +5
+Damage (melee): 1d6+3 slashing, +2 extra cold damage
+Damage (thrown): 1d6+5 missile, +2 extra cold damage
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 3~
+@264  = ~Handwritten Letter~
+@265  = ~My dear Sister, It seems that Sarevok is close to embracing his heritage. More news has come to light. Gorion’s ward is no other than Sarevok’s brother and that could only mean that he is a bearer of the same heritage. I have aimed my journey to reach Gorion’s ward. As soon as he is under my command the experiments can begin. I thank you for placing your minions at my disposal. I urge you to reach Sarevok and bring him to me while I take care of the other one.
+
+I~
+@266  = ~Battleaxe of Dispelling Fire +4~
+@267  = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.   
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+@268  = ~Jarlaxle’s personal axe: 'Battleaxe of Dispelling Fire' +4
+
+This axe is forged and enchanted by the drow. Rumors whisper that Lolth herself was involved in the forging of this devastating weapon.  
+
+STATISTICS:
+
+Combat abilities:
+- Dispel Magic each hit
+
+THAC0: +4
+Damage: 1d8+4 (slashing), +4 extra fire damage
+Speed Factor: 1 
+Proficiency Type: Axe 
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5~
+@269  = ~Plate Mail Armor~
+@270  = ~Jarlaxle’s Personal Plate +3~
+@271  = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. 
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 50~
+@272  = ~Jarlaxle’s Personal Plate was forged by the drow and enchanted by Lolth herself and holds protections of no lesser sort.  
+
+STATISTICS:  
+
+Equipped abilities:
+– Acid Resistance: +80%
+
+Armor Class: 0 (-3 vs. slashing)
+Requires:
+ 11 Strength
+
+Weight: 18~
+@273  = ~Boots of Phasing~
+@274  = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight:  4~
+@275  = ~Boots of Phasing
+
+This cursed pair of boots puts a spell on its user that makes him/her teleport to random enemies every third second until all the foes or her/himself are slain. Only a remove curse spell will remove the boots for good.
+
+Wearing this cursed pair of boots also grants the user bonus AC of +2 because it is much more difficult to hit a constantly teleporting subject.
+
+STATISTICS:
+
+Equipped Abilities:
+  Teleports the wearer to a random enemy within visual range every 3 seconds
+  Can only be removed with a 'remove curse' spell
+
+Armor Class: +2 bonus~
+@276  = ~This skull seems to radiate some sort of energy, almost feeling as if its dark hollow eyes are watching you.~
+@277  = ~Quarter Staff~
+@278  = ~Magi Staff~
+@279  = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.    
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@280  = ~Magi Staff
+
+This type of staff mace is thoroughly linked to the spell casting profession, rare though it is. It is among the most powerful tools that a wizard may possess the culmination of complex enchantment and endless study. This particular example is good in melee and offers Invisibility and protection from Charms and Evil. It can also launch Dispel Magic. It is the quintessential mage item.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armor Class: +2 bonus
+ Saving Throws: +2 bonus
+ Invisibility
+ Immunity to Charm
+ Protection from Evil
+
+Combat Ability (each hit): Dispel Magic  
+THAC0: +1 bonus  (strikes as a +5 weapon)
+Damage: 1d6+1 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires: 5 Strength
+
+Weight: 4~
+@281  = ~Long Sword +4~
+@282  = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting.   
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+@283  = ~???~
+@284  = ~Attack~
+@285  = ~Chainmail Armor~
+@286  = ~Mithril Chain Mail +4~
+@287  = ~Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40~
+@288  = ~Mithril Chain Mail +4 forged by Bruenor for his nearest companions.   
+
+STATISTICS:  
+
+Armor Class: 1 (-1 vs. slashing, 3 vs. crushing)
+
+Weight: 7~
+@289  = ~Moonblade~
+@290  = ~This potent weapon was created by the smiths of ancient Myth Drannor. Moonblades are used in the long process of selecting a ruler for the Isle of Evermeet. A Moonblade chooses its owner, however, the former owner of this blade has joined the fallen and there is a chance that it will find itself a new owner. Anyone without elven blood in their veins finds themselves unable to lift the sword. This particular Moonblade gives resistance to fire and gives its user a bonus to his armor class.  
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Fire Resistance: +50%
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Long Swords
+Type: One-handed
+
+Weight: 3~
+@291  = ~Dark Opal Plate~
+@292  = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+
+STATISTICS:
+
+Armor Class: 1 (-3 vs. slashing, -2 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 70~
+@293  = ~Dark Opal Plate +1 :  'Plate of the Darkness'
+
+A demonic Warlord of Bhaal wore this piece of armor during his service for his master, the "God of Murder". He weakened during the time of troubles and lost his existence in a confrontation with Helm.  
+
+STATISTICS:
+
+Equipped abilities:
+- Acid Resistance: +15%
+- Cold Resistance: +15%
+- Fire Resistance: +15%
+- Lightning Resistance: +15%
+- Magic Resistance: +10%
+- Reduced damage from missile: +20%
+
+Armor Class: 0 (-4 vs. slashing, -3 vs. piercing and missile)
+Requires:
+ 14 Strength
+ 
+Weight: 35~
+@294  = ~Black Panther Figurine~
+@295  = ~This is Drizzt’s Black Panther Figurine that summons forth a Great Black Panther from the Outer Planes. Her name is Guenhwyvar and her loyalty towards Drizzt is unbreakable. 
+
+Special Abilities:
+ Summons Guenhwyvar once a day and if she gets seriously injured then Guenhwyvar returns to her outer planes.~
+@296  = ~Helm of the Mirror Eyes~
+@297  = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.  
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2~
+@298  = ~Helm of the Mirror Eyes
+
+This helm once belonged to a noble warrior famous for slaying a Medusa.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+- Protects wearer against petrification
+
+Weight: 2~
+@299  = ~Potion of Extra Healing~
+@300  = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion. ~
+@301  = ~When wholly consumed this potion restores 27 hitpoints to the person. The effect is instantaneous and the potion is destroyed in the process.~
+@302  = ~Potion of Superior Healing~
+@303  = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.~
+@304  = ~When consumed, this potion restores 40 hit points to the imbiber.  The effect is instantaneous, and the potion is destroyed in the process.~
+@305  = ~Rod~
+@306  = ~Rod of Resurrection~
+@307  = ~Rods are about three feet long and as thick as your thumb. They are normally found in cases or similar storage places. Rods can be fashioned from metal, wood, ivory, or bone. They can be plain or decorated and carved, tipped, or not. Rods are powered by charges, unless noted otherwise in the description of a particular rod. Each time the rod is used, one or more charge may be expended.~
+@308  = ~Rod of Resurrection
+This rod enables anyone to raise the dead as if they were of high enough level to cast the resurrection spell and if they were a priest. No rest is required, as the rod bestows the life giving effects. Each use of the rod expends one charge.~
+@309  = ~Scimitar~
+@310  = ~Scimitar +3~
+@311  = ~The long, curved, single edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Where the saber was intended mainly for horsemen, mainly because of its versatility, the scimitar has a heavier oriental influence. The "Shamshir", as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. The effect of this is that it is slightly slower but tends to be more effective and deadly in combat.  
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninja-Tō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~
+@312  = ~Scimitar +3: This scimitar was forged by the drow with the purpose to be used on the surface because their original crafted weapons turn to dust once hit by the light of the sun.   
+
+STATISTICS:
+  
+THACO: +3 bonus 
+Damage: 1d8+3 (slashing)
+Speed Factor: 3 
+Proficiency Type: Scimitar/Wakizashi/Ninja-Tō
+Type: One-handed 
+
+Weight: 3~
+@313  = ~Abyssal Idol~
+@314  = ~This Abyssal Idol has runes engraved all over it holding a message that its user may summon forth no less than a Tanari to fight for the user.~
+@315  = ~Two Handed Sword~
+@316  = ~Warblade +4~
+@317  = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.   
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15~
+@318  = ~Two Handed Sword +4, Warblade
+
+This large sword is an enchanted version of the barbaric swords of the Northern tribes. Forged during battle and dipped in the blood of the brave fallen, the enchantment granted to the blade by the barbarian gods is incredible. 
+
+STATISTICS:
+
+THAC0: +4 bonus
+Damage: 1d12+4 (slashing)
+Speed Factor: 6
+Proficiency Type: Two-handed sword 
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 11~
+@319  = ~Belhifet’s Sword of Grief +5~
+@320  = ~Belhifet’s Sword of Grief +5
+
+This is one of the many weapons of the greater demon Belhifet. The blade is particularly sharp and well balanced, and in a certain light one can see the faint image of a serpent within the hilt.
+
+STATISTICS:
+
+Combat Abilities:
+- 10% chance of 2d12 poison damage
+
+THAC0: +5 bonus
+Damage: 1d10+5 (slashing)
+Speed Factor: 5
+Proficiency Type: Two-handed sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 9~
+@321  = ~Thieves' Hood~
+@322  = ~Although this hood does not confer any noticeable advantages on its wearer, it does have an aura of latent magic.~
+@323  = ~There is no honor among thieves. Perhaps that is why the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
+
+STATISTICS:
+
+Equipped Abilities:
+- Immunity to disease and poison
+- Blur~
+@324  = ~Ghoul Touch~
+@325  = ~Cloak of the Werewolf~
+@326  = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
+@327  = ~Cloak of the Werewolf
+
+A mage who overestimated the amount of control he had over magic once created this cloak, and in the course of creating this garment he apparently inflicted lycanthropy upon himself. The wearer can change form whenever he wishes.  The mage was not so lucky.
+
+STATISTICS:
+
+Special: Polymorph into werewolf at will
+AC Bonus: +1
+
+Weight:  3~
+@328  = ~Winter Wolf Pelt~
+@329  = ~Wulfgar’s Winter Wolf Pelt~
+@330  = ~The pure white pelt of the winter wolf is soft and luxurious. It is often sewn into garments as diverse as the rugged vests of the northern Uthgardt Barbarians and the delicate and fashionable winter stoles worn by noblewomen throughout the Sword Coast region.~
+@331  = ~This pure white pelt of the winter wolf is soft and luxurious. It is enchanted by a shaman of the northern Uthgardt Barbarians.
+
+Equipped abilities:
+- Cold Resistance: +50%~
+@332  = ~Furs~
+@333  = ~Wulfgar's Fur Armor~
+@334  = ~Made from the pelts of wolves, these furs provide extraordinary protection. The barbarians of Icewind Dale have become very skilled at crafting such furs, leading to better protection with less weight. Of course, it helps that the animals used for the furs are as tough as nails, too.
+
+STATISTICS:
+
+Armor Class: 6 (8 vs. missile and piercing)
+Requires:
+ 4 Strength
+
+Weight: 3~
+@335  = ~War Hammer~
+@336  = ~Aegis-Fang +5~
+@337  = ~Warhammer +5: 'Aegis-Fang'
+
+Being a mighty barbarian warrior, Wulfgar required a hefty weapon. This beautifully crafted hammer does the trick! It was forged with the very heart and soul of Bruenor Battlehammer. He hand-crafted this mighty weapon, and ended his smithy career. After a dwarven smith crafts a weapon of such perfect beauty, balance, and function ability, he quits smithing and dwells on that one masterpiece.
+
+STATISTICS:
+
+THAC0: +5
+Damage: 2d4+5 (crushing)
+Speed Factor: 2
+Proficiency type: War Hammer
+Type: One-handed
+Requires:
+ 18 Strength
+
+Weight: 8~
+@338  = ~This class of open-face helmet, made of reinforced leather or metal, covers most of the head, save the face and neck.  These helmets commonly provide protection for the nose.  
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2~
+@339  = ~Giant Hair Crossbow +3~
+@340  = ~Heavy Crossbow +3: Giant Hair
+
+Though hard to verify, it is claimed that the bowstring of this crossbow is made from the hair of a Frost Giant.  Whatever the truth, the weapon is incredibly hard to draw, although its accuracy and subsequent damage are well worth the strain required (strength of 15 or greater).  
+
+STATISTICS:
+
+THAC0: +3 bonus
+Damage: +5
+Speed Factor: 7
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 15 Strength
+
+Weight: 11~
+
+@501 = ~Durlag's Pride +2~
+@502 = ~Two-Handed Sword +2 : 'Durlag's Pride'
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 10~
+@503 = ~Shield~
+
+//------------------------------------------------------------------------------------------------
+// Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
+//------------------------------------------------------------------------------------------------
+
+@10000 = ~Bear Tribe Quest~
+
+// 10001 used to be @19 in F_BEAROL.TRA
+@10001 = ~Bear Tribe Quest
+
+I have agreed to find the child of the now fallen Bear Tribe Leader. I have been told that he is captured by the Frost Giants who have ruined the village of the Bear Tribe. These giants act as henchmen for the Spirit of the Winter Wolf that has in plans to end the existence of the Bear Spirit. This can only be done by slaughtering the child in a Winter Ritual.~
+
+// 10002 used to be @20 in F_BEAROL.TRA
+@10002 = ~Bear Tribe Quest
+
+I found the child of the fallen Bear Tribe Leader and safely brought it to the Tribe Elder. They were more than thankful and rewarded me with their personal Horn of the Spirit Bear.~
+
+// 10003 used to be @3 in F_DRIZZT.TRA
+@10003 = ~Today I met no less than the famous ranger Drizzt while fighting some gnolls. I joined his cause and he offered to journey by my side for a while. Who can decline to that, though I fear that his companionship will bring along powerful foes as well.~
+
+// 10004 used to be @4 in F_REGIS.TRA
+@10004 = ~I met a halfling who was rather stressed out in his behavior. He didn't want to be disturbed so I left him to his business. Before I left he mentioned something about a dark ranger and if I was to meet him then I should bring him to the halfling whose name I didn't get.~
+
+// 10005 used to be @9 in F_REGIS.TRA
+@10005 = ~It seems that Drizzt's companions and friends are in trouble. As I feared, the journey by Drizzt's side will bring trouble far worse than I could ever imagine.~
+
+// 10006 used to be @14 in F_DRIZZT.TRA (Delayed Start component)
+@10006 = ~We have met up once again with Drizzt Do'Urden. We are to meet him at the Inn in Ulgoth's Beard in three days time.~
+
+// 10007 used to be @18 in F_DRIZZT.TRA (Delayed Start component)
+@10007 = ~I have joined company with Drizzt to accompany him to Icewind Dale. This is bound to be an eventful journey...~

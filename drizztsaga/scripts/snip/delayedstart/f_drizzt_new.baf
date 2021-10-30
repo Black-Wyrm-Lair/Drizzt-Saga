@@ -1,0 +1,7 @@
+IF
+	Global("F_DSDelayedStart","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("F_DSDelayedStart","GLOBAL",1)
+		SetGlobal("F_DealtWithGnolls","LOCALS",1)
+END

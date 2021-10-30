@@ -1,0 +1,51 @@
+IF
+	Clicked([ANYONE])
+	Global("F_Usesarco","MYAREA",0)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		SetGlobal("F_Usesarco","MYAREA",1)
+		DisplayString(Myself,@0)	// *You hear a whispering voice* Aid me...bring me my scull and I shall be ever grateful and rewarded well you will be.
+END
+
+IF
+	Clicked([ANYONE])
+	PartyHasItem("F_KSCULL")
+	Global("F_Usesarco","MYAREA",1)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		SetGlobal("F_Usesarco","MYAREA",2)
+		TakePartyItem("F_KSCULL")
+		PlaySound("%tutu_scripts%HAEL_04")
+		DisplayString(Myself,@1)	// You found it, free at last!
+		CreateCreature("F_LICH",[482.515],0)
+END
+
+IF
+	Clicked([ANYONE])
+	Global("F_Usesarco","MYAREA",1)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@2)	// You haven't brought my scull, do so and the reward is yours.
+END
+
+IF
+	Clicked([ANYONE])
+	Global("F_Usesarco","MYAREA",2)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@3)	// This is the sarcophagus where Kangaxx was imprisoned.
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@4)	// You are too far away to operate that device.
+END
+
+

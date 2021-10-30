@@ -1,0 +1,2561 @@
+// ---------------------------------------------------------------------------------------------------
+DEFINE_ACTION_MACRO ~DS_CORE_COMPONENT~ BEGIN
+// ---------------------------------------------------------------------------------------------------
+
+
+// CRE Animations:
+
+PRINT @358
+
+OUTER_SET DECODE_SOUNDS = 0
+
+ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+	OUTER_SET DECODE_SOUNDS = 1
+	COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~         //FROST GIANT
+	ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
+		COPY_EXISTING ~ORC06.cre~      ~override~
+	              ~HLOLAF.cre~         ~override~
+	              ~CHAK.cre~           ~override~
+	              ~AR18FIG.cre~        ~override~
+			WRITE_LONG 0x28  0xE700   //IC_OROG1 instead of IC_OROG2
+		BUT_ONLY
+	END
+	
+	COPY ~DRIZZTSAGA/Anim/MCYC~ ~override~         //Cyclop
+	
+	COPY ~DRIZZTSAGA/Anim/MTAN~ ~override~         //Merilith
+END
+
+ACTION_IF NOT (FILE_EXISTS ~data/TS-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+	COPY ~DRIZZTSAGA/Anim/MUMB~ ~override~         //Belhifet
+END
+
+//ACTION_IF NOT (FILE_EXISTS ~data/CTB-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+COPY ~DRIZZTSAGA/Anim/MTIC~ ~override~				//Harpy
+//END
+
+ACTION_IF GAME_IS ~BGEE~ BEGIN
+	COPY ~DRIZZTSAGA/Anim/MCOR~ ~override~		// BGEE is missing Cornugon animations...
+	
+	APPEND ~ANIMATE.IDS~ ~0xE0E0 IC_CORNUGONSKI~
+	UNLESS ~0xE0E0 IC_CORNUGONSKI~
+END ELSE BEGIN									// ... while BGT and Tutu need a fix for Drizzt's animation crashes
+	COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
+	COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
+END
+
+// Areas:
+
+PRINT @362
+
+APPEND ~MASTAREA.2DA~
+~F_7777  value
+F_7779  value
+F_8888  value
+F_0111  value
+F_0112  value
+F_0115  value
+F_0222  value~
+	UNLESS ~F_0111~
+
+// Determine what song IDs we're going to use
+OUTER_SET SONGID_DUNG1 = 16
+OUTER_SET SONGID_DUNG2 = 17
+OUTER_SET SONGID_DREAM = 5
+OUTER_SET SONGID_BD1 = 21
+OUTER_SET SONGID_BD2 = 22
+OUTER_SET SONGID_BW1 = 29
+OUTER_SET SONGID_BGTHEME = 33
+ACTION_IF GAME_IS ~BGT~ AND NOT MOD_IS_INSTALLED "setup-bgtmusic.tp2" "0" BEGIN
+	OUTER_SET SONGID_DUNG1 = 0
+	OUTER_SET SONGID_DUNG2 = 0
+	OUTER_SET SONGID_DREAM = 0
+	OUTER_SET SONGID_BD1 = 0
+	OUTER_SET SONGID_BD2 = 0
+	OUTER_SET SONGID_BW1 = 0
+	ACTION_IF MOD_IS_INSTALLED "setup-bgtmusic.tp2" "1" BEGIN	// Hybrid Baldur's Gate/Shadows of Amn/Throne of Bhaal Music - only has 1 dungeon track listed as DUNG.MUS
+		OUTER_SET SONGID_DUNG1 = 92
+		OUTER_SET SONGID_DUNG2 = 92
+	END
+	COPY_EXISTING - ~songlist.2da~ ~override~
+		  COUNT_2DA_ROWS 3 "num_rows"		  
+		  FOR (row = num_rows; row > 0; row -= 1) BEGIN
+		  	READ_2DA_ENTRY row 0 3 "song_id"
+		  	READ_2DA_ENTRY row 2 3 "mus_file"
+		  	PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "Dung1.mus" BEGIN
+		  		SET SONGID_DUNG1 = song_id
+		  	END ELSE
+		  	PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "Dung2.mus" BEGIN
+		  		SET SONGID_DUNG2 = song_id
+		  	END ELSE
+		  	PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "DREAM.mus" BEGIN
+		  		SET SONGID_DREAM = song_id
+		  	END ELSE
+		  	PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "BD4.mus" BEGIN
+		  		SET SONGID_BD1 = song_id
+		  	END ELSE
+		  	PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "BD5.mus" BEGIN
+		  		SET SONGID_BD2 = song_id
+		  	END ELSE
+		  	PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "BW1.mus" BEGIN
+		  		SET SONGID_BW1 = song_id
+		  	END //ELSE
+		  	//PATCH_IF ~%mus_file%~ STRING_EQUAL_CASE "BGTheme.mus" BEGIN
+		  	//	SET SONGID_BGTHEME = song_id
+		  	//END
+		  END
+END ELSE
+ACTION_IF GAME_IS ~BGEE~ BEGIN
+	OUTER_SET SONGID_BGTHEME = 82
+END
+	
+COPY ~DRIZZTSAGA/ARE/F_0111.are~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x13ec ~%_%POTN09~ #8
+	WRITE_ASCIIE 0x1400 ~%_%RING03~ #8
+	WRITE_ASCIIE 0x1414 ~%_%POTN34~ #8
+	WRITE_ASCIIE 0x150c ~%tutu_scripta%MB_E06C~ #8
+	WRITE_ASCIIE 0x15d8 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x15e0 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x15ec ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x15f4 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x15b0 %SONGID_DUNG2%		// day song id
+	WRITE_LONG 0x15b4 %SONGID_DUNG2%		// night song id
+	WRITE_LONG 0x15bc %SONGID_BD1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_0112.are~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x7fc ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x90c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0xa1c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0xb2c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0xc3c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0xd4c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x1338 ~%tutu_scripta%MB_E06B~ #8
+	WRITE_ASCIIE 0x14b4 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x14bc ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x14c8 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x14d0 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x148c %SONGID_DUNG2%		// day song id
+	WRITE_LONG 0x1490 %SONGID_DUNG2%		// night song id
+	WRITE_LONG 0x1498 %SONGID_BD1%			// battle song id
+	
+COPY ~DRIZZTSAGA/ARE/F_0113.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	
+COPY ~DRIZZTSAGA/ARE/F_0114.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+
+COPY ~DRIZZTSAGA/ARE/F_0115.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x5dc ~%_%WOLFWI~ #8	
+	WRITE_ASCIIE 0x6ec ~%_%WOLFWI~ #8	
+	WRITE_ASCIIE 0x7fc ~%_%WOLFWI~ #8	
+	WRITE_ASCIIE 0x90c ~%_%WOLFWI~ #8	
+	WRITE_ASCIIE 0xa1c ~%_%WOLFWI~ #8	
+	WRITE_ASCIIE 0xb2c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0xf1c ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0xf24 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0xf30 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0xf38 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xef4 %SONGID_BGTHEME%		// day song id
+	WRITE_LONG 0xef8 %SONGID_BGTHEME%		// night song id
+	WRITE_LONG 0xf00 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_0222.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x1a00 ~%_%POTN17~ #8	
+	WRITE_ASCIIE 0x1a44 ~%tutu_scripta%MB_E06B~ #8	
+	WRITE_ASCIIE 0x1bc0 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x1bc8 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x1bd4 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x1bdc ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x1b98 %SONGID_DUNG2%		// day song id
+	WRITE_LONG 0x1b9c %SONGID_DUNG2%		// night song id
+	WRITE_LONG 0x1ba4 %SONGID_BD1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_0223.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	SAY 0x794 @365
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x9a4 %SONGID_BGTHEME%		// day song id
+	WRITE_LONG 0x9a8 %SONGID_BGTHEME%		// night song id
+	WRITE_LONG 0x9b0 %SONGID_BW1%			// battle song id
+
+// Replace the original Drizzt with "our" Drizzt
+COPY_EXISTING ~%FishermansLake%.ARE~ ~override~
+	READ_LONG 0x54 ~actoroffset~
+	READ_SHORT 0x58 ~actornum~
+	SET ~numsofar~=0
+	WHILE (~%numsofar%~<~%actornum%~) BEGIN
+		READ_ASCII (~%numsofar%~*0x110 + ~%actoroffset%~+0x80) ~crename~ //(8)
+		PATCH_IF ~%crename%~ STRING_EQUAL_CASE ~%_%DRIZZT~ THEN BEGIN
+			WRITE_ASCII (~%numsofar%~*0x110 + ~%actoroffset%~+0x80) ~F_DRIZZT~ #8
+			WRITE_SHORT (~%numsofar%~*0x110 + ~%actoroffset%~+0x20) 2737
+			WRITE_SHORT (~%numsofar%~*0x110 + ~%actoroffset%~+0x22) 1998
+			WRITE_SHORT (~%numsofar%~*0x110 + ~%actoroffset%~+0x24) 2737
+			WRITE_SHORT (~%numsofar%~*0x110 + ~%actoroffset%~+0x26) 1998
+		END
+		SET ~numsofar~=~%numsofar%~+1
+	END	
+BUT_ONLY
+
+COPY ~DRIZZTSAGA/ARE/F_6661.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	SAY 0x234 @101
+	SAY 0x238 @101
+	WRITE_ASCIIE 0xaa0 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0xac8 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0xc41 ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0xc49 ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0xc55 ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0xc5d ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xc19 %SONGID_DUNG2%			// day song id
+	WRITE_LONG 0xc1d %SONGID_DUNG2%			// night song id
+	WRITE_LONG 0xc25 %SONGID_BD1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_6664.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_LONG 0x484 %SONGID_BGTHEME%		// day song id
+	WRITE_LONG 0x488 %SONGID_BGTHEME%		// night song id
+	WRITE_LONG 0x490 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_6666.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x144 ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0x14c ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0x158 ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0x160 ~%tutu_scripta%MB_E03B~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x11c %SONGID_DUNG2%			// day song id
+	WRITE_LONG 0x120 %SONGID_DUNG2%			// night song id
+	WRITE_LONG 0x128 %SONGID_BD1%			// battle song id	
+	// Embedded CREs:
+	// Actor 1
+	SAY 0x922 @43
+	SAY 0x926 @43
+	SAY 0x9be @371
+	SAY 0x9e2 @372
+	SAY 0xa06 @373
+	SAY 0xa0a @374
+	SAY 0xa26 @375
+	SAY 0xad2 @375
+	WRITE_ASCIIE 0xb6a ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIT 0xb9a ~F_DEATHK~
+	WRITE_ASCIIE 0xd72 ~%_%HELM08~ #8
+	WRITE_ASCIIE 0xd86 ~%_%PLAT04~ #8
+	WRITE_ASCII 0xd9a ~F_SW2H08~ #8
+	// Actor 2
+	SAY 0xdb6 @46
+	SAY 0xdba @46
+	SAY 0xe76 @419
+	SAY 0xe7a @420
+	SAY 0xe7e @421
+	SAY 0xe82 @422
+	SAY 0xe9a @420
+	SAY 0xe9e @423
+	SAY 0xeba @419
+	SAY 0xebe @420
+	SAY 0xec2 @421
+	SAY 0xec6 @422
+	WRITE_ASCIIE 0x1016 ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIE 0x11e2 ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x11f6 ~%_%PLAT04~ #8
+	WRITE_ASCIIE 0x120a ~%_%RING95~ #8
+	WRITE_ASCIIE 0x121e ~%_%SW1H11~ #8
+	// Actor 3
+	SAY 0x123a @46
+	SAY 0x123e @46
+	SAY 0x12fa @419
+	SAY 0x12fe @420
+	SAY 0x1302 @421
+	SAY 0x1306 @422
+	SAY 0x131e @420
+	SAY 0x1322 @423
+	SAY 0x133e @419
+	SAY 0x1342 @420
+	SAY 0x1346 @421
+	SAY 0x134a @422
+	WRITE_ASCIIE 0x149a ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIE 0x1666 ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x167a ~%_%PLAT04~ #8
+	WRITE_ASCIIE 0x168e ~%_%RING95~ #8
+	WRITE_ASCIIE 0x16a2 ~%_%SW1H11~ #8
+	// Actor 4
+	SAY 0x16be @42
+	SAY 0x16c2 @42
+	SAY 0x175a @371
+	SAY 0x177e @372
+	SAY 0x17a2 @373
+	SAY 0x17a6 @374
+	SAY 0x17c2 @375
+	SAY 0x186e @375
+	WRITE_LONG 0x16de 0x2300	// DEATH_KNIGHT
+	WRITE_ASCIIE 0x1906 ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIE 0x1b0e ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x1b22 ~%_%PLAT05~ #8
+	WRITE_ASCIIE 0x1b4a ~%_%%BG%SW2H07~ #8
+	// Actor 5
+	SAY 0x1b66 @44
+	SAY 0x1b6a @44
+	SAY 0x1c02 @400
+	SAY 0x1c06 @401
+	SAY 0x1c26 @402
+	SAY 0x1c3a @403
+	SAY 0x1c3e @404
+	SAY 0x1c4a @405
+	SAY 0x1c4e @406
+	SAY 0x1c6a @407
+	SAY 0x1c6e @408
+	SAY 0x1c72 @409
+	WRITE_ASCIIE 0x1da6 ~F_TANARI~ #8
+	WRITE_ASCIIE 0x1dbe ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_BYTE 0x1dd3 9		// gender -> SUMMONED_DEMON
+	WRITE_SHORT 0x1f8e 1	// weapon slot selected
+	// Actor 6
+	SAY 0x2006 @43
+	SAY 0x200a @43	
+	SAY 0x20a2 @371	
+	SAY 0x20c6 @372	
+	SAY 0x20ea @373
+	SAY 0x20ee @374	
+	SAY 0x210a @375	
+	SAY 0x21b6 @375	
+	WRITE_ASCIIE 0x224e ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIT 0x227e ~F_DEATHK~
+	WRITE_ASCIIE 0x2456 ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x246a ~%_%PLAT04~ #8
+	WRITE_ASCII 0x247e ~F_SW2H08~ #8
+	// Actor 7
+	SAY 0x249a @43
+	SAY 0x249e @43	
+	SAY 0x2536 @371
+	SAY 0x255a @372	
+	SAY 0x257e @373	
+	SAY 0x2582 @374		
+	SAY 0x259e @375		
+	SAY 0x264a @375		
+	WRITE_ASCIIE 0x26e2 ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIT 0x2712 ~F_DEATHK~
+	WRITE_ASCIIE 0x28ea ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x28fe ~%_%PLAT04~ #8
+	WRITE_ASCIIE 0x2912 ~F_SW2H08~ #8
+	// Actor 8
+	SAY 0x292e @16
+	SAY 0x2932 @16
+    SAY 0x29ca ~~ [F_BEL01]
+    SAY 0x29ee ~~ [F_BEL01]
+    SAY 0x2a02 ~~ [F_BEL03]
+    SAY 0x2a06 ~~ [F_BEL04]
+    SAY 0x2a12 ~~ [F_BEL08]
+    SAY 0x2a16 ~~ [F_BEL09]
+    WRITE_LONG 0x294e 0xE0D0		// IC_UMBERHULK
+    WRITE_ASCIIE 0x2b86 ~%tutu_scriptw%TASIGHT~ #8
+    WRITE_LONG 0x293a 20000			// XP value (45k seems like overkill...)
+    // Actor 9
+    SAY 0x2dce @43
+    SAY 0x2dd2 @43
+	SAY 0x2e6a @371	
+	SAY 0x2e8e @372	
+	SAY 0x2eb2 @373
+	SAY 0x2eb6 @374	
+	SAY 0x2ed2 @375	
+	SAY 0x2f7e @375	
+	WRITE_ASCIIE 0x3016 ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIT 0x3046 ~F_DEATHK~
+	WRITE_ASCIIE 0x321e ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x3232 ~%_%PLAT04~ #8
+	WRITE_ASCII 0x3246 ~F_SW2H08~ #8
+	// Actor 10
+    SAY 0x3262 @43
+    SAY 0x3266 @43    
+	SAY 0x32fe @371	
+	SAY 0x3322 @372	
+	SAY 0x3346 @373
+	SAY 0x334a @374	
+	SAY 0x3366 @375	
+	SAY 0x3412 @375	
+	WRITE_ASCIIE 0x34aa ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIT 0x34da ~F_DEATHK~
+	WRITE_ASCIIE 0x36b2 ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x36c6 ~%_%PLAT04~ #8
+	WRITE_ASCII 0x36da ~F_SW2H08~ #8
+	// Actor 11
+	SAY 0x36f6 @42
+	SAY 0x36fa @42	
+	SAY 0x3792 @371
+	SAY 0x37b6 @372
+	SAY 0x37da @373
+	SAY 0x37de @374
+	SAY 0x37fa @375
+	SAY 0x38a6 @375
+	WRITE_LONG 0x3716 0x2300	// DEATH_KNIGHT
+	WRITE_ASCIIE 0x393e ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIE 0x3b46 ~%_%HELM08~ #8
+	WRITE_ASCIIE 0x3b5a ~%_%PLAT05~ #8
+	WRITE_ASCIIE 0x3b82 ~%_%%BG%SW2H07~ #8
+	// Actor 12
+	SAY 0x3b9e @99
+	SAY 0x3ba2 @99
+    SAY 0x3c3a @446
+    SAY 0x3c3e @447
+    SAY 0x3c5e @448
+    SAY 0x3c62 @449
+    SAY 0x3c66 @446
+    SAY 0x3c82 @450
+    SAY 0x3c86 @451
+    SAY 0x3ca2 @449
+    SAY 0x3d4e @448
+	WRITE_ASCIIE 0x3de6 ~%tutu_scriptw%TASIGHT~ #8
+	// Actor 13
+	SAY 0x405a @99
+	SAY 0x405e @99	
+    SAY 0x40f6 @446
+    SAY 0x40fa @447    
+    SAY 0x411a @448
+    SAY 0x411e @449    
+    SAY 0x4122 @446    
+    SAY 0x413e @450    
+    SAY 0x4142 @451    
+    SAY 0x415e @449    
+    SAY 0x420a @448
+	WRITE_ASCIIE 0x42a2 ~%tutu_scriptw%TASIGHT~ #8
+	// Actor 14
+    SAY 0x4516 @43
+    SAY 0x451a @43    
+	SAY 0x45b2 @371	
+	SAY 0x45d6 @372		
+	SAY 0x45fa @373
+	SAY 0x45fe @374	
+	SAY 0x461a @375	
+	SAY 0x46c6 @375	
+	WRITE_ASCIIE 0x475e ~%tutu_scriptw%TASIGHT~ #8
+	WRITE_ASCIIT 0x478e ~F_DEATHK~
+	// Containers:
+	WRITE_ASCIIE 0x5ae6 ~%_%PLAT04~ #8
+	WRITE_ASCIIE 0x5afa ~%_%HELM08~ #8
+	WRITE_ASCII  0x5b0e ~F_SW2H08~  #8
+	WRITE_ASCIIE 0x5b22 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0x5b5e ~%_%POTN08~ #8
+	WRITE_ASCIIE 0x5b9a ~%_%POTN08~ #8
+	WRITE_ASCIIE 0x5bc2 ~%_%POTN12~ #8
+
+COPY ~DRIZZTSAGA/ARE/F_6667.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x2cfc ~%_%POTN14~ #8
+	WRITE_ASCIIE 0x2fc4 ~%tutu_scripta%MB_E40B~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x3068 %SONGID_DREAM%		// day song id
+	WRITE_LONG 0x306c %SONGID_DREAM%		// night song id
+	WRITE_LONG 0x3074 %SONGID_BW1%			// battle song id
+	
+COPY ~DRIZZTSAGA/ARE/F_6668.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0xb2c ~%tutu_scriptg%HOULLOR~ #8
+	WRITE_ASCIIE 0xc3c ~%tutu_scriptg%HOULLOR~ #8
+	WRITE_ASCIIE 0x19e8 ~%_%HELM06~ #8
+	WRITE_ASCIIE 0x1a90 ~%tutu_scripta%MB_E40A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x1bc0 %SONGID_DREAM%		// day song id
+	WRITE_LONG 0x1bc4 %SONGID_DREAM%		// night song id
+	WRITE_LONG 0x1bcc %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_7777.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x4cc ~%_%OGREMA~ #8
+	WRITE_ASCIIE 0x5dc ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x6ec ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x7fc ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x90c ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0xa1c ~%tutu_scripto%GREBERZ~ #8
+	WRITE_ASCIIE 0xb2c ~%tutu_scripto%GREBERZ~ #8
+	WRITE_ASCIIE 0xd4c ~%_%OGREMA~ #8	
+	WRITE_ASCIIE 0x13c8 ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x13d0 ~%_%WOLFWI~ #8
+	WRITE_ASCIIE 0x13d8 ~%_%WOLFWI~ #8	
+	WRITE_ASCIIE 0x1604 ~%tutu_scripta%MB_E06C~ #8	
+	WRITE_ASCIIE 0x16d0 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x16d8 ~%tutu_scripta%MB_E01A~ #8	
+	WRITE_ASCIIE 0x16e4 ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x16ec ~%tutu_scripta%MB_E01A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x16a8 %SONGID_DUNG2%		// day song id
+	WRITE_LONG 0x16ac %SONGID_DUNG2%		// night song id
+	WRITE_LONG 0x16b4 %SONGID_BD1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_7778.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x308 ~%_%POTN02~ #8
+	WRITE_ASCIIE 0x358 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+
+COPY ~DRIZZTSAGA/ARE/F_7779.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x19c ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x2ac ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3bc ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x4cc ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x5dc ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x6ec ~%_%WEREWO~ #8
+	WRITE_ASCII 0x7fc ~F_WERWGR~ #8
+	WRITE_ASCIIE 0xa1c ~%_%WORG~ #8
+	WRITE_ASCIIE 0xb2c ~%_%WORG~ #8
+	WRITE_ASCIIE 0xc3c ~%_%WORG~ #8
+	WRITE_ASCIIE 0x129c ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x13ac ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x14bc ~%_%WEREWO~ #8
+	WRITE_ASCII 0x15cc ~F_WERWGR~ #8
+	WRITE_ASCIIE 0x1f5c ~%_%WORG~ #8
+	WRITE_ASCIIE 0x206c ~%_%WORG~ #8
+	WRITE_ASCIIE 0x26cc ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x27dc ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x28ec ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x2c1c ~%_%WORG~ #8
+	WRITE_ASCIIE 0x3430 ~%_%WORG~ #8
+	WRITE_ASCIIE 0x34e8 ~%_%WEREWO~ #8
+	WRITE_ASCII 0x34f0 ~F_WERWGR~ #8
+	WRITE_ASCIIE 0x35c0 ~%_%WORG~ #8
+	WRITE_ASCIIE 0x35e8 ~%_%WORG~ #8
+	WRITE_ASCIIE 0x35f0 ~%_%WORG~ #8
+	WRITE_ASCIIE 0x35f8 ~%_%WORG~ #8
+	WRITE_ASCIIE 0x3678 ~%_%WEREWO~ #8
+	WRITE_ASCII 0x3680 ~F_WERWGR~ #8
+	WRITE_ASCIIE 0x3978 ~%tutu_scripta%MB_E06B~ #8
+	WRITE_ASCIIE 0x3980 ~%_%WEREW03~ #8
+	WRITE_ASCIIE 0x3af4 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3afc ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3b04 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3b0c ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3b14 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3b1c ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x3b24 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x3a1c %SONGID_DUNG2%		// day song id
+	WRITE_LONG 0x3a20 %SONGID_DUNG2%		// night song id
+	WRITE_LONG 0x3a28 %SONGID_BD1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_8888.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x4f4 ~%tutu_scripta%MB_E02B~ #8
+	WRITE_ASCIIE 0x4fc ~%tutu_scripta%MB_E02B~ #8
+	WRITE_ASCIIE 0x508 ~%tutu_scripta%MB_E02B~ #8
+	WRITE_ASCIIE 0x510 ~%tutu_scripta%MB_E02B~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x4cc %SONGID_DREAM%			// day song id
+	WRITE_LONG 0x4d0 %SONGID_DREAM%			// night song id
+	WRITE_LONG 0x4d8 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_8889.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x102c ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x1034 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x1040 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x1048 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x1004 %SONGID_DREAM%		// day song id
+	WRITE_LONG 0x1008 %SONGID_DREAM%		// night song id
+	WRITE_LONG 0x1010 %SONGID_BW1%			// battle song id
+	
+COPY ~DRIZZTSAGA/ARE/F_9191.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x9c8 ~%tutu_scripta%MB_S01A~ #8
+	WRITE_ASCIIE 0xb04 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xb0c ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xb18 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xb20 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xadc %SONGID_DUNG1%			// day song id
+	WRITE_LONG 0xae0 %SONGID_DUNG1%			// night song id
+	WRITE_LONG 0xae8 %SONGID_BD2%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9292.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x19c ~%tutu_scriptg%HOULLOR~ #8
+	WRITE_ASCIIE 0x2ac ~%tutu_scriptg%HOULLOR~ #8
+	WRITE_ASCIIE 0x4cc ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x5dc ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x6ec ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0xc1c ~%_%AMUL17~ #8
+	WRITE_ASCIIE 0xc30 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0xc44 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0xc58 ~%_%POTN08~ #8
+	WRITE_ASCIIE 0xc6c ~%_%POTN42~ #8
+	WRITE_ASCIIE 0xd34 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xd3c ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xd48 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xd50 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0xdf4 ~%tutu_scriptg%HOULLOR~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xd0c %SONGID_DUNG1%			// day song id
+	WRITE_LONG 0xd10 %SONGID_DUNG1%			// night song id
+	WRITE_LONG 0xd18 %SONGID_BD2%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9393.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x33c ~%tutu_scripta%MB_E40A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x430 %SONGID_BGTHEME%		// day song id
+	WRITE_LONG 0x434 %SONGID_BGTHEME%		// night song id
+	WRITE_LONG 0x43c %SONGID_BW1%			// battle song id
+	
+COPY ~DRIZZTSAGA/ARE/F_9494.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x520 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0x528 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0x534 ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0x53c ~%_%AMB_N02~ #8
+	WRITE_ASCIIE 0x5d0 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x5d8 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x5e0 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x5e8 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x5f0 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x5f8 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x600 ~%_%WEREWO~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x4f8 %SONGID_DUNG1%			// day song id
+	WRITE_LONG 0x4fc %SONGID_DUNG1%			// night song id
+	WRITE_LONG 0x504 %SONGID_BD2%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9595.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xeac %SONGID_DREAM%			// day song id
+	WRITE_LONG 0xeb0 %SONGID_DREAM%			// night song id
+	WRITE_LONG 0xeb8 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9696.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xb0c %SONGID_DREAM%			// day song id
+	WRITE_LONG 0xb10 %SONGID_DREAM%			// night song id
+	WRITE_LONG 0xb18 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9797.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x4b4 %SONGID_BGTHEME%		// day song id
+	WRITE_LONG 0x4b8 %SONGID_BGTHEME%		// night song id
+	WRITE_LONG 0x4c0 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9898.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0x19c ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x2ac ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x3bc ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x4cc ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x5dc ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x6ec ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x7fc ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x90c ~%_%%BG%SKELWA~ #8	
+	WRITE_ASCIIE 0x107c ~%tutu_scripta%MB_E02B~ #8
+	WRITE_ASCIIE 0x1084 ~%tutu_scripta%MB_E02B~ #8	
+	WRITE_ASCIIE 0x1090 ~%tutu_scripta%MB_E02B~ #8
+	WRITE_ASCIIE 0x1098 ~%tutu_scripta%MB_E02B~ #8	
+	WRITE_ASCIIE 0x112c ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x1134 ~%_%%BG%SKELWA~ #8	
+	WRITE_ASCIIE 0x113c ~%_%%BG%SKELWA~ #8	
+	WRITE_ASCIIE 0x1144 ~%_%%BG%SKELWA~ #8	
+	WRITE_ASCIIE 0x114c ~%_%%BG%SKELWA~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0x1054 %SONGID_DREAM%		// day song id
+	WRITE_LONG 0x1058 %SONGID_DREAM%		// night song id
+	WRITE_LONG 0x1060 %SONGID_BW1%			// battle song id
+
+COPY ~DRIZZTSAGA/ARE/F_9999.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
+	WRITE_ASCIIE 0xb58 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0xb60 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0xb6c ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0xb74 ~%tutu_scripta%MB_E02A~ #8
+	WRITE_ASCIIE 0x94 "%SOURCE_RES%" #8		// area script
+	WRITE_LONG 0xb30 %SONGID_DREAM%			// day song id
+	WRITE_LONG 0xb34 %SONGID_DREAM%			// night song id
+	WRITE_LONG 0xb3c %SONGID_BW1%			// battle song id
+
+// Add Medusas into the game, part 1
+COPY_EXISTING ~%CandlekeepCaves%.ARE~ ~override~
+	READ_LONG 0x54 ~actoroffset~
+	READ_SHORT 0x58 ~actornum~
+	SET ~numsofar~=0
+	WHILE (~%numsofar%~<~%actornum%~) BEGIN
+		READ_ASCII (~%numsofar%~*0x110 + ~%actoroffset%~+0x80) ~crename~
+		PATCH_IF ~%crename%~ STRING_EQUAL_CASE EVALUATE_BUFFER ~%_%BASILG~ THEN BEGIN
+			WRITE_ASCII (~%numsofar%~*0x110 + ~%actoroffset%~+0x80) ~F_MEDUSA~ #8
+		END
+		SET ~numsofar~=~%numsofar%~+1
+	END	
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Scripts:	
+
+PRINT @369
+
+COMPILE	EVALUATE_BUFFER ~DRIZZTSAGA/Scripts/BAF~
+COMPILE	EVALUATE_BUFFER ~DRIZZTSAGA/Scripts/BAF/%SrcFolder%~
+
+COPY_EXISTING ~%Undercity%.ARE~ ~override~
+	READ_ASCII AREA_SCRIPT ~Undercity_AreaScript~
+BUT_ONLY
+
+ACTION_IF FILE_EXISTS_IN_GAME ~%Undercity_AreaScript%.bcs~ THEN BEGIN
+	EXTEND_BOTTOM ~%Undercity_AreaScript%.bcs~ ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~
+END ELSE BEGIN
+	COPY ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~ ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
+	COMPILE ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
+END
+
+
+COPY_EXISTING ~%FishermansLake%.ARE~ ~override~
+	READ_ASCII AREA_SCRIPT ~FishermansLake_AreaScript~
+BUT_ONLY
+
+ACTION_IF FILE_EXISTS_IN_GAME ~%FishermansLake_AreaScript%.bcs~ THEN BEGIN
+	EXTEND_BOTTOM ~%FishermansLake_AreaScript%.bcs~ ~DRIZZTSAGA/scripts/SNIP/eRegis.BAF~
+END ELSE BEGIN
+	COPY ~DRIZZTSAGA/scripts/SNIP/eRegis.BAF~ ~DRIZZTSAGA/scripts/SNIP/%FishermansLake_AreaScript%.baf~
+	COMPILE ~DRIZZTSAGA/scripts/SNIP/%FishermansLake_AreaScript%.baf~
+END
+
+
+// Add Medusas into the game, part 2
+
+COPY_EXISTING ~%MutaminsGarden%.ARE~ ~override~
+	READ_ASCII AREA_SCRIPT ~MutaminsGarden_AreaScript~
+BUT_ONLY
+
+ACTION_IF FILE_EXISTS_IN_GAME ~%MutaminsGarden_AreaScript%.bcs~ THEN BEGIN
+	EXTEND_BOTTOM ~%MutaminsGarden_AreaScript%.bcs~ ~DRIZZTSAGA/scripts/SNIP/eMedusas.baf~
+END ELSE BEGIN
+	COPY ~DRIZZTSAGA/scripts/SNIP/eMedusas.baf~ ~DRIZZTSAGA/scripts/SNIP/%MutaminsGarden_AreaScript%.baf~
+	COMPILE ~DRIZZTSAGA/scripts/SNIP/%MutaminsGarden_AreaScript%.baf~
+END
+
+// Update gnolls script to use new drizzt DV:
+COPY_EXISTING ~%_%GNOLLDR.BCS~ ~override~
+  DECOMPILE_BCS_TO_BAF
+	REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~"Drizzt"~ ~"F_DRIZZT"~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+
+// BGT transition:
+	
+ACTION_IF GAME_IS ~BGT~ BEGIN
+	COPY_EXISTING ~ARAM00.BCS~ ~override~
+		DECOMPILE_BCS_TO_BAF
+			// 1. Say Goodbye to Drizzt & his band
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP
+~IF[%ws%]+InParty("Ajantis")~
+~IF
+  InParty("F_DRIZZT")
+THEN
+  RESPONSE #100
+    ActionOverride("F_DRIZZT",LeaveParty())
+    ActionOverride("F_DRIZZT",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_DRIZZT",ClearAllActions())
+    ActionOverride("F_DRIZZT",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_DRIZZT")
+  Dead("F_DRIZZT")
+THEN
+  RESPONSE #100
+    ActionOverride("F_DRIZZT",LeaveParty())
+    ActionOverride("F_DRIZZT",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("F_CATTIBR")
+THEN
+  RESPONSE #100
+    ActionOverride("F_CATTIBR",LeaveParty())
+    ActionOverride("F_CATTIBR",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_CATTIBR",ClearAllActions())
+    ActionOverride("F_CATTIBR",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_CATTIBR")
+  Dead("F_CATTIBR")
+THEN
+  RESPONSE #100
+    ActionOverride("F_CATTIBR",LeaveParty())
+    ActionOverride("F_CATTIBR",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("F_BRUENOR")
+THEN
+  RESPONSE #100
+    ActionOverride("F_BRUENOR",LeaveParty())
+    ActionOverride("F_BRUENOR",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_BRUENOR",ClearAllActions())
+    ActionOverride("F_BRUENOR",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_BRUENOR")
+  Dead("F_BRUENOR")
+THEN
+  RESPONSE #100
+    ActionOverride("F_BRUENOR",LeaveParty())
+    ActionOverride("F_BRUENOR",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("F_ARTEMIS")
+THEN
+  RESPONSE #100
+    ActionOverride("F_ARTEMIS",LeaveParty())
+    ActionOverride("F_ARTEMIS",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_ARTEMIS",ClearAllActions())
+    ActionOverride("F_ARTEMIS",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_ARTEMIS")
+  Dead("F_ARTEMIS")
+THEN
+  RESPONSE #100
+    ActionOverride("F_ARTEMIS",LeaveParty())
+    ActionOverride("F_ARTEMIS",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("F_JARLAXE")
+THEN
+  RESPONSE #100
+    ActionOverride("F_JARLAXE",LeaveParty())
+    ActionOverride("F_JARLAXE",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_JARLAXE",ClearAllActions())
+    ActionOverride("F_JARLAXE",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_JARLAXE")
+  Dead("F_JARLAXE")
+THEN
+  RESPONSE #100
+    ActionOverride("F_JARLAXE",LeaveParty())
+    ActionOverride("F_JARLAXE",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("F_REGIS2")
+THEN
+  RESPONSE #100
+    ActionOverride("F_REGIS2",LeaveParty())
+    ActionOverride("F_REGIS2",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_REGIS2",ClearAllActions())
+    ActionOverride("F_REGIS2",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_REGIS2")
+  Dead("F_REGIS2")
+THEN
+  RESPONSE #100
+    ActionOverride("F_REGIS2",LeaveParty())
+    ActionOverride("F_REGIS2",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("F_WULFGAR")
+THEN
+  RESPONSE #100
+    ActionOverride("F_WULFGAR",LeaveParty())
+    ActionOverride("F_WULFGAR",ChangeAIScript("",DEFAULT))
+    ActionOverride("F_WULFGAR",ClearAllActions())
+    ActionOverride("F_WULFGAR",DestroySelf())    
+    Continue()
+END
+
+IF
+  InPartyAllowDead("F_WULFGAR")
+  Dead("F_WULFGAR")
+THEN
+  RESPONSE #100
+    ActionOverride("F_WULFGAR",LeaveParty())
+    ActionOverride("F_WULFGAR",DestroySelf())
+    Continue()
+END
+
+IF
+  InParty("Ajantis")~
+
+			// 2. Erase DS journal entries
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+~DayNight(MIDNIGHT)~
+~DayNight(MIDNIGHT)
+	EraseJournalEntry(@10001)
+    EraseJournalEntry(@10002)
+    EraseJournalEntry(@10003)
+    EraseJournalEntry(@10004)
+    EraseJournalEntry(@10005)~
+		COMPILE_BAF_TO_BCS
+		
+	BUT_ONLY
+END
+
+
+// Dialogs:
+
+ADD_JOURNAL @10001 @10002 @10003 @10004 @10005
+
+// create a backup copy of drizzt dialog to restore if Delayed Start is installed later
+COPY_EXISTING ~%_%drizzt.dlg~ ~DRIZZTSAGA\DLG\DelayedStart\backup.dlg~
+
+COMPILE EVALUATE_BUFFER ~DRIZZTSAGA/DLG~
+//COMPILE EVALUATE_BUFFER ~DRIZZTSAGA/DLG/%SrcFolder%~
+
+  
+// Creatures:
+
+PRINT @360
+
+COPY ~DRIZZTSAGA/CRE/F_ARTEMI.CRE~ ~override~
+  SAY NAME1 @2
+  SAY NAME2 @2
+  SAY INITIAL_MEETING @3
+  SAY MORALE @4
+  SAY LEADER @3
+  SAY TIRED @5
+  SAY BORED @6
+  SAY BATTLE_CRY1 @3
+  SAY BATTLE_CRY2 @5
+  SAY BATTLE_CRY3 @7
+  SAY BATTLE_CRY4 @8
+  SAY DAMAGE @9
+  SAY DYING @10
+  SAY SELECT_COMMON1 @3
+  SAY SELECT_COMMON2 @5
+  SAY SELECT_COMMON3 @6
+  SAY BIO @11
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x4e8 ~%_%RING05~ #8
+  WRITE_ASCIIE 0x4fc ~%_%RING07~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_BEARFM.cre~ ~override~
+  SAY NAME1 @12
+  SAY NAME2 @12
+  SAY INITIAL_MEETING @377
+  SAY DAMAGE @378
+  SAY DYING @379
+  SAY SELECT_COMMON1 @380
+  WRITE_ASCIIE 0x3b4 ~%_%AX1H01~ #8
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_BEAROL.cre~ ~override~
+  SAY NAME1 @13
+  SAY NAME2 @13
+  SAY INITIAL_MEETING @381
+  SAY DAMAGE @382
+  SAY DYING @383
+  SAY SELECT_COMMON1 @384
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%LEAT02~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%BLUN11~ #8
+  WRITE_ASCIIE 0x40c ~%_%BLUN03~ #8
+  WRITE_ASCIIE 0x420 ~%_%MISC53~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_BEARSU.CRE~ ~override~
+  SAY NAME1 @14
+  SAY NAME2 @14
+  SAY BATTLE_CRY1 @385
+  SAY 0xcc @386
+  SAY 0xdc @387
+  SAY 0xe0 @388
+  SAY 0xec @389
+  SAY 0xf0 @390
+  SAY 0x10c @391
+  SAY 0x110 @392
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x414 ~%_%RING99~ #8
+  WRITE_ASCIIE 0x428 ~%_%IMMUNE1~ #8
+  
+COPY ~DRIZZTSAGA/CRE/F_BEARW2.cre~ ~override~
+	 ~DRIZZTSAGA/CRE/F_BEARW1.cre~ ~override~
+  SAY NAME1 @15
+  SAY NAME2 @15
+  SAY INITIAL_MEETING @393
+  SAY BATTLE_CRY1 @393
+  SAY 0xec @394
+  SAY 0xf0 @395
+  SAY 0x1a0 @393
+  SAY 0x1a4 @396
+  SAY 0x1a8 @397
+  SAY 0x1ac @398
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3c8 ~%_%LEAT04~ #8
+  WRITE_ASCIIE 0x3dc ~%_%SHLD08~ #8
+  WRITE_ASCIIE 0x3f0 ~%_%AX1H01~ #8
+    
+COPY ~DRIZZTSAGA/CRE/F_BRUENO.CRE~ ~override~
+  SAY NAME1 @22
+  SAY NAME2 @22
+  SAY INITIAL_MEETING @23
+  SAY TIRED @23
+  SAY BORED @23
+  SAY BATTLE_CRY1 @24
+  SAY DAMAGE @25
+  SAY DYING @26
+  SAY SELECT_COMMON1 @23
+  SAY SELECT_COMMON2 @24
+  SAY BIO @27
+  WRITE_ASCIIE 0x4fc ~%_%SHLD02~ #8
+  WRITE_ASCIIE 0x510 ~%_%BRAC10~ #8
+  WRITE_ASCIIE 0x538 ~%_%BOLT06~ #8
+  WRITE_ASCIIE 0x54c ~%_%POTN08~ #8
+  
+COPY ~DRIZZTSAGA/CRE/F_CATTIB.CRE~ ~override~
+  SAY NAME1 @28
+  SAY NAME2 @28
+  SAY INITIAL_MEETING @29
+  SAY BATTLE_CRY1 @30
+  SAY DAMAGE @31
+  SAY DYING @32
+  SAY SELECT_COMMON1 @33
+  SAY SELECT_COMMON2 @29
+  SAY 0x198 @34  
+  SAY BIO @35
+  WRITE_ASCIIE 0x4a4 ~%_%CHAN07~ #8
+  WRITE_ASCIIE 0x4b8 ~%_%BRAC04~ #8
+  WRITE_ASCIIE 0x508 ~%_%POTN08~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DEADM2.CRE~ ~override~
+  SAY NAME1 @40
+  SAY NAME2 @40
+  SAY INITIAL_MEETING @376
+  SAY DYING @399
+  WRITE_ASCIIE 0x3b4 ~%_%LEAT04~ #8
+  WRITE_ASCIIE 0x3c8 ~%_%RING14~ #8
+  WRITE_ASCIIE 0x3dc ~%_%AX1H01~ #8
+  WRITE_ASCIIE 0x3f0 ~%_%BOW03~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_deathl.CRE~ ~override~
+  SAY NAME1 @43
+  SAY NAME2 @43
+  SAY INITIAL_MEETING @371
+  SAY BATTLE_CRY1 @372
+  SAY DAMAGE @373
+  SAY DYING @374
+  SAY SELECT_COMMON1 @375  
+  SAY PICKED_POCKET @375
+  WRITE_ASCII 0x280 ~F_DEATHK~ #18
+  WRITE_ASCIIE 0x250 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x468 ~%_%HELM08~ #8
+  WRITE_ASCIIE 0x47c ~%_%PLAT04~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DEMDRG.CRE~ ~override~
+  SAY NAME1 @44
+  SAY NAME2 @44
+  SAY INITIAL_MEETING @400
+  SAY 0xa8 @401
+  SAY 0xc8 @402
+  SAY 0xdc @403
+  SAY 0xe0 @404
+  SAY 0xec @405
+  SAY 0xf0 @406
+  SAY 0x10c @407
+  SAY 0x110 @408
+  SAY 0x114 @409
+  SAY 0x1b8 @407
+  WRITE_ASCII 0x248 ~F_TANARI~ #8
+  WRITE_ASCIIE 0x260 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x414 ~%tutu_scriptr%INGDEMN~ #8
+  WRITE_ASCIIE 0x428 ~%_%S1-10~ #8
+  WRITE_ASCIIE 0x43c ~%_%WYVERN2~ #8
+  
+COPY ~DRIZZTSAGA/CRE/F_DEMSPI.CRE~ ~override~
+  SAY NAME1 @45
+  SAY NAME2 @45
+  SAY BATTLE_CRY1 @410
+  SAY 0xcc @411
+  SAY 0xdc @412
+  SAY 0xe0 @413
+  SAY 0xec @414
+  SAY 0xf0 @415
+  SAY 0x10c @416
+  SAY 0x110 @417
+  SAY 0x1b8 @418
+  WRITE_ASCIIE 0x248 ~%_%PSPIDER~ #8
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%MAGE06~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%ANTIWEB~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DEMWAR.CRE~ ~override~
+  SAY NAME1 @46
+  SAY NAME2 @46
+  SAY 0xc8 @419
+  SAY 0xcc @420
+  SAY 0xd0 @421
+  SAY 0xd4 @422
+  SAY 0xec @420
+  SAY 0xf0 @423
+  SAY 0x10c @419
+  SAY 0x110 @420
+  SAY 0x114 @421
+  SAY 0x118 @422
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%HELM08~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%PLAT04~ #8
+  WRITE_ASCIIE 0x40c ~%_%RING95~ #8
+  WRITE_ASCIIE 0x420 ~%_%SW1H11~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DIPNOS.cre~ ~override~
+  SAY NAME1 @47
+  SAY NAME2 @47
+  SAY INITIAL_MEETING @95
+  SAY DAMAGE @91
+  SAY DYING @92
+  SAY 0x10c @95
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%LEAT02~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%SW1H08~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DRAGON.CRE~ ~override~
+  SAY NAME1 @48
+  SAY NAME2 @48
+  SAY 0xc8 @427
+  SAY 0xcc @428
+  SAY 0xdc @429
+  SAY 0xe0 @430
+  SAY 0xe4 @431
+  SAY 0xec @432
+  SAY 0xf0 @433
+  SAY 0x10c @434
+  SAY 0x110 @435
+  SAY 0x1b8 @436
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%RING97~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DRIZZT.CRE~ ~override~
+  SAY NAME1 @49
+  SAY NAME2 @49
+  SAY INITIAL_MEETING @50
+  SAY UNHAPPY_BREAKING  @51
+  SAY BORED #-1
+  SAY BATTLE_CRY1 @52
+  SAY BATTLE_CRY2 @53
+  SAY BATTLE_CRY3 @54
+  SAY DAMAGE @55
+  SAY DYING @56
+  SAY SELECT_COMMON1 @57
+  SAY SELECT_COMMON2 @58
+  SAY SELECT_COMMON3 @53
+  SAY SELECT_COMMON4 @54
+  SAY 0x198 @59  
+  SAY BIO @60
+  WRITE_ASCIIE 0x2cc ~%_%DRIZZT~ #8
+  WRITE_ASCIIE 0x5b8 ~%_%CHAN06~ #8
+  WRITE_ASCIIE 0x5cc ~%_%AMUL17~ #8
+  WRITE_ASCIIE 0x5e0 ~%_%BOOT01~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DROMAG.CRE~ ~override~
+  SAY NAME1 @61
+  SAY NAME2 @61
+  SAY INITIAL_MEETING @76
+  SAY TIRED @77
+  SAY BORED @77
+  SAY BATTLE_CRY1 @78
+  SAY AREA_CITY @77
+  SAY DAMAGE ~~ [F_DRSL16]
+  SAY DYING ~~ [F_DRSL15]
+  SAY SELECT_COMMON3 @77 
+  SAY SELECT_COMMON2 @82 
+  SAY SELECT_COMMON1 @17
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%CLCK10~ #8
+  WRITE_ASCIIE 0x420 ~%_%POTN03~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DROWAR.CRE~ ~override~
+  SAY NAME1 @62
+  SAY NAME2 @62
+  SAY BATTLE_CRY1 @78
+  SAY DAMAGE ~~ [F_DRSL16]
+  SAY DYING ~~ [F_DRSL15]
+  SAY TIRED @77 
+  SAY BORED @77 
+  SAY AREA_CITY @77 
+  SAY SELECT_COMMON3 @77 
+  SAY SELECT_COMMON2 @82 
+  SAY SELECT_COMMON1 @17 
+  SAY INITIAL_MEETING @18 
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%PLAT01~ #8
+  WRITE_ASCIIE 0x40c ~%_%POTN08~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DROWPR.CRE~ ~override~
+  SAY NAME1 @63
+  SAY NAME2 @63
+  SAY BATTLE_CRY1 @19 
+  SAY DAMAGE @424
+  SAY DYING @425
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%PLAT01~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%HAMM03~ #8
+  WRITE_ASCIIE 0x40c ~%_%POTN08~ #8
+  
+COPY ~DRIZZTSAGA/CRE/F_DRSCUL.CRE~ ~override~
+  SAY NAME1 @64
+  SAY NAME2 @64
+  SAY 0xc8 @402
+  SAY 0xec @405
+  SAY 0xf0 @406
+  WRITE_ASCIIE 0x3e4 ~%_%IMMUNE1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DWSMIT.CRE~ ~override~
+  SAY NAME1 @65
+  SAY NAME2 @65
+  SAY INITIAL_MEETING @23
+  SAY TIRED @23
+  SAY BORED @23
+  SAY BATTLE_CRY1 @24
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%HELM01~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%CHAN02~ #8
+  WRITE_ASCIIE 0x40c ~%_%HAMM02~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_ELMINS.CRE~ ~override~
+  SAY NAME1 @66
+  SAY NAME2 @66
+  SAY INITIAL_MEETING @341
+  SAY UNHAPPY_BREAKING @342
+  SAY BATTLE_CRY1 @343
+  SAY DAMAGE @344
+  SAY DYING @345
+  SAY SELECT_COMMON1 @346
+  SAY SELECT_COMMON2 @347
+  SAY SELECT_COMMON3 @348
+  SAY SELECT_ACTION4 @349
+  WRITE_ASCIIE 0x3e4 ~%_%STAF01~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_ERRTU.CRE~ ~override~
+  SAY NAME1 @67
+  SAY NAME2 @67
+  SAY INITIAL_MEETING @400
+  SAY 0xa8 @401
+  SAY 0xc8 @402
+  SAY 0xdc @403
+  SAY 0xe0 @404
+  SAY 0xec @405
+  SAY 0xf0 @406
+  SAY 0x10c @407
+  SAY 0x110 @408
+  SAY 0x114 @409
+  SAY 0x1b8 @407
+  WRITE_ASCIIE 0x260 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x414 ~%tutu_scriptr%INGDEMN~ #8
+  WRITE_ASCIIE 0x428 ~%_%S1-10~ #8
+  WRITE_ASCIIE 0x43c ~%_%WYVERN2~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_GHOST.CRE~ ~override~
+  SAY NAME1 @69
+  SAY NAME2 @69
+  SAY 0xc8 @437
+  SAY 0xcc @438
+  SAY 0xdc @437
+  SAY 0xec @439
+  SAY 0xf0 @440
+  SAY 0x10c @441
+  SAY 0x110 @437
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x414 ~%_%RING99~ #8
+  WRITE_ASCIIE 0x428 ~%_%IMMUNE1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_JARLAX.cre~ ~override~
+  SAY NAME1 @75
+  SAY NAME2 @75
+  SAY INITIAL_MEETING @76
+  SAY TIRED @77
+  SAY BORED @77
+  SAY BATTLE_CRY1 @78
+  SAY DAMAGE @79
+  SAY DYING @80
+  SAY AREA_CITY @77
+  SAY SELECT_COMMON1 @81
+  SAY SELECT_COMMON2 @82
+  SAY SELECT_COMMON3 @77
+  SAY BIO @83
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x4b8 ~%_%BRAC10~ #8
+  WRITE_ASCIIE 0x4cc ~%_%BOOT01~ #8
+  WRITE_ASCIIE 0x508 ~%_%POTN06~ #8  
+  
+COPY ~DRIZZTSAGA/CRE/F_REGIS2.CRE~ ~override~
+	 ~DRIZZTSAGA/CRE/F_REGIS.CRE~ ~override~
+  SAY NAME1 @89
+  SAY NAME2 @89
+  SAY INITIAL_MEETING @90
+  SAY DAMAGE @91
+  SAY DYING @92
+  SAY SELECT_COMMON1 @93
+  SAY SELECT_COMMON2 @94
+  SAY SELECT_COMMON3 @95
+  SAY BIO @96  
+  PATCH_IF ("%SOURCE_RES%" STRING_EQUAL_CASE "F_REGIS2") BEGIN
+    WRITE_ASCIIE 0x3dc ~%_%LEAT07~ #8
+    WRITE_ASCIIE 0x3f0 ~%_%SW1H10~ #8
+    WRITE_ASCIIE 0x404 ~%_%POTN08~ #8
+  END ELSE BEGIN
+    WRITE_ASCIIE 0x2d4 ~%_%LEAT07~ #8
+    WRITE_ASCIIE 0x2e8 ~%_%BOOT01~ #8
+    WRITE_ASCIIE 0x2fc ~%_%SW1H09~ #8
+  END
+
+COPY ~DRIZZTSAGA/CRE/F_ROBED2.CRE~ ~override~
+  SAY NAME1 @97
+  SAY NAME2 @97
+  SAY INITIAL_MEETING @351
+  SAY BATTLE_CRY1 @352
+  SAY DAMAGE ~~ [F_IREN05]
+  SAY DYING ~~ [F_IREN06]
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_ROBED.CRE~ ~override~
+  SAY NAME1 @97
+  SAY NAME2 @97
+  SAY INITIAL_MEETING @443
+  SAY 0xec @444
+  SAY 0xf0 @445
+  SAY 0x10c @443
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x420 ~%tutu_scriptr%INGLOUP~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_SLAYSH.cre~ ~override~
+  SAY NAME1 @99
+  SAY NAME2 @99
+  SAY INITIAL_MEETING @446
+  SAY 0xa8 @447
+  SAY 0xc8 @448
+  SAY 0xcc @449
+  SAY 0xd0 @446
+  SAY 0xec @450
+  SAY 0xf0 @451
+  SAY 0x10c @449
+  SAY 0x1bc @448
+  WRITE_ASCIIE 0x250 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x444 ~%_%IMMUNE1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_SPIBEA.CRE~ ~override~
+  SAY NAME1 @14
+  SAY NAME2 @14
+  SAY 0xc8 @385
+  SAY 0xcc @386
+  SAY 0xdc @387
+  SAY 0xe0 @388
+  SAY 0xec @389
+  SAY 0xf0 @390
+  SAY 0x10c @391
+  SAY 0x110 @392
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x414 ~%_%RING99~ #8
+  WRITE_ASCIIE 0x428 ~%_%IMMUNE1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_SPIDQU.CRE~ ~override~
+  SAY NAME1 @100
+  SAY NAME2 @100
+  SAY INITIAL_MEETING @452
+  SAY 0xc8 @453
+  SAY 0xec @454
+  SAY 0xf0 @455
+  SAY 0x10c @453
+  SAY 0x110 @452
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%RING95~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%IMMUNE1~ #8
+  WRITE_ASCIIE 0x40c ~%_%ANTIWEB~ #8  
+
+COPY ~DRIZZTSAGA/CRE/F_SUMSPI.CRE~ ~override~
+  SAY NAME1 @102
+  SAY NAME2 @102
+  SAY 0xc8 @410
+  SAY 0xcc @411
+  SAY 0xdc @412
+  SAY 0xe0 @413
+  SAY 0xec @414
+  SAY 0xf0 @415
+  SAY 0x10c @416
+  SAY 0x110 @417
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%ANTIWEB~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%SPIDPH1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_TANARI.CRE~ ~override~
+	 ~DRIZZTSAGA/CRE/F_TANSUM.CRE~ ~override~
+  SAY NAME1 @103
+  SAY NAME2 @103
+  SAY INITIAL_MEETING @400
+  SAY 0xa8 @401
+  SAY 0xc8 @402
+  SAY 0xdc @403
+  SAY 0xe0 @404
+  SAY 0xec @405
+  SAY 0xf0 @406
+  SAY 0x10c @407
+  SAY 0x110 @408
+  SAY 0x114 @409
+  SAY 0x1b8 @407
+  WRITE_ASCIIE 0x260 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%tutu_scriptr%INGDEMN~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%S1-10~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_WERECH.CRE~ ~override~
+  SAY NAME1 @107
+  SAY NAME2 @107
+  SAY INITIAL_MEETING @456
+  SAY 0xc8 @457
+  SAY 0xcc @458
+  SAY 0xec @459
+  SAY 0xf0 @460
+  SAY 0x10c @458
+  SAY 0x1b8 @458
+  WRITE_ASCIIE 0x250 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~IMMUNE2~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_WLFSPR.cre~ ~override~
+  SAY NAME1 @108
+  SAY NAME2 @108
+  SAY 0xc8 @461
+  SAY 0xcc @462
+  SAY 0xdc @463
+  SAY 0xe0 @464
+  SAY 0xec @465
+  SAY 0xf0 @466
+  SAY 0x10c @467
+  SAY 0x110 @468
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x444 ~%_%RING99~ #8
+  WRITE_ASCIIE 0x458 ~%_%IMMUNE1~ #8
+  
+COPY ~DRIZZTSAGA/CRE/F_WULFGA.CRE~ ~override~
+  SAY NAME1 @109
+  SAY NAME2 @109
+  SAY INITIAL_MEETING @110
+  SAY UNHAPPY_BREAKING @111
+  SAY BATTLE_CRY1 @112
+  SAY BATTLE_CRY2 @113
+  SAY BATTLE_CRY3 @114
+  SAY DAMAGE @115
+  SAY DYING @116
+  SAY SELECT_COMMON1 @110
+  SAY SELECT_COMMON2 @117
+  SAY SELECT_COMMON3 @114
+  SAY SELECT_COMMON4 @113
+  SAY 0x198 @118
+  SAY BIO @119
+  WRITE_ASCIIE 0x4cc ~%_%SHLD02~ #8
+  WRITE_ASCIIE 0x508 ~%_%POTN08~ #8
+  WRITE_ASCIIE 0x51c ~%_%POTN20~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_DEATHK.CRE~ ~override~
+  SAY NAME1 @42
+  SAY NAME2 @42
+  SAY INITIAL_MEETING @371
+  SAY BATTLE_CRY1 @372
+  SAY DAMAGE @373
+  SAY DYING @374
+  SAY SELECT_COMMON1 @375  
+  SAY PICKED_POCKET @375
+  WRITE_LONG 0x28 0x2300	// DEATH_KNIGHT
+  WRITE_ASCIIE 0x260 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x408 ~%_%HELM08~ #8
+  WRITE_ASCIIE 0x41c ~%_%PLAT05~ #8
+  WRITE_ASCIIE 0x444 ~%_%%BG%SW2H07~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_ETTIN.cre~ ~override~
+  SAY NAME1 @68
+  SAY NAME2 @68
+  SAY INITIAL_MEETING ~~ [ETTIN01]
+  SAY BATTLE_CRY1 ~~ [ETTIN03A]
+  SAY ATTACK1 ~~ [ETTIN04A]
+  SAY DAMAGE ~~ [ETTIN08]
+  SAY DYING ~~ [ETTIN09A]
+  WRITE_LONG 0x28 0xE010		// IC_ETTIN
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+	
+COPY ~DRIZZTSAGA/CRE/F_GIANTF.cre~ ~override~
+  SAY NAME1 @70
+  SAY NAME2 @70
+  SAY INITIAL_MEETING ~~ [F_GIANT1]
+  SAY BATTLE_CRY1 ~~ [F_GIANT1]
+  SAY DAMAGE ~~ [F_GIANT4]
+  SAY DYING ~~ [F_GIANT5]
+  WRITE_LONG 0x28 0xE710		// IC_OROG2
+  WRITE_ASCIIE 0x258 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x40c ~%_%POTN11~ #8
+	
+COPY ~DRIZZTSAGA/CRE/F_CORN.CRE~ ~override~
+	 ~DRIZZTSAGA/CRE/F_CORN02.CRE~ ~override~
+  SAY NAME1 @36
+  SAY NAME2 @36
+  SAY INITIAL_MEETING ~~ [F_CORN01]
+  SAY BATTLE_CRY1 ~~ [F_CORN02]
+  SAY ATTACK1 ~~ [F_CORN03]
+  SAY ATTACK2 ~~ [F_CORN04]
+  SAY DAMAGE ~~ [F_CORN08]
+  SAY DYING ~~ [F_CORN09]
+  SAY SELECT_COMMON1 ~~ [F_CORN01]
+  WRITE_LONG 0x28 0xE0E0		// IC_CORNUGONSKI
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%tutu_scriptr%INGDEMN~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_orc.cre~ ~override~
+  SAY NAME1 @88
+  SAY NAME2 @88
+  SAY INITIAL_MEETING ~~ [F_ORC01]
+  SAY BATTLE_CRY1 ~~ [F_ORC02]
+  SAY ATTACK1 ~~ [F_ORC03]
+  SAY ATTACK2 ~~ [F_ORC04]
+  SAY DAMAGE ~~ [F_ORC08]
+  SAY DYING ~~ [F_ORC09]
+  WRITE_LONG 0x28 0xE800		// IC_ORC_MELEE1
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%HELM01~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%AX1H01~ #8
+  WRITE_ASCIIE 0x40c ~%BG1RNDTRE_WELL%~
+	
+COPY ~DRIZZTSAGA/CRE/F_BEL.CRE~ ~override~
+  SAY NAME1 @16
+  SAY NAME2 @16
+  SAY INITIAL_MEETING ~~ [F_BEL01]
+  SAY BATTLE_CRY1 ~~ [F_BEL01]
+  SAY ATTACK1 ~~ [F_BEL03]
+  SAY ATTACK2 ~~ [F_BEL04]
+  SAY DAMAGE ~~ [F_BEL08]
+  SAY DYING ~~ [F_BEL09]
+  WRITE_LONG 0x28 0xE0D0		// IC_UMBERHULK
+  WRITE_ASCIIE 0x260 ~%tutu_scriptw%TASIGHT~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_CYCLOP.cre~ ~override~
+  SAY NAME1 @37
+  SAY NAME2 @37
+  SAY INITIAL_MEETING ~~ [F_CYCLO1]
+  SAY BATTLE_CRY1 ~~ [F_CYCLO5]
+  SAY ATTACK1 ~~ [F_CYCLO3]
+  SAY ATTACK2 ~~ [F_CYCLO4]
+  SAY DAMAGE ~~ [F_CYCLO8]
+  SAY DYING ~~ [F_CYCLO9]
+  SAY SELECT_COMMON1 ~~ [F_CYCLO1]
+  WRITE_LONG 0x28 0xE000   //IC_CYCLOP
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_MARI.cre~ ~override~
+  SAY NAME1 @85
+  SAY NAME2 @85
+  SAY INITIAL_MEETING ~~ [F_MARB01]
+  SAY MORALE ~~ [F_MARB04]
+  SAY BATTLE_CRY1 ~~ [F_MARB01]
+  SAY BATTLE_CRY2 ~~ [F_MARB02]
+  SAY BATTLE_CRY3 ~~ [F_MARB03]
+  SAY ATTACK1 ~~ [F_MARAT1]
+  SAY ATTACK2 ~~ [F_MARAT2]
+  SAY ATTACK3 ~~ [F_MARAT4]
+  SAY DAMAGE ~~ [F_MARAT6]
+  SAY DYING ~~ [F_MARAT7]
+  WRITE_LONG 0x28 0xE090   //IC_MERILITH
+  WRITE_ASCIIE 0x248 ~%tutu_scripts%HOUTDLG~ #8
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_GUEN.CRE~ ~override~
+  SAY NAME1 @73
+  SAY NAME2 @73
+  SAY INITIAL_MEETING ~~ [F_PANTH1]
+  SAY BATTLE_CRY1 ~~ [F_PANTH1]
+  SAY BATTLE_CRY2 ~~ [F_PANTH2]
+  SAY ATTACK1 ~~ [F_PANTH3]
+  SAY ATTACK2 ~~ [F_PANTH4]
+  SAY ATTACK3 ~~ [F_PANTH5]
+  SAY DAMAGE ~~ [F_PANTH6]
+  SAY DYING ~~ [F_PANTH7]
+  SAY SELECT_COMMON1 ~~ [F_PANTH1]
+  WRITE_LONG 0x28 0x7F0A   //GREATCAT_PANTHER
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_HARPY.CRE~ ~override~
+  SAY NAME1 @74
+  SAY NAME2 @74
+  SAY INITIAL_MEETING ~~ [F_HARPY1]
+  SAY BATTLE_CRY1 ~~ [F_HARPY3]
+  SAY BATTLE_CRY2 ~~ [F_HARPY1]
+  SAY ATTACK1 ~~ [F_HARPY4]
+  SAY ATTACK2 ~~ [F_HARPY6]
+  SAY DAMAGE ~~ [F_HARPY8]
+  SAY DYING ~~ [F_HARPY9]
+  SAY SELECT_COMMON1 ~~ [F_HARPY1]
+  WRITE_LONG 0x28 0xE0A0   //IC_ICE_TROLL
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x444 ~%_%IMMUNE1~ #8
+  WRITE_ASCIIE 0x46c ~%BG1RNDTRE_RICH%~
+	
+COPY ~DRIZZTSAGA/CRE/F_GOBELE.CRE~ ~override~
+  SAY NAME1 @71
+  SAY NAME2 @71
+  SAY INITIAL_MEETING ~~ [F_GOB01]
+  SAY BATTLE_CRY1 ~~ [F_GOB11]
+  SAY BATTLE_CRY2 ~~ [F_GOB02]
+  SAY ATTACK1 ~~ [F_GOB03]
+  SAY ATTACK2 ~~ [F_GOB04]
+  SAY DAMAGE ~~ [F_GOB08]
+  SAY DYING ~~ [F_GOB09]
+  SAY SELECT_COMMON1 ~~ [F_GOB10]
+  WRITE_LONG 0x28 0xE420	// IC_GOBLINELITE_AXE
+  WRITE_ASCIIE 0x258 ~%_%XVART~ #8
+  WRITE_ASCIIE 0x268 ~%_%WDARSGT~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%SW1H08~ #8
+  WRITE_ASCIIE 0x420 ~%_%LEAT04~ #8
+  WRITE_ASCIIE 0x40c ~%BG1RNDTRE_AVRG%~
+	
+COPY ~DRIZZTSAGA/CRE/F_GOBLIN.CRE~ ~override~
+  SAY NAME1 @72
+  SAY NAME2 @72
+  SAY INITIAL_MEETING ~~ [F_GOB01]
+  SAY BATTLE_CRY1 ~~ [F_GOB11]
+  SAY BATTLE_CRY2 ~~ [F_GOB02]
+  SAY ATTACK1 ~~ [F_GOB03]
+  SAY ATTACK2 ~~ [F_GOB04]
+  SAY DAMAGE ~~ [F_GOB08]
+  SAY DYING ~~ [F_GOB09]
+  SAY SELECT_COMMON1 ~~ [F_GOB10]
+  WRITE_LONG 0x28 0xE400	// IC_GOBLIN_AXE
+  WRITE_ASCIIE 0x258 ~%_%XVART~ #8
+  WRITE_ASCIIE 0x268 ~%_%WDARSGT~ #8
+  WRITE_ASCIIE 0x3f8 ~%_%SW1H07~ #8
+  WRITE_ASCIIE 0x40c ~%BG1RNDTRE_AVRG%~
+
+COPY ~DRIZZTSAGA/CRE/F_LICH.cre~ ~override~
+  SAY NAME1 @84
+  SAY NAME2 @84
+  SAY 0xc8 @438
+  SAY 0xcc @470
+  SAY 0xf0 @439
+  WRITE_LONG 0x28 0x7F0D	// LICH
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x46c ~%_%GHAST1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_MUMMY.CRE~ ~override~
+  SAY NAME1 @86
+  SAY NAME2 @86
+  SAY 0xc8 @471
+  SAY 0xcc @472
+  SAY 0xdc @473
+  SAY 0xe0 @474
+  SAY 0xf0 @439
+  SAY 0x10c @475
+  SAY 0x110 @476
+  WRITE_LONG 0x28 0xE080	// IC_MUMMY
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8 
+  WRITE_ASCIIE 0x3f8 ~%_%RING95~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_SHFIEN.CRE~ ~override~
+  SAY NAME1 @98
+  SAY NAME2 @98
+  SAY 0xc8 @438
+  SAY 0xdc @438
+  SAY 0xf0 @440
+  WRITE_LONG 0x28 0x7703	// SHADOW
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8 
+  WRITE_ASCIIE 0x414 ~%_%RING95~ #8
+  WRITE_ASCIIE 0x428 ~%_%IMMUNE1~ #8
+  WRITE_ASCIIE 0x43c ~%_%GHOUL1~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_VALEN.CRE~ ~override~
+  SAY NAME1 @104
+  SAY NAME2 @104
+  SAY BATTLE_CRY1 @20
+  SAY BATTLE_CRY2 @21
+  SAY DAMAGE ~~ [F_VMPFX7]
+  SAY DYING ~~ [F_VMPFX8]
+  WRITE_LONG 0x28 0x7F22	// VAMPIRE_FEMALE
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8 
+  WRITE_ASCIIE 0x450 ~%BG1RNDTRE_RICH%~
+
+COPY ~DRIZZTSAGA/CRE/F_VAMPF.CRE~ ~override~
+  SAY NAME1 @105
+  SAY NAME2 @105
+  SAY BATTLE_CRY1 @20
+  SAY BATTLE_CRY2 @21
+  SAY DAMAGE ~~ [F_VMPFX7]
+  SAY DYING ~~ [F_VMPFX8]
+  WRITE_LONG 0x28 0x7F22	// VAMPIRE_FEMALE
+  WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8 
+  WRITE_ASCIIE 0x450 ~%BG1RNDTRE_RICH%~
+  
+COPY ~DRIZZTSAGA/CRE/F_WERWGR.cre~         ~override~
+  SAY NAME1 @131
+  SAY NAME2 @131
+  SAY INITIAL_MEETING @456
+  SAY 0xc8 @457
+  SAY 0xcc @458
+  SAY 0xec @459
+  SAY 0xf0 @460
+  SAY 0x10c @457
+  SAY 0x110 @458
+  WRITE_LONG 0x28 0x7E01 //WEREWOLF_GREATER
+  WRITE_ASCIIE 0x250 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCII 0x3e4 ~IMMUNE2~ #8	// WRITE_ASCIIE 0x3e4 ~%tutu_scriptr%INGLOUP~ #8	--> would make him pretty much invincible
+  WRITE_ASCIIE 0x3f8 ~%_%S1-12~ #8
+
+COPY ~DRIZZTSAGA/CRE/F_WLFWGR.cre~         ~override~
+  SAY NAME1 @132
+  SAY NAME2 @132 
+  SAY INITIAL_MEETING @456
+  SAY 0xc8 @457
+  SAY 0xcc @458
+  SAY 0xec @459
+  SAY 0xf0 @460
+  SAY 0x10c @457
+  SAY 0x110 @458
+  WRITE_LONG 0x28 0x7E01 //WEREWOLF_GREATER
+  WRITE_ASCIIE 0x250 ~%tutu_scriptw%TASIGHT~ #8
+  WRITE_ASCIIE 0x3e4 ~%_%IMMUNE1~ #8
+  WRITE_ASCIIE 0x3f8 ~%tutu_scriptr%INGWOLF~ #8
+  WRITE_ASCIIE 0x40c ~%_%S1-12~ #8
+  WRITE_ASCIIE 0x420 ~%_%MISC96~ #8
+
+COPY_EXISTING ~%_%DEATHK1.CRE~ ~override~
+			  ~%_%DEATHK.CRE~ ~override~
+    REPLACE_CRE_ITEM ~F_DEATHS~ #0 #0 #0 ~UNDROPPABLE~ ~WEAPON1~ EQUIP
+    ADD_CRE_ITEM ~%_%%BG%SW2H07~ #0 #0 #0 ~NONE~ ~INV~
+    PATCH_IF ("%SOURCE_RES%" STRING_EQUAL_CASE EVALUATE_BUFFER "%_%DEATHK") BEGIN
+    	REPLACE_CRE_ITEM ~%_%HELM08~ #0 #0 #0 ~NONE~ ~HELMET~
+    	REPLACE_CRE_ITEM ~%_%PLAT05~ #0 #0 #0 ~NONE~ ~ARMOR~
+    END
+BUT_ONLY
+
+COPY ~DRIZZTSAGA/CRE/F_DEADBO.cre~ ~override~
+  SAY NAME1 @38
+  SAY NAME2 @38
+  SAY INITIAL_MEETING @376
+  
+COPY ~DRIZZTSAGA/CRE/F_DEADMA.cre~ ~override~
+  SAY NAME1 @40
+  SAY NAME2 @40
+  SAY INITIAL_MEETING @376
+
+COPY ~DRIZZTSAGA/CRE/F_DEADWM.cre~ ~override~
+  SAY NAME1 @41
+  SAY NAME2 @41
+  SAY INITIAL_MEETING @376
+  
+COPY ~DRIZZTSAGA/CRE/F_NIB.cre~ ~override~
+  SAY NAME1 @87
+  SAY NAME2 @87
+  SAY INITIAL_MEETING @350
+  SAY SELECT_COMMON1 @350
+  SAY 0xec @91
+  SAY 0xf0 @92
+
+COPY ~DRIZZTSAGA/CRE/F_WAILIN.CRE~ ~override~
+  SAY NAME1 @106
+  SAY NAME2 @106
+  SAY 0xc8 @469
+  SAY 0xdc @469
+  SAY DAMAGE ~~ [F_VMPFX7]
+  SAY DYING ~~ [F_VMPFX8]
+  WRITE_ASCIIE 0x450 ~%BG1RNDTRE_RICH%~
+ 
+COPY ~DRIZZTSAGA/CRE/F_DEADHR.cre~ ~override~
+  SAY NAME1 @39
+  SAY NAME2 @39
+  
+COPY ~DRIZZTSAGA/CRE/F_STONGL.CRE~ ~override~
+  SAY NAME1 @101
+  SAY NAME2 @101  
+
+COPY ~DRIZZTSAGA/CRE/F_MEDUSA.cre~ ~override~
+  SAY NAME1 @120
+  SAY NAME2 @120
+  SAY INITIAL_MEETING ~~ [F_MED03]
+  SAY BATTLE_CRY1 ~~ [F_MED03]
+  SAY ATTACK1 ~~ [TRA_04C]
+  SAY ATTACK2 ~~ [F_MED04]
+  SAY DAMAGE ~~ [F_MED06]
+  SAY DYING ~~ [F_MED07]
+  WRITE_ASCIIE 0x3e4 ~%BG1RNDTRE_RICH%~
+
+  
+// BALDUR.GAM patch to add new joinable characters
+
+PRINT @488
+
+COPY - ~DRIZZTSAGA/misc/F_PATCH.2DA~ ~DRIZZTSAGA/misc~
+	COUNT_2DA_ROWS 5 GAM_count
+	READ_2DA_ENTRIES_NOW ~#GAM_patch_table~ 5	
+BUT_ONLY
+
+COPY_EXISTING ~BALDUR.GAM~ ~override~
+	READ_LONG 0x20 "PC_offset"
+	READ_LONG 0x28 "US_offset"
+	READ_LONG 0x30 "NPC_offset"
+	READ_LONG 0x38 "glob_offset"
+	READ_LONG 0x50 "jrnl_offset"
+	READ_LONG 0x34 "NPC_num"
+	READ_LONG 0x68 "famil_offset"
+	READ_LONG 0x6c "locat_offset"
+	READ_LONG 0x78 "US2_offset"
+	
+	SET "idx" = 0
+	WHILE ("%idx%" < "%GAM_count%") BEGIN
+	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 1 "cre_name"
+	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 2 "area_name"
+	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 3 "loc_x"
+	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 4 "loc_y"
+	  
+	  INSERT_BYTES "%NPC_offset%" 0x160
+	  WRITE_ASCIIE ("%NPC_offset%" + 0x0c) "%cre_name%" #8
+	  WRITE_ASCIIE ("%NPC_offset%" + 0x18) "%area_name%" #8
+	  WRITE_SHORT ("%NPC_offset%" + 0x20) "%loc_x%"
+	  WRITE_SHORT ("%NPC_offset%" + 0x22) "%loc_y%"
+	  WRITE_SHORT ("%NPC_offset%" + 0x8c) 0xffff
+	  WRITE_SHORT ("%NPC_offset%" + 0x8e) 0xffff
+	  WRITE_SHORT ("%NPC_offset%" + 0x90) 0xffff
+	  WRITE_SHORT ("%NPC_offset%" + 0x92) 0xffff
+	  WRITE_SHORT ("%NPC_offset%" + 0xb4) 0xffff
+	  WRITE_SHORT ("%NPC_offset%" + 0xb6) 0xffff
+	  WRITE_SHORT ("%NPC_offset%" + 0xb8) 0xffff	  
+	  SET "idx" = "%idx%" + 1
+	END
+	
+	PATCH_IF ("%idx%" > 0) BEGIN	
+	  SET "delta" = 0x160 * "%idx%"
+	  SET "NPC_num" = "%NPC_num%" + "%idx%"
+	  WRITE_LONG 0x34 "%NPC_num%"
+	  
+      PATCH_IF ("%PC_offset%">="%NPC_offset%") BEGIN
+        "PC_offset"="%PC_offset%"+"%delta%"
+        WRITE_LONG  0x20 "%PC_offset%"
+      END
+      PATCH_IF ("%US_offset%">="%NPC_offset%") BEGIN
+        "US_offset"="%US_offset%"+"%delta%"
+        WRITE_LONG  0x28  "%US_offset%"
+      END
+      PATCH_IF ("%glob_offset%">="%NPC_offset%") BEGIN
+        "glob_offset"="%glob_offset%"+"%delta%"
+        WRITE_LONG  0x38  "%glob_offset%"
+      END
+      PATCH_IF ("%jrnl_offset%">="%NPC_offset%") BEGIN
+        "jrnl_offset"="%jrnl_offset%"+"%delta%"
+        WRITE_LONG  0x50  "%jrnl_offset%"
+      END
+      PATCH_IF ("%famil_offset%">="%NPC_offset%") BEGIN
+        "famil_offset"="%famil_offset%"+"%delta%"
+        WRITE_LONG  0x68  "%famil_offset%"
+      END
+      PATCH_IF ("%locat_offset%">="%NPC_offset%") BEGIN
+        "locat_offset"="%locat_offset%"+"%delta%"
+        WRITE_LONG  0x6c  "%locat_offset%"
+      END
+      PATCH_IF ("%US2_offset%">="%NPC_offset%") BEGIN
+        "US2_offset"="%US2_offset%"+"%delta%"
+        WRITE_LONG  0x78  "%US2_offset%"
+      END
+	END
+BUT_ONLY
+
+
+// Placeholders for possible future expansions on NPC interaction
+// 2DA appends for new joinable characters
+
+PRINT @357
+
+ACTION_IF GAME_IS ~BGT~ BEGIN
+	OUTER_SPRINT "PDialog_Appends"
+~F_JARLAXE    F_JARLAP            F_JARLAJ          ***            ***                ***                ***                 ***
+F_ARTEMIS    F_ARTEMP            F_ARTEMJ          ***            ***                ***                ***                 ***
+F_CATTIBR    F_CATTIP            F_CATTIJ          ***            ***                ***                ***                 ***
+F_BRUENOR    F_BRUENP            F_BRUENJ          ***            ***                ***                ***                 ***
+F_REGIS2     F_REGISP            F_REGISJ          ***            ***                ***                ***                 ***
+F_DRIZZT     F_DRIZTP            F_DRIZTJ          ***            ***                ***                ***                 ***
+F_WULFGAR    F_WULFGP            F_WULFGJ          ***            ***                ***                ***                 ***~
+END
+ELSE  // Tutu, BGEE
+BEGIN
+	OUTER_SPRINT "PDialog_Appends"
+~F_JARLAXE    F_JARLAP            F_JARLAJ          ***
+F_ARTEMIS    F_ARTEMP            F_ARTEMJ          ***
+F_CATTIBR    F_CATTIP            F_CATTIJ          ***
+F_BRUENOR    F_BRUENP            F_BRUENJ          ***
+F_REGIS2     F_REGISP            F_REGISJ          ***
+F_DRIZZT     F_DRIZTP            F_DRIZTJ          ***
+F_WULFGAR    F_WULFGP            F_WULFGJ          ***~
+END
+
+APPEND ~PDIALOG.2DA~ ~%PDialog_Appends%~
+UNLESS ~F_REGIS2~
+
+ACTION_IF GAME_IS ~BGT~ BEGIN
+	OUTER_SPRINT "Interdia_Appends"
+~F_JARLAXE       F_JARLAB      ***
+F_CATTIBR       F_CATTIB      ***
+F_ARTEMIS       F_ARTEMB      ***
+F_BRUENOR       F_BRUENB      ***
+F_REGIS2        F_REGISB      ***
+F_DRIZZT        F_DRIZTB      ***
+F_WULFGAR       F_WULFGB      ***~
+END
+ELSE // Tutu, BGEE
+BEGIN
+	OUTER_SPRINT "Interdia_Appends"
+~F_JARLAXE       F_JARLAB
+F_CATTIBR       F_CATTIB
+F_ARTEMIS       F_ARTEMB
+F_BRUENOR       F_BRUENB
+F_REGIS2        F_REGISB
+F_DRIZZT        F_DRIZTB
+F_WULFGAR       F_WULFGB~
+END
+
+APPEND ~INTERDIA.2DA~ ~%Interdia_Appends%~
+UNLESS ~F_REGIS2~
+
+
+// Items:
+
+PRINT @363
+
+COPY ~DRIZZTSAGA/ITM/F_ADAGGR.ITM~     ~override~
+  SAY NAME1 @133 
+  SAY NAME2 @134 
+  SAY UNIDENTIFIED_DESC @135
+  SAY DESC @136
+
+COPY ~DRIZZTSAGA/ITM/F_ALEAT.ITM~     ~override~       
+  SAY NAME1 @137 
+  SAY NAME2 @138 
+  SAY UNIDENTIFIED_DESC @139
+  SAY DESC @140
+
+COPY ~DRIZZTSAGA/ITM/F_AMUL28.ITM~     ~override~       
+  SAY NAME1 @141 
+  SAY NAME2 @141
+  SAY UNIDENTIFIED_DESC @142
+  SAY DESC @143
+
+COPY ~DRIZZTSAGA/ITM/F_AMSHLD.ITM~     ~override~       
+  SAY NAME1 @141 
+  SAY NAME2 @144 
+  SAY UNIDENTIFIED_DESC @142
+  SAY DESC @145
+
+COPY ~DRIZZTSAGA/ITM/F_AMSPID.ITM~     ~override~       
+  SAY NAME1 @146 
+  SAY NAME2 @146 
+  SAY UNIDENTIFIED_DESC @147 
+  SAY DESC @148
+
+COPY ~DRIZZTSAGA/ITM/F_ARTSWD.ITM~     ~override~       
+  SAY NAME1 @149 
+  SAY NAME2 @150 
+  SAY UNIDENTIFIED_DESC @151 
+  SAY DESC @152
+
+COPY ~DRIZZTSAGA/ITM/F_BEARKI.itm~     ~override~       
+  SAY NAME1 @153 
+  SAY NAME2 @153 
+  SAY UNIDENTIFIED_DESC @154 
+  SAY DESC @154
+
+COPY ~DRIZZTSAGA/ITM/F_BEARSU.ITM~     ~override~       
+  SAY NAME1 @155
+  SAY NAME2 @155
+  SAY UNIDENTIFIED_DESC @156
+  SAY DESC @156
+  SAY 0x16e @477
+  SAY 0x19e @478
+
+COPY ~DRIZZTSAGA/ITM/F_BELAMU.ITM~     ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_BELSW.ITM~     ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_BELT12.ITM~     ~override~       
+  SAY NAME1 @157 
+  SAY NAME2 @158 
+  SAY UNIDENTIFIED_DESC @159 
+  SAY DESC @160
+
+COPY ~DRIZZTSAGA/ITM/F_BELT13.ITM~     ~override~       
+  SAY NAME1 @157 
+  SAY NAME2 @161 
+  SAY UNIDENTIFIED_DESC @159 
+  SAY DESC @162
+
+COPY ~DRIZZTSAGA/ITM/F_BELT14.ITM~     ~override~       
+  SAY NAME1 @157 
+  SAY NAME2 @163 
+  SAY UNIDENTIFIED_DESC @159 
+  SAY DESC @164
+
+COPY ~DRIZZTSAGA/ITM/F_BLUN28.ITM~     ~override~       
+  SAY NAME1 @165 
+  SAY NAME2 @166 
+  SAY UNIDENTIFIED_DESC @167 
+  SAY DESC @168
+
+COPY ~DRIZZTSAGA/ITM/F_BLUN35.ITM~     ~override~       
+  SAY NAME1 @169 
+  SAY NAME2 @170 
+  SAY UNIDENTIFIED_DESC @171 
+  SAY DESC @172
+
+COPY ~DRIZZTSAGA/ITM/F_BOOTHS.ITM~     ~override~       
+  SAY NAME1 @173 
+  SAY NAME2 @174 
+  SAY UNIDENTIFIED_DESC @175 
+  SAY DESC @176
+
+COPY ~DRIZZTSAGA/ITM/F_BRUBOO.ITM~     ~override~       
+  SAY NAME1 @177 
+  SAY NAME2 @177 
+  SAY UNIDENTIFIED_DESC @178 
+  SAY DESC @178
+
+COPY ~DRIZZTSAGA/ITM/F_BRUEAX.ITM~     ~override~       
+  SAY NAME1 @179 
+  SAY NAME2 @180 
+  SAY DESC @181
+
+COPY ~DRIZZTSAGA/ITM/F_BRUEHL.ITM~     ~override~       
+  SAY NAME1 @182 
+  SAY NAME2 @183 
+  SAY DESC @184
+  WRITE_ASCIIE 0x3a ~%BAMprespfx%HELM01~ #8
+
+COPY ~DRIZZTSAGA/ITM/F_BRUEPL.ITM~     ~override~       
+  SAY NAME1 @185 
+  SAY NAME2 @186 
+  SAY UNIDENTIFIED_DESC @187 
+  SAY DESC @188
+  WRITE_ASCIIE 0x3a ~%BAMprespfx%PLAT04~ #8
+
+COPY ~DRIZZTSAGA/ITM/F_BRUEXB.ITM~     ~override~       
+  SAY NAME1 @189 
+  SAY NAME2 @190 
+  SAY UNIDENTIFIED_DESC @191 
+  SAY DESC @192
+
+COPY ~DRIZZTSAGA/ITM/F_CATARW.ITM~           ~override~  
+  SAY NAME1 @193 
+  SAY NAME2 @194 
+  SAY DESC @195
+
+COPY ~DRIZZTSAGA/ITM/F_CATSBW.ITM~           ~override~        
+  SAY NAME1 @196 
+  SAY NAME2 @197 
+  SAY DESC @198
+
+COPY ~DRIZZTSAGA/ITM/F_CATSWD.ITM~           ~override~        
+  SAY NAME1 @199 
+  SAY NAME2 @200 
+  SAY DESC @201
+
+COPY ~DRIZZTSAGA/ITM/F_CLDCLK.ITM~          ~override~       
+  SAY NAME1 @202 
+  SAY NAME2 @202 
+  SAY UNIDENTIFIED_DESC @203 
+  SAY DESC @203
+
+COPY ~DRIZZTSAGA/ITM/F_CORN.ITM~             ~override~          
+  SAY NAME1 @204 
+  SAY NAME2 @204 
+  SAY UNIDENTIFIED_DESC @205
+  SAY 0xae @479
+  SAY 0x10e @479
+  SAY 0x16e @479
+  SAY 0x1ce @479
+  SAY 0x22e @479
+  SAY 0x28e @479
+  SAY 0x2ee @479
+  SAY 0x34e @479
+  SAY 0x3ae @479
+  SAY 0x40e @479
+  SAY 0x46e @479
+
+COPY ~DRIZZTSAGA/ITM/F_CYCWPN.ITM~           ~override~        
+  SAY NAME2 @206 
+
+COPY ~DRIZZTSAGA/ITM/F_DAGPSN.ITM~           ~override~        
+  SAY NAME1 @207 
+  SAY NAME2 @208 
+  SAY UNIDENTIFIED_DESC @209 
+  SAY DESC @210
+
+COPY ~DRIZZTSAGA/ITM/F_DDRINK.ITM~           ~override~        
+  SAY NAME1 @211 
+  SAY NAME2 @212 
+  SAY UNIDENTIFIED_DESC @213 
+  SAY DESC @214
+  SAY 0x19e @480
+
+COPY ~DRIZZTSAGA/ITM/F_DEATHS.ITM~          ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_DEMLIT.ITM~          ~override~       
+  SAY NAME1 @215 
+  SAY NAME2 @216 
+  SAY UNIDENTIFIED_DESC @217 
+  SAY DESC @218
+
+COPY ~DRIZZTSAGA/ITM/F_DEMSPI.ITM~          ~override~       
+  SAY NAME1 @219 
+
+COPY ~DRIZZTSAGA/ITM/F_DISMAC.ITM~          ~override~       
+  SAY NAME1 @165 
+  SAY NAME2 @220 
+  SAY UNIDENTIFIED_DESC @221 
+  SAY DESC @222
+
+COPY ~DRIZZTSAGA/ITM/F_DRAGCL.ITM~          ~override~       
+  SAY NAME1 @219 
+
+COPY ~DRIZZTSAGA/ITM/F_DRGPLA.ITM~          ~override~       
+  SAY NAME1 @223 
+  SAY NAME2 @224 
+  SAY DESC @225
+
+COPY ~DRIZZTSAGA/ITM/F_DWKEY.ITM~          ~override~       
+  SAY NAME1 @229 
+  SAY NAME2 @230 
+  SAY UNIDENTIFIED_DESC @231 
+  SAY DESC @232
+
+COPY ~DRIZZTSAGA/ITM/F_DRSCUL.itm~          ~override~       
+  SAY NAME1 @233 
+  SAY NAME2 @233 
+  SAY UNIDENTIFIED_DESC @234 
+  SAY DESC @234
+
+COPY ~DRIZZTSAGA/ITM/F_DWRDPT.ITM~          ~override~       
+  SAY NAME1 @235 
+  SAY NAME2 @236 
+  SAY UNIDENTIFIED_DESC @237 
+  SAY DESC @238
+
+COPY ~DRIZZTSAGA/ITM/F_ELFCLK.ITM~           ~override~        
+  SAY NAME1 @239 
+  SAY NAME2 @240 
+  SAY UNIDENTIFIED_DESC @241 
+  SAY DESC @242
+
+COPY ~DRIZZTSAGA/ITM/F_ETTN.ITM~             ~override~          
+
+COPY ~DRIZZTSAGA/ITM/F_FROSBL.ITM~          ~override~       
+  SAY NAME1 @157 
+  SAY NAME2 @243 
+  SAY UNIDENTIFIED_DESC @159 
+  SAY DESC @244
+
+COPY ~DRIZZTSAGA/ITM/F_FROSTS.ITM~          ~override~       
+  SAY NAME1 @245 
+  SAY NAME2 @245 
+  SAY UNIDENTIFIED_DESC @246 
+  SAY DESC @246
+
+COPY ~DRIZZTSAGA/ITM/F_GAXRNG.ITM~          ~override~       
+  SAY NAME1 @215 
+  SAY NAME2 @247 
+  SAY UNIDENTIFIED_DESC @217 
+  SAY DESC @248
+
+COPY ~DRIZZTSAGA/ITM/F_GHOST.ITM~            ~override~         
+  SAY NAME2 @206 
+
+COPY ~DRIZZTSAGA/ITM/F_GIANAX.ITM~          ~override~       
+  SAY NAME1 @179 
+  SAY NAME2 @249 
+
+COPY ~DRIZZTSAGA/ITM/F_GOCLAW.ITM~           ~override~        
+  SAY NAME1 @250 
+  SAY NAME2 @251 
+  SAY UNIDENTIFIED_DESC @252 
+  SAY DESC @253
+
+COPY ~DRIZZTSAGA/ITM/F_GRIOUN.itm~           ~override~        
+  SAY NAME1 @254 
+  SAY NAME2 @255 
+  SAY UNIDENTIFIED_DESC @256 
+  SAY DESC @257
+
+COPY ~DRIZZTSAGA/ITM/F_GUECLW.ITM~          ~override~       
+  SAY NAME2 @206 
+
+COPY ~DRIZZTSAGA/ITM/F_HARPY.ITM~            ~override~         
+
+COPY ~DRIZZTSAGA/ITM/F_ICEAXE.ITM~           ~override~        
+  SAY NAME1 @258 
+  SAY NAME2 @259 
+  SAY UNIDENTIFIED_DESC @260 
+  SAY DESC @261
+
+COPY ~DRIZZTSAGA/ITM/F_ICEAX5.ITM~          ~override~       
+  SAY NAME1 @258 
+  SAY NAME2 @262 
+  SAY UNIDENTIFIED_DESC @260 
+  SAY DESC @263
+
+COPY ~DRIZZTSAGA/ITM/F_IMMUN2.ITM~          ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_IMMUN3.ITM~          ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_IRENOT.ITM~          ~override~       
+  SAY NAME1 @264 
+  SAY NAME2 @264 
+  SAY UNIDENTIFIED_DESC @265 
+  SAY DESC @265
+
+COPY ~DRIZZTSAGA/ITM/F_JARLAX.ITM~          ~override~       
+  SAY NAME1 @179 
+  SAY NAME2 @266 
+  SAY UNIDENTIFIED_DESC @267 
+  SAY DESC @268
+  SAY 0x25e @481
+
+COPY ~DRIZZTSAGA/ITM/F_JARLPL.ITM~          ~override~       
+  SAY NAME1 @269 
+  SAY NAME2 @270 
+  SAY UNIDENTIFIED_DESC @271 
+  SAY DESC @272
+
+COPY ~DRIZZTSAGA/ITM/F_JMPBOO.ITM~          ~override~
+  SAY NAME1 @173 
+  SAY NAME2 @273 
+  SAY UNIDENTIFIED_DESC @274 
+  SAY DESC @275
+
+COPY ~DRIZZTSAGA/ITM/F_KSCULL.ITM~           ~override~        
+  SAY NAME1 @206 
+  SAY NAME2 @206 
+  SAY UNIDENTIFIED_DESC @276 
+  SAY DESC @276
+
+COPY ~DRIZZTSAGA/ITM/F_MAGMAC.ITM~          ~override~       
+  SAY NAME1 @277 
+  SAY NAME2 @278 
+  SAY UNIDENTIFIED_DESC @279 
+  SAY DESC @280
+  SAY 0x2be @482
+  SAY 0x52e @483
+  SAY 0x61e @481
+
+COPY ~DRIZZTSAGA/ITM/F_MARRNG.ITM~          ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_MARISW.ITM~           ~override~        
+  SAY NAME1 @199 
+  SAY NAME2 @281 
+  SAY UNIDENTIFIED_DESC @282 
+  SAY DESC @283
+
+COPY ~DRIZZTSAGA/ITM/F_MEDBIT.ITM~          ~override~       
+  SAY NAME1 @284 
+  SAY NAME2 @284 
+  SAY UNIDENTIFIED_DESC @284 
+
+COPY ~DRIZZTSAGA/ITM/F_MITHCH.ITM~          ~override~       
+  SAY NAME1 @285
+  SAY NAME2 @286
+  SAY UNIDENTIFIED_DESC @287 
+  SAY DESC @288
+  WRITE_ASCIIE 0x3a ~%BAMprespfx%CHAN07~ #8
+
+COPY ~DRIZZTSAGA/ITM/F_MOONSW.ITM~           ~override~        
+  SAY NAME1 @289 
+  SAY NAME2 @289 
+  SAY UNIDENTIFIED_DESC @282 
+  SAY DESC @290
+
+COPY ~DRIZZTSAGA/ITM/F_MUMFIS.ITM~          ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_OPALPL.ITM~          ~override~       
+  SAY NAME1 @185 
+  SAY NAME2 @291 
+  SAY UNIDENTIFIED_DESC @292 
+  SAY DESC @293
+
+COPY ~DRIZZTSAGA/ITM/F_PANTH.ITM~            ~override~
+  SAY NAME1 @294 
+  SAY NAME2 @294 
+  SAY UNIDENTIFIED_DESC @295 
+  SAY DESC @295
+  SAY 0x10e @484
+  SAY 0x13e @485
+
+COPY ~DRIZZTSAGA/ITM/F_PETHLM.ITM~           ~override~        
+  SAY NAME1 @182 
+  SAY NAME2 @296 
+  SAY UNIDENTIFIED_DESC @297 
+  SAY DESC @298
+  PATCH_IF GAME_IS ~Tutu_TotSC~ BEGIN
+  	WRITE_ASCII 0x3a ~_IHELM04~ #8
+  END ELSE
+  PATCH_IF GAME_IS ~BGT~ BEGIN
+  	WRITE_ASCII 0x3a ~IHELM03~ #8
+  END
+  PATCH_IF NOT GAME_IS ~BGEE~ BEGIN
+  	WRITE_ASCII 0x58 ~CHELM03~ #8
+  END
+
+COPY ~DRIZZTSAGA/ITM/F_POTN52.ITM~           ~override~        
+  SAY NAME1 @235 
+  SAY NAME2 @299 
+  SAY UNIDENTIFIED_DESC @300 
+  SAY DESC @301
+  SAY 0xde @486
+
+COPY ~DRIZZTSAGA/ITM/F_POTN55.itm~           ~override~        
+  SAY NAME1 @235 
+  SAY NAME2 @302 
+  SAY UNIDENTIFIED_DESC @303 
+  SAY DESC @304
+  SAY 0xde @486
+
+COPY ~DRIZZTSAGA/ITM/F_RAISER.ITM~           ~override~        
+  SAY NAME1 @305 
+  SAY NAME2 @306 
+  SAY UNIDENTIFIED_DESC @307 
+  SAY DESC @308
+
+COPY ~DRIZZTSAGA/ITM/F_SCIM03.ITM~           ~override~        
+  SAY NAME1 @309 
+  SAY NAME2 @310 
+  SAY UNIDENTIFIED_DESC @311 
+  SAY DESC @312
+  WRITE_ASCIIE 0x3a ~%BAMprespfx%SW1H23~ #8
+  WRITE_ASCIIE 0x76 ~%BAMprespfx%SW1H23~ #8
+
+COPY ~DRIZZTSAGA/ITM/F_SLAYCL.ITM~          ~override~       
+  SAY NAME2 @206 
+
+COPY ~DRIZZTSAGA/ITM/F_SPIRCL.ITM~           ~override~        
+  SAY NAME2 @206 
+
+COPY ~DRIZZTSAGA/ITM/F_SUMTAN.ITM~           ~override~        
+  SAY NAME1 @313 
+  SAY NAME2 @313 
+  SAY UNIDENTIFIED_DESC @314 
+  SAY DESC @314
+
+COPY ~DRIZZTSAGA/ITM/F_SW2H09.ITM~           ~override~        
+  SAY NAME1 @315 
+  SAY NAME2 @316 
+  SAY UNIDENTIFIED_DESC @317 
+  SAY DESC @318
+
+COPY ~DRIZZTSAGA/ITM/F_SW2H17.ITM~           ~override~        
+  SAY NAME1 @315 
+  SAY NAME2 @319 
+  SAY UNIDENTIFIED_DESC @317
+  SAY DESC @320
+
+COPY ~DRIZZTSAGA/ITM/F_THOOD.itm~            ~override~         
+  SAY NAME1 @321 
+  SAY NAME2 @321 
+  SAY UNIDENTIFIED_DESC @322 
+  SAY DESC @323
+
+COPY ~DRIZZTSAGA/ITM/F_UNDRNG.ITM~          ~override~       
+  SAY NAME1 @215 
+  SAY NAME2 @215 
+  SAY UNIDENTIFIED_DESC @217 
+  SAY DESC @217
+
+COPY ~DRIZZTSAGA/ITM/F_VAMP1.ITM~            ~override~         
+  SAY NAME1 @324
+  PATCH_IF GAME_IS ~BGEE~ BEGIN		// "Ability Score Drained" strref
+	WRITE_LONG 0x13e 25081
+  END ELSE BEGIN
+	WRITE_LONG 0x13e 8320
+  END
+
+COPY ~DRIZZTSAGA/ITM/F_VIMMUN.ITM~          ~override~       
+
+COPY ~DRIZZTSAGA/ITM/F_WAILIN.ITM~          ~override~       
+  SAY NAME1 @324 
+
+COPY ~DRIZZTSAGA/ITM/F_WERECL.ITM~          ~override~       
+  SAY NAME1 @239 
+  SAY NAME2 @325 
+  SAY UNIDENTIFIED_DESC @326 
+  SAY DESC @327
+
+COPY ~DRIZZTSAGA/ITM/F_WEREHI.ITM~          ~override~       
+  SAY NAME1 @284 
+  SAY NAME2 @284 
+  SAY UNIDENTIFIED_DESC @284 
+
+COPY ~DRIZZTSAGA/ITM/F_WINTCL.ITM~          ~override~       
+  SAY NAME1 @328 
+  SAY NAME2 @329 
+  SAY UNIDENTIFIED_DESC @330 
+  SAY DESC @331
+
+COPY ~DRIZZTSAGA/ITM/F_WOLFCL.ITM~          ~override~       
+  SAY NAME1 @284 
+  SAY NAME2 @284 
+  SAY UNIDENTIFIED_DESC @284 
+
+COPY ~DRIZZTSAGA/ITM/F_WULFHI.itm~          ~override~       
+  SAY NAME1 @332 
+  SAY NAME2 @333 
+  SAY DESC @334
+  WRITE_ASCIIE 0x3a ~%BAMprespfx%LEAT10~ #8
+
+COPY ~DRIZZTSAGA/ITM/F_WULFHM.ITM~          ~override~       
+  SAY NAME1 @335 
+  SAY NAME2 @336 
+  SAY DESC @337
+  WRITE_ASCII 0x3a "F_HAMM04" #8
+  WRITE_ASCII 0x76 "F_HAMM04" #8
+  
+COPY ~DRIZZTSAGA/ITM/F_WULHLM.ITM~           ~override~        
+  SAY NAME1 @182 
+  SAY NAME2 @182 
+  SAY UNIDENTIFIED_DESC @338 
+  SAY DESC @338
+
+COPY ~DRIZZTSAGA/ITM/F_XBOW08.itm~           ~override~        
+  SAY NAME1 @189
+  SAY NAME2 @339
+  SAY UNIDENTIFIED_DESC @191
+  SAY DESC @340
+
+COPY ~DRIZZTSAGA/ITM/F_SW2H08.ITM~		~override~
+  SAY NAME1 @315
+  SAY NAME2 @501
+  SAY UNIDENTIFIED_DESC @317
+  SAY DESC @502
+  
+COPY ~DRIZZTSAGA/ITM/F_MEDGAZ.ITM~		~override~
+  SAY NAME1 @284
+  SAY NAME2 @284
+  SAY UNIDENTIFIED_DESC @284
+ 
+// Drizzt's scimitars
+COPY_EXISTING ~SW1H15.ITM~ ~override\F_DRIWP1.ITM~	// In-party main hand weapon, droppable
+	WRITE_SHORT 0x22 0x2020 						 // no equipped animation
+	WRITE_SHORT 0x42 0								 // lore to ID
+	WRITE_ASCIIE 0x3a ~%BAMprespfx%SW1H15~ #8		 // restore missing BG1 icon for BGT
+	WRITE_ASCIIE 0x76 ~%BAMprespfx%SW1H15~ #8
+	READ_LONG 0x60 ~enchantment_level~
+	PATCH_IF enchantment_level < 3 BEGIN			 // fix weirdness with enchantment levels on Tutu
+		WRITE_LONG 0x60 3
+	END
+
+COPY_EXISTING ~F_DRIWP1.ITM~ ~override\F_DRIWP3.ITM~ // Out-of-party main hand weapon, undroppable
+	WRITE_BYTE 0x18 THIS BAND 0b11111011			  // make undroppable
+	 
+COPY_EXISTING ~SW1H16.ITM~ ~override\F_DRIWP2.ITM~	// Off-hand weapon both in- and out-of-party (in BGEE - only out-of-party)
+	WRITE_BYTE 0x18 THIS BAND 0b11111011		 	 // make undroppable
+	WRITE_SHORT 0x22 0x2020 						 // with no equipped animation
+	READ_LONG 0x60 ~enchantment_level~
+	PATCH_IF enchantment_level < 3 BEGIN			 // fix weirdness with enchantment levels on Tutu
+		WRITE_LONG 0x60 3
+	END
+
+ACTION_IF GAME_IS ~BGEE~ BEGIN
+	COPY_EXISTING ~F_DRIWP2.ITM~ ~override\F_DRIWP4.ITM~ // Droppable version of the off-hand weapon for BGEE. Undroppable version is needed 'cause otherwise players who killed Drizzt could loot two twinkles from Drizzt's corpse, vanilla and WP2
+		WRITE_BYTE 0x18 THIS BOR 0b00000100			  // make droppable
+END	
+	
+COPY ~DRIZZTSAGA/Misc/F_DRIWP.SPL~ ~override~		// used to conjure F_DRIWP1.ITM in Drizzt's weapon slot upon joining
+	 	 
+    
+// item icons:
+COPY ~DRIZZTSAGA/BAM_BMP~ ~override~
+ACTION_IF GAME_IS ~BGT~ BEGIN
+	COPY ~DRIZZTSAGA/BAM_BMP/BGT~ ~override~
+END
+COPY ~DRIZZTSAGA/BAM_BMP/descr_%BAMvsBMP%~ ~override~
+
+
+// Sounds:
+
+PRINT @361
+
+COPY ~DRIZZTSAGA/Audio/WAV~ ~override~		// WAVs
+
+ACTION_IF (DECODE_SOUNDS = 1) THEN BEGIN
+	LAF HANDLE_AUDIO END	// OGGs
+END
+
+
+// Area data files & tilesets:
+
+PRINT @364
+
+COPY_LARGE ~DRIZZTSAGA/ARE-DATA/%SrcFolder%~ ~DRIZZTSAGA/ARE-DATA~
+
+
+PRINT @1504
+
+LAF HANDLE_TILESETS END
+
+MOVE (~override~ ~F_.*\.TIS~) ~DRIZZTSAGA/ARE-DATA~
+
+// Misc:
+
+PRINT @370
+
+// BG1 skeleton warrior summons for BGT/Tutu
+ACTION_IF NOT GAME_IS ~BGEE~ BEGIN
+	COPY ~DRIZZTSAGA/Misc/%SrcFolderExact%~ ~override~
+END
+
+// EFFs used by Mace of Disruption
+COPY ~DRIZZTSAGA/misc/F_DIE.EFF~ 	~override~	 
+	 ~DRIZZTSAGA/misc/F_MACDIS.EFF~ ~override~	 
+COPY ~DRIZZTSAGA/misc/F_MESDIE.EFF~ ~override~
+	PATCH_IF GAME_IS ~BGEE~ BEGIN	// BGEE
+		SET undead_destr_strref = 31250
+	END ELSE BEGIN					// BGT/Tutu
+		SET undead_destr_strref = 10554
+	END
+	WRITE_LONG 0x1c %undead_destr_strref%
+
+// EFF used by Boots of Phasing
+COPY ~DRIZZTSAGA/misc/F_JMPBOO.EFF~ ~override~
+	
+COPY ~DRIZZTSAGA/misc/F_NIBSHP.sto~ ~override~
+  SAY 0x0c @1
+  WRITE_ASCIIE 0x200 ~%_%POTN17~ #8
+
+
+ACTION_IF GAME_IS ~Tutu_TotSC~ BEGIN
+	// Some editions of BG1 (Saga Edition, IIRC) have botched versions of several MUS files, which are copies of other files and don't actually reference the music they're supposed to
+	// BGT fixes that, Tutu doesn't
+	COPY ~Music\Dung2.mus~ ~Music~
+		READ_2DA_ENTRY 0 0 0 mus_value
+	BUT_ONLY
+	ACTION_IF ~%mus_value%~ STRING_EQUAL_CASE ~DUNG1~ BEGIN		// should reference DUNG2 instead; same in other files
+		COPY ~DRIZZTSAGA\Misc\mus~ ~Music~
+	END
+
+	// Boots of Speed fix on Tutu
+	COPY_EXISTING ~_BOOT01.ITM~ ~override~
+	PATCH_IF (%SOURCE_SIZE% >= 114) BEGIN
+		READ_LONG 0x6a eff_off
+		READ_SHORT 0x6e eff_first_idx
+		READ_SHORT 0x70 eff_count
+		FOR ( I = %eff_first_idx% ; I < %eff_count%  ; I=I+1 ) BEGIN
+			READ_SHORT %eff_off% + 48*I			eff_opcode
+			READ_LONG  %eff_off% + 48*I + 0x04	eff_param1
+			READ_LONG  %eff_off% + 48*I + 0x08	eff_param2
+			PATCH_IF %eff_opcode% = 126 AND %eff_param2% = 1 AND %eff_param1% = 11 BEGIN	// Look for:  Opcode=Movement rate bonus  Modifier Type=Set  Value=11
+				WRITE_LONG	%eff_off% + 48*I + 0x04		200									// Change to: Opcode=Movement rate bonus  Modifier Type="Set % of"  Value=200
+				WRITE_LONG  %eff_off% + 48*I + 0x08		2
+			END
+		END
+	END
+	BUT_ONLY
+END
+
+// Make some undead monsters in BGT/Tutu properly register as undead, so Mace of Disruption can work on them
+COPY_EXISTING ~%_%%BG%SKELWA.CRE~ ~override~
+			  ~%BG1SUMSKEL2%.CRE~ ~override~
+			  ~%BG1SUMSKEL3%.CRE~ ~override~
+	READ_BYTE 0x271 general_ids_value
+	PATCH_IF %general_ids_value% != 4 BEGIN
+		WRITE_BYTE 0x271 4		// UNDEAD
+	END
+BUT_ONLY
+
+// Portraits	 
+COPY_LARGE ~DRIZZTSAGA/Portraits/%SrcFolder%~ ~override~
+
+
+// ---------------------------------------------------------------------------------------------------
+END 	// DEFINE_ACTION_MACRO
+

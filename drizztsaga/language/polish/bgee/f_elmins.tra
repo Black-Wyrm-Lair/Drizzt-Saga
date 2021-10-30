@@ -1,0 +1,15 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ELMINST translation file
+@1   = ~Hola, Drizzcie, musze z tobą prędko pomówić...och, widzę, że wychowanek Goriona <CHARNAME> podróżuje u twego boku. ~
+@2   = ~Wygląda na to, że nasze ścieżki znów się krzyżują. Mam tylko nadzieje, że co doprowadziłoby nas na skraj napodróży którą ledwie przeżyłem.(It seems that our roads cross once again. I surely hope that you haven't come with anything leading to something along the lines of the trip I just barely survived.)~
+@3   = ~Słowa które pragnę przekazać są przeznaczone tylko dla Drizzt'a. <CHARNAME> ma swoją własną scieżkę którą musi podążyć.~
+@4   = ~<CHARNAME> sam winien zadecydować jaką drogą podąża.~
+@5   = ~No cóż, tak więc w tym miejscu nasze drogi się rozchodzą, żegnaj.~
+@6   = ~Słusznie dziecko. Drizzcie, musisz spieszyć ku Dolinom Lodowego Wichru, wprost do domu Bruenora. Nad Dolinami rozciąga się mrok. Równowaga została wyparta przez chaos, ja zaś mam w tym przypadku związane ręce. Mogę cię tylko tam przenieść.~
+@7   = ~Mówisz o mroku i chaosie, ale czy masz jakieś dokładniejsze informacje?~
+@8   = ~Mój wzrok nie sięga tak daleko, jednak wkrótce się tego dowiemy. Jednakże czasu jest już bardzo mało, więc zaczynajmy teleportacje.~
+@9   = ~Mądrością jest umieć dobrać to co najważniejsze, <CHARNAME>.~
+@10  = ~Hola, dziecko. Widzę, że Drizzt już z tobą nie wędruje. Mam jednak nadzieję, że wciąż jest wśród żywych - gdyby nie, miałbym ciężki orzech do zgryzienia. Muszę się jednak z tobą żegnać, bywaj.~

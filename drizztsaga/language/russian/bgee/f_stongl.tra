@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #STONEGL translation file
+@1   = ~Сие нельзя узреть иль потрогать;
+Но в каждом есть сие;
+Хотя сие и непонятно.~ [TANAR01]
+@2   = ~Будущее.~
+@3   = ~Душа.~
+@4   = ~Воздух.~
+@5   = ~Вы все еще не понимаете! Вы будете отвечать снова!~ [TANAR01]
+@6   = ~Вы ответили верно. Можете пока жить.~
+@7   = ~ ~

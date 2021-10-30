@@ -1,0 +1,44 @@
+IF
+  Global("F_Betrayal","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+	ActionOverride("F_WULFGAR",LeaveParty())
+	ActionOverride("F_WULFGAR",Enemy())
+	ActionOverride("F_BRUENOR",LeaveParty())
+	ActionOverride("F_BRUENOR",Enemy())
+	ActionOverride("F_CATTIBR",LeaveParty())
+	ActionOverride("F_CATTIBR",Enemy())
+	ActionOverride("F_REGIS2",LeaveParty())
+	ActionOverride("F_REGIS2",Enemy())
+	ActionOverride("F_DRIZZT",LeaveParty())
+	ActionOverride("F_DRIZZT",Enemy())
+	ActionOverride("F_GUEN",Enemy())
+	SetInterrupt(TRUE)
+	SmallWait(2)
+	SetGlobal("F_Betrayal","MYAREA",2)	
+END
+
+IF
+  Global("F_Betrayal","MYAREA",2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+	ActionOverride("F_BRUENOR",SetDialog("F_BETRAY"))
+	ActionOverride("F_DRIZZT",SetDialog("F_BETRAY"))
+	ActionOverride("F_WULFGAR",SetDialog("F_BETRAY"))
+	ActionOverride("F_CATTIBR",SetDialog("F_BETRAY"))
+	ActionOverride("F_REGIS2",SetDialog("F_BETRAY"))	
+	ActionOverride("F_BRUENOR",ChangeAIScript("%tutu_scriptw%TASIGHT",DEFAULT))
+	ActionOverride("F_DRIZZT",ChangeAIScript("%tutu_scriptw%TASIGHT",DEFAULT))
+	ActionOverride("F_WULFGAR",ChangeAIScript("%tutu_scriptw%TASIGHT",DEFAULT))
+	ActionOverride("F_CATTIBR",ChangeAIScript("%tutu_scriptw%TASIGHT",DEFAULT))
+	ActionOverride("F_REGIS2",ChangeAIScript("%tutu_scriptw%TASIGHT",DEFAULT))
+	ReputationInc(-2)
+	ActionOverride("F_ARTEMIS",JoinParty())
+	ActionOverride("F_JARLAXE",JoinParty())
+	SetInterrupt(TRUE)
+	SmallWait(2)
+	ActionOverride("F_DRIZZT",StartDialogueNoSet([PC]))
+	SetGlobal("F_Betrayal","MYAREA",3)
+END

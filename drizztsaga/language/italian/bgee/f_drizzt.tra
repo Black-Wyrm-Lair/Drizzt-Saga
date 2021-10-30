@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// F_DRIZZT translation file
+@10  = ~Ahah <CHARNAME>!, ci incontriamo ancora. Io devo partire presto per la Valle del Vento Gelido. Mi farebbe piacere che ti unissi a me in questo viaggio pericoloso.~
+@11  = ~Drizzt, amico mio, mi piacerebbe venire con te, tuttavia, per prima cosa, devo trovare una degna sistemazione ai miei attuali compagni di viaggio. Incontriamoci alla Locanda di Ulgoth's Beard fra tre giorni e sarò felice di seguirti.~
+@13  = ~Molto bene allora, ci vedremo là.~
+@15  = ~Ben incontrato. Allora, sei pronto?~
+@16  = ~Sono pronto, come probabilmente lo sono sempre. Andiamo allora?~
+@17  = ~Andiamo!~
+@19  = ~Per ora no, devo ancora finire di prepararmi.~

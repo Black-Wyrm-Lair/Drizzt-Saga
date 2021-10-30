@@ -1,0 +1,63 @@
+IF
+	InParty("F_JARLAXE")
+	!Allegiance(Myself,ALLY)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,ALLY)
+END
+
+IF
+	InParty("F_ARTEMIS")
+	!Allegiance(Myself,ALLY)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,ALLY)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("drowpriest","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)
+		ReallyForceSpell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)
+		SetGlobal("drowpriest","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("drowpriest","LOCALS",1)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("F_WI936", Myself)
+		ReallyForceSpellRES("F_WI935", Myself)
+		SetGlobal("drowpriest","LOCALS",2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("drowpriest","LOCALS",2)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)
+		SetGlobal("drowpriest","LOCALS",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("drowpriest","LOCALS",3)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+		SetGlobal("drowpriest","LOCALS",4)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
+
+

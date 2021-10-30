@@ -1,0 +1,15 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// F_DRIZZT
+@10  = ~Ahah <CHARNAME> ! Nous nous rencontrons de nouveau. Je dois bientôt partir pour ValBise. J'aimerais que vous m'accompagniez pour ce voyage périlleux.~
+@11  = ~Drizzt, mon ami, je serai ravi de vous accompagner, cependant il me faut d'abord trouver une résidence adéquate pour mes compagnons de voyage actuels. Retrouvons-nous à l'auberge de Barbe d'Ulgoth dans trois jours et je partirai avec plaisir avec vous.~
+       ~Drizzt, mon ami, je serai ravie de vous accompagner, cependant il me faut d'abord trouver une résidence adéquate pour mes compagnons de voyage actuels. Retrouvons-nous à l'auberge de Barbe d'Ulgoth dans trois jours et je partirai avec plaisir avec vous.~
+@13  = ~Bon, très bien, je vous verrai là-bas.~
+@15  = ~Bonne rencontre. Êtes-vous prêt, maintenant ?~
+       ~Bonne rencontre. Êtes-vous prête, maintenant ?~
+@16  = ~Je suis prêt comme jamais. Allons-y, voulez-vous ?~
+       ~Je suis prête comme jamais. Allons-y, voulez-vous ?~
+@17  = ~Allons-y !~
+@19  = ~Pas tout à fait, il me reste encore quelques préparatifs à accomplir.~

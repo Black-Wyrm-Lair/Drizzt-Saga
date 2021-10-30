@@ -1,0 +1,86 @@
+IF
+	Detect([PC])
+	NumTimesTalkedTo(0)
+	Range(LastSeenBy(Myself),25)
+THEN
+	RESPONSE #100
+		StartDialog("F_ROBEDA",LastSeenBy(Myself))
+END
+
+IF
+	See([PC])
+	Global("#robedatk","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+		ReallyForceSpell(Myself,WIZARD_BLUR)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
+		ReallyForceSpell(Myself,WIZARD_DETECT_INVISIBILITY)
+		ReallyForceSpell(Myself,WIZARD_GHOUL_TOUCH)
+		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
+		ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
+		ReallyForceSpell([PC],WIZARD_BLINDNESS)
+		ReallyForceSpell([PC],WIZARD_CLOUDKILL)
+		ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+		Wait(1)
+		ReallyForceSpell([PC],POWERWORD_KILL)
+		ReallyForceSpell([PC],POWERWORD_STUN)
+		ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
+		ReallyForceSpell([PC],POWERWORD_BLIND)
+		ReallyForceSpell([PC],TANARI_SILENCE)
+		CreateCreature("F_WAILIN",[413.495],0)
+		CreateCreature("F_VAMPF",[413.495],0)
+		CreateCreature("F_VAMPF",[413.495],0)
+		CreateCreature("F_VAMPF",[413.495],0)
+		CreateCreature("F_VAMPF",[179.667],0)
+		CreateCreature("F_VAMPF",[227.703],0)		
+		ReallyForceSpellRES("F_WI935", Myself)		
+		ReallyForceSpellRES("F_WI935", Myself)
+		SetGlobal("#robedatk","LOCALS",1)
+END
+
+IF
+	Global("#robedatk","LOCALS",1)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_HASTE)
+		ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+		ReallyForceSpell([PC],POWERWORD_STUN)
+		ReallyForceSpell([PC],WIZARD_SLOW)
+		ReallyForceSpell([PC],GORION_MAGIC_MISSILE)
+		SetGlobal("#robedatk","LOCALS",2)
+END
+
+IF
+	Global("#robedatk","LOCALS",2)
+	See([PC])
+THEN
+	RESPONSE #100
+		CreateCreature("F_TANARI",[413.495],0)
+		ReallyForceSpell([PC],POWERWORD_KILL)
+		ReallyForceSpell([PC],WIZARD_MELF_ACID_ARROW)
+		SetGlobal("#robedatk","LOCALS",3)
+END
+
+IF
+	Global("#robedatk","LOCALS",3)
+	See([PC])
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],GORION_MAGIC_MISSILE)
+		ReallyForceSpell([PC],WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+

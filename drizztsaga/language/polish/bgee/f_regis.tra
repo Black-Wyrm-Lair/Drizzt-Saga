@@ -1,0 +1,15 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #REGIS translation file
+@1   = ~Drizzt, wreszcie cię odnalazłem!! Nasz przyjaciel Wulfgar jest uwięziony w Dziewięciu Otchłaniach!~
+@2   = ~Co? Dziewięć Piekieł?!~
+@3   = ~Witam, hmmm jak widzisz jestem odrobinę zajęty. Nie bierz tego do siebie, ale nie chciałbym aby mi przeszkadzano. Aczkolwiek jeśli natkniesz się na "mrocznego łowcę" to nie wachaj się mi przeszkodzić. *szepcząc do siebie* Drizzt ta twoja bezsensowna podróż niczego mi nie ułatwia...~
+@4   = ~Spotkałem lekko poddenerwowanego niziołka. Nie życzył sobie aby mu przeszkadzać wieć zostawiłem go w spokoju. Jednakże zanim odszedłem, wspomniał coś o mrocznym łowcy i o tym że jeśli go spotkam powinienem go zabrać do tego niziołka. Nawet nie wiem jak się nazywa.~
+@5   = ~Nie ma czasu na pogaduchy! Ledwo co zdążyłem zwinąć zwój zanim Tanari miał uciąć mi, jakże mi drogą, głowę. Szybko, ten zwój umożliwi ci przejście do tych przeklętych odmętów Dziewięciu Piekieł.~
+@6   = ~Jak to mówią, idziemy tam gdzie najgoręcej!~
+@7   = ~Podróż do Dziewięciu Piekieł to istne szaleństwo i pewna śmierć. Zostawiam to Drizztowi, żegnajcie.~
+@8   = ~Zaklęcie zostało rzucone, teraz wszystko jest w twoich rękach, Drizzt. Wybacz, że nie idę, ale na niewiele bym się wam tam przydał. A teraz żwawo!~
+@9   = ~Wygląda na to, że towarzysze i przyjaciele Drizzta są w opałach. Tak jak się obawiałem, podróż u jego boku przyniesie kłopoty znacznie większe niż mógłbym tylko przypuszczać.~
+@10  = ~Dobrze. Chodź Drizzt, czas nas goni.~

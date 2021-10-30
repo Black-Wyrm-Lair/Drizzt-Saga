@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ROBEDA translation file
+@1   = ~Widzę, że czujesz się jak w domu. Nigdy nie myślałem, że poczujesz się tu nieswojo.~ [F_IREN35]
+@2   = ~Ty! To ty mnie przeniosłeś tutaj. Powinienem był przejrzeć twój podstęp. Pokaż się, kim jesteś?! Kto skrywa się pod kapturem?~
+@3   = ~Nie to kim ja jestem jest dziś ważne - lecz to kim jesteś ty, <CHARNAME>.~
+@4   = ~Przestań wreszcie mówić zagadkami.~
+@5   = ~Musiałeś kiedyś to wyczuć, dziedzictwo krwi płynącej w twoich żyłach. A wszystko to teraz jest dla mnie na wyciągnięcie ręki...~
+@6   = ~Twoje czcze gadki nie robią na mnie żadnego wrażenia.~
+@7   = ~Obawiam się, że mam nad toba przewagę. Zaplanowałem twoje przyjście już na samym początku. Nie było innego wyjścia.~ [F_IREN40]
+@8   = ~Zniweczę jakikolwiek plan jaki narodzi się w twojej głowie!~
+@9   = ~Żegnaj, Dziecię Bhaala. Już się nie zobaczymy.~ [F_IREN52]

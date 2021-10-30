@@ -1,0 +1,15 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ELMINST translation file
+@1   = ~Hola Drizzt, deseaba tener unas palabras con vos....oh, veo que el pupilo de Gorion, <CHARNAME>, anda a vuestro lado. ~
+@2   = ~Parece que nuestros caminos se cruzan de nuevo. Espero que no hayas venido con algo que nos sitúe en la línea de este viaje, apenas he sobrevivido.~
+@3   = ~La palabras que llevo conmigo son para Drizzt. <CHARNAME> tiene otro camino que seguir.~
+@4   = ~El camino que escoge andar <CHARNAME> debería ser decidido por él y no por nadie más.~ ~El camino que escoge andar <CHARNAME> debería ser decidido por ella y no por nadie más.~
+@5   = ~Muy bien, creo que debemos separar nuestros caminos a partir de aquí, que vaya bien.~
+@6   = ~Es suficiente hijo mío, ahora Drizzt, debéis viajar al Valle del Viento Helado a toda prisa hasta la casa de vuestro compañero Bruenor. El Valle está cubierto de oscuridad. El equilibrio ha sido reemplazado por el caos. No estoy en posición de interferir. Solo me puedo ofrecer para teletransportaros en las afueras de su casa. ~ ~Es suficiente hija mía, ahora Drizzt, debéis viajar al Valle del Viento Helado a toda prisa hasta la casa de vuestro compañero Bruenor. El Valle está cubierto de oscuridad. El equilibrio ha sido reemplazado por el caos. No estoy en posición de interferir. Solo me puedo ofrecer para teletransportaros en las afueras de su casa. ~
+@7   = ~Habláis de oscuridad, ¿pero que significa eso?~
+@8   = ~Mis ojos están sellados para ver tan lejos, las respuestas aún no se han encontrado. Aunque el tiempo se acorta, empecemos con el teletransporte.~
+@9   = ~Una sabia elección para unos asuntos importantes que reclaman a <CHARNAME>.~
+@10  = ~Hola hijo mío, veo que Drizzt ya no está a vuestro lado. Espero que su existencia todavía fluya. Si no, tendré una razón para preocuparme. Debo retomar mi marcha.~ ~Hola hija mía, veo que Drizzt ya no está a vuestro lado. Espero que su existencia todavía fluya. Si no, tendré una razón para preocuparme. Debo retomar mi marcha.~

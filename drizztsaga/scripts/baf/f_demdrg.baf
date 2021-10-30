@@ -1,0 +1,151 @@
+IF
+	See([PC])
+	Global("F_Paralyze","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
+		ReallyForceSpell([PC],FEAR)
+		ReallyForceSpell([PC],RED_FIREBALL)
+		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
+		ReallyForceSpell([PC],TANARI_DEATH_GAZE)
+		SetGlobal("F_Paralyze","LOCALS",1)
+END
+
+IF
+	See([PC.0.0.CLERIC_MAGE])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.CLERIC_MAGE],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	See([PC.0.0.MAGE])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.MAGE],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	See([PC.0.0.MAGE_THIEF])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.MAGE_THIEF],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	See([PC.0.0.CLERIC])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.CLERIC],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	See([PC.0.0.BARD])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.BARD],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	See([PC.0.0.DRUID])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.DRUID],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	See([PC])
+	Global("F_Silence","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],TANARI_SILENCE)
+		SetGlobal("F_Silence","LOCALS",1)
+END
+
+IF
+	NumCreatureGT([GOODCUTOFF],10)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		Wait(1)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See([PC])
+	StateCheck([PC],STATE_HELPLESS)
+THEN
+	RESPONSE #70
+		ReallyForceSpell(SecondNearest([PC]),TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		AttackOneRound([PC])
+	RESPONSE #30
+		ReallyForceSpell(ThirdNearest([PC]),TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See([PC.0.0.0.0.FEMALE])
+	NotStateCheck([PC.0.0.0.0.FEMALE],STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.0.0.FEMALE],TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		AttackOneRound([PC])
+END
+
+IF
+	See([PC.0.0.0.0.MALE])
+	See([PC.0.0.0.0.FEMALE])
+	StateCheck([PC.0.0.0.0.FEMALE],STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC.0.0.0.0.MALE],TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		AttackOneRound([PC.0.0.0.0.FEMALE])
+		AttackOneRound([PC.0.0.0.0.FEMALE])
+END
+
+IF
+	See([PC.0.0.0.0.FEMALE])
+	StateCheck([PC.0.0.0.0.FEMALE],STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FourthNearest([PC]),TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		AttackOneRound([PC.0.0.0.0.FEMALE])
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SecondNearest([PC]),TANARI_DEATH_GAZE)
+		ReallyForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+		AttackOneRound([PC])
+		AttackOneRound([PC])
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+

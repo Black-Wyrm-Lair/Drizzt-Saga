@@ -1,0 +1,24 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #DWSMITH translation file
+@1   = ~¡Por el martillo de Moradin, necesito una cerveza enana de las buenas! Ha pasado tiempo desde que no he visto ni un alma dentro de lo que ahora es mi mina maldita.~
+@2   = ~Saludos, ¿cómo podéis habitar estas montañas aunque parezca que los no muertos se paseen por cada sombra?~
+@3   = ~Pues gracias al excelente mineral que ofrece, por supuesto. Los no muertos no parecen mostrar ningún interés en mi, y si lo hacen, entonces los saludo con mi martillo, ¡aplastando sus cráneos podridos!~
+@4   = ~Supongo que son palabras ciertas, ¿quizás llevo algo que podrías forjar en un objeto?~
+@5   = ~Bueno, mostradme lo que lleváis entonces.~
+@6   = ~Tomad, echad un vistazo a este cráneo de dragón.~
+@7   = ~Tomad, echad un vistazo a esta piel de lobo de invierno.~
+@8   = ~Tomad, tengo La Glaseadora y el Pergamino de la Runa de Invierno.~
+@9   = ~En realidad no parezca ahora mismo que tenga nada especial que mostraros.~
+@10  = ~¡Por el martillo de Moradin! ¿Cómo os las habéis apañado para conseguir una cosa tan rara? Puedo forjar unas placas de las escamas si queréis. Todo por la suma de 5.000 monedas de oro.~
+@11  = ~Muy bien, hagámoslo.~
+@12  = ~Mis bolsillos de momento no me lo permiten.~
+@13  = ~Si, puedo encantar eso para que nunca os volváis a congelar y cualquier magia con el frío por medio resbalará y no os hará ni un rasguño. Todo por la suma de 3.000 monedas de oro.~
+@15  = ~Con una premura inusitada, aquí tenéis, una armadura de calidad.~
+@16  = ~Entonces, regresad de nuevo cuando vuestros bolsillos se encuentren mejor.~
+@17  = ~Con una premura inusitada, aquí tenéis, una pieza artesanal de calidad.~
+@18  = ~¡Ey!, habéis vuelto y con vida, ¿qué queréis?~
+@19  = ~¿Quizás tenga algo que podáis forjar en un objeto?~
+@20  = ~Por el martillo de Moradin, la vieja fórmula de Barbahelada. Puedo forjar esta arma en una de las más devastadoras armas hechas por el mejor artesano del acero conocido en los reinos. Herrería enana en su alto nivel de profesionalidad. Os costaría 10.000 monedas de oro.~

@@ -1,0 +1,1377 @@
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@1 = ~Magasin de Nib~
+@2 = ~Artemis Enteri~
+@3 = ~[MALE THREAT 9]  Craignez mon courroux car il est grand en effet.~ [%_%GENMT09]
+@4 = ~Autre temps, autre lieu !~ [F_ARTEM8]
+@5 = ~Ce sera une souffrance lente et douloureuse !~ [F_ARTEM3]
+@6 = ~M'accorderiez-vous cette danse ?~ [F_ARTEM2]
+@7 = ~Tu souffriras... Oh, oui, tu souffriras.~ [F_ARTEM4]
+@8 = ~Je planterai ma lame au plus profond de vos entrailles.~ [F_ARTEM5]
+@9 = ~[GUARDS 5]~ [%_%GUARR05]
+@10 = ~[GUARDS 6]~ [%_%GUARR06]
+@11 = ~Artemis Enteri est un homme de l'ombre et de mort subite et il est passé maître dans la profession qui est la sienne. Un assassin. Aucune cible n'est trop dure à abattre. Aucune protection ne l'empêchera d'éliminer sa proie. Il exécute une danse de la mort similaire à celle de Drizzt et possède un coeur aussi froid et insensible que celui de la plupart des Drows. Ceux qui croisent sa route ne le rencontrent jamais une seconde fois. Il est originaire de la grande ville du sud de Calimport dans la province de Calimshan. La route d'Artemis Enteri à croisé celle de Drizzt quand Regis à volé un trésor de grande valeur au Pacha Pook, le chef de la guilde des voleurs de Calimport, et Artemis fut chargé de remettre la main sur ce trésor. Après trois longues années, il a retrouvé la trace de Regis à Dix Cités et une nouvelle aventure commença pour lui et ses amis, à la différence que cette fois-ci, la mort les pourchassait en silence sous les traits d'Artemis Enteri.~
+@12 = ~Femme de la tribu de l'ours~
+@13 = ~Doyen de la tribu de l'ours~
+@14 = ~Esprit Sacré de l'Ours~
+@15 = ~Guerrier de la tribu de l'ours~
+@16 = ~Belhifet~
+@17 = ~A vos ordres !~ [F_DRSL12]
+@18 = ~C'est notre destin et notre volonté, nous règnerons !~ [F_DRSL11]
+@19 = ~Pour la gloire de la Mère Noire !~ [F_DRWPR1]
+@20 = ~Je me repêtrai de ton coeur !~ [F_VMPFX5]
+@21 = ~Soyez honoré de me servir de repas !~ [F_VMPFX6]
+@22 = ~Bruenor~
+@23 = ~[DWARF 2]  J'ai besoin d'une bonne vieille bière de chez nous.~ [%_%DWARF02]
+@24 = ~[DWARF 1]  Par le marteau de Moradin.~ [%_%DWARF01]
+@25 = ~[DWARF 5]~ [%_%DWARF05]
+@26 = ~[DWARF 6]~ [%_%DWARF06]
+@27 = ~Bruenor Marteaudeguerre a grandi dans les tunnels de Mithril Hall, et fut témoin de son invasion et de son pillage par le dragon Ténébrescintillante. Aussi bien son père que le père de son père furent terrassés alors qu'ils tentaient de défendre les galeries, et le reste du clan Marteaudeguerre fut obligé de fuir pour sauver leurs vies. Ils s'installèrent au ValBise et durant les deux siècles qui suivirent, Bruenor les dirigea en tant que roi. Bruenor est un véritable ami que chacun aimerait avoir. Il est l'archétype du nain. Il aime les trésors de la terre et porte une grande affection à ceux qu'il considère comme ses amis et sa famille, mais comme tout nain qui se respecte, il n'aime rien de plus que d'éclater les crânes des gobelins avec sa hache. D'apparence, il ressemble à un nain solide comme la pierre, mais il est en fait tout l'opposé. Sous ce crâne dur se cache une intelligence bienveillante, mais ce n'est pas une chose à lui dire : car il le nierait jusqu'à la mort. Avec un acharnement dur comme la roche, il prit un soin particulier pour élever convenablement sa fille adoptive, ainsi que de son fils "adoptif" Wulfgar.~
+@28 = ~Catti-Brie~
+@29 = ~[BLACK LILY 1] Ce sera le jour le plus sombre de votre vie tant que je n'aurai pas ce que je désire.~ [%BLACK_LILY_SND%01]
+@30 = ~[FEMALE THREAT 6] Votre vie n'a aucun intérêt pour moi.~ [%_%GENFT06]
+@31 = ~[BLACK LILY 3]~ [%BLACK_LILY_SND%03]
+@32 = ~[BLACK LILY 4]~ [%BLACK_LILY_SND%04]
+@33 = ~[BLACK LILY 2] Hors de ma vue ! J'ai à faire.~ [%BLACK_LILY_SND%02]
+@34 = ~[FEMALE TOWNSFOLK OF BALDUR'S GATE 3 HOSTILE] Hors de ma vue, je ne ferai rien pour vous !~
+@35 = ~Catti-Brie a grandi parmi les valeureux nains du ValBise. Petite fille, ses parents ont été tués par une attaque de gobelin, mais cette magnifique humaine aux cheveux bruns à été élevée au sein du clan MarteauDeGuerre, et elle est devenu aussi résistante que les pierres au sein desquelles elle s'est construite. Catti-Brie à été la première habitante du ValBise à accueillr Drizzt chaleureusement quand il s'est rendu au Cairn du Kelvin. Elle, plus que toute autre connaissance de Drizzt, comprend les luttes qui assaillent le coeur de Drizzt et sa détermination à être accepté par les races bienveillantes des Royaumes, qui ne voient pas plus loin que la couleur de peau. Catti-Brie, sous la tutelle de ses amis, est devenue plus que redoutable pour tout ennemi qui souhaiterait s'opposer à elle et son grand arc, Taulmauril le Perce-Coeur.~
+@36 = ~Cornugon~
+@37 = ~Cyclopes~
+@38 = ~Enfant mort~
+@39 = ~Cheval mort~
+@40 = ~Homme blessé~
+@41 = ~Femme morte~
+@42 = ~Chevalier Démon~
+@43 = ~Chevalier Démon Inférieur~
+@44 = ~Tanar'ri Suprême~
+@45 = ~Araignée Astrale Démoniaque~
+@46 = ~Gardien Démoniaque~
+@47 = ~Nibby "Dipnose" ~
+@48 = ~Bébé dragon~
+@49 = ~Drizzt~
+@50 = ~[DRIZZT DO'URDEN 1] Tout ce que je veux, c'est continuer mon périple. Mes amis m'attendent tandis que je dois subir cette dance assomante ?!  Est-ce la seule mention de Drizzt qui attire votre courroux ?~ [%_%DRIZT01]
+@51 = ~[DRIZZT DO'URDEN 2]~
+@52 = ~[DRIZZT DO'URDEN 3] C'est votre vie que vous gâchez...~ [%_%DRIZT03]
+@53 = ~[DRIZZT DO'URDEN 4] Je peux être un vrai gentleman, si je ne suis pas obligé de massacrer des brutes stupides.~ [%_%DRIZT04]
+@54 = ~[DRIZZT DO'URDEN 5] J'ai affronté les démons des Neufs Enfers. Je ne verserai pas une goutte de sueur aujourd'hui~ [%_%DRIZT05]
+@55 = ~[DRIZZT DO'URDEN 8]~ [%_%DRIZT08]
+@56 = ~[DRIZZT DO'URDEN 9]~ [%_%DRIZT09]
+@57 = ~[DRIZZT DO'URDEN 6] J'aime beaucoup discuter avec vous, mais il faut vraiment que je reprenne ma route.~ [%_%DRIZT06]
+@58 = ~[DRIZZT DO'URDEN 7] N'agacez pas Drizzt... C'est totalement inacceptable.~ [%_%DRIZT07]
+@59 = ~[DRIZZT HOSTILE] Je ne passerai pas une minute de plus avec des individus tels que vous !~ 
+@60 = ~Drizzt vénère Mielikki et est en guerre avec sa cruelle ville natale (Menzoberranzan), tous ses semblables drows et tous ceux au service de Lolth. Il compte parmi ses amis des guerriers humains du nord (Wulfgar et Catti-Brie) et le nain Bruenor Marteaudeguerre, qu'il a aidé à regagner le contrôle de Mithril Hall. Il a massacrés des dragons et des mères matronnes drows. Il défia les démons (Errtu) et les puissances (Lolth), et combattit probablement le plus meurtrier des assassins de Féérune (Artemis Enteri), et aspire à forger sa propre vie à la surface.
+
+Attentionné et sensible aux autres, Drizzt soutient les plus nobles idéaux mais n'en espère pas autant des autres. Toujours à l'affût du danger et de la trahison, il parle peu mais se montre poli (bien que succinct) quand il négocie. S'il est un perfectionniste qui aspire à se faire accepter dans les lieux et les groupes qu'il rejoint pour se faire de nombreux amis, Drizzt est néanmoins hanté par le danger qu'il apporte à ceux qu'il prend en amitié à cause de l'obstination de Lolth et de ses autres ennemis (notamment Errtu et Enteri). Ceux qui le rencontrent trouvent ses manières sévères.
+
+Trés tôt dans ses voyages à la surface, Alustriel l'accueillit aussi chaleureusement et personnellement qu'elle le fait pour tous ceux dans le besoin, mais n'a pas osé le laisser accéder à la LuneArgent à ce moment la. Ses actions ont, peu à peu, rendu Drizzt Do'Urden quelqu'un de bienvenu dans le Nord de la Côte des Epées.~
+@61 = ~Mage de guerre drow~
+@62 = ~Guerrier drow~
+@63 = ~Prêtresse drow~
+@64 = ~Golem Dragon~
+@65 = ~Varlag Marteau d'Argent~
+@66 = ~Elminster~
+@67 = ~Errtu~
+@68 = ~Ettin~
+@69 = ~Fantôme~
+@70 = ~Géant du Froid~
+@71 = ~Gobelin d'élite~
+@72 = ~Gobelin~
+@73 = ~Guenhwyvar~
+@74 = ~Harpie~
+@75 = ~Jarlaxle~
+@76 = ~Par notre destinée et notre volonté, nous règnerons en maître !~ [F_DRSL11]
+@77 = ~Un bon habitant de la surface est un habitant de la surface mort !~ [F_DRSL14]
+@78 = ~Nous nous battons au nom de Lolth !~ [F_DRSL17]
+@79 = ~[DROW16]~
+@80 = ~[DROW15]~
+@81 = ~A vos ordres !~ [F_DRSL12]
+@82 = ~Que la Reine Araignée soit victorieuse.~ [F_DRSL13]
+@83 = ~Jarlaxe est le chef d'un groupe de mercenaire appelé Bregan D'Aerthe. C'est un drow mâle charmant et charismatiaque, qui brise toutes les règles concernant les mâles de la culture Drow dominée par les femmes. Cependant, il semble pouvoir bien s'en sortir à bon compte grâce à ses puissants contacts avec l'élite dirigeante de la ville. Contrairement aux autres drows, il porte fièrement des vêtements de couleur exotique et joue ouvertement de ses différences. Bregan D'Aerthe est constitué de nobles désargentés et de roturiers qui seraient des proies faciles en Ombre-Terre, mais qui en groupe réprésentent une puissance influente. Jarlaxe et Bregan D'Aerthe apparaissent comme une énigme étant donné que leur allégeance ne se prête qu'à ceux qui les paient à l'instant présent, pour que les deux partis puissent profiter de tout le chaos engendré.~
+@84 = ~Kangaxx la Liche~
+@85 = ~Marilith~
+@86 = ~Momie~
+@87 = ~Nib Jansen~
+@88 = ~Orque~
+@89 = ~Regis~
+@90 = ~[HALFLING 1] On dirait que des temps difficiles approchent !~ [%_%HALFL01]
+@91 = ~[HALFLING 5]~ [%_%HALFL05]
+@92 = ~[HALFLING 6]~ [%_%HALFL06]
+@93 = ~[HALFLING 4] Si seulement je pouvais avoir ma pipe...~ [%_%HALFL04]
+@94 = ~[HALFLING 2] Vous m'avez l'air d'une bien étrange personne errer par ces lieux~ [%_%HALFL02]
+@95 = ~[HALFLING 3] Il se préapre des choses étranges ces derniers temps.~ [%_%HALFL03]
+@96 = ~Regis (Rumblebelly) en bon représentant de sa race, préfère mener une vie calme et sédentaire à ingurgiter des grandes quantités de nourriture. Il a l'habitude d''acquérir' des objets qui ne lui sont pas destinés et ceci est à l'origine de son infortune et l'a conduit de désastre en désastre. Regis à grandi à Calimport parmi les rebuts de la société, et est devenu rapidement un voleur très adroit, gagnant même l'adhésion au sein de la guilde des voleurs locale, et gagnant la confiance du Pacha pook. Son arrivée récente à Dix-Cités ne peut signifier qu'une chose - il fuit de trés gros ennuis.~
+@97 = ~Individu en Robe~
+@98 = ~Ombre Démoniaque~
+@99 = ~Ombre de l'Ecorcheur~
+@100 = ~Reine araignée démoniaque~
+@101 = ~Crâne démoniaque~
+@102 = ~Araignée de phase~
+@103 = ~Tanar'ri~
+@104 = ~Valen~
+@105 = ~Vampire~
+@106 = ~Mort Hurlante~
+@107 = ~Chef des Muloups Majeurs~
+@108 = ~Esprit du Loup d'Hiver~
+@109 = ~Wulfgar~
+@110 = ~[GREYWOLF 4] Personne ne se mêle de mes affaires, à moins qu'ils ne les deviennent.~ [%_%GREYW04]
+@111 = ~[GREYWOLF 2] Vous n'êtes pas au bout de vos peines, misérables manants !~ [%_%GREYW02]
+@112 = ~[GREYWOLF 3] Prends ça, sale vaurien !~ [%_%GREYW03]
+@113 = ~[GREYWOLF 6] Sale catin !~ [%_%GREYW06]
+@114 = ~[GREYWOLF 7] C'est soit le revers de ma main, soit le bout de ma botte, faites votre choix !~ [%_%GREYW07]
+@115 = ~[GREYWOLF 8]~ [%_%GREYW08]
+@116 = ~[GREYWOLF 9]~ [%_%GREYW09]
+@117 = ~[GREYWOLF 5] Vous mériteriez tous de finir au bout d'une corde au petit matin !~ [%_%GREYW05]
+@118 = ~[GREYWOLF HOSTILE] Je vous trancherai la tête pour ce que vous avez fait !~
+@119 = ~Alors qu'il grandissait parmi les fiers barbares du ValBise, Wulfgar (Fils de Beornagar) à été capturé par Bruenor dans un raid barbare sur Dix-Cités. Au lieu de le tuer en tant que prisonnier, Bruenor le fit travailler en tant qu'esclave pour son compte et celui du clan Marteaudeguerre pour payer les pêchés commis par son peuple. Wulfgar le servit bien et grandit sous la tutelle de ce barbare de légende. Il manie maintenant Aegis Fang, le marteau de guerre magique, forgé pour lui par Bruenor, devenu son père adoptif.~
+@120 = ~Méduse~
+@121 = ~Chevalier Démon~
+@122 = ~Grand Doppleganger~
+@123 = ~Doppelganger~
+@124 = ~Blême~
+@125 = ~Goule~
+@126 = ~Goule Majeure~
+@127 = ~Korax la Goule~
+@128 = ~Homme en armure~
+@129 = ~Sarevok~
+@130 = ~Tasloi~
+@131 = ~Loup-Garou Majeur~
+@132 = ~Muloup Majeur~
+ 
+@341 = ~[ELMINSTER 1] Hola passants, auriez un moment à accorder à un viel homme ?~ [%_%ELMIN01]
+@342 = ~[ELMINSTER 2]~
+@343 = ~[ELMINSTER 3] Cela m'enlève un poids si c'est le chemin que vous poursuivez. Je vous retire mon soutien, et n'aurais plus jamais aucune relation avec vous.~ [%_%ELMIN03]
+@344 = ~[ELMINSTER 8]~ [%_%ELMIN08]
+@345 = ~[ELMINSTER 9]~ [%_%ELMIN09]
+@346 = ~[ELMINSTER 4] Je peux vous prodiguer des conseils, mais je ne ferai rien qui interfère avec votre destinée.~ [%_%ELMIN04]
+@347 = ~[ELMINSTER 5] Votre mission est urgente, et vous ne devriez pas avoir le temps d'embêter un vieillard!~ [%_%ELMIN05]
+@348 = ~[ELMINSTER 6] Les années que j'ai vu se succéder sous mes yeux se compent par centaines.~ [%_%ELMIN06]
+@349 = ~[ELMINSTER 7] Il est dur de devenir humble, lorsque l'on se sait parfait.~ [%_%ELMIN07]
+@350 = ~Désolé, les navets !~ [F_JAN23]
+@351 = ~Vous n'avez aucune chance de me vaincre.~ [F_IREN03]
+@352 = ~Mourrez, tous autant que vous êtes !~ [F_IREN04]
+@365 = ~Les escaliers en bois sont sortis du moule.~
+@371 = ~[DEMONKNIGHT 01] La mort vous attend !~ [%tutu_scripts%HAEL_01]
+@372 = ~[DEMONKNIGHT 03] Vous tomberez ici-même !~ [%tutu_scripts%HAEL_03]
+@373 = ~[DEMONKNIGHT 05]  ~ [%tutu_scripts%HAEL_05]
+@374 = ~[DEMONKNIGHT 06]  ~ [%tutu_scripts%HAEL_06]
+@375 = ~[DEMONKNIGHT 04]  ~ [%tutu_scripts%HAEL_04]
+@376 = ~[SLAVES 1] ~ [%_%SLAVE01]
+@377 = ~[VILLAGER, FEMALE 01d] Vous venez de loin ? Alors je vous souhaite la bienvenue.~ [%tutu_scriptv%illf01d]
+@378 = ~[FEMALE TOWNSFOLK 5]~ [%_%ftown05]
+@379 = ~[FEMALE TOWNSFOLK 6]~ [%_%ftown06]
+@380 = ~[FEMALE GREETING 1] Oui ?~ [%_%genfg01]
+@381 = ~[SONNER 1] Faites en sorte de garder vos têtes accrochées à vos cous et on s'en sortira ! Nous avons juste besoin d'un peu d'aide, c'est tout.~ [%_%SONNR01]
+@382 = ~[SONNER 3]~ [%_%SONNR03]
+@383 = ~[SONNER 4]~ [%_%SONNR04]
+@384 = ~[SONNER 2] Les climats frais seront plus présents.~ [%_%SONNR02]
+@385 = ~[BEAR, POLAR 03]~ [%_%pbear03]
+@386 = ~[BEAR, POLAR 04]~ [%_%pbear04]
+@387 = ~[BEAR, POLAR 05]~ [%_%pbear05]
+@388 = ~[BEAR, POLAR 06]~ [%_%pbear06]
+@389 = ~[BEAR, POLAR 08]~ [%_%pbear08]
+@390 = ~[BEAR, POLAR 09]~ [%_%pbear09]
+@391 = ~[BEAR, POLAR 01]~ [%_%pbear01]
+@392 = ~[BEAR, POLAR 02]~ [%_%pbear02]
+@393 = ~[THE WARRIOR 1] A l'aide ! Venez m'aider! Ils sont trop nombreux !~
+@394 = ~[THE WARRIOR 5] ~
+@395 = ~[THE WARRIOR 6]~
+@396 = ~[THE WARRIOR 2] J'ai si froid... J-je... Meurs...P-Pitié... Restez auprès de moi un moment...~
+@397 = ~[THE WARRIOR 3] J-je ne veux pas mourir seul...~
+@398 = ~[THE WARRIOR 4] Merci...~
+@399 = ~[SLAVES 6]~ [%_%SLAVE06]
+@400 = ~~ [TANAR01]
+@401 = ~~ [TANAR02]
+@402 = ~~ [TANAR03]
+@403 = ~[BASILISK, GREATER 06] ~ [%_%GBASI06]
+@404 = ~[BASILISK, GREATER 09] ~ [%_%GBASI09]
+@405 = ~~ [TANAR05]
+@406 = ~~ [TANAR06]
+@407 = ~~ [TANAR04]
+@408 = ~~ [TANAR01]
+@409 = ~~ [TANAR02]
+@410 = ~[SPIDER, PHASE 03] ~ [%_%PSPID03]
+@411 = ~[SPIDER, PHASE 04] ~ [%_%PSPID04]
+@412 = ~[SPIDER, PHASE 05] ~ [%_%PSPID05]
+@413 = ~[SPIDER, PHASE 06] ~ [%_%PSPID06]
+@414 = ~[SPIDER, PHASE 08] ~ [%_%PSPID08]
+@415 = ~[SPIDER, PHASE 09] ~ [%_%PSPID09]
+@416 = ~[SPIDER, PHASE 01] ~ [%_%PSPID01]
+@417 = ~[SPIDER, PHASE 02] ~ [%_%PSPID02]
+@418 = ~[SPIDER, PHASE 10] ~ [%_%PSPID10]
+@419 = ~[METALLIC SOUND 1]~ [%_%HIT_01C]
+@420 = ~[METALLIC SOUND 2]~ [%_%HIT_02C]
+@421 = ~[METALLIC SOUND 3]~
+@422 = ~[METALLIC SOUND 4]~ [%_%HIT_03D]
+@423 = ~[SPIDER, WRAITH 03] ~ [%_%WSPID03]
+@424 = ~~ [%_%vicon38]
+@425 = ~~ [%_%vicon39]
+@427 = ~[WYVERN 03] ~ [%_%WYVER03]
+@428 = ~[WYVERN 04] ~ [%_%WYVER04]
+@429 = ~[WYVERN 05] ~ [%_%WYVER05]
+@430 = ~[WYVERN 06] ~ [%_%WYVER06]
+@431 = ~[WYVERN 07] ~ [%_%WYVER07]
+@432 = ~[WYVERN 08] ~ [%_%WYVER08]
+@433 = ~[WYVERN 09] ~ [%_%WYVER09]
+@434 = ~[WYVERN 01] ~ [%_%WYVER01]
+@435 = ~[WYVERN 02] ~ [%_%WYVER02]
+@436 = ~[WYVERN 10] ~ [%_%WYVER10]
+@437 = ~[SKELETON WARRIOR 02]~ [%_%SKELW02]
+@438 = ~[SKELETON WARRIOR 03] Meurs...~ [%_%SKELW03]
+@439 = ~[SKELETON WARRIOR 9] ~ [%_%SKELW09]
+@440 = ~[WOLF, WINTER 07]~ [%_%WWOLF07]
+@441 = ~[SKELETON WARRIOR 01]~ [%_%SKELW01]
+@443 = ~[MALE GREETING 3]  Hmm ?~ [%_%GENMG03]
+@444 = ~[MONKS 5]~ [%_%MONKS05]
+@445 = ~[MONKS 6]~ [%_%MONKS06]
+@446 = ~[WEREWOLF 01]  ~ [%_%WEREW01]
+@447 = ~[WEREWOLF 02]  ~ [%_%WEREW02]
+@448 = ~[WEREWOLF 03]  ~ [%_%WEREW03]
+@449 = ~[WEREWOLF 04]  ~ [%_%WEREW04]
+@450 = ~[WEREWOLF 05]  ~ [%_%WEREW05]
+@451 = ~[WEREWOLF 06]  ~ [%_%WEREW06]
+@452 = ~[CENTEOL 1] Allez-y, mes araignées. Sssssssss, tuez-les, tuez-les tous !~ [%_%CENTL01]
+@453 = ~[CENTEOL 2] ~ [%_%CENTL02]
+@454 = ~[CENTEOL 3]~ [%_%CENTL03]
+@455 = ~[CENTEOL 4]~ [%_%CENTL04]
+@456 = ~[WEREWOLF, GREATER 01]  Je vous enterrerai tous !~ [%_%GWERE01]
+@457 = ~[WEREWOLF, GREATER 03]  ~ [%_%GWERE03]
+@458 = ~[WEREWOLF, GREATER 04]  ~ [%_%GWERE04]
+@459 = ~[WEREWOLF, GREATER 05]  ~ [%_%GWERE05]
+@460 = ~[WEREWOLF, GREATER 06]  ~ [%_%GWERE06]
+@461 = ~[WOLF, WINTER 03] ~ [%_%WWOLF03]
+@462 = ~[WOLF, WINTER 04] ~ [%_%WWOLF04]
+@463 = ~[WOLF, WINTER 05] ~ [%_%WWOLF05]
+@464 = ~[WOLF, WINTER 06] ~ [%_%WWOLF06]
+@465 = ~[WOLF, WINTER 08] ~ [%_%WWOLF08]
+@466 = ~[WOLF, WINTER 09] ~ [%_%WWOLF09]
+@467 = ~[WOLF, WINTER 01] ~ [%_%WWOLF01]
+@468 = ~[WOLF, WINTER 02] ~ [%_%WWOLF02]
+@469 = ~[SIRINE 05] ~ [%_%SIRIN05]
+@470 = ~[SKELETON WARRIOR 04] ~ [%_%SKELW04]
+@471 = ~[ZOMBIE 03]~ [%_%ZOMBI03]
+@472 = ~[ZOMBIE 04]~ [%_%ZOMBI04]
+@473 = ~[ZOMBIE 05]~ [%_%ZOMBI05]
+@474 = ~[ZOMBIE 06]~ [%_%ZOMBI06]
+@475 = ~[ZOMBIE 01]~ [%_%ZOMBI01]
+@476 = ~[ZOMBIE 02]~ [%_%ZOMBI02]
+
+@477 = ~La corne de la tribu de l'ours revient~
+@478 = ~Invocation de l'esprit sacré de l'ours~
+@479 = ~Hémorragie~
+@480 = ~Sang empoisonné~
+@481 = ~Dissipation des effets~
+@482 = ~Protection contre le mal~
+@483 = ~Invisibilité~
+@484 = ~La figurine de pantère revient~
+@485 = ~Invocation de Guenhwyvar~
+@486 = ~Glups !~
+
+//---------------------------------------------------------------------------------
+//  Item descriptions:
+//---------------------------------------------------------------------------------
+
+@133 = ~Dague~
+@134 = ~Dague Vampirique +5~
+@135 = ~La dague traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau doté d'un seul tranchant et un peu plus court. 
+
+PARAMETRES :
+
+Dégâts : 1D4
+Type de dégâts : perforant
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type : arme à 1 main
+Force nécessaire : 3
+Non utilisable par :
+ Clerc~
+@136 = ~Cette dague est l'une des plus redoutées des Royaumes. Artemis Enteri a mis la main sur cette dague et la combinaison de son acier et des talents mortels d'Artemis au combat font que seuls des héros peuvent espèrer survivre à cette lame.
+
+PARAMETRES :
+
+Dégats : 1D4 + 3
+TAC0 : +5
+Type de dégats : Perforant
+Capacités Spéciales : Chaque coup draine 5 points de vie à la cible et les transfère à l'utilisateur.
+Poids : 1
+Facteur de vitesse : 2
+Type d'arme : Dague
+Type : arme à une main
+Non utilisable par : 
+ Clerc~
+@137 = ~Besantine~
+@138 = ~Âme du serpent~
+@139 = ~La besantine a peu de choses en commun avec une armure de cuir normale. L'armure de cuir est une protection renforcée, la besantine est souple et comporte des centaines de rivets. Ces derniers sont tellement rapprochés qu'ils forment une couche flexible de métal dur qui permet de contrer toute attaque cinglante et tranchante. Le renforcement de cuir souple n'est rien de plus qu'un moyen de maintenir les rivets en place. 
+
+PARAMETRES :
+
+Classe d'Armure : 7
+Poids : 25
+Force nécessaire : 6
+Non utilisable par :
+ Mage~
+@140 = ~Cette armure de cuir est l'armure personnelle d'Artemis Enteri.
+
+PARAMETRES :
+
+Capacité spéciale : Immunité contre le poison
+Classe d'Armure : 4
+Poids : 25
+Non utilisable par : 
+ Mage~
+@141 = ~Amulette~
+@142 = ~Les amulettes sont généralement des objets magiques suspendus autour du cou par une chaîne. Le type de chaîne accompagnant l'amulette augmente souvent la valeur esthétique de l'objet, mais pas ses propriétés magiques. On ne peut porter qu'une seule amulette autour du cou.~
+@143 = ~Ce médaillon est recherchés à la fois par les voleurs et les bardes, pour des raisons différentes. En effet, en plus de fournir une protection magique contre les attaques physiques, le possesseur de l'amulette voit certaines de ses capacités de voleur augmentées. Mais plus importante encore, du point de vue des bardes, est la capacité de l'amulette à fournir une protection contre toutes les formes de silence.
+
+PARAMETRES :
+
++20% pour la détection des pièges
++3 à la classe d'armure
+Immunité au Silence
+
+Utilisable par: 
+ Bardes
+ Voleurs~ 
+@144 = ~Amulette de protection contre l'Absorption Vampirique.~
+@145 = ~Cette amulette fut enchantée par un mage tandis qu'il recherchait un artefact que l'on prétendait localisé dans la Montagne des Morts au ValBise.
+
+Capacité spéciale : Bénédiction sur le porteur et immunité contre le drain de vie vampirique.
+Celui qui porte l'amulette doit garder à l'esprit que si l'amulette le protège contre le drain de vie, elle annule tous les bonus de constitution.
+
+Non utilisable par :
+ Guerrier
+ Voleur
+ Paladin
+ Rôdeur~
+@146 = ~Statuette d'araignée~
+@147 = ~ Cette petite statuette d'araignée brille d'un éclat rougeoyant.~
+@148 = ~ Cette petite figurine en forme d'araignée permet d'invoquer six araignées de phases.
+
+La figurine ne contient qu'une charge avant d'être détruite pour retourner en possession de sa précédente propriétaire, la reine araignée démoniaque résidant dans les plans extérieurs.~
+@149 = ~Epée courte~
+@150 = ~Morsure du serpent~
+@151 = ~L'épée courte est le premier type d'épée à être apparu. Grossièrement, on peut comparer une épée courte à une dague dont la lame serait si longue qu'on ne pourrait plus l'appeler dague. Le terme épée courte n'entre pas dans les catégories d'épées. Pourtant, il est utilisé pour décrire une lame à double tranchant longue d'environ 60 cm. L'estoc de l'épée est généralement pointu, et on la range donc parmi les armes perforantes.
+
+PARAMETRES :
+
+Dégâts : 1D6
+Type de dégâts : perforant
+Poids : 3
+Facteur de vitesse : 3
+Type de compétence : Epée courte
+Type : arme à 1 main
+Force nécessaire : 5
+Non utilisable par :
+ Druide
+ Clerc 
+ Mage~
+@152 = ~L'épée personnelle d'Artemis Enteri.
+
+PARAMETRES :
+ 
+Dégats : 1D6 + 4
+TAC0 : +4
+Capacité spéciale : Empoisonne la cible si elle rate son jet de sauvegarde.
+Poids : 3
+Facteur de vitesse : 3
+Type d'arme : épée courte
+Type : arme à une main
+Non utilisable par : 
+ Druide
+ Clerc
+ Mage~
+@153 = ~Enfant du chef de la tribu de l'ours~
+@154 = ~Il s'agit de l'enfant du chef de la tribu de l'ours. Il est toujours vivant malgré ce qu'il a enduré.~
+@155 = ~Corne Sacrée de l'Ours~
+@156 = ~Le son de cette corne magique invoque un puissant esprit de l'ours pour se battre aux côtés de son possesseur.
+
+Capacités : invoque un esprit de l'ours une fois par jour.~
+@157 = ~Ceinturon~
+@158 = ~Symbole Sacré de Lathandre~
+@159 = ~Les ceinturons ressemblent généralement aux ceintures. Mais à la différence de ces dernières, ils ne servent pas à retenir les pantalons ou les salopettes, mais à porter bourses, fourreaux et choses de ce genre. 
+ 
+PARAMETRES :
+
+Poids : 2~
+@160 = ~Seuls les plus nobles et les plus fidèles serviteurs du Dieu du Matin reçoivent ce type de récompense.
+
+PARAMETRES
+
+Capacités d'équipement :
+Mémorisation de 1 sort additionnel du 6ème et du 7ème niveau.
++5 % de Résistance magique.
+Force +1.
+
+Utilisable seulement par :
+Clercs bons.~
+@161 = ~Symbole Sacré de Heaume~
+@162 = ~Seuls les plus dévoués des serviteurs des Yeux Sans Sommeil peuvent espérer recevoir en présent ces anneaux sacrés.
+
+PARAMETRES
+
+Capacités d'équipement :
+Mémorisation de 1 sort additionnel du 6ème et du 7ème niveau.
++5 % de Résistance magique.
+Force +1.
+
+Utilisable seulement par :
+Clercs neutres~
+@163 = ~Symbole Sacré de Talos~
+@164 = ~Seuls les plus fidèles serviteurs du Dieu du Tonnerre peuvent espérer recevoir ces objets magiques.
+
+PARAMETRES
+
+Capacités d'équipement :
+Mémorisation de 1 sort additionnel du 6ème et du 7ème niveau.
++5 % de Résistance magique.
+Force +1.
+
+Utilisable seulement par :
+Clercs mauvais~
+@165 = ~Masse~
+@166 = ~Etoile des tempêtes +3~
+@167 = ~La masse descend directement du simple gourdin. C'est une simple hampe de bois avec une tête en pierre ou en fer fixée à son extrémité. La forme de la tête varie : certaines sont pointues, d'autres à rebord, et d'autres encore ont une tête pyramidale.
+
+PARAMETRES :
+
+Dégâts : 1D6 + 1
+Type de dégâts : contondant
+Poids : 10
+Facteur de vitesse : 7
+Type de compétence : Masse
+Type : arme à 1 main
+Force nécessaire : 10
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@168 = ~Cette arme magique est de fabrication ancienne bien que fabriquée à Netheril. Elle crépite de spectaculaires éclairs apparaissent lorsqu'on l'utilise.
+
+PARAMETRES :
+
+TAC0 : +3 bonus
+Dégâts : 1D6 +4, + 1D6 de dégâts électriques
+Type de dégats : contondant
+Poids : 6
+Facteur de vitesse : 4
+Type d'arme : Masse
+Type : Arme à 1 main
+Force nécessaire : 10
+Non utilisable par:
+ Druide
+ Mage
+ Voleur~
+@169 = ~Etoile du matin~
+@170 = ~Etoile de glace +4~
+@171 = ~Cette arme est constituée d'un manche en bois terminé par une longue barre de métal. Ces armes mesurent environ 1,20m. Certaines sont dotées d'une tête ronde, ovale ou cylindrique couverte de pointes. Généralement, l'extrémité de ces armes est dotée d'une pointe pour frapper d'estoc.
+
+PARAMETRES :
+
+Dégâts : 2D4
+Type de dégâts : Contondant
+Poids: 12
+Facteur de vitesse: 7
+Type d'arme: Fléau/Morgenstern
+Type: arme à 1 main
+Non utilisable par:
+ Druide
+ Mage
+ Voleur~
+@172 = ~Cette arme est constituée d'un manche en bois terminé par une longue barre de métal. Ces armes mesurent environ 1,20m. Certaines sont dotées d'une tête ronde, ovale ou cylindrique couverte de pointes. Généralement, l'extrémité de ces armes est dotée d'une pointe pour frapper d'estoc.
+
+PARAMETRES :
+
++20% de résistance au feu
+
+TAC0: +4
+Dégâts : 2D4 +4, +1-4 de dégats de froid
+Type de dégâts : Contondant
+Poids : 8
+Facteur de vitesse : 4
+Famille d'arme : Fléau/Morgenstern
+Type : Arme à 1 main
+Force nécessaire : 11
+Non utilisable par:
+ Druide
+ Mage
+ Voleur~
+@173 = ~Bottes~
+@174 = ~Bottes de Rapidité~
+@175 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure. 
+
+PARAMETRES :
+
+Poids : 4~
+@176 = ~Ces bottes font partie de l'équipement personnel d'Artemis Enteri, le célèbre et redoutable assassin qui nourrit une haine sans limite à l'égard de Drizzt. Artemis parcourt les Royaumes d'ombre en ombre, planifiant un moyen de tuer le rôdeur elfe noir.
+
+PARAMETRES :
+
+Augmente la vitesse de déplacement.~
+@177 = ~Journal de Bruenor~
+@178 = ~Jour 1
+D'étranges événements planent sur nos têtes, le ciel est balayé de ses nuages ténébreux qui peuvent à première vue apparaître comme une bonne chose... Cependant, à cause de cela, l'environnement du Val en est affecté. Les glaces et la neige commencent à fondre et le résultat sera que tout le ValBise risque d'être noyé sous les eaux.
+
+Jour 2
+Catti-Brie s'est jointe aux rôdeurs locaux pour trouver la source de ce changement de climat dramatique.
+
+Jour 3
+Je n'ai pas reçu de nouvelles de Catti-Brie aujourd'hui, bien qu'un seul jour ne se soit passé, bien sûr.
+
+Jour 4
+Il n'y a toujours pas de nouvelles, même pas un messager pour me dire ce qu'il en est.
+
+Jour 5
+Toujours pas de nouvelles, Catti-Brie m'avait dit qu'elle reviendrait au bout de deux jours. Si elle avait été retardée, elle m'aurait fait parvenir un message d'une façon ou d'une autre.
+
+Jour 6
+Je sens que quelque chose ne tourne pas rond ; je vais essayer de retrouver Catti-Brie. J'ai aussi demandé à Regis de retrouver Drizzt. J'ai entendu dire qu'il revenait vers le Val depuis une course depuis la côte des épées. J'ai aussi essayé de trouver Wulfgar, mais on dirait qu'il a disparu dans la nature lui aussi.~
+@179 = ~Hache de guerre~
+@180 = ~Hache de guerre +3~
+@181 = ~Cette hache à été forgée personnellement par Bruenor aprés son arrivée au ValBise.
+
+PARAMETRES :
+
+Dégâts : 1D8 +3
+TAC0 : +3 de bonus
+Type de dégâts : Tranchant
+Poids : 2
+Facteur de vitesse : 4
+Type d'arme : Hache
+Type : Arme à 1 main
+Non utilisable par :
+ Druide
+ Mage
+ Voleur
+ Personnage d'alignement mauvais~
+@182 = ~Casque~
+@183 = ~Casque de Bruenor~
+@184 = ~Ce casque est tout cabossé, il a même une corne partiellement brisée. Mais il donne toujours à Bruenor une excellente protection.
+
+PARAMETRES :
+
+Bonus à la Classe d'Armure : 1
+Spécial :
+ +1 au TACO
+ +1 aux Jets de Sauvegardes
+Poids : 1
+Non utilisable par :
+ Mage
+ Barde
+ Voleur~ 
+@185 = ~Armure de plates complète~
+@186 = ~Armure de plates complète en mithril +2~
+@187 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, aussi bien d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups, et l'ensemble de la tunique est soigneusement orné de riches gravures et de détails en relief. 
+
+PARAMETRES :
+
+Classe d'Armure : 1
+Poids : 70
+Force nécessaire : 15
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@188 = ~Armure de plaque complète en Mithril +2
+
+C'est l'armure personnelle de Bruenor, et vous ne verrez jamais comparable matériel. C'est réellement un vrai travail d'artiste.
+
+PARAMETRES :
+
+Classe d'armure : -1
+Poids : 45
+Non utilisable par :
+ Voleur
+ Barde
+ Druide
+ Mage~
+@189 = ~Arbalète lourde~
+@190 = ~Arbalète lourde +1~
+@191 = ~Une arbalète est un arc monté en croix sur un manche en métal ou en bois, appelé alors un arbrier. L'arc est généralement fabriqué en bois de frêne ou d'if. L'arbalète décoche un carreau lourd (également appelé simplement carreau).
+
+Dégâts : +2 (projectile)
+Poids : 14
+Facteur de vitesse : 10
+Type de compétence : arbalète
+Type : arme à 2 mains
+Force nécessaire : 12
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@192 = ~Une arbalète est un arc monté en croix sur un manche en métal ou en bois, appelé alors un arbrier. L'arc est généralement fabriqué en bois de frêne ou d'if. L'arbalète décoche un carreau lourd (également appelé simplement carreau). Cette arbalète est magique
+
+PARAMETRES :
+
+Dégâts : +3 (projectile)
+TAC0 : bonus de +1
+Poids : 12
+Facteur de vitesse : 9
+Type de compétence : arbalète
+Type : arme à 2 mains
+Force nécessaire : 12
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@193 = ~Flèches~
+@194 = ~Carquois de Catti-Brie~
+@195 = ~Les flêches de ce carquois sont magiques et sont produites indéfiniment. Ce sont des flêches légères souvent utilisées pour la chasse. La plupart de ces flêches sont faites à partir de bois de cendre ou de bouleau, et font de 30 à 40 pouces de long.
+
+PARAMETRES :
+
+Dégâts : 1D6 + 1
+TAC0 : +1 bonus
+Type de dégâts : projectile (perforant)
+Poids : 0
+Arme de jet : Arc
+Non utilisable par :
+ Clerc
+ Druide
+ Mage~ 
+@196 = ~Arc long~
+@197 = ~Taurmaril~
+@198 = ~L'arc long Taurmaril: 'le Perce-Coeur'
+Ceci est un autre artefact célèbre du côté du ValBise. Cet arc appartient en particulier à une héroïne, Catti-Brie. La fille adoptive de Bruenor et objet de l'amour de deux guerriers très acclamés. Elle brandit ce puissant objet argenté avec une vigueur rare. Prenez garde aux traits d'argent !
+
+PARAMETRES :
+
+Dégâts : +2
+TAC0 : +2
+Poids : 2
+Facteur de vitesse : 2
+Type d'arme : Arc long
+Type : Arme à 2 mains
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
+@199 = ~Epée longue~
+@200 = ~Khazid-Zhea~
+@201 = ~Une épée vorpale extrêmement chaotique. Catti-Brie a gagné l'épée dans une bataille psychologique pendant le Temps des Troubles, alors que les dieux marchaient parmi les hommes. Cette arme lui rend de fiers services.
+
+PARAMETRES :
+
+Dégâts : 1D8 +3
+TAC0 : +3 de bonus
+Type de dégâts : tranchants
+Poids : 2
+Facteur de vitesse : 3
+Type d'arme : Epée longue
+Type : arme à 1 main
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
+@202 = ~Fourrure enchantée du Loup Hivernal~
+@203 = ~Cette peau de loup hivernal d'un blanc pur est douce et voluptueuse. Elle fut enchantée par le forgeron nain Marteaudargent. Elle peut être portée en tant que cape.
+
+Capacités spéciales :
+Résistance au froid : 50%~
+@204 = ~Fléau~
+@205 = ~Le fléau est une solide poignée en bois attachée à une tringle en fer, une baguette de bois comportant des pointes, ou une balle en fer pointue. La poignée et l'équipement qui l'accompagne sont reliés par une charnière ou une chaîne. Cette arme servait à l'origine à battre le grain. 
+
+PARAMETRES :
+
+Dégâts : 1D6 +1
+Type de dégâts : écrasant
+Poids : 15
+Facteur de vitesse : 7
+Type de compétence : Fléau/Etoile du matin
+Type : arme à 1 main
+Force nécessaire : 13
+Non utilisable par :
+Druide
+Mage 
+Voleur~ 
+@206 = ~Crâne~
+@207 = ~Dagues de jet~
+@208 = ~Dagues de jet empoisonnées~
+@209 = ~La dague de jet traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau qui n'a qu'un seul tranchant et est un peu moins long. Celle-ci a un manche plus court et est équilibrée différemment.
+
+PARAMETRES :
+
+Dégâts : 1D4
+Type de dégâts :  projectile (perforant)
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type : arme à 1 main
+Force nécessaire : 3
+Non utilisable par :
+Clerc~ 
+@210 = ~Ces dagues de jet ont été enduites de poison. Elle est fréquemment utilisée par les gobelins durant leurs embuscades.~
+@211 = ~Gobelet rempli de sang~
+@212 = ~Gobelet de Corugnon~
+@213 = ~Un sang sombre et rance repose dans ce gobelet en étain. On peut voir des traces de lèvres noires et durcies à l'endroit où d'autres semblent avoir goûté au contenu. Les mots suivants sont gravés dans la profondeur de l'étain : "Goutez mon âme."~
+@214 = ~Les mots suivants sont gravés dans la profondeur de l'étain : "Goutez mon âme.". Il est dit que celui qui goûtera le sang sombre qui repose dans la profondeur de l'étain de ce gobelet retrouvera sa santé, verra ses blessures guéries, ses maladies soignées et d'éventuels poisons neutralisés. Mais ces bénéfices ont un prix. Même la magie d'identification ne parvient pas à prédire les effets secondaires.
+
+PARAMETRES :
+
+Special: Restauration de 5 points de vie
+Special: Guérison des maladies et de l'empoisonnement
+
+Effets secondaires: Inconnus~
+@215 = ~Anneau~
+@216 = ~Anneau d'Action Libre : 'Cadeau d'Edventar'~
+@217 = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rarement, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.~
+@218 = ~Anneau d'Action Libre : 'Cadeau d'Edventar'
+Cet anneau fut donné à Edventar, le chasseur et écumeur de récifs, par un groupe d'elfes aquatiques, ses amis de longue date. En aidant dans sa fuite Yenandra de Dambrath, la "Reine des Pirates", Edventar leur permit en effet de survivre. Mais  Yenandra est toujours crainte le long de toutes les côtes.
+
+PARAMETRES :
+
+Spécial :  Le porteur est immunisé à tout ce qui, magique ou non, pourrait affecter sa mobilité, y compris les sorts de rapidité et de ralentissement.~
+@219 = ~Main de Goule~
+@220 = ~Masse de disruption +2~
+@221 = ~La masse descend directement du simple gourdin. C'est une simple hampe de bois avec une tête en pierre ou en fer fixée à son extrémité. La forme de la tête varie : certaines sont pointues, d'autres à rebord, et d'autres encore ont une tête pyramidale.
+
+PARAMETRES :
+
+Dégâts : 1D6 + 1
+Type de dégâts : contondant
+Poids : 10
+Facteur de vitesse : 7
+Type de compétence : Masse
+Type : arme à 1 main
+Force nécessaire : 10
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@222 = ~Cette masse a été créée pour répondre à un besoin unique : tuer les non-vivants. Toute créature de cette sorte touchée par la masse court le risque d'être purement et simplement volatilisée. Les légendes parlent d'un prêtre tellement saint que son simple toucher détruisait les vampires, mais on en sait s'il devait ce pouvoir à sa foi ou à son arme.
+Maintenant qu'elle a été recouverte d'illithium, cette masse procure également l'immunité contre le drainage de niveaux des plus puissants morts-vivants.
+
+PARAMETRES :
+
+Capacité spéciale:
+- Bonus aux dégâts aux morts-vivants : 1D6+3
+- Tue directement un mort-vivant si il rate son jet de sauvegarde contre la mort.
+
+Dégâts : 1D6+3
+TAC0 : +2
+Type de dégâts : contondant
+Poids : 8
+Facteur de vitesse : 6
+Type de compétence : masse
+Type : arme à 1 main
+Force nécessaire : 10
+Non utilisable par : 
+Druide
+Magicien
+Voleur~
+@223 = ~Armure d'écailles~
+@224 = ~Armure d'écailles de Dragon Vert~
+@225 = ~L'armure d'écailles de Dragon Vert est une armure très légère, résistante à l'acide et au feu. Elle est souvent recherchée du fait de ces propriétées, mais trouver, sans parler de tuer, un ancien dragon puissant pour pouvoir en forger une relève de l'impossible; Il est plus facile d'en trouver une déja existante, comme celle ci. Il faudra néanmoins être prudent, et ne pas la revêtir en présence d'un dragon, surtout si celui ci est vert.
+
+PARAMETRES :
+
+Bonus : 50% de résistance au feu
+Bonus : 50% de résistance à l'acide
+Classe d'armure : -1
+Poids : 30
+Force nécessaire : 8
+Non utilisable par :
+ Barde
+ Mage
+ Voleur~
+@227 = ~Cimeterres de Drizzt~
+@228 = ~Ce sont les cimeterres personnels de Drizzt: Etincelle et Morsure du Froid.~
+@229 = ~Pierre gardienne~
+@230 = ~Pierre gardienne drow~
+@231 = ~Souvent marquées avec des glyphes magiques, des runes ou des symboles, les pierres gardiennes sont de puissants objets magiques qui garantissent à ceux qui les possèdent un accés sans encombres pour des zones protégées magiquement. Comme ces pierres gardiennes sont la plupart du temps unique et spécifiques dans leur nature, il est rare d'en trouver une avec plus d'un usage.~
+@232 = ~Pierre gardienne drow~
+@233 = ~Crâne de dragon vert~
+@234 = ~La tête coupée d'un dragon vert est aussi effrayante qu'elle est rassurante. Les écailles sur le crâne peuvent être utilisées pour forger une armure d'écailles de dragon vert. C'est l'une des armure les plus recherchées, mais parvenir à occire un dragon vert est une tâche quasi impossible, bien que certains chanceux tombent parfois sur des écailles ou des armures déja forgées.~
+@235 = ~Potion~
+@236 = ~Potion de protection contre la mort~
+@237 = ~Les potions sont typiquement retrouvées dans des flasques en céramique, ou d'autres contenants en verre, cristal ou métal. Elles contiennent généralement la dose necessaire de produits pour accomplir l'effet demandé.~
+@238 = ~Cette potion protège celui qui la boit contre les effets de mort magique, et la pétrification. Elle constitue aussi une protection contre le drain de vie vampirique.~
+@239 = ~Cape~
+@240 = ~Cape elfique~
+@241 = ~Une cape peut avoir différentes formes et être réalisée à partir de tout type d'étoffe. Les formes les plus communes sont celles d'un morceau d'étoffe circulaire présentant un trou en son centre pour laisser passer la tête, ainsi que celle d'un grand morceau de tissu s'enroulant autours du cou, maintenu par une chaîne ou une broche.~
+@242 = ~Cape elfique
+Cette cape de couleur gris neutre ressemble à un vêtement normal. La porter permet à n'importe qui de se cacher dans l'ombre avec une facilité déconcertante. 
+
+PARAMETRES :
+
+Se cacher dans l'ombre : +10 %~
+@243 = ~Ceinturon de force du Géant du Froid~
+@244 = ~Cette ceinture faite à partir de cheveux d'un géant de gel permet à celui qui la porte d'obtenir une force semblable à celle de ces géants.
+
+Capacité: Force portée à 21~
+@245 = ~Parchemin Runique de l'Hiver~
+@246 = ~Ce parchemin, combiné avec la hache tueuse des glaces, pourra créer une arme d'une puissance incroyable.~
+@247 = ~Anneau de Kangaxx~
+@248 = ~Anneau de Kangaxx
+Cet anneau sans apprêt irradie d'une ignoble magie puissamment maléfique. Son créateur, Kangaxx, n'était pas moins maléfique, même avant que des millénaires en mort-vivant n'affûtent son pouvoir. Des mages de Netheril auraient réussi un jour à emprisonner cette demi liche mais, incapables de la détruire, ils se seraient transformés en liches pour garder ses restes. La création de l'anneau les auraient montés l'un contre l'autre, car les neuf facettes de l'anneau furent, dit-on, emplies du pouvoir des sacrifices et de la mort.
+
+PARAMETRES :
+
+Classe d'Armure:  +2 
+Jets de Protection:  +2 
+Résistance à la Magie:  +10 % 
+Capacité Spéciale:  Immunité aux maladies et aux Poisons~
+@249 = ~Hache de guerre +2~
+@250 = ~Griffe~
+@251 = ~Griffe de Cornugon~
+@252 = ~Il semble que cette griffe appartenait à un grand monstre, peut-être une sorte de démon.~
+@253 = ~C'est la griffe d'un démon Cornugon. Elle possède de nombreux enchantements qui s'activent lorsque l'on porte la griffe comme un anneau. Néanmoins, elle possède des inconvénients car ce pouvoir semble être alimenté par le sang de son propriètaire. A cause de cela, le porteur de la griffe sera plus faible que d'habitude et sera plus sensible aux poisons.
+
+PARAMETRES :
+
+Classe d'Armure : +1
+Portection contre les projectiles : +4
+Résistance au feu : 50%
+Résistance au froid : 50%
+Résistance à la magie : 50%
+Sauvegarde contre la mort : Pénalité de -4
+Sauvegarde contre les baguettes : +3
+Sauvegarde contre la métamorphose : +3
+Sauvegarde contre le souffle : +3
+Sauvegarde contre les sorts : +3
+Malus de constitution : -2
+Malus de force : -2~
+@254 = ~Pierre Ionique~
+@255 = ~Pierre Ionique verte pâle~
+@256 = ~C'est une petite pierre qui flotte en orbite autour de la tête de son propriétaire. Equipez tout simplement la pierre pour la mettre dans son orbite. Ces pierres évidemment magiques ont des propriétés différentes selon leurs couleurs.~
+@257 = ~Sur son lit de mort, le vieux héros Rigar Sangvrai fit une dernière requête à son compagnon le mage Spectorial : que sa résistance et ses talents de guerrier lui survivent. Son ami accepta à contrecoeur et transféra ces qualités dans un objet magique, sachant qu'elle manqueraient ensuite à l'âme du vieux guerrier. Cette pierre ionique vert pâle contient maintenant ces essences et confère à son porteur la santé et la compétence de Sangvrai.
+
+PARAMETRES :
+
+Capacités d'équipement :
+ +10 % aux points de vie
+ +1 aux chances de toucher
+Bonus de Classe d'Armure : aucun
+Poids : 2
+Inutilisable par :
+ Mage
+ Barde
+ Voleur~
+@258 = ~Hache de jet~
+@259 = ~Tueuse des glaces +2~
+@260 = ~La hache à main, ou hache de jet, est également connue sous l'appellation de hachette. Sa lame comporte une lame d'acier tranchante, contrebalancée par une barbelure pointue. La courte poignée comporte une pointe en bas et la tête comporte parfois une pointe en haut. 
+
+PARAMETRES :
+
+Dégâts : 1D6 +1
+Type de dégâts :  projectile (perforant)
+Poids : 5
+Facteur de vitesse : 4
+Type de compétence :  Hache
+Type : arme à 1 main
+Force nécessaire : 4
+Non utilisable par :
+Druide
+Clerc
+Mage 
+Voleur~
+@261 = ~Cette hache de jet n'a pas seulement été parfaitement équilibrée pour son utilisation comme arme de lancer, mais à été également sujette à de grandes améliorations magiques. Ainsi, elle est à la fois plus dévastarice et précise que n'importe quelle arme non-magique du même genre. Parce que son créateur nain Barbegelée est originaire du ValBise, cette arme tire son pouvoir d'enchantement d'un froid extrême. Il est dit qu'il l'a utilisé durant ses voyages dans les Monts de la Marche contre des Géants du Feu. Barbegelée n'a jamais fini de forger parfaitement son arme. Une fois combinée au Parchemin Runique de l'Hiver, sa forme complète serait achevée.
+
+PARAMETRES :
+
+Dégats: 1D6 + 3
+TAC0 : +2
+Enchantement d'arme : +2
+Dégats bonus de froid : +2
+Type de dégâts (mêlée) : tranchants
+Type de dégâts (lancer) : Projectile (perforant)
+Spécial : revient dans la main du lanceur
+Facteur de vitesse : 2
+Poids : 3~
+@262 = ~Tueuse des glaces +5~
+@263 = ~C'est la version complète de la Tueuse des glaces, qui est désormais une arme d'un pouvoir immense.
+
+PARAMETRES :
+
+Dégats (mêlée) : 1D6 + 3
+Dégats (lancer) : 1D6 + 5
+TAC0 : +5
+Enchantement d'arme : +5
+Dégâts Bonus de froid : 2
+Capacité : Force portée à 25
+Capacité de combat : Tue instantanémént les ogres.
+Type de dégâts (mêlée) : Tranchants
+Type de dégâts (lancer) : Projectile (perforant)
+Spécial : revient dans la main du lanceur
+Facteur de vitesse : 2
+Poids : 3~
+@264 = ~Lettre Manuscrite~
+@265 = ~Ma trés chère soeur, il semblerait que Sarevok soit sur le point d'embrasser son héritage. J'ai fait la lumière sur d'autres nouvelles. L'enfant de Gorion n'est rien d'autre que le frère de Sarevok, et cela signifie qu'il est porteur du même héritage. J'ai planifié mon voyage pour retrouver le protégé de Gorion. Dés qu'il sera sous mon contrôle, les expériences pourront commencer. Je te remercie d'avoir mis tes sbires à ma disposition. Je te conseille de t'occuper de Sarevok et de me l'apporter tandis que je m'occupe de l'autre.
+
+I~
+@266 = ~Hache de guerre de Dispersion de Flammes~
+@267 = ~La version la plus répandue de la hache d'armes est une grande hampe d'environ 1,20 mètre de long comportant une lame à un seul tranchant et en forme de trompette montée sur une extrémité. Les haches d'armes sont également appelées grandes haches. 
+
+PARAMETRES :
+
+Dégâts : 1D8
+Type de dégâts : tranchant
+Poids : 7
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type : Arme à 1 main
+Force nécessaire : 10
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+@268 = ~Il s'agit de la hache personnelle de Jarlaxle, la 'Hache de guerre de Dispersion de Flammes'. Elle a été forgée et enchantée par les drows. Des rumeurs courent comme quoi Lolth elle-même se serait impliquée dans la fabrication de cette arme dévastatrice.
+
+PARAMETRES :
+Dégâts : 1D8 +4
+Enchantement d'arme : +4
+Capacités spéciales :
+Dégâts de feu : 4
+Dissipation des effets magiques à chaque coup
+Type de dégâts : tranchant
+Poids : 5
+Facteur de vitesse : 1
+Type d'arme : Hache
+Type: Arme à 1 main~
+@269 = ~Armure de plates complètes~
+@270 = ~Armure de plates de Jarlaxe~
+@271 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, aussi bien d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups, et l'ensemble de la tunique est soigneusement orné de riches gravures et de détails en relief. 
+
+PARAMETRES :
+
+Classe d'Armure : 3
+Poids : 50
+Force nécessaire : 12
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@272 = ~L'armure personnelle de Jarlaxle a été forgée par les drows et enchantée par Lolth elle-même et revêt des protections de la plus grande puissance. 
+
+PARAMETRES :
+
+Classe d'Armure : 0
+Capacités spéciales :
+Résistance à l'acide : 80%
+Poids: 18
+Force nécessaire : 11
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@273 = ~Bottes de Phase~
+@274 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure. 
+
+PARAMETRES :
+
+Poids : 4~
+@275 = ~Bottes de Phase
+
+Ces bottes maudites jettent un sort à celui ou celle qui les portent de telle sorte qu'il ou elle est téléporté à un ennemi aléatoire toutes les trois secondes tant qu'il reste des ennemis ou que le porteur est en vie.
+
+Ces bottes donnent cependant un bonus de +2 à la CA, car il est presque impossible de toucher une cible en téléportation perpétuelle.~
+@276 = ~Ce crâne semble irradier d'énergie, donnant l'impression de vous observer à travers ses sombres orbites vides.~
+@277 = ~Bâton~
+@278 = ~Bâton du Magicien~
+@279 = ~Réputée être l'arme contondante la moins sophistiquée, le bâton est un bout de bois d'une longueur de 1,80 m à 2,80 m. Les bâtons de qualité supérieure sont fabriqués en chêne robuste et sont ferrés de métal aux deux extrémités. Le bâton doit être manié des deux mains. 
+
+PARAMETRES :
+
+Dégâts : 1D6
+Type de dégâts : contondant
+Poids : 4
+Facteur de vitesse : 4
+Type de compétence : Bâton
+Type : arme à 2 mains
+Force nécessaire : 5~
+@280 = ~Bâton du Magicien
+Quoi que très rare, ce type de bâton est parfaitement lié à l'image du lanceur de sort. C'est l'un des outils les plus puissants dont un mage puisse disposer, la culmination d'enchantement complexes et d'études interminables. Celui-ci est efficace en combat de mêlée, peut rendre invisible, offre une protection contre les charmes et le mal. Il peut aussi piéger un sort, lancer une combinaison de boule de feu et d'éclair magique, et dissiper la magie. C'est la quintessence d'un objet de mage.
+
+PARAMETRES :
+
+Classe d'armure : bonus de 2
+Jets de protection : bonus de 2
+Capacités d'équipement :
+ Invisibilité
+ Immunité aux charmes
+ Protection contre le mal
+Capacités de combat (chaque coup) : Dissipation de la magie
+TAC0 : +1
+Dégâts : 1D6 +1
+Type de dégât : contondant
+Poids : 4
+Facteur de vitesse : 4
+Type de compétence : bâton
+Type : arme à 2 mains
+Force nécessaire : 5
+Utilisable uniquement par :
+ Mage~
+@281 = ~Epée longue +4~
+@282 = ~Ces épées sont généralement appelées épées à double tranchant, épées de guerre ou épées militaires. Souvent, l'épée longue a une lame à simple tranchant. Le modèle et la longueur de l'épée varient d'un peuple à un autre, parfois même d'une époque à une autre. L'une des caractéristiques communes à toutes les épées de ce type est la longueur, comprise entre 90 cm et 1,20 m. Dans le cas des épées les plus longues, la lame couvre 1 m de la longueur totale. La plupart des épées longues ont une lame à double tranchant et un estoc pointu. Malgré son estoc, l'épée longue est une arme considérée comme tranchante, et non perforante. 
+
+PARAMETRES :
+
+Dégâts : 1D8
+Type de dégâts : tranchant
+Poids : 4
+Facteur de vitesse : 5
+Type de compétence : Epée longue
+Type : arme à 1 main
+Force requise : 6
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
+@283  = ~???~
+@284 = ~Attaque~
+@285 = ~Armure en cottes de mailles~
+@286 = ~Côte de mailles en Mithril +4~
+@287 = ~L'armure de cotte de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs. 
+
+PARAMETRES :
+
+Classe d'Armure : 5
+Poids : 40
+Force nécessaire : 8
+Non utilisable par :
+ Druide 
+ Mage 
+ Voleur~
+@288 = ~Cette côte de mailles en Mithril à été forgée par Bruenor pour ses compagnons les plus proches.
+
+PARAMETRES :
+
+Classe d'Armure : 1
+Poids : 7
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
+@289 = ~Lame de Lune~
+@290 = ~Cette arme puissante fut créée par les forgerons de l'ancienne Myth Drannor. Les Lames de Lunes sont employées dans le long procédé de sélection du souverain de l'île d'Eternelle-Rencontre. Une Lame de Lune choisit celui qui la porte, cependant, comme son précédent propriétaire a rejoint le royaume des morts, il y a une chance que la Lame de Lune se trouve un nouveau propriétaire. N'importe qui n'ayant pas du sang elfique dans les veines se trouvera incapable de la soulever. Cette Lame de Lune en particulier accorde une résistance au feu, ainsi qu'un bonus à la classe d'armure.
+
+PARAMETRES :
+
+Dégats : 1D8 +3
+Types de dégats : Tranchants
+Bonus au toucher : 3
+Bonus aux dégâts : 3
+Bonus :
+ +1 à la classe d'armure
+ +50% de résistance au feu
+Poids : 4
+Facteur de vitesse : 2
+Famille d'arme : Epée longue
+Type : Arme à 1 main
+Non utilisable par :
+ Personnage d'alignement mauvais, ou sans aucun héritage elfique.~
+@291 = ~Armure de plates de Sombre Opale~
+@292 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, aussi bien d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups, et l'ensemble de la tunique est soigneusement orné de riches gravures et de détails en relief. 
+
+PARAMETRES :
+
+Classe d'Armure : 1
+Poids : 70
+Force nécessaire : 15
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@293 = ~Armure de Sombre Opale + 1: 'Armure des Ténébres'
+Un seigneur de guerre démoniaque au service de Bhaal, portait cette pièce d'armure durant son service armé pour son maître, le 'Seigneur du Meurtre'. Il s'affaiblit durant le temps des troubles et perdit la vie lors d'un affrontement contre Heaume.
+
+PARAMETRES :
+
+Classe d'armure : 0
+Résistance à l'acide : 15%
+Résistance au froid : 15%
+Résistance au feu : 15%
+Résistance à l'électricité : 15%
+Résistance à la magie : 10%
+Réduction des dégats infligés par un projectile : 20%
+Poids : 35
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+@294 = ~Statuette de pantère noire~
+@295 = ~Cette statuette appartenant à Drizzt réprésente une pantère noire, et est capable d'invoquer une grande panthère noire en provenance d'un eutre plan d'existence. Son nom est Guenhwyvar et elle est d'une loyauté sans faille à Drizzt.
+
+Capacité spéciale:
+Invoque Guenhwyvar une fois par jour. Si la pantère est sérieusement blessée, elle retournera dans son plan d'origine.~
+@296 = ~Casque Miroir des Yeux~
+@297 = ~Cette catégorie de cabasset, fabriquée en cuir ou en métal renforcé, couvre presque l'ensemble de la tête, à l'exception du visage et du cou. Ces casques protègent bien le nez. 
+
+PARAMETRES :
+
+Bonus à la Classe d'Armure : aucun
+Spécial : protège contre les coups critiques
+Poids : 2
+Non utilisable par :
+Mage
+Barde
+Voleur~
+@298 = ~Ce casque appartenait à un guerrier noble entré dans la légende pour avoir triomphé d'une Méduse.
+
+Capacités:: 
+Protège contre la pétrification et les coups critiques.~
+@299 = ~Potion de grands soins~
+@300 = ~Les potions sont typiquement retrouvées dans des flasques en céramique, ou d'autres contenants en verre, cristal ou métal. Ils contiennent généralement la dose necessaire de produits pour accomplir l'effet demandé.~
+@301 = ~Prise d'une traite, cette potion restitue 27 points de vie. L'effet est instantané et la potion est détruite dans le processus.~
+@302 = ~Potion de soin majeur~
+@303 = ~Les potions sont typiquement retrouvées dans des flasques en céramique, ou d'autres contenants en verre, cristal ou métal. Ils contiennent généralement la dose necessaire de produits pour accomplir l'effet demandé.~
+@304 = ~Cette potion redonne 40 points de vie à celui qui la boit. L'effet est instantanné et détruit la potion.~
+@305 = ~Baguette~
+@306 = ~Sceptre de résurrection~
+@307 = ~Les baguettes magiques sont fines et mesurent environ 50 centimètres. Elles sont fabriquées en ivoire, en os ou en bois et portent généralement un objet en métal, cristal ou pierre à leur extrémité. Elles sont fragiles et ont tendance à se briser facilement. Pour cette raison, on les conserve souvent dans des étuis.
+
+Les baguettes magiques possèdent des charges, chaque utilisation coûtant une ou plusieurs charges (en fonction de l'objet). Lorsqu'une baguette magique est à court de charges, elle se consume et est détruite.~
+@308 = ~Sceptre de résurrection
+Ce sceptre permet à un personnage de ressusciter un mort comme s'il était un prêtre d'un niveau suffisant pour lancer un sort de résurrection. Il ne nécessite pas de repos, car le sceptre fournit toute l'énergie. Chaque utilisation du sceptre coûte une charge.
+
+PARAMETRES :
+
+Capacités spéciales (une charge) : Résurrection~
+@309 = ~Cimeterre~
+@310 = ~Cimeterre +3~
+@311 = ~La longue lame simple et incurvée est la caractéristique des sabres et des cimeterres, bien qu'ils n'aient pas la même origine dans Féérune. Alors que le sabre était fait essentiellement pour les cavaliers, notamment pour sa polyvalence, le cimeterre est issu d'une influence plus orientale. Le "shamshir", comme on l'appelait au début, est plus grand et plus recourbé, et il s'effile sur une pointe très allongée. Cela le rend un peu plus lent, mais plus efficace et mortel en combat.
+
+PARAMETRES :
+
+Dégâts :  1D8
+Type de Dégâts :  tranchant
+Poids : 4
+Facteur de Vitesse : 5
+Type de compétence : cimeterre/Wakizashi/Ninja-To
+Type : arme à 1 main
+Force nécessaire : 10
+Inutilisable par :
+ Clerc
+ Mage
+ Voleur~
+@312 = ~Cimeterre +3: Ce cimeterre à été forgé par les drow dans le but d'être utilisée à la surface, car les armes en provenance de leur monde finissent en poussière à la lumière du soleil.
+
+PARAMETRES :
+
+TAC0 : +3
+Dégâts : 1D8 +3
+Type de Dégâts : tranchant
+Poids : 3
+Facteur de vitesse : 3
+Type de Compétence : Cimeterre/Wakizashi
+Type : Arme à 1 main
+Non utilisable par :
+ Clerc
+ Mage
+ Voleur~
+@313 = ~Idole abyssale~
+@314 = ~Cette idole est recouverte de runes qui indiquent que le possesseur de l'idole peut invoquer un Tanar'ri pour lutter à ses cotés.~
+@315 = ~Epée à 2 mains~
+@316 = ~Lame de guerre +4~
+@317 = ~L'épée à 2 mains est un dérivé de l'épée longue. Les armuriers ont toujours cherché à améliorer les armes de leur temps. Pour l'épée longue, ils ont allongé la lame. Après la lame, c'est la poignée qui s'est allongée. Il est alors devenu nécessaire d'utiliser les deux mains pour manier l'épée. La fonction première de l'épée à 2 mains est de désarçonner les chevaliers montés et de désorganiser les haies de piques. 
+
+PARAMETRES :
+
+Dégâts : 1D10
+Type de dégâts : tranchant 
+Poids : 15
+Facteur de vitesse : 10
+Type de compétence : Epée à 2 mains
+Type : arme à 2 mains
+Force nécessaire : 14
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
+@318 = ~Epée à deux mains +4, Lame de guerre
+Cette immense épée est une version enchantée des épées barbares des tribus du grand nord. Forgée au cours d'une bataille, les dieux barbares ont octroyé à cet acier trempé dans le sang des braves morts au combat une extraordinaire puissance magique.
+
+PARAMETRES :
+
+TAC0 : +4
+Dégâts : 1D10 +4
+Type de dégât : tranchant
+Poids : 10
+Facteur de vitesse : 6
+Type de compétence : épée à 2 mains
+Type : arme à 2 mains
+Force nécessaire : 14
+Inutilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@319 = ~Epées des Chagrins de Belhifet~
+@320 = ~Voici une des nombreuses armes du démon Belhifet. Cette lame est particulièrement tranchante et bien équilibrée. Sous une certaine lumière, on peut voir un image de serpent gravée sur la garde.
+
+PARAMETRES :
+
+Capacité de combat: 10% de chance d'infliger 2D12 de dégats de poison à l'adversaire
+
+TAC0 : +5
+Dégâts : 1D10 +5
+Type de Dégats : tranchant
+Poids : 9
+Facteur de vitesse : 5
+Type de Compétence : Epée à 2 mains
+Type : Arme à 2 mains
+Requis : 14 en force
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@321 = ~Cagoule du voleur~
+@322 = ~Malgré une aura magique assez évidente, cette cagoule ne semble pas posséder de pouvoir particuliers.
+
+PARAMETRES
+
+Utilisable seulement par :
+Voleurs~
+@323 = ~Les voleurs n'ont pas d'honneur. C'est certainement pour ça que la Cagoule du Voleur a le pouvoir de protéger son porteur des mauvaises actions de ses congénères.
+
+PARAMETRES :
+
+Capacités d'équipement :
+ Immunité à la maladie et aux poisons
+ Flou
+
+Utilisable seulement par :
+ Voleurs~
+@324 = ~Toucher de goule~
+@325 = ~Cape du loup-garou~
+@326 = ~Une cape peut avoir différentes formes et être réalisée à partir de tout type d'étoffe. Les formes les plus communes sont celles d'un morceau d'étoffe circulaire présentant un trou en son centre pour laisser passer la tête, ainsi que celle d'un grand morceau de tissu s'enroulant autours du cou, maintenu par une chaîne ou une broche.~
+@327 = ~Cape du loup-Garou
+Un mage qui surestimait son contrôle sur ses pouvoirs magiques a créé cette cape, et durant la fabrication de ce vêtement, il s'est apparemment infligé une malédiction de lycanthropie sur lui-même. Le porteur peut changer de forme à volonté. Le mage en question n'a pas eu autant de chance.
+
+PARAMETRES :
+
+Spécial : Transforme le propriétaire en loup-garou à volonté
+Bonus à la CA : +1
+Poids : 3~
+@328 = ~Peau de loup hivernal~
+@329 = ~Peau de loup hivernal de Wulfgar~
+@330 = ~Cette peau de loup d'un blanc pur est douce et luxueuse. Elle sont souvent utilisées pour confectionner des vêtements chauds pour les barbares du nord ou pour la garde robe d'hiver des nobles dames de cette région de la Côte des Epées.~
+@331 = ~Cette peau de loup d'un blanc pur est douce et luxueuse. Elle à été enchantée par un chaman barbare.
+
+Capacités spéciales:
+Résistance au froid: 50%~
+@332 = ~Fourrures~
+@333 = ~Armure de Wulfgar en Fourrure~
+@334 = ~Faite à partir de peaux de loups, ces pelages octroient une protection extraordinaire. Les barbares du ValBise sont devenus trés compétents pour la création de ce genre de fourrure, améliorant leur capacité de protection tout en les allégeant. Bien sûr, le fait que les animaux d'où proviennent ces fourrures soient aussi résistantes y est pour quelque chose.
+
+PARAMETRES :
+
+Classe d'Armure : 6
+Poids : 3
+Non utilisable par :
+ Mage~
+@335 = ~Marteau de guerre~
+@336 = ~Aegis-Fang +5~
+@337 = ~Marteau de guerre +5: Aegis-Fang
+
+Cette arme a été faite spécifiquement pour Wulfgar par Bruenor Marteauguerre, et son plus puissant enchantement ne fonctionne qu'entre les mains du jeune guerrier. Pour tout autre, ce n'est qu'un Marteau de Guerre +3.
+
+PARAMETRES :
+ 
+Dégâts :  2D4 +5
+TAC0 : +5
+Type de Dégâts :  Contondant
+Poids : 8
+Facteur de Vitesse : 2
+Type de compétence : Marteau de Guerre
+Type :  Arme à 1 main
+Force nécessaire : 18
+Inutilisable par :
+ Druide
+ Mage 
+ Voleur
+ Alignements non chaotiques~
+@338 = ~Cette catégorie de cabasset, fabriquée en cuir ou en métal renforcé, couvre presque l'ensemble de la tête, à l'exception du visage et du cou. Ces casques protègent bien le nez.
+
+PARAMETRES :
+
+Bonus à la Classe d'Armure : aucun
+Spécial : protège contre les coups critiques
+Poids : 2
+Non utilisable par :
+Mage
+Barde
+Voleur~
+@339 = ~Arbalète Cheveux de Géant +3~
+@340 = ~Arbalète lourde : Cheveux de Géant
+Bien que ce soit difficile de le vérifier, il semblerait que la corde de cette arbalète a été faite à partir de cheveux de Géant du givre. Quelle que soit la vérité, cette arme est incoyablement difficile à bander, bien que sa précision et ses dégâts conséquents vaillent bien la traction requise. (Force supérieur ou égale à 15)
+
+PARAMETRES :
+
+TAC0 : +3
+Dégâts (projectiles) : +5
+Poids : 11
+Facteur de vitesse : 7
+Type de Compétence : Arbalète
+Type : Arme à 2 mains
+Force nécessaire : 15
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+
+@501 = ~Fierté de Durlag +2~
+@502 = ~Epée à 2 mains +2: La fierté de Durlag
+
+
+STATISTIQUES:
+
+Dégats : 1D10 + 2
+TAC0 : +2
+Types de dégâts : tranchant
+Poids : 10
+Facteur de vitesse : 8
+Type de Compétence : Epée à 2 mains
+Type : Arme à 2 mains
+Force nécessaire : 13
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+@503 = ~Bouclier~
+
+
+//------------------------------------------------------------------------------------------------
+// Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
+//------------------------------------------------------------------------------------------------
+
+@10000 = ~Quête de la tribu de l'ours~
+
+// 10001 used to be @19 in F_BEAROL.TRA
+@10001 = ~Quête de la tribu de l'ours
+
+J'ai accepté de retrouver l'enfant du défunt chef de la tribu de l'Ours. On m'a dit qu'il a été capturé par les géants du givre qui ont détruit le village de la Tribu de l'Ours. Ces Géants sont les séides de l'Esprit du Loup Hivernal qui à pour dessein d'anéantir l'Esprit de l'Ours, ce qui ne peut être fait qu'en sacrifiant l'enfant lors d'un rituel de l'Hiver.~
+
+// 10002 used to be @20 in F_BEAROL.TRA
+@10002 = ~Quête de la tribue de l'ours
+
+J'ai retrouvé l'enfant du défunt chef de la tribu l'Ours, et l'ai ramené sain et sauf au doyen de la tribu. Ils se sont montrés plus que reconnaissant en m'offrant leur précieuse Corne de l'Esprit de l'Ours.~
+
+// 10003 used to be @3 in F_DRIZZT.TRA
+@10003 = ~Aujourd'hui, j'ai rencontré rien de moins que le célèbre rôdeur Drizzt qui combattait des gnolls. Je l'ai aidé, et il m'a proposé de m'accompagner pour un temps. Qui pourrait refuser cette offre, cependant je redoute que sa compagnie nous amène de puissants ennemis par la même occasion.~
+
+// 10004 used to be @4 in F_REGIS.TRA
+@10004 = ~J'ai rencontré un halfelin qui semblait perturbé dans son comportement. Il ne voulait pas être dérangé alors je l'ai laissé à ses affaires. Avant que je parte, il à mentionné quelque chose à propos d'un rôdeur drow : Si je devais le rencontrer, je devrais le ramener à cet halfelin dont je n'ai pas saisi le nom.~
+
+// 10005 used to be @9 in F_REGIS.TRA
+@10005 = ~Il semblerait que les amis et compagnons de Drizzt sont en danger. Comme je le craignais, voyager aux côtés de Drizzt apport bien plus de problèmes que je ne l'aurais imaginé.~
+
+// 10006 used to be @14 in F_DRIZZT.TRA (Delayed Start component)
+@10006 = ~Nous avons de nouveau croisé Drizzt Do'Urden. Nous devons le retrouver à l'auberge de Barbe d'Ulgoth dans trois jours.~
+
+// 10007 used to be @18 in F_DRIZZT.TRA (Delayed Start component)
+@10007 = ~J'ai rejoint Drizzt afin de l'accompagner jusqu'à ValBise. Il est certain que ce sera un voyage mémorable...~

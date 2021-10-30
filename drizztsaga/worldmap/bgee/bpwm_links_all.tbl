@@ -1,0 +1,60 @@
+
+//Drizzt Saga Area Links Table - BG-BGT-WM/Tutu version (full)
+SRC_AREA SRC_NWSE TARGET_ARE ENTRY_NAME   TRV_TIME DEF_ENTRY ENC1 ENC2 ENC3 ENC4 ENC5 ENC_PROB
+
+AR1000   E        F_7777     #WMtravel    6        1         N    N    N    N    N    0
+AR1000   E        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+AR1000   E        F_0222     #WMtravel    4        1         N    N    N    N    N    0
+AR1000   E        F_9898     #WMtravel    6        1         N    N    N    N    N    0
+AR1000   E        F_7779     #Icewind03   6        1         N    N    N    N    N    0
+
+AR4200   N        F_7777     #WMtravel    13       1         N    N    N    N    N    0
+AR4200   N        F_0111     #WMtravel    11       1         N    N    N    N    N    0
+AR4200   N        F_0222     #WMtravel    11       1         N    N    N    N    N    0
+AR4200   N        F_9898     #WMtravel    13       1         N    N    N    N    N    0
+AR4200   N        F_7779     #Icewind03   13       1         N    N    N    N    N    0
+
+F_0111   S        AR1000     Exit1400     4        1         N    N    N    N    N    0
+F_0111   S        AR4200     N            11       1         N    N    N    N    N    0
+F_0222   S        AR1000     Exit1400     4        1         N    N    N    N    N    0
+F_0222   S        AR4200     N            11       1         N    N    N    N    N    0
+F_7777   S        AR1000     Exit1400     6        1         N    N    N    N    N    0
+F_7777   S        AR4200     N            13       1         N    N    N    N    N    0
+F_9898   S        AR1000     Exit1400     6        1         N    N    N    N    N    0
+F_9898   S        AR4200     N            13       1         N    N    N    N    N    0
+F_7779   S        AR1000     Exit1400     6        1         N    N    N    N    N    0
+F_7779   S        AR4200     N            13       1         N    N    N    N    N    0
+
+F_0111   N        F_0112     #Gianthill01 1        1         N    N    N    N    N    0
+F_0111   S        F_0222     #WMtravel    4        1         N    N    N    N    N    0
+F_0111   S        F_7777     #WMtravel    4        1         N    N    N    N    N    0
+F_0111   S        F_7779     #Icewind03   4        1         N    N    N    N    N    0
+F_0111   S        F_9898     #WMtravel    4        1         N    N    N    N    N    0
+F_0112   S        F_0111     #Gianthill02 1        1         N    N    N    N    N    0
+F_0222   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_0222   S        F_7777     #WMtravel    8        1         N    N    N    N    N    0
+F_0222   S        F_9898     #WMtravel    8        1         N    N    N    N    N    0
+F_0222   S        F_7779     #Icewind03   4        1         N    N    N    N    N    0
+F_7777   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_7777   S        F_0222     #WMtravel    8        1         N    N    N    N    N    0
+F_7777   N        F_7779     #Icewind03   4        1         N    N    N    N    N    0
+F_7777   S        F_9898     #WMtravel    2        1         N    N    N    N    N    0
+F_9898   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_9898   S        F_0222     #WMtravel    8        1         N    N    N    N    N    0
+F_9898   S        F_7777     #WMtravel    2        1         N    N    N    N    N    0
+F_9898   S        F_7779     #Icewind03   2        1         N    N    N    N    N    0
+F_7779   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_7779   S        F_0222     #WMtravel    4        1         N    N    N    N    N    0
+F_7779   S        F_7777     #WMtravel    4        1         N    N    N    N    N    0
+F_7779   S        F_9898     #WMtravel    2        1         N    N    N    N    N    0
+F_7779   N        F_8888     #Crate01     2        1         N    N    N    N    N    0
+F_8888   S        F_7779     #Crateout    2        1         N    N    N    N    N    0
+
+F_0111   S        AR1900     N            4        1         N    N    N    N    N    0
+AR0900   S        F_9898     #WMtravel    2        1         N    N    N    N    N    0
+AR2300   S        F_0222     #WMtravel    10       1         N    N    N    N    N    0
+AR2300   S        F_0111     #WMtravel    6        1         N    N    N    N    N    0
+AR1900   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_9898   E        AR0900     Exit0400     2        1         N    N    N    N    N    0
+F_0111   S        AR2300     Exit1400     6        1         N    N    N    N    N    0
+F_0222   S        AR2300     Exit1400     10       1         N    N    N    N    N    0

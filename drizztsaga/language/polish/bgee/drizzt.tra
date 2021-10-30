@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// DRIZZT translation file
+@1   = ~Zgoda, do broni!!~
+@2   = ~Jestem łagodny z natury, przynajmniej wtedy, gdy nie zabijam durniów. Dziękuję za pomoc. Może moglibyśmy jeszcze chwile razem wędrować, gdyż później muszę iść ku Dolinom. Przyjaciele na mnie czekają.~ [%_%DRIZT04]
+@3	 = ~Dzisiaj spotkałem nie kogo innego jak samego Drizzta walczącego z grupą gnoli. Pomogłem mu, on zaś w zamian za to zgodził się tymczasowo na wspólną podróż. Któż mógłby się nie zgodzić, jednak obawiam się tego, że jego towarzystwo może mi przynieść kłopoty.~
+@4   = ~Widzę jak trzymasz się z dala od pola bitwy! Lepiej zdecyduj się po której stronie stoisz, bo nie wiem czy będę musiał wyciągać do ciebie rękę czy miecz!~
+@5   = ~Nie będę słuchać gróźb ze strony kogoś kto ma mnie błagać o pomoc. Może i te gnolle maja niegłupi pomysł! Giń!~
+@6   = ~Skoro muszę wybierać, pomogę ci.~
+@7   = ~Zdecydowałem się, drowie. Nie licz na moją pomoc!~
+@8   = ~Cieszę się, że zmieniłeś zdanie. Te gnolle to jednak męczące bestie, i miło będzie gdy wreszcie będę mógł się ich pozbyć!~
+@9   = ~Tak, wreszcie wrócił mi zdrowy rozsądek - nie może być, że będę stał obojętnie kiedy ktoś inny jest w potrzebie.~

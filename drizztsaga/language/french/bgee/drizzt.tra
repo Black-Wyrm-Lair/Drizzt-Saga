@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// DRIZZT
+@1 = ~D'accord, aux armes !~
+@2 = ~Je suis un gentleman au fond de moi, enfin quand je ne suis pas obligé de massacrer des imbéciles. Merci pour votre aide, finissons-en avec tout ceci et peut-être pourrions-nous faire route commune pour quelques temps. Je dois en effet me rendre au ValBise ou m'attendent des amis.~ [%_%DRIZT04]
+@3 = ~Aujourd'hui, j'ai rencontré rien de moins que le célèbre rôdeur Drizzt qui combattait des gnolls. Je l'ai aidé, et il m'a proposé de m'accompagner pour un temps. Qui pourrait refuser cette offre, cependant je redoute que sa compagnie nous amène de puissants ennemis par la même occasion.~
+@4 = ~Je vous vois rester planté là en dehors du champ de bataille ! Choisissez rapidement votre camp, car j'aurai fini sur-le-champ et je veux savoir si je dois vous tendre la main, ou mon épée !~
+@5 = ~Je n'accepterai pas les menaces de quelqu'un qui mendie mon aide. Peut-être que ces Gnolls ont eu la bonne idée ! Peut-être que vous allez mourir ici-même !~
+@6 = ~Si un choix doit être fait, ce sera celui de vous aider.~
+@7 = ~Nous avons pris notre décision, drow ! Nous ne vous aiderons pas !~
+@8 = ~La bataille s'engage, et je suis heureux de vous avoir à mes cotés. Ces gnolls sont des brutes ennuyeuses, et j'ai hâte d'en avoir fini avec eux...~
+@9 = ~Où avais-je la tête ? Il est hors de question que je reste sur le bas-côté si quelqu'un d'autre est en danger.~

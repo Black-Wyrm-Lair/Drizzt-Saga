@@ -1,0 +1,10 @@
+IF
+	Global("F_marilith","MYAREA",0)
+	!Exists("F_MARI")
+THEN
+	RESPONSE #100
+		CreateCreature("F_MARI",[612.590],0)
+		SetGlobal("F_marilith","MYAREA",1)
+END
+
+

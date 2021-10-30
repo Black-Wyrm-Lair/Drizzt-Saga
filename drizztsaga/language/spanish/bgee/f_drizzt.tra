@@ -1,0 +1,13 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// F_DRIZZT translation file
+// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
+@10  = ~Ajá <CHARNAME>! Nos encontramos de nuevo. Pronto debo partir para Icewind Dale. Me gustaría que me acompañen en este viaje peligroso.~
+@11  = ~Drizzt, mi amigo, yo estaría feliz de reunirme con ustedes, sin embargo primero tengo que encontrar una morada adecuada para mis compañeros de viaje actuales. Reunirse conmigo en la posada de la barba de Ulgoth en tres días el tiempo y felizmente voy a ir con usted.~
+@13  = ~Muy bien, te veré allí.~
+@15  = ~Bien conocido. ¿Está usted preparado, entonces?~
+@16  = ~Estoy tan lista como tengo tendencia a ser nunca. Vamos, ¿de acuerdo?~
+@17  = ~¡Vamos!~
+@19  = ~No, todavía no, todavía tengo un poco de preparación para hacer.~

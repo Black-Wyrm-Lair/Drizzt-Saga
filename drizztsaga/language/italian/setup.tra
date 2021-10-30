@@ -1,0 +1,37 @@
+
+/* Components: */
+
+@0    = ~The Drizzt Saga for BGEE/Tutu/BGT~
+
+// added/changed in v3/BGEE update [TRANSLATIONS NEED]:
+@1502 = ~Default version: areas connected by travel triggers~
+@489  = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~   // used to be: @489 = ~Installando il Supporto della Worldmap v6~
+@1507 = ~Raise the XP cap~
+@1508 = ~Delayed start: Drizzt joins after Durlag's Tower~
+
+/* Setup feedback:  */
+
+@353 = ~Tutu rilevato, si sta procedendo all'installazione...~
+@354 = ~BGT rilevato, si sta procedendo all'installazione...~
+@355 = ~BG1 originale rilevato, si sta procedendo all'installazione...~
+@356 = ~Questo mod deve essere installato con BGEE, BGT o BG1Tutu, sono richieste anche entrambe le espansioni TotSC e ToB con BGT/Tutu.~
+@357 = ~Sistemando le regole...~
+@358 = ~Installando le animazioni delle creature...~
+@359 = ~Aggiornando la worldmap con le nuove aree...~
+@360 = ~Installando i files delle creature...~
+@361 = ~Installando i files dei suoni...~
+@362 = ~Installando i files delle aree...~
+@363 = ~Installando i files degli oggetti...~
+@364 = ~Copiando gli archivi dei files delle aree...~
+@369 = ~Compilando gli scripts e i dialoghi...~
+@370 = ~Copiando i vari files...~
+@488 = ~Aggiustando BALDUR.GAM...~
+@1500 = ~BGEE rilevato, si sta procedendo all'installazione...~
+
+// added/changed in v3/BGEE update [TRANSLATIONS NEEDED]:
+@1503 = ~You must install the Drizzt Saga core component first!~
+@1504 = ~Unpacking area tilesets...~
+@1505 = ~Biffing area data...~
+@1506 = ~This component is not needed for BGT.~
+
+/* Everything else from this file was moved to MAIN.TRA as of v3 */

@@ -1,0 +1,17 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #DIPNOSE translation file
+@1   = ~Sono strani questi tempi per noi, io sono bloccato in questa Locanda mentre quei piedi grandi girano là fuori.~
+@2   = ~E tu chi saresti, se posso domandarlo?~
+@3   = ~Puoi chiamarmi Dipnose e con ogni probabilità ho sicuramente ficcato il naso nel posto sbagliato questa volta. Penso che fuggirò con questa pergamena di Viaggiare con il Vento.~
+@4   = ~Una pergamena di Viaggiare con il Vento?~
+@5   = ~Si, una pergamena di Viaggiare con il Vento è tipo una pergamena di teletrasporto dove dentro c'è già scritta la destinazione.~
+@6   = ~E cosa ti impedisce di usarla allora?~
+@7   = ~Perché c'é scritto che la destinazione sono le Montagne del Cammino Tempestoso. Non sono interessato a quel luogo, ma tu sembri un avventuriero che potrebbe essere interessato ad un viaggio simile. Potrei teletrasportarti lì usando la pergamena per 100 monete d'oro.~
+@8   = ~Perché, non puoi vendermi la pergamena?~
+@9   = ~La può utilizzare solo chi la trova e non può essere lanciata da nessun altro.~
+@10  = ~Molto bene, lancia l'incantesimo ma risponderò con la mia lama se mi metti in qualche trappola.~
+@11  = ~Forse più tardi quando sarò pronto e le mie tasche me lo permetteranno..~
+@12  = ~Sei ritornato avventuriero, sei pronto per il viaggio? 100 monete d'oro per un'avventura!~

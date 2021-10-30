@@ -1,0 +1,16 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+@1  = ~Dziwne czasy mamy. Utknąłem w tej gospodzie, podczas gdy ci olbrzymi szaleją na zawnątrz.~ 
+@2  = ~A ty kim niby jesteś, jeśli wolno spytać?~
+@3  = ~Możesz nazywać mnie Wścibinos, jako że właśnie wtykam nos w nie swoje sprawy. A pomyśleć, że mam niezły plan ucieczki z tego miejsca przy pomocy zwoju skrzydlatego wiatru...~ 
+@4  = ~Zwoju skrzydlatego wiatru?~
+@5  = ~Ano tak. Jest to zwój teleportacji z już naniesionym miejscem przeznaczenia.~ 
+@6  = ~A więc co cię powstrzymuje od użycia go?~
+@7  = ~Bo miejsce widniejące na zwoju to Góry Wędrownych Burz. Dlatego wolę zostać tutaj. Ty jednak wyglądasz na podróżnika, kóry może być zainteresowany tamtymi regionami. Za skromną opłatą 100 sztuk złota mogę teleportować twoją drużynę przy pomocy zwoju.~
+@8  = ~Czemu po prostu nie odsprzedasz mi go?~ 
+@9  = ~Ponieważ jest magicznie związany ze swoim znalazcą, którym jestem ja. Nikt inny nie może go użyć.~
+@10 = ~Niech tak będzie, rzuć zaklęcie. Wiedz jednak, że moje ostrze szybko zareaguje, jeśli okażesz się oszustem.~ 
+@11 = ~Być może skuszę się w bardziej odpowiednim czasie. I gdy zawartość moich sakw na to pozwoli.~
+@12 = ~Już wróciłeś, podróżniku? Gotowy na wyprawę? Jedyne 100 sztuk złota za wspaniałą przygodę!~

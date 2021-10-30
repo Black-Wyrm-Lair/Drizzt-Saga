@@ -1,0 +1,17 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// F_ROBED
+@1 = ~Hmm ? N'est-ce pas un honneur de tomber sur un groupe d'aventuriers qui ne comporte rien de moins que Drizzt. Il est impossible de vous confondre avec un autre.~
+@2 = ~Et qui êtes-vous d'abord ?~
+@3 = ~Oh, ni plus ni moins qu'un vagabond, bien que pour l'instant je suis l'hôte d'un esprit inquiet.~
+@4 = ~Comment ça se fait ?~
+@5 = ~Des créatures mauvaises rampent hors de leurs anciennes tombes, l'artefact est caché dans leur tombeau obscur. Des temps troublés pour le Val Bise... Oui, des temps troublés. Avant nous avions la lumière à chaque moment de la journée, mais maintenant tout a changé, ils se sont réveillés. L'artefact, cette statue tout droit héritée des Abysses les a réveillés et leur commande de se rendre à la surface avec l'intention de nous emporter tous dans leurs cryptes sombres. La seule façon d'empêcher tout cela est de retirer la statue de la mine sombre située dans les entrailles de la Montagne des Morts.~
+@6 = ~Soit vous racontez très bien les contes de fées, soit vous manquez de sens commun. Néanmoins, si il y'a une part de vérité dans ce qui sort de votre bouche, j'aimerais savoir comment me rendre là où vous avez été témoin de tout cela.~
+@7 = ~Mes paroles sont détentrices de la vérité, je peux vous téléporter à l'emplacement à l'extérieur de la montagne, là où ces ténèbres se tapissent.~
+@8 = ~C'est entendu, mais que les choses soit claires, je suis préparé à déjouer tous les mauvais tours que vous pourriez essayer me jouer.~
+@9 = ~Je n'ai aucune confiance en vous pour le moment, et j'ai des tâches plus importantes qui m'attendent.~
+@10 = ~Hmm ? Un groupe d'aventuriers approche...~
+@11 = ~Que vous me croyiez ou non, le sort est déjà lancé, par conséquent le voyage commence maintenant.~
+@12 = ~Quoi !?~

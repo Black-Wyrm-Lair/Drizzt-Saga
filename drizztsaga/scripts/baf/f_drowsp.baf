@@ -1,0 +1,91 @@
+IF
+	Detect([PC])
+	NumTimesTalkedTo(0)
+	Range(LastSeenBy(Myself),25)
+THEN
+	RESPONSE #100
+		StartDialog("F_DROWMG",LastSeenBy(Myself))
+END
+
+IF
+	See([PC])
+	Global("#drowspell","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
+		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
+		ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+		ReallyForceSpell(FifthNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+		ReallyForceSpell(SixthNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+		SetGlobal("#drowspell","LOCALS",1)
+END
+
+IF
+	Global("#drowspell","LOCALS",1)
+	See(NearestEnemyOf(Myself))
+	RandomNum(6,1)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	Global("#drowspell","LOCALS",1)
+	See(SecondNearestEnemyOf(Myself))
+	RandomNum(6,2)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	Global("#drowspell","LOCALS",1)
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNum(6,3)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	Global("#drowspell","LOCALS",1)
+	See(FourthNearestEnemyOf(Myself))
+	RandomNum(6,4)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ForceSpell(FourthNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	Global("#drowspell","LOCALS",1)
+	See(FifthNearestEnemyOf(Myself))
+	RandomNum(6,5)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ForceSpell(FifthNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	Global("#drowspell","LOCALS",1)
+	See(SixthNearestEnemyOf(Myself))
+	RandomNum(6,6)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ForceSpell(SixthNearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+

@@ -1,0 +1,17 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #DIPNOSE translation file
+@1   = ~Queer times are upon us as I am stuck in this Inn while those bigfoots rage outside.~
+@2   = ~And who might you be if I may ask?~
+@3   = ~You can call me Dipnose and by all right I surely have dipped my nose in the wrong place this time. Thought I had a fair escape plan from here with this windwalker scroll.~
+@4   = ~A windwalker scroll?~
+@5   = ~Aye, a windwalker scroll is a kind of teleportation scroll that already has a written destination into it.~
+@6   = ~And what prevents you from using it then?~
+@7   = ~Because its written location is the Storm March Mountains. I wouldn't trade this location for that, but you look like an adventurer that might be interested in such a matter. I could teleport you there with the use of the scroll for a sum of 100 goldcoins.~
+@8   = ~Why can't you just sell the scroll to me?~
+@9   = ~It is bound to its finder and can not be cast by anyone else.~
+@10  = ~Very well, cast the spell but my blade will respond to any foul tricks.~
+@11  = ~Mayhaps later when the time is right and my pockets allow it..~
+@12  = ~Aye, you are back adventurer, ready for the journey? 100 gold for a major adventure!~

@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #REGIS2 translation file
+@1   = ~¡Drizzt! Sabía que encontraríais el camino a través de los planos exteriores.~
+@2   = ~¿Cómo os las apañásteis para llegar al Valle del Viento Helado con tanta premura?~
+@3   = ~Igual que vos, supongo, pero supongo que no tanta como Elminster, claro. Podríamos hablar durante todo el día pero tenemos asuntos que atender. No he encontrado ni a Bruenor ni a Catti-Brie y hoy el sol pica de forma antinatural. Deberíamos comprobar el cofre de Bruenor para ver si hay alguna pista de dónde puede estar.~
+@4   = ~Estoy de acuerdo.~
+@5   = ~Me temo que debo atender otros asuntos de importancia y debo empezar mi marcha.~
+@6   = ~Saludos de nuevo. Ya no veo a Drizzt a vuestro lado. Espero que esté de camino aquí. Tenemos asuntos urgentes que atender por que no he encontrado ni a Bruenor ni a Catti-Brie. Deberíamos comprobar el cofre de Bruenor para ver si hay alguna pista.~
+@7   = ~Tengo otros asuntos importantes que atender y debo empezar mi marcha.~

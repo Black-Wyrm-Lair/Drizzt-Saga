@@ -1,0 +1,15 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ELMINST translation file
+@1   = ~Salve Drizzt, vorrei scambiare una parola con voi....oh vedo che <CHARNAME> il figlio adottivo di Gorion viaggia al tuo fianco. ~
+@2   = ~Sembra che la nostre strade si incontrino di nuovo. Spero che non sei venuto con qualcosa che collega ad altre cose durante il viaggio e che la mia vita è in pericolo.~
+@3   = ~Le parole che voglio dire sono per Drizzt. <CHARNAME> ha un altro sentiero da percorrere.~
+@4   = ~La strada che <CHARNAME> sceglie dovrebbe essere decisa da lui stesso e non da un altro.~
+@5   = ~Bene, vedo che dobbiamo prendere strade diverse, allora, ci vediamo.~
+@6   = ~Mi sembra giusto figliolo, ora Drizzt deve viaggiare verso la Valle del Vento Gelido con tutta fretta per raggiungere la casa di Bruenor. La Valle è coperta dall'oscurità. L'equilibrio é stato sostituito dal caos. Io non sono in una posizione per interferire. Posso solo offrire la possibilità di teletrasportarti fuori casa sua. ~
+@7   = ~Parli di oscurità, ma cosa significa?~
+@8   = ~I miei occhi sono sigillati, non riescono a vedere, le risposte devono ancora essere trovate. Comunque il tempo è breve, lascia che inizi il teletrasporto.~
+@9   = ~Una saggia scelta. Altre cose importanti ti chiamano, <CHARNAME>.~
+@10  = ~Salve figliolo, vedo che Drizzt non é al tuo fianco. Spero che sia ancora in vita. Se non é così allora ho ragione di preoccuparmi. Devo andare.~

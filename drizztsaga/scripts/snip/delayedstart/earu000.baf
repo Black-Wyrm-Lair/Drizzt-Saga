@@ -1,0 +1,16 @@
+IF
+  Global("F_CreatRegis1","MYAREA",0)
+THEN
+  RESPONSE #100
+    CreateCreature("F_REGIS",[2506.689],0)
+    SetGlobal("F_CreatRegis1","MYAREA",1)
+END
+
+IF
+  Global("F_CreatElminster","MYAREA",1)
+THEN
+  RESPONSE #100
+  	SmallWait(2)
+    CreateCreature("F_ELMINS",[2500.750],0)
+    SetGlobal("F_CreatElminster","MYAREA",2)
+END

@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #REGIS2 translation file
+@1 = ~Drizzt ! Je savais que tu arriverais à tracer ta voie à travers les plans.~
+@2 = ~Comment as-tu fait pour parvenir si vite au ValBise ?~
+@3 = ~De la même façon que vous tous, j'imagine, rien de moins que l'aide d'Elminster bien entendu. Nous pourrions bavarder toute la journée mais des problèmes plus urgents nous apppellent, je le crains. Aussi bien Bruenor que Catti-Brie sont introuvables et le soleil a un éclat bizarrement perçant, aujourd'hui. Nous devrions vérifier le coffre de Bruenor pour voir s'il s'y trouve des indices pour les retrouver.~
+@4 = ~Je suis d'accord~
+@5 = ~J'ai bien peur que d'autres problèmes de taille demandent mon attention, il me faut partir.~
+@6 = ~Je vous salue une nouvelle fois. Drizzt n'est plus à vos côtés. J'espère que ses pas vont le conduire jusqu'ici. Des ennuis urgents appellent notre attention, car Bruenor et Catt-Brie sont introuvables ! Nous devrions vérifier le coffre de Buenor pour trouver des indices.~
+@7 = ~J'ai des problèmes plus importants qui m'appellent, il me faut partir.~

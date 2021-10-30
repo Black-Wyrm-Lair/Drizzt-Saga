@@ -1,0 +1,29 @@
+IF
+  Global("InitialBuff","LOCALS",0)
+  See([PC])  
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    ReallyForceSpell(Myself,WIZARD_DETECT_INVISIBILITY)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
+    ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
+    ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
+    SetGlobal("InitialBuff","LOCALS",1)
+END
+
+IF
+  Delay(20)
+  Global("InitialBuff","LOCALS",1)
+  See([PC])  
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    ReallyForceSpell(Myself,WIZARD_DETECT_INVISIBILITY)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
+    ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
+    ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
+END

@@ -1,0 +1,1437 @@
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@1    = ~Sk³ad Niba~
+@2    = ~Artemis Entreri~
+@3    = ~[MALE THREAT 9] Strze¿cie siê mego gniewu, bo w istocie jestem straszny.~ [%_%GENMT09]
+@4    = ~W innym czasie i innym miejscu!~
+@5    = ~To bêdzie d³ugi, bolesny proces...~
+@6    = ~Chcesz zatañczyæ?~
+@7    = ~Bêdziesz cierpia³... oj tak.~
+@8    = ~W rzeczy samej, wbijê me ostrze w twe trzewia!~
+@9    = ~[GUARDS 5]~ [%_%GUARR05]
+@10   = ~[GUARDS 6]~ [%_%GUARR06]
+@11   = ~Artemis Entreri to znawca cieni i natychmiastowej œmierci. To prawdziwy mistrz w swoim fachu - skrytobójstwie. Nie ma osoby, której nie móg³by zg³adziæ. ¯adna iloœæ zabezpieczeñ nie powstrzyma go przed osi¹gniêciem celu. Wykonuje taniec œmierci podobny do tañca Drizzta. Jego serce jest pozbawione uczuæ bardziej, ni¿ jakiegokolwiek Drowa. Jeœli raz pokrzy¿ujesz mu szyki, bêdzie to twój ostatni b³¹d w ¿yciu. Pochodzi z wielkiego miasta w po³udniowej czêœci Calimshanu, Calimportu. Œcie¿ki Artemisa i Drizzta skrzy¿owa³y siê po raz pierwszy gdy Regis ukrad³ drogocenny skarb Paszy Pooka, herszta z³odziejskiej gildii Calimportu - Entreri zaœ zosta³ wyznaczony do odzyskania go. Po bitych, trzech latach w koñcu odnalaz³ Regisa w Dziesiêciu Miastach, gdzie rozpoczê³a siê wielka przygoda kompanii Drizzta. Jednak zawsze pod¹¿a³a za nimi cicha œmieræ w postaci Artemisa Entreri.~
+@12   = ~Kobieta plemienia NiedŸwiedzia~
+@13   = ~Starszy plemienia NiedŸwiedzia~
+@14   = ~Duchowy NiedŸwiedŸ~
+@15   = ~Wojownik plemienia NiedŸwiedzia~
+@16   = ~Belhifet~
+@17   = ~Na twój rozkaz!~
+@18   = ~Naszym przeznaczeniem, jest podbicie ca³ego œwiata!~ [DRFEM102]
+@19   = ~Chwa³a niech bêdzie Lolth!~ [DRFEM102]
+@20   = ~Nakarmiê siê twoim sercem!~ [F_VMPFX5]
+@21   = ~Zjem ciê, to rzadki zaszczyt!~ [F_VMPFX6]
+@22   = ~Bruenor~
+@23   = ~[DWARF 2] Nie pogardzi³bym ³ykiem krzepkiego, krasnoludzkiego trunku.~ [%_%DWARF02]
+@24   = ~[DWARF 1] Na m³ot Moradina!~ [%_%DWARF01]
+@25   = ~[DWARF 5]~ [%_%DWARF05]
+@26   = ~[DWARF 6]~ [%_%DWARF06]
+@27   = ~Zapytany o swoj¹ przesz³oœæ BRUENOR Battlehammer wyjawia, ¿e dorasta³ w  przeœwietnej Mithrylowej Hali, która jednak niefortunnie zosta³a najechana  przez smoka Shimmerglooma. Podczas ataku smoka na Halê zgin¹³ dziadek i  ojciec Bruenora. Reszta Klanu Battlehammer zmuszona by³a uciekaæ.  Ostatecznie osiedlili siê oni w Dolinie Lodowego Wichru. Przez prawie 200 lat Bruenor przewodzi³ im jako król. Jest wrêcz przyk³adnym krasnoludem -  lojalnym przyjacielem i zaciek³ym wrogiem. Uwielbia skarby skrywane pod ziemi¹ i chrzêst roz³upywanych czaszek goblinów. Chocia¿ sprawia wra¿enie  nieczu³ego i hardego, nie jest to do koñca prawd¹ - wystarczy spojrzeæ na to jak opiekuje siê swoimi przybranymi dzieæmi - Catti-brie oraz Wulfgarem.  Jednak lepiej mu tego nie mówiæ, bo i tak bêdzie próbowa³ siê tego wypieraæ a¿ do œmierci.~
+@28   = ~Catti-Brie~
+@29   = ~[BLACK LILY 1] Gdybym nie mia³a czego ci trzeba, by³by to najczarniejszy z dni.~ [%BLACK_LILY_SND%01]
+@30   = ~[FEMALE THREAT 6]  Wasze ¿ycie nie ma dla mnie znaczenia.~ [%_%GENFT06]
+@31   = ~[BLACK LILY 3]~ [%BLACK_LILY_SND%03]
+@32   = ~[BLACK LILY 4]~ [%BLACK_LILY_SND%04]
+@33   = ~[BLACK LILY 2] Przestañ siê m¹drzyæ! Muszê coœ policzyæ.~ [%BLACK_LILY_SND%02]
+@34   = ~[FEMALE TOWNSFOLK OF BALDUR'S GATE 3 HOSTILE] ZejdŸ mi z oczu! Nie mam z tob¹ nic wspólnego!~
+@35   = ~Spytana o swoj¹ przesz³oœæ Cattie-Brie przez chwilê milczy, po czym zaczyna nieœmia³o opowiadaæ, ¿e pocz¹tkowo wychowywa³a siê poœród twardych krasnoludów z Doliny Lodowego Wichru. Niestety, jeszcze gdy by³a dziewczynk¹, jej rodzice zostali zaszlachtowani w trakcie najazdu goblinów. Ostatecznie trafi³a do klanu Battlehammer. Za towarzyszy mia³a g³ównie surowe ska³y. Cattie-Brie jako pierwsza spoœród mieszkañców Doliny ciep³o przywita³a Drizzta, podczas jego pobytu w Kopcu Kelvina. Najprawdopodobniej to w³aœnie ona najbardziej rozumie ci¹g³¹ Drizzta staraj¹cego siê uzyskaæ akceptacje wœród tych mieszkañców Fearunu, którzy najczêœciej widz¹ wy³¹cznie to, ¿e jest drowem. Cattie-Brie, pod baczn¹ opiek¹ swoich przyjació³, sta³a siê nie lada wyzwaniem dla wrogów, którzy przeciwstawi¹ siê jej i jej s³awnej broni - Taulmarilowi Poszukiwaczowi Serc.~
+@36   = ~Kornugon~
+@37   = ~Cyklop~
+@38   = ~Martwe dziecko~
+@39   = ~Martwy koñ~
+@40   = ~Ranny mê¿czyzna~
+@41   = ~Martwa kobieta~
+@42   = ~Demoniczny rycerz~
+@43   = ~Pomniejszy demoniczny rycerz~
+@44   = ~Wiêkszy Tanari~
+@45   = ~Demoniczny astralny paj¹k~
+@46   = ~Demoniczny stra¿nik~
+@47   = ~Nibby "Wœcibinos"~
+@48   = ~M³ody smok~
+@49   = ~Drizzt~
+@50   = ~[DRIZZT DO'URDEN 1] Wszystko czego pragnê, to pod¹¿aæ swoj¹ drog¹! Poczekajcie przyjaciele, czy potrzebne s¹ te wszystkie wyjaœnienia?! Czy mówi wam coœ imiê Drizzt?!~ [%_%DRIZT01]
+@51   = ~[DRIZZT DO'URDEN 2]~
+@52   = ~[DRIZZT DO'URDEN 3] To twoje ¿ycie, i mo¿esz je straciæ wedle woli!~ [%_%DRIZT03]
+@53   = ~[DRIZZT DO'URDEN 4] Jestem ³agodny z natury, przynajmniej wtedy gdy nie zabijam durniów.~ [%_%DRIZT04]
+@54   = ~[DRIZZT DO'URDEN 5] Miewa³em ju¿ na pieñku z demonami Dziewiêciu Piekie³... dziœ chyba nawet siê nie spocê!~ [%_%DRIZT05]
+@55   = ~[DRIZZT DO'URDEN 8]~ [%_%DRIZT08]
+@56   = ~[DRIZZT DO'URDEN 9]~ [%_%DRIZT09]
+@57   = ~[DRIZZT DO'URDEN 6] Mi³o siê gawêdzi³o, ale czas ju¿ na mnie.~ [%_%DRIZT06]
+@58   = ~[DRIZZT DO'URDEN 7] Nie dr¹¿ tego tematu. To niegrzeczne.~ [%_%DRIZT07]
+@59   = ~[DRIZZT HOSTILE] Nie spêdzê z tob¹ ani chwili d³u¿ej.~
+@60   = ~Zapytany o swoj¹ przesz³oœæ Drizzt Do'Urden uœmiecha siê, po czym zaczyna opowiadaæ swoj¹ historiê. Dowiadujesz siê, ¿e obdarza czci¹ Mielikki i wypowiedzia³ wojnê okrutnemu miastu jego narodzin -  Menzoberranzan, spo³ecznoœci drowów i wszystkim, którzy s³u¿¹ Lolth. Pomagaj¹ mu w tym ludzie z pó³nocy (Wulfgar i Cattie-brie) oraz krasnolud Bruenor Battlehammer, któremu to pomóg³ odzyskaæ w³adanie nad Mithrilow¹ Hal¹. Zabija³ ju¿ smoki i matki prze³o¿one drowów. Opiera siê demonom.(Errtu), jak i ogromnym wp³ywom Lolth. Jego przeciwnikiem jest najgroŸniejszy w ca³ym Faerunie zabójca – Artemis Entreri. Drizzt jest troskliwy i delikatny wobec innych. Kieruje siê swoimi idea³ami, nie wymaga tego jednak od innych. Jest ma³omówny nawet w obliczu zdrady i niebezpieczeñstwa, jednak¿e nie przeszkadza mu to na bycie mi³ym w stosunku do innych. Drizzt to tak¿e perfekcjonista, który chcia³by byæ powszechnie akceptowany i wci¹¿ zdobywaæ nowych przyjació³. Drizzt i jego przyjaciele musz¹ byæ œwiadomi, ¿e bêdzie na nich czyha³o wiele niebezpieczeñstw ze strony Lolth i innych wrogów drowa. Ci, których spotyka w swoich podró¿ach,  czêsto uwa¿aj¹ go za osobê ponur¹. Jego szlachetne poczynania sprawi³y, ¿e Drizzt Do'Urden jest coraz czêœciej mile widzianym goœciem na pó³nocy Wybrze¿a Mieczy.~
+@61   = ~Bitewny mag drowów~
+@62   = ~Drow wojownik~
+@63   = ~Drowia kap³anka~
+@64   = ~Smoczy Golem~
+@65   = ~Varlag Srebrny M³ot~
+@66   = ~Elminster~
+@67   = ~Errtu~
+@68   = ~Ettin~
+@69   = ~Duch~
+@70   = ~Lodowy olbrzym~
+@71   = ~Elitarny goblin~
+@72   = ~Goblin~
+@73   = ~Guenhwyvar~
+@74   = ~Harpia~
+@75   = ~Jarlaxle~
+@76   = ~Naszym przeznaczeniem, jest podbicie ca³ego œwiata!~ [F_DRSL11]
+@77   = ~Dobry naziemiec, to martwy naziemiec!~ [F_DRSL14]
+@78   = ~Walczymy w imieniu Lolth!~ [F_DRSL17]
+@79   = ~[DROW16]~
+@80   = ~[DROW15]~
+@81   = ~Na twój rozkaz!~ [F_DRSL12]
+@82   = ~Na chwa³ê Pajêczej Królowej.~ [F_DRSL13]
+@83   = ~Zapytany o swoj¹ przesz³oœæ JARLAXE wzdycha, i odpowiada, ¿e jest jest przywódc¹ najemniczej bandy znanej jako Bregan D'Aerthe. Mo¿na okreœliæ go jako "mê¿czyzna wyzwolony" - ³amie bowiem wszelkie stereotypy o dominacji kobiet w kulturze drowów. Nie jest za to karany prawdopodobnie z powodu jego  wp³ywowych znajomych wœród elit miasta. W przeciwieñstwie do innych drowów, nosi siê kolorowo i otwarcie obnosi siê ze swoj¹ odmiennoœæi¹. Sami Bregan  D'Aerthe to szajka z³o¿ona z wydziedziczonych szlachciców i zwyk³ych drowów którzy w Podmroku sami niczego nie osi¹gneli, jednak jako zgrana grupa maj¹  du¿¹ si³ê i wp³yw. Jarlaxle i jego Bregan D'Aerthe nie s¹ jednak zbyt pewni, gdy¿ ich lojalnoœæ zale¿y wy³¹cznie od zap³aconej im sumy. Zaœ zdrada i  chaos zawsze im s³u¿¹.~
+@84   = ~Lisz Kangaxx~
+@85   = ~Marylith~
+@86   = ~Mumia~
+@87   = ~Nib Jansen~
+@88   = ~Ork~
+@89   = ~Regis~
+@90   = ~[HALFLING 1] Paskudne czasy id¹.~ [%_%HALFL01]
+@91   = ~[HALFLING 5]~ [%_%HALFL05]
+@92   = ~[HALFLING 6]~ [%_%HALFL06]
+@93   = ~[HALFLING 4] Chcia³bym tylko mieæ przy sobie moj¹ fajkê.~ [%_%HALFL04]
+@94   = ~[HALFLING 2] Obcy jesteœ, nie powinieneœ ³aziæ gdzie ciê nie prosz¹.~ [%_%HALFL02]
+@95   = ~[HALFLING 3] Pokazuj¹ siê tu ró¿niste niesamowitoœci.~ [%_%HALFL03]
+@96   = ~Zapytany o swoj¹ przesz³oœæ REGIS, znany tak¿e jako Pasibrzuch, odpowiada,  ¿e jest dzieckiem ulic Calimportu. Aby prze¿yæ, musia³ staæ siê œwietnym  z³odziejem. Jego umiejêtnoœci potwierdza z pewnoœci¹ czerwona twarz  okradzionego przez niego Paszy Pooka, przywódcy lokalnej gildii  z³odziejskiej. Przybycie Regisa do Dziesiêciu Miast mo¿e znaczyæ tylko jedno  - wpad³ w jakieœ tarapaty i musi salwowaæ siê ucieczk¹. Jak ka¿dy nizio³ek,  Regis uwielbia spokojny ¿ywot, s³odkie lenistwo i ogromne iloœci jad³a. Ma  niestety zwyczaj "po¿yczania" ró¿nych przedmiotów bez wiedzy ich w³aœciciela  - czemu to w³aœnie zawdziêcza czêste przeprowadzki (a raczej ucieczki).~
+@97   = ~Zamaskowana statua~
+@98   = ~Bies cienia~
+@99   = ~Cieñ zabójcy~
+@100  = ~Demoniczna królowa paj¹ków~
+@101  = ~Demoniczny wioœlarz~
+@102  = ~Przenikaj¹cy paj¹k~
+@103  = ~Tanari~
+@104  = ~Valen~
+@105  = ~Wampir~
+@106  = ~Wyj¹ca œmieræ~
+@107  = ~Przywódca wilko³aków~
+@108  = ~Duch œnie¿nego wilko³aka~
+@109  = ~Wulfgar~
+@110  = ~[GREYWOLF 4] Ci co mi weszli w paradê, gryz¹ ziemiê!~ [%_%GREYW04]
+@111  = ~[GREYWOLF 2] To jeszcze nie koniec, nêdzne z³odziejaszki!~ [%_%GREYW02]
+@112  = ~[GREYWOLF 3] Mam ciê, z³odziejskie nasienie!~ [%_%GREYW03]
+@113  = ~[GREYWOLF 6] Durne je³opy!~ [%_%GREYW06]
+@114  = ~[GREYWOLF 7] Mo¿esz dostaæ w pysk, albo kopniaka. Ale masz wolny wybór!~ [%_%GREYW07]
+@115  = ~[GREYWOLF 8]~ [%_%GREYW08]
+@116  = ~[GREYWOLF 9]~ [%_%GREYW09]
+@117  = ~[GREYWOLF 5] Wszystkim wam siê nale¿y uœcisk szubienicznej pêtli.~ [%_%GREYW05]
+@118  = ~[GREYWOLF HOSTILE] Za to coœ zrobi³, urwê ci g³owê!~
+@119  = ~Zapytany o przesz³oœæ WULFGAR, syn Beornegara, œmia³o odpowiada, ¿e dorasta³ poœród dzikich barbarzyñców z Doliny Lodowego Wichru. Sprawy w jego ¿yciu przybra³y niespodziewany obrót, gdy zosta³ pojmany przez Bruenora podczas najazdu na Dziesiêæ Miast. Zamiast straciæ m³odzieñca, w³adca zdecydowa³ jednak, ¿e kar¹ za spowodowane przez niego cierpienia ludzi bêdzie s³u¿ba na dworze przez 5 lat. Wulfgar œwietnie siê sprawdzi³. Ponadto, wyrós³ na olbrzymiego mê¿czyznê, rodem z barbarzyñskich legend. Obecnie dzier¿y wspania³y magiczny m³ot bojowy - Aegis Fang. Otrzyma³ go od przybranego ojca, Bruenora.~
+@120  = ~Meduza~
+@121  = ~Demoniczny rycerz~
+@122  = ~Wiêkszy doppelganger~
+@123  = ~Doppelganger~
+@124  = ~Ghast~
+@125  = ~Ghul~
+@126  = ~Wiêkszy ghul~
+@127  = ~Ghul Korax~
+@128  = ~Opancerzona statua~
+@129  = ~Sarevok~
+@130  = ~Tasloi~
+@131  = ~Wiêkszy wilko³ak~
+@132  = ~Wiêkszy ³akowilk~
+
+@341 = ~[ELMINSTER 1] Hola wêdrowcze, zatrzymaj siê gdy ciê prosi starzec.~ [%_%ELMIN01]
+@342 = ~[ELMINSTER 2]~
+@343 = ~[ELMINSTER 3] Irytuj¹ce jest, ¿eœcie sami wybrali ten kierunek. Cofam pomoc, i nie chcê d³u¿ej mieæ z wami doczynienia.~ [%_%ELMIN03]
+@344 = ~[ELMINSTER 8]~ [%_%ELMIN08]
+@345 = ~[ELMINSTER 9]~ [%_%ELMIN09]
+@346 = ~[ELMINSTER 4] Mogê wam podpowiedzieæ to i owo, ale nie bêdê siê miesza³ do nieswojich spraw.~ [%_%ELMIN04]
+@347 = ~[ELMINSTER 5] Twoje zadanie wymaga poœpiechu! Czy w istocie musisz traciæ czas dra¿ni¹c starszych?~ [%_%ELMIN05]
+@348 = ~[ELMINSTER 6] Prze¿y³em setki lat, a wci¹¿ muszê znosiæ czyj¹œ ciekawoœæ.~ [%_%ELMIN06]
+@349 = ~[ELMINSTER 7] Dobry panie, osobom pod ka¿dym wzglêdem doskona³ym nie³atwo przychodzi bycie pokornymi.~ [%_%ELMIN07]
+@350 = ~Pardon, blaga. Odbi³o mi siê rzep¹.~ [F_JAN23]
+@351 = ~Nie ³udŸcie siê, nie mo¿na mnie pokonaæ.~ [F_IREN03]
+@352 = ~Giñcie, giñcie, wszyscy giñcie!~ [F_IREN04]
+@365 = ~Drewniane schody przegni³y od wilgoci.~
+@371 = ~[DEMONKNIGHT 01]  Przywitaj swoj¹ œmieræ.~ [%tutu_scripts%HAEL_01]
+@372 = ~[DEMONKNIGHT 03]  Tutaj zginiesz!~ [%tutu_scripts%HAEL_03]
+@373 = ~[DEMONKNIGHT 05]  ~ [%tutu_scripts%HAEL_05]
+@374 = ~[DEMONKNIGHT 06]  ~ [%tutu_scripts%HAEL_06]
+@375 = ~[DEMONKNIGHT 04]  ~ [%tutu_scripts%HAEL_04]
+@376 = ~[SLAVES 1] ~ [%_%SLAVE01]
+@377 = ~[VILLAGER, FEMALE 01d] Jesteœ z daleka? A wiêc witaj.~ [%tutu_scriptv%illf01d]
+@378 = ~[FEMALE TOWNSFOLK 5]~ [%_%ftown05]
+@379 = ~[FEMALE TOWNSFOLK 6]~ [%_%ftown06]
+@380 = ~[FEMALE GREETING 1]  Tak?~ [%_%genfg01]
+@381 = ~[SONNER 1] Myœlcie o sobie i jakoœ z tego wyjdziemy! Trzeba nam tylko odrobiny wsparcia.~ [%_%SONNR01]
+@382 = ~[SONNER 3]~ [%_%SONNR03]
+@383 = ~[SONNER 4]~ [%_%SONNR04]
+@384 = ~[SONNER 2] Wygra ten co ma ch³odniejszy umys³.~ [%_%SONNR02]
+@385 = ~[BEAR, POLAR 03]~ [%_%pbear03]
+@386 = ~[BEAR, POLAR 04]~ [%_%pbear04]
+@387 = ~[BEAR, POLAR 05]~ [%_%pbear05]
+@388 = ~[BEAR, POLAR 06]~ [%_%pbear06]
+@389 = ~[BEAR, POLAR 08]~ [%_%pbear08]
+@390 = ~[BEAR, POLAR 09]~ [%_%pbear09]
+@391 = ~[BEAR, POLAR 01]~ [%_%pbear01]
+@392 = ~[BEAR, POLAR 02]~ [%_%pbear02]
+@393 = ~[THE WARRIOR 1] Pomocy! Potrzebujê twego wsparcia! Jest ich zbyt wielu!~
+@394 = ~[THE WARRIOR 5] ~
+@395 = ~[THE WARRIOR 6]~
+@396 = ~[THE WARRIOR 2] Tak zimno . . .Ja . . .ja umieram. . .  B³agam . . ..zostañ ze mn¹ chwilê . . .~
+@397 = ~[THE WARRIOR 3] Nie chcê umieraæ samotnie. . . ~
+@398 = ~[THE WARRIOR 4] Dziêkujê . . .~
+@399 = ~[SLAVES 6]~ [%_%SLAVE06]
+@400 = ~~ [TANAR01]
+@401 = ~~ [TANAR02]
+@402 = ~~ [TANAR03]
+@403 = ~[BASILISK, GREATER 06] ~ [%_%GBASI06]
+@404 = ~[BASILISK, GREATER 09] ~ [%_%GBASI09]
+@405 = ~~ [TANAR05]
+@406 = ~~ [TANAR06]
+@407 = ~~ [TANAR04]
+@408 = ~~ [TANAR01]
+@409 = ~~ [TANAR02]
+@410 = ~[SPIDER, PHASE 03] ~ [%_%PSPID03]
+@411 = ~[SPIDER, PHASE 04] ~ [%_%PSPID04]
+@412 = ~[SPIDER, PHASE 05] ~ [%_%PSPID05]
+@413 = ~[SPIDER, PHASE 06] ~ [%_%PSPID06]
+@414 = ~[SPIDER, PHASE 08] ~ [%_%PSPID08]
+@415 = ~[SPIDER, PHASE 09] ~ [%_%PSPID09]
+@416 = ~[SPIDER, PHASE 01] ~ [%_%PSPID01]
+@417 = ~[SPIDER, PHASE 02] ~ [%_%PSPID02]
+@418 = ~[SPIDER, PHASE 10] ~ [%_%PSPID10]
+@419 = ~[METALLIC SOUND 1]~ [%_%HIT_01C]
+@420 = ~[METALLIC SOUND 2]~ [%_%HIT_02C]
+@421 = ~[METALLIC SOUND 3]~
+@422 = ~[METALLIC SOUND 4]~ [%_%HIT_03D]
+@423 = ~[SPIDER, WRAITH 03] ~ [%_%WSPID03]
+@424 = ~~ [%_%vicon38]
+@425 = ~~ [%_%vicon39]
+@427 = ~[WYVERN 03] ~ [%_%WYVER03]
+@428 = ~[WYVERN 04] ~ [%_%WYVER04]
+@429 = ~[WYVERN 05] ~ [%_%WYVER05]
+@430 = ~[WYVERN 06] ~ [%_%WYVER06]
+@431 = ~[WYVERN 07] ~ [%_%WYVER07]
+@432 = ~[WYVERN 08] ~ [%_%WYVER08]
+@433 = ~[WYVERN 09] ~ [%_%WYVER09]
+@434 = ~[WYVERN 01] ~ [%_%WYVER01]
+@435 = ~[WYVERN 02] ~ [%_%WYVER02]
+@436 = ~[WYVERN 10] ~ [%_%WYVER10]
+@437 = ~[SKELETON WARRIOR 02]~ [%_%SKELW02]
+@438 = ~[SKELETON WARRIOR 03] Giñ . . .~ [%_%SKELW03]
+@439 = ~[SKELETON WARRIOR 9] ~ [%_%SKELW09]
+@440 = ~[WOLF, WINTER 07]~ [%_%WWOLF07]
+@441 = ~[SKELETON WARRIOR 01]~ [%_%SKELW01]
+@443 = ~[MALE GREETING 3]  Hmm?~ [%_%GENMG03]
+@444 = ~[MONKS 5]~ [%_%MONKS05]
+@445 = ~[MONKS 6]~ [%_%MONKS06]
+@446 = ~[WEREWOLF 01]  ~ [%_%WEREW01]
+@447 = ~[WEREWOLF 02]  ~ [%_%WEREW02]
+@448 = ~[WEREWOLF 03]  ~ [%_%WEREW03]
+@449 = ~[WEREWOLF 04]  ~ [%_%WEREW04]
+@450 = ~[WEREWOLF 05]  ~ [%_%WEREW05]
+@451 = ~[WEREWOLF 06]  ~ [%_%WEREW06]
+@452 = ~[CENTEOL 1] Moje paj¹ki! Zabijcie ich. Zabijcie wszystkich!~ [%_%CENTL01]
+@453 = ~[CENTEOL 2] ~ [%_%CENTL02]
+@454 = ~[CENTEOL 3]~ [%_%CENTL03]
+@455 = ~[CENTEOL 4]~ [%_%CENTL04]
+@456 = ~[WEREWOLF, GREATER 01] Wszystkich was pogrzebiê!~ [%_%GWERE01]
+@457 = ~[WEREWOLF, GREATER 03]  ~ [%_%GWERE03]
+@458 = ~[WEREWOLF, GREATER 04]  ~ [%_%GWERE04]
+@459 = ~[WEREWOLF, GREATER 05]  ~ [%_%GWERE05]
+@460 = ~[WEREWOLF, GREATER 06]  ~ [%_%GWERE06]
+@461 = ~[WOLF, WINTER 03] ~ [%_%WWOLF03]
+@462 = ~[WOLF, WINTER 04] ~ [%_%WWOLF04]
+@463 = ~[WOLF, WINTER 05] ~ [%_%WWOLF05]
+@464 = ~[WOLF, WINTER 06] ~ [%_%WWOLF06]
+@465 = ~[WOLF, WINTER 08] ~ [%_%WWOLF08]
+@466 = ~[WOLF, WINTER 09] ~ [%_%WWOLF09]
+@467 = ~[WOLF, WINTER 01] ~ [%_%WWOLF01]
+@468 = ~[WOLF, WINTER 02] ~ [%_%WWOLF02]
+@469 = ~[SIRINE 05] ~ [%_%SIRIN05]
+@470 = ~[SKELETON WARRIOR 04] ~ [%_%SKELW04]
+@471 = ~[ZOMBIE 03]~ [%_%ZOMBI03]
+@472 = ~[ZOMBIE 04]~ [%_%ZOMBI04]
+@473 = ~[ZOMBIE 05]~ [%_%ZOMBI05]
+@474 = ~[ZOMBIE 06]~ [%_%ZOMBI06]
+@475 = ~[ZOMBIE 01]~ [%_%ZOMBI01]
+@476 = ~[ZOMBIE 02]~ [%_%ZOMBI02]
+
+@477 = ~Powraca Róg Plemienia NiedŸwiedzia.~
+@478 = ~Przyzwanie Ducha NiedŸwiedzia~
+@479 = ~Krwawienie~
+@480 = ~Zatrucie krwi~
+@481 = ~Rozproszenie zaklêæ~
+@482 = ~Ochrona przed z³em~
+@483 = ~Niewidzialnoœæ~
+@484 = ~Powraca Figurka Pantery~
+@485 = ~Przyzwanie Guenhwyvar~
+@486 = ~Gulp!~
+
+//---------------------------------------------------------------------------------
+//  Item descriptions:
+//---------------------------------------------------------------------------------
+
+@133  = ~Sztylet~
+@134  = ~Wampiryczny sztylet +5~
+@135  = ~Typowe sztylety posiadaj¹ ostro zakoñczone, dwusieczne ostrza, w odró¿nieniu od zwyk³ych no¿y, które s¹ jednosieczne i nieco krótsze.
+
+PARAMETRY:
+
+Obra¿enia: 1K4
+Typ obra¿eñ: k³ute
+Waga: 1
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+Wymagana si³a: 3
+Nie mo¿e u¿ywaæ:
+ Kap³an~
+@136  = ~Sztylet ten obrós³ ju¿ legendarn¹, z³¹ s³aw¹ w ca³ych Krainach. Obecnie s³u¿y on znanemu zabójcy, Artemisowi Entreri - w jego d³oniach broni tej powinien siê obawiaæ ka¿dy, nawet najpotê¿niejszy wojownik.
+
+PARAMETRY:
+
+Obra¿enia: 1K4 +3
+TraK0: +5
+Specjalne:
+ Przy trafieniu wysysa z ofiary 5 punktów ¿ycia i przekazuje je w³aœcicielowi broni.
+Typ obra¿eñ: k³ute
+Waga: 1
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+Wymagana si³a: 3
+Nie mo¿e u¿ywaæ:
+ Kap³an~
+@137  = ~Studded Leather~
+@138  = ~Dusza wê¿a +3~
+@139  = ~Zbroja skórzana æwiekowana ma niewiele wspólnego ze zwyk³¹ zbroj¹ skórzan¹. Podczas gdy zbroja skórzana jest utwardzan¹ skorup¹, zbroja æwiekowana jest miêkka i wzmocniona setkami, nabitych w niewielkich odleg³oœciach nitów. Znajduj¹ siê one tak blisko siebie, ¿e tworz¹ trudn¹ do przebicia metalow¹ zaporê, która œwietnie powstrzymuje sieczne i k³ute ataki. Miêkkie skórzane podbicie s³u¿y jedynie do utrzymania nitów w miejscu.
+
+PARAMETRY:
+
+Klasa Pancerza: 7
+Waga: 25
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Mag~
+@140  = ~Zbroja ta jest osobistym pancerzem Artemisa Entreri, znanego zabójcy z Calimportu.
+
+PARAMETRY:
+
+Klasa Pancerza: 4
+Specjalne:
+ W³aœciciel jest odporny na truciznê
+Waga: 25
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Mag~
+@141  = ~Amulet~
+@142  = ~Amulet to bi¿uteria (czasami magiczna), która po³¹czona z ³añcuszkiem jest noszona na szyi. Rodzaj ³añcuszka, na którym amulet jest zawieszony zwykle podnosi tylko jego walory estetyczne, a nie magiczne (jeœli takie istniej¹). Mo¿na nosiæ tylko jeden amulet na raz.~
+@143  = ~Ten medalion jest bardzo poszukiwany przez zarówno z³odziei jak i bardów, jednak z innych powodów. Nie doœæ, ¿e zapewnia potê¿na magiczn¹ ochronê przeciwko fizycznym atakom, to jeszcze zwiêksza bieg³oœæ posiadacza w kilku ³otrzykowskich umiejêtnoœciach. Jednak nawet jeszcze bardziej cenion¹ cech¹, z punktu widzenia bardów, jest zdolnoœæ amuletu do zapewnienia posiadaczowi odpornoœci na wszelkie formy ciszy.
+
+PARAMETRY:
+
++20% do wykrywania pu³apek i otwierania zamków
++3 do KP
+Osoba nosz¹ca medalion jest odporna na ciszê
+
+Mo¿e u¿ywaæ:
+ Bard
+ Z³odziej~
+@144  = ~Amulet ochrony przed wampirami~
+@145  = ~Amulet ten zaklêty zosta³ przez maga, który niegdyœ musia³ przeprawiæ siê przez Góry Œmierci w Dolinach Lodowego Wichru.
+
+PARAMETRY:
+
+Specjalne:
+ B³ogos³awieñstwo
+ Chroni w³aœciciela przed wampirycznym wysysaniem kondycji. Przy tym jednak usuwa jakiekolwiek zmiany (pozytywne i negatywne) tego atrybutu.
+
+Nie mo¿e u¿ywaæ:
+ Wojownik
+ Z³odziej
+ Paladyn
+ £owca~
+@146  = ~Figurka paj¹ka~
+@147  = ~Ta drobna figurka paj¹ka ¿arzy siê czerwonym blaskiem.~
+@148  = ~Ta magiczna figurka pozwala u¿ytkownikowi przyzwaæ Przenikaj¹cego Paj¹ka.
+
+Figurka pozwala na tylko jednorazowe u¿ycie, po czym zostaje zniszczona zaœ jej esencja powraca na zewnêtrzne plany do swej prawowitej w³aœcicielki, Demonicznej Pajêczej Królowej.~
+@149  = ~Krótki miecz~
+@150  = ~Uk¹szenie Wê¿a +4~
+@151  = ~Pierwszymi mieczami jakie pojawi³y siê by³y w³aœnie krótkie miecze. Najproœciej rzecz bior¹c, jest to sztylet o ostrzu tak d³ugim, ¿e nie mo¿e byæ d³u¿ej traktowany jak sztylet. Termin "krótki miecz" nie istnieje w ¿adnych klasyfikacjach mieczy. Tutaj oznacza on dwusieczne ostrze o d³ugoœci oko³o 60 centymetrów. Jego czubek jest zazwyczaj ostry, co sprawia, ¿e doskonale s³u¿y do zadawania ran k³utych.
+
+PARAMETRY:
+
+Obra¿enia: 1K6
+Typ obra¿eñ: k³ute
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: krótki miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 5
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+@152  = ~Miecz ten to ulubiona broñ Artemisa Entreri.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +4
+TraK0: +4
+Specjalne:
+ Przy trafieniu wprowadza do krwi ofiary truciznê (rzut obronny przeciw truciznom neguje)
+Typ obra¿eñ: k³ute
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: krótki miecz
+Typ broni: 1-rêczna
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+@153  = ~Dziecko przywódcy plemienia NiedŸwiedzia~
+@154  = ~To dzieciê przywódcy Plemienia NiedŸwiedzia. Wci¹¿ ¿ywe, nawet po tym co w³aœnie prze¿y³o.~
+@155  = ~Róg Plemienia NiedŸwiedzia~
+@156  = ~DŸwiêk tego potê¿nego rogu przywo³uje Ducha NiedŸwiedzia, który walczy³ bêdzie w imieniu w³aœciciela.
+
+PARAMETRY:
+
+Specjalne:
+ Raz dziennie pozwala przyzwaæ Duchowego niedŸwiedzia.~
+@157  = ~Pas~
+@158  = ~Œwiêty Symbol Lathandera~
+@159  = ~Pasy s¹ podobne do zwyk³ych pasków. W odró¿nieniu jednak od tych ostatnich, nie s³u¿¹ podtrzymywaniu spodni i innych imponderabiliów, ale wiesza siê na nich torby, sakwy, pochwy itp.
+
+PARAMETRY:
+
+Waga: 2~
+@160  = ~Te niezwykle potê¿ne œwiête symbole mog¹ otrzymaæ tylko najbardziej oddani s³udzy Zwiastunki Œwitu.
+
+PARAMETRY:
+
+ Zapewnia dodatkowe zaklêcie 6. i 7. poziomu.
+ Kiedy siê go nosi, w³aœciciel otrzymuje dodatkowe 5% odpornoœci na magiê
+ Kiedy siê go nosi, w³aœciciel otrzymuje +1 do Si³y.
+
+Mo¿e u¿ywaæ:
+ Dobry kap³an~
+@161  = ~Œwiêty Symbol Helma~
+@162  = ~Te niezwykle potê¿ne œwiête symbole mog¹ otrzymaæ tylko najbardziej oddani s³udzy Stra¿nika.
+
+PARAMETRY:
+
+ Zapewnia dodatkowe zaklêcie 6. i 7. poziomu.
+ Kiedy siê go nosi, w³aœciciel otrzymuje dodatkowe 5% odpornoœci na magiê
+ Kiedy siê go nosi, w³aœciciel otrzymuje +1 do Si³y.
+
+Mo¿e u¿ywaæ:
+ Neutralny kap³an~
+@163  = ~Œwiêty Symbol Talosa~
+@164  = ~Te niezwykle potê¿ne œwiête symbole mog¹ otrzymaæ tylko najbardziej oddani s³udzy Pana Burz.
+
+PARAMETRY:
+
+ Zapewnia dodatkowe zaklêcie 6. i 7. poziomu.
+ Kiedy siê go nosi, w³aœciciel otrzymuje dodatkowe 5% odpornoœci na magiê
+ Kiedy siê go nosi, w³aœciciel otrzymuje +1 do Si³y.
+
+Mo¿e u¿ywaæ:
+ Z³y kap³an~
+@165  = ~Wiekiera~
+@166  = ~Burzowa Gwiazda +3~
+@167  = ~Wekiera jest w prostej linii spadkobierczyni¹ zwyk³ej maczugi. Jest to po prostu drewniany trzonek, na którym zosta³a osadzona kamienna lub metalowa g³owica, uzbrojona w kolce, æwieki lub inne ostre zakoñczenia.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: obuchowe
+Waga: 8
+OpóŸnienie: 7
+Rodzaj bieg³oœci: wekiera
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@168  = ~Ta magiczna broñ pochodzi z pradawnych czasów. Podobno wytworzono j¹ w Netheril. Kiedy ktoœ weŸmie tê maczugê do rêki, zaczynaj¹ po niej przebiegaæ widowiskowe, choæ niegroŸne, wy³adowania elektryczne.
+
+PARAMETRY:
+
+TraK0: +3
+Obra¿enia: 1k6 +4, +1k6 obra¿eñ od elektrycznoœci
+Typ obra¿eñ: obuchowe
+Waga: 6
+OpóŸnienie: 4
+Rodzaj bieg³oœci: maczuga
+Typ: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@169  = ~Morgensztern~
+@170  = ~Lodowa Gwiazda +4~
+@171  = ~Morgensztern to drewniany trzonek, zakoñczony metalowym okuciem z licznymi szpiczastymi æwiekami. Broñ ta ma oko³o 1,20 do 1,30 metra d³ugoœci. Ró¿ne jej rodzaje posiadaj¹ kulist¹, owaln¹ lub cylindryczn¹ g³owicê. Bez wzglêdu jednak na rodzaj, wiêkszoœæ morgenszternów jest zakoñczona d³ugim szpikulcem, przeznaczonym do k³ucia.
+
+PARAMETRY:
+
+Obra¿enia: 2K4
+Typ obra¿eñ: obuchowe
+Waga: 12
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ broni: 1-rêczna
+Wymagana si³a: 11
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@172  = ~G³owica tego morgenszternu sprawia wra¿enie wykonanej z niet³uk¹cego b³êkitnego lodowego kryszta³u. Trzonek jest ch³odny w dotyku i trzymaj¹ca go w rêku osoba zostaje otoczona przez koj¹cy ob³ok ch³odnego powietrza, który chroni nawet przez ogniem magicznym.
+
+PARAMETRY:
+
+Specjalne:
+ +20% do odpornoœci na ogieñ
+
+TraK0: +4
+Obra¿enia: 2K4 +4, +1K4 dodatkowych obra¿eñ od zimna
+Typ obra¿eñ: obuchowe
+Waga: 8
+OpóŸnienie: 4
+Rodzaj bieg³oœci: Cep bojowy/Morgensztern
+Typ broni: 1-rêczna
+Wymagana si³a: 11
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@173  = ~Buty~
+@174  = ~Buty szybkoœci~
+@175  = ~Buty s¹ zwykle rêcznie wyrabiane przez szewców. Zwyk³e buty s¹ robione z u¿yciem jakiegoœ ogólnego modelu stopy, ale te dobre wykonywane s¹ na zamówienie i dopasowywane do stóp zamawiaj¹cego.
+
+PARAMETRY:
+
+Waga: 4~
+@176  = ~Buty te nale¿¹ do Artemisa Entreri, przera¿aj¹cego zabójcy pod¹¿aj¹cego za Drizztem. Artemis niczym cieñ pod¹¿a za drowem planuj¹c kolejne, zdradzieckie ataki, które mia³yby wreszcie doprowadziæ do œmierci coraz bardziej s³awnego tropiciela.
+
+PARAMETRY:
+
+Specjalne:
+ Zwiêkszaj¹ prêdkoœæ poruszania siê.~
+@177  = ~Dziennik Bruenora~
+@178  = ~Dzieñ 1: W okolicy zaczynaj¹ dziaæ siê dziwne rzeczy. Z nieba zniknê³y jakiekolwiek chmury, co pocz¹tkowo wzi¹³em za dobry omen - jednak zdaje siê, ¿e ma to dosyæ powa¿ny wp³yw na œrodowisko Dolin. Nagle zaczê³y topnieæ masy œniegu i lodu z gór, co mo¿e wywo³aæ powódŸ w Dolinie lodowego Wichru.
+
+Dzieñ 2: Catti-Brie przy³¹czy³a siê do miejscowych ³owców, by zbadaæ sprawê tych zmian pogody.
+
+Dzieñ 3: Nie mia³em dziœ ¿adnych wieœci od Cattie-Brie, jednak chyba nie ma co siê tym martwiæ. Nie ma jej dopiero dobê.
+
+Dzieñ 4: Wci¹¿ brak wieœci. Nie przyby³ ¿aden pos³aniec. Zaczynam siê niepokoiæ.
+
+Dzieñ 5: Nic. Catti mówi³a, ¿e wróci w przeci¹gu dwóch dni. Gdyby chcia³a zostaæ gdzieœ na d³u¿ej, z pewnoœci¹ by mnie o tym powiadomi³a. Co siê mog³o staæ?
+
+Dzieñ 6: Czujê, ¿e coœ siê œwiêci. Czujê to w koœciach. Wyruszam na poszukiwania Catti-Brie, poza tym poprosi³em Regisa aby odnalaz³ Drizzta, trochê podró¿y po tak d³ugim lenistwie dobrze mu zrobi. Drizzt powinien ju¿ skoñczyæ swoje sprawy na Wybrze¿u Mieczy i byæ ju¿ na drodze do Dolin. Próbowa³ tam odszukaæ Wulfgara, lecz z tego co mi wiadomo, nie by³o ¿adnych tropów ni poszlak.~
+@179  = ~Topór bojowy~
+@180  = ~Topór bojowy +3~
+@181  = ~Bruenor wyku³ ten topór w chwili kiedy los zaniós³ go do Doliny Lodowego Wichru. Od tego czasu dobrze mu s³u¿y roz³upuj¹c czaszki jego wrogów.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +3
+TraK0: +3
+Typ obra¿eñ: sieczne
+Waga: 2
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Nie mo¿e u¿ywaæ:
+ Postaæ o z³ym charakterze
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@182  = ~He³m~
+@183  = ~He³m Bruenora~
+@184  = ~He³m ten jest ju¿ nieco poszczerbiony, u³ama³ siê ju¿ nawet jeden róg. Jednak Bruenor wci¹¿ jest zadowolony z zapewnianej przez niego ochrony.
+
+PARAMETRY:
+
+Premia do Klasy Pancerza: 1
+Premia do Rzutów Obronnych: 1
+Specjalne:
+ +1 do trafienia
+ Chroni przed trafieniami krytycznymi
+Waga: 1
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Mag
+ Z³odziej~
+@185  = ~Pe³na zbroja p³ytowa~
+@186  = ~Mithrylowa pe³na zbroja p³ytowa +2~
+@187  = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
+
+PARAMETRY:
+
+Klasa Pancerza: 1
+Waga: 70
+Wymagana si³a: 15
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Mag
+ Z³odziej~
+@188  = ~Mitrylowa pe³na zbroja p³ytowa +2
+To jest osobista zbroja Bruenora Battlehammera i trudno znaleŸæ lepszy pancerz. To prawdziwy cud rzemios³a p³atnerskiego.
+
+PARAMETRY:
+Klasa pancerza: -1
+Waga: 45
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Bard
+ Druid
+ Mag~
+@189  = ~Ciê¿ka kusza~
+@190  = ~Ciê¿ka kusza +1~
+@191  = ~Kusza jest ³ukiem zatkniêtym poprzecznie na drewnianym lub metalowym drzewcu. Zazwyczaj jest wykonana z jesionu albo cisu. Strzela pociskami, które zwane s¹ be³tami.
+
+PARAMETRY:
+
+Obra¿enia: +2 (pociski)
+Waga: 14
+OpóŸnienie: 10
+Rodzaj bieg³oœci: kusza
+Typ broni: 2-rêczna
+Wymagana si³a: 12
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@192  = ~Kusza jest ³ukiem zatkniêtym poprzecznie na drewnianym lub metalowym drzewcu. Zazwyczaj jest wykonana z jesionu albo cisu. Strzela pociskami, które zwane s¹ be³tami.
+
+PARAMETRY:
+
+Obra¿enia: +3 (pociski)
+TraK0: +1
+Waga: 12
+OpóŸnienie: 9
+Rodzaj bieg³oœci: kusza
+Typ broni: 2-rêczna
+Wymagana si³a: 12
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@193  = ~Strza³y~
+@194  = ~Ko³czan Cattie-Brie~
+@195  = ~Strza³y z tego ko³czanu s¹ zaklête i wydaje siê, ¿e nigdy siê nie koñcz¹. S¹ to lekkie strza³y które s³u¿¹ do strzelania na daleki dystans. Czêsto wykorzystuje siê je do polowañ, gdy¿ lec¹ do celu szybko i prawie bez odg³osu. Wiêkszoœæ z nich jest wykonana z jesionu lub brzozy i mierzy od 75 do 100 cm.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+TraK0: +1
+Specjalne:
+ Nieograniczona iloœæ strza³
+Typ obra¿eñ: pocisk (k³ute)
+Waga: 0
+Wyrzutnia: ³uk
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Druid
+ Mag~
+@196  = ~D³ugi ³uk~
+@197  = ~Taurmaril +2~
+@198  = ~D³ugi ³uk +2, Taurmaril: 'Poszukiwacz serc'
+
+Kolejny z znanych ju¿ orê¿y po tej stronie Dolin. £uk ten to przyboczna broñ bohaterki Catti-Brie Battlehammer. Córki Bruenora Battlehammera i mi³oœci dwóch potê¿nych wojowników. Wojowniczka pos³uguje siê tym srebrzystym ³ukiem z niezaprzeczaln¹ bieg³oœci¹. Z³o niech uwa¿a na srebrne strugi przecinaj¹ce powietrze!
+
+PARAMETRY:
+
+Obra¿enia: +2
+TraK0: +2
+Waga: 2
+OpóŸnienie: 2
+Rodzaj bieg³oœci: d³ugi ³uk
+Typ broni: 2-rêczna
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej
+ Bard~
+@199  = ~D³ugi miecz~
+@200  = ~Khazid-Zhea +3~
+@201  = ~T¹ wysoce nieprzewidywaln¹ broñ chaosu, Catti-brie zdoby³a podczas mentalnego pojedynku w jakim uczestniczy³a podczas Czasów K³opotów, czasach kiedy bogowie kroczyli poœród ludzi. Ostrze to dobrze jej s³u¿y.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +3
+TraK0: +3
+Typ obra¿eñ: sieczne
+Waga: 2
+OpóŸnienie: 3
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+@202  = ~P³aszcz z wilczych skór~
+@203  = ~Ta œnie¿nobia³a opoka z skór œnie¿nych wilków jest ciep³a i mi³a w dotyku. Zosta³a umagiczniona przez krasnoludzkiego kowala Srebrnego M³ota. Mo¿e byæ przywdziewana jak p³aszcz.
+
+PARAMETRY
+
+Specjalne:
+ Odpornoœæ na ch³ód: +50%~
+@204  = ~Cep bojowy~
+@205  = ~Cep bojowy sk³ada siê z solidnego drzewca, s³u¿¹cego za uchwyt, do którego przymocowany jest b¹dŸ gruby metalowy prêt, b¹dŸ nabijany ostrymi kawa³kami metalu lub kamieni dr¹g, lub te¿ ¿elazna kula ze szpikulcami. Te dwa elementy ³¹czono zwykle krótkim ³añcuchem lub mocnymi rzemieniami. Broñ ta wywodzi siê od cepów u¿ywanych do m³ócenia zbo¿a.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: obuchowe
+Waga: 15
+OpóŸnienie: 7
+Rodzaj bieg³oœci: cep bojowy/morgensztern
+Typ broni: 1-rêczna
+Wymagana si³a: 13
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@206  = ~Czaszka~
+@207  = ~Sztylet do rzucania~
+@208  = ~Zatruty sztylet do rzucania~
+@209  = ~Typowy sztylet do rzucania ma spiczaste, zwykle obusieczne ostrze, w przeciwieñstwie do no¿a, który jest jednosieczny i trochê krótszy ni¿ sztylet. W przeciwieñstwie do typowego sztyletu, ten ma mniejsz¹ rêkojeœæ i jest inaczej wywa¿ony.
+
+PARAMETRY:
+
+Obra¿enia: 1K4
+Typ obra¿eñ: pocisk (k³ute)
+Waga: 1
+OpóŸnienie: 2
+Rodzaj bieg³oœci: sztylet
+Typ broni: 1-rêczna
+Wymagana si³a: 3
+Nie mo¿e u¿ywaæ:
+ Kap³an~
+@210  = ~Na ka¿dym z zatrutych rzucanych sztyletów znajduje siê cienka warstwa trucizny, czyni¹c go zabójcz¹ broni¹ w rêkach wyæwiczonego zabójcy. Czêsto wykorzystywany jest podczas gobliñskich napadów.~
+@211  = ~Ampu³ka wype³niona krwi¹~
+@212  = ~Ampu³ka krwi Kornugona~
+@213  = ~Dark and rancid blood lurks within this pewter goblet. The lip is black and caked where it appears others have tasted from it. Scratched deep into the pewter are the words "Posmakuj Mej Duszy."~
+@214  = ~Na œciance tej ampu³ki wyskrobane s¹ s³owa "Posmakuj Mej Duszy". Mówi siê, ¿e mroczna krew czaj¹ca siê na dnie tej ampu³ki potrafi przywróciæ utracone zdrowie, wyleczyæ choroby i usun¹æ trucizny. Jednak ma to swoj¹ cenê, której jednak nie mo¿e odgadn¹æ nawet magia poznania.
+
+PARAMETRY:
+
+Specjalne:
+ Leczy 5 punktów ¿ycia
+ Usuwa choroby i trucizny
+ Nieznane skutki uboczne~
+@215  = ~Pierœcieñ~
+@216  = ~Pierœcieñ swobody ruchów: 'Dar Edventara'~
+@217  = ~Pierœcienie noszone s¹ na palcach i bardzo czêsto maj¹ w³asnoœci magiczne. Na ka¿dej d³oni mo¿na nosiæ jeden pierœcieñ.~
+@218  = ~Pierœcieñ swobody ruchów: 'Dar Edventara'
+Ten pierœcieñ otrzyma³ badacz raf i myœliwy - znany jedynie jako Edventar - od grupy morskich elfów, które przez d³ugi czas by³y jego przyjació³mi. Pomoc Edventara przy unikaniu "Królowej Piratów" z Dambrath by³a podstaw¹ przetrwania elfów. Mimo to Yenandry wci¹¿ obawiano siê wszêdzie tam, gdzie woda spotyka³a siê z l¹dem.
+
+PARAMETRY:
+
+Specjalne:
+ Nosz¹cy pierœcieñ jest odporny na ka¿de magiczne i naturalne dzia³anie, które w jakikolwiek sposób wp³ywa na swobodê ruchów. To dotyczy tak¿e zaklêæ spowalniania i przyspieszania ruchów.~
+@219  = ~D³oñ ghula~
+@220  = ~Wiekiera zniszczeñ +2~
+@221  = ~Wekiera jest w prostej linii spadkobierczyni¹ zwyk³ej maczugi. Jest to po prostu drewniany trzonek, na którym zosta³a osadzona kamienna lub metalowa g³owica, uzbrojona w kolce, æwieki lub inne ostre zakoñczenia.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: obuchowe
+Waga: 8
+OpóŸnienie: 7
+Rodzaj bieg³oœci: wekiera
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@222  = ~Wekiera zniszczeñ +2
+Ta ciê¿ka wekiera zosta³a stworzona w œciœle okreœlonym celu: do niszczenia nieumar³ych. Ka¿da trafiona ni¹ taka istota odczuwa nie tylko ¿¹d³o broni, ale mo¿e te¿ po prostu ulec zniszczeniu. Istniej¹ legendy o kap³ance tak œwiêtej, ¿e jedno jej dotkniêcie mog³o obróciæ wampira w nicoœæ, ale czy to broñ dawa³a jej tak¹ si³ê, czy ona broni, jest tematem dyskusji dla teologów.
+
+PARAMETRY:
+
+Specjalne:
+- Bonus na nieumar³ych obra¿enia: 1K6 +3
+- Trafiony nieumar³y musi wykonaæ rzut obronny (z -4 kary) przeciw œmierci lub ulegnie zniszczeniu
+
+Obra¿enia: 1K6 +3
+TraK0: +2
+Typ obra¿eñ: obuchowe
+Waga: 8
+OpóŸnienie: 6
+Rodzaj bieg³oœci: wekiera
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@223  = ~Zbroja ³uskowa~
+@224  = ~£uska zielonego smoka~
+@225  = ~Zbroja z ³usek czerwonego smoka jest lekka, wytrzyma³a, oraz odporna na kwas i ogieñ. Z powodu tych w³aœciwoœci jest po¿¹dana, ale znalezienie, a co dopiero zg³adzenie potê¿nego starego smoka jest prawie niemo¿liwe. £atwiej jest znaleŸæ istniej¹cy ju¿ pancerz, taki jak ten. Nale¿y jednak uwa¿aæ by nie nosiæ go w pobli¿u smoków, szczególnie zielonych.
+
+PARAMETRY:
+
+Klasa Pancerza: -1
+Specjalne:
+ +50% do odpornoœci na ogieñ i kwas
+Waga: 25
+Wymagana si³a: 8
+Nie mo¿e u¿ywaæ:
+ Bard
+ Mag
+ Z³odziej~
+
+@227  = ~Sejmitary Drizzta~
+@228  = ~Sejmitary te to osobista broñ Drizzta. Elf nazywa je: B³ysk i ¯agiew Mrozu.~
+@229  = ~Kamieñ stra¿niczy~
+@230  = ~Kamieñ stra¿niczy drowów~
+@231  = ~Czêsto naznaczane magicznymi runami i symbolami, kamienie stra¿nicze s¹ potê¿nymi magicznymi przedmiotami, umo¿liwiaj¹cymi przedostanie siê przez obszary chronione magi¹. Poniewa¿ wiêkszoœæ z nich jest unikatowa i wyspecjalizowana, ma³o który posiada wiêcej ni¿ jedn¹ funkcjê.~
+@232  = ~Kamieñ stra¿niczy drowów~
+@233  = ~Czaszka zielonego smoka~
+@234  = ~Obciêta g³owa zielonego smoka jest zarazem przera¿aj¹cym i uspokajaj¹cym widokiem. £usek na ³bie potwora wystarczy³oby na wykonanie z nich porz¹dnego pancerza. Masz du¿e szczêœcie, gdy¿ w³asnorêczne zabicie takiego smoka by³oby czymœ niemal¿e niemo¿liwym.~
+@235  = ~Mikstura~
+@236  = ~Mikstura os³ony przed œmierci¹~
+@237  = ~Mikstury s¹ zazwyczaj przechowywane w ceramicznych, kryszta³owych, szklanych albo metalowych buteleczkach. Zawieraj¹ one wystarczaj¹co du¿o p³ynu, aby obj¹æ swym dzia³aniem jedn¹ osobê.  ~
+@238  = ~Mikstura ta zapewnia pij¹cemu niepodatnoœæ na magiê œmierci tak¹ jak zabijanie czy petryfikacje. Chroni tak¿e przed wampirycznym wysysaniem kondycji.~
+@239  = ~P³aszcz~
+@240  = ~P³aszcz elfów~
+@241  = ~P³aszcze s¹ wykonywane w najrozmaitszych formach i z najbardziej ró¿norakich materia³ów. Najpowszechniej u¿ywanym jest p³aszcz, zrobiony z kawa³ka materii w kszta³cie okrêgu z wyciêtym w centrum otworem na g³owê. W modelach bardziej wyszukanych otwór ten poszerzony i spinany ³añcuszkiem, brosz¹ lub zapinkami.~
+@242  = ~P³aszcz elfów
+Ten szary p³aszcz wygl¹da zwyczajnie. Noszenie go sprawia, ¿e w³aœciciel jest w stanie ukrywaæ siê w cieniu z wyj¹tkow¹ skutecznoœci¹. Jednak¿e podobnie jak w wypadku zdolnoœci z³odziejskiej, chwila, w której zaatakuje on lub w inny sposób sprawi, ¿e jego obecnoœæ stanie siê znana, oznacza opuszczenie kryjówki.
+
+PARAMETRY:
+
+Specjalne:
+ +10% do Krycia siê~
+@243  = ~Pas si³y lodowego olbrzyma~
+@244  = ~Pas si³y lodowego olbrzyma
+Ten pas to tak naprawdê utkane w³osy z brody lodowego olbrzyma. Nosz¹ca go osoba staje siê równie silna, jak ów olbrzym.
+
+PARAMETRY:
+
+Si³a: 21~
+@245  = ~Zwój Runy Mrozu~
+@246  = ~Gdyby po³¹czyæ ten zwój z toporem Lodo³amaczem, mo¿naby uzyskaæ potê¿n¹ broñ.~
+@247  = ~Pierœcieñ Kangaxxa~
+@248  = ~Pierœcieñ Kangaxxa
+Ten pierœcieñ nie jest specjalnie zdobiony, jednak przeklêta magia promieniuje intensywnym z³em. W istocie, jego twórca, Kangaxx nie wiele by³ lepszy, nawet na tysi¹ce lat przed tym jak nieumarli uroœli w si³ê. Mówi siê, ¿e kadra magów z Netherilu walczy³a i uwiêzi³a kiedyœ pó³lisza, ale nie bêd¹c w stanie naprawdê go zniszczyæ sami stali siê liszami, by trzymaæ od tej pory stra¿ przy jego szcz¹tkach. Wykonanie pierœcienia mog³o doprowadziæ do ich wrogoœci, jako ¿e na ka¿dej z dziewiêciu faset klejnotu wypisana by³a podobno ofiara i œmieræ.
+
+PARAMETRY:
+
+Specjalne:
+ +2 do Klasy Pancerza
+ +2 do rzutów obronnych
+ +10% do odpornoœci na magiê
+ Odpornoœæ na choroby i trucizny~
+@249  = ~Topór bojowy +2~
+@250  = ~Szpon~
+@251  = ~Szpon Kornugona~
+@252  = ~Wygl¹da to na pazur jakiejœ wielkiej bestii, byæ mo¿e jakiegoœ demona.~
+@253  = ~O przedmiocie tym wiadomo tylko tyle, ¿e sam pazur pochodzi z cia³a wielkiej bestii, demona Kornugona. Zosta³ wielokrotnie nas¹czony magi¹, która uaktywnia siê, gdy pazur w³o¿y siê niczym pierœcieñ. Osoba nosz¹ca pierœcieñ ulegnie rozmyciu i trudniej j¹ bêdzie trafiæ zarówno broni¹, jak i czarami. Przedmiot ma jednak pewn¹ wadê - zdaje siê czerpaæ moc z krwi posiadacza. Dlatego te¿ w³aœciciel czêsto choruje i jest bardziej podatny na dzia³anie trucizn.
+
+PARAMETRY:
+
+Specjalne:
+ +1 do Klasy Pancerza
+ +4 do Klasy Pancerza przeciw pociskom
+ 50% do odpornoœci na ogieñ, ch³ód i magiê
+ -4 do rzutów obronnych przeciw œmiertelnej magii
+ +3 do rzutów obronnych przeciw ró¿d¿kom
+ +3 do rzutów obronnych przeciw polimorfii
+ +3 do rzutów obronnych przeciw magii
+ +3 do rzutów obronnych przeciw zioniêciom
+ -2 Si³a
+ -2 Wytrzymalosc~
+@254  = ~Kamieñ Ioun~
+@255  = ~Bladozielony kamieñ Ioun~
+@256  = ~To ma³y kamyk, który lata wokó³ g³owy w³aœciciela. Aby go wprowadziæ w ten ruch, wystarczy siê w niego wyposa¿yæ. Te magiczne kamienie maj¹ ró¿ne w³aœciwoœci, w zale¿noœci od swojego koloru.~
+@257  = ~Na ³o¿u œmierci, sêdziwy bohater Rigar Prawdziwa Krew b³aga³ swego towarzysza, maga Spektoriala, aby jego umiejêtnoœci i hart wojownika ¿y³y nadal. Przyjaciel niechêtnie siê zgodzi³ na transfer owych cech do przedmiotu, wiedz¹c, ¿e zabraknie ich duszy owego wojownika. W tym bladozielonym kamieniu Ioun znajduj¹ siê owe esencje, które nosicielowi przekazuj¹ zdrowie i umiejêtnoœci Rigara.
+
+PARAMETRY:
+
+Klasa Pancerza: bez zmian
+Specjalne:
+ +10% do punktów ¿ycia
+ +1 do TraK0
+Waga: 2
+Nie mo¿e u¿ywaæ:
+ Mag
+ Bard
+ Z³odziej~
+@258  = ~Toporek~
+@259  = ~Lodo³amacz +2~
+@260  = ~Toporek to lekka odmiana topora bojowego, s³u¿¹ca g³ównie do ciskania w przeciwnika z pewnej odleg³oœci. Ciê¿ar ostrza jest równowa¿ony do pewnego stopnia przez ostry szpic, skierowany do ty³u. Krótkie stylisko jest zwykle ostro zakoñczone zarówno u do³u, jak i u góry.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+Typ obra¿eñ: pocisk (k³ute)
+Waga: 5
+OpóŸnienie: 4
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 4
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@261  = ~Toporek ten poza byciem znakomicie wywa¿onym, co pozwala na miotanie go na ca³kiem spory dystans, zosta³ tak¿e silnie umagiczniony. Dziêki temu zadaje wiêcej obra¿eñ i jest celniejszy ni¿ dowolny, nawet mistrzowsko wykonany, niemagiczny orê¿. Jako¿e ojczyzn¹ jej stwórcy, krasnoluda Szronobrodego jest Dolina Lodowoego Wichru, broñ przesycona jest moc¹ ch³odu. Mówi siê, ¿e korzysta³ z niej podczas wêdrówki przez Maszeruj¹ce Góry, gdzie przedrzeæ siê musia³ przez legiony Ognistych Olbrzymów. Frostbeard nigdy nie dokoñczy³ swojej broni - gdyby po³¹czyæ j¹ z zwojem Zimowej Runy, mo¿naby uzyskaæ potê¿n orê¿.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +3, +2 od ch³odu
+TraK0: +2
+Typ obra¿eñ (w zwarciu): sieczne
+Typ obra¿eñ (miotane): pocisk (k³ute)
+Specjalne:
+ Wraca do rêki w³aœciciela po rzuceniu
+Waga: 3
+OpóŸnienie: 2
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 4
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@262  = ~Lodo³amacz +5~
+@263  = ~Toporek ten poza byciem znakomicie wywa¿onym, co pozwala na miotanie go na ca³kiem spory dystans, zosta³ tak¿e silnie umagiczniony. Dziêki temu zadaje wiêcej obra¿eñ i jest celniejszy ni¿ dowolny, nawet mistrzowsko wykonany, niemagiczny orê¿. Jako¿e ojczyzn¹ jej stwórcy, krasnoluda Szronobrodego jest Dolina Lodowoego Wichru, broñ przesycona jest moc¹ ch³odu. Mówi siê, ¿e korzysta³ z niej podczas wêdrówki przez Maszeruj¹ce Góry, gdzie przedrzeæ siê musia³ przez legiony Ognistych Olbrzymów. Broñ ta zosta³a ukoñczona przy u¿yciu zwoju Zimowej Runy, co sprawi³o, ¿e sta³a siê potê¿nym orê¿em.
+
+PARAMETRY:
+
+Obra¿enia (w zwarciu): 1K6 +3, +2 od ch³odu
+Obra¿enia (miotane): 1K6 +5, +2 od ch³odu
+TraK0: +5
+Typ obra¿eñ (w zwarciu): sieczne
+Typ obra¿eñ (miotane): pocisk (k³ute)
+Specjalne:
+ Zabija ogry
+ Wraca do rêki w³aœciciela po rzuceniu
+ Ustala si³ê w³aœciciela na poziomie 25
+Waga: 3
+OpóŸnienie: 2
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 4
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@264  = ~List~
+@265  = ~Droga Siostro, wygl¹da na to, ¿e Sarevok jest coraz bli¿szy odkryciu swego dziedzictwa. Poza tym, okaza³o siê, ¿e Tajemnic¹ Goriona jest nikt inny jak brat Sarevoka, co oznacza, ¿e jest to nosiciel tej samej krwi. Mam zamiar spotkaæ siê z nim. Od kiedy bêdê mia³a nad nim pieczê, bêdziemy mogli zaj¹æ siê eksperymentami. Dziêkujê za to, ¿e odda³eœ mi pod komendê swoje s³ugi. ¯yczê ci dostaæ Sarevoka i przyrpwoadziæ go do mnie, kiedy ja zajmê siê tym drugim.
+
+I~
+@266  = ~Topór Rozpraszaj¹cego Ognia +4~
+@267  = ~Najpowszechniej u¿ywany rodzaj topora bojowego sk³ada siê ze styliska o d³ugoœci metra do pó³tora z osadzonym szerokim, pó³okr¹g³ym ostrzem, czêsto zaopatrzonym równie¿ w szpice, skierowane do ty³u i ku górze.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+Waga: 7
+OpóŸnienie: 7
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@268  = ~Topór Rozpraszaj¹cego Ognia +4
+
+Topór ten to osobista broñ drowa Jarlaxla, wykonana i umagiczniona przez najlepszych drowich rzemieœlników. Mówi siê, ¿e sama Lolth pomog³a w tworzeniu tego wspania³ego orê¿a.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +4
+TraK0: +4
+Specjalne:
+ Rozprasza magiê przy trafieniu
+Typ obra¿eñ: sieczne
+Waga: 5
+OpóŸnienie: 1
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@269  = ~Zbroja p³ytowa~
+@270  = ~Osobista zbroja Jarlaxla +3~
+@271  = ~Zbroja p³ytowa to po³¹czenie kolczugi z mocnymi blachami, które chroni¹ ¿ywotnie wa¿ne czêœci cia³a - klatkê piersiow¹, brzuch i krocze. Jej ciê¿ar jest równo roz³o¿ony na ca³e cia³o, zaœ ca³oœæ po³¹czona metalowymi spinkami i rzemieniami.
+
+PARAMETRY:
+
+Klasa Pancerza: 3
+Waga: 50
+Wymagana si³a: 12
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Mag
+ Z³odziej~
+@272  = ~Osobisty pancerz Jarlaxla zosta³ wykuty przez najzrêczniejszych, drowich rzemieœlników i pobogos³awiony przez sam¹ Lolth. Zapewnia niema³¹ ochronê.
+
+PARAMETRY:
+
+Klasa Pancerza: 0
+Specjalne:
+ 80% odpornoœci na kwas
+Waga: 18
+Wymagana si³a: 11
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Mag
+ Z³odziej~
+@273  = ~Buty przemieszczania~
+@274  = ~Buty s¹ zwykle rêcznie wyrabiane przez szewców. Zwyk³e buty s¹ robione z u¿yciem jakiegoœ ogólnego modelu stopy, ale te dobre wykonywane s¹ na zamówienie i dopasowywane do stóp zamawiaj¹cego.
+
+PARAMETRY:
+
+Waga: 4~
+@275  = ~Buty przemieszczania
+Ten przedmiot jest przeklêty i mo¿na go zdj¹æ tylko za pomoc¹ zaklêcia Zdjêcie kl¹twy. Jego twórca, nie wiadomo, czy przez pomy³kê, czy te¿ z konkretnego powodu, zakl¹³ w nie niebezpieczn¹ magiê. Nosz¹ca je osoba jest stale teleportowana od jednego przeciwnika do drugiego, do czasu, gdy wszyscy (albo w³aœciciel) zostan¹ zabici. Jednak¿e ze wzglêdu na tê specjaln¹ w³aœciwoœæ butów, w³aœciciel otrzymuje premiê +2 do KP.
+
+PARAMETRY:
+
+Specjalne:
+ +2 do Klasy Pancerza
+ Nosz¹cy przenosi siê co 3 sekundy do losowego przeciwnika (kiedy znajduje siê on w zasiêgu wzroku)~
+@276  = ~Trzymaj¹c t¹ czaszkê czujesz, jak jej puste, czarne oczodo³y na ciebie spogl¹daj¹. A¿ nasuwaj¹ ci siê myœli o sensie egzystencji.~
+@277  = ~Kij~
+@278  = ~Kostur Magów~
+@279  = ~Kij to najprostsza i najmniej efektywna z broni drzewcowych. Mo¿e mieæ d³ugoœæ od 1,8 do grubo ponad 2 metrów. Wykonuje siê go z dêbowego drewna i czêsto obija metalem na obu koñcach. Do w³adania nim trzeba u¿ywaæ obu r¹k.
+
+PARAMETRY:
+
+Obra¿enia: 1K6
+Typ obra¿eñ: obuchowe
+Waga: 4
+OpóŸnienie: 4
+Rodzaj bieg³oœci: kij
+Typ broni: 2-rêczna
+Wymagana si³a: 5~
+@280  = ~Kostur Magów
+Ten rodzaj kija jest wszêdzie kojarzony z osobami potrafi¹cymi u¿ywaæ magii, choæ jest bardzo rzadki. Nale¿y do najpotê¿niejszych narzêdzi, jakie mo¿e posiadaæ czarodziej, jest kulminacj¹ skomplikowanych zaklêæ i niekoñcz¹cych siê studiów. Ten konkretny egzemplarz jest dobry w walce wrêcz, zapewnia niewidzialnoœæ, a tak¿e daje ochronê przeciwko urokom i z³u. Mo¿e te¿ rzucaæ zaklêcia Pu³apka na czary, kombinacjê Ognistej kuli i B³yskawicy oraz Rozproszenie magii.
+
+PARAMETRY:
+
+Obra¿enia: 1K6 +1
+TraK0: +1 (uderza jak broñ +5)
+Typ obra¿eñ: obuchowe
+Specjalne:
+ +2 do Klasy Pancerza
+ +2 do rzutów obronnych
+ U¿ywany zapewnia niewidzialnoœæ, ochronê przed urokami i z³em.
+ Przy ka¿dym trafieniu rzuca Rozproszenie magii.
+Waga: 4
+OpóŸnienie: 4
+Rodzaj bieg³oœci: kij
+Typ broni: 2-rêczna
+Wymagana si³a: 5
+Mo¿e u¿ywaæ:
+ Mag~
+@281  = ~D³ugi miecz +4~
+@282  = ~Do tej kategorii zaliczaj¹ siê obusieczne miecze, miecze wojenne i wojskowe. Bardzo czêsto miecze d³ugie s¹ jednosieczne. Nie istnieje jedna wersja broni tego typu; sposób wykonania i d³ugoœæ zale¿y od kultury, a nawet miejsca w obrêbie jednego narodu, w którym wykuto ostrze. Ich najczêœciej wystêpuj¹c¹ wspóln¹ cech¹ jest d³ugoœæ, wahaj¹ca siê od 90 do 110 cm. Wiêkszoœæ mieczy d³ugich jest obusiecznych i ma zaostrzony koniec. Mimo ostrego koñca, miecze te s³u¿¹ do zadawania ran siecznych, a nie k³utych.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+Waga: 4
+OpóŸnienie: 5
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag~
+@283  = ~???~
+@284  = ~Atak~
+@285  = ~Kolczuga~
+@286  = ~Mitrylowa kolczuga +4~
+@287  = ~Kolczuga jest wykonana z przeplataj¹cych siê metalowych kó³eczek. Zawsze nak³ada siê j¹ na kubrak z pikowanego materia³u; ma to zapobiec bolesnym otarciom i z³agodziæ si³ê ciosów.
+
+PARAMETRY:
+
+Klasa Pancerza: 5
+Waga: 40
+Wymagana si³a: 8
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@288  = ~Mitrylowa kolczuga +4
+Tego typu kolczugi wyku³ niegdyœ Bruenor dla swych przyjació³ i kompanów.
+
+PARAMETRY:
+
+Klasa Pancerza: 1
+Waga: 7
+Wymagana si³a: 8
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
+@289  = ~Ksiê¿ycowe ostrze +3~
+@290  = ~Tê potê¿n¹ broñ stworzyli p³atnerze staro¿ytnego Myth Drannor. Ksiê¿ycowych ostrzy u¿ywano podczas d³ugiego procesu wybierania w³adcy wyspy Evermeet. Ksiê¿ycowe Ostrza same wybieraj¹ swego w³aœciciela. Tylko wybraniec mo¿e u¿ywaæ tej broni - ka¿da inna osoba nie zdo³a jej podnieœæ. To Ksiê¿ycowe Ostrze zapewnia ochronê przed ogniem i modyfikuje klasê pancerza posiadacza.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +3
+TraK0: +3
+Typ obra¿eñ: sieczne
+Specjalne:
+ +1 do Klasy Pancerza
+ +50% do odpornoœci na ogieñ
+Waga: 4
+OpóŸnienie: 2
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+Mo¿e u¿ywaæ tylko:
+ Dobry lub neutralny elf~
+@291  = ~Zbroja z czarnego opalu~
+@292  = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
+
+PARAMETRY:
+
+Klasa Pancerza: 1
+Waga: 70
+Wymagana si³a: 15
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Mag
+ Z³odziej~
+@293  = ~Zbroja p³ytowa z czarnego opalu +1: 'Zbroja Ciemnoœci'
+Demoniczny Rycerz Bhaala zwyk³ by³ wdziewaæ t¹ zbrojê podczas wykonywania celów postawionych przez swego mistrza, Boga Morderców. Ten os³ab³ podczas Czasów K³opotów i zosta³ pokonany przez Helma.
+
+PARAMETRY:
+
+Klasa Pancerza: 0
+Specjalne:
+ +10% do odpornoœci na magiê
+ +15% do odpornoœci na ogieñ, kwas, ch³ód i elektrycznoœæ
+ +20% do odpornoœci na pociski
+Waga: 35
+Wymagana si³a: 14
+Nie mo¿e u¿ywaæ:
+ Z³odziej
+ Bard
+ Druid
+ Mag~
+@294  = ~Figurka czarnej pantery~
+@295  = ~Figurka ta s³u¿y Drizztowi do przyzwania swojej towarzyszki, pantery Guenhwyvar z Planów Zewnêtrznych. Mówi siê, ¿e drow przyjaŸni siê ze zwierzêciem i to nigdy go nie zdradzi - nawet jeœli figurka bêdzie w czyimœ innym posiadaniu.
+
+PARAMETRY:
+
+Specjalne:
+ Raz dziennie przyzywa Guenhwyvar, która s³u¿yæ bêdzie do czasu kiedy bêdzie powa¿nie ranna - wtedy zmuszona jest do powrotu do planów zewnêtrznych.~
+@296  = ~He³m lustrzanych oczu~
+@297  = ~Ten rodzaj otwartego he³mu, wykonywany z metalu lub wzmocnionej skóry, stanowi ochronê dla g³owy, jednak zwykle bez os³aniania twarzy i karku. Zazwyczaj jest równie¿ wyposa¿ony w ochronê nosa.
+
+PARAMETRY:
+
+Klasa Pancerza: bez zmian
+Specjalne:
+ Chroni przed trafieniami krytycznymi
+Waga: 2
+Nie mo¿e u¿ywaæ:
+ Mag
+ Bard
+ Z³odziej~
+@298  = ~He³m ten nale¿a³ wczeœniej do szlachetnego rycerza który zas³yn¹³ zabiciem przera¿aj¹cej Meduzy.
+
+PARAMETRY:
+
+Klasa Pancerza: bez zmian
+Specjalne:
+ Chroni przed trafieniami krytycznymi i petryfikacj¹
+Waga: 2
+Nie mo¿e u¿ywaæ:
+ Mag
+ Bard
+ Z³odziej~
+@299  = ~Mikstura dodatkowego leczenia~
+@300  = ~Mikstury s¹ zazwyczaj przechowywane w ceramicznych, kryszta³owych, szklanych albo metalowych buteleczkach. Zawieraj¹ one wystarczaj¹co du¿o p³ynu, aby obj¹æ swym dzia³aniem jedn¹ osobê. ~
+@301  = ~Po ca³kowitym spo¿yciu eliksir ten przywraca 27 punktów ¿ycia danej osobie. Rezultat jest natychmiastowy, a eliksir ulega zniszczeniu w trakcie u¿ycia.~
+@302  = ~Mikstura wiêkszego leczenia~
+@303  = ~Mikstury s¹ zazwyczaj przechowywane w ceramicznych, kryszta³owych, szklanych albo metalowych buteleczkach. Zawieraj¹ one wystarczaj¹co du¿o p³ynu, aby obj¹æ swym dzia³aniem jedn¹ osobê.~
+@304  = ~Po ca³kowitym spo¿yciu eliksir ten przywraca 40 punktów ¿ycia danej osobie. Rezultat jest natychmiastowy, a eliksir ulega zniszczeniu w trakcie u¿ycia.~
+@305  = ~Ber³o~
+@306  = ~Ber³o zmartwychwstania~
+@307  = ~Ber³a maj¹ oko³o metra d³ugoœci i s¹ grube jak kciuk. Przewa¿nie znajduj¹ siê w skrzynkach albo podobnych miejscach. Mog¹ byæ metalowe, drewniane, z koœci s³oniowej albo zwierzêcej. Mog¹ byæ g³adkie albo zdobione i rzeŸbione, zakoñczone ostro albo i nie. Czerpi¹ swoj¹ moc z ³adunków, o ile nie jest napisane inaczej w opisie konkretnego prêta. Przy ka¿dej aktywizacji zu¿ywany jest jeden albo wiêcej ³adunków.~
+@308  = ~Ber³o zmartwychwstania
+Ber³o to umo¿liwia kap³anowi rzucenie Zmartwychwstania na martw¹ osobê, jakby posiada³ on poziom wymagany do rzucenia tego zaklêcia. Nie wymaga ¿adnego odpoczynku, poniewa¿ to ber³o obdarza ¿yciem. Ka¿de u¿ycie wymaga jednego ³adunku.
+
+PARAMETRY:
+
+Specjalne:
+ Zmartwychwstanie (1 ³adunek)~
+@309  = ~Sejmitar~
+@310  = ~Sejmitar +3~
+@311  = ~D³ugie, zakrzywione, jednosieczne ostrze jest charakterystyczne zarówno dla szabli, jak i sejmitara, mimo i¿ pochodz¹ z ró¿nych czêœci Faerunu. Podczas gdy, ze wzglêdu na sw¹ wszechstronnoœæ, szabla by³a przeznaczona g³ównie dla jeŸdŸców, sejmitar jest bardziej zwi¹zany z tradycjami wschodu. "Szamszir", jak pierwotnie zosta³a nazwana ta broñ, jest d³u¿szy, jego ostrze jest bardziej zakrzywione i zakoñczone wyd³u¿onym, ostrym szpicem. W efekcie jest ona nieco wolniejsza, jednak bardziej skuteczna i zabójcza w walce.
+
+PARAMETRY:
+
+Obra¿enia: 1K8
+Typ obra¿eñ: sieczne
+Waga: 4
+OpóŸnienie: 5
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Mag
+ Z³odziej~
+@312  = ~Sejmitar drowów +3
+D³ugie, zakrzywione ostrze charakterystyczne jest zarówno dla szabli, jak i dla sejmitara, choæ Ÿród³a tych broni znajduj¹ siê w ró¿nych miejscach Faerunu. Ten przedmiot, podobnie jak wiêkszoœæ ekwipunku mrocznych elfów, stworzony zosta³ za pomoc¹ adamantyny, stopu adamantytu, który szybko zmienia siê w py³, gdy wyniesie siê go z Podmroku.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +3
+Trak0: +3
+Typ obra¿eñ: sieczne
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: sejmitar/wakizashi/ninja-to
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Mag
+ Z³odziej~
+@313  = ~Piekielna figurka~
+@314  = ~Na powierzchni tej figurki wygrawerowane zosta³y runy w których zapisano s³owa pozwalaj¹ce na przywo³anie Tanari.~
+@315  = ~Miecz oburêczny~
+@316  = ~Ostrze wojny +4~
+@317  = ~Miecz oburêczny pochodzi od miecza d³ugiego. P³atnerze zawsze próbowali ulepszaæ istniej¹ce odmiany orê¿a, dlatego w czasie prób nad udoskonaleniem miecza d³ugiego wyd³u¿ono jego ostrze. To samo zrobiono z rêkojeœci¹, gdy¿ do w³aœciwego u¿ycia tej broni by³y niezbêdne obie rêce. Miecze oburêczne s³u¿y³y zazwyczaj do atakowania rycerzy na koniach i do prze³amywania formacji z pik.
+
+PARAMETRY:
+
+Obra¿enia: 1K10
+Typ obra¿eñ: sieczne
+Waga: 15
+OpóŸnienie: 10
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+Wymagana si³a: 14
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@318  = ~Miecz oburêczny +4: Ostrze Wojny
+Ten wielki miecz jest magiczn¹ wersj¹ mieczy barbarzyñskich plemion z Pó³nocy. Zosta³ wykuty podczas bitwy i zanurzony we krwi dzielnych poleg³ych, co sprawi³o, ¿e umagicznienie jakie otrzyma³ od barbarzyñskich bogów jest bardzo potê¿ne.
+
+PARAMETRY:
+
+Obra¿enia: 1K12 +4
+TraK0: +4
+Typ obra¿eñ: sieczne
+Waga: 11
+OpóŸnienie: 6
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+Wymagana si³a: 14
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@319  = ~Miecz ¯alu Belhifeta +5~
+@320  = ~Miecz ¯alu Belhifeta +5
+
+To jedna z wielu broni u¿ywanych przez potê¿nego demona Belhifeta. Klinga jest niezwykle ostra i dobrze wywa¿ona, na patrz¹c na rêkojeœæ pod pewnym k¹tem, mo¿na dostrzec delikatny zarys wê¿a.
+
+PARAMETRY:
+
+Specjalne:
+10% prawdopodobieñstwa na zadanie dodatkowych 2k12 obra¿eñ od trucizny
+
+TraK0: +5
+Obra¿enia: 1k10 +5
+Typ obra¿eñ: sieczne
+Waga: 9
+OpóŸnienie: 5
+Rodzaj bieg³oœci: miecz oburêczny
+Typ: 2-rêczna
+Wymagana si³a: 14
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@321  = ~Kaptur Z³odziei~
+@322  = ~Choæ ten kaptur nie obdarza tego, kto go nosi, ¿adnymi zauwa¿alnymi w³aœciwoœciami, to jednak mo¿na wokó³ niego wyczuæ aurê uœpionej magii.~
+@323  = ~Z³odzieje nie kieruj¹ siê honorem. Mo¿e dlatego Kaptur Z³odziei zosta³ wyposa¿ony we w³aœciwoœci chroni¹ce tego, kto go nosi, przed innymi osobami trudni¹cymi siê tym zajêciem.
+
+PARAMETRY:
+Specjalne:
+ Niewra¿liwoœæ na choroby i truciznê
+ Rozmycie
+
+Mog¹ u¿ywaæ:
+ Z³odzieje~
+@324  = ~Dotyk Ghoula~
+@325  = ~P³aszcz wilko³aka~
+@326  = ~P³aszcze s¹ wykonywane w najrozmaitszych formach i z najbardziej ró¿norakich materia³ów. Najpowszechniej u¿ywanym jest p³aszcz, zrobiony z kawa³ka materii w kszta³cie okrêgu z wyciêtym w centrum otworem na g³owê. W modelach bardziej wyszukanych otwór ten poszerzony i spinany ³añcuszkiem, brosz¹ lub zapinkami.~
+@327  = ~P³aszcz wilko³aka: 'Pomy³ka Relaira'
+
+W stworzeniu tego magicznego p³aszcza kryje siê nuta ironii. Relair by³ czarodziejem, który przecenia³ sw¹ zdolnoœæ kontrolowania magii. Tworz¹c p³aszcz przypadkowo zes³a³ na siebie kl¹twê likantropii. Nosz¹ca szatê osoba mo¿e zmieniaæ sw¹ postaæ kiedy tylko sobie za¿yczy. Relair nie mia³ tyle szczêœcia.
+
+PARAMETRY:
+
+Specjalne:
+ Przemiana w wilka w dowolnej chwili
+ +1 do KP
+Waga: 3~
+@328  = ~Skóra z œnie¿nego wilka~
+@329  = ~Opoka z wilczego futra Wulfgara~
+@330  = ~Œnie¿nobia³e futro œnie¿nego wilka jest miêkkie i luksusowe. Czêsto wykorzystuje siê je do wytwarzania ubiorów tak ró¿nych jak surowe kamizelki pó³nocnych barbarzyñców Uthgardt czy delikatnych i przepiêknych zimowych stu³, noszonych przez szlachetnie urodzone kobiety na Wybrze¿u Mieczy.~
+@331  = ~Ten œnie¿nobia³y ogon œnie¿nego wilka jest bardzo lekki i cenny. Zosta³ umagiczniony przez jednego z szamanów pó³nocnych plemion barbarzyñców Uthgardt.
+
+PARAMETRY:
+
+Specjalne:
+ 50% odpornoœci na zimno~
+@332  = ~Futra~
+@333  = ~Futro Wulfgara~
+@334  = ~Zbroja Wulfgara sporz¹dzona zosta³a z wilczych futr. Tylko barbarzyñcy z Doliny Lodowego Wichru s¹ tak biegli w sztuce wykrawania aby stworzyæ zbrojê z tak delikatnego materia³u. Mimo swej lekkoœci, pancerz ten zapewnia bardzo dobr¹ ochronê.
+
+PARAMETRY:
+
+Klasa Pancerza: 6
+Waga: 3
+Nie mo¿e u¿ywaæ:
+ Mage~
+@335  = ~M³ot~
+@336  = ~Aegis-Fang +5~
+@337  = ~Aegis-Fang +5
+
+Broñ tê wykona³ Bruenor Battlehammer specjalnie dla Wulfgara. Najsilniejsze z czarów wplecionych w ten m³ot bojowy dzia³aj¹ tylko wtedy, kiedy orê¿ ten znajduje siê w rêkach tego m³odego wojownika. Ka¿da inna postaæ w³adaj¹ca t¹ broni¹ u¿ywa jej jako m³ota bojowego +3.
+
+PARAMETRY:
+
+Obra¿enia: 2K4 +5
+TraK0: +5
+Typ obra¿eñ: obuchowe
+Waga: 8
+OpóŸnienie: 2
+Rodzaj bieg³oœci: m³ot bojowy
+Typ broni: 1-rêczna
+Wymagana si³a: 18
+Nie mo¿e u¿ywaæ:
+ Postaæ o nie-chaotycznym charakterze
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@338  = ~Ten rodzaj otwartego he³mu, wykonywany z metalu lub wzmocnionej skóry, stanowi ochronê dla g³owy, jednak zwykle bez os³aniania twarzy i karku. Zazwyczaj jest równie¿ wyposa¿ony w ochronê nosa.
+
+PARAMETRY:
+
+Klasa Pancerza: bez zmian
+Specjalne:
+ Chroni przed trafieniami krytycznymi
+Waga: 2
+Nie mo¿e u¿ywaæ:
+ Mag
+ Bard
+ Z³odziej~
+@339  = ~Kusza W³os Olbrzyma +3~
+@340  = ~Ciê¿ka kusza +3: W³os Olbrzyma
+
+Choæ trudno to potwierdziæ, to mówi siê, ¿e ciêciwa tej kuszy jest wykonana z w³osa lodowego olbrzyma. Niewa¿ne czy to prawda, ale nies³ychanie trudno j¹ naci¹gn¹æ, ale jej celnoœæ i powodowane obra¿enia warte s¹ potrzebnego naci¹gu (si³a 15 lub wiêcej).
+
+PARAMETRY:
+
+Obra¿enia: +5 (pocisk)
+TraK0: +3
+Waga: 11
+OpóŸnienie: 7
+Rodzaj bieg³oœci: kusza
+Typ broni: 2-rêczna
+Wymagana si³a: 15
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+ 
+@501 = ~Duma Durlaga~
+@502 = ~Miecz dwurêczny +2 : 'Duma Durlaga'
+
+Pochodz¹cy od d³ugiego miecza, miecz oburêczny jest znacznie d³u¿szy, zarówno jego klinga jak i rêkojeœæ. Jego g³ównym zadaniem jest rozszczepianie jeŸdŸców i rozbijanie formacji pikinierów. Ta magiczna wersja jest jeszcze lepiej przystosowana do tych zadañ, i s³u¿y jako przyk³ad tego co powstaje z po³¹czenia magii i broni.
+
+PARAMETRY:
+
+Obra¿enia: 1K10 +2
+TraK0: +2
+Typ uszkodzeñ: sieczne
+Waga: 10
+OpóŸnienie: 8
+Rodzaj bieg³oœci: miecz oburêczny
+Typ broni: 2-rêczna
+Wymagana si³a: 13
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@503 = ~Tarcza~
+
+//------------------------------------------------------------------------------------------------
+// Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
+//------------------------------------------------------------------------------------------------
+
+@10000 = ~Plemiê NiedŸwiedzia~
+
+// 10001 used to be @19 in F_BEAROL.TRA
+@10001 = ~Plemiê NiedŸwiedzia
+
+Zgodzi³em siê odnaleŸæ dziecko poleg³ego przywódcy Plemienia NiedŸwiedzia. Powiedziano mi, ¿e jest wiêzione przez lodowe olbrzymy, które zniszczy³y wioskê. S¹ one poddanymi Ducha Œnie¿nego Wilka, który planuje zakoñczyæ istnienie Ducha NiedŸwiedzia. Mo¿e tego dokonaæ tylko przez zamordowanie dziecka podczas Rytua³u Zimy.~
+
+// 10002 used to be @20 in F_BEAROL.TRA
+@10002 = ~Plemiê NiedŸwiedzia
+
+Znalaz³em dziecko dawnego przywódcy Plemienia NiedŸwiedzia i ostro¿nie odnios³em je do starszyzny. Byli niezwykle wdziêczni. Nagrodzono mnie Rogiem Plemienia NiedŸwiedzia.~
+
+// 10003 used to be @3 in F_DRIZZT.TRA
+@10003 = ~Dzisiaj spotka³em nie kogo innego jak samego Drizzta walcz¹cego z grup¹ gnoli. Pomog³em mu, on zaœ w zamian za to zgodzi³ siê tymczasowo na wspóln¹ podró¿. Któ¿ móg³by siê nie zgodziæ, jednak obawiam siê tego, ¿e jego towarzystwo mo¿e mi przynieœæ k³opoty.~
+
+// 10004 used to be @4 in F_REGIS.TRA
+@10004 = ~Spotka³em lekko poddenerwowanego nizio³ka. Nie ¿yczy³ sobie aby mu przeszkadzaæ wieæ zostawi³em go w spokoju. Jednak¿e zanim odszed³em, wspomnia³ coœ o mrocznym ³owcy i o tym ¿e jeœli go spotkam powinienem go zabraæ do tego nizio³ka. Nawet nie wiem jak siê nazywa.~
+
+// 10005 used to be @9 in F_REGIS.TRA
+@10005 = ~Wygl¹da na to, ¿e towarzysze i przyjaciele Drizzta s¹ w opa³ach. Tak jak siê obawia³em, podró¿ u jego boku przyniesie k³opoty znacznie wiêksze ni¿ móg³bym tylko przypuszczaæ.~
+
+// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
+
+// 10006 used to be @14 in F_DRIZZT.TRA (Delayed Start component)
+@10006 = ~Spotkaliœmy siê po raz kolejny z Drizzt Do'Urden. Mamy spotkaæ siê z nim w Inn w Ulgoth brody w trzy dni czasu.~
+
+// 10007 used to be @18 in F_DRIZZT.TRA (Delayed Start component)
+@10007 = ~I do³¹czy³ do firmy z Drizzta towarzyszyæ mu Doliny Lodowego Wichru. To wi¹¿e siê urozmaicony podró¿ ...~
+

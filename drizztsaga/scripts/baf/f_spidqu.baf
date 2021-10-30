@@ -1,0 +1,94 @@
+IF
+	Global("spiderqueen","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],WIZARD_WEB)
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[463.149],0)
+		PlaySound("%_%CENTL01")
+		SetGlobal("spiderqueen","LOCALS",1)
+END
+
+IF
+	HPLT(Myself,1)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,RED_FIREBALL)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(6,1)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[463.149],0)
+		PlaySound("%_%CENTL02")
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	RandomNum(6,2)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[413.149],0)
+		PlaySound("%_%CENTL02")
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNum(6,3)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[413.149],0)
+		PlaySound("%_%CENTL02")
+END
+
+IF
+	See(FourthNearestEnemyOf(Myself))
+	RandomNum(6,4)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[413.149],0)
+		PlaySound("%_%CENTL02")
+END
+
+IF
+	See(FifthNearestEnemyOf(Myself))
+	RandomNum(6,5)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[413.149],0)
+		PlaySound("%_%CENTL02")
+END
+
+IF
+	See(SixthNearestEnemyOf(Myself))
+	RandomNum(6,6)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,SPIDER_SUMMON)
+		CreateCreature("F_DEMSPI",[413.149],0)
+		PlaySound("%_%CENTL02")
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+

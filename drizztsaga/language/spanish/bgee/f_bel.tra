@@ -1,0 +1,9 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #BEL translation file
+@1   = ~¡Drizzt! Este es el momento de vuestro último aliento. ¡Mi espada os cortará la cabeza y la clavaré en una estaca! El Valle del Viento Helado se pintará de rojo. ¡Cuando la gente del Valle sea testigo de vuestro cuerpo su temor les paralizará y caerán bajo mi dominio!~
+@2   = ~¡La única cabeza que será cortada es la vuestra! Demonios mucho peores que vos han caído bajo las Centelleantes de Drizzt.~
+@3   = ~¡Compañeros de Drizzt! ¡Vuestras cabezas serán cortadas y puestas en estacas! El Valle del Viento Helado será testigo de vuestros cuerpos haciendo que su temor los paralice y caigan bajo mi dominio.~
+@4   = ~Grandes palabras para vanas amenazas, ¡hoy moriréis aquí, demonio repugnante y apestoso!~

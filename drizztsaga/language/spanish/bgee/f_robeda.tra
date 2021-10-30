@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ROBEDA translation file
+@1   = ~Ya veo, ponéos cómodo, no pensé que os sintierais fuera de lugar aquí <CHARNAME>.~ [F_IREN35] ~Ya veo, ponéos cómoda, no pensé que os sintierais fuera de lugar aquí <CHARNAME>.~ [F_IREN35]
+@2   = ~¡Vos! Vos sois quién me teletransportasteis aquí al principio. Debería haber visto vuestra mentira. ¡¿Mostraros, seáis quién seáis, escondiéndoos bajo esa capucha?!~
+@3   = ~Quien yo sea no es algo que os deba preocupar, lo que importa, <CHARNAME>, es quién sois vos.~
+@4   = ~¡Dejaros de acertijos!~
+@5   = ~Lo debéis haber notado, vuestra herencia corriendo por las venas. Ahora a mi disposición....~
+@6   = ~No me asustaréis con vuestras vanas amenazas.~
+@7   = ~Me temo que he tenido una ventaja desde el principio. Había planeado vuestra llegada desde el principio, no podía haber otra forma.~ [F_IREN40]
+@8   = ~Arruinaré cualquier plan que tengáis en mente.~
+@9   = ~Me despido de vos, Hijo de Bhaal, no nos volveremos a encontrar.~ [F_IREN52] ~Me despido de vos, Hija de Bhaal, no nos volveremos a encontrar.~ [F_IREN52]

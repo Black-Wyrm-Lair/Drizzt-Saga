@@ -1,0 +1,1370 @@
+
+//------------------------------------------------------------------------------------
+//  Creatures, characters, miscellaneous:
+//------------------------------------------------------------------------------------
+
+@1    = ~Almacén de Nib~
+@2    = ~Artemis Entreri~
+@3    = ~[MALE THREAT 9]  Temed mi ira por que de verdad que es grande.~ [%_%GENMT09]
+@4    = ~¡Otro momento, otro lugar!~ [F_ARTEM8]
+@5    = ~¡Este será un proceso lento y doloroso!~ [F_ARTEM3]
+@6    = ~¿Queréis bailar?~ [F_ARTEM2]
+@7    = ~Sufriréis... oh si.~ [F_ARTEM4]
+@8    = ~¡Poner una cuchilla en vuestras entrañas, eso es lo que haré!~ [F_ARTEM5]
+@9    = ~[GUARDS 5]~ [%_%GUARR05]
+@10   = ~[GUARDS 6]~ [%_%GUARR06]
+@11   = ~Artemis Entreri es un hombre de las sombras y de la muerte instantánea, y es un maestro en su profesión. Un asesino. No hay objetivo demasiado difícil de matar. Ninguna cantidad de armadura le detiene de eliminar a su presa. Baila la danza de la muerte de forma parecida a Drizzt pero tiene un corazón tan frío y sin sentimientos como cualquiera de los Drow y esos que se cruzan con él nunca lo hacen dos veces. Es de Calimport la lejana ciudad sureña en la provincia de Calimshan. El camino de Artemis Entreri se cruzó con el de Drizzt cuando Regis robó un tesoro de gran valor de Pasha Pook, el líder del gremio de ladrones en Calimport y Artemis fue el encargado de recuperarlo. Después de tres largos años, finalmente, tras seguir a Regis, lo encontró en las Diez Ciudades y otra de las aventuras de sus amigos comenzó, pero esta vez, la muerte los siguió en silencio bajo la apariencia de Artemis Entreri.~
+@12   = ~Mujer de la Tribu del oso~
+@13   = ~Anciano de la Tribu del oso~
+@14   = ~Espíritu del oso~
+@15   = ~Guerrero de la Tribu del oso~
+@16   = ~Belhifet~
+@17   = ~¡A vuestras órdenes!~ [F_DRSL12]
+@18   = ~¡Gracias al destino y al poder gobernaremos con supremacía!~ [F_DRSL11]
+@19   = ~¡Gloria a la Madre Oscura!~ [F_DRWPR1]
+@20   = ~¡Me daré un festín con vuestro corazón!~ [F_VMPFX5]
+@21   = ~¡Sed honrado por que me alimentaréis!~ [F_VMPFX6]
+@22   = ~Bruenor~
+@23   = ~[DWARF 2] Necesito un trago de alguna buena cerveza enana.~ [%_%DWARF02]
+@24   = ~[DWARF 1] Por el martillo de Moradin.~ [%_%DWARF01]
+@25   = ~[DWARF 5]~ [%_%DWARF05]
+@26   = ~[DWARF 6]~ [%_%DWARF06]
+@27   = ~Bruenor Martillodeguerra creció junto a los grandes salones del Paseo de Mithril, pero entonces observó cómo los salones fueron invadidos y saqueados por el dragón Shimmergloom. Tanto su Padre como su Abuelo fueron asesinados intentando defender los salones y el resto del Clan Martillodeguerra fue forzado a huir para poderse salvar. Finalmente llegaron al Valle del Viento Helado y durante los siguientes doscientos años, Bruenor los guió como su rey. Bruenor es un verdadero amigo como cualquiera puede esperar tener. Es el típico Enano. Le encantan los tesoros de la tierra y tiene una enorme pasión por aquellos que considera amigos y familia, pero como al resto de enanos, no le gusta nada más que machacar los cráneos de los trasgos con su hacha. Si tomamos un enano sólido como una roca, él es en realidad lo opuesto. Bajo su duro cráneo hay una mente comprensiva, pero no podrías decirle esto: le han negado una sepultura. Con su tenacidad fina como la roca, se ha asegurado que su hija adoptiva, y su hijo "adoptivo", Wulfgar, crezcan bien.~
+@28   = ~Catti-Brie~
+@29   = ~[BLACK LILY 1] Este será el día más oscuro que jamás hayáis visto antes ya que no tengo lo que necesitáis.~ [%BLACK_LILY_SND%01]
+@30   = ~[FEMALE THREAT 6]  Vuestra vida no significa nada para mí.~ [%_%GENFT06]
+@31   = ~[BLACK LILY 3]~ [%BLACK_LILY_SND%03]
+@32   = ~[BLACK LILY 4]~ [%BLACK_LILY_SND%04]
+@33   = ~[BLACK LILY 2] ¡Ahora fuera!  Había contado con hacerlo.~ [%BLACK_LILY_SND%02]
+@34   = ~[FEMALE TOWNSFOLK OF BALDUR'S GATE 3 HOSTILE]  ¡Fuera de mi vista!  ¡No haré nada por vos!~
+@35   = ~Catti-Brie creció junto los fuertes Enanos del Valle del Viento Helado. Cuando era joven, sus padres fueron asesinados en una cacería de Trasgos, pero esta hermosa humana de pelo castaño rojizo, fue adoptada por el Clan Martillodeguerra y creció tan fuerte como una roca. Cattie-Brie fue la primera inquilina del Valle del Viento Helado que dio una bienvenida calurosa a Drizzt cuando estaba fuera en el Túmulo de Kelvin. Ella, quizás la que conoce más que a nadie a Drizzt, puede entender las refriegas por las que ha pasado en sus intentos de encontrar la aceptación junto aquellos de otras razas más consideradas de los Reinos, los cuales no ven más allá de su color de piel. Cattie-Brie, bajo la tutela de sus amigos, se ha vuelto más que una espina para cualquier enemigo que quiera oponerse tanto a ella como a su arco, Taulmaril el Buscacorazones.~
+@36   = ~Cornugon~
+@37   = ~Cíclopes~
+@38   = ~Niño muerto~
+@39   = ~Caballo muerto~
+@40   = ~Hombre herido~
+@41   = ~Mujer muerta~
+@42   = ~Caballero demonio~
+@43   = ~Caballero demonio menor~
+@44   = ~Gran Tanari~
+@45   = ~Araña astral demoníaca~
+@46   = ~Guardián demonio~
+@47   = ~Nibby "Dipnose"~
+@48   = ~Dragón bebé~
+@49   = ~Drizzt~
+@50   = ~[DRIZZT DO'URDEN 1] ¡Todo lo que deseo es continuar mi viaje! ¡¿Amigos esperad, mientras sufro este baile tedioso?! ¡¿La mera mención de Drizzt atrae a los de vuestra clase?!~ [%_%DRIZT01]
+@51   = ~[DRIZZT DO'URDEN 2]~
+@52   = ~[DRIZZT DO'URDEN 3] ¡Son vuestras vidas las que derrocháis!~ [%_%DRIZT03]
+@53   = ~[DRIZZT DO'URDEN 4] Soy un hombre gentil de corazón. Al menos, cuando no estoy machacando a los estúpidos.~ [%_%DRIZT04]
+@54   = ~[DRIZZT DO'URDEN 5] ¡Me he batido con demonios de los mismísimos Nueve Infiernos! ¡Apenas voy a sudar hoy!~ [%_%DRIZT05]
+@55   = ~[DRIZZT DO'URDEN 8]~ [%_%DRIZT08]
+@56   = ~[DRIZZT DO'URDEN 9]~ [%_%DRIZT09]
+@57   = ~[DRIZZT DO'URDEN 6] Toda esta cháchara está bien, pero tengo sitios mejores donde preferiría estar.~ [%_%DRIZT06]
+@58   = ~[DRIZZT DO'URDEN 7] No des codazos a Drizzt. Es totalmente insociable.~ [%_%DRIZT07]
+@59   = ~[DRIZZT HOSTILE] No perderé ni un minuto más con vuestra presencia.~
+@60   = ~Drizzt adora a Mielikki y tiene su guerra en la cruel ciudad de su nacimiento (Menzoberranzan), con sus compañeros drow, y todos aquellos que sirven a Lolth. Tiene como amigos a los guerreros humanos del Norte (Wulfgar y Cattie-Brie) y al enano Bruenor Martillodeguerra, al cual ayudó a recuperar la forma de gobierno del Salón de Mithril. Ha asesinado a dragones y matronas drow. Ha derrotado a enemigos (Errtu) y a poderes (Lolth), combatió con el que quizás sea el asesino más mortífero de todo Faerun en la actualidad (Artemis Entreri), y trató de forjar su propia vida en la superficie.
+
+Amable y sensible con otros, Drizzt se mantiene en sus grandes ideales pero no espera lo mismo de los demás. Siempre alerta a causa de las traiciones y el peligro, habla poco pero es acertado a ser cortés (sino seco) en sus tratos. Un perfeccionista que anhela ser aceptado en lugares y grupos para hacer amigos en todas partes, Drizzt está maldito por el peligro que lleva a aquellos con quién toma amistad gracias a la vigilancia de Lolth y de sus otros enemigos (en particular Errtu y Entreri). Aquellos a los que conoce ven sus modales como severos.
+
+Al principio de sus viajes por la superficie, Alustriel le dio la bienvenida tan calurosamente como lo hace con todos con necesidades, pero no se atrevió a dejarlo entrar en la Luna Plateada en ese momento. Lentamente, sus hazañas han hecho a Drizzt Do’Urden que sea mejor aceptado por el Norte de la Costa de la Espada.~
+@61   = ~Mago de batalla drow~
+@62   = ~Guerrero drow~
+@63   = ~Sacerdotisa drow~
+@64   = ~Dragón golem iracundo~
+@65   = ~Varlag Martillodeplata~
+@66   = ~Elminster~
+@67   = ~Errtu~
+@68   = ~Ettin~
+@69   = ~Fantasma~
+@70   = ~Gigante de la escarcha~
+@71   = ~Trasgo de élite~
+@72   = ~Trasgo~
+@73   = ~Guenhwyvar~
+@74   = ~Arpía~
+@75   = ~Jarlaxle~
+@76   = ~¡Gracias al destino y al poder gobernaremos con supremacía!~ [F_DRSL11]
+@77   = ~¡El mejor de la superficie es uno que esté muerto!~ [F_DRSL14]
+@78   = ~¡Lucharemos en nombre de Lolth!~ [F_DRSL17]
+@79   = ~[DROW16]~
+@80   = ~[DROW15]~
+@81   = ~¡A vuestras órdenes!~ [F_DRSL12]
+@82   = ~Victoria para la Reina Araña.~ [F_DRSL13]
+@83   = ~Jarlaxle es el líder de un grupo de mercenarios conocido como los Bregan D'Aerthe. Es un drow encantador, carismático y rompe todas las reglas aceptadas en lo que concierne a los hombres en una cultura dominada por mujeres drow. Aunque parece que se las apaña él solo gracias a sus poderosos contactos dentro de la élite que gobierna la ciudad. A diferencia de otros drow, lleva prendas de colores exóticos y desprecia sus diferencias abiertamente. Los mismos Bregan D'Aerthe están hechos de nobles sin hogar y plebeyos que serían fácilmente cazados en la Infraoscuridad, aunque como grupo son una fuerza con influencias y poder. Jarlaxle y los Bregan D'Aerthe de alguna forma son una afiliación desconocida incluso para los que les pagan, y solo se pueden aprovechar asegurando el caos.~
+@84   = ~Kangaxx el Liche~
+@85   = ~Marilith~
+@86   = ~Momia~
+@87   = ~Nib Jansen~
+@88   = ~Orco~
+@89   = ~Regis~
+@90   = ~[HALFLING 1] Considero que vienen tiempo malos.~ [%_%HALFL01]
+@91   = ~[HALFLING 5]~ [%_%HALFL05]
+@92   = ~[HALFLING 6]~ [%_%HALFL06]
+@93   = ~[HALFLING 4] Ojalá tuviera mi vieja pipa de tabaco.~ [%_%HALFL04]
+@94   = ~[HALFLING 2] Eres un tipo bastante descabellado paseándote por aquí.~ [%_%HALFL02]
+@95   = ~[HALFLING 3] Últimamente se han puesto en marcha ciertas cosas.~ [%_%HALFL03]
+@96   = ~Regis (mascullando), leal a su raza, prefiere una vida de paz, descanso y grandes cantidades de comida. Tiene el hábito de "conseguir" objetos que no debería y esto a cambio le lleva a las desgracias y un desastre tras otro. Regis creció en Calimport junto la escoria de la sociedad y se convirtió en un ladrón muy hábil, incluso se ganó la membresía del gremio local y la confidencialidad de Pasha Pook, el líder del gremio. Su llegada a las Diez Ciudades solo significaba una cosa - está en problemas y huyendo.~
+@97   = ~Figurilla robada~
+@98   = ~Enemigo de la sombra~
+@99   = ~Sombra asesina~
+@100  = ~Reina Araña demoníaca~
+@101  = ~Demonio iracundo~
+@102  = ~Araña de fase~
+@103  = ~Tanari~
+@104  = ~Valen~
+@105  = ~Vampiro~
+@106  = ~Muerte aullante~
+@107  = ~Gran hombre lobo líder~
+@108  = ~Espíritu de Hombre lobo de invierno~
+@109  = ~Wulfgar~
+@110  = ~[GREYWOLF 4] ¡Nadie se mete en mis asuntos, a menos que formen parte de él!~ [%_%GREYW04]
+@111  = ~[GREYWOLF 2] ¡No habéis oído la última palabra, mojigatos despreciables!~ [%_%GREYW02]
+@112  = ~[GREYWOLF 3] ¡Tomad, canallas sinvergüenzas!~ [%_%GREYW03]
+@113  = ~[GREYWOLF 6] Panda de estúpidos.~ [%_%GREYW06]
+@114  = ~[GREYWOLF 7] La palma de mi mano o la punta de mi bota. Escoged.~ [%_%GREYW07]
+@115  = ~[GREYWOLF 8]~ [%_%GREYW08]
+@116  = ~[GREYWOLF 9]~ [%_%GREYW09]
+@117  = ~[GREYWOLF 5] Os espera la horca a todos vosotros por la mañana.~ [%_%GREYW05]
+@118  = ~[GREYWOLF HOSTILE] ¡Os arrancaré vuestras cabezas por lo que habéis hecho!~
+@119  = ~Siendo joven, Wulfgar (Hijo de Beornegar), creció junto los fieros bárbaros del Valle del Viento Helado, pero fue capturado por Bruenor en una cacería de bárbaros en las Diez Ciudades. En vez de matarlo como prisionero, Bruenor hizo que Wulfgar le sirviera a él y al Clan Martillodeguerra durante 5 años para pagar los pecados de su gente. Wulfgar le sirvió bien y creció como un gran hombre dentro de las leyendas bárbaras. Ahora porta el Colmillo Egido, un martillo de guerra mágico, hecho por Bruenor, su padre adoptivo, para él.~
+@120  = ~Medusa~
+@121  = ~Caballero demonio~
+@122  = ~Gran doppelganger~
+@123  = ~Doppelganger~
+@124  = ~Necrario~
+@125  = ~Necrófago~
+@126  = ~Gran necrófago~
+@127  = ~Korax el Necrófago~
+@128  = ~Figurilla armada~
+@129  = ~Sarevok~
+@130  = ~Tasloi~
+@131  = ~Gran hombre lobo~
+@132  = ~Gran lobo-hombre~
+
+@341 = ~[ELMINSTER 1] Alto ahí, vagabundo. Detened vuestro camino un momento y dad gusto a un viejo.~ [%_%ELMIN01]
+@342 = ~[ELMINSTER 2]~
+@343 = ~[ELMINSTER 3] Ah, es horrible que esta sea la actitud que habéis elegido. ¡Os retiraré mi apoyo y no tendré más trato con vos!~ [%_%ELMIN03]
+@344 = ~[ELMINSTER 8]~ [%_%ELMIN08]
+@345 = ~[ELMINSTER 9]~ [%_%ELMIN09]
+@346 = ~[ELMINSTER 4] Puedo ofreceros algo de ayuda, pero no interferiré en vuestro destino.~ [%_%ELMIN04]
+@347 = ~[ELMINSTER 5] Vuestra misión es urgente. ¿Vais a malgastar el tiempo molestando a los ancianos?~ [%_%ELMIN05]
+@348 = ~[ELMINSTER 6] En mi vida años he visto cientos, ¿y aun así tengo que seguir soportándoos?~ [%_%ELMIN06]
+@349 = ~[ELMINSTER 7] Oh, señor. Es difícil ser humilde cuando se es perfecto en todos los sentidos.~ [%_%ELMIN07]
+@350 = ~Perdón. Son los nabos.~ [F_JAN23]
+@351 = ~No podéis esperar derrotarme.~ [F_IREN03]
+@352 = ~¡Morid todos vosotros, morid!~ [F_IREN04]
+@365 = ~Las escaleras de madera se han podrido por el moho.~
+@371 = ~[DEMONKNIGHT 01]  La muerte os da la bienvenida.~ [%tutu_scripts%HAEL_01]
+@372 = ~[DEMONKNIGHT 03]  ¡Esta será vuestra tumba!~ [%tutu_scripts%HAEL_03]
+@373 = ~[DEMONKNIGHT 05]  ~ [%tutu_scripts%HAEL_05]
+@374 = ~[DEMONKNIGHT 06]  ~ [%tutu_scripts%HAEL_06]
+@375 = ~[DEMONKNIGHT 04]  ~ [%tutu_scripts%HAEL_04]
+@376 = ~[SLAVES 1] ~ [%_%SLAVE01]
+@377 = ~[VILLAGER, FEMALE 01d] ¿Venís de lejos? Entonces bienvenido.~ [%tutu_scriptv%illf01d] ~[VILLAGER, FEMALE 01d] ¿Venís de lejos? Entonces bienvenida.~ [%tutu_scriptv%illf01d]
+@378 = ~[FEMALE TOWNSFOLK 5]~ [%_%ftown05]
+@379 = ~[FEMALE TOWNSFOLK 6]~ [%_%ftown06]
+@380 = ~[FEMALE GREETING 1]  ¿Si?~ [%_%genfg01]
+@381 = ~[SONNER 1] ¡Mantened las cabezas en su sitio y lo solucionaremos! Solo necesitamos un poco de ayuda, eso es todo.~ [%_%SONNR01]
+@382 = ~[SONNER 3]~ [%_%SONNR03]
+@383 = ~[SONNER 4]~ [%_%SONNR04]
+@384 = ~[SONNER 2] La mente fría siempre ganará.~ [%_%SONNR02]
+@385 = ~[BEAR, POLAR 03]~ [%_%pbear03]
+@386 = ~[BEAR, POLAR 04]~ [%_%pbear04]
+@387 = ~[BEAR, POLAR 05]~ [%_%pbear05]
+@388 = ~[BEAR, POLAR 06]~ [%_%pbear06]
+@389 = ~[BEAR, POLAR 08]~ [%_%pbear08]
+@390 = ~[BEAR, POLAR 09]~ [%_%pbear09]
+@391 = ~[BEAR, POLAR 01]~ [%_%pbear01]
+@392 = ~[BEAR, POLAR 02]~ [%_%pbear02]
+@393 = ~[THE WARRIOR 1] ¡Socorro! ¡Necesito ayuda! ¡Son demasiados!~
+@394 = ~[THE WARRIOR 5] ~
+@395 = ~[THE WARRIOR 6]~
+@396 = ~[THE WARRIOR 2] Tengo... mucho frío. Me... me muero... Por favor... quedaos conmigo un momento...~
+@397 = ~[THE WARRIOR 3] No quiero morir solo...~
+@398 = ~[THE WARRIOR 4] Gracias...~
+@399 = ~[SLAVES 6]~ [%_%SLAVE06]
+@400 = ~~ [TANAR01]
+@401 = ~~ [TANAR02]
+@402 = ~~ [TANAR03]
+@403 = ~[BASILISK, GREATER 06] ~ [%_%GBASI06]
+@404 = ~[BASILISK, GREATER 09] ~ [%_%GBASI09]
+@405 = ~~ [TANAR05]
+@406 = ~~ [TANAR06]
+@407 = ~~ [TANAR04]
+@408 = ~~ [TANAR01]
+@409 = ~~ [TANAR02]
+@410 = ~[SPIDER, PHASE 03] ~ [%_%PSPID03]
+@411 = ~[SPIDER, PHASE 04] ~ [%_%PSPID04]
+@412 = ~[SPIDER, PHASE 05] ~ [%_%PSPID05]
+@413 = ~[SPIDER, PHASE 06] ~ [%_%PSPID06]
+@414 = ~[SPIDER, PHASE 08] ~ [%_%PSPID08]
+@415 = ~[SPIDER, PHASE 09] ~ [%_%PSPID09]
+@416 = ~[SPIDER, PHASE 01] ~ [%_%PSPID01]
+@417 = ~[SPIDER, PHASE 02] ~ [%_%PSPID02]
+@418 = ~[SPIDER, PHASE 10] ~ [%_%PSPID10]
+@419 = ~[METALLIC SOUND 1]~ [%_%HIT_01C]
+@420 = ~[METALLIC SOUND 2]~ [%_%HIT_02C]
+@421 = ~[METALLIC SOUND 3]~
+@422 = ~[METALLIC SOUND 4]~ [%_%HIT_03D]
+@423 = ~[SPIDER, WRAITH 03] ~ [%_%WSPID03]
+@424 = ~~ [%_%vicon38]
+@425 = ~~ [%_%vicon39]
+@427 = ~[WYVERN 03] ~ [%_%WYVER03]
+@428 = ~[WYVERN 04] ~ [%_%WYVER04]
+@429 = ~[WYVERN 05] ~ [%_%WYVER05]
+@430 = ~[WYVERN 06] ~ [%_%WYVER06]
+@431 = ~[WYVERN 07] ~ [%_%WYVER07]
+@432 = ~[WYVERN 08] ~ [%_%WYVER08]
+@433 = ~[WYVERN 09] ~ [%_%WYVER09]
+@434 = ~[WYVERN 01] ~ [%_%WYVER01]
+@435 = ~[WYVERN 02] ~ [%_%WYVER02]
+@436 = ~[WYVERN 10] ~ [%_%WYVER10]
+@437 = ~[SKELETON WARRIOR 02]~ [%_%SKELW02]
+@438 = ~[SKELETON WARRIOR 03] Morid...~ [%_%SKELW03]
+@439 = ~[SKELETON WARRIOR 9] ~ [%_%SKELW09]
+@440 = ~[WOLF, WINTER 07]~ [%_%WWOLF07]
+@441 = ~[SKELETON WARRIOR 01]~ [%_%SKELW01]
+@443 = ~[MALE GREETING 3]  ¿Mmm?~ [%_%GENMG03]
+@444 = ~[MONKS 5]~ [%_%MONKS05]
+@445 = ~[MONKS 6]~ [%_%MONKS06]
+@446 = ~[WEREWOLF 01]  ~ [%_%WEREW01]
+@447 = ~[WEREWOLF 02]  ~ [%_%WEREW02]
+@448 = ~[WEREWOLF 03]  ~ [%_%WEREW03]
+@449 = ~[WEREWOLF 04]  ~ [%_%WEREW04]
+@450 = ~[WEREWOLF 05]  ~ [%_%WEREW05]
+@451 = ~[WEREWOLF 06]  ~ [%_%WEREW06]
+@452 = ~[CENTEOL 1] ¡Mis araaaañas! ¡Matadlos! ¡Matadlos a todos!~ [%_%CENTL01]
+@453 = ~[CENTEOL 2] ~ [%_%CENTL02]
+@454 = ~[CENTEOL 3]~ [%_%CENTL03]
+@455 = ~[CENTEOL 4]~ [%_%CENTL04]
+@456 = ~[WEREWOLF, GREATER 01]  ¡Os enterraré a todos!~ [%_%GWERE01]
+@457 = ~[WEREWOLF, GREATER 03]  ~ [%_%GWERE03]
+@458 = ~[WEREWOLF, GREATER 04]  ~ [%_%GWERE04]
+@459 = ~[WEREWOLF, GREATER 05]  ~ [%_%GWERE05]
+@460 = ~[WEREWOLF, GREATER 06]  ~ [%_%GWERE06]
+@461 = ~[WOLF, WINTER 03] ~ [%_%WWOLF03]
+@462 = ~[WOLF, WINTER 04] ~ [%_%WWOLF04]
+@463 = ~[WOLF, WINTER 05] ~ [%_%WWOLF05]
+@464 = ~[WOLF, WINTER 06] ~ [%_%WWOLF06]
+@465 = ~[WOLF, WINTER 08] ~ [%_%WWOLF08]
+@466 = ~[WOLF, WINTER 09] ~ [%_%WWOLF09]
+@467 = ~[WOLF, WINTER 01] ~ [%_%WWOLF01]
+@468 = ~[WOLF, WINTER 02] ~ [%_%WWOLF02]
+@469 = ~[SIRINE 05] ~ [%_%SIRIN05]
+@470 = ~[SKELETON WARRIOR 04] ~ [%_%SKELW04]
+@471 = ~[ZOMBIE 03]~ [%_%ZOMBI03]
+@472 = ~[ZOMBIE 04]~ [%_%ZOMBI04]
+@473 = ~[ZOMBIE 05]~ [%_%ZOMBI05]
+@474 = ~[ZOMBIE 06]~ [%_%ZOMBI06]
+@475 = ~[ZOMBIE 01]~ [%_%ZOMBI01]
+@476 = ~[ZOMBIE 02]~ [%_%ZOMBI02]
+
+@477 = ~El Cuerno de la Tribu del oso está de vuelta.~
+@478 = ~Convocar al Espíritu del oso~
+@479 = ~Sangrar~
+@480 = ~Envenenamiento de sangre~
+@481 = ~Disipar efectos~
+@482 = ~Protegido contra el Mal~
+@483 = ~Invisibilidad~
+@484 = ~La figurilla de la pantera regresa~
+@485 = ~Convocar a Guenhwyvar~
+@486 = ~¡Glup!~
+
+//---------------------------------------------------------------------------------
+//  Item descriptions:
+//---------------------------------------------------------------------------------
+
+@133  = ~Daga~
+@134  = ~Daga vampírica +5~
+@135  = ~La daga normal suele tener una afilada hoja de doble filo, al contrario que un cuchillo, que sólo tiene un filo y es un poco más corto que la daga.
+
+ESTADÍSTICAS:
+
+Daño:  1d4
+Tipo de daño:  Perforante
+Peso: 1
+Factor de velocidad: 2
+Talento marcial: Daga
+Tipo:  1 mano 
+No lo puede usar:
+  Clérigo~
+@136  = ~Esta daga es una de las más temidas de los reinos. Artemis Entreri puso en sus manos esta daga y la combinación de este acero y las mortíferas habilidades en combate de Artemis llevaron al héroe a sobrevivir.
+
+ESTADÍSTICAS:
+
+Daño:  1d4+3
+THAC0: +5 
+Habilidades especiales:
+   Caga golpe absorbe 5 puntos de golpe del objetivo y los transfiere al usuario.
+   
+Tipo de daño:  Perforante 
+Peso: 1 
+Factor de velocidad: 2  
+Talento marcial: Daga
+Tipo:  1 mano 
+No lo puede usar:
+  Clérigo~
+@137  = ~Cuero tachonado~
+@138  = ~Alma de la serpiente +3~
+@139  = ~La armadura de cuero tachonado tiene poco en común con la armadura de cuero normal. Mientras que la armadura de cuero es una coraza endurecida, la de cuero tachonado es suave y flexible con cientos de remaches de metal incrustados. Estos remaches están tan próximos unos de otros que forman una armadura dura de metal que desvía los ataques cortantes. El respaldo de cuero suave es simplemente un medio de sujetar los remaches en su lugar.
+
+ESTADÍSTICAS:
+
+Clase de armadura: 7
+Peso: 25
+No lo puede usar:
+ Mago~
+@140  = ~Esta armadura de cuero es la armadura personal de Artemis Entreri.
+
+ESTADÍSTICAS:
+
+Habilidad especial: 
+   El portador es inmune al veneno
+   
+Clase de armadura: 4
+Peso: 25
+No lo puede usar:
+ Mago~
+@141  = ~Amuleto~
+@142  = ~Los amuletos suelen ser objetos mágicos que por lo común se llevan alrededor del cuello, colgados de una cadena. El tipo de cadena que acompaña al amuleto suele aumentar el valor estético del elemento, pero no las propiedades mágicas. Sólo se puede llevar un amuleto en el cuello.~
+@143  = ~Este medallón está muy buscado por los ladrones y por los bardos, aunque por diferentes razones. A parte de ofrecer una gran protección mágica contra ataques físicos, el amuleto aumenta el talento marcial del portador de varias habilidades de explorador.  Pero todavía es más valioso desde el punto de vista de los bardos, gracias a la habilidad del amuleto de otorgar al portador inmunidad a todas las formas de silencio. 
+ 
+ESTADÍSTICAS:
+
++20% a Encontrar trampas y Abrir cerraduras
++3 Bonificador a la CA
+El portador es inmune al silencio
+
+Solo lo pueden usar:
+ Bardo
+ Ladrón~
+@144  = ~Amuleto contra la absorción vampírica~
+@145  = ~Este amuleto fue encantado por un mago cuando estaba en su viaje buscando un artefacto que se decía que se encontraba dentro de la Montaña de los Muertos en el Valle del Viento Helado.
+
+Habilidad especial: 
+   Bendición al portador e inmunidad a la Absorción vampírica de la constitución.
+El portador debe tener en mente que mientras el amuleto realmente protege contra la absorción de constitución, también imposibilita cualquier bonificador a la misma.
+
+No lo puede usar:
+ Guerrero
+ Ladrón
+ Paladín
+ Explorador~
+@146  = ~Figurilla de araña~
+@147  = ~Esta pequeña figurilla de araña brilla con una luz roja.~
+@148  = ~Esta figurilla de araña mágica permite al usuario convocar sucesivamente seis arañas de fase.
+
+La figurilla solo tiene 1 carga antes de que se destruya y regrese al plano de su verdadero propietario, la Reina Araña demoníaca.~
+@149  = ~Espada corta~
+@150  = ~Mordisco de serpiente +4~
+@151  = ~La espada corta fue el primer tipo de espada utilizada y se podría describir como una especie de daga de hoja tan larga que ya deja de ser una daga. En la clasificación de espadas no se incluye el término espada corta. Sin embargo, la utilización de este vocablo se ha generalizado para describir una hoja de doble filo de aproximadamente 60 centímetros de longitud. La punta de la espada suele ser afilada, perfecta para apuñalar.
+
+ESTADÍSTICAS:
+
+Daño:  1d6 
+Tipo de daño:  Perforante 
+Peso: 3 
+Factor de velocidad: 3 
+Talento marcial: Espada corta 
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago~
+@152  = ~Esta es la espada personal de Artemis Entreri.
+
+ESTADÍSTICAS:
+
+Daño: 1d6+4
+THAC0: +4
+Habilidad especial: 
+   Inflige veneno en su objetivo si falla la tirada de salvación.
+   
+Peso: 3
+Factor de velocidad: 3
+Talento marcial: Espada corta 
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago~
+@153  = ~Hijo del líder de la Tribu del oso~
+@154  = ~Este es el hijo del líder de la Tribu del oso, todavía está vivo a pesar de por lo que ha pasado.~
+@155  = ~Cuerno de la Tribu del oso~
+@156  = ~El sonido de este poderoso cuerno convoca un poderoso Espíritu del oso para luchar junto al usuario. 
+
+HABILIDADES: Convoca el Espíritu del oso una vez al día.~
+@157  = ~Tahalí~
+@158  = ~Símbolo sagrado de Lathander~
+@159  = ~Los fajines son parecidos a los cinturones. Pero los fajines no se utilizan para sujetarse los pantalones, sino para llevar bolsas, vainas y cosas similares.
+
+ESTADÍSTICAS:
+
+Peso:  2~
+@160  = ~Solo se otorgan estos símbolos sagrados a los siervos más dignos y devotos de los Portadores del Alba. 
+
+ESTADÍSTICAS:
+
+   Otorga un conjuro adicional de nivel 6 y 7
+   5% de Resistencia mágica mientras se lleva
+   +1 a la Fuerza mientras se lleva
+
+Solo lo pueden usar:
+  Clérigos de alineación buena~
+@161  = ~Símbolo sagrado de Helm~
+@162  = ~Solo se otorgan estos símbolos sagrados a los siervos más dignos y devotos del Vigilante.
+
+ESTADÍSTICAS:
+
+   Otorga un conjuro adicional de nivel 6 y 7
+   5% de Resistencia mágica mientras se lleva
+   +1 a la Fuerza mientras se lleva
+
+Solo lo pueden usar:
+  Clérigos de alineación neutral~
+@163  = ~Símbolo sagrado de Talos~
+@164  = ~Solo se otorgan estos símbolos sagrados a los siervos más dignos y devotos del Señor de las Tormentas.
+
+ESTADÍSTICAS:
+
+   Otorga un conjuro adicional de nivel 6 y 7
+   5% de Resistencia mágica mientras se lleva
+   +1 a la Fuerza mientras se lleva
+
+Solo lo pueden usar:
+  Clérigos de alineación maligna~
+@165  = ~Maza~
+@166  = ~Tormenta de estrellas +3~
+@167  = ~La maza deriva directamente del garrote común y se compone simplemente de un asta de madera con una punta de piedra o hierro montada en el extremo. El diseño de la punta varía; unas tienen púas, otras rebordes y otras tienen piezas piramidales.
+
+ESTADÍSTICAS:
+
+Daño:  1d6+1 
+Tipo de daño:  Contundente 
+Peso: 8 
+Factor de velocidad: 7 
+Talento marcial: Maza
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Mago
+  Ladrón~
+@168  = ~Esta arma mágica es de un diseño ancestral, aunque se cree que fue creada en Netheril.  Crepita con espectaculares arcos de rayos cuando se porta.
+
+ESTADÍSTICAS:
+
+THAC0:  Bonificador +3
+Daño:  1d6+4, +1d6 de daño eléctrico
+Tipo de daño:   Contundente
+Peso: 6
+Factor de velocidad: 4
+Talento marcial: Maza
+Tipo:  1 mano
+Requiere: Fuerza 10
+No lo puede usar:
+ Druida
+ Mago
+ Ladrón~
+@169  = ~Lucero del alba~
+@170  = ~Granizado de estrellas +4~
+@171  = ~El lucero del alba es una barra de madera rematada con una cabeza metálica hecha de una vaina de hierro con pinchos. Los luceros del alba tienen una longitud de unos 120 centímetros. Algunos de ellos tienen una cabeza ovalada o cilíndrica tachonada con clavos. En la mayoría de los luceros del alba, sea cual sea el diseño, sale una larga punta, diseñada para clavar.
+
+ESTADÍSTICAS:
+
+Daño:  2d4 
+Tipo de daño:   Contundente 
+Peso: 12 
+Factor de velocidad: 7 
+Talento marcial: Mayal/Lucero del alba
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Mago
+  Ladrón~
+@172  = ~El lucero del alba es una barra de madera rematada con una cabeza metálica hecha de una vaina de hierro con pinchos. Los luceros del alba tienen una longitud de unos 120 centímetros. Algunos de ellos tienen una cabeza ovalada o cilíndrica tachonada con clavos. En la mayoría de los luceros del alba, sea cual sea el diseño, sale una larga punta, diseñada para clavar.
+
+ESTADÍSTICAS:
+
++20% Resistencia al fuego
+
+THAC0:  +4
+Daño:  2d4+4, +1-4 de daño por frío extra
+Tipo de daño:   Contundente
+Peso: 8
+Factor de velocidad: 4
+Talento marcial: Mayal/Lucero del alba
+Tipo:  1 mano
+Requiere: Fuerza 11
+No lo puede usar:
+ Druida
+ Mago 
+ Ladrón~
+@173  = ~Botas~
+@174  = ~Botas de celeridad~
+@175  = ~Las botas las suelen hacer a mano los zapateros. Las botas normales se hacen partiendo de un molde, pero las buenas se diseñan para el pie de alguna persona en particular.
+
+ESTADÍSTICAS:
+
+Peso:  4~
+@176  = ~Estas botas forman parte del equipo personal de Artemis Entreri, el asesino tan mortal del que tanto se habla y que guarda un odio hacia Drizzt. Artemis anda por los reinos de las sombras para planear como apuñalar por la espalda al explorador drow.
+
+Habilidades especiales:
+  Movimiento aumentado y celeridad mientras se llevan.~
+@177  = ~Diario de Bruenor~
+@178  = ~Día 1
+Extrañas cosas se nos vienen encima, el cielo está limpio de nubes oscuras, lo cual parece ser a primera vista algo bueno. Sin embargo, el Valle ha sido afectado debido a este entorno. El hielo y la nieve de las montañas empieza a derretirse, lo cual provocará que el Valle del Viento Helado se muera.
+
+Día 2
+Catti-Brie se ha unido a los exploradores locales para mirar qué es lo que ha causado un cambio tan dramático en el clima.
+
+Día 3
+Hoy no tengo noticias nuevas de Catti-Brie, aunque solo ha pasado un día.
+
+Día 4
+Todavía estoy sin noticias, ni siquiera un mensajero diciéndome como va todo.
+
+Día 5
+Sin noticias. Catti-Brie me dijo que volvería en dos días. Si se ha tenido que retrasar, seguro que habría enviado algún tipo de mensaje.
+
+Día 6
+Presiento que algo no va bien; intentaré buscar a Catti-Brie. También le dije a Regis que intentara encontrar a Drizzt. He odio que está en su camino de regreso al Valle por un recado de la Costa de la Espada. Intenté encontrar a Wulfgar pero parece haberse desvanecido como el humo.~
+@179  = ~Hacha de batalla~
+@180  = ~Hacha de batalla +3~
+@181  = ~Esta hacha en particular fue forjada por la propia mano de Bruenor después de llegar al Valle del Viento Helado.
+
+ESTADÍSTICAS:
+
+Daño: 1d8+3
+THAC0:  Bonificador +3
+Tipo de daño:  Perforante
+Peso: 2
+Factor de velocidad: 4
+Talento marcial: Hacha
+Tipo: 1 mano
+No lo pueden usar:
+ Druida
+ Clérigo
+ Mago
+ Personajes de alineación maligna~
+@182  = ~Casco~
+@183  = ~Casco de Bruenor Martillodeguerra~
+@184  = ~Este casco está bastante dentado, e incluso tiene un cuerno parcialmente roto. Pero todavía le ofrece a Bruenor una protección excelente.
+
+ESTADÍSTICAS:
+
+Bonificador a la CA: 1
+Especial:
+ +1 al THAC0
+ +1 a las Tiradas de salvación
+Peso: 1
+No lo pueden usar:
+ Mago
+ Bardo
+ Ladrón~
+@185  = ~Armadura de placas completa~
+@186  = ~Armadura de placas Campo de Mithril +2~
+@187  = ~La armadura de placas completa es la mejor armadura que puede comprar un guerrero, tanto en aspecto como en protección. Las chapas entrecruzadas, ajustadas perfectamente, están especialmente orientadas para desviar flechas y golpes, y todo el traje está cuidadosamente adornado con ricos detalles grabados y repujados.
+
+ESTADÍSTICAS:
+
+Clase de armadura: 1
+Peso: 70
+No lo puede usar:
+ Bardo
+ Druida
+ Mago
+ Ladrón~
+@188  = ~Placas del Campo de Mithril +2
+
+Esta es la armadura personal de Bruenor Martillodeguerra, y nunca veréis una de mejor. Ciertamente es una maravilla artesana para el campo de batalla.
+
+ESTADÍSTICAS:
+
+Clase de armadura: -1
+Peso: 45
+No lo puede usar:
+ Ladrón
+ Bardo
+ Druida
+ Mago~
+@189  = ~Ballesta pesada~
+@190  = ~Ballesta pesada +1~
+@191  = ~Una ballesta es un arco que se monta transversalmente sobre un fuste de madera o de metal. El último recibe el nombre de timón. El arco se suele hacer de madera de fresno o de tejo. La ballesta dispara cuadrillos (también llamados virotes).
+
+ESTADÍSTICAS:
+
+Daño:  +2 (proyectil) 
+Peso: 14 
+Factor de velocidad: 10 
+Talento marcial: Ballesta
+Tipo:  2 manos 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago
+  Ladrón~
+@192  = ~Una ballesta es un arco que se monta transversalmente sobre un fuste de madera o de metal. El último recibe el nombre de timón. El arco se suele hacer de madera de fresno o de tejo. La ballesta dispara cuadrillos (también llamados virotes).
+
+ESTADÍSTICAS:
+
+Daño:  +3 (proyectil) 
+THAC0:  Bonificador +1
+Peso: 12 
+Factor de velocidad: 9 
+Talento marcial: Ballesta
+Tipo:  2 manos 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago
+  Ladrón~
+@193  = ~Flechas~
+@194  = ~Carcaj de Cattie-Brie~
+@195  = ~Las flechas en este carcaj son mágicas y nunca se acaban. Son flechas ligeras y a menudo se usan para cazar. Muchas de estas flechas están hechas de fresno o abedul y tienen entre 60cm y 75cm de largo.
+
+ESTADÍSTICAS:
+
+Daño: 1d6+1
+THAC0:  Bonificador +1
+Tipo de daño: proyectil (perforante)
+Peso: 0
+Lanzador: Arco
+No lo pueden usar:
+ Clérigo
+ Druida
+ Mago~
+@196  = ~Arco largo~
+@197  = ~Taurmaril +2~
+@198  = ~Arco largo +2, Taurmaril: 'El Buscacorazones'
+
+Este es otro famoso artefacto de la parte del Valle del Viento Helado. Este arco en particular ha sido llevado por una heroína, como Catti-Brie Martillodeguerra. La hija de Bruenor e interés amoroso de dos muy aclamados guerreros. Ella porta este poderoso artefacto de plata, con una intensidad sin igual. ¡Cuidado con los reflejos de la plata!
+
+ESTADÍSTICAS:
+
+THAC0: +2
+Daño: +2
+Peso: 2
+Factor de velocidad: 2
+Talento marcial: Arco largo
+Tipo de arma: 2 manos
+No lo pueden usar:
+ Druida
+ Clérigo
+ Mago~
+@199  = ~Espada larga~
+@200  = ~Khazid-Zhea +3~
+@201  = ~Una arma vorpal áltamente caótica, Catti-Brie observó la espada en una batalla mental durante la Era de los Trastornos, cuando los dioses andaban junto los hombres. Ahora le sirve bien.
+
+ESTADÍSTICAS:
+
+Daño: 1d8+3
+THAC0:  Bonificador +3
+Tipo de daño:  Perforante
+Peso: 2
+Factor de velocidad: 3
+Talento marcial: Espada larga
+Tipo: 1 mano
+No lo pueden usar:
+ Druida
+ Clérigo
+ Mago~
+@202  = ~Piel de lobo de invierno encantada~
+@203  = ~Esta piel blanca y pura del lobo de invierno es blanda y lujosa. Está encantada por el herrero enano Martillodeplata. Puede usarse como un manto.
+
+Habilidades especiales:
+  Resistencia al frío: +50%~
+@204  = ~Mayal~
+@205  = ~El mayal consiste en un mango grueso de madera unido a una barra de hierro, a una estaca de madera con pinchos o a una bola de hierro con pinchos. Entre el asidero y el instrumento, hay una bisagra o una junta de cadena. Originariamente, esta arma se utilizaba para trillar el grano.
+
+ESTADÍSTICAS:
+
+Daño:  1d6+1 
+Tipo de daño:   Contundente 
+Peso: 15 
+Factor de velocidad: 7 
+Talento marcial: Mayal/Lucero del alba
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Mago 
+  Ladrón~
+@206  = ~Cráneo~
+@207  = ~Daga arrojadiza~
+@208  = ~Daga arrojadiza envenenada~
+@209  = ~La daga arrojadiza típica tiene una hoja puntiaguda de doble filo, al contrario que el cuchillo, que sólo tiene un filo y es un poco más corto que la daga. A diferencia de la daga, ésta tiene una empuñadura más pequeña y está compensada de manera diferente.
+
+ESTADÍSTICAS:
+
+Daño:  1d4 
+Tipo de daño:  proyectil (penetrante)
+Peso: 1 
+Factor de velocidad: 2 
+Talento marcial: Daga
+Tipo:  1 mano 
+No lo puede usar:
+  Clérigo~
+@210  = ~Esta daga arrojadiza está untada de veneno y a veces se usa por los trasgos para hacer sus emboscadas.~
+@211  = ~Copa llena de sangre~
+@212  = ~Copa de Cornugon~
+@213  = ~Sangre rancia y oscura llena esta copa de peltre. El borde es negro y parece mordisqueada por donde otros han bebido. En la profundidad del peltre hay grabado: "Prueba Mi Alma".~
+@214  = ~En la profundidad del peltre hay grabado: "Prueba Mi Alma". Se dice que uno puede recuperar la salud perdida, curar enfermedades y neutralizar venenos de la sangre oscura que llena esta copa de peltre. Aunque esto tiene un precio. Aunque ni identificando la magia se puede ver cual puede ser este efecto secundario. 
+
+ESTADÍSTICAS:
+
+Especial:
+  Cura al que bebe con 5 puntos de golpe
+Especial:
+  Curar enfermedad y veneno
+
+Efecto secundario: Desconocido~
+@215  = ~Anillo~
+@216  = ~Anillo de libertad de movimiento: 'Obsequio de Edventar'~
+@217  = ~Un anillo es una pequeña banda de metal precioso que se utiliza como joya. Algunos anillos poco comunes han tenido encantamientos que confieren varias propiedades mágicas. Estos anillos son muy buscados, especialmente por aquéllos que se dedican a las aventuras.~
+@218  = ~Anillo de libertad de movimiento: 'Obsequio de Edventar' 
+Un grupo de elfos acuáticos regaló este anillo al cazador y carroñero de las grietas conocido como Edventar por la larga amistad que les unía. Ayudó a la "Reina Pirata" a fugarse de Dambrazh, hecho crucial en la supervivencia de esta raza; aunque Yenandra sigue siendo temida dondequiera que el mar se junte con la tierra.
+
+ESTADÍSTICAS:
+
+Especial:  El que lo lleva es inmune a cualquier cosa, mágica o no, que afecte a la movilidad de cualquier forma, aunque puede seguir acelerado. Sin embargo, protegerá también de los efectos beneficiosos, como los recibidos por unas botas de velocidad.~
+@219  = ~Mano de necrófago~
+@220  = ~Maza de trastornos +2~
+@221  = ~La maza deriva directamente del garrote común y se compone simplemente de un asta de madera con una punta de piedra o hierro montada en el extremo. El diseño de la punta varía; unas tienen púas, otras rebordes y otras tienen piezas piramidales.
+
+ESTADÍSTICAS:
+
+Daño:  1d6+1 
+Tipo de daño:   Contundente 
+Peso: 8 
+Factor de velocidad: 7 
+Talento marcial: Maza
+Tipo:  1 mano
+Requiere: Fuerza 10
+No lo puede usar:
+  Druida
+  Mago
+  Ladrón~
+@222  = ~Esta maza fue creada para un propósito específico: matar a los no muertos. Cualquier criatura no muerta golpeada con ella no solo siente su golpe, también hay una posibilidad de ser eliminado de la existencia.
+
+ESTADÍSTICAS:
+
+Especial:
+- El daño extra contra no muertos: 1d6+3
+- Mata a no muertos si fallan la salvación contra muerte (penalizador -4).
+
+Daño:  1d6+3 
+THAC0:  +2
+Tipo de daño:   Contundente 
+Peso: 8 
+Factor de velocidad: 6 
+Talento marcial: Maza
+Tipo:  1 mano
+Requiere: Fuerza 10
+No lo puede usar:
+  Druida
+  Mago
+  Ladrón~
+@223  = ~Armadura de escamas~
+@224  = ~Armadura de escamas de dragón verde~
+@225  = ~La armadura de escamas de dragón verde es ligera, fuerte y resistente al ácido y al fuego. Debido a estas propiedades se ha buscado mucho antes, pero si la se encuentra, acabas muriendo, ya que con un poderoso dragón ancestral por medio es casi imposible. A veces es más fácil buscar algo que ya exista, como esta. Uno debe ir con cuidado al llevar esto cerca de dragones, en particular los verdes.
+
+ESTADÍSTICAS:
+
+Bonificador: +50% de resistencia al fuego
+Bonificador: +50% de resistencia al ácido
+Clase de armadura: -1
+Peso: 25
+Requiere: Fuerza 8
+No lo puede usar:
+ Bardo
+ Mago
+ Ladrón~
+
+@227  = ~Cimitarras de Drizzt~
+@228  = ~Estas son las cimitarras personales de Drizzt, "La Defensora" y "Muerte Helada".~
+@229  = ~Piedra de guarda~
+@230  = ~Piedra de guarda drow~
+@231  = ~Las piedras de guarda, grabadas con glifos, runas o símbolos mágicos, son poderosos objetos encantados que garantizan a su portador el paso a través de zonas protegidas mágicamente. La mayoría de las piedras de guarda tienen un propósito único y específico; es raro encontrar una que tenga más de una finalidad.~
+@232  = ~Piedra de guarda drow.~
+@233  = ~Cráneo de dragón verde~
+@234  = ~La austera cabeza de un dragón verde es igual de tremenda como de aterradora. Las escamas de la cabeza se pueden usar para forjar una armadura de escamas de dragón. Tal armadura es una de las más poderosas para llevar si se quiere matar un dragón, ya que es una hazaña casi imposible, aunque uno puede tener la extraña suerte de encontrar algunas escamas o de que alguien ya haya forjado tal armadura.~
+@235  = ~Poción~
+@236  = ~Poción de Protección contra la muerte~
+@237  = ~Las pociones se suelen encontrar en frascos o vasijas de cerámica, cristal o metal. Los frascos u otro tipo de recipientes contienen la suficiente cantidad de líquido para proporcionar a una persona la dosis necesaria para lograr los efectos de la pócima.~
+@238  = ~Esta poción ofrece a su usuario protección contra la muerte de magia como matar criatura y petrificación. También escuda de la absorción vampírica de la constitución.~
+@239  = ~Manto~
+@240  = ~Manto de Elvenkind~
+@241  = ~El manto puede tener cualquier forma y hacerse con cualquier tipo de tela. La forma más habitual es una pieza redonda de tela con un agujero en el centro para la cabeza, con la tela drapeada desde el cuello con una cadena, un broche, un cordón o alfileres.~
+@242  = ~Manto de Elvenkind
+Este manto verde se parece a un manto normal.  Llevándolo hace que la persona pueda ocultarse en las sombras con unas habilidad asombrosa. 
+
+ESTADÍSTICAS:
+
+Ocultación: Bonificador 10%~
+@243  = ~Tahalí de fuerza de gigante de la escarcha~
+@244  = ~Este tahalí está tejido con los pelos de la barba de un gigante de la escarcha. Cuando se lleva puesto, hace que el portador sea tan fuerte como un gigante de la escarcha.
+
+Habilidad: Fuerza incrementada en 21~
+@245  = ~Pergamino rúnico del invierno~
+@246  = ~Este pergamino combinado con el hacha "La Glaseadora" da como resultado una gran poderosa arma.~
+@247  = ~Anillo de Kangaxx~
+@248  = ~Anillo de Kangaxx
+Este anillo no tiene prácticamente ornamentos, pero la terrible magia de su interior irradia un intenso mal. De hecho, Kangaxx, su creador, no era menos maligno antes de que un milenio como muerto viviente perfeccionara su poder. Se dice que, en una ocasión, un grupo de magos netherinos combatió y encerró al semiliche, pero al ser incapaces de destruirlo realmente, ellos mismos se convirtieron en liches para vigilar sus restos. Es posible que la construcción de este anillo haya despertado las iras del grupo, ya que se supone que cada una de las facetas de la gema estaba fortalecida por el sacrificio y la muerte.
+
+ESTADÍSTICAS:
+
+Clase de armadura: Bonificador +2
+Tiradas de salvación: Bonificador +2
+Resistencia mágica: Bonificador +10%
+Habilidades especiales:  Inmunidad a enfermedad y veneno~
+@249  = ~Hacha de batalla +2~
+@250  = ~La Garra~
+@251  = ~Garra de Cornugon~
+@252  = ~Esto parece ser la garra de una gran bestia, quizás un demonio de algún tipo.~
+@253  = ~Esta es la garra del Demonio Cornugon.  Tiene múltiples encantamientos que se activan todos cuando la garra se usa como un anillo. Sin embargo, tiene algunos inconvenientes, ya que parece que su poder fluya con la sangre de su portador.  Por este motivo, el portador de la garra a menudo enfermerá y también será más vulnerable a venenos.  
+
+ESTADÍSTICAS:
+
+Clase de armadura:  Bonificador +1
+Bonificador a la CA (proyectiles):  Bonificador +4
+Resistencia al fuego: 50%
+Resistencia al frío: 50%
+Resistencia mágica: 50%
+Salvación contra muerte:  Penalizador -4
+Salvación contra varitas:  Bonificador +3
+Salvación contra polimorfía:  Bonificador +3
+Salvación contra aliento: Bonificador +3
+Salvación contra conjuros:  Bonificador +3
+Modificador a la Constitución:  Penalizador -2
+Modificador a la Fuerza:  Penalizador -2~
+@254  = ~Piedra ioun~
+@255  = ~Piedra ioun verde pálido~
+@256  = ~Esta es una pequeña piedra que flota alrededor de la cabeza de su portador. Solamente hay que equipársela para que flote. Esta piedras, obviamente mágicas, tienen diferentes propiedades dependiendo de su color.~
+@257  = ~En su lecho de muerte, el héroe entrado en edad, Rigar Verasangre, rogó una última petición a su compañero mago Spectorial: que su habilidad y fortaleza como guerrero perduraran. Su reacio amigo lo consintió y transfirió estas propiedades a un objeto, sabiendo que el alma del guerrero las perdería. Esta piedra ioun verde pálido tiene ahora esas esencias, y otorga al propietario la salud y la habilidad de Verasangre.
+
+ESTADÍSTICAS:
+
+Habilidades al equipar: 
+ Bonificador +10% a los puntos de golpe
+ Bonificador +1 al THAC0
+Bonificador a la CA: Ninguno
+Peso: 2
+No lo puede usar:
+ Mago
+ Bardo
+ Ladrón~
+@258  = ~Hacha arrojadiza~
+@259  = ~La Glaseadora +2~
+@260  = ~El hacha de mano o hacha arrojadiza también se conoce como hachuela. La hoja tiene una punta de acero afilada, con una aleta en punta como contrapeso. El corto asidero termina en punta y la cabeza puede tener un clavo en la parte superior.
+
+ESTADÍSTICAS:
+
+Daño:  1d6+1 
+Tipo de daño:  proyectil (penetrante)
+Peso: 5 
+Factor de velocidad: 4 
+Talento marcial:  Hacha 
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago 
+  Ladrón~
+@261  = ~Esta hacha arrojadiza no solamente ha sido bien equilibrada para usar como arma de proyectil sino que también está sujeta a algunas mejoras mágicas. Como resultado, hace mucho más daño y es mucho más precisa que cualquier arma no mágica de un estilo similar. Gracias a los granizos del Valle del Viento Helado y del enano artesano Barbahelada, esta arma tiene encantamientos del más puro frío. Se dice que la usó en un viaje a través de las Montañas Fronterizas, dónde se encontró con Gigantes del fuego. Barbahelada nunca completó la creación de esta arma en su forja. Si debiera combinarse con el Pergamino rúnico del invierno entonces su forma final estaría terminada.  
+
+ESTADÍSTICAS:
+
+Daño:  1d6+3 
+THAC0:  +2 
+Encantada para golpear: +2
+Bonificador al daño por frío: 2
+Tipo de daño (refriega):  Perforante 
+Tipo de daño (lanzado):  Proyectil (perforante) 
+Especial:  Regresa al usuario una vez lanzada
+Factor de velocidad: 2
+Peso: 3~
+@262  = ~La Glaseadora +5~
+@263  = ~Esta es La Glaseadora una vez forjada al completo, ahora es un arma de inmenso poder.  
+
+ESTADÍSTICAS:
+
+Daño (refriega):  1d6+3
+Daño (lanzado):  1d6+5
+THAC0:  +5 
+Encantada para golpear: +5
+Bonificador al daño por frío: 2
+Bonificador de habilidad: Fuerza establecida en 25
+Habilidades en combate: Muerte instantánea de Ogros
+Tipo de daño (refriega):  Perforante 
+Tipo de daño (lanzado):  Proyectil (perforante) 
+Especial:  Regresa al usuario una vez lanzada
+Factor de velocidad: 2
+Peso: 3~
+@264  = ~Carta manuscrita~
+@265  = ~Mi querida Hermana, parece que Sarevok está cerca de abrazar su herencia. Nuevas noticias han salido a la luz. El pupilo de Gorion no es otro que el hermano de Sarevok y eso solo puede indicar que es portador de la misma herencia. He preparado mi viaje para poder alcanzar al pupilo de Gorion. Tan pronto como esté bajo mis órdenes los experimentos pueden empezar. Te agradezco que dispusieras a tus siervos para mí. Te ruego que alcances a Sarevok y me lo traigas mientras yo me encargo del otro.
+
+I~
+@266  = ~Hacha de batalla de Disipar el fuego +4~
+@267  = ~La versión más común del hacha de batalla es un palo fuerte de unos 120 centímetros con una cuchilla de un filo en forma de cuña en uno de sus extremos. Las hachas de batalla también se denominan hachas anchas.
+
+ESTADÍSTICAS:
+
+Daño:  1d8 
+Tipo de daño:   Perforante 
+Peso: 7 
+Factor de velocidad: 7 
+Talento marcial: Hacha 
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago 
+  Ladrón~
+@268  = ~Hacha personal de Jarlaxle: 'Hacha de batalla de Disipar el fuego' +4.
+
+Esta hacha está forjada y encantada por los drow. Los rumores dicen que la misma Lolth se involucró en la creación de esta arma devastadora.  
+
+ESTADÍSTICAS:
+
+Daño:  1d8+4 
+Encantamiento:  +4  
+Habilidades especiales:
+Daño por fuego: 4
+Disipar magia en cada golpe
+Tipo de daño:   Perforante 
+Peso: 5 
+Factor de velocidad: 1 
+Talento marcial: Hacha 
+Tipo:  1 mano
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago 
+  Ladrón~
+@269  = ~Armadura de placas de malla~
+@270  = ~Armadura de placas personal de Jarlaxle +3~
+@271  = ~La armadura de placas es una combinación de armadura de cota con placas metálicas que cubren las áreas vitales como el pecho, el abdomen y la entrepierna. Semejante en su construcción a la armadura de placas de bronce, la armadura de placas verdadera está compuesta de cota y cuero.
+
+ESTADÍSTICAS:
+
+Clase de armadura: 3
+Peso: 50
+No lo puede usar:
+ Bardo 
+ Druida
+ Mago
+ Ladrón~
+@272  = ~La armadura de placas personal de Jarlaxle fue forjada por los drow y encantada por la misma Lolth, manteniendo protecciones para nada menores.  
+
+ESTADÍSTICAS:
+
+Clase de armadura: 0 
+Habilidades especiales: 
+Resistencia al ácido: 80%
+Peso: 18 
+No lo puede usar:
+  Bardo
+  Druida
+  Mago
+  Ladrón~
+@273  = ~Botas de fase~
+@274  = ~Las botas las suelen hacer a mano los zapateros. Las botas normales se hacen partiendo de un molde, pero las buenas se diseñan para el pie de alguna persona en particular.
+
+ESTADÍSTICAS:
+
+Peso:  4~
+@275  = ~Estas botas malditas añaden un conjuro a su usuario que hace que se teletransporte a un enemigo aleatorio cada tres segundos hasta que todos sus enemigos están muertos.
+
+Llevar este par de botas malditas también ofrece al usuario un bonificador a la CA de +2 porque es casi imposible golpear un objeto que se teletransporta.~
+@276  = ~Este cráneo parece irradiar algún tipo de energía, casi se siente como si la cavidad oscura de sus ojos estuvieran observando.~
+@277  = ~Bastón~
+@278  = ~Bastón de magia~
+@279  = ~Es la más sencilla y humilde de las armas de palo. La barra es una madera de 180 a 275 centímetros de largo. Un buen bastón está hecho de madera de roble y va rematada con metal en ambos extremos. El bastón se debe empuñar con ambas manos.
+
+ESTADÍSTICAS:
+
+Daño:  1d6 
+Tipo de daño:   Contundente 
+Peso: 4 
+Factor de velocidad: 4 
+Talento marcial: Bastón
+Tipo:  2 manos 
+No lo puede usar:~
+@280  = ~Bastón de magia
+
+Este tipo de maza-bastón está profundamente unido a los que lanzan conjuros como profesión, por muy raro que parezca. Es, aparte de una de las más poderosas herramientas que un mago pueda poseer, la culminación de un complejo encantamiento y un estudio interminable. Este ejemplo en particular, es bueno en las refriegas y ofrece Invisibilidad y protección al Encantamiento y contra el Mal. También puede lanzar Disipar magia. Es la quintaesencia del mago.
+
+ESTADÍSTICAS:
+
+Habilidades al equipar:
+   Clase de armadura:  Bonificador +2
+   Tiradas de salvación:  Bonificador +2
+   Invisibilidad
+   Inmunidad a Encantamiento
+   Protección contra el Mal
+
+Habilidad en combate (por cada golpe): Disipar magia
+THAC0: Bonificador +1 (golpea como un arma +5)
+Daño:  1d6+1
+Tipo de daño:   Contundente
+Peso: 4
+Factor de velocidad: 4
+Talento marcial: Bastón
+Tipo:  2 manos
+Requiere: Fuerza 5
+Solo lo puede usar:
+ Mago~
+@281  = ~Espada larga +4~
+@282  = ~Estas espadas generalmente reciben el nombre de espadas de doble filo, de guerra o militares. En muchos casos, la espada larga tiene una hoja de un solo filo. No existe una única versión de la espada larga, ya que su diseño y longitud varían de una cultura a otra, e incluso puede cambiar dentro de una misma cultura dependiendo del período histórico. Una de las características más comunes en todas las espadas largas es su longitud, que oscila entre 90 y 120 centímetros. En el último caso, sólo la hoja llega a medir hasta 1 metro de la longitud total de la espada. La mayoría de las espadas largas son de doble filo y punta afilada. A pesar de tener punta, se diseñan para rasgar, no para apuñalar. 
+
+ESTADÍSTICAS:
+
+Daño:  1d8 
+Tipo de daño:   Perforante 
+Peso: 4 
+Factor de velocidad: 5 
+Talento marcial: Espada larga 
+Tipo:  1 mano 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago~
+@283  = ~???~
+@284  = ~Atacar~
+@285  = ~Armadura de cota de malla~
+@286  = ~Cota de malla de Mithril +4~
+@287  = ~La cota de malla está formada por anillos de metal entrelazados. Siempre está sobre una capa de tela acolchada o de cuero suave para evitar los roces y disminuir el impacto de los golpes.
+
+ESTADÍSTICAS:
+
+Clase de armadura: 5
+Peso: 40
+No lo puede usar:
+ Druida 
+ Mago 
+ Ladrón~
+@288  = ~Cota de malla de Mithril +4, forjada por Bruenor para sus compañeros más cercanos.   
+
+ESTADÍSTICAS:
+
+Clase de armadura: 1 
+Peso: 7 
+No lo puede usar:
+  Druida
+  Mago
+  Ladrón~
+@289  = ~Espada lunar~
+@290  = ~Esta potente arma fue creada por los herreros de la antigua Myth Drannor. Las espadas lunares se utilizan durante el largo proceso de elección del gobernante de la isla de Eternion. Una Hoja de Luna elige a su propietario y, en el caso de esta espada, ha elegido al elfo Xan. Sólo él puede utilizar esta espada, ya que cualquier otro que intente utilizarla se verá incapaz de levantarla. Esta Hoja Lunar en concreto otorga resistencia al fuego y proporciona un bonificador de su Clase de armadura a su dueño.
+
+ESTADÍSTICAS:
+
+Daño:  1d8+3 
+Tipo de daño:   Perforante 
+Bonificador al golpear:  3 
+Bonificador al daño:  3 
+Especial:
+  Bonificador a la CA +1
+  +50% de resistencia al fuego
+Peso: 4 
+Factor de velocidad: 2 
+Talento marcial: Espada larga
+Tipo:  1 mano 
+No lo puede usar:
+ Personajes de alineación maligna o cualquiera sin herencia élfica.~
+@291  = ~Armadura de placas de ópalo oscuro~
+@292  = ~La armadura de placas completa es la mejor armadura que puede comprar un guerrero, tanto en aspecto como en protección. Las chapas entrecruzadas, ajustadas perfectamente, están especialmente orientadas para desviar flechas y golpes, y todo el traje está cuidadosamente adornado con ricos detalles grabados y repujados.
+
+ESTADÍSTICAS:
+
+Clase de armadura: 1
+Peso: 70
+No lo puede usar:
+ Bardo
+ Druida
+ Mago
+ Ladrón~
+@293  = ~Armadura de placas de ópalo oscuro +1 : 'Armadura de placas de la Oscuridad'
+
+Un Señor de la guerra demoníaco de Bhaal llevó esta pieza de armadura durante su servicio para su maestro, el "Dios del Asesinato". Se debilitó durante la era de los trastornos y perdió su existencia en una confrontación con Helm.  
+
+ESTADÍSTICAS:
+
+Clase de armadura: 0 
+Resistencia al ácido: 15%
+Resistencia al frío: 15%
+Resistencia al fuego: 15%
+Resistencia al relámpago: 15%
+Resistencia a la magia: 10%
+Reducción del daño de proyectiles: 20%
+Peso: 35 
+No lo puede usar:
+  Bardo
+  Druida
+  Mago
+  Ladrón~
+@294  = ~Figurilla de pantera negra~
+@295  = ~Esta es la Figurilla de pantera negra de Drizzt que convoca de forma seguida una gran pantera negra desde los planos exteriores. Se llama Guenhwyvar y su lealtad hacia Drizzt es irrompible. 
+
+Habilidades especiales:
+ Convoca a Guenhwyvar una vez al día y si recibe heridas graves entonces Guenhwyvar regresa a los planos exteriores.~
+@296  = ~Yelmo de Ojos reflejados~
+@297  = ~Esta clase de casco decorativo, hecho de cuero o de metal reforzado, cubre la cara y la cabeza. Se recomiendan encarecidamente rendijas para los ojos y agujeros de respiración.
+
+ESTADÍSTICAS:
+
+Bonificador a la CA:  Ninguno
+Especial:  Protege contra golpes críticos
+Peso: 2
+No lo puede usar:
+ Mago
+ Bardo
+ Ladrón~
+@298  = ~Este yelmo perteneció una vez a un noble guerrero famoso por matar una Medusa.
+
+Habilidades:
+Protege contra la petrificación y los golpes críticos.~
+@299  = ~Poción de curación extra~
+@300  = ~Las pociones se suelen encontrar en frascos o vasijas de cerámica, cristal o metal. Los frascos u otro tipo de recipientes contienen la suficiente cantidad de líquido para proporcionar a una persona la dosis necesaria para lograr los efectos de la pócima.~
+@301  = ~Cuando se consume por completo, esta poción restaura a una persona 27 puntos de golpe. El efecto es instantáneo y la poción se destruye en el proceso.~
+@302  = ~Poción de curación superior~
+@303  = ~Las pociones se suelen encontrar en frascos o vasijas de cerámica, cristal o metal. Los frascos u otro tipo de recipientes contienen la suficiente cantidad de líquido para proporcionar a una persona la dosis necesaria para lograr los efectos de la pócima.~
+@304  = ~Cuando se consume por completo, esta poción restaura a quién la bebe 40 puntos de golpe. El efecto es instantáneo y la poción se destruye en el proceso.~
+@305  = ~Cetro~
+@306  = ~Cetro de resurrección~
+@307  = ~Los cetros tienen unos 90 centímetros de longitud y son tan gruesos como tu pulgar. Se suelen guardar en cajas o lugares similares. Pueden estar fabricados en metal, madera, marfil o hueso. Pueden ser lisos o grabados y decorados. Los cetros funcionan por medio de cargas, a menos que se indique lo contrario en la descripción de un cetro en concreto. Cada vez que se utiliza, puede que se gasten una o más cargas.~
+@308  = ~Cetro de resurrección
+Este cetro permite a cualquier resucitar a los muertos como si tuviera el nivel suficiente para lanzar el conjuro de resurrección y como si fuera un sacerdote. No se necesita descansar, ya que el cetro confiere el efecto de dar la vida. Cada uso del cetro gasta una carga.~
+@309  = ~Cimitarra~
+@310  = ~Cimitarra +3~
+@311  = ~Esta hoja larga y curvada de un solo filo es característica de los sables y las cimitarras, aunque sus orígenes provienen de diferentes partes de Faerun. Mientras que el sable fue diseñado para jinetes, principalmente por su versatilidad, la cimitarra tiene una fuerte influencia oriental. La "shamshir", como se la llamó originalmente, es larga, tiene forma curvada y está afilada hasta la delgada punta. Como resultado, es ligeramente más lenta, pero suele ser más efectiva y letal en combate.   
+
+ESTADÍSTICAS:
+
+Daño:  1d8 
+Tipo de daño:   Perforante 
+Peso: 4 
+Factor de velocidad: 5 
+Talento marcial: Cimitarra/Wakizashi/Ninja-to
+Tipo:  1 mano 
+No lo puede usar:
+  Clérigo
+  Mago
+  Ladrón~
+@312  = ~Cimitarra +3: Esta cimitarra fue forjada por los drow con el propósito de ser usada en la superficie por que sus armas originales artesanas se vuelven ceniza una vez les da la luz del sol.   
+
+ESTADÍSTICAS:
+
+THAC0:  Bonificador +3
+Daño:  1d8+3 
+Tipo de daño:   Perforante 
+Peso: 3 
+Factor de velocidad: 3 
+Talento marcial: Cimitarra/Wakizashi/Ninja-to
+Tipo:  1 mano 
+No lo puede usar:
+  Clérigo
+  Mago
+  Ladrón~
+@313  = ~Idolo abisal~
+@314  = ~Este ídolo abisal tiene runas grabas por todas partes con el mensaje de que su usuario puede convocar nada menos que a un Tanari para luchar a su lado.~
+@315  = ~Espada a dos puños~
+@316  = ~Filo guerrero +4~
+@317  = ~La espada de dos puños es una variación de la espada larga. Los armeros buscan siempre la forma de mejorar las armas que ya existen y para mejorar la espada larga, alargaron la hoja. Finalmente, hubo que extender la empuñadura, por lo que se hizo necesario utilizar ambas manos. La función principal de la espada de dos puños es partir en dos a los caballeros montados y dispersar las formaciones en pica.
+
+ESTADÍSTICAS:
+
+Daño:  1d10 
+Tipo de daño:   Perforante 
+Peso: 15 
+Factor de velocidad: 10 
+Talento marcial: Mandoble
+Tipo:  2 manos 
+No lo puede usar:
+  Druida
+  Clérigo
+  Mago
+  Ladrón~
+@318  = ~Espada a dos puños +4, Filo guerrero
+
+Esta gran espada es una versión encantada de las espadas bárbaras de las tribus del Norte. Forjada durante la batalla y untada con la sangre de los valientes caídos, el encantamiento otorgado a la espada por los dioses bárbaros es increíble. 
+
+ESTADÍSTICAS:
+
+THAC0:  Bonificador +4
+Daño:  1d12 +4
+Tipo de daño:   Perforante
+Peso:  11
+Factor de velocidad: 6
+Talento marcial: Mandoble 
+Tipo:  2 manos
+Requiere: Fuerza 14
+No lo puede usar:
+ Druida
+ Clérigo
+ Mago
+ Ladrón~
+@319  = ~Espada del dolor de Belhifet +5~
+@320  = ~Espada del dolor de Belhifet +5
+
+Esta es una de las muchas armas del gran demonio Belhifet. La hoja está especialmente afilada y bien equilibrada, y con una cierta luz, se puede ver una imagen a penas perceptible de una serpiente en su empuñadura.
+
+ESTADÍSTICAS:
+
+Habilidades en combate:  10% de posibilidades de 2d12 de daño por veneno
+
+THAC0: Bonificador +5
+Daño:  1d10+5
+Tipo de daño:   Perforante
+Peso:  9
+Factor de velocidad: 5
+Talento marcial: Mandoble
+Tipo:  2 manos
+Requiere: Fuerza 14
+No lo puede usar:
+ Druida
+ Clérigo
+ Mago
+ Ladrón~
+@321  = ~Capucha de los ladrones~
+@322  = ~Aunque esta capucha no confiere ninguna ventaja ostensible a quien la lleva, posee un aura de magia latente.~
+@323  = ~No hay honor entre ladrones. Quizás es por eso que la Capucha de los ladrones posee propiedades mágicas que protegen a quien la lleva de los de su propia clase.
+
+ESTADÍSTICAS:
+
+Habilidades al equipar:
+   Inmunidad a la enfermedad y al veneno
+   Borroso
+
+Solo lo pueden usar:
+ Ladrón~
+@324  = ~Toque de necrófago~
+@325  = ~Manto del hombre lobo~
+@326  = ~El manto puede tener cualquier forma y hacerse con cualquier tipo de tela. La forma más habitual es una pieza redonda de tela con un agujero en el centro para la cabeza, con la tela cosida desde el cuello con una cadena, un broche, un cordón o alfileres.~
+@327  = ~Manto del hombre lobo
+Un mago que sobrestimó el control que tenía con la magia, creó este manto, y durante el proceso de creación de esta prenda, aparentemente le infligió la licantropía. El portador puede cambiar de forma cuando quiera.  El mago no fue tan afortunado.
+
+ESTADÍSTICAS:
+
+Especial:  Polimorfarse en hombre lobo cuando se quiera
+Bonificador a la CA: +1
+Peso:  3~
+@328  = ~Piel de lobo de invierno~
+@329  = ~Piel de lobo de invierno de Wulfgar~
+@330  = ~El pelo blanco y puro del lobo de invierno es suave y lujoso. Con frecuencia se cose en vestimentas tan diversas como las toscas camisas de los bárbaros de Uthgardt del norte y las estolas invernales de moda que llevan todas las damas nobles en la región de la Costa de la Espada.~
+@331  = ~Esta piel blanca y pura del lobo de invierno es suave y lujosa. Está encantada por un chamán de los bárbaros del norte de Uthgardt.
+
+Habilidades especiales:
+Resistencia al frío: 50%~
+@332  = ~Pieles~
+@333  = ~Armadura de pieles de Wulfgar~
+@334  = ~Hecha de las pieles de los lobos, ofrecen una protección extraordinaria. Los bárbaros del Valle del Viento Helado se han vuelto muy habilidosos en la creación de estas pieles, ofreciendo una mejor protección con menor peso. Por supuesto, también ayuda a que los animales de estas pieles sean tan duros como clavos.
+
+ESTADÍSTICAS:
+
+Clase de armadura: 6
+Peso: 3
+No lo pueden usar:
+ Mago~
+@335  = ~Martillo de guerra~
+@336  = ~Colmillo Egido +5~
+@337  = ~Martillo de guerra +5: 'Colmillo Egido'
+
+Siendo un poderoso guerrero bárbaro, Wulfgar necesitó un arma robusta. ¡Este maravilloso martillo artesanal sirvió para tal propósito! Fue forjado con el corazón y el alma de Bruenor Martillodeguerra. Hizo a mano esta poderosa arma, y terminó su carrera como herrero. Después de que un herrero enano fabrique un arma de tal belleza, equilibro y habilidades, deja la herrería y vive con esa obra maestra.
+
+ESTADÍSTICAS:
+
+Daño: 2d4+5
+THAC0: +5
+Tipo de daño:  Contundente
+Peso: 8
+Factor de velocidad: 2
+Talento marcial: Armas sin punta
+Tipo: 1 mano
+Requiere: Fuerza 18
+No lo pueden usar:
+ Druida
+ Mago
+ Bardo
+
+ Personajes de alineación no caótica~
+@338  = ~Esta clase de casco de rostro descubierto, hecho con cuero reforzado o con metal, cubre casi toda la cabeza, salvo la cara y el cuello. Estos cascos suelen incluir una protección para la nariz.
+
+ESTADÍSTICAS:
+
+Bonificador a la CA:  Ninguno
+Especial:  Protege contra golpes críticos
+Peso: 2
+No lo puede usar:
+ Mago
+ Bardo
+ Ladrón~
+@339  = ~Ballesta Pelo gigante +3~
+@340  = ~Ballesta pesada +3: Pelo gigante
+
+Aunque es difícil de comprobar, se dice que las cuerdas de esta ballesta están hechas del pelo de un Gigante de la escarcha.  Sea cual sea su verdad, las cuerdas del arma son increíblemente difíciles de arrastrar, aunque su precisión y daño valen realmente la pena (fuerza 15 o mayor).  
+
+ESTADÍSTICAS:
+
+THAC0: Bonificador +3
+Daño:  +5 (proyectil)
+Peso: 11
+Factor de velocidad: 7
+Talento marcial: Ballesta
+Tipo:  2 manos
+Requiere: Fuerza 15
+No lo puede usar:
+ Druida
+ Clérigo
+ Mago
+ Ladrón~
+ 
+@501 = ~El Orgullo de Durlag~
+@502 = ~Espada a dos puños +2 : 'El Orgullo de Durlag'
+
+ESTADÍSTICAS:
+
+Daño:  1d10+2
+THAC0:  Bonificador +2
+Tipo de daño:   Perforante
+Peso: 10
+Factor de velocidad: 8
+Talento marcial: Mandoble
+Tipo:  2 manos
+Requiere: Fuerza 13
+No lo pueden usar:
+ Druida
+ Clérigo
+ Mago
+ Ladrón~
+@503 = ~Escudo~
+
+//------------------------------------------------------------------------------------------------
+// Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
+//------------------------------------------------------------------------------------------------
+
+@10000 = ~Gesta de la Tribu del oso~
+
+// 10001 used to be @19 in F_BEAROL.TRA
+@10001 = ~Gesta de la Tribu del oso
+
+He aceptado encontrar al hijo del Jefe caído de la Tribu del oso. Me han dicho que ha sido capturado por los Gigantes de la Escarcha, los cuales han destruido la aldea de la Tribu del oso. Estos gigantes actúan como esbirros para el Espíritu del Lobo de invierno, el cual tiene planes para acabar con la existencia del Espíritu del Oso. Esto solo puede hacerse matando al niño con el Ritual de Invierno.~
+
+// 10002 used to be @20 in F_BEAROL.TRA
+@10002 = ~Gesta de la Tribu del oso
+
+He encontrado al hijo del Jefe caído de la Tribu del oso y lo llevé a salvo con el Anciano de la Tribu. Estuvieron más que agradecidos y me recompensaron con el Cuerno del Espíritu del Oso.~
+
+// 10003 used to be @3 in F_DRIZZT.TRA
+@10003 = ~Hoy he conocido nada menos que al famoso explorador Drizzt mientras luchaba con unos gnolls. Me he unido a su causa y se ha ofrecido a viajar a mi lado durante un tiempo. Quién puede rechazar eso, aunque me temo que su compañía atraerá también a poderosos enemigos.~
+
+// 10004 used to be @4 in F_REGIS.TRA
+@10004 = ~Conocí un mediano que estaba bastante liado con lo que hacía. No quería ser distraído, así que lo dejé con su tarea. Antes de irme, mencionó algo de un explorador oscuro y si lo encontraba, debería traerlo al mediano, cuyo nombre desconozco.~
+
+// 10005 used to be @9 in F_REGIS.TRA
+@10005 = ~Parece que los compañeros y amigos de Drizzt están en problemas. Como me temía, el viaje al lado de Drizzt nos ha traído problemas peores de los que podía haber imaginado.~
+
+// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
+
+// 10006 used to be @14 in F_DRIZZT.TRA (Delayed Start component)
+@10006 = ~Nos hemos reunido una vez más con Drizzt Do'Urden. Estamos a su encuentro en el Inn en la Barba de Ulgoth en tres días.~
+
+// 10007 used to be @18 in F_DRIZZT.TRA (Delayed Start component)
+@10007 = ~Me he unido a la empresa con Drizzt que lo acompañara a Icewind Dale. Esto está destinado a ser un viaje lleno de acontecimientos ...~

@@ -1,0 +1,362 @@
+/* -------------------------------------------------------------------------------------------------------------
+  The Drizzt Saga by flysoup
+  
+
+ v1 initial WeiDU conversion and tp2 code by pro5
+ v2 by Badgert and erebusant
+ v3 BGEE update by pro5
+ 
+------------------------------------------------------------------------------------------------------------- */
+
+/* Backup folder */
+BACKUP ~DRIZZTSAGA/backup~
+
+AUTHOR ~flysoup, http://forums.blackwyrmlair.net/index.php?showforum=103~
+VERSION ~v3.00~
+README ~DRIZZTSAGA\ReadMe.htm~
+
+ASK_EVERY_COMPONENT
+
+// Actions executed for every component
+ALWAYS
+ 
+  // only do this once per Weidu session
+  ACTION_IF NOT VARIABLE_IS_SET ~GameTypeDetected~ BEGIN
+ 	
+	ACTION_IF GAME_IS ~BGEE~ BEGIN	  
+		// Enhanced Edition:
+		PRINT @1500
+		INCLUDE ~DRIZZTSAGA\lib\g3_bgee_cpmvars.tpa~
+	END
+	ELSE  
+	ACTION_IF GAME_IS ~Tutu_TotSC~ BEGIN	  
+		// Tutu:
+		PRINT @353
+		INCLUDE ~DRIZZTSAGA\lib\g3_tutu_cpmvars.tpa~		
+	END			
+	ELSE
+	ACTION_IF GAME_IS ~BGT~ BEGIN	 
+	  	// BGT:	 	
+		PRINT @354
+		INCLUDE ~DRIZZTSAGA\lib\g3_bgt_cpmvars.tpa~		
+	END
+
+  	// copy ASCII or UTF8 versions of TRAs depending on the platform + finalize sound references while we're at it
+  	COPY + ~DRIZZTSAGA\Language\%LANGUAGE%\%SrcFolder%~ ~DRIZZTSAGA\Language\%LANGUAGE%~
+  		EVALUATE_BUFFER
+  	
+  	// Load our finalized primary TRA
+	LOAD_TRA ~DRIZZTSAGA\Language\%LANGUAGE%\main.tra~		
+
+	// whitespace variable for use in REPLACE_TEXTUALLY
+	OUTER_PATCH wlib BEGIN
+		WRITE_LONG 0x0 0x090a0d20
+		READ_ASCII 0x0 ws(4) //detects any whitespace
+	END
+	
+	// Include macro definitions:
+	INCLUDE ~DRIZZTSAGA\lib\worldmap_update.tph~
+	INCLUDE ~DRIZZTSAGA\lib\del_are_trigger.tph~
+	INCLUDE ~DRIZZTSAGA\DS-Core.tpa~
+		
+	OUTER_SET GameTypeDetected = 1
+		  	
+  END  // IF NOT VARIABLE_IS_SET ~GameTypeDetected~
+
+END  // ALWAYS
+
+
+AUTO_TRA ~DRIZZTSAGA/Language/%s~
+
+// (See readme for translation credits)
+LANGUAGE ~English~								~english~	 ~DRIZZTSAGA/Language/English/setup.tra~
+LANGUAGE ~French~								~french~	 ~DRIZZTSAGA/Language/French/setup.tra~
+LANGUAGE ~Italian~								~italian~	 ~DRIZZTSAGA/Language/Italian/setup.tra~
+LANGUAGE ~Polish~								~polish~	 ~DRIZZTSAGA/Language/Polish/setup.tra~	 
+LANGUAGE ~Russian~								~russian~	 ~DRIZZTSAGA/Language/Russian/setup.tra~
+LANGUAGE ~Spanish~								~spanish~	 ~DRIZZTSAGA/Language/Spanish/setup.tra~
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//// Original version: new areas connected by travel triggers /////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+BEGIN @1502
+SUBCOMPONENT @0
+REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
+
+LAM DS_CORE_COMPONENT
+
+// Worldmap
+
+PRINT @359
+
+LAM WORLDMAP_UPDATE
+
+
+//  BP-BGT Worldmap compatibility (yes, the default version will work in BWP install with Worldmap mod too):
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+	COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+	 APPEND_FILE ~DRIZZTSAGA/Worldmap/BPWM_areas_original.tbl~
+	COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+	 APPEND_FILE ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_original.tbl~
+	COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+	 APPEND_FILE ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~
+END
+ELSE BEGIN
+    MKDIR ~Worldmap~
+    //AT_UNINSTALL ~call DRIZZTSAGA/deldir.bat Worldmap~
+    COPY ~DRIZZTSAGA/Worldmap/BPWM_areas_original.tbl~ ~Worldmap/map_mods_areas.tbl~
+    COPY ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_original.tbl~ ~Worldmap/map_mods_links.tbl~
+    COPY ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+END
+
+
+PRINT @1505
+
+MAKE_BIFF DZTS-ARE BEGIN
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.ARE~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.TIS~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.WED~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.MOS~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*HT\.BMP~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*LM\.BMP~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*SR\.BMP~
+END
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//// BP–BGT Worldmap version: access all new areas through worldmap /////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BEGIN @489
+SUBCOMPONENT @0
+REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
+
+LAM DS_CORE_COMPONENT
+
+
+// Worldmap
+
+PRINT @359
+
+/* Unnecessary, since BPWM will overwrite this stuff anyway and without BPWM this subcomponent won't work properly in any case because of the changes below
+
+LAUNCH_ACTION_MACRO ~WORLDMAP_UPDATE~
+*/
+
+//  tell BP-BGT Worldmap what we need added to it:
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+	COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+	 APPEND_FILE ~DRIZZTSAGA/Worldmap/BPWM_areas_all.tbl~
+	COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+	 APPEND_FILE ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_all.tbl~
+	COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+	 APPEND_FILE ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~
+END
+ELSE BEGIN
+    MKDIR ~Worldmap~
+    //AT_UNINSTALL ~call DRIZZTSAGA/deldir.bat Worldmap~
+    COPY ~DRIZZTSAGA/Worldmap/BPWM_areas_all.tbl~ ~Worldmap/map_mods_areas.tbl~
+    COPY ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_all.tbl~ ~Worldmap/map_mods_links.tbl~
+    COPY ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+END
+
+// One of new areas now revealed via script
+EXTEND_TOP  ~F_0113.BCS~   ~DRIZZTSAGA/Scripts/SNIP/eF_0113.BAF~
+
+// For other areas, replace default travel triggers with searchmap WM regions
+COPY ~DRIZZTSAGA\ARE-DATA\F_0111.ARE~ ~DRIZZTSAGA\ARE-DATA~
+  SPRINT TRIGGERNAME "bear village"
+  SET TRIGGERTYPE = 2
+  LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~DRIZZTSAGA\ARE-DATA\F_0112.ARE~ ~DRIZZTSAGA\ARE-DATA~
+  SPRINT TRIGGERNAME "GIANT HILLS"
+  LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~DRIZZTSAGA\ARE-DATA\F_7777.ARE~ ~DRIZZTSAGA\ARE-DATA~
+  SPRINT TRIGGERNAME "#icewind02"
+  LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~DRIZZTSAGA\ARE-DATA\F_7779.ARE~ ~DRIZZTSAGA\ARE-DATA~
+  SPRINT TRIGGERNAME "#icewind05"
+  LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
+  SPRINT TRIGGERNAME "#tocrate"
+  LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~DRIZZTSAGA\ARE-DATA\F_8888.ARE~ ~DRIZZTSAGA\ARE-DATA~
+  SPRINT TRIGGERNAME "#thecrate"
+  LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
+BUT_ONLY_IF_IT_CHANGES
+
+COPY ~DRIZZTSAGA\ARE-DATA\BPWM~ ~DRIZZTSAGA\ARE-DATA~
+
+
+PRINT @1505
+
+MAKE_BIFF DZTS-ARE BEGIN
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.ARE~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.TIS~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.WED~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.MOS~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*HT\.BMP~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*LM\.BMP~
+	~DRIZZTSAGA/ARE-DATA~ ~F_.*SR\.BMP~
+END
+
+
+///////////////////////////////////////////////////////////////////
+//// XP cap patching - now an optional component //////////////////
+///////////////////////////////////////////////////////////////////
+
+BEGIN @1507  // Raise the XP cap
+//REQUIRE_COMPONENT "drizztsaga.tp2" "0"  @1503
+REQUIRE_PREDICATE NOT GAME_IS ~BGT~ @1506
+
+COPY_EXISTING ~XPCAP.2DA~ ~override~
+	  COUNT_2DA_ROWS 2 "cnt_row"
+	  FOR ( cnt=0; cnt<"%cnt_row%"; cnt=cnt+1 ) BEGIN
+	    //READ_2DA_ENTRY "%cnt%" 0 2 "class"
+	    READ_2DA_ENTRY "%cnt%" 1 2 "value"
+	    PATCH_IF IS_AN_INT value BEGIN
+	      PATCH_IF value < 3750000 BEGIN
+	     	SET_2DA_ENTRY "%cnt%" 1 2 "3750000"
+	      END
+	    END
+	  END
+BUT_ONLY
+
+ACTION_IF GAME_IS ~BGEE~ BEGIN
+	COPY_EXISTING ~STARTARE.2DA~ ~override~
+	    READ_2DA_ENTRY 11 1 2 "value"
+	    PATCH_IF IS_AN_INT value BEGIN
+	      PATCH_IF value < 3750000 BEGIN
+	     	SET_2DA_ENTRY 11 1 2 "3750000"
+	      END
+	    END
+	BUT_ONLY
+END
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//// Delayed start: Drizzt joins after Durlag's Tower - an optional component /////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+BEGIN @1508
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+<<<<<<<< .../DS-inlined/P5empty.baf
+>>>>>>>>
+
+// Installation marker for this component
+// Can also be checked for from scripts by checking for Global("F_DSDelayedStart","GLOBAL",1)
+COPY ~.../DS-inlined/P5empty.baf~ ~DRIZZTSAGA\markers\DelayedStart.xxx~
+
+// Reverse replacing Drizzt's CRE file reference
+COPY_EXISTING ~%FishermansLake%.ARE~ ~override~
+	READ_LONG 0x54 ~actoroffset~
+	READ_SHORT 0x58 ~actornum~
+	SET ~numsofar~=0
+	WHILE (~%numsofar%~<~%actornum%~) BEGIN
+		READ_ASCII (~%numsofar%~*0x110 + ~%actoroffset%~+0x80) ~crename~ //(8)
+		PATCH_IF ~%crename%~ STRING_EQUAL_CASE ~F_DRIZZT~ THEN BEGIN
+			WRITE_ASCIIE (~%numsofar%~*0x110 + ~%actoroffset%~+0x80) ~%_%DRIZZT~ #8
+			SET numsofar = actornum
+		END
+		SET ~numsofar~=~%numsofar%~+1
+	END	
+BUT_ONLY
+
+// Reverse changes to Drizzt's DV in gnoll scripts:
+COPY_EXISTING ~%_%GNOLLDR.BCS~ ~override~
+  DECOMPILE_BCS_TO_BAF
+	REPLACE_TEXTUALLY CASE_INSENSITIVE ~"F_DRIZZT"~ ~"Drizzt"~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY
+
+// restore original drizzt dialog (backed up when installing core component)
+COPY ~DRIZZTSAGA\DLG\DelayedStart\backup.dlg~ ~override\%_%drizzt.dlg~
+
+// Assign an independent unique dialog to our Drizzt
+// Along with the above changes, this will make the drizzt vs gnolls encounter play out exactly as vanilla
+COPY_EXISTING ~F_DRIZZT.CRE~ ~override~
+	WRITE_ASCII DIALOG "F_DRIZZT" #8
+	SAY INITIAL_MEETING #-1		// don't use the initial lines from the gnoll encounter, they're not appropriate for the situation
+BUT_ONLY
+
+COPY_EXISTING ~%_%DRIZZT.CRE~ ~override~
+	WRITE_ASCII 0x34 ~F_DRIZTS~ // small portrait
+	WRITE_ASCII 0x3c ~F_DRIZTM~ // large portrait
+	WRITE_BYTE 0x2c 30			// metal color
+	WRITE_BYTE 0x2d 54			// minor color
+	WRITE_BYTE 0x2e 66			// major color
+	WRITE_BYTE 0x30 23			// leather color
+	WRITE_BYTE 0x32 79			// hair color
+BUT_ONLY
+
+// dialog changes:
+
+ADD_JOURNAL @10006 @10007
+
+COMPILE EVALUATE_BUFFER ~DRIZZTSAGA/DLG/DelayedStart/F_DRIZZT.D~
+						~DRIZZTSAGA/DLG/DelayedStart/F_STONGL.D~		// different LUA destination
+
+// script changes/additions:
+
+COPY_EXISTING ~%FishermansLake%.ARE~ ~override~
+	READ_ASCII AREA_SCRIPT ~FishermansLake_AreaScript~	
+BUT_ONLY
+
+COPY_EXISTING ~%FishermansLake_AreaScript%.BCS~ ~override~
+	R_B_B ~DRIZZTSAGA\Scripts\SNIP\eRegis.BAF~ ~.../DS-inlined/P5empty.baf~
+BUT_ONLY
+
+COPY_EXISTING ~F_DRIZZT.BCS~ ~override~	
+	R_B_B ~DRIZZTSAGA\Scripts\SNIP\DelayedStart\F_DRIZZT_old.BAF~ ~DRIZZTSAGA\Scripts\SNIP\DelayedStart\F_DRIZZT_new.BAF~
+BUT_ONLY
+											
+COPY_EXISTING ~%UlgothsBeard%.ARE~ ~override~
+	READ_ASCII AREA_SCRIPT ~UlgothsBeard_AreaScript~
+BUT_ONLY
+
+COPY_EXISTING ~%DurlagsTower%.ARE~ ~override~
+	READ_ASCII AREA_SCRIPT ~DurlagsTower_AreaScript~
+BUT_ONLY
+
+ACTION_IF FILE_EXISTS_IN_GAME ~%UlgothsBeard_AreaScript%.bcs~ THEN BEGIN
+	EXTEND_BOTTOM ~%UlgothsBeard_AreaScript%.bcs~ ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/eARU000.BAF~
+END ELSE BEGIN
+	COPY ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/eARU000.BAF~ ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/%UlgothsBeard_AreaScript%.baf~
+	COMPILE ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/%UlgothsBeard_AreaScript%.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~%DurlagsTower_AreaScript%.bcs~ THEN BEGIN
+	EXTEND_BOTTOM ~%DurlagsTower_AreaScript%.bcs~ ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/eARD000.BAF~
+		EVALUATE_BUFFER
+END ELSE BEGIN
+	COPY ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/eARD000.BAF~ ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/%DurlagsTower_AreaScript%.baf~
+	COMPILE EVALUATE_BUFFER ~DRIZZTSAGA/Scripts/SNIP/DelayedStart/%DurlagsTower_AreaScript%.baf~
+END
+
+// BGT transition - need to erase 2 additional journal entries:	
+ACTION_IF GAME_IS ~BGT~ BEGIN
+	COPY_EXISTING ~ARAM00.BCS~ ~override~
+		DECOMPILE_BCS_TO_BAF
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+~DayNight(MIDNIGHT)~
+~DayNight(MIDNIGHT)
+    EraseJournalEntry(@10006)
+    EraseJournalEntry(@10007)~
+		COMPILE_BAF_TO_BCS
+	BUT_ONLY
+END
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+// EOF
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  

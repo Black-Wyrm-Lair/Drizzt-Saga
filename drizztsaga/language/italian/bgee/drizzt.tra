@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// DRIZZT translation file
+@1   = ~Sarà un piacere per noi aiutarti, alle armi!~
+@2   = ~Sono un uomo di buon cuore. Almeno quando non sono costretto a scannare gli stupidi. Grazie del vostro aiuto, finiamo questo combattimento e forse dopo potremmo continuare a viaggiare insieme, per un pò. Io sono diretto verso la Valle del Vento Gelido dove mi stanno aspettando i miei amici.~ [%_%DRIZT04]
+@3	 = ~Oggi ho incontrato il famoso ranger Drizzt mentre era alle prese con diversi gnoll. Mi sono unito alla sua causa e mi ha offerto di viaggiare al suo fianco per un pò. Chi avrebbe potuto rifiutare? sebbene temo che questo grande compagno possa mettermi contro dei potenti nemici.~
+@4   = ~Vedo che rimani fuori dal campo di battaglia! Scegli da che parte stare e fallo in fretta, perché io finirò rapidamente, e ho bisogno di sapere se ti posso mettere davanti la mia mano, o la mia lama!~
+@5   = ~Non subirò minacce da qualcuno che chiede aiuto. Forse quegli gnoll ce la faranno! Forse tu morirai qui, oggi!~
+@6   = ~Se devo fare una scelta, allora ti aiuterò.~
+@7   = ~Non ti credo drow! Non ti aiuteremo!~
+@8   = ~Allora terminiamo questo combattimento. Ho apprezzato che hai cambiato idea. Questi gnoll sono delle bestie noiose, e mi farà piacere sbarazzarmene insieme a te!~
+@9   = ~Si, darò ascolto al mio istinto, non rimarrò da parte mentre un'altra persona è in pericolo.~

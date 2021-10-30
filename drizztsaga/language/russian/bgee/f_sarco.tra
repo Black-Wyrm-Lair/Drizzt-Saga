@@ -1,0 +1,9 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+@0    = ~*Ты слышишь потусторонний шепчущий голос в своем разуме* Помоги мне... принеси мне мой череп, и я буду достаточно благодарен, чтобы вознаградить тебя.~
+@1    = ~Ты нашел его, наконец-то свобода!~
+@2    = ~Пока ты не принесешь мой череп, награда не будет твоей.~
+@3    = ~Это саркофаг, где был заточен Кангакс.~
+@4    = ~Вы слишком далеко, чтобы использовать это.~

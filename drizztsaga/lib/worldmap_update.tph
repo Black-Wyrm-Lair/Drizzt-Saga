@@ -1,0 +1,224 @@
+
+
+DEFINE_ACTION_MACRO ~WORLDMAP_UPDATE~ BEGIN
+
+// Adding our new areas into worldmap.wmp...
+// (Slightly adapted) code borrowed from BP-BGT-Worldmap.tp2
+
+OUTER_SPRINT "P5WMU_#_areas" ""            //table declaration
+COPY - ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/areas.tbl~ ~override~
+ COUNT_2DA_ROWS 10 P5WMU_new_areas_num
+ READ_2DA_ENTRIES_NOW ~P5WMU_#_areas~ 10
+
+OUTER_SPRINT "P5WMU_#_links" ""            //table declaration
+COPY - ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/links.tbl~ ~override~
+ COUNT_2DA_ROWS 12 P5WMU_new_links_num
+ READ_2DA_ENTRIES_NOW ~P5WMU_#_links~ 12
+
+OUTER_SPRINT "P5WMU_#_translations" ""      //table declaration
+COPY - ~DRIZZTSAGA/Language/%LANGUAGE%/worldmap.tra~ ~override~
+ COUNT_2DA_ROWS 3 P5WMU_string_entries
+ READ_2DA_ENTRIES_NOW ~P5WMU_#_translations~ 3
+
+// Worldmap
+COPY_EXISTING ~WORLDMAP.WMP~ ~override~
+ READ_LONG  0x0c              		P5WMU_map_offset
+ READ_LONG (P5WMU_map_offset+0x20)  P5WMU_entries_num
+ READ_LONG (P5WMU_map_offset+0x24)  P5WMU_entries_offset
+ READ_LONG (P5WMU_map_offset+0x28)  P5WMU_links_offset
+ READ_LONG (P5WMU_map_offset+0x2c)  P5WMU_links_num
+//*****************************************************************************
+// adding new areas
+//*****************************************************************************
+ FOR( P5WMU_cnt=1; P5WMU_cnt<P5WMU_new_areas_num; P5WMU_cnt=P5WMU_cnt+1 ) BEGIN
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 0 "P5WMU_short_name"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 1 "P5WMU_content"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 2 "P5WMU_long_name"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 3 "P5WMU_flags"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 4 "P5WMU_bam_anim"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 5 "P5WMU_x_pos"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 6 "P5WMU_y_pos"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 7 "P5WMU_name"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 8 "P5WMU_tooltip"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_areas~ P5WMU_cnt 9 "P5WMU_load_im"
+
+  PATCH_IF !("%P5WMU_short_name%" STRING_EQUAL_CASE "SHORT_NAME") BEGIN //to skip header lines
+
+   PATCH_IF "%P5WMU_name%"    STRING_EQUAL_CASE "N"  BEGIN SPRINT P5WMU_name_2 "N" END
+   PATCH_IF "%P5WMU_tooltip%" STRING_EQUAL_CASE "N"  BEGIN SPRINT P5WMU_tip_2  "N" END
+
+   //*****************************************************************
+   //2. we need to read the area name from a tra file - because SAY_EVALUATED
+   //   could not use a @string inside a variable
+   //*****************************************************************
+   FOR (P5WMU_str=0; P5WMU_str<P5WMU_string_entries; P5WMU_str=P5WMU_str+1) BEGIN
+       READ_2DA_ENTRY_FORMER ~P5WMU_#_translations~ P5WMU_str 0 "P5WMU_string_number"
+       PATCH_IF "%P5WMU_name%" STRING_EQUAL_CASE "%P5WMU_string_number%" BEGIN
+          READ_2DA_ENTRY_FORMER ~P5WMU_#_translations~ P5WMU_str 2 "P5WMU_name_2"
+       END
+       PATCH_IF "%P5WMU_tooltip%" STRING_EQUAL_CASE "%P5WMU_string_number%" BEGIN
+          READ_2DA_ENTRY_FORMER ~P5WMU_#_translations~ P5WMU_str 2 "P5WMU_tip_2"
+       END
+   END
+
+   INNER_PATCH_SAVE P5WMU_name_3 "%P5WMU_name_2%" BEGIN REPLACE_TEXTUALLY ~###~ ~ ~  REPLACE_TEXTUALLY ~"~ ~~ END
+   INNER_PATCH_SAVE P5WMU_tip_3  "%P5WMU_tip_2%"  BEGIN REPLACE_TEXTUALLY ~###~ ~ ~  REPLACE_TEXTUALLY ~"~ ~~ END
+
+   PATCH_IF "%P5WMU_load_im%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_load_im "" END
+
+     SET P5WMU_new_entry_offset = P5WMU_entries_offset + P5WMU_entries_num*0xf0
+
+     INSERT_BYTES          P5WMU_new_entry_offset         0xf0
+     WRITE_EVALUATED_ASCII (P5WMU_new_entry_offset+0)     "%P5WMU_short_name%" #8
+     WRITE_EVALUATED_ASCII (P5WMU_new_entry_offset+0x08)  "%P5WMU_content%"    #8
+     WRITE_EVALUATED_ASCII (P5WMU_new_entry_offset+0x10)  "%P5WMU_long_name%"  #32
+     WRITE_LONG            (P5WMU_new_entry_offset+0x30)  "%P5WMU_flags%"
+     WRITE_LONG            (P5WMU_new_entry_offset+0x34)  "%P5WMU_bam_anim%"
+     WRITE_LONG            (P5WMU_new_entry_offset+0x38)  "%P5WMU_x_pos%"
+     WRITE_LONG            (P5WMU_new_entry_offset+0x3c)  "%P5WMU_y_pos%"
+     PATCH_IF "%P5WMU_name_3%"  STRING_EQUAL_CASE "N" BEGIN
+       WRITE_LONG  (P5WMU_new_entry_offset+0x40)  0xffffffff
+     END ELSE BEGIN
+       SAY_EVALUATED       (P5WMU_new_entry_offset+0x40)  "%P5WMU_name_3%"
+     END
+     PATCH_IF "%P5WMU_tip_3%"  STRING_EQUAL_CASE "N" BEGIN
+       WRITE_LONG  (P5WMU_new_entry_offset+0x44)  0xffffffff
+     END ELSE BEGIN
+       SAY_EVALUATED       (P5WMU_new_entry_offset+0x44)  "%P5WMU_tip_3%"
+     END
+     WRITE_EVALUATED_ASCII (P5WMU_new_entry_offset+0x48)  "%P5WMU_load_im%"    #8
+
+     SET P5WMU_entries_num = P5WMU_entries_num + 1
+     WRITE_LONG (P5WMU_map_offset+0x20)  P5WMU_entries_num
+     PATCH_IF( P5WMU_links_offset>=P5WMU_entries_offset ) THEN BEGIN
+       SET P5WMU_links_offset = P5WMU_links_offset+0xf0
+       WRITE_LONG (P5WMU_map_offset+0x28)  P5WMU_links_offset
+     END
+  END   //headers skipping
+ END    //for all new areas
+ 
+//*****************************************************************************
+// adding new links
+//*****************************************************************************
+ FOR( P5WMU_cnt=1; P5WMU_cnt<P5WMU_new_links_num; P5WMU_cnt=P5WMU_cnt+1 ) BEGIN
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 0  "P5WMU_src_area"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 1  "P5WMU_src_nwse"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 2  "P5WMU_target_are"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 3  "P5WMU_entry_name"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 4  "P5WMU_trv_time"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 5  "P5WMU_def_entry"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 6  "P5WMU_enc1"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 7  "P5WMU_enc2"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 8  "P5WMU_enc3"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 9  "P5WMU_enc4"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 10 "P5WMU_enc5"
+  READ_2DA_ENTRY_FORMER ~P5WMU_#_links~ P5WMU_cnt 11 "P5WMU_enc_prob"
+
+  PATCH_IF !("%P5WMU_src_area%" STRING_EQUAL_CASE "SRC_AREA") BEGIN //to skip header lines
+
+   //*****************************************************************
+   //1. we need to find a record for the source area
+   //*****************************************************************
+   SET P5WMU_source_area_offset=0
+   SET P5WMU_source_area_index = 0xffffffff
+   SPRINT P5WMU_area_name ""
+   WHILE (NOT ("%P5WMU_area_name%" STRING_EQUAL_CASE "%P5WMU_src_area%") AND (P5WMU_source_area_index<P5WMU_entries_offset)) BEGIN
+     SET P5WMU_source_area_index = P5WMU_source_area_index + 1
+     READ_ASCII (P5WMU_entries_offset + P5WMU_source_area_index*0xf0 + 0x08) P5WMU_area_name
+   END
+   PATCH_IF( P5WMU_source_area_index<P5WMU_entries_num ) BEGIN
+     SET P5WMU_source_area_offset = P5WMU_entries_offset + P5WMU_source_area_index*0xf0
+   END
+   //*****************************************************************
+   //2. we need to find a record for the destination area
+   //*****************************************************************
+   SET P5WMU_dest_area_index = 0xffffffff
+   SPRINT P5WMU_area_name ""
+   WHILE (NOT ("%P5WMU_area_name%" STRING_EQUAL_CASE "%P5WMU_target_are%") AND (P5WMU_dest_area_index<P5WMU_entries_offset)) BEGIN
+     SET P5WMU_dest_area_index = P5WMU_dest_area_index + 1
+     READ_ASCII (P5WMU_entries_offset + P5WMU_dest_area_index*0xf0 + 0x08) P5WMU_area_name
+   END
+   //*****************************************************************
+   // source_area_offset=-1 or contains offset of the source area entry
+   // dest_area_index=-1 or contains index of the destination area entry
+   //*****************************************************************
+   //*****************************************************************
+   //3. determining what direction in source area's entry we will patch
+   //*****************************************************************
+   PATCH_IF( P5WMU_source_area_offset>0 AND P5WMU_dest_area_index<P5WMU_entries_offset ) BEGIN
+     SET P5WMU_links_header_offset=0
+     PATCH_IF "%P5WMU_src_nwse%" STRING_EQUAL_CASE "N" BEGIN
+       SET P5WMU_links_header_offset = P5WMU_source_area_offset + 0x50
+     END
+     PATCH_IF "%P5WMU_src_nwse%" STRING_EQUAL_CASE "W" BEGIN
+       SET P5WMU_links_header_offset = P5WMU_source_area_offset + 0x58
+     END
+     PATCH_IF "%P5WMU_src_nwse%" STRING_EQUAL_CASE "S" BEGIN
+       SET P5WMU_links_header_offset = P5WMU_source_area_offset + 0x60
+     END
+     PATCH_IF "%P5WMU_src_nwse%" STRING_EQUAL_CASE "E" BEGIN
+       SET P5WMU_links_header_offset = P5WMU_source_area_offset + 0x68
+     END
+
+     PATCH_IF( P5WMU_links_header_offset>0 ) BEGIN
+       PATCH_IF "%P5WMU_enc1%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_enc1 "" END
+       PATCH_IF "%P5WMU_enc2%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_enc2 "" END
+       PATCH_IF "%P5WMU_enc3%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_enc3 "" END
+       PATCH_IF "%P5WMU_enc4%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_enc4 "" END
+       PATCH_IF "%P5WMU_enc5%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_enc5 "" END
+       PATCH_IF "%P5WMU_entry_name%" STRING_EQUAL_CASE "N" BEGIN SPRINT P5WMU_entry_name "" END
+
+       READ_LONG (P5WMU_links_header_offset+0)  P5WMU_src_area_links_index
+       READ_LONG (P5WMU_links_header_offset+4)  P5WMU_src_area_links_cnt
+
+       PATCH_IF( P5WMU_src_area_links_index=0 ) BEGIN
+         SET P5WMU_src_area_links_index = P5WMU_links_num    //point at the very end of links list if it's a new area
+         WRITE_LONG (P5WMU_links_header_offset+0)  P5WMU_src_area_links_index
+       END
+
+       SET P5WMU_working_links_offset = P5WMU_links_offset + P5WMU_src_area_links_index*0xd8
+
+       INSERT_BYTES          P5WMU_working_links_offset         0xd8
+       WRITE_LONG            (P5WMU_working_links_offset+0)     P5WMU_dest_area_index
+       WRITE_EVALUATED_ASCII (P5WMU_working_links_offset+0x04)  "%P5WMU_entry_name%"  #32
+       WRITE_LONG            (P5WMU_working_links_offset+0x24)  P5WMU_trv_time
+       WRITE_LONG            (P5WMU_working_links_offset+0x28)  P5WMU_def_entry
+       WRITE_EVALUATED_ASCII (P5WMU_working_links_offset+0x2c)  "%P5WMU_enc1%"        #8
+       WRITE_EVALUATED_ASCII (P5WMU_working_links_offset+0x34)  "%P5WMU_enc2%"        #8
+       WRITE_EVALUATED_ASCII (P5WMU_working_links_offset+0x3c)  "%P5WMU_enc3%"        #8
+       WRITE_EVALUATED_ASCII (P5WMU_working_links_offset+0x44)  "%P5WMU_enc4%"        #8
+       WRITE_EVALUATED_ASCII (P5WMU_working_links_offset+0x4c)  "%P5WMU_enc5%"        #8
+       WRITE_LONG            (P5WMU_working_links_offset+0x54)  P5WMU_enc_prob
+
+       WRITE_LONG (P5WMU_links_header_offset+4)  P5WMU_src_area_links_cnt+1    //adjusting local links counter
+       SET P5WMU_links_num = P5WMU_links_num + 1
+       WRITE_LONG (P5WMU_map_offset+0x2c)        P5WMU_links_num               //adjusting global links counter
+
+      //*****************************************************************
+      //4. we need to check all other area entries to adjust their links indexes
+      //*****************************************************************
+       FOR(P5WMU_link=0; P5WMU_link<P5WMU_entries_num; P5WMU_link=P5WMU_link+1) BEGIN
+         READ_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x50) P5WMU_idxN
+         READ_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x58) P5WMU_idxW
+         READ_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x60) P5WMU_idxS
+         READ_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x68) P5WMU_idxE
+         PATCH_IF( P5WMU_idxN>P5WMU_src_area_links_index ) BEGIN
+           WRITE_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x50) P5WMU_idxN+1
+         END
+         PATCH_IF( P5WMU_idxW>P5WMU_src_area_links_index ) BEGIN
+           WRITE_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x58) P5WMU_idxW+1
+         END
+         PATCH_IF( P5WMU_idxS>P5WMU_src_area_links_index ) BEGIN
+           WRITE_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x60) P5WMU_idxS+1
+         END
+         PATCH_IF( P5WMU_idxE>P5WMU_src_area_links_index ) BEGIN
+           WRITE_LONG (P5WMU_entries_offset + P5WMU_link*0xf0 + 0x68) P5WMU_idxE+1
+         END
+       END
+     END
+   END
+  END   //headers skipping
+ END    //for all new links
+BUT_ONLY_IF_IT_CHANGES
+
+END // MACRO

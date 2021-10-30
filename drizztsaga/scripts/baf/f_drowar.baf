@@ -1,0 +1,17 @@
+IF
+	InParty("F_ARTEMIS")
+	!Allegiance(Myself,ALLY)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,ALLY)
+END
+
+IF
+	InParty("F_JARLAXE")
+	!Allegiance(Myself,ALLY)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly(Myself,ALLY)
+END
+
+

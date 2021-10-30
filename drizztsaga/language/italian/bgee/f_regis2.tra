@@ -1,0 +1,12 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #REGIS2 translation file
+@1   = ~Drizzt! Ho Saputo che sei passato da una parte all'altra dei piani esterni.~
+@2   = ~Si, ma ho cercato di arrivare alla Valle del Vento Gelido il più presto possibile.~
+@3   = ~Come avrei fatto io, immagino, e come avrebbe fatto Elminster naturalmente. Possiamo chiacchierare tutto il giorno ma ho delle cose urgenti da fare. Né Bruenor e né Catti-Brie sono stati trovati e il sole ha un insolito sguardo penetrante oggi. Dovremmo esaminare la cassa di Bruenor per vedere se forse c'é qualche indizio per trovarli.~
+@4   = ~D'accordo.~
+@5   = ~Temo che devo fare delle cose più importanti e devo andare via.~
+@6   = ~Salve di nuovo. Non vedo più Drizzt al tuo fianco. Mi auguro che stia arrivando qui. Dobbiamo fare in fretta, poiché Bruenor e Catti-Brie non si riescono a trovare. Dovremmo esaminare la cassa di Bruenor per sapere qualcosa e avere qualche indizio.~
+@7   = ~Ho altre cose più importanti da fare e devo andare via.~

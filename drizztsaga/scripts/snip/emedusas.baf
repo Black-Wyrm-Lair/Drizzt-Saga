@@ -1,0 +1,12 @@
+IF
+  Global("F_SpawnMedusas","MYAREA",0)
+THEN
+  RESPONSE #100
+    CreateCreature("F_MEDUSA",[3428.511],0)
+    CreateCreature("F_MEDUSA",[3458.525],0)
+    CreateCreature("F_MEDUSA",[3438.602],0)
+    CreateCreature("F_MEDUSA",[2128.581],0)
+    CreateCreature("F_MEDUSA",[2009.890],0)
+    CreateCreature("F_MEDUSA",[2440.456],0)
+  	SetGlobal("F_SpawnMedusas","MYAREA",1)
+END

@@ -1,0 +1,17 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #DIPNOSE translation file
+@1 = ~Les temps se font de plus en plus étranges et me voilà coincé dans cette auberge pendant que ces abominables hommes des neiges mettent la pagaille dehors.~
+@2 = ~Et si je puis me permette, qui êtes-vous ?~
+@3 = ~Vous pouvez m'appeler Dipnose, et on dirait bien que cette fois, j'ai fourré mon nez là où il ne fallait pas. Je pensais avoir un bon plan pour m'échapper d'ici, grâce à ce parchmin de Marchevent~
+@4 = ~Un parchemin de Marchevent ?~
+@5 = ~Oui, le parchemin de Marchevent est une sorte de parchemin de téléportation à la différence que celui-ci a déjà une destination écrite dessus.~
+@6 = ~Alors qu'est-ce qui vous empêche de l'utiliser ?~
+@7 = ~Tout simplement parce que la destination inscrite dessus est les Monts des Tempêtes de la Marche. Je n'échangerai pas ma situation actuelle contre cette destination, mais vous ressemblez à un aventurier qui pourrait être intéressé par un pareil endroit. Je pourrais vous téléporter là-bas grâce à ce parchemein pour la modique somme de 100 piéces d'or.~
+@8 = ~Pourquoi ne pas me vendre ce parchemin, tout simplement ?~
+@9 = ~Il est lié à celui qui le trouve et ne peut être lancé par personne d'autre~
+@10 = ~Très bien, lancez votre sort, mais vous répondrez de ma lame si vous tentez de me piéger.~
+@11 = ~Peut-être plus tard, quand le moment sera venu et que mes finances me le permetteront...~
+@12 = ~Oui, vous voilà de retour, aventurier, prêt pour le voyage ? Une grande aventure pour à peine 100 pièces d'or.~

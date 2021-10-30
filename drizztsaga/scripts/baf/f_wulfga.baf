@@ -1,0 +1,33 @@
+
+IF
+	NumTimesTalkedTo(0)
+	Detect([PC])	
+THEN
+	RESPONSE #100		
+		Dialogue([PC])
+END
+
+IF
+	AttackedBy([PC],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		AttackReevaluate([GOODCUTOFF],15)
+END
+
+IF
+	!InParty(Myself)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+

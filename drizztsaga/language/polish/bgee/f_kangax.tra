@@ -1,0 +1,8 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #KANGAXX translation file
+@1   = ~Żałośni magowie Netheril, myślicie, że zdołaliście uwięzić Kangaxxa! Teraz trwają pośród ciemności jako nieumarli, i skończycie tak także i wy, głupi poszukiwacze przygód.~ [%tutu_scripts%HAEL_01]
+@2   = ~Oszukałeś nas!?~
+@3   = ~Tutaj zginiecie!~ [%tutu_scripts%HAEL_03]

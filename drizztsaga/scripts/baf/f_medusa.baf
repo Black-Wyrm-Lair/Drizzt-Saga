@@ -1,0 +1,29 @@
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #100
+		SelectWeaponAbility(SLOT_WEAPON,0)
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #100
+		PlaySound("F_MED03")
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		PlaySound("F_MED03")		
+		AttackReevaluate(LastAttackerOf(Myself),30)		
+END
+
+

@@ -1,0 +1,8 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #KANGAXX translation file
+@1 = ~Pauvres magiciens de Netheril, fous d'avoir cru pouvoir emprisonner Kangaxx ! Ils errent maintenant dans les ténèbres en tant que mort vivant et telle sera également votre récompense, pitoyables aventuriers.~ [%tutu_scripts%HAEL_01]
+@2 = ~Qu'est-ce donc que ce tour stupide ?~
+@3 = ~Ce lieu sera ton tombeau !~ [%tutu_scripts%HAEL_03] /*Phrase originale de la VF.*/

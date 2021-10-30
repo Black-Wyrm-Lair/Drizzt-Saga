@@ -1,0 +1,61 @@
+IF
+	See([PC])
+	Delay(12)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ReallyForceSpell([PC],SUCCUBUS_CHARM_MALE)
+		ReallyForceSpell([PC],SUCCUBUS_CHARM_FEMALE)
+		ReallyForceSpell([PC],SUCCUBUS_ENERGY_DRAIN)
+END
+
+IF
+	CheckStat(Player1,1,CON)
+THEN
+	RESPONSE #100
+		Kill(Player1)
+END
+
+IF
+	CheckStat(Player2,1,CON)
+THEN
+	RESPONSE #100
+		Kill(Player2)
+END
+
+IF
+	CheckStat(Player3,1,CON)
+THEN
+	RESPONSE #100
+		Kill(Player3)
+END
+
+IF
+	CheckStat(Player4,1,CON)
+THEN
+	RESPONSE #100
+		Kill(Player4)
+END
+
+IF
+	CheckStat(Player5,1,CON)
+THEN
+	RESPONSE #100
+		Kill(Player5)
+END
+
+IF
+	CheckStat(Player6,1,CON)
+THEN
+	RESPONSE #100
+		Kill(Player6)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+

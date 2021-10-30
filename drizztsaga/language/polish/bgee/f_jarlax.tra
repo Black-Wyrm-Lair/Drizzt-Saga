@@ -1,0 +1,11 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #JARLAXE translation file
+@1   = ~Nasz plan działa jak marzenie. On jest po prostu za głupi... jego nie trzeba tropić. Drizzt złapał przynęte i przyszedł sam. Jego lojalność wobec przyjaciół to jego największa słabość. Dziś przywiedzie go do śmierci. Drizzt, przywitaj swego dawnego przyjaciela Errtu. Chyba się na ciebie trochę gniewa, więc pozostaje mi tylko patrzeć jak konasz! Ach, gdzieżbym mógł zapomnieć, jest tu też mój stary znajomy Artemis. Rozumiem, że macie coś do załatwienia. Tak, jemu też chce się rzygać myśląc o twojej lojalności wobec przyjaciół.~
+@2   = ~Ja, <CHARNAME>, nie jestem przyjacielem Drizzta. Po prostu przyprowadziłem go aż tutaj aby patrzeć jak ginie.~
+@3   = ~Lepiej żebyście ty i twoi słudzy potrafili poprzeć swe zuchwałe słowa czynami.~
+@4   = ~Cała kompanio Drizzta, witam was w chwili waszej śmierci i przyznaję, że z przyjemnością będę się przyglądał jak będziecie rozrywani szponami Errtu i sieczeni sztyletem Artemisa. Tak, cóż to za zabawa!~
+@5   = ~Och, jakiż ciekawy obrót wydarzeń, nieprawdaż? A więc rozpocznijmy walkę! Jednak przed tańcem, jakoże jestem w dobrym nastroju, uleczę was szystkich abyście nie mieli wątpliwości kto tu jest zwycięzcą. Och, jakaż to szkoda, że magia na ciebie nie działa Drizzcie...~
+@6   = ~Zobaczysz co zaraz zrobię... i ostatnią rzeczą jaką ujrzysz będzie mój uroczy uśmiech w chwili twojej śmierci!~

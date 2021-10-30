@@ -1,0 +1,9 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+@0    = ~*You hear a whispering voice* Aid me...bring me my skull and I shall be ever grateful and rewarded well you will be.~
+@1    = ~You found it, free at last!~
+@2    = ~You haven't brought my skull, do so and the reward is yours.~
+@3    = ~This is the sarcophagus where Kangaxx was imprisoned.~
+@4    = ~You are too far away to operate that device.~

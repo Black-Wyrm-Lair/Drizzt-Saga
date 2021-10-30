@@ -1,0 +1,44 @@
+
+//Drizzt Saga Area Links Table - BGT version
+SRC_AREA SRC_NWSE TARGET_ARE ENTRY_NAME   TRV_TIME DEF_ENTRY ENC1 ENC2 ENC3 ENC4 ENC5 ENC_PROB
+
+ARU000   E        F_7777     #WMtravel    6        1         N    N    N    N    N    0
+ARU000   E        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+ARU000   E        F_0222     #WMtravel    4        1         N    N    N    N    N    0
+ARU000   E        F_9898     #WMtravel    6 	   1         N    N    N    N    N    0
+
+AR3100   N        F_7777     #WMtravel    13       1         N    N    N    N    N    0
+AR3100   N        F_0111     #WMtravel    11       1         N    N    N    N    N    0
+AR3100   N        F_0222     #WMtravel    11       1         N    N    N    N    N    0
+AR3100   N        F_9898     #WMtravel    13       1         N    N    N    N    N    0
+
+F_0111   S        ARU000     EXIT8300     4        1		 N    N    N    N    N    0
+F_0111   S        AR3100     N            11	   1		 N    N    N    N    N    0
+F_0222   S        ARU000     EXIT8300     4        1 		 N    N    N    N    N    0
+F_0222   S        AR3100     N            11	   1         N    N    N    N    N    0
+F_7777   S        ARU000     EXIT8300     6        1         N    N    N    N    N    0
+F_7777   S        AR3100     N            13       1         N    N    N    N    N    0
+F_9898   S        ARU000     EXIT8300     6        1         N    N    N    N    N    0
+F_9898   S        AR3100     N            13       1         N    N    N    N    N    0
+
+F_0111   S        F_0222     #WMtravel    4        1         N    N    N    N    N    0
+F_0111   S        F_7777     #WMtravel    4        1         N    N    N    N    N    0
+F_0111   S        F_9898     #WMtravel    4        1         N    N    N    N    N    0
+F_0222   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_0222   S        F_7777     #WMtravel    8        1         N    N    N    N    N    0
+F_0222   S        F_9898     #WMtravel    8        1         N    N    N    N    N    0
+F_7777   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_7777   S        F_0222     #WMtravel    8        1         N    N    N    N    N    0
+F_7777   S        F_9898     #WMtravel    2        1         N    N    N    N    N    0
+F_9898   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_9898   S        F_0222     #WMtravel    8        1         N    N    N    N    N    0
+F_9898   S        F_7777     #WMtravel    2        1         N    N    N    N    N    0
+
+F_0111   S        AR8700     N            4        1         N    N    N    N    N    0
+AR7900   S        F_9898     #WMtravel    2        1         N    N    N    N    N    0
+AR6800   S        F_0222     #WMtravel    10       1         N    N    N    N    N    0
+AR6800   S        F_0111     #WMtravel    6        1         N    N    N    N    N    0
+AR8700   S        F_0111     #WMtravel    4        1         N    N    N    N    N    0
+F_9898   E        AR7900     EXIT7500     2        1         N    N    N    N    N    0
+F_0111   S        AR6800     EXIT8300     6        1         N    N    N    N    N    0
+F_0222   S        AR6800     EXIT8300     10       1         N    N    N    N    N    0

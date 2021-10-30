@@ -1,0 +1,34 @@
+
+/* Components:  */
+
+@0    = ~The Drizzt Saga for BGEE/Tutu/BGT~
+@1502 = ~Default version: areas connected by travel triggers~
+@489  = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~
+@1507 = ~Raise the XP cap~
+@1508 = ~Delayed start: Drizzt joins after Durlag's Tower~
+
+/* Setup feedback:  */
+
+@353 = ~Tutu detected, proceeding with installation...~
+@354 = ~BGT detected, proceeding with installation...~
+@356 = ~Supported platforms: BGEE, BGT, Tutu. TotSC and ToB expansions are required for BGT/Tutu.~
+@357 = ~Patching rulesets...~
+@358 = ~Installing creature animations...~
+@359 = ~Updating worldmap...~
+@360 = ~Copying creature files...~
+@361 = ~Copying sound files...~
+@362 = ~Copying area files...~
+@363 = ~Copying item files...~
+@364 = ~Copying area data files...~
+@369 = ~Compiling scripts and dialogs...~
+@370 = ~Copying miscellaneous files...~
+@488 = ~Patching BALDUR.GAM...~
+@1500 = ~BGEE detected, proceeding with installation...~
+@1503 = ~You must install the Drizzt Saga core component first!~
+@1504 = ~Unpacking area tilesets...~
+@1505 = ~Biffing area data...~
+@1506 = ~This component is not needed for BGT.~
+
+/* Everything else from this file was moved to MAIN.TRA as of v3 */
+
+

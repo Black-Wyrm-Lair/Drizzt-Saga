@@ -1,0 +1,11 @@
+// Drizzt Saga WM tra strings
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+@DSW_786001 = "Capanna###di###Bruenor"
+@DSW_786002 = "Montagna###della###Morte"
+@DSW_786003 = "Villaggio###della###Tribù###dell’###Orso"
+@DSW_786004 = "Montagne###del###Cammino###Tempestoso"
+@DSW_786005 = "Grotte###del###Drago"
+@DSW_786006 = "Colline###del###Gigante###di###Ghiaccio"
+@DSW_786007 = "Rituale###del###Lupo###d’###Inverno"
+@DSW_786008 = "Grotte###Drow"

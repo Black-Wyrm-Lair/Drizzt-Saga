@@ -1,0 +1,14 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #STONEGL translation file
+@1   = ~Io non posso essere, visto o toccato;
+eppure posso essere trovato in chiunque;
+anche se in un’esistenza incerta.~ [TANAR01]
+@2   = ~Futuro.~
+@3   = ~Anima.~
+@4   = ~Aria.~
+@5   = ~Non sei riuscito a capire! Dovrai rispondere ancora!~ [TANAR01]
+@6   = ~Hai imparato un pò. Puoi ancora restare in vita.~
+@7   = ~ ~

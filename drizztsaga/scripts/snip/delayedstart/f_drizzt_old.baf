@@ -1,0 +1,19 @@
+IF
+	Global("F_DealtWithGnolls","LOCALS",0)
+	GlobalGT("DrizztGnolls","GLOBAL",11)
+THEN
+	RESPONSE #100
+		SetGlobal("F_DealtWithGnolls","LOCALS",1)
+END
+
+IF
+	Global("F_DealtWithGnolls","LOCALS",0)
+	GlobalGT("F_DrizztVanillaStuffDisposed","LOCALS",0)
+	See([0.0.GNOLL])
+	!Allegiance(Myself,ENEMY)
+	Range([PC],35)
+	//!NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END

@@ -1,0 +1,112 @@
+
+// After joining, dispose of vanilla Drizzt's scimitars, leaving only our non-animated versions
+IF
+  Global("F_DrizztVanillaStuffDisposed","LOCALS",0)
+  InParty(Myself)
+  OR(3)
+  	HasItem("SW1H15",Myself)
+  	HasItem("SW1H16",Myself)
+  	HasItem("F_DRIWP3",Myself)
+THEN
+  RESPONSE #100
+  	SetInterrupt(FALSE)
+  	DestroyItem("SW1H15")
+  	DestroyItem("SW1H16")
+  	DestroyItem("F_DRIWP3")
+  	ApplySpellRES("F_DRIWP",Myself)
+  	SetInterrupt(TRUE)
+  	EquipMostDamagingMelee()
+  	SetGlobal("F_DrizztVanillaStuffDisposed","LOCALS",1)
+END
+
+// Switch undroppable offhand weapon with droppable version after joining the party (bgee only)
+IF
+  Global("F_DrizztVanillaStuffDisposed","LOCALS",1)
+  InParty(Myself)  
+  HasItem("F_DRIWP2",Myself)
+THEN
+  RESPONSE #100  	
+  	TransformItem("F_DRIWP2","F_DRIWP4")
+  	SetGlobal("F_DrizztVanillaStuffDisposed","LOCALS",2)
+END
+
+// to prevent immersion-breaking multiple instances of Drizzt's scimitars (if pickpocketed drizzt before he joins)
+IF
+  Delay(10)
+  GlobalLT("F_DrizztVanillaStuffDisposed","LOCALS",3)
+  InParty(Myself)
+  OR(2)
+  	PartyHasItem("SW1H15")
+  	PartyHasItem("SW1H16")  
+THEN
+  RESPONSE #100
+  	TakePartyItem("SW1H15")
+  	TakePartyItem("SW1H16")
+  	DestroyItem("SW1H15")
+  	DestroyItem("SW1H16")
+  	SetGlobal("F_DrizztVanillaStuffDisposed","LOCALS",3)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+	AreaCheck("%FishermansLake%")
+THEN
+	RESPONSE #100
+		SetGlobal("DrizztFight","GLOBAL",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+	!AreaCheck("%FishermansLake%")
+THEN
+	RESPONSE #100
+		SetGlobal("DrizztFight","GLOBAL",1)
+		Dialogue([PC])
+END
+
+IF
+	AttackedBy([PC],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		AttackReevaluate([GOODCUTOFF],15)
+END
+
+IF
+	Global("F_DealtWithGnolls","LOCALS",0)
+	GlobalGT("DrizztGnolls","GLOBAL",11)
+THEN
+	RESPONSE #100
+		SetGlobal("F_DealtWithGnolls","LOCALS",1)
+END
+
+IF
+	Global("F_DealtWithGnolls","LOCALS",0)
+	GlobalGT("F_DrizztVanillaStuffDisposed","LOCALS",0)
+	See([0.0.GNOLL])
+	!Allegiance(Myself,ENEMY)
+	Range([PC],35)
+	//!NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	!InParty(Myself)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

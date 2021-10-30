@@ -1,0 +1,68 @@
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(6,1)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),POWERWORD_KILL)
+		PlaySound("SIRIN05")
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	RandomNum(6,2)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SecondNearestEnemyOf(Myself),POWERWORD_KILL)
+		PlaySound("SIRIN05")
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	RandomNum(6,3)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(ThirdNearestEnemyOf(Myself),POWERWORD_KILL)
+		PlaySound("SIRIN05")
+END
+
+IF
+	See(FourthNearestEnemyOf(Myself))
+	RandomNum(6,4)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FourthNearestEnemyOf(Myself),POWERWORD_KILL)
+		PlaySound("SIRIN05")
+END
+
+IF
+	See(FifthNearestEnemyOf(Myself))
+	RandomNum(6,5)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(FifthNearestEnemyOf(Myself),POWERWORD_KILL)
+		PlaySound("SIRIN05")
+END
+
+IF
+	See(SixthNearestEnemyOf(Myself))
+	RandomNum(6,6)
+	Delay(3)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(SixthNearestEnemyOf(Myself),POWERWORD_KILL)
+		PlaySound("SIRIN05")
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+

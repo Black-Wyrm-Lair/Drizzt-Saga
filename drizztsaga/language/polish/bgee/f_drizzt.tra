@@ -1,0 +1,13 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// F_DRIZZT translation file
+// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
+@10  = ~Ahah <CHARNAME>! Znów się spotykamy. Muszę wkrótce odejść do Doliny Lodowego Wichru. Chciałbym dołączyć do mnie w tej niebezpiecznej podróży.~
+@11  = ~Drizzt, przyjacielu, byłbym szczęśliwy, aby przyłączyć się do ciebie, ale najpierw muszę znaleźć odpowiednią siedzibę dla moich obecnych towarzyszy podróży. Spotkaj się ze mną w gospodzie w Beard Ulgoth za trzy dni czasu, a ja chętnie pójdę z tobą.~
+@13  = ~Bardzo dobrze, będę tam zobaczymy.~
+@15  = ~Dobrze spełnione. Czy jesteś przygotowany, a następnie?~
+@16  = ~Jestem tak jak ja jestem gotowy prawdopodobnie nigdy nie będzie. Chodźmy, dobrze?~
+@17  = ~Chodźmy!~
+@19  = ~Jeszcze nie, mam jeszcze trochę przygotowań do zrobienia.~

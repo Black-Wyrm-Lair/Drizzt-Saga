@@ -1,0 +1,7 @@
+// Drizzt Saga WM tra strings
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+@DSW_786001 = "Дом###Бренора"
+@DSW_786002 = "Горы###Мертвых"
+@DSW_786003 = "Стойбище###Клана###Медведя"
+@DSW_786004 = "Близ###Штормовых###Гор"

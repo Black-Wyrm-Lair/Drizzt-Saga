@@ -1,0 +1,24 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #DWSMITH translation file
+@1   = ~Per il martello di Moradin, ho bisogno di una birra forte nanica! E' passato molto tempo da quando ho visto anima viva in questa maledetta miniera.~
+@2   = ~Salve, come mai abitate ancora questa montagna, visto che sembra ci sia la presenza di Non Morti?~
+@3   = ~Perché questa miniera offre un minerale eccellente, naturalmente. I Non Morti non sembrano interessarsi a me, e se inizieranno li accoglierò con il mio martello, schiacciando i loro teschi marci!~
+@4   = ~Credo che siano parole sincere. Posso, in ogni caso, portarti qualcosa da forgiare e trasformare in un oggetto?~
+@5   = ~Beh, mostrami quello che trasporti.~
+@6   = ~Ecco, dai un'occhiata a questo teschio di drago.~
+@7   = ~Ecco dai un'occhiata a questa pelle di lupo bianco.~
+@8   = ~Ho la Tagliatrice di Ghiaccio e una Pergamena Runica Invernale.~
+@9   = ~Per il momento credo di non avere nulla di speciale da mostrarti.~
+@10  = ~Per il martello di Moradin! Come fai ad avere tra le mani un oggetto così raro? Posso forgiarti una corazza, con le scaglie, se lo desideri. Tutto per un prezzo di 5000 monete d'oro.~
+@11  = ~Bene, puoi procedere.~
+@12  = ~Le mie tasche non me lo permettono, per adesso.~
+@13  = ~Si, potrei incantartela, così non potrai più temere molto il freddo, infatti, incantandotela, ogni magia che riguarda il freddo potrebbe scivolare e lasciarti illeso. Tutto per un prezzo di 3000 monete d'oro.~
+@15  = ~Con una velocità davvero magica ecco un'eccellente armatura.~
+@16  = ~Torna quando le tue tasche si saranno riampite allora.~
+@17  = ~Con una velocità davvero magica ecco un'eccellente oggetto.~
+@18  = ~Sei tornado e sei sano e salvo, cosa desideri?~
+@19  = ~Forse ho qualcosa che con cui puoi forgiare un oggetto, dai un'occhiata.~
+@20  = ~Per il martello di Moradin, la vecchia ricetta di Frostbeard. Potrei forgiarti quest'arma in una più devastante, fatta di eccellente acciaio mai visto in questi reami. La fucina di un nano è di alti livelli. Ti costerà 10000 monete d'oro.~

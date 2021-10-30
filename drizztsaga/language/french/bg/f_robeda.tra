@@ -1,0 +1,10 @@
+// F_ROBEDA
+@1 = ~Je vois que tu as pris tes aises. Je pensais bien que tu te sentirais à ta place ici, <CHARNAME>.~ [F_IREN35]
+@2 = ~Vous ! C'est vous qui m'avez téléporté ici en premier lieu ! J'aurais du voir clair dans votre supercherie. Montrez-vous, qui se cache derrière cette capuche ?~
+@3 = ~Mon identité n'a que peu d'importance, c'est de savoir qui tu es qui compte <CHARNAME>.~
+@4 = ~Arrêtez avec vos devinettes !~
+@5 = ~Tu dois le sentir, cet héritage qui coule dans tes veines. Et dorénavant, à mon entière disposition...~
+@6 = ~Ce n'est pas avec vos menaces creuses que vous allez m'atteindre !~
+@7 = ~J'ai bien peur d'avoir un avantage sur toi dès le départ. J'ai planifié ton arrivée depuis le début, il ne pouvait en être autrement.~ [F_IREN40]
+@8 = ~Je réduirai en poussière tous les plans que vous avez en tête.~
+@9 = ~Je te dis adieu, enfant de Bhaal, nous ne nous verrons plus.~ [F_IREN52]

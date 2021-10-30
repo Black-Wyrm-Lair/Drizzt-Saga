@@ -1,0 +1,17 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #DIPNOSE translation file
+@1   = ~Malos tiempos caen sobre nosotros ya que estoy atascado en esta Posada mientras esos piésgrandes rondan por fuera enfurecidos.~
+@2   = ~¿Y me pregunto quién sois vos?~
+@3   = ~Me podéis llamar Dipnose y con toda certeza seguro que esta vez he metido mis narices en el lugar equivocado. Aunque tengo un plan de huida de este lugar con este conjuro de caminante del viento.~
+@4   = ~¿Un conjuro de caminante del viento?~
+@5   = ~Así es, un conjuro del caminante del viento es un tipo de conjuro de teletransportación que ya tiene un destino inscrito en él.~
+@6   = ~Y entonces, ¿qué es lo que impide que lo uséis?~
+@7   = ~Es a causa de su destino, son las Montañas del Paso de la Tormenta. No vendo este conjuro debido a su destino, pero vos parecéis un aventurero que podría estar interesado. Os puedo teletransportar allí con el conjuro a cambio de la suma de 100 monedas de oro.~
+@8   = ~¿Porqué no me vendéis el pergamino y ya está?~
+@9   = ~Está ligado al que lo encuentra y no puede ser lanzado por nadie más.~
+@10  = ~Muy bien, lanzad el conjuro, pero mi espada responderá a cualquier truco sucio.~
+@11  = ~Quizás después, cuando sea el momento adecuado y mis bolsillos me lo permitan..~
+@12  = ~Ey, así que habéis regresado, aventurero, ¿preparado para el viaje? ¡100 monedas de oro por una gran aventura!~ ~Ey, así que habéis regresado, aventurera, ¿preparada para el viaje? ¡100 monedas de oro por una gran aventura!~

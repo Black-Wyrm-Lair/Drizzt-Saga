@@ -1,0 +1,17 @@
+// This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
+
+// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
+
+// #ROBED translation file
+@1   = ~Hmm? Oh é un onore andare all'avventura con il gruppo niente di meno che con Drizzt. Nessuno può confonderti con un altro gruppo.~
+@2   = ~E tu chi saresti?~
+@3   = ~Niente di più e niente di meno che un girovago, sebbene in questo momento con evidenti preoccupazioni per la testa...~
+@4   = ~E perché?~
+@5   = ~Le creature oscure sono uscite dalle loro vecchie tombe, l'artefatto é dentro la loro tomba oscura. Sono tempi di guai nella Valle....tempi difficili. Abbiamo avuto la luce ogni momento del giorno ed ora sembra stia accadendo il contrario, loro si sono risvegliati. L'artefatto, questa statua che proviene dallo stesso Abisso, li ha risvegliati e gli ordina di vagare in superficie con lo scopo di trascinarci all'interno delle loro camere oscure. Il solo modo di fermare tutto questo é rimuovere l'artefatto dalla fossa oscura all'interno della Montagna della Morte.~
+@6   = ~O sei un ottimo narratore di cose fantasiose o forse difetti di buonsenso. Ma se c'è una parte di verità in quello che hai detto allora mi piacerebbe sapere come fai a sapere tutto questo.~
+@7   = ~Io dico solo parole vere, posso teletrasportarti in un luogo fuori dalla montagna all'interno della quale si nascondono questa malvagità.~
+@8   = ~Va bene, ma tieni presente che sono preparato ad affrontare qualsiasi trappola in cui mi potresti trascinare.~
+@9   = ~Non ti credo, in questo momento altri compiti importanti mi chiamano.~
+@10  = ~Mm? Vedo un gruppo di avventurieri.~
+@11  = ~Vero o no, l'incantesimo é stato già lanciato e il viaggio sta per iniziare.~
+@12  = ~Cosa!?~
