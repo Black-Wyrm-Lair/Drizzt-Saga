@@ -1,8 +1,8 @@
 IF
-  Global("F_CreatValen","AR0123",0)
+  Global("F_CreatValen","MYAREA",0)
 THEN
   RESPONSE #100
     CreateCreature("F_VALEN",[4600.2044],0)
-    SetGlobal("F_CreatValen","AR0123",1)
+    SetGlobal("F_CreatValen","MYAREA",1)
     Continue()
 END

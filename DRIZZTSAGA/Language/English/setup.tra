@@ -1,4 +1,4 @@
-@0    = ~The Drizzt Saga for BG1 v1.0~
+@0    = ~The Drizzt Saga for Tutu/BGT (modified for post Durlag Tower launch)~
 @1    = ~Nib's Store~
 @2    = ~Artemis Entreri~
 @3    = ~[MALE THREAT 9]  Fear my wrath for it is great indeed.~ [GENMT09]
@@ -1270,7 +1270,7 @@ Not Usable By:
 @486 = ~Gulp!~
 @487 = ~Please don't close this window until area graphics decompression is finished.~
 @488 = ~Patching BALDUR.GAM...~
-@489 = ~Install Worldmap v6 Support~
+@489 = ~Install Worldmap v7 Support~
 @490 = ~This component must be installed immediately after Drizzt Saga core component.~
 @500 = ~TotSC expansion is required to install this mod.~
 

@@ -1,4 +1,11 @@
 IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+IF
 	See(NearestEnemyOf(Myself))
 	RandomNum(6,1)
 	Delay(3)
@@ -51,12 +58,3 @@ THEN
 	RESPONSE #100
 		ReallyForceSpell(SixthNearestEnemyOf(Myself),WIZARD_FIREBALL)
 END
-
-IF
-	Die()
-THEN
-	RESPONSE #100
-		ClearAllActions()
-END
-
-

@@ -1,0 +1,9 @@
+IF
+	OnCreation()
+	Global("MeetDrizztInBeard","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreature("F_DRIZZT",[710.160],0) // Drizzt
+		SetGlobal("F_CreatDRIZZT1","GLOBAL",2)
+		Continue()
+END

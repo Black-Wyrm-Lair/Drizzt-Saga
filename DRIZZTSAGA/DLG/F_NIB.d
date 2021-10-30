@@ -18,11 +18,11 @@ END
 IF ~~ THEN BEGIN 3 // from: 2.0
   SAY @7
   IF ~~ THEN REPLY @8 DO ~StartStore("F_NIBSHP",LastTalkedToBy())
-SetGlobal("F_nibstore","GLOBAL",1)~ EXIT
-  IF ~~ THEN REPLY @9 DO ~SetGlobal("F_nibstore","GLOBAL",1)~ EXIT
+SetGlobal("F_nibstore","LOCALS",1)~ EXIT
+  IF ~~ THEN REPLY @9 DO ~SetGlobal("F_nibstore","LOCALS",1)~ EXIT
 END
 
-IF ~Global("F_nibstore","GLOBAL",1)~ THEN BEGIN 4 // from:
+IF ~Global("F_nibstore","LOCALS",1)~ THEN BEGIN 4 // from:
   SAY @10
   IF ~~ THEN REPLY @8 DO ~StartStore("F_NIBSHP",LastTalkedToBy())~ EXIT
   IF ~~ THEN REPLY @9 EXIT

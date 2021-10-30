@@ -1,4 +1,11 @@
 IF
+	Die()
+THEN
+	RESPONSE #100
+		ClearAllActions()
+END
+
+IF
 	See([PC])
 	NumTimesTalkedTo(0)
 THEN
@@ -8,14 +15,14 @@ END
 
 IF
 	See([PC])
-	Global("F_Lichshield","GLOBAL",0)
+	Global("Lichshield","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
 		ReallyForceSpell(Myself,WIZARD_BLUR)
 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
 		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
-		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
 		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
 		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
 		ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
@@ -29,11 +36,11 @@ THEN
 		ReallyForceSpell(Myself,SUMMON_SKELETON_WARRIOR2)
 		ReallyForceSpell(Myself,SUMMON_SKELETON_WARRIOR3)
 		ReallyForceSpell(Myself,SUMMON_SKELETON_WARRIOR3)
-		SetGlobal("F_Lichshield","GLOBAL",1)
+		SetGlobal("Lichshield","LOCALS",1)
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",1)
+	Global("Lichshield","LOCALS",1)
 	See([PC])
 THEN
 	RESPONSE #100
@@ -44,21 +51,21 @@ THEN
 		ReallyForceSpell(NearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
 		Wait(1)
 		AttackOneRound(NearestEnemyOf(Myself))
-		SetGlobal("F_Lichshield","GLOBAL",2)
+		SetGlobal("Lichshield","LOCALS",2)
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",2)
+	Global("Lichshield","LOCALS",2)
 	See([PC])
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC],POWERWORD_KILL)
 		ReallyForceSpell([PC],TRAP_LIGHTNING_BOLT)
-		SetGlobal("F_LichShield","GLOBAL",3)
+		SetGlobal("LichShield","LOCALS",3)
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",3)
+	Global("Lichshield","LOCALS",3)
 	See(NearestEnemyOf(Myself))
 	RandomNum(6,1)
 	Delay(3)
@@ -69,7 +76,7 @@ THEN
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",3)
+	Global("Lichshield","LOCALS",3)
 	See(SecondNearestEnemyOf(Myself))
 	RandomNum(6,2)
 	Delay(3)
@@ -80,7 +87,7 @@ THEN
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",3)
+	Global("Lichshield","LOCALS",3)
 	See(ThirdNearestEnemyOf(Myself))
 	RandomNum(6,3)
 	Delay(3)
@@ -91,7 +98,7 @@ THEN
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",3)
+	Global("Lichshield","LOCALS",3)
 	See(FourthNearestEnemyOf(Myself))
 	RandomNum(6,4)
 	Delay(3)
@@ -102,7 +109,7 @@ THEN
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",3)
+	Global("Lichshield","LOCALS",3)
 	See(FifthNearestEnemyOf(Myself))
 	RandomNum(6,5)
 	Delay(3)
@@ -113,7 +120,7 @@ THEN
 END
 
 IF
-	Global("F_Lichshield","GLOBAL",3)
+	Global("Lichshield","LOCALS",3)
 	See(SixthNearestEnemyOf(Myself))
 	RandomNum(6,6)
 	Delay(3)
@@ -122,12 +129,3 @@ THEN
 		ReallyForceSpell(SixthNearestEnemyOf(Myself),TRAP_LIGHTNING_BOLT)
 		ReallyForceSpell(SixthNearestEnemyOf(Myself),POWERWORD_KILL)
 END
-
-IF
-	Die()
-THEN
-	RESPONSE #100
-		ClearAllActions()
-END
-
-

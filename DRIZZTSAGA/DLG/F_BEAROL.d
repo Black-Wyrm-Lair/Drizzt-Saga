@@ -26,7 +26,7 @@ END
 
 IF ~~ THEN BEGIN 4 // from: 3.0
   SAY @10
-  IF ~~ THEN REPLY @11 DO ~SetGlobal("F_aidtribe","GLOBAL",1)~ UNSOLVED_JOURNAL @18 EXIT
+  IF ~~ THEN REPLY @11 DO ~SetGlobal("F_aidtribe","GLOBAL",1)~ UNSOLVED_JOURNAL @19 EXIT
 END
 
 IF WEIGHT #2 /* Triggers after states #: 6 even though they appear after this state */
@@ -41,14 +41,15 @@ IF WEIGHT #1 ~PartyHasItem("F_BEARKI")~ THEN BEGIN 6 // from:
 ReputationInc(1)
 AddexperienceParty(5000)
 GiveItemCreate("F_BEARSU",LastTalkedToBy,1,1,1)
-TakePartyItem("F_BEARKI")~ JOURNAL @15 EXIT
+TakePartyItem("F_BEARKI")
+EraseJournalEntry(@19)~ SOLVED_JOURNAL @20 EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 3.1
   SAY @16
   IF ~~ THEN DO ~ReputationInc(-2)
 GivePartyGold(2000)
-SetGlobal("F_aidtribe","GLOBAL",1)~ UNSOLVED_JOURNAL @18 EXIT
+SetGlobal("F_aidtribe","GLOBAL",1)~ UNSOLVED_JOURNAL @19 EXIT
 END
 
 IF WEIGHT #3 ~Global("F_aidtribe","GLOBAL",2)~ THEN BEGIN 8 // from:

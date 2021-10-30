@@ -1,6 +1,6 @@
 BEGIN ~F_BEARFM~
 
-IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
+IF ~Global("F_aidtribe","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY @1 
   IF ~~ THEN EXIT
 END

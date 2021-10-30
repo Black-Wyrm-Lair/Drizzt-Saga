@@ -1,0 +1,18 @@
+IF
+	OnCreation()
+	Global("DurlagFinish","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreature("F_DRIZZT",[467.3546],0) // Drizzt
+		ActionOverride("F_DRIZZT",SetNumTimesTalkedTo(1))
+		SetGlobal("F_CreatDRIZZT1","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("MeetDrizztInBeard","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("F_DRIZZT",EscapeArea())
+		Continue()
+END

@@ -9,13 +9,13 @@ END
 
 IF
 	See([PC])
-	Global("F_drowspell","GLOBAL",0)
+	Global("#drowspell","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
 		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
-		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
 		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
 		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
 		ReallyForceSpell([PC],WIZARD_GREATER_MALISON)
@@ -25,11 +25,11 @@ THEN
 		ReallyForceSpell(FourthNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
 		ReallyForceSpell(FifthNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
 		ReallyForceSpell(SixthNearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
-		SetGlobal("F_drowspell","GLOBAL",1)
+		SetGlobal("#drowspell","LOCALS",1)
 END
 
 IF
-	Global("F_drowspell","GLOBAL",1)
+	Global("#drowspell","LOCALS",1)
 	See(NearestEnemyOf(Myself))
 	RandomNum(6,1)
 	Delay(3)
@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-	Global("F_drowspell","GLOBAL",1)
+	Global("#drowspell","LOCALS",1)
 	See(SecondNearestEnemyOf(Myself))
 	RandomNum(6,2)
 	Delay(3)
@@ -49,7 +49,7 @@ THEN
 END
 
 IF
-	Global("F_drowspell","GLOBAL",1)
+	Global("#drowspell","LOCALS",1)
 	See(ThirdNearestEnemyOf(Myself))
 	RandomNum(6,3)
 	Delay(3)
@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-	Global("F_drowspell","GLOBAL",1)
+	Global("#drowspell","LOCALS",1)
 	See(FourthNearestEnemyOf(Myself))
 	RandomNum(6,4)
 	Delay(3)
@@ -69,7 +69,7 @@ THEN
 END
 
 IF
-	Global("F_drowspell","GLOBAL",1)
+	Global("#drowspell","LOCALS",1)
 	See(FifthNearestEnemyOf(Myself))
 	RandomNum(6,5)
 	Delay(3)
@@ -79,7 +79,7 @@ THEN
 END
 
 IF
-	Global("F_drowspell","GLOBAL",1)
+	Global("#drowspell","LOCALS",1)
 	See(SixthNearestEnemyOf(Myself))
 	RandomNum(6,6)
 	Delay(3)

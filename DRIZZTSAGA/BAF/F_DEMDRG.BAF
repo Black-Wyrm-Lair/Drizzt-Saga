@@ -1,6 +1,6 @@
 IF
 	See([PC])
-	Global("F_Paralyze","GLOBAL",0)
+	Global("F_Paralyze","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
@@ -8,70 +8,70 @@ THEN
 		ReallyForceSpell([PC],RED_FIREBALL)
 		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
 		ReallyForceSpell([PC],TANARI_DEATH_GAZE)
-		SetGlobal("F_Paralyze","GLOBAL",1)
+		SetGlobal("F_Paralyze","LOCALS",1)
 END
 
 IF
 	See([PC.0.0.CLERIC_MAGE])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC.0.0.CLERIC_MAGE],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF
 	See([PC.0.0.MAGE])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC.0.0.MAGE],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF
 	See([PC.0.0.MAGE_THIEF])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC.0.0.MAGE_THIEF],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF
 	See([PC.0.0.CLERIC])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC.0.0.CLERIC],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF
 	See([PC.0.0.BARD])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC.0.0.BARD],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF
 	See([PC.0.0.DRUID])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC.0.0.DRUID],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF
 	See([PC])
-	Global("F_Silence","GLOBAL",0)
+	Global("F_Silence","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC],TANARI_SILENCE)
-		SetGlobal("F_Silence","GLOBAL",1)
+		SetGlobal("F_Silence","LOCALS",1)
 END
 
 IF

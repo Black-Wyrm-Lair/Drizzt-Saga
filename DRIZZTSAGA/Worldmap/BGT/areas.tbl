@@ -1,0 +1,8 @@
+
+//Drizzt Saga new areas table
+SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
+
+F_7777      F_7777   F_7777     0      73        1400   46     @DSW_786001  @DSW_786001  N        //Bruenor's Cabin
+F_9898      F_9898   F_9898     0      65        1200   30     @DSW_786002  @DSW_786002  N        //Mountain of the Dead
+F_0111      F_0111   F_0111     4      54        1300   116    @DSW_786003  @DSW_786003  N        //Bear Tribe Village
+F_0222      F_0222   F_0222     0      68        1300   196    @DSW_786004  @DSW_786004  N        //Storm March Mountains

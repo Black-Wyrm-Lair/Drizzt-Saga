@@ -1,0 +1,11 @@
+IF
+	Global("Reveal_Frost_Fortification","MYAREA",0)
+	Global("F_aidtribe","GLOBAL",1)
+THEN
+	RESPONSE #100
+		RevealAreaOnMap("F_0112")
+		SetGlobal("Reveal_Frost_Fortification","MYAREA",1)
+		Continue()
+END
+
+

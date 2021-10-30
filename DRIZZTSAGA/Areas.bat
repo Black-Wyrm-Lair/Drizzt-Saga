@@ -37,6 +37,5 @@ weidu --make-biff DZTS-ARE
 call DRIZZTSAGA/deldir DZTS-ARE
 
 @echo.
-@echo Installation finished.
+@echo Installation Complete.
 @echo.
-pause

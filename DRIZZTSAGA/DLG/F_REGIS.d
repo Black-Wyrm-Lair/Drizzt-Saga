@@ -25,7 +25,7 @@ ActionOverride(Player4,LeaveAreaLUA("F_6666","",[228.2906],0))
 ActionOverride(Player5,LeaveAreaLUA("F_6666","",[228.2906],0))
 ActionOverride(Player6,LeaveAreaLUA("F_6666","",[228.2906],0))
 Wait(1)
-CreateCreature("F_ELMINS",[1551.902],0)
+CreateCreature("F_ELMINS",[2500.750],0)
 EscapeArea()~ JOURNAL @9 EXIT
 END
 

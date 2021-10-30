@@ -22,7 +22,7 @@ IF
 	AttackedBy([ANYONE],DEFAULT)
 THEN
 	RESPONSE #100
-		PlaySound("F_MED03")
+		PlaySound("F_MED03")		
 		AttackReevaluate(LastAttackerOf(Myself),30)		
 END
 

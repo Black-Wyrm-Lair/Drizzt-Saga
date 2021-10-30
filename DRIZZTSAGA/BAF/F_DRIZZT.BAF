@@ -1,9 +1,19 @@
 IF
-	See([PC])
+	Detect([PC])
 	NumTimesTalkedTo(0)
+	Range(LastSeenBy(Myself),25)
 THEN
 	RESPONSE #100
+		SetGlobal("DrizztFight","GLOBAL",1)
 		Dialogue([PC])
+END
+
+IF
+	!HasWeaponEquiped(Myself)
+THEN
+	RESPONSE #100
+		SelectWeaponAbility(SLOT_WEAPON,0)
+		Continue()
 END
 
 IF
@@ -12,6 +22,15 @@ IF
 THEN
 	RESPONSE #100
 		Attack([PC])
+END
+
+IF
+	See([0.0.GNOLL])
+	Global("DrizztFight","GLOBAL",1)
+	!NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		Attack([0.0.GNOLL])
 END
 
 IF
@@ -28,5 +47,3 @@ THEN
 	RESPONSE #100
 		AttackReevaluate(NearestEnemyOf(Myself),15)
 END
-
-

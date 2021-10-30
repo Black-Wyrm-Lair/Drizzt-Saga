@@ -1,6 +1,6 @@
 IF
 	See([PC])
-	Global("Paralyze","GLOBAL",0)
+	Global("Paralyze","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC],WIZARD_HOLD_PERSON)
@@ -8,5 +8,5 @@ THEN
 		ReallyForceSpell([PC],WIZARD_DISPEL_MAGIC)
 		ReallyForceSpell([PC],RED_FIREBALL)
 		ReallyForceSpell([PC],TANARI_DEATH_GAZE)
-		SetGlobal("Paralyze","GLOBAL",1)
+		SetGlobal("Paralyze","LOCALS",1)
 END

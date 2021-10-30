@@ -8,19 +8,19 @@ END
 IF ~~ THEN BEGIN 1 // from: 0.0
   SAY @3
   IF ~~ THEN REPLY @4 DO ~JoinParty()~ EXIT
-  IF ~~ THEN REPLY @5 /*DO ~ActionOverride("F_WULFGAR",LeaveParty())
+  IF ~~ THEN REPLY @5 DO /*~ActionOverride("#WULFGAR",LeaveParty())
 ActionOverride("#WULFGAR",EscapeArea())
 ActionOverride("#DRIZZT",LeaveParty())
-ActionOverride("#DRIZZT",EscapeArea())
-EscapeArea()~ */ EXIT
+ActionOverride("#DRIZZT",EscapeArea())	*/
+~EscapeArea()~ EXIT
 END
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 2 // from:
   SAY @6
   IF ~~ THEN REPLY @4 DO ~JoinParty()~ EXIT
-  IF ~~ THEN REPLY @7 /*DO ~ActionOverride("#WULFGAR",LeaveParty())
+  IF ~~ THEN REPLY @7 DO /*~ActionOverride("#WULFGAR",LeaveParty())
 ActionOverride("#WULFGAR",EscapeArea())
 ActionOverride("#DRIZZT",LeaveParty())
-ActionOverride("#DRIZZT",EscapeArea())
-EscapeArea()~ */ EXIT
+ActionOverride("#DRIZZT",EscapeArea())	*/
+~EscapeArea()~ EXIT
 END

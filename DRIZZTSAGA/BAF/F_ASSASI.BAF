@@ -1,0 +1,15 @@
+
+IF
+	!InParty(Myself)
+	See(NearestEnemyOf(Myself))
+	GlobalLT("poisoncount","LOCALS",4)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!GlobalTimerNotExpired("usepoison","LOCALS")
+THEN
+	RESPONSE #100
+		IncrementGlobal("poisoncount","LOCALS",1)
+		SetGlobalTimer("castspell","LOCALS",6)
+		SetGlobalTimer("usepoison","LOCALS",31)
+		DisplayStringHead(Myself,@1) // Poison Weapon
+		ReallyForceSpell(Myself,ASSASSIN_POISON)
+END

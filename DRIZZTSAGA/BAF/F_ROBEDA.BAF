@@ -9,14 +9,14 @@ END
 
 IF
 	See([PC])
-	Global("F_robedatk","GLOBAL",0)
+	Global("#robedatk","LOCALS",0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
 		ReallyForceSpell(Myself,WIZARD_BLUR)
 		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
 		ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
-		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD)
+		ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
 		ReallyForceSpell(Myself,WIZARD_VOCALIZE)
 		ReallyForceSpell(Myself,WIZARD_DETECT_INVISIBILITY)
 		ReallyForceSpell(Myself,WIZARD_GHOUL_TOUCH)
@@ -39,11 +39,11 @@ THEN
 		CreateCreature("F_VAMPF",[227.703],0)
 		ReallyForceSpell(Myself,SUMMON_SKELETON_WARRIOR3)
 		ReallyForceSpell(Myself,SUMMON_SKELETON_WARRIOR3)
-		SetGlobal("F_robedatk","GLOBAL",1)
+		SetGlobal("#robedatk","LOCALS",1)
 END
 
 IF
-	Global("F_robedatk","GLOBAL",1)
+	Global("#robedatk","LOCALS",1)
 	See([PC])
 THEN
 	RESPONSE #100
@@ -52,22 +52,22 @@ THEN
 		ReallyForceSpell([PC],POWERWORD_STUN)
 		ReallyForceSpell([PC],WIZARD_SLOW)
 		ReallyForceSpell([PC],GORION_MAGIC_MISSILE)
-		SetGlobal("F_robedatk","GLOBAL",2)
+		SetGlobal("#robedatk","LOCALS",2)
 END
 
 IF
-	Global("F_robedatk","GLOBAL",2)
+	Global("#robedatk","LOCALS",2)
 	See([PC])
 THEN
 	RESPONSE #100
 		CreateCreature("F_TANARI",[413.495],0)
 		ReallyForceSpell([PC],POWERWORD_KILL)
 		ReallyForceSpell([PC],WIZARD_MELF_ACID_ARROW)
-		SetGlobal("F_robedatk","GLOBAL",3)
+		SetGlobal("#robedatk","LOCALS",3)
 END
 
 IF
-	Global("F_robedatk","GLOBAL",3)
+	Global("#robedatk","LOCALS",3)
 	See([PC])
 	Delay(3)
 THEN

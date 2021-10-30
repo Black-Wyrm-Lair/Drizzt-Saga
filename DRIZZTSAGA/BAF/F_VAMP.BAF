@@ -2,7 +2,6 @@ IF
 	See([PC])
 	Delay(12)
 	Allegiance(Myself,ENEMY)
-	HPGT(Myself,0)
 THEN
 	RESPONSE #100
 		ReallyForceSpell([PC],SUCCUBUS_CHARM_MALE)

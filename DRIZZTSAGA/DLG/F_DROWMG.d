@@ -2,7 +2,7 @@ BEGIN ~F_DROWMG~
 
 IF ~InParty("F_DRIZZT")~ THEN BEGIN 0 // from:
   SAY @1
-  IF ~~ THEN DO ~CreateCreature("WF_DROWAR",[406.350],0)
+  IF ~~ THEN DO ~CreateCreature("F_DROWAR",[406.350],0)
 CreateCreature("F_DROWAR",[426.338],0)
 CreateCreature("F_DROWAR",[441.331],0)
 CreateCreature("F_DROWAR",[431.398],0)
