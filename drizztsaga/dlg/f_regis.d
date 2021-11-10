@@ -7,7 +7,7 @@ END
 
 IF ~!InParty("F_DRIZZT") NumTimesTalkedTo(0)~ THEN BEGIN 1
   SAY @3
-  IF ~~ THEN JOURNAL @4 EXIT
+  IF ~~ THEN JOURNAL @10004 EXIT
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.0
@@ -26,7 +26,7 @@ ActionOverride(Player5,LeaveAreaLUA("F_6666","",[228.2906],0))
 ActionOverride(Player6,LeaveAreaLUA("F_6666","",[228.2906],0))
 ActionOverride(Player1,LeaveAreaLUA("F_6666","",[228.2906],0))
 SetInterrupt(TRUE)
-DestroySelf()~ JOURNAL @9 EXIT
+DestroySelf()~ JOURNAL @10005 EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 2.1
