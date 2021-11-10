@@ -16,3 +16,13 @@ Drizzt is on his way back to Icewind Dale from an errand in the Sword Coast. Wha
 In the normal version of the mod, you meet Drizzt at the original area fighting some gnolls. In the same area you will encounter Regis muttering something about a dark ranger. After joining Drizzt head back to Regis and the Drizzt Saga begins.
 
 With the Delayed Start component, the story begins after finishing Durlag's Tower and gaining enough experience to be more of an equal to Drizzt and his friends (who are all high level characters). Provided you aided Drizzt in the initial gnoll encounter, he will meet you outside Durlag's Tower after finishing its main quest.
+
+### Version history
+
+<details>
+    <summary>Upcoming release...</summary>
+
+- Drizzt Saga uploaded to GitHub!
+- Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra
+
+</details>
