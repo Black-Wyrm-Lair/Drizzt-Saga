@@ -1,7 +1,4 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #BEARWA2 translation file
-@1   = ~Są już wszędzie! Nie damy rady ich powstrzymać!~
-@2   = ~Zawsze będziesz w naszej pamięci.~
+@1 = ~Są już wszędzie, nie jesteśmy w stanie ich powstrzymać!~ 
+@2 = ~Wasze uczynki na zawsze zostaną w pamięci.~

@@ -1,8 +1,6 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #KANGAXX translation file
-@1   = ~Żałośni magowie Netheril, myślicie, że zdołaliście uwięzić Kangaxxa! Teraz trwają pośród ciemności jako nieumarli, i skończycie tak także i wy, głupi poszukiwacze przygód.~ [%tutu_scripts%HAEL_01]
-@2   = ~Oszukałeś nas!?~
-@3   = ~Tutaj zginiecie!~ [%tutu_scripts%HAEL_03]
+// Changed Kangaxx to Korgax
+@1  = ~Durni magowie z Netheril myśleli, że mogą uwięzić Korgaxa! Teraz przebywają w ciemnościach jako nieumarli i taka też będzie nagroda dla wszystkich z was, żałosna grupko podróżników.~ [%tutu_scripts%HAEL_01]
+@2  = ~Co to za podła sztuczka!?~
+@3  = ~Tu umrzesz, w tym miejscu!~ [%tutu_scripts%HAEL_03]

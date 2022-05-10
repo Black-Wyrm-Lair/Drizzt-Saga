@@ -1,15 +1,12 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #ELMINST translation file
-@1   = ~Hola, Drizzcie, musze z tobą prędko pomówić...och, widzę, że wychowanek Goriona <CHARNAME> podróżuje u twego boku. ~
-@2   = ~Wygląda na to, że nasze ścieżki znów się krzyżują. Mam tylko nadzieje, że co doprowadziłoby nas na skraj napodróży którą ledwie przeżyłem.(It seems that our roads cross once again. I surely hope that you haven't come with anything leading to something along the lines of the trip I just barely survived.)~
-@3   = ~Słowa które pragnę przekazać są przeznaczone tylko dla Drizzt'a. <CHARNAME> ma swoją własną scieżkę którą musi podążyć.~
-@4   = ~<CHARNAME> sam winien zadecydować jaką drogą podąża.~
-@5   = ~No cóż, tak więc w tym miejscu nasze drogi się rozchodzą, żegnaj.~
-@6   = ~Słusznie dziecko. Drizzcie, musisz spieszyć ku Dolinom Lodowego Wichru, wprost do domu Bruenora. Nad Dolinami rozciąga się mrok. Równowaga została wyparta przez chaos, ja zaś mam w tym przypadku związane ręce. Mogę cię tylko tam przenieść.~
-@7   = ~Mówisz o mroku i chaosie, ale czy masz jakieś dokładniejsze informacje?~
-@8   = ~Mój wzrok nie sięga tak daleko, jednak wkrótce się tego dowiemy. Jednakże czasu jest już bardzo mało, więc zaczynajmy teleportacje.~
-@9   = ~Mądrością jest umieć dobrać to co najważniejsze, <CHARNAME>.~
-@10  = ~Hola, dziecko. Widzę, że Drizzt już z tobą nie wędruje. Mam jednak nadzieję, że wciąż jest wśród żywych - gdyby nie, miałbym ciężki orzech do zgryzienia. Muszę się jednak z tobą żegnać, bywaj.~
+@1  = ~Hola, Drizzcie, muszę szybko zamienić z tobą słowo... och, widzę, że <CHARNAME>, wychowanek Goriona, wędruje u twego boku.~
+@2  = ~Wygląda na to, że nasze ścieżki znowu się krzyżują. Żywię tylko nadzieję, że to z czym przyszedłeś nie zaprowadzi cię do kresu podróży, z której my ledwie uszliśmy.~
+@3  = ~Słowa, które niosę, przeznaczone są dla Drizzta. <CHARNAME> ma inną ścieżkę, którą musi podążać.~ 
+@4  = ~Sam mogę rozstrzygnąć, jaką obrać drogę.~ ~Sama mogę rozstrzygnąć, jaką obrać drogę.~
+@5  = ~Bardzo dobrze. Myślę, że z tego miejsca, każdy musi podążyć swoją drogą, żegnajcie.~
+@6  = ~Słusznie dziecko. Drizzcie musisz śpieszyć do Doliny Lodowego Wichru, do domu twego towarzysza Bruenora. Nad Doliną rozpościera się mrok. Równowagę ogarnia chaos. A ja w tej sytuacji nie mogę ingerować. Mogę tylko przeteleportować cię tuż przed jego dom.~
+@7  = ~Mówisz o ciemności i mroku, ale z czym to się wiąże?~
+@8  = ~Mój wzrok nie sięga aż tak daleko, odpowiedzi jeszcze nie znalazłem. Jednak czasu jest niewiele, więc zaczynajmy teleportację.~ 
+@9  = ~<CHARNAME>, mądrością jest trafnie wybrać te ważne sprawy, które nas wzywają.~
+@10 = ~Hola, dziecko. Widzę, że Drizzta nie ma już u twojego boku. Mam nadzieję, że jego duch wciąż unosi się pośród żywych. Jeśli nie, wtedy miałbym powód do zmartwień. Muszę cię opuścić.~

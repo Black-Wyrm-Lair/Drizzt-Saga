@@ -1,7 +1,4 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #BRUENOJ translation file
-@1   = ~Za to coś uczynił zasługujesz jeno na topór sterczący ci z tego pustego łba! Bruenor Battlehammer nie przyłoży ręki do takiego łajdactwa jakie czynisz!~
-@2   = ~Czas się żegnać, jak sądze. Pomyślnych wiatrów.~
+@1 = ~Twoje czyny zasługują na mój topór, którym to zaraz rozłupię ci czachę na pół! Nie będę tolerował twego zachowania!~ 
+@2 = ~No to czas się pożegnać, tak myślę. Pomyślnych wiatrów i tyle.~

@@ -1,4 +1,5 @@
 // #KANGAXX translation file
-@1   = ~¯a³oœni magowie Netheril, myœlicie, ¿e zdo³aliœcie uwiêziæ Kangaxxa! Teraz trwaj¹ poœród ciemnoœci jako nieumarli, i skoñczycie tak tak¿e i wy, g³upi poszukiwacze przygód.~ [%tutu_scripts%HAEL_01]
-@2   = ~Oszuka³eœ nas!?~
-@3   = ~Tutaj zginiecie!~ [%tutu_scripts%HAEL_03]
+// Changed Kangaxx to Korgax
+@1  = ~Durni magowie z Netheril myœleli, ¿e mog¹ uwiêziæ Korgaxa! Teraz przebywaj¹ w ciemnoœciach jako nieumarli i taka te¿ bêdzie nagroda dla wszystkich z was, ¿a³osna grupko podró¿ników.~ [%tutu_scripts%HAEL_01]
+@2  = ~Co to za pod³a sztuczka!?~
+@3  = ~Tu umrzesz, w tym miejscu!~ [%tutu_scripts%HAEL_03]

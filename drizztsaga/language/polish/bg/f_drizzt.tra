@@ -1,9 +1,8 @@
 // F_DRIZZT translation file
-// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
-@10  = ~Ahah <CHARNAME>! Znów siê spotykamy. Muszê wkrótce odejœæ do Doliny Lodowego Wichru. Chcia³bym do³¹czyæ do mnie w tej niebezpiecznej podró¿y.~
-@11  = ~Drizzt, przyjacielu, by³bym szczêœliwy, aby przy³¹czyæ siê do ciebie, ale najpierw muszê znaleŸæ odpowiedni¹ siedzibê dla moich obecnych towarzyszy podró¿y. Spotkaj siê ze mn¹ w gospodzie w Beard Ulgoth za trzy dni czasu, a ja chêtnie pójdê z tob¹.~
-@13  = ~Bardzo dobrze, bêdê tam zobaczymy.~
-@15  = ~Dobrze spe³nione. Czy jesteœ przygotowany, a nastêpnie?~
-@16  = ~Jestem tak jak ja jestem gotowy prawdopodobnie nigdy nie bêdzie. ChodŸmy, dobrze?~
-@17  = ~ChodŸmy!~
-@19  = ~Jeszcze nie, mam jeszcze trochê przygotowañ do zrobienia.~
+@10  = ~Ach, <CHARNAME>! Znów siê spotykamy. Wkrótce jednak bêdê musia³ udaæ siê do Doliny Lodowego Wichru. Nie móg³bym oczekiwaæ, ¿e wesprzesz mnie w tak niebezpiecznym przedsiêwziêciu.~ [DR_TDS1]
+@11  = ~Drizzt, przyjacielu, by³bym szczêœliwy, mog¹c do ciebie do³¹czyæ, jednak wpierw muszê znaleŸæ wygodne miejsce, gdzie moi obecni towarzysze mogliby siê zatrzymaæ. Spotkajmy siê za trzy dni w gospodzie w Brodzie Ulgotha, a bêdê zachwycony, mog¹c wyruszyæ z tob¹.~ ~Drizzt, przyjacielu, by³abym szczêœliwa, mog¹c do ciebie do³¹czyæ, jednak wpierw muszê znaleŸæ wygodne miejsce, gdzie moi obecni towarzysze mogliby siê zatrzymaæ. Spotkajmy siê za trzy dni w gospodzie w Brodzie Ulgotha, a bêdê zachwycona, mog¹c wyruszyæ z tob¹.~
+@13  = ~Doskonale, bêdê tam na ciebie czekaæ.~
+@15  = ~Dobrze ciê znowu widzieæ. Przygotowania ukoñczone?~ [DR_TDS2]
+@16  = ~Jestem gotowy, lepiej ju¿ nie bêdê. ChodŸmy, dobrze?~ ~Jestem gotowa, lepiej ju¿ nie bêdê. ChodŸmy, dobrze?~
+@17  = ~W drogê zatem!~
+@19  = ~Niestety, jeszcze nie. Mam jeszcze parê spraw do za³atwienia.~

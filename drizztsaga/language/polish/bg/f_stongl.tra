@@ -1,10 +1,10 @@
-// #STONEGL translation file
-@1   = ~Nie spozierasz na mnie, nie dotkniesz
-chocia¿ wype³niam wszystko, wszêdzie jestem
-i trwam w swym ¿yciu niepewnym.~ [TANAR01]
-@2   = ~Przysz³oœæ.~
-@3   = ~Dusza.~
-@4   = ~Powietrze.~
-@5   = ~Niczego nie poj¹³eœ! Odpowiesz raz jeszcze!~ [TANAR01]
-@6   = ~Nauczy³eœ siê chocia¿ trochê. Ciebie ostawiê przy ¿yciu.~
-@7   = ~ ~
+@1 = ~Nie mo¿na mnie obaczyæ, ni dotkn¹æ.
+Choæ mo¿na mnie znaleŸæ we wszystek,
+to jednak trwam w niepewnym ¿yciu.
+Kim jestem?~ [TANAR01]
+@2 = ~Przysz³oœci¹.~
+@3 = ~Dusz¹.~ 
+@4 = ~Powietrzem.~
+@5 = ~Nic nie zrozumia³eœ! Odpowiedz jeszcze raz!~ [TANAR01] ~Nic nie zrozumia³aœ! Odpowiedz jeszcze raz!~ [TANAR01] 
+@6 = ~Nieco siê nauczy³eœ. Mo¿liwe, ¿e jeszcze po¿yjesz.~ ~Nieco siê nauczy³aœ. Mo¿liwe, ¿e jeszcze po¿yjesz.~
+@7 = ~ ~

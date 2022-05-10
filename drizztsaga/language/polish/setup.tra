@@ -1,20 +1,20 @@
 
 /* Components: */
 
-@0    = ~Saga Drizzta dla BGEE/TuTu/BGT~
+@0    = ~Saga Drizzta dla BG:EE/TuTu/BGT~
 
-// added/changed in v3/BGEE update [TRANSLATIONS NEED]:
-@1502 = ~Default version: areas connected by travel triggers~
-@489  = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~	// used to be: @489 = ~Zainstaluj wsparcie dla Mapy Swiata (Worldmap) v6~
-@1507 = ~Raise the XP cap~
-@1508 = ~Delayed start: Drizzt joins after Durlag's Tower~
+// added/changed in v3/BGEE update:
+@1502 = ~Obszary polaczone poprzez krawedzie map (domyslnie)~
+@489  = ~Wszystkie obszary dodane do mapy swiata (wymaga BP-BGT Worldmap)~
+@1507 = ~Zwieksz limit doswiadczenia~
+@1508 = ~Opozniony poczatek: Drizzt dolaczy po ukonczeniu Wiezy Durlaga~
 
 /* Setup feedback:  */
 
 @353 = ~Wykryto BG1TuTu, rozpoczeto instalacje...~
 @354 = ~Wykryto BGT, rozpoczeto instalacje...~
 @355 = ~Wykryto BG1, rozpoczeto instalacje...~
-@356 = ~Mod ten przeznaczony jest dla BGT lub BG1TuTu, poza tym, wymagane sa oba dodatki (OzWM i TB).~
+@356 = ~Ten mod nalezy instalowac po BGT lub BG1Tutu, wymagane sa oba dodatki OzWM i TB.~
 @357 = ~Poprawianie zasad...~
 @358 = ~Instalacja animacji...~
 @359 = ~Aktualizacja mapy swiata z nowymi obszarami...~
@@ -26,12 +26,12 @@
 @369 = ~Kompiluje skrypty i dialogi...~
 @370 = ~Kopiuje rozne pliki...~
 @488 = ~Poprawianie BALDUR.GAM...~
-@1500 = ~Wykryto BGEE, rozpoczeto instalacje...~
+@1500 = ~Wykryto BG:EE, rozpoczeto instalacje...~
 
-// added/changed in v3/BGEE update [TRANSLATIONS NEEDED]:
-@1503 = ~You must install the Drizzt Saga core component first!~
-@1504 = ~Unpacking area tilesets...~
-@1505 = ~Biffing area data...~
-@1506 = ~This component is not needed for BGT.~
+// added/changed in v3/BGEE update:
+@1503 = ~Musisz najpierw zainstalowac skladnik glowny: Saga Drizzta.~
+@1504 = ~Rozpakowywanie obszarow...~
+@1505 = ~Kompresowanie obszarow...~
+@1506 = ~Ten skladnik nie jest wymagany w przypadku BGT.~
 
 /* Everything else from this file was moved to MAIN.TRA as of v3 */

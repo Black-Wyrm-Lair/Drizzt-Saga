@@ -1,5 +1,6 @@
-@0    = ~*S³yszysz szept wewn¹trz g³owy* Wesprzyj mnie...przynieœ mi moj¹ czaszkê a zdziwisz siê jak wdziêczny i chojny bêdê przy nagrodzie.~
-@1    = ~Znalaz³eœ j¹, w koñcu jestem wolny!!~
-@2    = ~Nie przynios³eœ jeszcze mojej czaszki. Zrób to, a nagroda ciê nie ominie.~
-@3    = ~To sarkofag gdzie uwiêziony zosta³ Kangaxx.~
-@4    = ~Jesteœ za daleko aby coœ z tym zrobiæ.~
+// Changed Kangaxx to Korgax
+@0 = ~(S³yszysz szepc¹cy g³os.) Pomó¿ mi... przynieœ mi m¹ czaszkê, a ja ci dozgonnie wdziêczny bêdê, a i wynagrodzony zostaniesz sowicie.~ ~(S³yszysz szepc¹cy g³os.) Pomó¿ mi... przynieœ mi m¹ czaszkê, a ja ci dozgonnie wdziêczny bêdê, a i wynagrodzona zostaniesz sowicie.~
+@1 = ~Odnalaz³eœ j¹, jestem w koñcu wolny!~ ~Odnalaz³aœ j¹, jestem w koñcu wolny!~
+@2 = ~Nie przynios³eœ mej czaszki, znajdŸ j¹, a nagroda ciê nie ominie.~ ~Nie przynios³aœ mej czaszki, znajdŸ j¹, a nagroda ciê nie ominie.~ 
+@3 = ~To sarkofag, w którym zosta³ uwiêziony Korgax.~
+@4 = ~Jesteœ zbyt daleko, aby tego u¿yæ.~

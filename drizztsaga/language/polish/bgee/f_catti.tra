@@ -1,9 +1,6 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #CATTI translation file
-@1   = ~Drizzcie! Chaos zaczyna zwyciężać!~
-@2   = ~Musieliśmy się przebić przez dawnych wrogów i same Dziewięć Piekieł, ale w końcu cię odnaleźliśmy, Catti-Brie. Nie można też nie wspomnieć, że Drizzt nie żyje.~
-@3   = ~Ale to jeszcze nie koniec - wessano ciemności niebios i użyto ich by otworzyć portal do Otchłani, z którego wypełznąć ma Tanar'ri znany jako Errtu. To ten, którego niegdyś Drizzt odesłał do Otchłani na setki lat. To pewnie sprawka Jarlaxa i Artemisa... Bestia została rozbudzona! Przyjaciele, szykujcie się do ostatecznej bitwy! Być może ostatniej.~
-@4   = ~Chaos zaczyna zwyciężać!~
+@1 = ~Drizzcie! Chaos zaczyna zwyciężać nad nami!~ 
+@2 = ~Catti-Brie, w końcu cię odnaleźliśmy! Musieliśmy stoczyć batalię, przedzierać się przez Dziewięć Piekieł i dawnych wrogów. Nie wspomnę też, że ten nasz cały drow, który zdaje się był zamieszany we wszystko, poległ pośród nas.~
+@3 = ~A jeszcze tego mało, mrok i ciemności z niebios wessano i użyto ich, aby otworzyć portal do Otchłani. Zamierzają sprowadzić tanar'ri, znanego jako Errtu. To ten, którego Drizzt odesłał do Otchłani na setki lat. Artemis i Jarlaxle stoją za tym wszystkim, bowiem pałają nienawiścią do Drizzta i chcą ujrzeć go, jak dołącza do martwych. Bestia przebudziła się! Przyjaciele, ostateczna walka rozpoczyna się!~ 
+@4 = ~Chaos zaczyna zwyciężać nad nami!~

@@ -1,24 +1,24 @@
-@1  = ~Ktoœ siê jednak pojawi³, wiêc naszemu pos³añcowi musia³o udaæ siê przedostaæ! Musz¹ wam sprzyjaæ bogowie lub pani fortuna, skoroœcie przetrwali furiê lodowych olbrzymów!~
-@2  = ~Pos³aniec przekaza³ mi wiadomoœæ, jednak trudno by³o coœ wywnioskowaæ z jego s³ów. Teraz ju¿ wiem, o czym mówi³.~
-@3  = ~Krew sp³ywa strumieniami tutejszymi szlakami. Niewielu nas ocala³o. Nasz wspania³y przywódca tak¿e poleg³... przysz³oœæ naszego plemienia nie jest zbyt pewna. Jedyna nadzieja w potomku zabitego przywódcy... Niestety obecnie jest ono w rêkach olbrzymów.~
-@4  = ~Co wywo³a³o tak okrutn¹ wojnê? I dlaczego olbrzymy porwa³y dziecko?~
-@5  = ~Nasz¹ ziemi¹ rz¹dzi Duch NiedŸwiedzia, nasz obroñca, oraz Duch Wilka, któremu s³u¿¹ Lodowe Olbrzymy. Kruchy pokój jaki miêdzy sob¹ zawarli w³aœnie zosta³ naruszony. Wilk zarz¹da³ absolutnej w³adzy nad lasem. Jego s³ugi - olbrzymy - porywaj¹c dziecko naszego przywódcy uwiêzi³y Ducha NiedŸwiedzia. Dzieciê ma byæ zabite w Rytuale Zimy, co doprowadzi do œmierci naszego patrona, Ducha NiedŸwiedzia. Jak widzisz, nasza przysz³oœæ zale¿y wy³¹cznie od tego dziecka...~
-@6  = ~Rozumiem.~
-@7  = ~Ostatni z poœród naszych wojowników poœwiêcaj¹ swe ¿ywota aby uratowaæ wioskê. Ja mogê jedynie zostaæ tu, by chroniæ resztê, której uda³o siê pozostaæ przy ¿yciu. Rzuci³em kilka zaklêæ ochronnych wokó³ tego domu, które nie pozwalaj¹ siê tu wedrzeæ najeŸdŸcom. Nie zdo³a³em jednak uratowaæ dziecka. Potrzeba nam teraz kogoœ... bohatera takiego jak ty.~
-@8  = ~Odnajdê ch³opca, zacznim rozpocznie siê ten straszny rytua³. Nie martw siê, nieraz stawialiœmy czo³a wiêkszym niebezpieczeñstwom.~
-@9  = ~Mogê wam pomóc... ale nie za darmo.~
-@10 = ~Niech Duch NiedŸwiedzia czuwa nad tob¹. A jeœli podczas walki odniesiesz ranny, mo¿esz liczyæ na moje zdolnoœci uzdrowiciela.~
-@11 = ~Dziêkujê.~
-@12 = ~Proszê, znajdŸ to dziecko, nim bêdzie za póŸno. Jak mówi³em ju¿ wczeœniej, mo¿esz liczyæ na to, ¿e w razie potrzeby ciê uzdrowiê.~
-@13 = ~Wróci³eœ z dzieckiem?! Dziêki wielkiemu Duchowi NiedŸwiedzia, twoje bohaterskie czyny pozostan¹ w naszych sercach na zawsze! WeŸ ten Róg Plemienia NiedŸwiedzia, mam nadziejê, ¿e pomo¿e ci w dalszych wêdrówkach.~
-@14 = ~Dziêkuje za podarunek. Bywajcie!~
-@15 = ~Znalaz³em dziecko dawnego przywódcy Plemienia NiedŸwiedzia i ostro¿nie odnios³em je do starszyzny. Byli niezwykle wdziêczni. Nagrodzono mnie Rogiem Plemienia NiedŸwiedzia.~ 
-@16 = ~Nie mam wyboru, muszê siê zgodziæ, weŸ to z³oto. Ale jeœli nas zdradzisz, Duch NiedŸwiedzia zakoñczy twój nêdzny ¿ywot. Mimo, ¿e na to nie zas³ugujesz, oferujê ci moje zdolnoœci lecznicze w ka¿dej chwili. To sprawa zbyt wielkiej wagi, byœ móg³ zawieœæ, wiêc czujê sie zobowi¹zany zrobiæ wszystko, by ci pomóc.~
-@17 = ~Jeszcze raz wszystkiego dobrego, podrózniku. Dziekujê ci za wszystko.~
-@18 = ~Zgodzi³em siê odnaleŸæ dziecko poleg³ego przywódcy Plemienia NiedŸwiedzia. Powiedziano mi, ¿e jest wiêzione przez lodowe olbrzymy, które zniszczy³y wioskê. S¹ one poddanymi Ducha Œnie¿nego Wilka, który planuje zakoñczyæ istnienie Ducha NiedŸwiedzia. Mo¿e tego dokonaæ tylko przez zamordowanie dziecka podczas Rytua³u Zimy.~
+@1  = ~Widzê przybyszów, a zatem nasz pos³aniec musia³ siê przedrzeæ. Albo tkwi w was si³a, albo szczêœcie musi wam sprzyjaæ, skoro zdo³aliœcie przetrwaæ furiê lodowych olbrzymów.~
+@2  = ~Us³ysza³em wieœci od waszego pos³añca, lecz s³owa by³y niejasne. Teraz jednak widzê na w³asne oczy, o czym mówi³.~ ~Us³ysza³am wieœci od waszego pos³añca, lecz s³owa by³y niejasne. Teraz jednak widzê na w³asne oczy, o czym mówi³.~
+@3  = ~Nasi rodacy utonêli w rzece krwi i niewielu z nas pozosta³o przy ¿yciu. Nasz wielki wódz do³¹czy³ do martwych... przysz³oœci i dziejów naszego plemienia nikt ju¿ nie spisze. Jedyna nadzieja spoczywa w dziecku naszego wodza, które jest obecnie w rêkach olbrzymów.~
+@4  = ~Co wywo³a³o tê krwaw¹ jatkê i jakie wydarzenia sprawi³y, ¿e uprowadzono dziecko?~
+@5  = ~Równowaga utrzymywana miêdzy naszym Duchem NiedŸwiedzia a Duchem Œnie¿nego Wilka zosta³a ju¿ raz utracona. Teraz Duch Œnie¿nego Wilka chce zasi¹œæ samotnie na tronie i za¿arcie po¿¹da w³adzy nad lasem. Lodowe olbrzymy pe³ni¹ rolê jego popleczników, a dziecko wodza, naszego plemienia posiada w sobie Ÿród³o potêgi Ducha NiedŸwiedzia. Zabijaj¹c je w pewnym rytuale, Duch NiedŸwiedzia przepadnie na zawsze. Nasza przysz³oœæ spoczywa w tym dziecku...~ 
+@6  = ~Rozumiem...~
+@7  = ~Nasi ostatni wojownicy walcz¹, by uratowaæ wioskê, a ja jestem tu jedynie po to, aby chroniæ ostatnich ocala³ych. Rzuci³em na ten dom zaklêcie, które trzyma lodowe olbrzymy z daleka od nas, ale nie potrafi³em przeszkodziæ im przed uprowadzeniem dziecka. Jesteœmy zrozpaczeni i potrzebujemy heroicznego wyczynu od takich, jak wy.~
+@8  = ~Odnajdê dziecko zanim rozpoczn¹ ten ca³y rytua³. Nie obawiajcie siê, radziliœmy sobie z niebezpieczeñstwami o wiele wiêkszymi, ni¿ to.~ 
+@9  = ~Mogê zaj¹æ siê t¹ spraw¹, ale tylko jeœli zap³acisz mi spor¹ sumkê z³ota.~
+@10 = ~Niech Duch NiedŸwiedzia prowadzi ciê przez szlak, a jeœli odniesiesz rany w walce, wtedy ja pomogê je zaleczyæ.~ 
+@11 = ~Dziêkujê ci za to.~
+@12 = ~Proszê, znajdŸ dziecko, zanim bêdzie za póŸno. Jak ju¿ mówi³em, moje umiejêtnoœci uzdrawiania s¹ do waszej dyspozycji.~
+@13 = ~Dziecko ¿yje! Niech bêdzie b³ogos³awiony Duch Wielkiego NiedŸwiedzia, twoje bohaterskie czyny pozostan¹ w naszych sercach. WeŸ ten róg plemienia NiedŸwiedzia i niech pomaga ci on w twych przysz³ych wyprawach.~ 
+@14 = ~Dziêkujê ci, ¿egnajcie.~
+@15 = ~ZnaleŸliœmy dziecko poleg³ego przywódcy plemienia NiedŸwiedzia i bezpiecznie doprowadziliœmy je do starszyzny. Byli niezwykle wdziêczni i wrêczyli nam róg plemienia NiedŸwiedzia.~
+@16 = ~Nie mam wyboru jak tylko zgodziæ siê. Dobrze wiêc, weŸ to z³oto, lecz jeœli nas zdradzisz, niechaj Duch NiedŸwiedzia zakoñczy twój ¿ywot. Chocia¿ na to nie zas³ugujesz, to moje umiejêtnoœci lecznicze pos³u¿¹ ci, jeœli zajdzie taka potrzeba. Ta sprawa jest zbyt wa¿na, dlatego nie mo¿esz zawieœæ. Tak wiêc jestem zobowi¹zany uczyniæ wszystko, co w mojej mocy, aby pomóc ci odszukaæ dziecko.~
+@17 = ~Witaj ponownie poszukiwaczu przygód. Dziêkujê ci za wszystko.~ ~Witaj ponownie poszukiwaczko przygód. Dziêkujê ci za wszystko.~
+@18 = ~Zgodziliœmy siê odnaleŸæ dziecko poleg³ego przywódcy plemienia NiedŸwiedzia. Powiedziano nam, ¿e porwane zosta³o ono przez lodowe olbrzymy, które zniszczy³y wioskê plemienia NiedŸwiedzia. Te olbrzymy s¹ poplecznikami Ducha Œnie¿nego Wilka, który planowa³ po³o¿yæ kres istnieniu Duchowego NiedŸwiedzia. Mo¿na to uczyniæ, zabijaj¹c w bestialski sposób dziecko podczas Rytua³u Zimy.~ 
 @19 = ~Plemiê NiedŸwiedzia
 
-Zgodzi³em siê odnaleŸæ dziecko poleg³ego przywódcy Plemienia NiedŸwiedzia. Powiedziano mi, ¿e jest wiêzione przez lodowe olbrzymy, które zniszczy³y wioskê. S¹ one poddanymi Ducha Œnie¿nego Wilka, który planuje zakoñczyæ istnienie Ducha NiedŸwiedzia. Mo¿e tego dokonaæ tylko przez zamordowanie dziecka podczas Rytua³u Zimy.~ 
+Zgodziliœmy siê odnaleŸæ dziecko poleg³ego przywódcy plemienia NiedŸwiedzia. Powiedziano nam, ¿e porwane zosta³o ono przez lodowe olbrzymy, które zniszczy³y wioskê plemienia NiedŸwiedzia. Te olbrzymy s¹ poplecznikami Ducha Œnie¿nego Wilka, który planowa³ po³o¿yæ kres istnieniu Duchowego NiedŸwiedzia. Mo¿na to uczyniæ, zabijaj¹c w bestialski sposób dziecko podczas Rytua³u Zimy.~ 
 @20 = ~Plemiê NiedŸwiedzia
 
-Znalaz³em dziecko dawnego przywódcy Plemienia NiedŸwiedzia i ostro¿nie odnios³em je do starszyzny. Byli niezwykle wdziêczni. Nagrodzono mnie Rogiem Plemienia NiedŸwiedzia.~
+ZnaleŸliœmy dziecko poleg³ego przywódcy plemienia NiedŸwiedzia i bezpiecznie doprowadziliœmy je do starszyzny. Byli niezwykle wdziêczni i wrêczyli nam róg plemienia NiedŸwiedzia.~
