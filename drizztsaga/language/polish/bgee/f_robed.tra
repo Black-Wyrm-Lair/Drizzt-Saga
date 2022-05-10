@@ -1,17 +1,14 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #ROBED translation file
-@1   = ~Hmm? A czyż to nie zaszczyt zpotkać kompanię samego Drizzta. Nie ma tu mowy o pomyłce.~
-@2   = ~A ty kim jesteś?~
-@3   = ~(Nie jestem nikim innym jak tylko zwyczajnym wędrowcem, chociaż w tych czasach mógłbyś mnie nazwać człowiekiem zmartwionym...~
-@4   = ~A to niby czemu?~
-@5   = ~Mroczne stwory opuszczają swoje miejsce spoczynku, zaś artefakt jest ukryty w ich grobowcu. Nadchodzą złe czasy dla Doliny... złe czasy. Światło dnia odwraca się od nas, zaś oni się przebudzili. Artefakt, ta statuetka mająca w sobie dziedzictwo samej Otchłani budzi się i każe im błądzić po powierzchni aby porwać nas do swych mrocznych legowisk. Jedynym sposobem na powstrzymanie tego wszystkiego jest znaleźć i zabrać artefakt z głębin Góry Umarłych.~
-@6   = ~Albo jesteś dobrym gawędziarzem albo szaleńcem. Jednak w tym co mówisz jest jakieś ziarno prawdy. Powiedz, gdzie to wszystko widziałeś.~
-@7   = ~Jam jest tym, który mówi prawdę. Jestem zdolny przenieść cię do miejsca poza górami, gdzie czycha mrok.~
-@8   = ~Dobrze, jednak bądź pewny, że jeśli próbujesz mnie w jakiś sposób oszukać - jestem na to przygotowany.~
-@9   = ~Niezbyt ci ufam, i mam jak na razie mam inne, równie ważne zadania do wykonania.~
-@10  = ~Hmm? Tu widzę grupę poszukiwaczy przygód.~
-@11  = ~Czy mi ufasz czy nie, zaklęcie już zostało rzucone - co oznacza, że naszą podróż czas zacząć.~
-@12  = ~Co!?~
+@1  = ~Hmm? Och, czyż to nie zaszczyt napotkać na szlaku drużynę nikogo innego jak samego Drizzta. Nie ma mowy, abym wziął cię za kogoś innego.~ 
+@2  = ~A ty, kimże jesteś?~
+@3  = ~Nikim więcej, jak tylko wędrowcem, choć w tychże czasach również zwiastunem niepokojących wieści...~ 
+@4  = ~A czemuż to?~
+@5  = ~Nikczemne stwory wypełzły ze swych pradawnych grobów, zaś artefakt spoczywa w ich mrocznym grobowcu. Ponure czasy dla Doliny.... ponure czasy. Światłość, jaką radowaliśmy się każdego dnia, odwraca się, a oni się przebudzili. Ten artefakt, ta statuetka posiada dziedzictwo samej Otchłani. Budzi ich i każe im kroczyć po powierzchni i chce wciągnąć nas wszystkich do jej ciemnych komnat. Jedynym sposobem, aby powstrzymać to wszystko, to wynieść artefakt z samego dna Góry Śmierci.~ 
+@6  = ~Albo jesteś wyśmienitym bajarzem, alboś postradał rozum. Jeśli w tym, co rzeczesz jest choć ziarno prawdy, to chciałbym się dowiedzieć, gdzieś to wszystko widział i jak tam dotrzeć.~ ~Albo jesteś wyśmienitym bajarzem, alboś postradał rozum. Jeśli w tym, co rzeczesz jest choć ziarno prawdy, to chciałabym się dowiedzieć, gdzieś to wszystko widział i jak tam dotrzeć.~
+@7  = ~Jestem tym, który niesie wam prawdę, mogę was przenieść do miejsca poza tymi górami, gdzie czai się mrok.~
+@8  = ~Bardzo dobrze, ale zapewniam cię, że jestem przygotowany na wszelkie sztuczki, w jakie próbowałbyś mnie wciągnąć.~ ~Bardzo dobrze, ale zapewniam cię, że jestem przygotowana na wszelkie sztuczki, w jakie próbowałbyś mnie wciągnąć.~
+@9  = ~Nie ufam ci, w tej chwili inne ważne zadania czekają na mnie.~
+@10 = ~Hmm? Ale widzę tu grupę poszukiwaczy przygód.~ 
+@11 = ~Ufasz czy nie, zaklęcie zostało już rzucone i tak oto podróż się zaczyna.~
+@12 = ~Że co!?~

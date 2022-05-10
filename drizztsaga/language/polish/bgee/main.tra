@@ -1,9 +1,4 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, with the exception
-// of item descriptions. Item descriptions in this file are missing the "Usable by:" blocks at the end
-// (those are generated and appended automatically by EE game engine).
-
 //------------------------------------------------------------------------------------
 //  Creatures, characters, miscellaneous:
 //------------------------------------------------------------------------------------
@@ -11,67 +6,77 @@
 @1    = ~Skład Niba~
 @2    = ~Artemis Entreri~
 @3    = ~[MALE THREAT 9] Strzeżcie się mego gniewu, bo w istocie jestem straszny.~ [%_%GENMT09]
-@4    = ~W innym czasie i innym miejscu!~
-@5    = ~To będzie długi, bolesny proces...~
-@6    = ~Chcesz zatańczyć?~
-@7    = ~Będziesz cierpiał... oj tak.~
-@8    = ~W rzeczy samej, wbiję me ostrze w twe trzewia!~
+@4    = ~Spotkamy się jeszcze!~ [F_ARTEM8] // =HVILLM08
+@5    = ~To będzie bardzo długie i bolesne.~ [F_ARTEM3] // =HVILLM03
+@6    = ~Masz ochotę zatańczyć?~ [F_ARTEM2] // =HVILLM02
+@7    = ~O tak... będziesz cierpieć.~ [F_ARTEM4] // =HVILLM04
+@8    = ~Rozerwę cię na strzępy!~ [F_ARTEM5] // =HVILLM05
 @9    = ~[GUARDS 5]~ [%_%GUARR05]
 @10   = ~[GUARDS 6]~ [%_%GUARR06]
-@11   = ~Artemis Entreri to znawca cieni i natychmiastowej śmierci. To prawdziwy mistrz w swoim fachu - skrytobójstwie. Nie ma osoby, której nie mógłby zgładzić. Żadna ilość zabezpieczeń nie powstrzyma go przed osiągnięciem celu. Wykonuje taniec śmierci podobny do tańca Drizzta. Jego serce jest pozbawione uczuć bardziej, niż jakiegokolwiek Drowa. Jeśli raz pokrzyżujesz mu szyki, będzie to twój ostatni błąd w życiu. Pochodzi z wielkiego miasta w południowej części Calimshanu, Calimportu. Ścieżki Artemisa i Drizzta skrzyżowały się po raz pierwszy gdy Regis ukradł drogocenny skarb Paszy Pooka, herszta złodziejskiej gildii Calimportu - Entreri zaś został wyznaczony do odzyskania go. Po bitych, trzech latach w końcu odnalazł Regisa w Dziesięciu Miastach, gdzie rozpoczęła się wielka przygoda kompanii Drizzta. Jednak zawsze podążała za nimi cicha śmierć w postaci Artemisa Entreri.~
+@11   = ~Zapytany o przeszłość, ARTEMIS ENTRERI oznajmia, iż jest znawcą cieni i natychmiastowej śmierci, mistrzem w swej profesji. Skrytobójcą. Nie ma takiej istoty, której nie byłby w stanie zabić. Żadna ilość zabezpieczeń nie powstrzyma go przed zlikwidowaniem swojej ofiary. Wykonuje taniec śmierci, podobny do Drizzta. Ma serce zimne jak lód i tak nieczułe, jak żaden z drowów, a ci którzy stają mu na drodze, nigdy nie uczynią tego po raz drugi.
+
+Pochodzi z wielkiego miasta na południu od Calimportu w prowincji Calimshanu. Artemis Entreri skrzyżował swoją ścieżkę z Drizztem, gdy Regis skradł Paszy Pookowi, przywódcy gildii złodziei w Calimporcie, skarb o wielkiej wartości, a Artemis został wyznaczony, aby go odzyskać. Po trzech, długich latach w końcu wytropił Regisa w Dziesięciu Miastach oraz innych jego przyjaciół i tak oto zaczęła się ich przygoda, lecz tym razem podążała z nimi cicha śmierć w postaci Artemisa Entreri.~
 @12   = ~Kobieta plemienia Niedźwiedzia~
 @13   = ~Starszy plemienia Niedźwiedzia~
-@14   = ~Duchowy Niedźwiedź~
+@14   = ~Duchowy niedźwiedź~
 @15   = ~Wojownik plemienia Niedźwiedzia~
 @16   = ~Belhifet~
-@17   = ~Na twój rozkaz!~
-@18   = ~Naszym przeznaczeniem, jest podbicie całego świata!~ [DRFEM102]
-@19   = ~Chwała niech będzie Lolth!~ [DRFEM102]
-@20   = ~Nakarmię się twoim sercem!~ [F_VMPFX5]
-@21   = ~Zjem cię, to rzadki zaszczyt!~ [F_VMPFX6]
+@17   = ~Na twój rozkaz!~ [F_DRSL12] // =DRSOL102
+@18   = ~Dzięki przeznaczeniu i sile podbijemy świat!~ [F_DRSL11] // DRSOL101
+@19   = ~Chwała niech będzie Lolth!~ [F_DRWPR1] // =DRFEM102
+@20   = ~Nakarmię się twoim sercem!~ [F_VMPFX5]  // =VAMPFX05
+@21   = ~Zjem cię, to rzadki zaszczyt!~ [F_VMPFX6] // =VAMPFX06
 @22   = ~Bruenor~
 @23   = ~[DWARF 2] Nie pogardziłbym łykiem krzepkiego, krasnoludzkiego trunku.~ [%_%DWARF02]
 @24   = ~[DWARF 1] Na młot Moradina!~ [%_%DWARF01]
 @25   = ~[DWARF 5]~ [%_%DWARF05]
 @26   = ~[DWARF 6]~ [%_%DWARF06]
-@27   = ~Zapytany o swoją przeszłość BRUENOR Battlehammer wyjawia, że dorastał w  prześwietnej Mithrylowej Hali, która jednak niefortunnie została najechana  przez smoka Shimmerglooma. Podczas ataku smoka na Halę zginął dziadek i  ojciec Bruenora. Reszta Klanu Battlehammer zmuszona była uciekać.  Ostatecznie osiedlili się oni w Dolinie Lodowego Wichru. Przez prawie 200 lat Bruenor przewodził im jako król. Jest wręcz przykładnym krasnoludem -  lojalnym przyjacielem i zaciekłym wrogiem. Uwielbia skarby skrywane pod ziemią i chrzęst rozłupywanych czaszek goblinów. Chociaż sprawia wrażenie  nieczułego i hardego, nie jest to do końca prawdą - wystarczy spojrzeć na to jak opiekuje się swoimi przybranymi dziećmi - Catti-brie oraz Wulfgarem.  Jednak lepiej mu tego nie mówić, bo i tak będzie próbował się tego wypierać aż do śmierci.~
+@27   = ~Zapytany o swoją przeszłość, BRUENOR BATTLEHAMMER wyjawia, że dorastał we wspaniałej Mithrilowej Hali, ale potem widział jak ta została najechana i splądrowana przez smoka Shimmerglooma. Jego ojciec, jak i pradziad zostali zabici, próbując obronić Halę i resztę klanu Battlehammerów, którzy zmuszeni zostali do ucieczki i ratowania się. W końcu przybyli do Doliny Lodowego Wichru i przez następne dwieście lat Bruenor przewodził nimi jako król.
+
+Bruenor to prawdziwy przyjaciel, taki jakiego każdy chciałby mieć. To typowy krasnolud. Kocha skarby pod ziemią i ma ogrom miłości dla tych, których uważa za swych przyjaciół i rodzinę. Tak jak inne krasnoludy, ponad wszystko uwielbia rozbijać swym toporem czaszki goblinów. Na pozór niewzruszony niczym skała, a w rzeczywistości jest dokładnym przeciwieństwem. Pod jego twardą łepetyną kryje się troskliwy i tęgi umysł, ale lepiej mu tego nie mówić bo i tak będzie zaprzeczać aż po sam grób. Stanowczo i usilnie dopilnowuje, aby jego adoptowana córka Catti-Brie i „przybrany” syn Wulfgar zostali dobrze wychowani.~
 @28   = ~Catti-Brie~
-@29   = ~[BLACK LILY 1] Gdybym nie miała czego ci trzeba, byłby to najczarniejszy z dni.~ [%BLACK_LILY_SND%01]
-@30   = ~[FEMALE THREAT 6]  Wasze życie nie ma dla mnie znaczenia.~ [%_%GENFT06]
+@29   = ~[BLACK LILY 1] Gdybym nie miała tego czego ci trzeba, byłby to naprawdę najczarniejszy z dni.~ [%BLACK_LILY_SND%01]
+@30   = ~[FEMALE THREAT 6] Wasze życie nie ma dla mnie znaczenia.~ [%_%GENFT06]
 @31   = ~[BLACK LILY 3]~ [%BLACK_LILY_SND%03]
 @32   = ~[BLACK LILY 4]~ [%BLACK_LILY_SND%04]
 @33   = ~[BLACK LILY 2] Przestań się mądrzyć! Muszę coś policzyć.~ [%BLACK_LILY_SND%02]
 @34   = ~[FEMALE TOWNSFOLK OF BALDUR'S GATE 3 HOSTILE] Zejdź mi z oczu! Nie mam z tobą nic wspólnego!~
-@35   = ~Spytana o swoją przeszłość Cattie-Brie przez chwilę milczy, po czym zaczyna nieśmiało opowiadać, że początkowo wychowywała się pośród twardych krasnoludów z Doliny Lodowego Wichru. Niestety, jeszcze gdy była dziewczynką, jej rodzice zostali zaszlachtowani w trakcie najazdu goblinów. Ostatecznie trafiła do klanu Battlehammer. Za towarzyszy miała głównie surowe skały. Cattie-Brie jako pierwsza spośród mieszkańców Doliny ciepło przywitała Drizzta, podczas jego pobytu w Kopcu Kelvina. Najprawdopodobniej to właśnie ona najbardziej rozumie ciągłą Drizzta starającego się uzyskać akceptacje wśród tych mieszkańców Fearunu, którzy najczęściej widzą wyłącznie to, że jest drowem. Cattie-Brie, pod baczną opieką swoich przyjaciół, stała się nie lada wyzwaniem dla wrogów, którzy przeciwstawią się jej i jej sławnej broni - Taulmarilowi Poszukiwaczowi Serc.~
+@35   = ~CATTI-BRIE, spytana o swoją przeszłość, opowiada o tym, jak dorastała pośród zatwardziałych krasnoludów z Doliny Lodowego Wichru. Kiedy była małą dziewczynką, jej rodzice zostali zabici podczas najazdu goblinów, lecz tę piękną, kasztanowłosą istotkę przygarnęli członkowie klanu Battlehammerów, gdzie wyrosła na równie twardą, co otaczające ją lite skały.
+
+Catti-Brie była pierwszą mieszkanką Doliny Lodowego Wichru, która ciepło przywitała Drizzta w trakcie jego pobytu w Kopcu Kelvina. Możliwe, że to ona zna Drizzta lepiej, niż ktokolwiek inny. Potrafi zrozumieć przez co przechodził w swoich codziennych zmaganiach, by zyskać akceptację wśród tych mieszkańców Krain, którzy dostrzegają w nim wyłącznie odmienny kolor jego skóry. Catti-Brie pod kierunkiem swoich przyjaciół, stała się znacznie lepsza niż ktokolwiek z jej wrogów, chcący przeciwstawić się jej oraz jej wspaniałemu łukowi, Taulmarilowi.~
 @36   = ~Kornugon~
 @37   = ~Cyklop~
 @38   = ~Martwe dziecko~
 @39   = ~Martwy koń~
 @40   = ~Ranny mężczyzna~
 @41   = ~Martwa kobieta~
-@42   = ~Demoniczny rycerz~
-@43   = ~Pomniejszy demoniczny rycerz~
-@44   = ~Większy Tanari~
-@45   = ~Demoniczny astralny pająk~
+@42   = ~Upiorny rycerz~
+@43   = ~Pomniejszy upiorny rycerz~
+@44   = ~Większy tanar'ri~
+@45   = ~Demoniczny pająk astralny~
 @46   = ~Demoniczny strażnik~
-@47   = ~Nibby "Wścibinos"~
+@47   = ~Nibby Wścibinos~
 @48   = ~Młody smok~
 @49   = ~Drizzt~
-@50   = ~[DRIZZT DO'URDEN 1] Wszystko czego pragnę, to podążać swoją drogą! Poczekajcie przyjaciele, czy potrzebne są te wszystkie wyjaśnienia?! Czy mówi wam coś imię Drizzt?!~ [%_%DRIZT01]
+@50   = ~[DRIZZT DO'URDEN 1] Wszystko czego pragnę, to podążać dalej swoją drogą! Poczekajcie przyjaciele, czy potrzebne są te wszystkie wyjaśnienia?! Czy mówi wam coś imię Drizzt?!~ [%_%DRIZT01]
 @51   = ~[DRIZZT DO'URDEN 2]~
 @52   = ~[DRIZZT DO'URDEN 3] To twoje życie, i możesz je stracić wedle woli!~ [%_%DRIZT03]
 @53   = ~[DRIZZT DO'URDEN 4] Jestem łagodny z natury, przynajmniej wtedy gdy nie zabijam durniów.~ [%_%DRIZT04]
-@54   = ~[DRIZZT DO'URDEN 5] Miewałem już na pieńku z demonami Dziewięciu Piekieł... dziś chyba nawet się nie spocę!~ [%_%DRIZT05]
+@54   = ~[DRIZZT DO'URDEN 5] Miewałem już na pieńku z demonami Dziewięciu Piekieł... dziś nawet się chyba nie spocę!~ [%_%DRIZT05]
 @55   = ~[DRIZZT DO'URDEN 8]~ [%_%DRIZT08]
 @56   = ~[DRIZZT DO'URDEN 9]~ [%_%DRIZT09]
 @57   = ~[DRIZZT DO'URDEN 6] Miło się gawędziło, ale czas już na mnie.~ [%_%DRIZT06]
 @58   = ~[DRIZZT DO'URDEN 7] Nie drąż tego tematu. To niegrzeczne.~ [%_%DRIZT07]
 @59   = ~[DRIZZT HOSTILE] Nie spędzę z tobą ani chwili dłużej.~
-@60   = ~Zapytany o swoją przeszłość Drizzt Do'Urden uśmiecha się, po czym zaczyna opowiadać swoją historię. Dowiadujesz się, że obdarza czcią Mielikki i wypowiedział wojnę okrutnemu miastu jego narodzin -  Menzoberranzan, społeczności drowów i wszystkim, którzy służą Lolth. Pomagają mu w tym ludzie z północy (Wulfgar i Cattie-brie) oraz krasnolud Bruenor Battlehammer, któremu to pomógł odzyskać władanie nad Mithrilową Halą. Zabijał już smoki i matki przełożone drowów. Opiera się demonom.(Errtu), jak i ogromnym wpływom Lolth. Jego przeciwnikiem jest najgroźniejszy w całym Faerunie zabójca – Artemis Entreri. Drizzt jest troskliwy i delikatny wobec innych. Kieruje się swoimi ideałami, nie wymaga tego jednak od innych. Jest małomówny nawet w obliczu zdrady i niebezpieczeństwa, jednakże nie przeszkadza mu to na bycie miłym w stosunku do innych. Drizzt to także perfekcjonista, który chciałby być powszechnie akceptowany i wciąż zdobywać nowych przyjaciół. Drizzt i jego przyjaciele muszą być świadomi, że będzie na nich czyhało wiele niebezpieczeństw ze strony Lolth i innych wrogów drowa. Ci, których spotyka w swoich podróżach,  często uważają go za osobę ponurą. Jego szlachetne poczynania sprawiły, że Drizzt Do'Urden jest coraz częściej mile widzianym gościem na północy Wybrzeża Mieczy.~
+@60   = ~Zapytany o swoją przeszłość, DRIZZT DO'URDEN uśmiecha się, po czym zaczyna opowiadać swoją historię. Dowiadujesz się, że czci boginię o imieniu Mielikki i wypowiedział otwarcie wojnę okrutnemu miastu swych narodzin (o nazwie Menzoberranzan), swoim rodakom drowom i wszystkim tym, którzy służą Lolth. Za swych przyjaciół uznaje ludzi z Północy (Wulfgara i Catti-Brie) oraz krasnoluda Bruenora Battlehamera, którym pomaga odzyskać władzę nad Mithrilową Halą. Zabijał już smoki i matki przełożone drowów. Odpierał ataki demonów (takich jak Errtu) i opierał się wpływom (na przykład Lolth), toczył walkę prawdopodobnie z najbardziej zaciekłym skrytobójcą, Artemisem Entreri, aktywnym obecnie w Faerûnie, a swe własne życie i losy wykuwa na powierzchni.
+
+Troskliwy i wrażliwy w stosunku do innych, Drizzt broni swoich najwyższych ideałów, ale nie oczekuje tego samego od innych. Jak zawsze ma się na baczności przed zdradą i niebezpieczeństwem, mówi niewiele, ale jest uprzejmy i oszczędny w słowach w swoich relacjach. Perfekcjonista, który pragnie być powszechnie akceptowany i zdobywać przyjaciół. Drizzt jest nękany przez niebezpieczeństwa, które sprowadza na tych, którym okazuje przyjaźń, a to dzięki bacznej obserwacji przez Lolth i innych jego wrogów (szczególnie Errtu i Entreri). Według tych, których spotyka, jego zachowanie można uznać za przygnębiające.
+
+We wcześniejszych jego podróżach po powierzchni, osobiście i serdecznie, choć z konieczności, przywitała go Alustriel, lecz w tym czasie nie odważyła się jawnie wpuścić go do Silvermoon. Jego czyny sprawiły (nie od razu), że Drizzt Do'Urden stawał się coraz milej widziany na północy Wybrzeża Mieczy.~
 @61   = ~Bitewny mag drowów~
 @62   = ~Drow wojownik~
-@63   = ~Drowia kapłanka~
-@64   = ~Smoczy Golem~
+@63   = ~Kapłanka drowów~
+@64   = ~Smoczy golem~
 @65   = ~Varlag Srebrny Młot~
 @66   = ~Elminster~
 @67   = ~Errtu~
@@ -83,16 +88,16 @@
 @73   = ~Guenhwyvar~
 @74   = ~Harpia~
 @75   = ~Jarlaxle~
-@76   = ~Naszym przeznaczeniem, jest podbicie całego świata!~ [F_DRSL11]
-@77   = ~Dobry naziemiec, to martwy naziemiec!~ [F_DRSL14]
-@78   = ~Walczymy w imieniu Lolth!~ [F_DRSL17]
-@79   = ~[DROW16]~
-@80   = ~[DROW15]~
-@81   = ~Na twój rozkaz!~ [F_DRSL12]
-@82   = ~Na chwałę Pajęczej Królowej.~ [F_DRSL13]
-@83   = ~Zapytany o swoją przeszłość JARLAXE wzdycha, i odpowiada, że jest jest przywódcą najemniczej bandy znanej jako Bregan D'Aerthe. Można określić go jako "mężczyzna wyzwolony" - łamie bowiem wszelkie stereotypy o dominacji kobiet w kulturze drowów. Nie jest za to karany prawdopodobnie z powodu jego  wpływowych znajomych wśród elit miasta. W przeciwieństwie do innych drowów, nosi się kolorowo i otwarcie obnosi się ze swoją odmiennośćią. Sami Bregan  D'Aerthe to szajka złożona z wydziedziczonych szlachciców i zwykłych drowów którzy w Podmroku sami niczego nie osiągneli, jednak jako zgrana grupa mają  dużą siłę i wpływ. Jarlaxle i jego Bregan D'Aerthe nie są jednak zbyt pewni, gdyż ich lojalność zależy wyłącznie od zapłaconej im sumy. Zaś zdrada i  chaos zawsze im służą.~
-@84   = ~Lisz Kangaxx~
-@85   = ~Marylith~
+@76   = ~Dzięki przeznaczeniu i sile podbijemy świat!~ [F_DRSL11] // =DRSOL101
+@77   = ~Dobry naziemiec to martwy naziemiec!~ [F_DRSL14]  // =DRSOL104
+@78   = ~Walczmy w imię Lolth!~ [F_DRSL17] // =DRSOL107
+@79   = ~[DROW16]~ [F_DRSL16] // =DRSOL105
+@80   = ~[DROW15]~ [F_DRSL15] // =DRSOL106
+@81   = ~Na twój rozkaz!~ [F_DRSL12] // =DRSOL102
+@82   = ~Chwała Pajęczej Królowej!~ [F_DRSL13] // =DRSOL103
+@83   = ~Zapytany o swoją przeszłość JARLAXLE wzdycha i odpowiada, że jest przywódcą najemnej szajki znanej jako Bregan D'aerthe. To drow, mężczyzna, który swoim wdziękiem i charyzmą łamie wszelkie przyjęte zasady dotyczące samców w dominującej kulturze kobiet drowów. Jak dotąd wydaje się, że uchodzi mu to na sucho, dzięki swoim bardzo wpływowym znajomym wśród rządzącej elity miasta. W odróżnieniu od innych drowów, nosi stroje w egzotycznych barwach i otwarcie manifestuje swą odmienność. Sama Bregan D'aerthe złożona jest z wydziedziczonych szlachciców i zwykłych drowów, którzy sami byliby łatwą zdobyczą w Podmroku, jednak jako grupa stanowią siłę o sporych wpływach i władzy. Jarlaxle i Bregan D'aerthe są nieco nieznani, jako że są lojalni tylko wobec tych, którzy zapłacą im w danej chwili, ale również potrafią odnosić korzyści z zaistniałego chaosu.~
+@84   = ~Lisz Korgax~ // Changed from Kangaxx
+@85   = ~Marilith~
 @86   = ~Mumia~
 @87   = ~Nib Jansen~
 @88   = ~Ork~
@@ -101,174 +106,174 @@
 @91   = ~[HALFLING 5]~ [%_%HALFL05]
 @92   = ~[HALFLING 6]~ [%_%HALFL06]
 @93   = ~[HALFLING 4] Chciałbym tylko mieć przy sobie moją fajkę.~ [%_%HALFL04]
-@94   = ~[HALFLING 2] Obcy jesteś, nie powinieneś łazić gdzie cię nie proszą.~ [%_%HALFL02]
+@94   = ~[HALFLING 2] Obcy jesteś, nie powinieneś łazić, gdzie cię nie proszą.~ [%_%HALFL02]
 @95   = ~[HALFLING 3] Pokazują się tu różniste niesamowitości.~ [%_%HALFL03]
-@96   = ~Zapytany o swoją przeszłość REGIS, znany także jako Pasibrzuch, odpowiada,  że jest dzieckiem ulic Calimportu. Aby przeżyć, musiał stać się świetnym  złodziejem. Jego umiejętności potwierdza z pewnością czerwona twarz  okradzionego przez niego Paszy Pooka, przywódcy lokalnej gildii  złodziejskiej. Przybycie Regisa do Dziesięciu Miast może znaczyć tylko jedno  - wpadł w jakieś tarapaty i musi salwować się ucieczką. Jak każdy niziołek,  Regis uwielbia spokojny żywot, słodkie lenistwo i ogromne ilości jadła. Ma  niestety zwyczaj "pożyczania" różnych przedmiotów bez wiedzy ich właściciela  - czemu to właśnie zawdzięcza częste przeprowadzki (a raczej ucieczki).~
-@97   = ~Zamaskowana statua~
+@96   = ~Zapytany o swoją przeszłość REGIS, znany także jako Pasibrzuch, odpowiada o tym, jak to lubi wieść spokojne życie, odpoczynek i ogromne ilości jadła, jak przystało na swoją rasę. Ma zwyczaj „przywłaszczania” przedmiotów, które nie należą do niego, a to z kolei sprowadza na niego nieszczęścia i raz za razem prześladuje go pech. Regis dorastał w Calimporcie pośród męt społecznych, stając się bardzo zdolnym złodziejem, a nawet zdobywając członkostwo w lokalnej gildii oraz zaufanie Paszy Pooka, przywódcy tegoż cechu. Jego przybycie do Dziesięciu Miast może oznaczać tylko jedno – znalazł się w tarapatach i musi wiać.~
+@97   = ~Zakapturzony mężczyzna~
 @98   = ~Bies cienia~
 @99   = ~Cień zabójcy~
 @100  = ~Demoniczna królowa pająków~
 @101  = ~Demoniczny wioślarz~
-@102  = ~Przenikający pająk~
-@103  = ~Tanari~
-@104  = ~Valen~
+@102  = ~Pająk przenikający~
+@103  = ~Tanar'ri~
+@104  = ~Velen~ // Changed from Valen
 @105  = ~Wampir~
 @106  = ~Wyjąca śmierć~
 @107  = ~Przywódca wilkołaków~
 @108  = ~Duch śnieżnego wilkołaka~
 @109  = ~Wulfgar~
-@110  = ~[GREYWOLF 4] Ci co mi weszli w paradę, gryzą ziemię!~ [%_%GREYW04]
+@110  = ~[GREYWOLF 4] Ci co mi weszli w paradę, gryzą już ziemię!~ [%_%GREYW04]
 @111  = ~[GREYWOLF 2] To jeszcze nie koniec, nędzne złodziejaszki!~ [%_%GREYW02]
 @112  = ~[GREYWOLF 3] Mam cię, złodziejskie nasienie!~ [%_%GREYW03]
 @113  = ~[GREYWOLF 6] Durne jełopy!~ [%_%GREYW06]
-@114  = ~[GREYWOLF 7] Możesz dostać w pysk, albo kopniaka. Ale masz wolny wybór!~ [%_%GREYW07]
+@114  = ~[GREYWOLF 7] Możesz dostać w pysk lub kopniaka, ale masz wolny wybór!~ [%_%GREYW07]
 @115  = ~[GREYWOLF 8]~ [%_%GREYW08]
 @116  = ~[GREYWOLF 9]~ [%_%GREYW09]
 @117  = ~[GREYWOLF 5] Wszystkim wam się należy uścisk szubienicznej pętli.~ [%_%GREYW05]
 @118  = ~[GREYWOLF HOSTILE] Za to coś zrobił, urwę ci głowę!~
-@119  = ~Zapytany o przeszłość WULFGAR, syn Beornegara, śmiało odpowiada, że dorastał pośród dzikich barbarzyńców z Doliny Lodowego Wichru. Sprawy w jego życiu przybrały niespodziewany obrót, gdy został pojmany przez Bruenora podczas najazdu na Dziesięć Miast. Zamiast stracić młodzieńca, władca zdecydował jednak, że karą za spowodowane przez niego cierpienia ludzi będzie służba na dworze przez 5 lat. Wulfgar świetnie się sprawdził. Ponadto, wyrósł na olbrzymiego mężczyznę, rodem z barbarzyńskich legend. Obecnie dzierży wspaniały magiczny młot bojowy - Aegis Fang. Otrzymał go od przybranego ojca, Bruenora.~
+@119  = ~Zapytany o przeszłość WULFGAR, syn Beornegara, śmiało odpowiada, że jako młody chłopak dorastał pośród bezwzględnych barbarzyńców z Doliny Lodowego Wichru. Został pojmany przez Bruenora podczas najazdu barbarzyńców na Dziesięć Miast. Zamiast zabić go, jak to począł z innymi jeńcami, Bruenor nakazał Wulfgarowi, aby ten służył i mu i klanowi Battlehammerów przez pięć lat, tak też odkupiłby grzechy wobec jego ludzi. Wulfgar dobrze służył i wyrósł na potężnego mężczyznę, jak przystało na legendy o barbarzyńcach. Dzierży on Aegis-Fang, magiczny młot bojowy wykonany przez swego przybranego ojca, Bruenora.~
 @120  = ~Meduza~
-@121  = ~Demoniczny rycerz~
-@122  = ~Większy doppelganger~
-@123  = ~Doppelganger~
+@121  = ~Upiorny rycerz~
+@122  = ~Większy sobowtórniak~
+@123  = ~Sobowtórniak~
 @124  = ~Ghast~
 @125  = ~Ghul~
 @126  = ~Większy ghul~
 @127  = ~Ghul Korax~
-@128  = ~Opancerzona statua~
+@128  = ~Opancerzona postać~
 @129  = ~Sarevok~
 @130  = ~Tasloi~
 @131  = ~Większy wilkołak~
 @132  = ~Większy łakowilk~
 
-@341 = ~[ELMINSTER 1] Hola wędrowcze, zatrzymaj się gdy cię prosi starzec.~ [%_%ELMIN01]
-@342 = ~[ELMINSTER 2]~
-@343 = ~[ELMINSTER 3] Irytujące jest, żeście sami wybrali ten kierunek. Cofam pomoc, i nie chcę dłużej mieć z wami doczynienia.~ [%_%ELMIN03]
-@344 = ~[ELMINSTER 8]~ [%_%ELMIN08]
-@345 = ~[ELMINSTER 9]~ [%_%ELMIN09]
-@346 = ~[ELMINSTER 4] Mogę wam podpowiedzieć to i owo, ale nie będę się mieszał do nieswojich spraw.~ [%_%ELMIN04]
-@347 = ~[ELMINSTER 5] Twoje zadanie wymaga pośpiechu! Czy w istocie musisz tracić czas drażniąc starszych?~ [%_%ELMIN05]
-@348 = ~[ELMINSTER 6] Przeżyłem setki lat, a wciąż muszę znosić czyjąś ciekawość.~ [%_%ELMIN06]
-@349 = ~[ELMINSTER 7] Dobry panie, osobom pod każdym względem doskonałym niełatwo przychodzi bycie pokornymi.~ [%_%ELMIN07]
-@350 = ~Pardon, blaga. Odbiło mi się rzepą.~ [F_JAN23]
-@351 = ~Nie łudźcie się, nie można mnie pokonać.~ [F_IREN03]
-@352 = ~Gińcie, gińcie, wszyscy gińcie!~ [F_IREN04]
-@365 = ~Drewniane schody przegniły od wilgoci.~
-@371 = ~[DEMONKNIGHT 01]  Przywitaj swoją śmierć.~ [%tutu_scripts%HAEL_01]
-@372 = ~[DEMONKNIGHT 03]  Tutaj zginiesz!~ [%tutu_scripts%HAEL_03]
-@373 = ~[DEMONKNIGHT 05]  ~ [%tutu_scripts%HAEL_05]
-@374 = ~[DEMONKNIGHT 06]  ~ [%tutu_scripts%HAEL_06]
-@375 = ~[DEMONKNIGHT 04]  ~ [%tutu_scripts%HAEL_04]
-@376 = ~[SLAVES 1] ~ [%_%SLAVE01]
-@377 = ~[VILLAGER, FEMALE 01d] Jesteś z daleka? A więc witaj.~ [%tutu_scriptv%illf01d]
-@378 = ~[FEMALE TOWNSFOLK 5]~ [%_%ftown05]
-@379 = ~[FEMALE TOWNSFOLK 6]~ [%_%ftown06]
-@380 = ~[FEMALE GREETING 1]  Tak?~ [%_%genfg01]
-@381 = ~[SONNER 1] Myślcie o sobie i jakoś z tego wyjdziemy! Trzeba nam tylko odrobiny wsparcia.~ [%_%SONNR01]
-@382 = ~[SONNER 3]~ [%_%SONNR03]
-@383 = ~[SONNER 4]~ [%_%SONNR04]
-@384 = ~[SONNER 2] Wygra ten co ma chłodniejszy umysł.~ [%_%SONNR02]
-@385 = ~[BEAR, POLAR 03]~ [%_%pbear03]
-@386 = ~[BEAR, POLAR 04]~ [%_%pbear04]
-@387 = ~[BEAR, POLAR 05]~ [%_%pbear05]
-@388 = ~[BEAR, POLAR 06]~ [%_%pbear06]
-@389 = ~[BEAR, POLAR 08]~ [%_%pbear08]
-@390 = ~[BEAR, POLAR 09]~ [%_%pbear09]
-@391 = ~[BEAR, POLAR 01]~ [%_%pbear01]
-@392 = ~[BEAR, POLAR 02]~ [%_%pbear02]
-@393 = ~[THE WARRIOR 1] Pomocy! Potrzebuję twego wsparcia! Jest ich zbyt wielu!~
-@394 = ~[THE WARRIOR 5] ~
-@395 = ~[THE WARRIOR 6]~
-@396 = ~[THE WARRIOR 2] Tak zimno . . .Ja . . .ja umieram. . .  Błagam . . ..zostań ze mną chwilę . . .~
-@397 = ~[THE WARRIOR 3] Nie chcę umierać samotnie. . . ~
-@398 = ~[THE WARRIOR 4] Dziękuję . . .~
-@399 = ~[SLAVES 6]~ [%_%SLAVE06]
-@400 = ~~ [TANAR01]
-@401 = ~~ [TANAR02]
-@402 = ~~ [TANAR03]
-@403 = ~[BASILISK, GREATER 06] ~ [%_%GBASI06]
-@404 = ~[BASILISK, GREATER 09] ~ [%_%GBASI09]
-@405 = ~~ [TANAR05]
-@406 = ~~ [TANAR06]
-@407 = ~~ [TANAR04]
-@408 = ~~ [TANAR01]
-@409 = ~~ [TANAR02]
-@410 = ~[SPIDER, PHASE 03] ~ [%_%PSPID03]
-@411 = ~[SPIDER, PHASE 04] ~ [%_%PSPID04]
-@412 = ~[SPIDER, PHASE 05] ~ [%_%PSPID05]
-@413 = ~[SPIDER, PHASE 06] ~ [%_%PSPID06]
-@414 = ~[SPIDER, PHASE 08] ~ [%_%PSPID08]
-@415 = ~[SPIDER, PHASE 09] ~ [%_%PSPID09]
-@416 = ~[SPIDER, PHASE 01] ~ [%_%PSPID01]
-@417 = ~[SPIDER, PHASE 02] ~ [%_%PSPID02]
-@418 = ~[SPIDER, PHASE 10] ~ [%_%PSPID10]
-@419 = ~[METALLIC SOUND 1]~ [%_%HIT_01C]
-@420 = ~[METALLIC SOUND 2]~ [%_%HIT_02C]
-@421 = ~[METALLIC SOUND 3]~
-@422 = ~[METALLIC SOUND 4]~ [%_%HIT_03D]
-@423 = ~[SPIDER, WRAITH 03] ~ [%_%WSPID03]
-@424 = ~~ [%_%vicon38]
-@425 = ~~ [%_%vicon39]
-@427 = ~[WYVERN 03] ~ [%_%WYVER03]
-@428 = ~[WYVERN 04] ~ [%_%WYVER04]
-@429 = ~[WYVERN 05] ~ [%_%WYVER05]
-@430 = ~[WYVERN 06] ~ [%_%WYVER06]
-@431 = ~[WYVERN 07] ~ [%_%WYVER07]
-@432 = ~[WYVERN 08] ~ [%_%WYVER08]
-@433 = ~[WYVERN 09] ~ [%_%WYVER09]
-@434 = ~[WYVERN 01] ~ [%_%WYVER01]
-@435 = ~[WYVERN 02] ~ [%_%WYVER02]
-@436 = ~[WYVERN 10] ~ [%_%WYVER10]
-@437 = ~[SKELETON WARRIOR 02]~ [%_%SKELW02]
-@438 = ~[SKELETON WARRIOR 03] Giń . . .~ [%_%SKELW03]
-@439 = ~[SKELETON WARRIOR 9] ~ [%_%SKELW09]
-@440 = ~[WOLF, WINTER 07]~ [%_%WWOLF07]
-@441 = ~[SKELETON WARRIOR 01]~ [%_%SKELW01]
-@443 = ~[MALE GREETING 3]  Hmm?~ [%_%GENMG03]
-@444 = ~[MONKS 5]~ [%_%MONKS05]
-@445 = ~[MONKS 6]~ [%_%MONKS06]
-@446 = ~[WEREWOLF 01]  ~ [%_%WEREW01]
-@447 = ~[WEREWOLF 02]  ~ [%_%WEREW02]
-@448 = ~[WEREWOLF 03]  ~ [%_%WEREW03]
-@449 = ~[WEREWOLF 04]  ~ [%_%WEREW04]
-@450 = ~[WEREWOLF 05]  ~ [%_%WEREW05]
-@451 = ~[WEREWOLF 06]  ~ [%_%WEREW06]
-@452 = ~[CENTEOL 1] Moje pająki! Zabijcie ich. Zabijcie wszystkich!~ [%_%CENTL01]
-@453 = ~[CENTEOL 2] ~ [%_%CENTL02]
-@454 = ~[CENTEOL 3]~ [%_%CENTL03]
-@455 = ~[CENTEOL 4]~ [%_%CENTL04]
-@456 = ~[WEREWOLF, GREATER 01] Wszystkich was pogrzebię!~ [%_%GWERE01]
-@457 = ~[WEREWOLF, GREATER 03]  ~ [%_%GWERE03]
-@458 = ~[WEREWOLF, GREATER 04]  ~ [%_%GWERE04]
-@459 = ~[WEREWOLF, GREATER 05]  ~ [%_%GWERE05]
-@460 = ~[WEREWOLF, GREATER 06]  ~ [%_%GWERE06]
-@461 = ~[WOLF, WINTER 03] ~ [%_%WWOLF03]
-@462 = ~[WOLF, WINTER 04] ~ [%_%WWOLF04]
-@463 = ~[WOLF, WINTER 05] ~ [%_%WWOLF05]
-@464 = ~[WOLF, WINTER 06] ~ [%_%WWOLF06]
-@465 = ~[WOLF, WINTER 08] ~ [%_%WWOLF08]
-@466 = ~[WOLF, WINTER 09] ~ [%_%WWOLF09]
-@467 = ~[WOLF, WINTER 01] ~ [%_%WWOLF01]
-@468 = ~[WOLF, WINTER 02] ~ [%_%WWOLF02]
-@469 = ~[SIRINE 05] ~ [%_%SIRIN05]
-@470 = ~[SKELETON WARRIOR 04] ~ [%_%SKELW04]
-@471 = ~[ZOMBIE 03]~ [%_%ZOMBI03]
-@472 = ~[ZOMBIE 04]~ [%_%ZOMBI04]
-@473 = ~[ZOMBIE 05]~ [%_%ZOMBI05]
-@474 = ~[ZOMBIE 06]~ [%_%ZOMBI06]
-@475 = ~[ZOMBIE 01]~ [%_%ZOMBI01]
-@476 = ~[ZOMBIE 02]~ [%_%ZOMBI02]
+@341  = ~[ELMINSTER 1] Hola, wędrowcze, zatrzymaj się, gdy cię prosi starzec.~ [%_%ELMIN01]
+@342  = ~[ELMINSTER 2]~
+@343  = ~[ELMINSTER 3] Irytujące jest, żeście sami wybrali ten kierunek. Cofam pomoc, i nie chcę dłużej mieć z wami do czynienia.~ [%_%ELMIN03]
+@344  = ~[ELMINSTER 8]~ [%_%ELMIN08]
+@345  = ~[ELMINSTER 9]~ [%_%ELMIN09]
+@346  = ~[ELMINSTER 4] Mogę wam podpowiedzieć to i owo, ale nie będę się mieszał do nieswoich spraw.~ [%_%ELMIN04]
+@347  = ~[ELMINSTER 5] Twoje zadanie wymaga pośpiechu! Czy w istocie musisz tracić czas drażniąc starszych?~ [%_%ELMIN05]
+@348  = ~[ELMINSTER 6] Przeżyłem setki lat, a wciąż muszę znosić czyjąś ciekawość.~ [%_%ELMIN06]
+@349  = ~[ELMINSTER 7] Dobry panie, osobom pod każdym względem doskonałym niełatwo przychodzi bycie pokornymi.~ [%_%ELMIN07]
+@350  = ~(beka) Pardon. Odbiło mi się rzepą.~ [F_JAN23] // =JANJAN23
+@351  = ~Nie łudźcie się, nie można mnie pokonać.~ [F_IREN03] // =IRENIC03
+@352  = ~Gińcie, gińcie, wszyscy gińcie!~ [F_IREN04] // =IRENIC03
+@365  = ~Drewniane schody przegniły od wilgoci.~
+@371  = ~[DEMONKNIGHT 01] Powitania od śmierci.~ [%tutu_scripts%HAEL_01]
+@372  = ~[DEMONKNIGHT 03] Tu umrzesz! W tym miejscu!~ [%tutu_scripts%HAEL_03]
+@373  = ~[DEMONKNIGHT 05]~ [%tutu_scripts%HAEL_05]
+@374  = ~[DEMONKNIGHT 06]~ [%tutu_scripts%HAEL_06]
+@375  = ~[DEMONKNIGHT 04]~ [%tutu_scripts%HAEL_04]
+@376  = ~[SLAVES 1]~ [%_%SLAVE01]
+@377  = ~[VILLAGER, FEMALE 01d] Przybyliście z daleka, więc witajcie.~ [%tutu_scriptv%illf01d]
+@378  = ~[FEMALE TOWNSFOLK 5]~ [%_%ftown05]
+@379  = ~[FEMALE TOWNSFOLK 6]~ [%_%ftown06]
+@380  = ~[FEMALE GREETING 1] Taa?~ [%_%genfg01]
+@381  = ~[SONNER 1] Myślcie o sobie i jakoś z tego wyjdziemy! Trzeba nam tylko odrobiny wsparcia.~ [%_%SONNR01]
+@382  = ~[SONNER 3]~ [%_%SONNR03]
+@383  = ~[SONNER 4]~ [%_%SONNR04]
+@384  = ~[SONNER 2] Wygra ten, co ma chłodniejszy umysł.~ [%_%SONNR02]
+@385  = ~[BEAR, POLAR 03]~ [%_%pbear03]
+@386  = ~[BEAR, POLAR 04]~ [%_%pbear04]
+@387  = ~[BEAR, POLAR 05]~ [%_%pbear05]
+@388  = ~[BEAR, POLAR 06]~ [%_%pbear06]
+@389  = ~[BEAR, POLAR 08]~ [%_%pbear08]
+@390  = ~[BEAR, POLAR 09]~ [%_%pbear09]
+@391  = ~[BEAR, POLAR 01]~ [%_%pbear01]
+@392  = ~[BEAR, POLAR 02]~ [%_%pbear02]
+@393  = ~[THE WARRIOR 1] Ratunku! Potrzebuję waszej pomocy! Jest ich zbyt wielu!~
+@394  = ~[THE WARRIOR 5]~
+@395  = ~[THE WARRIOR 6]~
+@396  = ~[THE WARRIOR 2] Jest mi tak zimno... Ja... umieram... Proszę... pozostańcie chwilkę przy mnie...~
+@397  = ~[THE WARRIOR 3] Nie chcę umierać w samotności...~
+@398  = ~[THE WARRIOR 4] Dziękuję wam...~
+@399  = ~[SLAVES 6]~ [%_%SLAVE06]
+@400  = ~~ [TANAR01]
+@401  = ~~ [TANAR02]
+@402  = ~~ [TANAR03]
+@403  = ~[BASILISK, GREATER 06]~ [%_%GBASI06]
+@404  = ~[BASILISK, GREATER 09]~ [%_%GBASI09]
+@405  = ~~ [TANAR05]
+@406  = ~~ [TANAR06]
+@407  = ~~ [TANAR04]
+@408  = ~~ [TANAR01]
+@409  = ~~ [TANAR02]
+@410  = ~[SPIDER, PHASE 03]~ [%_%PSPID03]
+@411  = ~[SPIDER, PHASE 04]~ [%_%PSPID04]
+@412  = ~[SPIDER, PHASE 05]~ [%_%PSPID05]
+@413  = ~[SPIDER, PHASE 06]~ [%_%PSPID06]
+@414  = ~[SPIDER, PHASE 08]~ [%_%PSPID08]
+@415  = ~[SPIDER, PHASE 09]~ [%_%PSPID09]
+@416  = ~[SPIDER, PHASE 01]~ [%_%PSPID01]
+@417  = ~[SPIDER, PHASE 02]~ [%_%PSPID02]
+@418  = ~[SPIDER, PHASE 10]~ [%_%PSPID10]
+@419  = ~[METALLIC SOUND 1]~ [%_%HIT_01C]
+@420  = ~[METALLIC SOUND 2]~ [%_%HIT_02C]
+@421  = ~[METALLIC SOUND 3]~
+@422  = ~[METALLIC SOUND 4]~ [%_%HIT_03D]
+@423  = ~[SPIDER, WRAITH 03]~ [%_%WSPID03]
+@424  = ~~ [%_%vicon38]
+@425  = ~~ [%_%vicon39]
+@427  = ~[WYVERN 03]~ [%_%WYVER03]
+@428  = ~[WYVERN 04]~ [%_%WYVER04]
+@429  = ~[WYVERN 05]~ [%_%WYVER05]
+@430  = ~[WYVERN 06]~ [%_%WYVER06]
+@431  = ~[WYVERN 07]~ [%_%WYVER07]
+@432  = ~[WYVERN 08]~ [%_%WYVER08]
+@433  = ~[WYVERN 09]~ [%_%WYVER09]
+@434  = ~[WYVERN 01]~ [%_%WYVER01]
+@435  = ~[WYVERN 02]~ [%_%WYVER02]
+@436  = ~[WYVERN 10]~ [%_%WYVER10]
+@437  = ~[SKELETON WARRIOR 02]~ [%_%SKELW02]
+@438  = ~[SKELETON WARRIOR 03] Gińcie...~ [%_%SKELW03]
+@439  = ~[SKELETON WARRIOR 09]~ [%_%SKELW09]
+@440  = ~[WOLF, WINTER 07]~ [%_%WWOLF07]
+@441  = ~[SKELETON WARRIOR 01]~ [%_%SKELW01]
+@443  = ~[MALE GREETING 3] Hmm?~ [%_%GENMG03]
+@444  = ~[MONKS 5]~ [%_%MONKS05]
+@445  = ~[MONKS 6]~ [%_%MONKS06]
+@446  = ~[WEREWOLF 01]~ [%_%WEREW01]
+@447  = ~[WEREWOLF 02]~ [%_%WEREW02]
+@448  = ~[WEREWOLF 03]~ [%_%WEREW03]
+@449  = ~[WEREWOLF 04]~ [%_%WEREW04]
+@450  = ~[WEREWOLF 05]~ [%_%WEREW05]
+@451  = ~[WEREWOLF 06]~ [%_%WEREW06]
+@452  = ~[CENTEOL 1] Moje pająki! Zabijcie ich. Zabijcie wszystkich!~ [%_%CENTL01]
+@453  = ~[CENTEOL 2]~ [%_%CENTL02]
+@454  = ~[CENTEOL 3]~ [%_%CENTL03]
+@455  = ~[CENTEOL 4]~ [%_%CENTL04]
+@456  = ~[WEREWOLF, GREATER 01] Wszystkich was pogrzebię!~ [%_%GWERE01]
+@457  = ~[WEREWOLF, GREATER 03]~ [%_%GWERE03]
+@458  = ~[WEREWOLF, GREATER 04]~ [%_%GWERE04]
+@459  = ~[WEREWOLF, GREATER 05]~ [%_%GWERE05]
+@460  = ~[WEREWOLF, GREATER 06]~ [%_%GWERE06]
+@461  = ~[WOLF, WINTER 03]~ [%_%WWOLF03]
+@462  = ~[WOLF, WINTER 04]~ [%_%WWOLF04]
+@463  = ~[WOLF, WINTER 05]~ [%_%WWOLF05]
+@464  = ~[WOLF, WINTER 06]~ [%_%WWOLF06]
+@465  = ~[WOLF, WINTER 08]~ [%_%WWOLF08]
+@466  = ~[WOLF, WINTER 09]~ [%_%WWOLF09]
+@467  = ~[WOLF, WINTER 01]~ [%_%WWOLF01]
+@468  = ~[WOLF, WINTER 02]~ [%_%WWOLF02]
+@469  = ~[SIRINE 05]~ [%_%SIRIN05]
+@470  = ~[SKELETON WARRIOR 04]~ [%_%SKELW04]
+@471  = ~[ZOMBIE 03]~ [%_%ZOMBI03]
+@472  = ~[ZOMBIE 04]~ [%_%ZOMBI04]
+@473  = ~[ZOMBIE 05]~ [%_%ZOMBI05]
+@474  = ~[ZOMBIE 06]~ [%_%ZOMBI06]
+@475  = ~[ZOMBIE 01]~ [%_%ZOMBI01]
+@476  = ~[ZOMBIE 02]~ [%_%ZOMBI02]
 
-@477 = ~Powraca Róg Plemienia Niedźwiedzia.~
-@478 = ~Przyzwanie Ducha Niedźwiedzia~
-@479 = ~Krwawienie~
-@480 = ~Zatrucie krwi~
-@481 = ~Rozproszenie zaklęć~
-@482 = ~Ochrona przed złem~
-@483 = ~Niewidzialność~
-@484 = ~Powraca Figurka Pantery~
-@485 = ~Przyzwanie Guenhwyvar~
-@486 = ~Gulp!~
+@477  = ~Róg plemienia Niedźwiedzia wraca.~
+@478  = ~Przyzwanie duchowego niedźwiedzia~
+@479  = ~Krwawienie~
+@480  = ~Zatrucie krwi~
+@481  = ~Rozproszenie magii~
+@482  = ~Ochrona przed złem~
+@483  = ~Niewidzialność~
+@484  = ~Figurka pantery wraca.~
+@485  = ~Przyzwanie Guenhwyvar~
+@486  = ~Gulp!~
 
 //---------------------------------------------------------------------------------
 //  Item descriptions:
@@ -276,189 +281,259 @@
 
 @133  = ~Sztylet~
 @134  = ~Wampiryczny sztylet +5~
-@135  = ~Typowe sztylety posiadają ostro zakończone, dwusieczne ostrza, w odróżnieniu od zwykłych noży, które są jednosieczne i nieco krótsze.
+@135  = ~Typowy sztylet posiada ostro zakończone, przeważnie obusieczne ostrze, w przeciwieństwie do noża, który jest jednosieczny i nieco od niego krótszy.
 
 PARAMETRY:
 
-Obrażenia: 1K4
+Obrażenia: 1k4
 Typ obrażeń: kłute
-Waga: 1
 Opóźnienie: 2
 Rodzaj biegłości: sztylet
 Typ broni: 1-ręczna
-Wymagana siła: 3~
-@136  = ~Sztylet ten obrósł już legendarną, złą sławą w całych Krainach. Obecnie służy on znanemu zabójcy, Artemisowi Entreri - w jego dłoniach broni tej powinien się obawiać każdy, nawet najpotężniejszy wojownik.
+
+Wymagania:
+– Siła: 3
+
+Waga: 1~
+@136  = ~Ten sztylet jest jednym z najbardziej przerażających w Krainach. Ten kawałek stali w dłoniach Artemisa Entereri i w połączeniu z jego zabójczymi umiejętnościami, odbiera przeciwnikom wszelkie szanse na przeżycie.
 
 PARAMETRY:
 
-Obrażenia: 1K4 +3
+Specjalne:
+– Wysysa z ofiary 5 punktów życia i przekazuje je właścicielowi broni, po trafieniu
+
+Obrażenia: 1k4 +3
 TraK0: +5
-Specjalne:
- Przy trafieniu wysysa z ofiary 5 punktów życia i przekazuje je właścicielowi broni.
 Typ obrażeń: kłute
-Waga: 1
 Opóźnienie: 2
 Rodzaj biegłości: sztylet
 Typ broni: 1-ręczna
-Wymagana siła: 3~
-@137  = ~Studded Leather~
+
+Wymagania:
+– Siła: 3
+
+Waga: 1~
+@137  = ~Zbroja skórzana ćwiekowana~
 @138  = ~Dusza węża +3~
-@139  = ~Zbroja skórzana ćwiekowana ma niewiele wspólnego ze zwykłą zbroją skórzaną. Podczas gdy zbroja skórzana jest utwardzaną skorupą, zbroja ćwiekowana jest miękka i wzmocniona setkami, nabitych w niewielkich odległościach nitów. Znajdują się one tak blisko siebie, że tworzą trudną do przebicia metalową zaporę, która świetnie powstrzymuje sieczne i kłute ataki. Miękkie skórzane podbicie służy jedynie do utrzymania nitów w miejscu.
+@139  = ~Zbroja skórzana ćwiekowana ma niewiele wspólnego ze zwykłą zbroją skórzaną. Zamiast przypominać utwardzony pancerz, jest ona bowiem nabijana setkami metalowych nitów, stanowiących miękkie podbicie. Liczne ćwieki tworzą elastyczną powłokę z metalu, która odbija ataki sieczne i kłute, podczas gdy warstwa skórzana służy jedynie do utrzymywania nitów na miejscu.
 
 PARAMETRY:
 
-Klasa Pancerza: 7
-Waga: 25
-Wymagana siła: 6~
-@140  = ~Zbroja ta jest osobistym pancerzem Artemisa Entreri, znanego zabójcy z Calimportu.
+Klasa Pancerza: 7 (5 przeciw broniom siecznym, 6 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 6
+
+Waga: 25~
+@140  = ~Ta skórzana zbroja jest osobistym pancerzem Artemisa Entreri.
 
 PARAMETRY:
 
-Klasa Pancerza: 4
 Specjalne:
- Właściciel jest odporny na truciznę
-Waga: 25
-Wymagana siła: 6~
+– Niewrażliwość na trucizny
+
+Klasa Pancerza: 4 (2 przeciw broniom siecznym, 3 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 6
+
+Waga: 25~
 @141  = ~Amulet~
-@142  = ~Amulet to biżuteria (czasami magiczna), która połączona z łańcuszkiem jest noszona na szyi. Rodzaj łańcuszka, na którym amulet jest zawieszony zwykle podnosi tylko jego walory estetyczne, a nie magiczne (jeśli takie istnieją). Można nosić tylko jeden amulet na raz.~
-@143  = ~Ten medalion jest bardzo poszukiwany przez zarówno złodziei jak i bardów, jednak z innych powodów. Nie dość, że zapewnia potężna magiczną ochronę przeciwko fizycznym atakom, to jeszcze zwiększa biegłość posiadacza w kilku łotrzykowskich umiejętnościach. Jednak nawet jeszcze bardziej cenioną cechą, z punktu widzenia bardów, jest zdolność amuletu do zapewnienia posiadaczowi odporności na wszelkie formy ciszy.
+@142  = ~Amulety to biżuteria, czasami magiczna, która połączona z łańcuszkiem jest noszona na szyi. Rodzaj łańcuszka, na którym amulet jest zawieszony, zwykle podnosi tylko jego walory estetyczne, a nie magiczne. Można nosić tylko jeden amulet na raz.
 
 PARAMETRY:
 
-+20% do wykrywania pułapek i otwierania zamków
-+3 do KP
-Osoba nosząca medalion jest odporna na ciszę~
+Waga: 1~
+@143  = ~Ten medalion jest bardzo poszukiwany zarówno przez złodziei, jak i bardów, jednak z różnych powodów. Nie dość, że zapewnia potężną magiczną ochronę przeciwko fizycznym atakom, to jeszcze zwiększa biegłość posiadacza w kilku łotrzykowskich umiejętnościach. Jednak nawet jeszcze bardziej cenioną cechą, z punktu widzenia bardów, jest zdolność amuletu do zapewnienia posiadaczowi odporności na wszelkie formy ciszy.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +3
+– Otwieranie zamków: +20%
+– Znajdowanie pułapek: +20%
+– Niewrażliwość na ciszę
+
+Waga: 3~
 @144  = ~Amulet ochrony przed wampirami~
-@145  = ~Amulet ten zaklęty został przez maga, który niegdyś musiał przeprawić się przez Góry Śmierci w Dolinach Lodowego Wichru.
+@145  = ~Ten amulet został zaklęty przez maga, gdy ten podróżował szukając artefaktu, o którym chodziły słuchy, że znajduje się na Górze Śmierci w Dolinie Lodowego Wichru.
+
+Uwaga: Amulet chroni skutecznie właściciela przed wyssaniem kondycji, ale usuwa również jakiekolwiek premie związane z tą cechą.
 
 PARAMETRY:
 
 Specjalne:
- Błogosławieństwo
- Chroni właściciela przed wampirycznym wysysaniem kondycji. Przy tym jednak usuwa jakiekolwiek zmiany (pozytywne i negatywne) tego atrybutu.~
+– Błogosławieństwo
+– Niewrażliwość na wampiryczne wysysanie Kondycji
+
+Waga: 1~
 @146  = ~Figurka pająka~
-@147  = ~Ta drobna figurka pająka żarzy się czerwonym blaskiem.~
-@148  = ~Ta magiczna figurka pozwala użytkownikowi przyzwać Przenikającego Pająka.
-
-Figurka pozwala na tylko jednorazowe użycie, po czym zostaje zniszczona zaś jej esencja powraca na zewnętrzne plany do swej prawowitej właścicielki, Demonicznej Pajęczej Królowej.~
-@149  = ~Krótki miecz~
-@150  = ~Ukąszenie Węża +4~
-@151  = ~Pierwszymi mieczami jakie pojawiły się były właśnie krótkie miecze. Najprościej rzecz biorąc, jest to sztylet o ostrzu tak długim, że nie może być dłużej traktowany jak sztylet. Termin "krótki miecz" nie istnieje w żadnych klasyfikacjach mieczy. Tutaj oznacza on dwusieczne ostrze o długości około 60 centymetrów. Jego czubek jest zazwyczaj ostry, co sprawia, że doskonale służy do zadawania ran kłutych.
+@147  = ~Ta mała figurka pająka mieni się czerwonym blaskiem.
 
 PARAMETRY:
 
-Obrażenia: 1K6
+Waga: 1~
+@148  = ~Ta mała figurka pająka mieni się czerwonym blaskiem. Magiczna figurka pozwala tylko na jednorazowe użycie, po czym zostaje zniszczona, zaś jej esencja powraca do Sfer Zewnętrznych, do swojej prawowitej właścicielki, demonicznej pajęczej królowej.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Przyzwanie grupy pająków przenikających
+
+Waga: 1~
+@149  = ~Miecz krótki~
+@150  = ~Ukąszenie węża +4~
+@151  = ~Miecze krótkie pojawiły się jako pierwsze w tej grupie broni. W najprostszych słowach jest to sztylet o ostrzu tak długim, że nie może być dłużej traktowany jak sztylet. Termin „miecz krótki” nie istnieje w żadnych klasyfikacjach mieczy. Jednakże jest tu używany do opisania dwusiecznego ostrza o długości około sześćdziesięciu centymetrów. Czubki tych mieczy są zazwyczaj ostre, co czyni je doskonałymi do zadawania ran kłutych.
+
+PARAMETRY:
+
+Obrażenia: 1k6
 Typ obrażeń: kłute
-Waga: 3
 Opóźnienie: 3
-Rodzaj biegłości: krótki miecz
+Rodzaj biegłości: miecz krótki
 Typ broni: 1-ręczna
-Wymagana siła: 5~
-@152  = ~Miecz ten to ulubiona broń Artemisa Entreri.
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+@152  = ~To jest osobisty miecz Artemisa Entreri.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +4
+Specjalne:
+– Wprowadza do krwi ofiary truciznę, po trafieniu (rzut obronny przeciw truciznom neguje)
+
+Obrażenia: 1k6 +4
 TraK0: +4
-Specjalne:
- Przy trafieniu wprowadza do krwi ofiary truciznę (rzut obronny przeciw truciznom neguje)
 Typ obrażeń: kłute
-Waga: 3
 Opóźnienie: 3
-Rodzaj biegłości: krótki miecz
-Typ broni: 1-ręczna~
+Rodzaj biegłości: miecz krótki
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
 @153  = ~Dziecko przywódcy plemienia Niedźwiedzia~
-@154  = ~To dziecię przywódcy Plemienia Niedźwiedzia. Wciąż żywe, nawet po tym co właśnie przeżyło.~
-@155  = ~Róg Plemienia Niedźwiedzia~
-@156  = ~Dźwięk tego potężnego rogu przywołuje Ducha Niedźwiedzia, który walczył będzie w imieniu właściciela.
+@154  = ~To jest dziecko przywódcy plemienia Niedźwiedzia. Wciąż żywe, nawet po tym co przeszło.
 
 PARAMETRY:
 
-Specjalne:
- Raz dziennie pozwala przyzwać Duchowego niedźwiedzia.~
+Waga: 18~
+@155  = ~Róg plemienia Niedźwiedzia~
+@156  = ~Dzwięk tego niezwykłego rogu przyzywa potężnego duchowego niedźwiedzia, który walczy w imieniu właściciela.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Przyzwanie duchowego niedźwiedzia, raz dziennie
+
+Waga: 0~
 @157  = ~Pas~
-@158  = ~Święty Symbol Lathandera~
+@158  = ~Święty symbol Lathandera~
 @159  = ~Pasy są podobne do zwykłych pasków. W odróżnieniu jednak od tych ostatnich, nie służą podtrzymywaniu spodni i innych imponderabiliów, ale wiesza się na nich torby, sakwy, pochwy itp.
 
 PARAMETRY:
 
 Waga: 2~
-@160  = ~Te niezwykle potężne święte symbole mogą otrzymać tylko najbardziej oddani słudzy Zwiastunki Świtu.
-
-PARAMETRY:
-
- Zapewnia dodatkowe zaklęcie 6. i 7. poziomu.
- Kiedy się go nosi, właściciel otrzymuje dodatkowe 5% odporności na magię
- Kiedy się go nosi, właściciel otrzymuje +1 do Siły.~
-@161  = ~Święty Symbol Helma~
-@162  = ~Te niezwykle potężne święte symbole mogą otrzymać tylko najbardziej oddani słudzy Strażnika.
-
-PARAMETRY:
-
- Zapewnia dodatkowe zaklęcie 6. i 7. poziomu.
- Kiedy się go nosi, właściciel otrzymuje dodatkowe 5% odporności na magię
- Kiedy się go nosi, właściciel otrzymuje +1 do Siły.~
-@163  = ~Święty Symbol Talosa~
-@164  = ~Te niezwykle potężne święte symbole mogą otrzymać tylko najbardziej oddani słudzy Pana Burz.
-
-PARAMETRY:
-
- Zapewnia dodatkowe zaklęcie 6. i 7. poziomu.
- Kiedy się go nosi, właściciel otrzymuje dodatkowe 5% odporności na magię
- Kiedy się go nosi, właściciel otrzymuje +1 do Siły.~
-@165  = ~Wiekiera~
-@166  = ~Burzowa Gwiazda +3~
-@167  = ~Wekiera jest w prostej linii spadkobierczynią zwykłej maczugi. Jest to po prostu drewniany trzonek, na którym została osadzona kamienna lub metalowa głowica, uzbrojona w kolce, ćwieki lub inne ostre zakończenia.
-
-PARAMETRY:
-
-Obrażenia: 1K6 +1
-Typ obrażeń: obuchowe
-Waga: 8
-Opóźnienie: 7
-Rodzaj biegłości: wekiera
-Typ broni: 1-ręczna
-Wymagana siła: 10~
-@168  = ~Ta magiczna broń pochodzi z pradawnych czasów. Podobno wytworzono ją w Netheril. Kiedy ktoś weźmie tę maczugę do ręki, zaczynają po niej przebiegać widowiskowe, choć niegroźne, wyładowania elektryczne.
-
-PARAMETRY:
-
-TraK0: +3
-Obrażenia: 1k6 +4, +1k6 obrażeń od elektryczności
-Typ obrażeń: obuchowe
-Waga: 6
-Opóźnienie: 4
-Rodzaj biegłości: maczuga
-Typ: 1-ręczna
-Wymagana siła: 10~
-@169  = ~Morgensztern~
-@170  = ~Lodowa Gwiazda +4~
-@171  = ~Morgensztern to drewniany trzonek, zakończony metalowym okuciem z licznymi szpiczastymi ćwiekami. Broń ta ma około 1,20 do 1,30 metra długości. Różne jej rodzaje posiadają kulistą, owalną lub cylindryczną głowicę. Bez względu jednak na rodzaj, większość morgenszternów jest zakończona długim szpikulcem, przeznaczonym do kłucia.
-
-PARAMETRY:
-
-Obrażenia: 2K4
-Typ obrażeń: obuchowe
-Waga: 12
-Opóźnienie: 7
-Rodzaj biegłości: cep bojowy/morgensztern
-Typ broni: 1-ręczna
-Wymagana siła: 11~
-@172  = ~Głowica tego morgenszternu sprawia wrażenie wykonanej z nietłukącego błękitnego lodowego kryształu. Trzonek jest chłodny w dotyku i trzymająca go w ręku osoba zostaje otoczona przez kojący obłok chłodnego powietrza, który chroni nawet przez ogniem magicznym.
+@160  = ~Te niezwykle potężne święte symbole mogą otrzymać tylko najbardziej oddani słudzy Zwiastuna Świtu.
 
 PARAMETRY:
 
 Specjalne:
- +20% do odporności na ogień
+– Siła: +1
+– Odporność na magię: +5%
+– Pozwala zapamiętać po jednym dodatkowym zaklęciu kapłana z poziomów 6. i 7.
 
-TraK0: +4
-Obrażenia: 2K4 +4, +1K4 dodatkowych obrażeń od zimna
+Waga: 0~
+@161  = ~Święty symbol Helma~
+@162  = ~Te niezwykle potężne święte symbole mogą otrzymać tylko najbardziej oddani słudzy Strażnika.
+
+PARAMETRY:
+
+Specjalne:
+– Siła: +1
+– Odporność na magię: +5%
+– Pozwala zapamiętać po jednym dodatkowym zaklęciu kapłana z poziomów 6. i 7.
+
+Waga: 0~
+@163  = ~Święty symbol Talosa~
+@164  = ~Te niezwykle potężne święte symbole mogą otrzymać tylko najbardziej oddani słudzy Pana Burz.
+
+PARAMETRY:
+
+Specjalne:
+– Siła: +1
+– Odporność na magię: +5%
+– Pozwala zapamiętać po jednym dodatkowym zaklęciu kapłana z poziomów 6. i 7.
+
+Waga: 0~
+@165  = ~Wekiera~
+@166  = ~Gwiazda burzy +3~
+@167  = ~Wekiera jest w prostej linii spadkobierczynią zwykłej maczugi, będąc po prostu drewnianym trzonem, na którym została osadzona kamienna lub metalowa głowica. Wygląd głowicy może się różnić, niektóre są nabijane ostrymi kolcami inne metalowymi ćwiekami, a jeszcze inne mają kształt ostrosłupa.
+
+PARAMETRY:
+
+Obrażenia: 1k6 +1
 Typ obrażeń: obuchowe
-Waga: 8
-Opóźnienie: 4
-Rodzaj biegłości: Cep bojowy/Morgensztern
+Opóźnienie: 7
+Rodzaj biegłości: wekiera
 Typ broni: 1-ręczna
-Wymagana siła: 11~
+
+Wymagania:
+– Siła: 10
+
+Waga: 10~
+@168  = ~Ta magiczna broń pochodzi z pradawnych czasów. Podobno wyprodukowano ją w Netheril. Kiedy ktoś weźmie tę maczugę do ręki, zaczynają po niej przebiegać widowiskowe, choć niegroźne, wyładowania elektryczne.
+
+PARAMETRY:
+
+Obrażenia: 1k6 +4, +1k6 obrażeń od elektryczności
+TraK0: +3
+Typ obrażeń: obuchowe
+Opóźnienie: 4
+Rodzaj biegłości: wekiera
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 6~
+@169  = ~Morgensztern~
+@170  = ~Lodowa gwiazda +4~
+@171  = ~Morgensztern składa się z drewnianego styliska, zwieńczonego żelazną głowicą nabitą licznymi szpiczastymi ćwiekami. Broń ta ma od około stu dwudziestu do stu trzydziestu centymetrów długości. Różne jej rodzaje posiadają głowicę kulistą, owalną lub cylindryczną. Bez względu jednak na rodzaj, większość morgenszternów zakończona jest długim szpikulcem, przeznaczonym do kłucia.
+
+PARAMETRY:
+
+Obrażenia: 2k4
+Typ obrażeń: obuchowe
+Opóźnienie: 7
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 12~
+@172  = ~Głowica tego morgenszternu sprawia wrażenie wykonanej z nietłukącego błękitnego lodowego kryształu. Trzonek jest chłodny w dotyku i trzymająca go w ręku osoba zostaje otoczona przez kojący obłok chłodnego powietrza, który chroni nawet przed ogniem magicznym.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na ogień: +20%
+
+Obrażenia: 2k4 +4, +1k4 obrażeń od zimna
+TraK0: +4
+Typ obrażeń: obuchowe
+Opóźnienie: 3
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 7~
 @173  = ~Buty~
 @174  = ~Buty szybkości~
 @175  = ~Buty są zwykle ręcznie wyrabiane przez szewców. Zwykłe buty są robione z użyciem jakiegoś ogólnego modelu stopy, ale te dobre wykonywane są na zamówienie i dopasowywane do stóp zamawiającego.
@@ -466,147 +541,190 @@ Wymagana siła: 11~
 PARAMETRY:
 
 Waga: 4~
-@176  = ~Buty te należą do Artemisa Entreri, przerażającego zabójcy podążającego za Drizztem. Artemis niczym cień podąża za drowem planując kolejne, zdradzieckie ataki, które miałyby wreszcie doprowadzić do śmierci coraz bardziej sławnego tropiciela.
+@176  = ~Buty te należą do osobistego ekwipunku Artemisa Enreri. Mówi się, że ten niezwykle groźny skrytobójca pała ogromną nienawiścią wobec Drizzta. Artemis niczym cień podąża za nim, przemierza Krainy i planuje jakby tu wbić w plecy nóż mrocznemu łowcy.
 
 PARAMETRY:
 
 Specjalne:
- Zwiększają prędkość poruszania się.~
+– Dwukrotnie zwiększają prędkość poruszania się
+
+Waga: 4~
 @177  = ~Dziennik Bruenora~
-@178  = ~Dzień 1: W okolicy zaczynają dziać się dziwne rzeczy. Z nieba zniknęły jakiekolwiek chmury, co początkowo wziąłem za dobry omen - jednak zdaje się, że ma to dosyć poważny wpływ na środowisko Dolin. Nagle zaczęły topnieć masy śniegu i lodu z gór, co może wywołać powódź w Dolinie lodowego Wichru.
+@178  = ~Dzień 1
+Dziwne rzeczy dzieją się wokół nas, czarne chmury rozwiało z nieba, co na pierwszy rzut oka można uznać za dobry znak. Jednakże ma to wpływ na środowisko Dolin. Lód i śnieg z gór zaczeły topnieć, a rezultat będzie taki, że cała Dolina Lodowego Wichru zostanie zalana.
 
-Dzień 2: Catti-Brie przyłączyła się do miejscowych łowców, by zbadać sprawę tych zmian pogody.
+Dzień 2
+Catti-Brie przyłączyła się do miejscowych łowców, aby sprawdzić co spowodowało tak dramatyczne zmiany pogody.
 
-Dzień 3: Nie miałem dziś żadnych wieści od Cattie-Brie, jednak chyba nie ma co się tym martwić. Nie ma jej dopiero dobę.
+Dzień 3
+Nie miałem dziś żadnych wieści od Catti-Brie, choć minął na razie tylko jeden dzień.
 
-Dzień 4: Wciąż brak wieści. Nie przybył żaden posłaniec. Zaczynam się niepokoić.
+Dzień 4
+Wciąż nie ma żadnych wieści, ani nawet jednego posłańca, który powiedziałby o tym, jak się sprawy mają.
 
-Dzień 5: Nic. Catti mówiła, że wróci w przeciągu dwóch dni. Gdyby chciała zostać gdzieś na dłużej, z pewnością by mnie o tym powiadomiła. Co się mogło stać?
+Dzień 5
+Nadal brak wieści. Catti-Brie mówiła, że wróci w przeciągu dwóch dni. Gdyby zatrzymała się gdzieś na dłużej, to wysłałaby jakąś wiadomość.
 
-Dzień 6: Czuję, że coś się święci. Czuję to w kościach. Wyruszam na poszukiwania Catti-Brie, poza tym poprosiłem Regisa aby odnalazł Drizzta, trochę podróży po tak długim lenistwie dobrze mu zrobi. Drizzt powinien już skończyć swoje sprawy na Wybrzeżu Mieczy i być już na drodze do Dolin. Próbował tam odszukać Wulfgara, lecz z tego co mi wiadomo, nie było żadnych tropów ni poszlak.~
+Dzień 6
+Przeczuwam, że coś idzie nie tak. Spróbuję podążyć śladami Catti-Brie. Powiedziałem też Regisowi, aby spróbował odnaleźć Drizzta. Słyszałem, że miał sprawy do załatwienia na Wybrzeżu Mieczy i że powraca już do Doliny. Starałem się odszukać Wulfgara, ale zdaje się, że ten rozpłynął się w powietrzu.
+
+PARAMETRY:
+
+Waga: 25~
 @179  = ~Topór bojowy~
 @180  = ~Topór bojowy +3~
-@181  = ~Bruenor wykuł ten topór w chwili kiedy los zaniósł go do Doliny Lodowego Wichru. Od tego czasu dobrze mu służy rozłupując czaszki jego wrogów.
+@181  = ~Ten niezwykły topór wykuł osobiście sam Bruenor, po tym jak dotarł do Doliny Lodowego Wichru.
 
 PARAMETRY:
 
-Obrażenia: 1K8 +3
+Obrażenia: 1k8 +3
 TraK0: +3
 Typ obrażeń: sieczne
-Waga: 2
 Opóźnienie: 4
 Rodzaj biegłości: topór
-Typ broni: 1-ręczna~
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 2~
 @182  = ~Hełm~
-@183  = ~Hełm Bruenora~
-@184  = ~Hełm ten jest już nieco poszczerbiony, ułamał się już nawet jeden róg. Jednak Bruenor wciąż jest zadowolony z zapewnianej przez niego ochrony.
+@183  = ~Hełm Bruenora Battlehammera~
+@184  = ~Ten hełm jest nieco powgniatany i porysowany, nawet jeden róg jest częściowo ułamany. Wciąż jednak zapewnia on Bruenorowi doskonałą ochronę.
 
 PARAMETRY:
 
-Premia do Klasy Pancerza: 1
-Premia do Rzutów Obronnych: 1
 Specjalne:
- +1 do trafienia
- Chroni przed trafieniami krytycznymi
+– Klasa Pancerza: +1
+– TraK0: +1
+– Rzuty obronne: +1
+– Chroni przed trafieniami krytycznymi
+
 Waga: 1~
 @185  = ~Pełna zbroja płytowa~
-@186  = ~Mithrylowa pełna zbroja płytowa +2~
-@187  = ~Najlepsza (i najcięższa) zbroja, jaką wojownik może zdobyć - zarówno pod względem wyglądu, jak i ochrony, którą zapewnia. Jej znakomicie dopasowane, połączone elementy z litego metalu są specjalnie modelowane, by jak najlepiej odbijały tak uderzenia broni różnego typu, jak i strzały. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiększana różnymi dodatkami.
+@186  = ~Mithrilowa pełna zbroja płytowa +2~
+@187  = ~Pełna zbroja płytowa to najlepszy pancerz, jaki może kupić wojownik, zarówno pod względem wyglądu, jak i ochrony. Idealnie dopasowane zachodzące na siebie płytki ułożone są pod specjalnym kątem, dzięki czemu są w stanie odbijać strzały i uderzenia, a cała zbroja jest starannie ozdobiona bogatymi grawiurami oraz szczegółowymi tłoczeniami.
 
 PARAMETRY:
 
-Klasa Pancerza: 1
-Waga: 70
-Wymagana siła: 15~
-@188  = ~Mitrylowa pełna zbroja płytowa +2
-To jest osobista zbroja Bruenora Battlehammera i trudno znaleźć lepszy pancerz. To prawdziwy cud rzemiosła płatnerskiego.
+Klasa Pancerza: 1 (-3 przeciw broniom siecznym, -2 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 15
+
+Waga: 70~
+@188  = ~To jest osobista zbroja Bruenora Battlehammera i trudno znaleźć lepszy pancerz. To prawdziwy cud rzemiosła płatnerskiego.
 
 PARAMETRY:
-Klasa pancerza: -1
+
+Klasa Pancerza: -1 (-3 przeciw broniom siecznym, -2 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 15
+
 Waga: 45~
-@189  = ~Ciężka kusza~
-@190  = ~Ciężka kusza +1~
-@191  = ~Kusza jest łukiem zatkniętym poprzecznie na drewnianym lub metalowym drzewcu. Zazwyczaj jest wykonana z jesionu albo cisu. Strzela pociskami, które zwane są bełtami.
+@189  = ~Kusza ciężka~
+@190  = ~Kusza ciężka +1~
+@191  = ~Kusza jest łukiem, który zamocowano poprzecznie na drewnianym lub metalowym trzonku nazwanym później łożem. Łuczysko wykonane jest zazwyczaj z jesionu lub cisu. Kusza strzela pociskami zwanymi również bełtami.
 
 PARAMETRY:
 
-Obrażenia: +2 (pociski)
-Waga: 14
+Obrażenia: +2
+Typ obrażeń: pocisk
 Opóźnienie: 10
 Rodzaj biegłości: kusza
 Typ broni: 2-ręczna
-Wymagana siła: 12~
-@192  = ~Kusza jest łukiem zatkniętym poprzecznie na drewnianym lub metalowym drzewcu. Zazwyczaj jest wykonana z jesionu albo cisu. Strzela pociskami, które zwane są bełtami.
+
+Wymagania:
+– Siła: 12
+
+Waga: 14~
+@192  = ~Kusza jest łukiem, który zamocowano poprzecznie na drewnianym lub metalowym trzonku nazwanym później łożem. Łuczysko wykonane jest zazwyczaj z jesionu lub cisu. Kusza strzela pociskami zwanymi również bełtami. Ta kusza ciężka jest magiczna.
 
 PARAMETRY:
 
-Obrażenia: +3 (pociski)
+Obrażenia: +3
 TraK0: +1
-Waga: 12
+Typ obrażeń: pocisk
 Opóźnienie: 9
 Rodzaj biegłości: kusza
 Typ broni: 2-ręczna
-Wymagana siła: 12~
-@193  = ~Strzały~
-@194  = ~Kołczan Cattie-Brie~
-@195  = ~Strzały z tego kołczanu są zaklęte i wydaje się, że nigdy się nie kończą. Są to lekkie strzały które służą do strzelania na daleki dystans. Często wykorzystuje się je do polowań, gdyż lecą do celu szybko i prawie bez odgłosu. Większość z nich jest wykonana z jesionu lub brzozy i mierzy od 75 do 100 cm.
+
+Wymagania:
+– Siła: 12
+
+Waga: 12~
+@193  = ~Kołczan~
+@194  = ~Kołczan Catti-Brie~
+@195  = ~Strzały z tego magicznego kołczanu nigdy się nie kończą. Te strzały są lekkie i jak sama nazwa wskazuje, służą do strzelania na daleki dystans. Często wykorzystuje się je do polowań. Większość z nich jest wykonanych z jesionu lub brzozy i mierzy od siedemdziesięciu pięciu do stu centymetrów.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +1
+Obrażenia: 1k6 +1
 TraK0: +1
-Specjalne:
- Nieograniczona ilość strzał
-Typ obrażeń: pocisk (kłute)
-Waga: 0
-Wyrzutnia: łuk~
-@196  = ~Długi łuk~
-@197  = ~Taurmaril +2~
-@198  = ~Długi łuk +2, Taurmaril: 'Poszukiwacz serc'
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
 
-Kolejny z znanych już oręży po tej stronie Dolin. Łuk ten to przyboczna broń bohaterki Catti-Brie Battlehammer. Córki Bruenora Battlehammera i miłości dwóch potężnych wojowników. Wojowniczka posługuje się tym srebrzystym łukiem z niezaprzeczalną biegłością. Zło niech uważa na srebrne strugi przecinające powietrze!
+Waga: 0~
+@196  = ~Długi łuk~
+@197  = ~Taulmaril +2~
+@198  = ~Długi łuk +2: „Taulmaril”
+
+Ten łuk, nazywany również „Poszukiwaczem serc”, to kolejny znany już artefakt po tej stronie Doliny Lodowego Wichru. Ten szczególny rodzaj łuku nosi bohaterka Catti-Brie Battlehammer. Córka Bruenora i obiekt miłosny dwóch dażonych wielkim uznaniem wojowników. Posługuje się ona tym poteżnym, srebrzystym artefaktem z ogromnie rzadką wprawą. Wystrzegaj się srebrzystych strug!
 
 PARAMETRY:
 
 Obrażenia: +2
 TraK0: +2
-Waga: 2
 Opóźnienie: 2
 Rodzaj biegłości: długi łuk
-Typ broni: 2-ręczna~
-@199  = ~Długi miecz~
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 2~
+@199  = ~Miecz długi~
 @200  = ~Khazid-Zhea +3~
-@201  = ~Tą wysoce nieprzewidywalną broń chaosu, Catti-brie zdobyła podczas mentalnego pojedynku w jakim uczestniczyła podczas Czasów Kłopotów, czasach kiedy bogowie kroczyli pośród ludzi. Ostrze to dobrze jej służy.
+@201  = ~Wysoce nieprzewidywalna, vorpalna broń. Catti-Brie wygrała ten miecz w mentalnej bitwie podczas Czasu Niepokojów, gdy bogowie kroczyli pośród ludzi. Broń ta dobrze jej służy.
 
 PARAMETRY:
 
-Obrażenia: 1K8 +3
+Obrażenia: 1k8 +3
 TraK0: +3
 Typ obrażeń: sieczne
-Waga: 2
 Opóźnienie: 3
-Rodzaj biegłości: długi miecz
+Rodzaj biegłości: miecz długi
 Typ broni: 1-ręczna
-Wymagana siła: 6~
-@202  = ~Płaszcz z wilczych skór~
-@203  = ~Ta śnieżnobiała opoka z skór śnieżnych wilków jest ciepła i miła w dotyku. Została umagiczniona przez krasnoludzkiego kowala Srebrnego Młota. Może być przywdziewana jak płaszcz.
 
-PARAMETRY
+Wymagania:
+– Siła: 6
 
-Specjalne:
- Odporność na chłód: +50%~
-@204  = ~Cep bojowy~
-@205  = ~Cep bojowy składa się z solidnego drzewca, służącego za uchwyt, do którego przymocowany jest bądź gruby metalowy pręt, bądź nabijany ostrymi kawałkami metalu lub kamieni drąg, lub też żelazna kula ze szpikulcami. Te dwa elementy łączono zwykle krótkim łańcuchem lub mocnymi rzemieniami. Broń ta wywodzi się od cepów używanych do młócenia zboża.
+Waga: 2~
+@202  = ~Płaszcz ze skóry śnieżnego wilka~
+@203  = ~Ta biała skóra ze śnieżnego wilka jest miękka i luksusowa. Została umagiczniona przez krasnoludzkiego kowala Srebrnego Młota. Można ją nosić jak płaszcz.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +1
+Specjalne:
+– Odporność na zimno: +50%
+
+Waga: 10~
+@204  = ~Cep bojowy~
+@205  = ~Cep bojowy składa się z solidnego drzewca, służącego za uchwyt, do którego przymocowany jest gruby metalowy pręt, nabijany ostrymi kawałkami metalu lub kamieni drąg, lub też żelazna kula ze szpikulcami. Te dwa elementy są zwykle połączone krótkim łańcuchem lub mocnymi rzemieniami. Broń ta była początkowo używana jako narzędzie do młócenia ziarna.
+
+PARAMETRY:
+
+Obrażenia: 1k6 +1
 Typ obrażeń: obuchowe
-Waga: 15
 Opóźnienie: 7
 Rodzaj biegłości: cep bojowy/morgensztern
 Typ broni: 1-ręczna
-Wymagana siła: 13~
+
+Wymagania:
+– Siła: 13
+
+Waga: 15~
 @206  = ~Czaszka~
 @207  = ~Sztylet do rzucania~
 @208  = ~Zatruty sztylet do rzucania~
@@ -614,566 +732,825 @@ Wymagana siła: 13~
 
 PARAMETRY:
 
-Obrażenia: 1K4
-Typ obrażeń: pocisk (kłute)
-Waga: 1
+Obrażenia: 1k4
+Typ obrażeń: pocisk
 Opóźnienie: 2
 Rodzaj biegłości: sztylet
 Typ broni: 1-ręczna
-Wymagana siła: 3~
-@210  = ~Na każdym z zatrutych rzucanych sztyletów znajduje się cienka warstwa trucizny, czyniąc go zabójczą bronią w rękach wyćwiczonego zabójcy. Często wykorzystywany jest podczas goblińskich napadów.~
-@211  = ~Ampułka wypełniona krwią~
-@212  = ~Ampułka krwi Kornugona~
-@213  = ~Dark and rancid blood lurks within this pewter goblet. The lip is black and caked where it appears others have tasted from it. Scratched deep into the pewter are the words "Posmakuj Mej Duszy."~
-@214  = ~Na ściance tej ampułki wyskrobane są słowa "Posmakuj Mej Duszy". Mówi się, że mroczna krew czająca się na dnie tej ampułki potrafi przywrócić utracone zdrowie, wyleczyć choroby i usunąć trucizny. Jednak ma to swoją cenę, której jednak nie może odgadnąć nawet magia poznania.
+
+Wymagania:
+– Siła: 3
+
+Waga: 0~
+@210  = ~Na każdym z tych rzucanych sztyletów znajduje się cienka warstwa trucizny. Takie sztylety często wykorzystywane są przez gobliny, które urządzają zasadzki.
+
+PARAMETRY:
+
+Obrażenia: 1k4, +2 obrażenia od trucizny na sekundę, przez dziesięć sekund (rzut obronny przeciw śmierci neguje)
+Typ obrażeń: pocisk
+Opóźnienie: 2
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 0~
+@211  = ~Puchar wypełniony krwią~
+@212  = ~Puchar krwi kornugona~
+@213  = ~Ciemna i zastygła krew czai się w tym cynowym pucharze. Jego brzeg jest czarny od zakrzepłej krwi i zdaje się, że inni już pili z niego. Na jego metalowym dnie wydrapano te oto słowa: „Posmakuj mej duszy”.
+
+PARAMETRY:
+
+Waga: 2~
+@214  = ~Na metalowym dnie kielicha wydrapane są te oto słowa: „Posmakuj mej duszy”. Mówi się, że ta mroczna krew, która czai się na dnie cynowego pucharu potrafi przywrócić utracone zdrowie, uleczyć chorobę i zneutralizować truciznę. Ma to jednak swoją cenę. Choć nawet magia poznania nie może przejrzeć, jakie mogą być skutki uboczne.
 
 PARAMETRY:
 
 Specjalne:
- Leczy 5 punktów życia
- Usuwa choroby i trucizny
- Nieznane skutki uboczne~
+– Przywraca 5 punktów życia
+– Leczy choroby i neuatralizuje trucizny
+– Nieznane skutki uboczne
+
+Waga: 2~
 @215  = ~Pierścień~
-@216  = ~Pierścień swobody ruchów: 'Dar Edventara'~
-@217  = ~Pierścienie noszone są na palcach i bardzo często mają własności magiczne. Na każdej dłoni można nosić jeden pierścień.~
-@218  = ~Pierścień swobody ruchów: 'Dar Edventara'
-Ten pierścień otrzymał badacz raf i myśliwy - znany jedynie jako Edventar - od grupy morskich elfów, które przez długi czas były jego przyjaciółmi. Pomoc Edventara przy unikaniu "Królowej Piratów" z Dambrath była podstawą przetrwania elfów. Mimo to Yenandry wciąż obawiano się wszędzie tam, gdzie woda spotykała się z lądem.
+@216  = ~Dar Edventara~
+@217  = ~Pierścionek to niewielki krążek z drogocennego metalu używany jako część biżuterii. Niektóre rzadkie pierścienie mają na sobie uroki nadające im magicznych właściwości. To one są najbardziej pożądane, zwłaszcza przez poszukiwaczy przygód.
+
+PARAMETRY:
+
+Waga: 0~
+@218  = ~Pierścień swobody ruchów: „Dar Edventara”
+
+Ten pierścień otrzymał badacz raf i myśliwy, znany jedynie jako Edventar, od grupy morskich elfów, które przez długi czas były jego przyjaciółmi. Pomoc Edventara przy unikaniu „Królowej Piratów” z Dambrath była podstawą przetrwania elfów. Mimo to Yenandry wciąż obawiano się wszędzie tam, gdzie woda spotykała się z lądem.
 
 PARAMETRY:
 
 Specjalne:
- Noszący pierścień jest odporny na każde magiczne i naturalne działanie, które w jakikolwiek sposób wpływa na swobodę ruchów. To dotyczy także zaklęć spowalniania i przyspieszania ruchów.~
-@219  = ~Dłoń ghula~
-@220  = ~Wiekiera zniszczeń +2~
-@221  = ~Wekiera jest w prostej linii spadkobierczynią zwykłej maczugi. Jest to po prostu drewniany trzonek, na którym została osadzona kamienna lub metalowa głowica, uzbrojona w kolce, ćwieki lub inne ostre zakończenia.
+– Noszący pierścień jest odporny na każde magiczne, jak i naturalne działanie, które w jakikolwiek sposób wpływa na swobodę ruchów. Dotyczy to także zaklęć Spowolnienie i Przyspieszenie ruchów
+
+Waga: 0~
+@219  = ~Ręka ghula~
+@220  = ~Wekiera zniszczeń +2~
+@221  = ~Wekiera jest w prostej linii spadkobierczynią zwykłej maczugi, będąc po prostu drewnianym trzonem, na którym została osadzona kamienna lub metalowa głowica. Wygląd głowicy może się różnić, niektóre są nabijane ostrymi kolcami inne metalowymi ćwiekami, a jeszcze inne mają kształt ostrosłupa.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +1
+Obrażenia: 1k6 +1
 Typ obrażeń: obuchowe
-Waga: 8
 Opóźnienie: 7
 Rodzaj biegłości: wekiera
 Typ broni: 1-ręczna
-Wymagana siła: 10~
-@222  = ~Wekiera zniszczeń +2
-Ta ciężka wekiera została stworzona w ściśle określonym celu: do niszczenia nieumarłych. Każda trafiona nią taka istota odczuwa nie tylko żądło broni, ale może też po prostu ulec zniszczeniu. Istnieją legendy o kapłance tak świętej, że jedno jej dotknięcie mogło obrócić wampira w nicość, ale czy to broń dawała jej taką siłę, czy ona broni, jest tematem dyskusji dla teologów.
+
+Wymagania:
+– Siła: 10
+
+Waga: 10~
+@222  = ~Ta ciężka wekiera została stworzona w ściśle określonym celu: do niszczenia nieumarłych. Każda trafiona nią taka istota odczuwa nie tylko żądło broni, ale może też po prostu ulec zniszczeniu. Istnieją legendy o kapłance tak świętej, że jedno jej dotknięcie mogło obrócić wampira w nicość, ale czy to broń dawała jej taką siłę, czy ona broni, jest tematem dyskusji dla teologów.
 
 PARAMETRY:
 
 Specjalne:
-– Bonus na nieumarłych obrażenia: 1K6 +3
-– Trafiony nieumarły musi wykonać rzut obronny (z -4 kary) przeciw śmierci lub ulegnie zniszczeniu
+– Nieumarli ulegają zniszczeniu, po trafieniu (rzut obronny przeciw śmierci z modyfikatorem -4 neguje)
+– Uderza jak broń +5
 
-Obrażenia: 1K6 +3
+Obrażenia: 1k6 +3, +1k6 +3 obrażeń przeciw nieumarłym
 TraK0: +2
 Typ obrażeń: obuchowe
-Waga: 8
 Opóźnienie: 6
 Rodzaj biegłości: wekiera
 Typ broni: 1-ręczna
-Wymagana siła: 10~
+
+Wymagania:
+– Siła: 10
+
+Waga: 8~
 @223  = ~Zbroja łuskowa~
-@224  = ~Łuska zielonego smoka~
-@225  = ~Zbroja z łusek czerwonego smoka jest lekka, wytrzymała, oraz odporna na kwas i ogień. Z powodu tych właściwości jest pożądana, ale znalezienie, a co dopiero zgładzenie potężnego starego smoka jest prawie niemożliwe. Łatwiej jest znaleźć istniejący już pancerz, taki jak ten. Należy jednak uważać by nie nosić go w pobliżu smoków, szczególnie zielonych.
+@224  = ~Zbroja z łusek zielonego smoka~
+@225  = ~Zbroja z łusek zielonego smoka jest lekka, wytrzymała oraz odporna na kwas i ogień. Z powodu tych właściwości jest pożądana, ale znalezienie, a co dopiero zgładzenie potężnego starego smoka jest prawie niemożliwe. Łatwiej jest znaleźć istniejący już pancerz, taki jak ten. Należy jednak uważać by nie nosić go w pobliżu smoków, szczególnie zielonych.
 
 PARAMETRY:
 
-Klasa Pancerza: -1
 Specjalne:
- +50% do odporności na ogień i kwas
-Waga: 25
-Wymagana siła: 8~
+– Odporność na ogień: +50%
+– Odporność na kwas: +50%
 
+Klasa Pancerza: -1 (-4 przeciw broniom siecznym, -2 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 8
+
+Waga: 25~
 @227  = ~Sejmitary Drizzta~
-@228  = ~Sejmitary te to osobista broń Drizzta. Elf nazywa je: Błysk i Żagiew Mrozu.~
+@228  = ~Sejmitary te, to osobiste bronie Drizzta: „Błysk” i „Żagiew mrozu”.~
 @229  = ~Kamień strażniczy~
 @230  = ~Kamień strażniczy drowów~
-@231  = ~Często naznaczane magicznymi runami i symbolami, kamienie strażnicze są potężnymi magicznymi przedmiotami, umożliwiającymi przedostanie się przez obszary chronione magią. Ponieważ większość z nich jest unikatowa i wyspecjalizowana, mało który posiada więcej niż jedną funkcję.~
-@232  = ~Kamień strażniczy drowów~
-@233  = ~Czaszka zielonego smoka~
-@234  = ~Obcięta głowa zielonego smoka jest zarazem przerażającym i uspokajającym widokiem. Łusek na łbie potwora wystarczyłoby na wykonanie z nich porządnego pancerza. Masz duże szczęście, gdyż własnoręczne zabicie takiego smoka byłoby czymś niemalże niemożliwym.~
+@231  = ~Często naznaczane magicznymi runami i symbolami, kamienie strażnicze są potężnymi magicznymi przedmiotami, umożliwiającymi przedostanie się przez obszary chronione magią. Ponieważ większość z nich jest unikatowa i wyspecjalizowana, mało który posiada więcej niż jedną funkcję.
+
+PARAMETRY:
+
+Waga: 5~
+@232  = ~Często naznaczane magicznymi runami i symbolami, kamienie strażnicze są potężnymi magicznymi przedmiotami, umożliwiającymi przedostanie się przez obszary chronione magią. Ponieważ większość z nich jest unikatowa i wyspecjalizowana, mało który posiada więcej niż jedną funkcję.
+
+Na tym konkretnym kamieniu strażniczym został wyryty symbol Lolth.
+
+PARAMETRY:
+
+Waga: 5~
+@233  = ~Głowa zielonego smoka~
+@234  = ~Obcięta głowa zielonego smoka jest zarazem przerażającym i uspokajającym widokiem. Łusek na głowie jest tyle, że można by je użyć do przekucia w zbroję łuskową. Taki pancerz jest jednym z najbardziej pożądanych, ale zgładzenie potężnego starego smoka jest prawie niemożliwe. Masz niebywałe szczęście, gdyż łatwiej jest znaleźć łuski lub istniejący już pancerz.
+
+PARAMETRY:
+
+Waga: 30~
 @235  = ~Mikstura~
-@236  = ~Mikstura osłony przed śmiercią~
-@237  = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.  ~
-@238  = ~Mikstura ta zapewnia pijącemu niepodatność na magię śmierci taką jak zabijanie czy petryfikacje. Chroni także przed wampirycznym wysysaniem kondycji.~
+@236  = ~Mikstura zasłony przed śmiercią~
+@237  = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.
+
+PARAMETRY:
+
+Waga: 1~
+@238  = ~Ta mikstura zapewnia pijącemu ochronę przed magią śmierci taką jak natychmiastowe zabijanie czy petryfikacja. Chroni także przed wampirycznym wyssaniem kondycji.
+
+PARAMETRY:
+
+Specjalne:
+– Osłona przed śmiercią
+– Niewrażliwość na wampiryczne wysysanie Kondycji
+
+Waga: 1~
 @239  = ~Płaszcz~
 @240  = ~Płaszcz elfów~
-@241  = ~Płaszcze są wykonywane w najrozmaitszych formach i z najbardziej różnorakich materiałów. Najpowszechniej używanym jest płaszcz, zrobiony z kawałka materii w kształcie okręgu z wyciętym w centrum otworem na głowę. W modelach bardziej wyszukanych otwór ten poszerzony i spinany łańcuszkiem, broszą lub zapinkami.~
-@242  = ~Płaszcz elfów
-Ten szary płaszcz wygląda zwyczajnie. Noszenie go sprawia, że właściciel jest w stanie ukrywać się w cieniu z wyjątkową skutecznością. Jednakże podobnie jak w wypadku zdolności złodziejskiej, chwila, w której zaatakuje on lub w inny sposób sprawi, że jego obecność stanie się znana, oznacza opuszczenie kryjówki.
+@241  = ~Płaszcz ten można skroić w każdy z możliwych kształtów i z prawie każdego materiału. Najczęstszą formą jest okrągły kawał materiału z otworem w środku na głowę, udrapowany na karku, połączony łańcuchem, broszą albo spinką.
+
+PARAMETRY:
+
+Waga: 3~
+@242  = ~Ten zielony płaszcz wygląda zwyczajnie. Noszenie go sprawia, że właściciel jest w stanie ukrywać się w cieniu z wyjątkową skutecznością.
 
 PARAMETRY:
 
 Specjalne:
- +10% do Krycia się~
+– Krycie się w cieniu: +10%
+
+Waga: 3~
 @243  = ~Pas siły lodowego olbrzyma~
-@244  = ~Pas siły lodowego olbrzyma
-Ten pas to tak naprawdę utkane włosy z brody lodowego olbrzyma. Nosząca go osoba staje się równie silna, jak ów olbrzym.
-
-PARAMETRY:
-
-Siła: 21~
-@245  = ~Zwój Runy Mrozu~
-@246  = ~Gdyby połączyć ten zwój z toporem Lodołamaczem, możnaby uzyskać potężną broń.~
-@247  = ~Pierścień Kangaxxa~
-@248  = ~Pierścień Kangaxxa
-Ten pierścień nie jest specjalnie zdobiony, jednak przeklęta magia promieniuje intensywnym złem. W istocie, jego twórca, Kangaxx nie wiele był lepszy, nawet na tysiące lat przed tym jak nieumarli urośli w siłę. Mówi się, że kadra magów z Netherilu walczyła i uwięziła kiedyś półlisza, ale nie będąc w stanie naprawdę go zniszczyć sami stali się liszami, by trzymać od tej pory straż przy jego szczątkach. Wykonanie pierścienia mogło doprowadzić do ich wrogości, jako że na każdej z dziewięciu faset klejnotu wypisana była podobno ofiara i śmierć.
+@244  = ~Ten pas to tak naprawdę utkane włosy z brody lodowego olbrzyma. Nosząca go osoba staje się równie silna, jak owy olbrzym.
 
 PARAMETRY:
 
 Specjalne:
- +2 do Klasy Pancerza
- +2 do rzutów obronnych
- +10% do odporności na magię
- Odporność na choroby i trucizny~
+– Siła: 21
+
+Waga: 2~
+@245  = ~Zwój runy Zimy~
+@246  = ~Użycie tego zwoju w połączeniu z toporem o nazwie „Lodołamacz” dałoby w efekcie niezwykle potężną broń.
+
+PARAMETRY:
+
+Waga: 4~
+@247  = ~Pierścień Korgaxa~
+@248  = ~Ten pierścień nie jest specjalnie zdobiony, jednak przeklęta magia promieniuje intensywnym złem. W istocie, jego twórca, Korgax nie wiele był lepszy, nawet na tysiące lat przed tym jak nieumarli urośli w siłę. Według legend, magowie z Netherilu pokonali lisza Korgaxa, nie byli jednak w stanie zniszczyć go ostatecznie. Uwięzili jego duszę, pozbawiając wcześniej ciało głowy, aby utrudnić potencjalne odrodzenie się lisza.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+– Rzuty obronne: +2
+– Odporność na magię: +10%
+– Niewrażliwość na choroby i trucizny
+
+Waga: 0~
 @249  = ~Topór bojowy +2~
 @250  = ~Szpon~
-@251  = ~Szpon Kornugona~
-@252  = ~Wygląda to na pazur jakiejś wielkiej bestii, być może jakiegoś demona.~
-@253  = ~O przedmiocie tym wiadomo tylko tyle, że sam pazur pochodzi z ciała wielkiej bestii, demona Kornugona. Został wielokrotnie nasączony magią, która uaktywnia się, gdy pazur włoży się niczym pierścień. Osoba nosząca pierścień ulegnie rozmyciu i trudniej ją będzie trafić zarówno bronią, jak i czarami. Przedmiot ma jednak pewną wadę - zdaje się czerpać moc z krwi posiadacza. Dlatego też właściciel często choruje i jest bardziej podatny na działanie trucizn.
+@251  = ~Szpon kornugona~
+@252  = ~Wygląda to na pazur jakiejś wielkiej bestii, być może jakiegoś rodzaju demona.
+
+PARAMETRY:
+
+Waga: 1~
+@253  = ~Jest to szpon pochodzący z ciała demona kornugona. Został wielokrotnie nasączony magią, która uaktywnia się, gdy pazur włoży się niczym pierścień. Przedmiot ma jednak pewną wadę, zdaje się czerpać moc z krwi posiadacza. Dlatego też właściciel często choruje i jest bardziej podatny na działanie trucizn.
 
 PARAMETRY:
 
 Specjalne:
- +1 do Klasy Pancerza
- +4 do Klasy Pancerza przeciw pociskom
- 50% do odporności na ogień, chłód i magię
- -4 do rzutów obronnych przeciw śmiertelnej magii
- +3 do rzutów obronnych przeciw różdżkom
- +3 do rzutów obronnych przeciw polimorfii
- +3 do rzutów obronnych przeciw magii
- +3 do rzutów obronnych przeciw zionięciom
- -2 Siła
- -2 Wytrzymalosc~
-@254  = ~Kamień Ioun~
-@255  = ~Bladozielony kamień Ioun~
-@256  = ~To mały kamyk, który lata wokół głowy właściciela. Aby go wprowadzić w ten ruch, wystarczy się w niego wyposażyć. Te magiczne kamienie mają różne właściwości, w zależności od swojego koloru.~
-@257  = ~Na łożu śmierci, sędziwy bohater Rigar Prawdziwa Krew błagał swego towarzysza, maga Spektoriala, aby jego umiejętności i hart wojownika żyły nadal. Przyjaciel niechętnie się zgodził na transfer owych cech do przedmiotu, wiedząc, że zabraknie ich duszy owego wojownika. W tym bladozielonym kamieniu Ioun znajdują się owe esencje, które nosicielowi przekazują zdrowie i umiejętności Rigara.
+– Siła: -2
+– Kondycja: -2
+– Klasa Pancerza: +1, +4 przeciw pociskom
+– Rzuty obronne: -4 przeciw śmierci
+– Rzuty obronne: +3 przeciw różdżkom
+– Rzuty obronne: +3 przeciw polimorfii
+– Rzuty obronne: +3 przeciw zionięciom
+– Rzuty obronne: +3 przeciw czarom
+– Odporność na ogień: +50% 
+– Odporność na zimno: +50% 
+– Odporność na magię: +50% 
+– Można zdjąć tylko po rzuceniu czaru Zdjęcie klątwy
+
+Waga: 1~
+@254  = ~Kamień ioun~
+@255  = ~Bladozielony kamień ioun~
+@256  = ~To mały kamyk, który lata wokół głowy właściciela. Aby go wprowadzić w ten ruch, wystarczy się w niego wyposażyć. Te magiczne kamienie mają różne właściwości, w zależności od swojego koloru.
 
 PARAMETRY:
 
-Klasa Pancerza: bez zmian
+Waga: 0~
+@257  = ~Na łożu śmierci, sędziwy bohater Rigar Prawdziwa Krew błagał swego towarzysza, maga Spektoriala, aby jego umiejętności i hart wojownika żyły nadal. Przyjaciel niechętnie się zgodził na transfer owych cech do przedmiotu, wiedząc, że zabraknie ich duszy owego wojownika. W tym bladozielonym kamieniu ioun znajdują się owe esencje, które nosicielowi przekazują zdrowie i umiejętności Rigara.
+
+PARAMETRY:
+
 Specjalne:
- +10% do punktów życia
- +1 do TraK0
+– Punkty życia: +10%
+– TraK0: +1
+
 Waga: 2~
 @258  = ~Toporek~
 @259  = ~Lodołamacz +2~
-@260  = ~Toporek to lekka odmiana topora bojowego, służąca głównie do ciskania w przeciwnika z pewnej odległości. Ciężar ostrza jest równoważony do pewnego stopnia przez ostry szpic, skierowany do tyłu. Krótkie stylisko jest zwykle ostro zakończone zarówno u dołu, jak i u góry.
+@260  = ~Toporek lub toporek do rzucania to lekka odmiana topora bojowego, zwana również siekierą. Ostrze topora posiada stalowy szpic, stanowiący przeciwwagę dla ostrego zadziora, skierowanego do tyłu. Dolna część krótkiego styliska jest ostro zakończona, a osadzona na nim głowica może mieć u góry szpikulec.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +1
-Typ obrażeń: pocisk (kłute)
-Waga: 5
+Obrażenia: 1k6 +1 
+Typ obrażeń (walka wręcz): sieczne
+Typ obrażeń (rzucony): pocisk
 Opóźnienie: 4
 Rodzaj biegłości: topór
 Typ broni: 1-ręczna
-Wymagana siła: 4~
-@261  = ~Toporek ten poza byciem znakomicie wyważonym, co pozwala na miotanie go na całkiem spory dystans, został także silnie umagiczniony. Dzięki temu zadaje więcej obrażeń i jest celniejszy niż dowolny, nawet mistrzowsko wykonany, niemagiczny oręż. Jakoże ojczyzną jej stwórcy, krasnoluda Szronobrodego jest Dolina Lodowoego Wichru, broń przesycona jest mocą chłodu. Mówi się, że korzystał z niej podczas wędrówki przez Maszerujące Góry, gdzie przedrzeć się musiał przez legiony Ognistych Olbrzymów. Frostbeard nigdy nie dokończył swojej broni - gdyby połączyć ją z zwojem Zimowej Runy, możnaby uzyskać potężn oręż.
+
+Wymagania:
+– Siła: 4
+
+Waga: 1~
+@261  = ~Toporek +2: „Lodołamacz”
+
+Ten toporek został nie tylko doskonale wyważony, aby można było nim rzucać, ale został również obdarzony magicznymi właściwościami. W rezultacie, jest zarówno bardziej śmiercionośny i precyzyjny niż jakakolwiek zwykła broń tego typu. A ponieważ jego krasnoludzki twórca Śnieżnobrody pochodził z Doliny Lodowego Wichru, broń ta nasycona jest magią przejmującego zimna. Mówi się, że korzystał z niej w trakcie wędrówki przez Maszerujące Góry, gdzie natknął się na ogniste olbrzymy. Śnieżnobrody nigdy nie ukończył w pełni wykuwać tej broni. Gdyby tak połączyć ją ze zwojem runy Zimy, wtedy to jej ostateczna forma zostałaby skończona.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +3, +2 od chłodu
+Specjalne:
+– Po rzucie wraca do właściciela
+
+Obrażenia: 1k6 +3, +2 obrażenia od zimna
 TraK0: +2
-Typ obrażeń (w zwarciu): sieczne
-Typ obrażeń (miotane): pocisk (kłute)
-Specjalne:
- Wraca do ręki właściciela po rzuceniu
-Waga: 3
+Typ obrażeń (walka wręcz): sieczne
+Typ obrażeń (rzucony): pocisk
 Opóźnienie: 2
 Rodzaj biegłości: topór
 Typ broni: 1-ręczna
-Wymagana siła: 4~
+
+Wymagania:
+– Siła: 4
+
+Waga: 3~
 @262  = ~Lodołamacz +5~
-@263  = ~Toporek ten poza byciem znakomicie wyważonym, co pozwala na miotanie go na całkiem spory dystans, został także silnie umagiczniony. Dzięki temu zadaje więcej obrażeń i jest celniejszy niż dowolny, nawet mistrzowsko wykonany, niemagiczny oręż. Jakoże ojczyzną jej stwórcy, krasnoluda Szronobrodego jest Dolina Lodowoego Wichru, broń przesycona jest mocą chłodu. Mówi się, że korzystał z niej podczas wędrówki przez Maszerujące Góry, gdzie przedrzeć się musiał przez legiony Ognistych Olbrzymów. Broń ta została ukończona przy użyciu zwoju Zimowej Runy, co sprawiło, że stała się potężnym orężem.
+@263  = ~Toporek +5: „Lodołamacz”
+
+Ten toporek został nie tylko doskonale wyważony, aby można było nim rzucać, ale został również obdarzony magicznymi właściwościami. W rezultacie, jest zarówno bardziej śmiercionośny i precyzyjny niż jakakolwiek zwykła broń tego typu. A ponieważ jego krasnoludzki twórca Śnieżnobrody pochodził z Doliny Lodowego Wichru, broń ta nasycona jest magią przejmującego zimna. Mówi się, że korzystał z niej w trakcie wędrówki przez Maszerujące Góry, gdzie natknął się na ogniste olbrzymy. Broń ta została w pełni odkuta przy pomocy zwoju runy Zimy i stała się bronią o ogromnej mocy.
 
 PARAMETRY:
 
-Obrażenia (w zwarciu): 1K6 +3, +2 od chłodu
-Obrażenia (miotane): 1K6 +5, +2 od chłodu
-TraK0: +5
-Typ obrażeń (w zwarciu): sieczne
-Typ obrażeń (miotane): pocisk (kłute)
 Specjalne:
- Zabija ogry
- Wraca do ręki właściciela po rzuceniu
- Ustala siłę właściciela na poziomie 25
-Waga: 3
+– Siła: 25
+– Zabija ogry, po trafieniu
+– Po rzucie wraca do właściciela
+
+Obrażenia (walka wręcz): 1k6 +3, +2 obrażenia od zimna
+Obrażenia (rzucony): 1k6 +5, +2 obrażenia od zimna
+TraK0: +5
+Typ obrażeń (walka wręcz): sieczne
+Typ obrażeń (rzucony): pocisk
 Opóźnienie: 2
 Rodzaj biegłości: topór
 Typ broni: 1-ręczna
-Wymagana siła: 4~
-@264  = ~List~
-@265  = ~Droga Siostro, wygląda na to, że Sarevok jest coraz bliższy odkryciu swego dziedzictwa. Poza tym, okazało się, że Tajemnicą Goriona jest nikt inny jak brat Sarevoka, co oznacza, że jest to nosiciel tej samej krwi. Mam zamiar spotkać się z nim. Od kiedy będę miała nad nim pieczę, będziemy mogli zająć się eksperymentami. Dziękuję za to, że oddałeś mi pod komendę swoje sługi. Życzę ci dostać Sarevoka i przyrpwoadzić go do mnie, kiedy ja zajmę się tym drugim.
 
-I~
-@266  = ~Topór Rozpraszającego Ognia +4~
-@267  = ~Najpowszechniej używany rodzaj topora bojowego składa się ze styliska o długości metra do półtora z osadzonym szerokim, półokrągłym ostrzem, często zaopatrzonym również w szpice, skierowane do tyłu i ku górze.
+Wymagania:
+– Siła: 4
+
+Waga: 3~
+@264  = ~Odręcznie napisany list~
+@265  = ~Moja droga siostro,
+
+Zdaje się, że Sarevok jest bliski przyjęcia swego dziedzictwa. Natomiast wychowanek Goriona okazał się być spokrewniony z Sarevokiem, a to może oznaczać tylko jedno, że jest powiernikiem tej samej spuścizny. Celem mojej podróży jest dotarcie do wychowanka Goriona. Jak tylko będzie pod moim nadzorem będzie można rozpocząć eksperymenty. Dziękuję ci, że pozostawiłaś swoje sługi do mojej dyspozycji. Pragnę, abyś jak najszybciej dotarła do Sarevoka i przywiodła go do mnie, a ja w tym czasie zajmę się tym wychowankiem Goriona. 
+
+I.~
+@266  = ~Topór bojowy rozpraszającego ognia +4~
+@267  = ~Najpowszechniejsza wersja topora bojowego składa się z solidnego trzonka o ponad metrowej długości, na którego końcu osadzono jednosieczne ostrze o zakrzywionym kształcie. Topory bojowe są również nazywane toporami szerokimi. 
 
 PARAMETRY:
 
-Obrażenia: 1K8
-Typ obrażeń: sieczne
-Waga: 7
+Obrażenia: 1k8
+Tyo obrażeń: sieczne
 Opóźnienie: 7
 Rodzaj biegłości: topór
 Typ broni: 1-ręczna
-Wymagana siła: 10~
-@268  = ~Topór Rozpraszającego Ognia +4
 
-Topór ten to osobista broń drowa Jarlaxla, wykonana i umagiczniona przez najlepszych drowich rzemieślników. Mówi się, że sama Lolth pomogła w tworzeniu tego wspaniałego oręża.
+Wymagania:
+– Siła: 10
+
+Waga: 7~
+@268  = ~Jest to osobisty topór Jarlaxle'a, zwany „bojowym toporem rozpraszającego ognia”. Topór ten został wykuty i umagiczniony przez drowy. Plotki mówią, że sama Lolth uczestniczyła w odkuwaniu tegoż niszczycielskiego oręża.
 
 PARAMETRY:
 
-Obrażenia: 1K8 +4
-TraK0: +4
 Specjalne:
- Rozprasza magię przy trafieniu
+– Rozproszenie magii, po trafieniu
+
+Obrażenia: 1k8 +4, +4 obrażenia od ognia
+TraK0: +4
 Typ obrażeń: sieczne
-Waga: 5
 Opóźnienie: 1
 Rodzaj biegłości: topór
-Typ broni: 1-ręczna~
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 5~
 @269  = ~Zbroja płytowa~
-@270  = ~Osobista zbroja Jarlaxla +3~
-@271  = ~Zbroja płytowa to połączenie kolczugi z mocnymi blachami, które chronią żywotnie ważne części ciała - klatkę piersiową, brzuch i krocze. Jej ciężar jest równo rozłożony na całe ciało, zaś całość połączona metalowymi spinkami i rzemieniami.
+@270  = ~Zbroja płytowa Jarlaxle'a +3~
+@271  = ~Zbroja płytowa to połączenie kolczugi z metalowymi płytami, które osłaniają witalne części ciała takie jak klatka piersiowa, brzuch i krocze. Prawdziwa zbroja płytowa podobna jest w swej budowie do zbroi płytowej z brązu i składa się z kolczugi i skóry.
 
 PARAMETRY:
 
-Klasa Pancerza: 3
-Waga: 50
-Wymagana siła: 12~
-@272  = ~Osobisty pancerz Jarlaxla został wykuty przez najzręczniejszych, drowich rzemieślników i pobogosławiony przez samą Lolth. Zapewnia niemałą ochronę.
+Klasa Pancerza: 3 (0 przeciw broniom siecznym)
+
+Wymagania:
+– Siła: 12
+
+Waga: 50~
+@272  = ~Osobista zbroja płytowa Jarlaxle'a została wykuta przez drowy i umagiczniona przez samą Lolth. Zapewnia ochronę niemałego sortu.
 
 PARAMETRY:
 
-Klasa Pancerza: 0
 Specjalne:
- 80% odporności na kwas
-Waga: 18
-Wymagana siła: 11~
+– Odporność na kwas: +80%
+
+Klasa Pancerza: 0 (-3 przeciw broniom siecznym)
+
+Wymagania:
+– Siła: 11
+
+Waga: 18~
 @273  = ~Buty przemieszczania~
 @274  = ~Buty są zwykle ręcznie wyrabiane przez szewców. Zwykłe buty są robione z użyciem jakiegoś ogólnego modelu stopy, ale te dobre wykonywane są na zamówienie i dopasowywane do stóp zamawiającego.
 
 PARAMETRY:
 
 Waga: 4~
-@275  = ~Buty przemieszczania
-Ten przedmiot jest przeklęty i można go zdjąć tylko za pomocą zaklęcia Zdjęcie klątwy. Jego twórca, nie wiadomo, czy przez pomyłkę, czy też z konkretnego powodu, zaklął w nie niebezpieczną magię. Nosząca je osoba jest stale teleportowana od jednego przeciwnika do drugiego, do czasu, gdy wszyscy (albo właściciel) zostaną zabici. Jednakże ze względu na tę specjalną właściwość butów, właściciel otrzymuje premię +2 do KP.
+@275  = ~Przedmiot ten jest przeklęty i można go zdjąć tylko za pomocą zaklęcia Zdjęcie klątwy. Jego twórca, nie wiadomo, czy przez pomyłkę, czy też z konkretnego powodu, zaklął w nie niebezpieczną magię. Nosząca je osoba jest stale teleportowana od jednego przeciwnika do drugiego, do czasu, gdy wszyscy (albo właściciel) zostaną zabici. Jednakże ze względu na tę specjalną właściwość butów, właściciel otrzymuje premię +2 do Klasy Pancerza.
 
 PARAMETRY:
 
-Specjalne:
- +2 do Klasy Pancerza
- Noszący przenosi się co 3 sekundy do losowego przeciwnika (kiedy znajduje się on w zasięgu wzroku)~
-@276  = ~Trzymając tą czaszkę czujesz, jak jej puste, czarne oczodoły na ciebie spoglądają. Aż nasuwają ci się myśli o sensie egzystencji.~
+Specjalne: 
+– Klasa Pancerza: +2
+– Noszący przenosi się co trzy sekundy do losowego przeciwnika (kiedy znajduje się on w zasięgu wzroku)
+– Można zdjąć tylko po rzuceniu czaru Zdjęcie klątwy
+
+Waga: 3~
+@276  = ~Ta czaszka, zdaje się emanować jakimś rodzajem energii, że aż prawie czujesz, jak jej puste, czarne oczodoły wpatrują się w ciebie.
+
+PARAMETRY:
+
+Waga: 1~
 @277  = ~Kij~
-@278  = ~Kostur Magów~
-@279  = ~Kij to najprostsza i najmniej efektywna z broni drzewcowych. Może mieć długość od 1,8 do grubo ponad 2 metrów. Wykonuje się go z dębowego drewna i często obija metalem na obu końcach. Do władania nim trzeba używać obu rąk.
+@278  = ~Kostur magów~
+@279  = ~Kij to najprostsza i najzwyklejsza z broni drzewcowych. Długość żerdzi wynosi od metra osiemdziesięciu do prawie trzech metrów. Wysokiej jakości kije wykonane są z twardego dębu i obijane metalem na obu końcach. Do władania nim niezbędne jest używanie obu rąk.
 
 PARAMETRY:
 
-Obrażenia: 1K6
+Obrażenia: 1k6
 Typ obrażeń: obuchowe
-Waga: 4
 Opóźnienie: 4
 Rodzaj biegłości: kij
 Typ broni: 2-ręczna
-Wymagana siła: 5~
-@280  = ~Kostur Magów
-Ten rodzaj kija jest wszędzie kojarzony z osobami potrafiącymi używać magii, choć jest bardzo rzadki. Należy do najpotężniejszych narzędzi, jakie może posiadać czarodziej, jest kulminacją skomplikowanych zaklęć i niekończących się studiów. Ten konkretny egzemplarz jest dobry w walce wręcz, zapewnia niewidzialność, a także daje ochronę przeciwko urokom i złu. Może też rzucać zaklęcia Pułapka na czary, kombinację Ognistej kuli i Błyskawicy oraz Rozproszenie magii.
+
+Wymagania:
+– Siła: 5
+
+Waga: 4~
+@280  = ~Ten rodzaj kostura stanowi uosobienie typowego wyobrażenia o przedstawicielach profesji parających się magią, chociaż w rzeczywistości jest on rzadko spotykany. Jest jednym z najpotężniejszych narzędzi, jakie czarodziej może posiadać i stanowi owoc wielu skomplikowanych zaklęć oraz niekończących się studiów nad magią. Ten konkretny egzemplarz jest użyteczny zarówno w walce wręcz, jak i na dystans, zapewniając moc niewidzialności i oferując ochronę przed złem oraz urokami. Potrafi również rzucać zaklęcie Rozpraszanie magii.
 
 PARAMETRY:
 
-Obrażenia: 1K6 +1
-TraK0: +1 (uderza jak broń +5)
-Typ obrażeń: obuchowe
 Specjalne:
- +2 do Klasy Pancerza
- +2 do rzutów obronnych
- Używany zapewnia niewidzialność, ochronę przed urokami i złem.
- Przy każdym trafieniu rzuca Rozproszenie magii.
-Waga: 4
-Opóźnienie: 4
+– Klasa Pancerza: +2
+– Rzuty obronne: +2
+– Używany zapewnia Niewidzialność
+– Niewrażliwość na zauroczenie
+– Ochrona przed złem
+– Rozproszenie magii, po trafieniu
+– Uderza jak broń +5
+
+Obrażenia: 1k6 +1
+TraK0: +1
+Typ obrażeń: obuchowe
+Opóźnienie: 1
 Rodzaj biegłości: kij
 Typ broni: 2-ręczna
-Wymagana siła: 5~
-@281  = ~Długi miecz +4~
-@282  = ~Do tej kategorii zaliczają się obusieczne miecze, miecze wojenne i wojskowe. Bardzo często miecze długie są jednosieczne. Nie istnieje jedna wersja broni tego typu; sposób wykonania i długość zależy od kultury, a nawet miejsca w obrębie jednego narodu, w którym wykuto ostrze. Ich najczęściej występującą wspólną cechą jest długość, wahająca się od 90 do 110 cm. Większość mieczy długich jest obusiecznych i ma zaostrzony koniec. Mimo ostrego końca, miecze te służą do zadawania ran siecznych, a nie kłutych.
+
+Wymagania:
+– Siła: 5
+
+Waga: 4~
+@281  = ~Miecz długi +4~
+@282  = ~Miecze te nazywa się zwykle mieczami obusiecznymi, wojennymi lub wojskowymi. W wielu wypadkach miecz długi posiada jedną krawędź tnącą. Nie istnieje jedna wersja miecza długiego, jego konstrukcja i długość mogą się bowiem różnić w zależności od kultury, a nawet w obrębie tej samej społeczności, jeśli weźmie się pod uwagę różne epoki. Jedną z najbardziej charakterystycznych cech mieczy długich jest ich długość, która waha się od dziewięćdziesięciu do stu dwudziestu centymetrów. W tym ostatnim przypadku samo ostrze może mierzyć nawet do stu centymetrów. Większość mieczy długich jest obusiecznych i ma ostre zakończenie. Pomimo posiadania sztychu, miecz długi przeznaczony jest do cięcia, a nie do wyprowadzania pchnięć.
 
 PARAMETRY:
 
-Obrażenia: 1K8
+Obrażenia: 1k8
 Typ obrażeń: sieczne
-Waga: 4
 Opóźnienie: 5
-Rodzaj biegłości: długi miecz
+Rodzaj biegłości: miecz długi
 Typ broni: 1-ręczna
-Wymagana siła: 6~
-@283  = ~???~
+
+Wymagania:
+– Siła: 6
+
+Waga: 4~
+@283  = ~Demoniczna broń wykorzystywana przez marilitha. Demon posługuje się sześcioma takimi mieczami.
+
+PARAMETRY:
+
+Specjalne:
+– Właściwości nieznane
+
+Obrażenia: 1k8
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 5
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 4~
 @284  = ~Atak~
 @285  = ~Kolczuga~
-@286  = ~Mitrylowa kolczuga +4~
-@287  = ~Kolczuga jest wykonana z przeplatających się metalowych kółeczek. Zawsze nakłada się ją na kubrak z pikowanego materiału; ma to zapobiec bolesnym otarciom i złagodzić siłę ciosów.
+@286  = ~Mithrilowa kolczuga +4~
+@287  = ~Kolczuga jest wykonana ze splecionych ze sobą metalowych kółeczek. Zakłada się ją zawsze na ochronną warstwę z watowanego materiału lub miękkiej skóry, co ma zapobiec otarciom i złagodzić siłę ciosów.
 
 PARAMETRY:
 
-Klasa Pancerza: 5
-Waga: 40
-Wymagana siła: 8~
-@288  = ~Mitrylowa kolczuga +4
-Tego typu kolczugi wykuł niegdyś Bruenor dla swych przyjaciół i kompanów.
+Klasa Pancerza: 5 (3 przeciw broniom siecznym, 7 przeciw broniom obuchowym)
+
+Wymagania:
+– Siła: 8
+
+Waga: 40~
+@288  = ~Ta mithrilowa kolczuga została wykuta przez Bruenora dla swych najbliższych towarzyszy.
 
 PARAMETRY:
 
-Klasa Pancerza: 1
-Waga: 7
-Wymagana siła: 8~
-@289  = ~Księżycowe ostrze +3~
-@290  = ~Tę potężną broń stworzyli płatnerze starożytnego Myth Drannor. Księżycowych ostrzy używano podczas długiego procesu wybierania władcy wyspy Evermeet. Księżycowe Ostrza same wybierają swego właściciela. Tylko wybraniec może używać tej broni - każda inna osoba nie zdoła jej podnieść. To Księżycowe Ostrze zapewnia ochronę przed ogniem i modyfikuje klasę pancerza posiadacza.
+Klasa Pancerza: 1 (-1 przeciw broniom siecznym, 3 przeciw broniom obuchowym)
+
+Wymagania:
+– Siła: 8
+
+Waga: 7~
+@289  = ~Księżycowe ostrze~
+@290  = ~Tę potężną broń stworzyli płatnerze starożytnego Myth Drannor. Księżycowych ostrzy używano podczas długiego procesu wybierania władcy wyspy Evermeet. Księżycowe ostrze samo wybiera swego właściciela, jednakże gdy poprzedni właściciel tegoż ostrza dołączy do poległych, to istnieje szansa, że ono same znajdzie swego nowego posiadacza. Każdy, w którego żyłach nie płynie elfia krew, nie zdoła podnieść tego miecza. To księżycowe ostrze zapewnia ochronę przed ogniem i modyfikuje Klasę Pancerza posiadacza.
 
 PARAMETRY:
 
-Obrażenia: 1K8 +3
+Specjalne:
+– Klasy Pancerza: +1
+– Odporność na ogień: +50%
+
+Obrażenia: 1k8 +3
 TraK0: +3
 Typ obrażeń: sieczne
-Specjalne:
- +1 do Klasy Pancerza
- +50% do odporności na ogień
-Waga: 4
 Opóźnienie: 2
-Rodzaj biegłości: długi miecz
-Typ broni: 1-ręczna~
-@291  = ~Zbroja z czarnego opalu~
-@292  = ~Najlepsza (i najcięższa) zbroja, jaką wojownik może zdobyć - zarówno pod względem wyglądu, jak i ochrony, którą zapewnia. Jej znakomicie dopasowane, połączone elementy z litego metalu są specjalnie modelowane, by jak najlepiej odbijały tak uderzenia broni różnego typu, jak i strzały. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiększana różnymi dodatkami.
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Waga: 3~
+@291  = ~Zbroja mroku +1~
+@292  = ~Pełna zbroja płytowa to najlepszy pancerz, jaki może kupić wojownik, zarówno pod względem wyglądu, jak i ochrony. Idealnie dopasowane zachodzące na siebie płytki ułożone są pod specjalnym kątem, dzięki czemu są w stanie odbijać strzały i uderzenia, a cała zbroja jest starannie ozdobiona bogatymi grawiurami oraz szczegółowymi tłoczeniami.
 
 PARAMETRY:
 
-Klasa Pancerza: 1
-Waga: 70
-Wymagana siła: 15~
-@293  = ~Zbroja płytowa z czarnego opalu +1: 'Zbroja Ciemności'
-Demoniczny Rycerz Bhaala zwykł był wdziewać tą zbroję podczas wykonywania celów postawionych przez swego mistrza, Boga Morderców. Ten osłabł podczas Czasów Kłopotów i został pokonany przez Helma.
+Klasa Pancerza: 1 (-3 przeciw broniom siecznym, -2 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 15
+
+Waga: 70~
+@293  = ~Zbroja płytowa z czarnego opalu +1: „Zbroja mroku”
+
+Upiorny watażka Bhaala przywdziewał tę zbroję, gdy służył swojemu mistrzowi – Panu Mordu. Dowódca osłabł podczas Czasu Niepokojów i stracił życie w starciu z Helmem.
 
 PARAMETRY:
 
-Klasa Pancerza: 0
 Specjalne:
- +10% do odporności na magię
- +15% do odporności na ogień, kwas, chłód i elektryczność
- +20% do odporności na pociski
-Waga: 35
-Wymagana siła: 14~
+– Odporność na ogień: +15%
+– Odporność na zimno: +15%
+– Odporność na kwas: +15%
+– Odporność na elektryczność: +15%
+– Odporność na magię: +10%
+– Odporność na pociski: +20%
+
+Klasa Pancerza: 0 (-4 przeciw broniom siecznym, -3 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 15
+
+Waga: 35~
 @294  = ~Figurka czarnej pantery~
-@295  = ~Figurka ta służy Drizztowi do przyzwania swojej towarzyszki, pantery Guenhwyvar z Planów Zewnętrznych. Mówi się, że drow przyjaźni się ze zwierzęciem i to nigdy go nie zdradzi - nawet jeśli figurka będzie w czyimś innym posiadaniu.
+@295  = ~To jest figurka czarnej pantery Drizzta, którą przyzywa ze Sfer Zewnętrznych. Nazywa się Guenhwyvar, a jej lojalność wobec Drizzta jest niepodważalna.
 
 PARAMETRY:
 
-Specjalne:
- Raz dziennie przyzywa Guenhwyvar, która służyć będzie do czasu kiedy będzie poważnie ranna - wtedy zmuszona jest do powrotu do planów zewnętrznych.~
+Właściwości ładunków:
+– Przyzwanie Guenhwyvar, raz dziennie
+Jeśli pantera odniesie poważne obrażenia, powraca do Sfer Zewnętrznych
+
+Waga: 0~
 @296  = ~Hełm lustrzanych oczu~
 @297  = ~Ten rodzaj otwartego hełmu, wykonywany z metalu lub wzmocnionej skóry, stanowi ochronę dla głowy, jednak zwykle bez osłaniania twarzy i karku. Zazwyczaj jest również wyposażony w ochronę nosa.
 
 PARAMETRY:
 
-Klasa Pancerza: bez zmian
 Specjalne:
- Chroni przed trafieniami krytycznymi
+– Chroni przed trafieniami krytycznymi
+
 Waga: 2~
-@298  = ~Hełm ten należał wcześniej do szlachetnego rycerza który zasłynął zabiciem przerażającej Meduzy.
+@298  = ~Ten hełm niegdyś należał do szlachetnego wojownika, słynącego z zabicia meduzy.
 
 PARAMETRY:
 
-Klasa Pancerza: bez zmian
 Specjalne:
- Chroni przed trafieniami krytycznymi i petryfikacją
+– Ochrona przed petryfikacją
+– Chroni przed trafieniami krytycznymi
+
 Waga: 2~
 @299  = ~Mikstura dodatkowego leczenia~
-@300  = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę. ~
-@301  = ~Po całkowitym spożyciu eliksir ten przywraca 27 punktów życia danej osobie. Rezultat jest natychmiastowy, a eliksir ulega zniszczeniu w trakcie użycia.~
+@300  = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.
+
+PARAMETRY:
+
+Waga: 1~
+@301  = ~Po całkowitym spożyciu mikstura ta przywraca pijącemu 27 punktów życia. Rezultat jest natychmiastowy, a eliksir ulega zniszczeniu po użyciu.
+
+PARAMETRY:
+
+Specjalne: 
+– Przywraca 27 punktów życia
+
+Waga: 1~
 @302  = ~Mikstura większego leczenia~
-@303  = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.~
-@304  = ~Po całkowitym spożyciu eliksir ten przywraca 40 punktów życia danej osobie. Rezultat jest natychmiastowy, a eliksir ulega zniszczeniu w trakcie użycia.~
-@305  = ~Berło~
-@306  = ~Berło zmartwychwstania~
-@307  = ~Berła mają około metra długości i są grube jak kciuk. Przeważnie znajdują się w skrzynkach albo podobnych miejscach. Mogą być metalowe, drewniane, z kości słoniowej albo zwierzęcej. Mogą być gładkie albo zdobione i rzeźbione, zakończone ostro albo i nie. Czerpią swoją moc z ładunków, o ile nie jest napisane inaczej w opisie konkretnego pręta. Przy każdej aktywizacji zużywany jest jeden albo więcej ładunków.~
-@308  = ~Berło zmartwychwstania
-Berło to umożliwia kapłanowi rzucenie Zmartwychwstania na martwą osobę, jakby posiadał on poziom wymagany do rzucenia tego zaklęcia. Nie wymaga żadnego odpoczynku, ponieważ to berło obdarza życiem. Każde użycie wymaga jednego ładunku.
+@303  = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.
+
+PARAMETRY:
+
+Waga: 1~
+@304  = ~Po wypiciu, mikstura ta przywraca 40 punktów życia. Efekt jest natychmiastowy, a mikstura ulega zniszczeniu po użyciu.
 
 PARAMETRY:
 
 Specjalne:
- Zmartwychwstanie (1 ładunek)~
-@309  = ~Sejmitar~
-@310  = ~Sejmitar +3~
-@311  = ~Długie, zakrzywione, jednosieczne ostrze jest charakterystyczne zarówno dla szabli, jak i sejmitara, mimo iż pochodzą z różnych części Faerunu. Podczas gdy, ze względu na swą wszechstronność, szabla była przeznaczona głównie dla jeźdźców, sejmitar jest bardziej związany z tradycjami wschodu. "Szamszir", jak pierwotnie została nazwana ta broń, jest dłuższy, jego ostrze jest bardziej zakrzywione i zakończone wydłużonym, ostrym szpicem. W efekcie jest ona nieco wolniejsza, jednak bardziej skuteczna i zabójcza w walce.
+– Przywraca 40 punktów życia
+
+Waga: 1~
+@305  = ~Berło~
+@306  = ~Berło zmartwychwstania~
+@307  = ~Berła mają około metra długości i są grube jak kciuk. Przeważnie znajdują się w skrzynkach albo podobnych miejscach. Mogą być metalowe, drewniane, z kości słoniowej albo zwierzęcej. Mogą być gładkie albo zdobione i rzeźbione, zakończone ostro albo i nie. Czerpią swoją moc z ładunków, o ile nie jest napisane inaczej w opisie konkretnego berła. Przy każdej aktywacji zużywany jest jeden albo więcej ładunków.
 
 PARAMETRY:
 
-Obrażenia: 1K8
+Waga: 3~
+@308  = ~Berło to umożliwia kapłanowi rzucenie Zmartwychwstania na martwą osobę, jakby posiadał on poziom wymagany do rzucenia tego zaklęcia. Nie wymaga żadnego odpoczynku, ponieważ to berło obdarza życiem. Każde użycie wymaga jednego ładunku.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Zmartwychwstanie
+Specjalne: wskrzeszony cel jest całkowicie wyleczony
+Zasięg: nieograniczony
+Obszar działania: 1 istota
+
+Waga: 3~
+@309  = ~Sejmitar~
+@310  = ~Sejmitar drowów +3~
+@311  = ~Długie, zakrzywione, jednosieczne ostrze jest charakterystyczną cechą zarówno szabli, jak i sejmitara, mimo iż obie te bronie wywodzą się z różnych krain Faerûnu. Podczas gdy, ze względu na swą wszechstronność, szabla była przeznaczona głównie dla jeźdźców, sejmitar jest mocniej związany z tradycjami kultury wschodu. „Shamshir”, jak pierwotnie go nazwano, jest dłuższy, a jego ostrze bardziej zakrzywione i zakończone wydłużonym, ostrym szpicem. W efekcie jest to broń nieco wolniejsza, jednak bardziej skuteczna i zabójcza w walce.
+
+PARAMETRY:
+
+Obrażenia: 1k8
 Typ obrażeń: sieczne
-Waga: 4
 Opóźnienie: 5
 Rodzaj biegłości: sejmitar/wakizashi/ninja-to
 Typ broni: 1-ręczna
-Wymagana siła: 10~
-@312  = ~Sejmitar drowów +3
-Długie, zakrzywione ostrze charakterystyczne jest zarówno dla szabli, jak i dla sejmitara, choć źródła tych broni znajdują się w różnych miejscach Faerunu. Ten przedmiot, podobnie jak większość ekwipunku mrocznych elfów, stworzony został za pomocą adamantyny, stopu adamantytu, który szybko zmienia się w pył, gdy wyniesie się go z Podmroku.
+
+Wymagania:
+– Siła: 10
+
+Waga: 4~
+@312  = ~Długie, zakrzywione, jednosieczne ostrze jest charakterystyczną cechą zarówno szabli, jak i sejmitara, mimo iż obie te bronie wywodzą się z różnych krain Faerûnu. Podczas gdy, ze względu na swą wszechstronność, szabla była przeznaczona głównie dla jeźdźców, sejmitar jest mocniej związany z tradycjami kultury wschodu. „Shamshir”, jak pierwotnie go nazwano, jest dłuższy, a jego ostrze bardziej zakrzywione i zakończone wydłużonym, ostrym szpicem. W efekcie jest to broń nieco wolniejsza, jednak bardziej skuteczna i zabójcza w walce.
+
+Ten przedmiot, podobnie jak większość ekwipunku drowów, stworzony został za pomocą adamantyny, stopu adamantytu, który szybko zmienia się w pył, kiedy zostanie wystawiony na promienie słońca.
 
 PARAMETRY:
 
-Obrażenia: 1K8 +3
+Obrażenia: 1k8 +3
 Trak0: +3
 Typ obrażeń: sieczne
-Waga: 3
-Opóźnienie: 3
+Opóźnienie: 2
 Rodzaj biegłości: sejmitar/wakizashi/ninja-to
 Typ broni: 1-ręczna
-Wymagana siła: 10~
-@313  = ~Piekielna figurka~
-@314  = ~Na powierzchni tej figurki wygrawerowane zostały runy w których zapisano słowa pozwalające na przywołanie Tanari.~
-@315  = ~Miecz oburęczny~
-@316  = ~Ostrze wojny +4~
-@317  = ~Miecz oburęczny pochodzi od miecza długiego. Płatnerze zawsze próbowali ulepszać istniejące odmiany oręża, dlatego w czasie prób nad udoskonaleniem miecza długiego wydłużono jego ostrze. To samo zrobiono z rękojeścią, gdyż do właściwego użycia tej broni były niezbędne obie ręce. Miecze oburęczne służyły zazwyczaj do atakowania rycerzy na koniach i do przełamywania formacji z pik.
+
+Wymagania:
+– Siła: 10
+
+Waga: 3~
+@313  = ~Bożek z Otchłani~
+@314  = ~Ten bożek z Otchłani posiada runy wygrawerowane w okół siebie. Zapisano na nim, że jego właściciel może jednorazowo wezwać samego tanar'ri, który będzie walczył dla niego.
 
 PARAMETRY:
 
-Obrażenia: 1K10
+Właściwości ładunków:
+– Przyzwanie tanar'ri
+
+Waga: 1~
+@315  = ~Miecz oburęczny~
+@316  = ~Ostrze wojny +4~
+@317  = ~Miecz oburęczny wywodzi się od miecza długiego. Płatnerze od zawsze szukali sposobów, aby ulepszać istniejące bronie. W przypadku miecza długiego zdecydowano się na wydłużenie ostrza, ale w konsekwencji należało uczynić to samo z rękojeścią, gdyż do właściwego wymachiwania mieczem niezbędne były obie dłonie. Główną funkcją mieczy oburęcznych jest przecinanie na pół rycerzy konnych oraz przełamywanie formacji pikinierów.
+
+PARAMETRY:
+
+Obrażenia: 1k10
 Typ obrażeń: sieczne
-Waga: 15
 Opóźnienie: 10
 Rodzaj biegłości: miecz oburęczny
 Typ broni: 2-ręczna
-Wymagana siła: 14~
-@318  = ~Miecz oburęczny +4: Ostrze Wojny
-Ten wielki miecz jest magiczną wersją mieczy barbarzyńskich plemion z Północy. Został wykuty podczas bitwy i zanurzony we krwi dzielnych poległych, co sprawiło, że umagicznienie jakie otrzymał od barbarzyńskich bogów jest bardzo potężne.
+
+Wymagania:
+– Siła: 14
+
+Waga: 15~
+@318  = ~Miecz oburęczny +4: „Ostrze wojny”
+
+Ten wielki miecz jest magiczną wersją mieczy barbarzyńskich plemion z Północy. Został wykuty podczas bitwy i zanurzony we krwi dzielnych poległych, co sprawiło, że umagicznienie, jakie otrzymał od barbarzyńskich bogów, jest bardzo potężne.
 
 PARAMETRY:
 
-Obrażenia: 1K12 +4
+Obrażenia: 1k12 +4
 TraK0: +4
 Typ obrażeń: sieczne
-Waga: 11
 Opóźnienie: 6
 Rodzaj biegłości: miecz oburęczny
 Typ broni: 2-ręczna
-Wymagana siła: 14~
-@319  = ~Miecz Żalu Belhifeta +5~
-@320  = ~Miecz Żalu Belhifeta +5
 
-To jedna z wielu broni używanych przez potężnego demona Belhifeta. Klinga jest niezwykle ostra i dobrze wyważona, na patrząc na rękojeść pod pewnym kątem, można dostrzec delikatny zarys węża.
+Wymagania:
+– Siła: 14
+
+Waga: 11~
+@319  = ~Miecz żalu Belhifeta +5~
+@320  = ~To jedna z wielu broni używanych przez wielkiego demona Belhifeta. Klinga jest niezwykle ostra i dobrze wyważona, a patrząc na rękojeść pod pewnym kątem, można dostrzec delikatny zarys węża.
 
 PARAMETRY:
 
 Specjalne:
-10% prawdopodobieństwa na zadanie dodatkowych 2k12 obrażeń od trucizny
+– 10% szans na dodatkowe 2k12 obrażeń od trucizny, po trafieniu
 
-TraK0: +5
 Obrażenia: 1k10 +5
+TraK0: +5
 Typ obrażeń: sieczne
-Waga: 9
 Opóźnienie: 5
 Rodzaj biegłości: miecz oburęczny
-Typ: 2-ręczna
-Wymagana siła: 14~
-@321  = ~Kaptur Złodziei~
-@322  = ~Choć ten kaptur nie obdarza tego, kto go nosi, żadnymi zauważalnymi właściwościami, to jednak można wokół niego wyczuć aurę uśpionej magii.~
-@323  = ~Złodzieje nie kierują się honorem. Może dlatego Kaptur Złodziei został wyposażony we właściwości chroniące tego, kto go nosi, przed innymi osobami trudniącymi się tym zajęciem.
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 14
+
+Waga: 9~
+
+@321  = ~Kaptur złodziei~
+@322  = ~Choć ten kaptur nie obdarza tego, kto go nosi, żadnymi zauważalnymi właściwościami, to jednak można wokół niego wyczuć aurę uśpionej magii.
 
 PARAMETRY:
-Specjalne:
- Niewrażliwość na choroby i truciznę
- Rozmycie~
-@324  = ~Dotyk Ghoula~
-@325  = ~Płaszcz wilkołaka~
-@326  = ~Płaszcze są wykonywane w najrozmaitszych formach i z najbardziej różnorakich materiałów. Najpowszechniej używanym jest płaszcz, zrobiony z kawałka materii w kształcie okręgu z wyciętym w centrum otworem na głowę. W modelach bardziej wyszukanych otwór ten poszerzony i spinany łańcuszkiem, broszą lub zapinkami.~
-@327  = ~Płaszcz wilkołaka: 'Pomyłka Relaira'
 
-W stworzeniu tego magicznego płaszcza kryje się nuta ironii. Relair był czarodziejem, który przeceniał swą zdolność kontrolowania magii. Tworząc płaszcz przypadkowo zesłał na siebie klątwę likantropii. Nosząca szatę osoba może zmieniać swą postać kiedy tylko sobie zażyczy. Relair nie miał tyle szczęścia.
+Waga: 2~
+@323  = ~Złodzieje nie kierują się honorem. Może dlatego Kaptur złodziei został wyposażony we właściwości chroniące tego, kto go nosi, przed innymi osobami trudniącymi się tym zajęciem.
 
 PARAMETRY:
 
 Specjalne:
- Przemiana w wilka w dowolnej chwili
- +1 do KP
+– Niewrażliwość na choroby i trucizny
+– Rozmycie
+
+Waga: 2~
+@324  = ~Dotyk ghula~
+@325  = ~Próba Relaira~
+@326  = ~Płaszcze są wykonywane w najrozmaitszych formach i z najbardziej różnorakich materiałów. Najpowszechniej używanym jest płaszcz zrobiony z kawałka materii w kształcie okręgu z wyciętym w centrum otworem na głowę. W modelach bardziej wyszukanych otwór ten poszerzony i spinany łańcuszkiem, broszą lub zapinkami.
+
+PARAMETRY:
+
 Waga: 3~
-@328  = ~Skóra z śnieżnego wilka~
-@329  = ~Opoka z wilczego futra Wulfgara~
-@330  = ~Śnieżnobiałe futro śnieżnego wilka jest miękkie i luksusowe. Często wykorzystuje się je do wytwarzania ubiorów tak różnych jak surowe kamizelki północnych barbarzyńców Uthgardt czy delikatnych i przepięknych zimowych stuł, noszonych przez szlachetnie urodzone kobiety na Wybrzeżu Mieczy.~
-@331  = ~Ten śnieżnobiały ogon śnieżnego wilka jest bardzo lekki i cenny. Został umagiczniony przez jednego z szamanów północnych plemion barbarzyńców Uthgardt.
+@327  = ~Płaszcz wilkołaka: „Próba Relaira”
+
+Relair był czarodziejem, który przecenił swą zdolność kontrolowania magii. Stworzył pewien płaszcz pozwalający na zamianę w wilka, tym samym zsyłając na siebie klątwę likantropii. Podczas jego wieloletnich prób odwrócenia tamtego procesu, stworzył również i ten płaszcz, znacznie potężniejszy niż jego pierwowzór. Niestety nie odwraca on skutków likantropii.
 
 PARAMETRY:
 
 Specjalne:
- 50% odporności na zimno~
-@332  = ~Futra~
+– Klasa Pancerza: +1
+
+Właściwości ładunków:
+– Zmiana w wilka, na życzenie
+Czas działania: 2 tury
+
+Waga: 3~
+@328  = ~Skóra śnieżnego wilka~
+@329  = ~Wilcza skóra Wulfgara~
+@330  = ~Śnieżnobiałe futro śnieżnego wilka jest miękkie i luksusowe. Często wykorzystuje się je do wytwarzania ubiorów tak różnych, jak surowe kamizelki północnych barbarzyńców Uthgardtu czy delikatnych i przepięknych zimowych stuł, noszonych przez szlachetnie urodzone kobiety na Wybrzeżu Mieczy.
+
+PARAMETRY:
+
+Waga: 10~
+@331  = ~To śnieżnobiałe futro śnieżnego wilka jest miękkie i luksusowe. Zostało umagicznione przez szamana północnych barbarzyńców Uthgard.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na zimno: +50%
+
+Waga: 10~
+@332  = ~Futro~
 @333  = ~Futro Wulfgara~
-@334  = ~Zbroja Wulfgara sporządzona została z wilczych futr. Tylko barbarzyńcy z Doliny Lodowego Wichru są tak biegli w sztuce wykrawania aby stworzyć zbroję z tak delikatnego materiału. Mimo swej lekkości, pancerz ten zapewnia bardzo dobrą ochronę.
+@334  = ~Wykonane ze skór wilków, te futra zapewniają wyjatkową ochronę. Barbarzyńcy z Doliny Lodowego Wichru stali się bardzo wprawni w wyprawianiu takich futer, prowadząc do lepszej ochrony przy stosunkowo niewielkiej wadze. Oczywiście, pomocne jest też to, że zwierzęta użyte na futra są tak samo twarde jak ich pazury.
 
 PARAMETRY:
 
-Klasa Pancerza: 6
+Klasa Pancerza: 6 (8 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 4
+
 Waga: 3~
-@335  = ~Młot~
+@335  = ~Młot bojowy~
 @336  = ~Aegis-Fang +5~
-@337  = ~Aegis-Fang +5
-
-Broń tę wykonał Bruenor Battlehammer specjalnie dla Wulfgara. Najsilniejsze z czarów wplecionych w ten młot bojowy działają tylko wtedy, kiedy oręż ten znajduje się w rękach tego młodego wojownika. Każda inna postać władająca tą bronią używa jej jako młota bojowego +3.
+@337  = ~Wulfgar będąc potężnym barbarzyńskim wojownikiem, potrzebował równie mocnego oręża. Ten pięknie wykonany młot posiada owe zalety! Bruenor Battlehammer wykuł go, wkładając w niego całe swoje serce i duszę. Ten potężny młot wykonał własnoręcznie, zwieńczając tym samym swoją kowalską karierę. Krasnoludzki kowal zrobił broń o tak wyjątkowo pięknym zarysie, doskonałym wyważeniu i funkcjonalnością, że po tym porzucił kowalstwo i rozmyśla nad swym arcydziełem.
 
 PARAMETRY:
 
-Obrażenia: 2K4 +5
+Obrażenia: 2k4 +5
 TraK0: +5
 Typ obrażeń: obuchowe
-Waga: 8
 Opóźnienie: 2
 Rodzaj biegłości: młot bojowy
 Typ broni: 1-ręczna
-Wymagana siła: 18~
+
+Wymagania:
+– Siła: 18
+
+Waga: 8~
 @338  = ~Ten rodzaj otwartego hełmu, wykonywany z metalu lub wzmocnionej skóry, stanowi ochronę dla głowy, jednak zwykle bez osłaniania twarzy i karku. Zazwyczaj jest również wyposażony w ochronę nosa.
 
 PARAMETRY:
 
-Klasa Pancerza: bez zmian
 Specjalne:
- Chroni przed trafieniami krytycznymi
-Waga: 2~
-@339  = ~Kusza Włos Olbrzyma +3~
-@340  = ~Ciężka kusza +3: Włos Olbrzyma
+– Chroni przed trafieniami krytycznymi
 
-Choć trudno to potwierdzić, to mówi się, że cięciwa tej kuszy jest wykonana z włosa lodowego olbrzyma. Nieważne czy to prawda, ale niesłychanie trudno ją naciągnąć, ale jej celność i powodowane obrażenia warte są potrzebnego naciągu (siła 15 lub więcej).
+Waga: 2~
+@339  = ~Włos olbrzyma +3~
+@340  = ~Ciężka kusza +3: „Włos olbrzyma”
+
+Choć trudno to potwierdzić, to mówi się, że cięciwa tej kuszy jest wykonana z włosa lodowego olbrzyma. Nieważne czy to prawda, ale niesłychanie trudno ją naciągnąć, ale jej celność i powodowane obrażenia warte są potrzebnego naciągu (Siła 15 lub większa).
 
 PARAMETRY:
 
-Obrażenia: +5 (pocisk)
+Obrażenia: +5
 TraK0: +3
-Waga: 11
+Typ obrażeń: pocisk
 Opóźnienie: 7
 Rodzaj biegłości: kusza
 Typ broni: 2-ręczna
-Wymagana siła: 15~
- 
-@501 = ~Duma Durlaga~
-@502 = ~Miecz dwuręczny +2 : 'Duma Durlaga'
 
-Pochodzący od długiego miecza, miecz oburęczny jest znacznie dłuższy, zarówno jego klinga jak i rękojeść. Jego głównym zadaniem jest rozszczepianie jeźdźców i rozbijanie formacji pikinierów. Ta magiczna wersja jest jeszcze lepiej przystosowana do tych zadań, i służy jako przykład tego co powstaje z połączenia magii i broni.
+Wymagania:
+– Siła: 15
+
+Waga: 11~
+@501  = ~Miecz oburęczny +2~
+@502  = ~Wywodzący się od długiego miecza, miecz oburęczny ma od niego znacznie dłuższe ostrze oraz rękojeść. Jego głównym zadaniem jest przecinanie na pół rycerzy konnych oraz przełamywanie formacji pikinierów. Ten magiczny egzemplarz jest jeszcze lepiej przystosowany do tego typu zadań, służąc jako przykład tego, co może powstać z połączenia broni i magii.
 
 PARAMETRY:
 
-Obrażenia: 1K10 +2
+Obrażenia: 1k10 +2
 TraK0: +2
-Typ uszkodzeń: sieczne
-Waga: 10
+Typ obrażeń: sieczne
 Opóźnienie: 8
 Rodzaj biegłości: miecz oburęczny
 Typ broni: 2-ręczna
-Wymagana siła: 13~
-@503 = ~Tarcza~
+
+Wymagania:
+– Siła: 13
+
+Waga: 10~
+@503  = ~Tarcza~
 
 //------------------------------------------------------------------------------------------------
-// Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
+// Journal entries moved here from autotra dialog files for ADD_JOURNAL:
 //------------------------------------------------------------------------------------------------
 
 @10000 = ~Plemię Niedźwiedzia~
@@ -1181,27 +1558,32 @@ Wymagana siła: 13~
 // 10001 used to be @19 in F_BEAROL.TRA
 @10001 = ~Plemię Niedźwiedzia
 
-Zgodziłem się odnaleźć dziecko poległego przywódcy Plemienia Niedźwiedzia. Powiedziano mi, że jest więzione przez lodowe olbrzymy, które zniszczyły wioskę. Są one poddanymi Ducha Śnieżnego Wilka, który planuje zakończyć istnienie Ducha Niedźwiedzia. Może tego dokonać tylko przez zamordowanie dziecka podczas Rytuału Zimy.~
-
+Zgodziliśmy się odnaleźć dziecko poległego przywódcy plemienia Niedźwiedzia. Powiedziano nam, że porwane zostało ono przez lodowe olbrzymy, które zniszczyły wioskę plemienia Niedźwiedzia. Te olbrzymy są poplecznikami Ducha Śnieżnego Wilka, który planował położyć kres istnieniu Duchowego Niedźwiedzia. Można to uczynić, zabijając w bestialski sposób dziecko podczas Rytuału Zimy.~ 
 // 10002 used to be @20 in F_BEAROL.TRA
 @10002 = ~Plemię Niedźwiedzia
 
-Znalazłem dziecko dawnego przywódcy Plemienia Niedźwiedzia i ostrożnie odniosłem je do starszyzny. Byli niezwykle wdzięczni. Nagrodzono mnie Rogiem Plemienia Niedźwiedzia.~
+Znaleźliśmy dziecko poległego przywódcy plemienia Niedźwiedzia i bezpiecznie doprowadziliśmy je do starszyzny. Byli niezwykle wdzięczni i wręczyli nam róg plemienia Niedźwiedzia.~
 
 // 10003 used to be @3 in F_DRIZZT.TRA
-@10003 = ~Dzisiaj spotkałem nie kogo innego jak samego Drizzta walczącego z grupą gnoli. Pomogłem mu, on zaś w zamian za to zgodził się tymczasowo na wspólną podróż. Któż mógłby się nie zgodzić, jednak obawiam się tego, że jego towarzystwo może mi przynieść kłopoty.~
+@10003 = ~Spotkanie z Drizztem
+
+Dziś spotkaliśmy nie kogo innego jak sławnego łowcę Drizzta Do'Urdena walczącego z grupą gnolli. Pomogliśmy mu w sprawie, a on zaproponował, abyśmy na jakiś czas podróżowali razem. Któż mógłby się nie zgodzić na taką propozycję? Obawiamy się jednak, że jego towarzystwo może nam przynieść kłopoty.~ 
 
 // 10004 used to be @4 in F_REGIS.TRA
-@10004 = ~Spotkałem lekko poddenerwowanego niziołka. Nie życzył sobie aby mu przeszkadzać wieć zostawiłem go w spokoju. Jednakże zanim odszedłem, wspomniał coś o mrocznym łowcy i o tym że jeśli go spotkam powinienem go zabrać do tego niziołka. Nawet nie wiem jak się nazywa.~
+@10004 = ~Spotkanie z Drizztem
 
+Spotkaliśmy niziołka, który był dosyć zaniepokojony. Nie chcieliśmy mu przeszkadzać, więc zostawiliśmy go, aby zajął się własnymi sprawami. Zanim jednak go opuściliśmy, wspomniał coś o mrocznym łowcy. Jeśli natrafilibyśmy na niego, to mamy go przyprowadzić do tego niziołka, którego imienia nawet nie pamiętam.~
 // 10005 used to be @9 in F_REGIS.TRA
-@10005 = ~Wygląda na to, że towarzysze i przyjaciele Drizzta są w opałach. Tak jak się obawiałem, podróż u jego boku przyniesie kłopoty znacznie większe niż mógłbym tylko przypuszczać.~
+@10005 = ~Spotkanie z Drizztem
 
-// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
+Zdaje się, że towarzysze i przyjaciele Drizzta są w tarapatach. Można było się tego spodziewać, że podróż u boku Drizzta przyniesie mi kłopoty o wiele większe, niż można to sobie wyobrazić.~
 
+// Added/changed in v3/BGEE update
 // 10006 used to be @14 in F_DRIZZT.TRA (Delayed Start component)
-@10006 = ~Spotkaliśmy się po raz kolejny z Drizzt Do'Urden. Mamy spotkać się z nim w Inn w Ulgoth brody w trzy dni czasu.~
+@10006 = ~Spotkanie z Drizztem
 
+Ponownie spotkaliśmy Drizzta Do'Urdena. Umówiliśmy się na spotkanie za trzy dni w gospodzie w Brodzie Ulgotha.~
 // 10007 used to be @18 in F_DRIZZT.TRA (Delayed Start component)
-@10007 = ~I dołączył do firmy z Drizzta towarzyszyć mu Doliny Lodowego Wichru. To wiąże się urozmaicony podróż ...~
+@10007 = ~Spotkanie z Drizztem
 
+Będę towarzyszył<PRO_HESHE> Drizztowi w jego wyprawie do Doliny Lodowego Wichru. Zapowiada się to na całkiem owocną w przygody podróż...~ 

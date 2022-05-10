@@ -1,10 +1,12 @@
 // DRIZZT translation file
-@1   = ~Zgoda, do broni!!~
-@2   = ~Jestem ³agodny z natury, przynajmniej wtedy, gdy nie zabijam durniów. Dziêkujê za pomoc. Mo¿e moglibyœmy jeszcze chwile razem wêdrowaæ, gdy¿ póŸniej muszê iœæ ku Dolinom. Przyjaciele na mnie czekaj¹.~ [%_%DRIZT04]
-@3	 = ~Dzisiaj spotka³em nie kogo innego jak samego Drizzta walcz¹cego z grup¹ gnoli. Pomog³em mu, on zaœ w zamian za to zgodzi³ siê tymczasowo na wspóln¹ podró¿. Któ¿ móg³by siê nie zgodziæ, jednak obawiam siê tego, ¿e jego towarzystwo mo¿e mi przynieœæ k³opoty.~
-@4   = ~Widzê jak trzymasz siê z dala od pola bitwy! Lepiej zdecyduj siê po której stronie stoisz, bo nie wiem czy bêdê musia³ wyci¹gaæ do ciebie rêkê czy miecz!~
-@5   = ~Nie bêdê s³uchaæ gróŸb ze strony kogoœ kto ma mnie b³agaæ o pomoc. Mo¿e i te gnolle maja nieg³upi pomys³! Giñ!~
-@6   = ~Skoro muszê wybieraæ, pomogê ci.~
-@7   = ~Zdecydowa³em siê, drowie. Nie licz na moj¹ pomoc!~
-@8   = ~Cieszê siê, ¿e zmieni³eœ zdanie. Te gnolle to jednak mêcz¹ce bestie, i mi³o bêdzie gdy wreszcie bêdê móg³ siê ich pozbyæ!~
-@9   = ~Tak, wreszcie wróci³ mi zdrowy rozs¹dek - nie mo¿e byæ, ¿e bêdê sta³ obojêtnie kiedy ktoœ inny jest w potrzebie.~
+@1  = ~Zgoda, do broni!~ 
+@2  = ~Jestem ³agodny z natury, przynajmniej wtedy, gdy nie zabijam durniów. Dziêkujê za pomoc, pozb¹dŸmy siê ich, a potem mo¿e byœmy przez jakiœ czas razem kontynuowali podró¿. Muszê koniecznie odwiedziæ Dolinê Lodowego Wichru, gdzie czekaj¹ na mnie przyjaciele.~ [%_%DRIZT04]
+@3  = ~Spotkanie z Drizztem
+
+Dziœ spotkaliœmy nie kogo innego jak s³awnego ³owcê Drizzta Do'Urdena walcz¹cego z grup¹ gnolli. Pomogliœmy mu w sprawie, a on zaproponowa³, abyœmy na jakiœ czas podró¿owali razem. Któ¿ móg³by siê nie zgodziæ na tak¹ propozycjê? Obawiamy siê jednak, ¿e jego towarzystwo mo¿e nam przynieœæ k³opoty.~ 
+@4  = ~Widzia³em, ¿e trzymacie siê z dala od walki! Szybko zdecydujcie, po której stronie stoicie - muszê wiedzieæ, czy wyci¹gn¹æ do was d³oñ, czy moje ostrze!~
+@5  = ~Nie œcierpimy gróŸb od kogoœ b³agaj¹cego o pomoc. Mo¿e te gnolle mia³y dobry pomys³! Mo¿e dziœ przyjdzie ci umrzeæ!~ 
+@6  = ~Je¿eli trzeba wybieraæ, to ci pomo¿emy.~
+@7  = ~Postanowiliœmy, mroczny elfie! Nie bêdziemy ciê wspieraæ!~
+@8  = ~Cieszê siê, ¿e zmieniliœcie zdanie, przy³¹czcie siê do walki. Te gnolle s¹ bardzo uci¹¿liwe - cieszê siê, ¿e wreszcie bêdê móg³ siê ich pozbyæ!~ 
+@9  = ~Tak, w koñcu siê opamiêtaliœmy, nie ma bowiem takiej sposobnoœci, ¿ebyœmy stali z boku, gdy ktoœ inny jest w potrzebie.~

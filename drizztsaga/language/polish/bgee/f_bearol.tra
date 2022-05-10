@@ -1,28 +1,25 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
-@1  = ~Ktoś się jednak pojawił, więc naszemu posłańcowi musiało udać się przedostać! Muszą wam sprzyjać bogowie lub pani fortuna, skoroście przetrwali furię lodowych olbrzymów!~
-@2  = ~Posłaniec przekazał mi wiadomość, jednak trudno było coś wywnioskować z jego słów. Teraz już wiem, o czym mówił.~
-@3  = ~Krew spływa strumieniami tutejszymi szlakami. Niewielu nas ocalało. Nasz wspaniały przywódca także poległ... przyszłość naszego plemienia nie jest zbyt pewna. Jedyna nadzieja w potomku zabitego przywódcy... Niestety obecnie jest ono w rękach olbrzymów.~
-@4  = ~Co wywołało tak okrutną wojnę? I dlaczego olbrzymy porwały dziecko?~
-@5  = ~Naszą ziemią rządzi Duch Niedźwiedzia, nasz obrońca, oraz Duch Wilka, któremu służą Lodowe Olbrzymy. Kruchy pokój jaki między sobą zawarli właśnie został naruszony. Wilk zarządał absolutnej władzy nad lasem. Jego sługi - olbrzymy - porywając dziecko naszego przywódcy uwięziły Ducha Niedźwiedzia. Dziecię ma być zabite w Rytuale Zimy, co doprowadzi do śmierci naszego patrona, Ducha Niedźwiedzia. Jak widzisz, nasza przyszłość zależy wyłącznie od tego dziecka...~
-@6  = ~Rozumiem.~
-@7  = ~Ostatni z pośród naszych wojowników poświęcają swe żywota aby uratować wioskę. Ja mogę jedynie zostać tu, by chronić resztę, której udało się pozostać przy życiu. Rzuciłem kilka zaklęć ochronnych wokół tego domu, które nie pozwalają się tu wedrzeć najeźdźcom. Nie zdołałem jednak uratować dziecka. Potrzeba nam teraz kogoś... bohatera takiego jak ty.~
-@8  = ~Odnajdę chłopca, zacznim rozpocznie się ten straszny rytuał. Nie martw się, nieraz stawialiśmy czoła większym niebezpieczeństwom.~
-@9  = ~Mogę wam pomóc... ale nie za darmo.~
-@10 = ~Niech Duch Niedźwiedzia czuwa nad tobą. A jeśli podczas walki odniesiesz ranny, możesz liczyć na moje zdolności uzdrowiciela.~
-@11 = ~Dziękuję.~
-@12 = ~Proszę, znajdź to dziecko, nim będzie za późno. Jak mówiłem już wcześniej, możesz liczyć na to, że w razie potrzeby cię uzdrowię.~
-@13 = ~Wróciłeś z dzieckiem?! Dzięki wielkiemu Duchowi Niedźwiedzia, twoje bohaterskie czyny pozostaną w naszych sercach na zawsze! Weź ten Róg Plemienia Niedźwiedzia, mam nadzieję, że pomoże ci w dalszych wędrówkach.~
-@14 = ~Dziękuje za podarunek. Bywajcie!~
-@15 = ~Znalazłem dziecko dawnego przywódcy Plemienia Niedźwiedzia i ostrożnie odniosłem je do starszyzny. Byli niezwykle wdzięczni. Nagrodzono mnie Rogiem Plemienia Niedźwiedzia.~ 
-@16 = ~Nie mam wyboru, muszę się zgodzić, weź to złoto. Ale jeśli nas zdradzisz, Duch Niedźwiedzia zakończy twój nędzny żywot. Mimo, że na to nie zasługujesz, oferuję ci moje zdolności lecznicze w każdej chwili. To sprawa zbyt wielkiej wagi, byś mógł zawieść, więc czuję sie zobowiązany zrobić wszystko, by ci pomóc.~
-@17 = ~Jeszcze raz wszystkiego dobrego, podrózniku. Dziekuję ci za wszystko.~
-@18 = ~Zgodziłem się odnaleźć dziecko poległego przywódcy Plemienia Niedźwiedzia. Powiedziano mi, że jest więzione przez lodowe olbrzymy, które zniszczyły wioskę. Są one poddanymi Ducha Śnieżnego Wilka, który planuje zakończyć istnienie Ducha Niedźwiedzia. Może tego dokonać tylko przez zamordowanie dziecka podczas Rytuału Zimy.~
+@1  = ~Widzę przybyszów, a zatem nasz posłaniec musiał się przedrzeć. Albo tkwi w was siła, albo szczęście musi wam sprzyjać, skoro zdołaliście przetrwać furię lodowych olbrzymów.~
+@2  = ~Usłyszałem wieści od waszego posłańca, lecz słowa były niejasne. Teraz jednak widzę na własne oczy, o czym mówił.~ ~Usłyszałam wieści od waszego posłańca, lecz słowa były niejasne. Teraz jednak widzę na własne oczy, o czym mówił.~
+@3  = ~Nasi rodacy utonęli w rzece krwi i niewielu z nas pozostało przy życiu. Nasz wielki wódz dołączył do martwych... przyszłości i dziejów naszego plemienia nikt już nie spisze. Jedyna nadzieja spoczywa w dziecku naszego wodza, które jest obecnie w rękach olbrzymów.~
+@4  = ~Co wywołało tę krwawą jatkę i jakie wydarzenia sprawiły, że uprowadzono dziecko?~
+@5  = ~Równowaga utrzymywana między naszym Duchem Niedźwiedzia a Duchem Śnieżnego Wilka została już raz utracona. Teraz Duch Śnieżnego Wilka chce zasiąść samotnie na tronie i zażarcie pożąda władzy nad lasem. Lodowe olbrzymy pełnią rolę jego popleczników, a dziecko wodza, naszego plemienia posiada w sobie źródło potęgi Ducha Niedźwiedzia. Zabijając je w pewnym rytuale, Duch Niedźwiedzia przepadnie na zawsze. Nasza przyszłość spoczywa w tym dziecku...~ 
+@6  = ~Rozumiem...~
+@7  = ~Nasi ostatni wojownicy walczą, by uratować wioskę, a ja jestem tu jedynie po to, aby chronić ostatnich ocalałych. Rzuciłem na ten dom zaklęcie, które trzyma lodowe olbrzymy z daleka od nas, ale nie potrafiłem przeszkodzić im przed uprowadzeniem dziecka. Jesteśmy zrozpaczeni i potrzebujemy heroicznego wyczynu od takich, jak wy.~
+@8  = ~Odnajdę dziecko zanim rozpoczną ten cały rytuał. Nie obawiajcie się, radziliśmy sobie z niebezpieczeństwami o wiele większymi, niż to.~ 
+@9  = ~Mogę zająć się tą sprawą, ale tylko jeśli zapłacisz mi sporą sumkę złota.~
+@10 = ~Niech Duch Niedźwiedzia prowadzi cię przez szlak, a jeśli odniesiesz rany w walce, wtedy ja pomogę je zaleczyć.~ 
+@11 = ~Dziękuję ci za to.~
+@12 = ~Proszę, znajdź dziecko, zanim będzie za późno. Jak już mówiłem, moje umiejętności uzdrawiania są do waszej dyspozycji.~
+@13 = ~Dziecko żyje! Niech będzie błogosławiony Duch Wielkiego Niedźwiedzia, twoje bohaterskie czyny pozostaną w naszych sercach. Weź ten róg plemienia Niedźwiedzia i niech pomaga ci on w twych przyszłych wyprawach.~ 
+@14 = ~Dziękuję ci, żegnajcie.~
+@15 = ~Znaleźliśmy dziecko poległego przywódcy plemienia Niedźwiedzia i bezpiecznie doprowadziliśmy je do starszyzny. Byli niezwykle wdzięczni i wręczyli nam róg plemienia Niedźwiedzia.~
+@16 = ~Nie mam wyboru jak tylko zgodzić się. Dobrze więc, weź to złoto, lecz jeśli nas zdradzisz, niechaj Duch Niedźwiedzia zakończy twój żywot. Chociaż na to nie zasługujesz, to moje umiejętności lecznicze posłużą ci, jeśli zajdzie taka potrzeba. Ta sprawa jest zbyt ważna, dlatego nie możesz zawieść. Tak więc jestem zobowiązany uczynić wszystko, co w mojej mocy, aby pomóc ci odszukać dziecko.~
+@17 = ~Witaj ponownie poszukiwaczu przygód. Dziękuję ci za wszystko.~ ~Witaj ponownie poszukiwaczko przygód. Dziękuję ci za wszystko.~
+@18 = ~Zgodziliśmy się odnaleźć dziecko poległego przywódcy plemienia Niedźwiedzia. Powiedziano nam, że porwane zostało ono przez lodowe olbrzymy, które zniszczyły wioskę plemienia Niedźwiedzia. Te olbrzymy są poplecznikami Ducha Śnieżnego Wilka, który planował położyć kres istnieniu Duchowego Niedźwiedzia. Można to uczynić, zabijając w bestialski sposób dziecko podczas Rytuału Zimy.~ 
 @19 = ~Plemię Niedźwiedzia
 
-Zgodziłem się odnaleźć dziecko poległego przywódcy Plemienia Niedźwiedzia. Powiedziano mi, że jest więzione przez lodowe olbrzymy, które zniszczyły wioskę. Są one poddanymi Ducha Śnieżnego Wilka, który planuje zakończyć istnienie Ducha Niedźwiedzia. Może tego dokonać tylko przez zamordowanie dziecka podczas Rytuału Zimy.~ 
+Zgodziliśmy się odnaleźć dziecko poległego przywódcy plemienia Niedźwiedzia. Powiedziano nam, że porwane zostało ono przez lodowe olbrzymy, które zniszczyły wioskę plemienia Niedźwiedzia. Te olbrzymy są poplecznikami Ducha Śnieżnego Wilka, który planował położyć kres istnieniu Duchowego Niedźwiedzia. Można to uczynić, zabijając w bestialski sposób dziecko podczas Rytuału Zimy.~ 
 @20 = ~Plemię Niedźwiedzia
 
-Znalazłem dziecko dawnego przywódcy Plemienia Niedźwiedzia i ostrożnie odniosłem je do starszyzny. Byli niezwykle wdzięczni. Nagrodzono mnie Rogiem Plemienia Niedźwiedzia.~
+Znaleźliśmy dziecko poległego przywódcy plemienia Niedźwiedzia i bezpiecznie doprowadziliśmy je do starszyzny. Byli niezwykle wdzięczni i wręczyli nam róg plemienia Niedźwiedzia.~

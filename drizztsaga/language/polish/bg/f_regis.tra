@@ -1,11 +1,14 @@
-// #REGIS translation file
-@1   = ~Drizzt, wreszcie ciê odnalaz³em!! Nasz przyjaciel Wulfgar jest uwiêziony w Dziewiêciu Otch³aniach!~
-@2   = ~Co? Dziewiêæ Piekie³?!~
-@3   = ~Witam, hmmm jak widzisz jestem odrobinê zajêty. Nie bierz tego do siebie, ale nie chcia³bym aby mi przeszkadzano. Aczkolwiek jeœli natkniesz siê na "mrocznego ³owcê" to nie wachaj siê mi przeszkodziæ. *szepcz¹c do siebie* Drizzt ta twoja bezsensowna podró¿ niczego mi nie u³atwia...~
-@4   = ~Spotka³em lekko poddenerwowanego nizio³ka. Nie ¿yczy³ sobie aby mu przeszkadzaæ wieæ zostawi³em go w spokoju. Jednak¿e zanim odszed³em, wspomnia³ coœ o mrocznym ³owcy i o tym ¿e jeœli go spotkam powinienem go zabraæ do tego nizio³ka. Nawet nie wiem jak siê nazywa.~
-@5   = ~Nie ma czasu na pogaduchy! Ledwo co zd¹¿y³em zwin¹æ zwój zanim Tanari mia³ uci¹æ mi, jak¿e mi drog¹, g³owê. Szybko, ten zwój umo¿liwi ci przejœcie do tych przeklêtych odmêtów Dziewiêciu Piekie³.~
-@6   = ~Jak to mówi¹, idziemy tam gdzie najgorêcej!~
-@7   = ~Podró¿ do Dziewiêciu Piekie³ to istne szaleñstwo i pewna œmieræ. Zostawiam to Drizztowi, ¿egnajcie.~
-@8   = ~Zaklêcie zosta³o rzucone, teraz wszystko jest w twoich rêkach, Drizzt. Wybacz, ¿e nie idê, ale na niewiele bym siê wam tam przyda³. A teraz ¿wawo!~
-@9   = ~Wygl¹da na to, ¿e towarzysze i przyjaciele Drizzta s¹ w opa³ach. Tak jak siê obawia³em, podró¿ u jego boku przyniesie k³opoty znacznie wiêksze ni¿ móg³bym tylko przypuszczaæ.~
-@10  = ~Dobrze. ChodŸ Drizzt, czas nas goni.~
+@1  = ~W koñcu odnalaz³em ciê, Drizzcie! Nasz przyjaciel, Wulfgar, jest uwiêziony w paszczy Dziewiêciu Piekie³!~ 
+@2  = ~¯e co? Dziewiêæ Piekie³!~
+@3  = ~Witam ciê, hmmm... jestem troszkê tu zajêty. Nie bierz tego za z³¹ monetê, ale nie chcê, aby mi przeszkadzano. Choæ jeœli przypadkiem natkniesz siê na "mrocznego ³owcê" nie wahaj siê przeszkodziæ mi. (szepcz¹c pod nosem) Drizzt, ta twoja wyprawa przez dzicz nie u³atwia mi...~ 
+@4  = ~Spotkanie z Drizztem
+
+Spotkaliœmy nizio³ka, który by³ dosyæ zaniepokojony. Nie chcieliœmy mu przeszkadzaæ, wiêc zostawiliœmy go, aby zaj¹³ siê w³asnymi sprawami. Zanim jednak go opuœciliœmy, wspomnia³ coœ o mrocznym ³owcy. Jeœli natrafilibyœmy na niego, to mamy go przyprowadziæ do tego nizio³ka, którego imienia nawet nie pamiêtam.~
+@5  = ~Nie ma czasu na pogawêdkê. Buchn¹³em zwój i to w takim poœpiechu, ¿e tanar'ri prawie odr¹ba³by mi g³owê. Szybko, za mn¹. Ten zwój pomo¿e wam przejœæ do tej plugawej otch³ani Dziewiêciu Piekie³.~ 
+@6  = ~Jakby to uj¹æ, idziemy do piek³a!~
+@7  = ~Jedynie œmieræ na nas czeka w Dziewiêciu Piek³ach. Pozostawiam tê sprawê Drizztowi, ¿egnajcie.~
+@8  = ~Czar ze zwoju zosta³ ju¿ rzucony, wszystko teraz zale¿y od ciebie i Drizzta. Wybacz, ¿e nie pod¹¿ê za wami, ale nie by³bym tam za bardzo przydatny. IdŸcie ju¿, pomyœlnych wiatrów!~
+@9  = ~Spotkanie z Drizztem
+
+Zdaje siê, ¿e towarzysze i przyjaciele Drizzta s¹ w tarapatach. Mo¿na by³o siê tego spodziewaæ, ¿e podró¿ u boku Drizzta przyniesie mi k³opoty o wiele wiêksze, ni¿ mo¿na to sobie wyobraziæ.~
+@10 = ~Bardzo dobrze, chodŸ ju¿ Drizzcie, musimy siê spieszyæ.~ 

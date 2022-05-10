@@ -1,7 +1,4 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #CATTIJ translation file
-@1   = ~Winnam zakończyć twój żywot tutaj, jednak za to co uczyniłeś, już zostałeś naznaczony śmiercią.~
-@2   = ~Czas się pożegnać i życzyć bezpiecznej podróży.~
+@1 = ~Powinnam zakończyć twój żywot za to coś uczynił, jednak śmierć sama już upomniała się o ciebie.~ ~Powinnam zakończyć twój żywot za to coś uczyniła, jednak śmierć sama już upomniała się o ciebie.~
+@2 = ~Czas pożegnać się, życzę ci bezpiecznej podróży.~

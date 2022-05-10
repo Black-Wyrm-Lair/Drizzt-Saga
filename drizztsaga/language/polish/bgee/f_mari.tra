@@ -1,9 +1,6 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #MARI translation file
-@1   = ~Drizzcie, nareszcie spotkała mnie ta rozkosz. Będę piła twoją krew i wyrwę ci serce! Zaś twoją głowę podaruję Księciu Demonów w formie podarunku!~
-@2   = ~Drizzt już nieraz walczył z demonami, i twoje pogróżki nie robią na nas większego wrażenia.~
-@3   = ~Towarysze Drizzta, to będzie niewątpliwa przyjemność wyciąć wasze serca i wypić waszą krew.~
-@4   = ~Groźby wygałaszane przez twój plugawy wężowy język nie przestraszą nas gdyż  przetrwaliśmy o wiele gorsze!!~
+@1 = ~Drizzcie, w końcu będę czerpać rozkosz, wyrywając twe serce i spijając twą krew. A twój łeb dam w prezencie Księciu Demonów.~
+@2 = ~Drizzt ścierał się wcześniej z demonami, więc te groźby padające z twego obrzydliwego, wężowego języka tylko głucho się rozchodzą!~
+@3 = ~Towarzysze Drizzta, jakąż to przyjemnością będzie wyrywać wasze serca i spijać waszą krew.~ 
+@4 = ~Przeżyliśmy o wiele gorsze groźby, niż te wypluwane przez twój obrzydliwy, wężowy język!~

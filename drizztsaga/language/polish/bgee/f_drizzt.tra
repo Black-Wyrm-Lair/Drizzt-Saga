@@ -1,13 +1,9 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // F_DRIZZT translation file
-// added/changed in v3/BGEE update [TRANSLATIONS / PROOFREADING NEEDED]:
-@10  = ~Ahah <CHARNAME>! Znów się spotykamy. Muszę wkrótce odejść do Doliny Lodowego Wichru. Chciałbym dołączyć do mnie w tej niebezpiecznej podróży.~
-@11  = ~Drizzt, przyjacielu, byłbym szczęśliwy, aby przyłączyć się do ciebie, ale najpierw muszę znaleźć odpowiednią siedzibę dla moich obecnych towarzyszy podróży. Spotkaj się ze mną w gospodzie w Beard Ulgoth za trzy dni czasu, a ja chętnie pójdę z tobą.~
-@13  = ~Bardzo dobrze, będę tam zobaczymy.~
-@15  = ~Dobrze spełnione. Czy jesteś przygotowany, a następnie?~
-@16  = ~Jestem tak jak ja jestem gotowy prawdopodobnie nigdy nie będzie. Chodźmy, dobrze?~
-@17  = ~Chodźmy!~
-@19  = ~Jeszcze nie, mam jeszcze trochę przygotowań do zrobienia.~
+@10  = ~Ach, <CHARNAME>! Znów się spotykamy. Wkrótce jednak będę musiał udać się do Doliny Lodowego Wichru. Nie mógłbym oczekiwać, że wesprzesz mnie w tak niebezpiecznym przedsięwzięciu.~ [DR_TDS1]
+@11  = ~Drizzt, przyjacielu, byłbym szczęśliwy, mogąc do ciebie dołączyć, jednak wpierw muszę znaleźć wygodne miejsce, gdzie moi obecni towarzysze mogliby się zatrzymać. Spotkajmy się za trzy dni w gospodzie w Brodzie Ulgotha, a będę zachwycony, mogąc wyruszyć z tobą.~ ~Drizzt, przyjacielu, byłabym szczęśliwa, mogąc do ciebie dołączyć, jednak wpierw muszę znaleźć wygodne miejsce, gdzie moi obecni towarzysze mogliby się zatrzymać. Spotkajmy się za trzy dni w gospodzie w Brodzie Ulgotha, a będę zachwycona, mogąc wyruszyć z tobą.~
+@13  = ~Doskonale, będę tam na ciebie czekać.~
+@15  = ~Dobrze cię znowu widzieć. Przygotowania ukończone?~ [DR_TDS2]
+@16  = ~Jestem gotowy, lepiej już nie będę. Chodźmy, dobrze?~ ~Jestem gotowa, lepiej już nie będę. Chodźmy, dobrze?~
+@17  = ~W drogę zatem!~
+@19  = ~Niestety, jeszcze nie. Mam jeszcze parę spraw do załatwienia.~

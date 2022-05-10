@@ -24,5 +24,6 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
 
 - Drizzt Saga uploaded to GitHub!
 - Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra
+- New Polish translation by Bartek, formatted to EE by Roberciiik
 
 </details>

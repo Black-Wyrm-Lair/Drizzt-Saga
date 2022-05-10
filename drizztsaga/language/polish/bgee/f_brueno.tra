@@ -1,13 +1,10 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #BRUENOR translation file
-@1   = ~Na młot Moradina, Drizzcie! Zdaje się, że Dziewięć Piekieł roztworzyły swą paszczę aby wchłonąć całą Dolinę Lodowego Wichru w swój czarny bebech!~
-@2   = ~Zdaje się, że demony nie są tu niczym nadzwyczajnym...~
-@3   = ~Demon czy nie, ktokolwiek jest odpowiedzialny za zniknięcie Catti-Brie posmakuje mojego topora! Jedyne com znalazł to martwe zwłoki łowców którzy towarzyszyli mojej Catti i nic prócz małych wskazówek prowadzących mnie do tego miejsca. Ale tutaj ścieżka się kończy. Musimy się spieszyć, spodziewam się najgorszego.~
-@4   = ~Zgadzam się.~
-@5   = ~Ta sprawa zaczyna mnie przerastać. Pozostaje mi tylko życzyć wam powodzenia, czas na mnie.~
-@6   = ~Na młot Moradina, Drizzcie! Zdaje się, że Dziewięć Piekieł roztworzyły swą paszczę aby wchłonąć całą Dolinę Lodowego Wichru w swój czarny bebech, zaś pośród tego wszystkiego zagubiła się moja przybrana córka, Catti-Brie! Może byś pomógł mi ją odnaleźć?~
-@7   = ~Będzie to dla mnie zaszczyt, móc ci pomóc odnaleźć tą Catti-Brie. Ruszajmy.~
-@8   = ~Wybacz, jednak mam inne rzeczy do zrobienia. Bywaj.~
+@1 = ~Na młot Moradina, Drizzcie! Zdaje się, że Dziewięć Piekieł rozwarło swe szczęki i pochłania Dolinę Lodowego Wichru w swe czarne wnętrzności!~ 
+@2 = ~Zdaje się, że jest to charakterystyczny wzór działania demonów...~
+@3 = ~Demony czy nie, kimkolwiek są ci, którzy odpowiadają za zniknięcie Catti-Brie, poczują jak mój topór rozłupuje im czachy! Choć odnalazłem martwe ciała łowców podążających wraz z Catti-Brie, to nie ma tu żadnych oznak jej życia, prócz kilku wskazówek, które zaprowadziły mnie do tego miejsca. Lecz ślady urywają się tu. Musimy spieszać, bo spodziewam się najgorszego.~ 
+@4 = ~Zgadzam się.~
+@5 = ~Ta sprawa zaczyna stawać się zbyt zawiła, abym sobie z nią poradził. Życzę wam wszystkim powodzenia. Muszę was opuścić.~ ~Ta sprawa zaczyna stawać się zbyt zawiła, abym sobie z nią poradziła. Życzę wam wszystkim powodzenia. Muszę was opuścić.~
+@6 = ~Na młot Moradina! Zdaje się, że same Dziewięć Piekieł zajęło miejsce Doliny Lodowego Wichru i boję się, że moja przybrana córka Catti-Brie zniknęła w jej wnętrzu. Czy zechciałbyś zabrać swój oręż i pomóc mi ją odszukać?~ ~Na młot Moradina! Zdaje się, że same Dziewięć Piekieł zajęło miejsce Doliny Lodowego Wichru i boję się, że moja przybrana córka Catti-Brie zniknęła w jej wnętrzu. Czy zechciałabyś zabrać swój oręż i pomóc mi ją odszukać?~
+@7 = ~Dołączę do tak szlachetnej sprawy. Odnajdziemy twoją Catti-Brie.~
+@8 = ~Przykro mi, ale inne sprawy mnie wzywają, żegnam.~

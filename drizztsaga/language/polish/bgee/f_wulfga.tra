@@ -1,13 +1,10 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #WULFGAR translation file
-@1   = ~Z pewnością są jacyś równie potężnych co złych wrogów, którzy z chęcią widzieliby cię martwego Drizzcie. Demony Dziewięciu Piekieł pragną twojej krwi. Widzę jednak, że nie jesteś sam.~
-@2   = ~Kto by pomyślał, że potyczka z kilkoma gnollami zaprowadzi mnie aż do otchłani Dziewięciu Piekieł.~
-@3   = ~Ty tam! Wyciągaj stal z jaszczura i mierz tak, aby zatopić ją w flakach tych parszywych demonów!~
-@4   = ~Tak jak mówisz, wytniemy sobie drogę z tej przeklętej czeluści!~
-@5   = ~Zapomnij, to nie jest moja walka. Walka z demonami oznacza pewną śmierć.~
-@6   = ~Nieźle! Mogą wybierać między moją pięścią a czubkiem buta!~
-@7   = ~Taki tchórz jak ty nie jest godzien walczenia ramię w ramię z Wulfgarem! Zostawię cię tu na pastwę losu, i zgubionyś jest na własne życzenie.~
-@8   = ~To typowe dla tych, których ścieżki krzyżują się ze sławnym Drizztem. Każdy z nas bierze od niego cząstkę jego odwagi i heroizmu... chodźmy więc, skrzyżujmy stal i zatopmy ją w bebechach tych parszywych demonów.~
+@1 = ~Na pewno masz jakiś zajadłych wrogów, którzy z ochotą zakończyliby twój żywot, Drizzcie. Demony z Dziewięciu Piekieł od dawna pragną posmakować twej krwi. Widzę, że przywiodłeś kogoś ze sobą.~
+@2 = ~Kto by pomyślał, że potyczka z kilkoma gnollami doprowadzi mnie aż do Dziewięciu Piekieł.~
+@3 = ~Ty tam! Wyciągaj broń i mierz tak, aby zatopić ją w bebechach tych niecnych istot z piekła rodem!~
+@4 = ~Zgadzam się w zupełności, wyrąbiemy sobie drogę z tej piekielnej czeluści!~
+@5 = ~Zapomnij, to twoja walka. Stawić czoła tym demonicznym istotom, to jak spotkać się z własną śmiercią.~
+@6 = ~To coś dla mnie! Mogą se wybrać między moją pięścią a czubkiem buta!~
+@7 = ~Twoje tchórzostwo najwyraźniej nie pasuje, aby walczyć przy boku z Wulfgarem! Jeśli zostawię cię tutaj na pastwę losu, to jesteś trup na własne życzenie.~
+@8 = ~To powszechnie znane dla tych, którzy krzyżują swe ścieżki i stają przy boku z Drizztem. Chodźmy więc, niech nasze ostrza zatopią się we flakach tych piekielnych istot.~

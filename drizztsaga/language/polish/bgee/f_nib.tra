@@ -1,15 +1,12 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #NIB translation file
-@1   = ~*Beknięcie* Pardon blaga, odbija mi się rzepą... Musisz mieć sporo szczęścia skoro udało Ci się uniknąć spotkania z tymi brudnymi Wielkoludamu wałęsającymi się na zewnątrz.~
-@2   = ~Kim jesteś i jakim sposobem znalazł się tu ten statek skoro w promieniu jednej mili nie ma kropli wody?~
-@3   = ~Ten statek nie porusza się po wodzie, tylko szybuje w przestworzach.~
-@4   = ~Przestworza, eh...~
-@5   = ~Eh...Oczywiście był to precyzyjnie wykonany statek powietrzny dopóki te niewychowane Lodowe Olbrzymy nie zaczęły rzucać w niego kamieniami. Mój kuzyn Jan Jansen z Waterdeep będzie raczej wściekły, gdyż ponad połowa tego statku to jego robota.~
-@6   = ~Wy gnomy nigdy nie przestaniecie mnie zaskakiwać swoimi wynalazkami...~
-@7   = ~Mniejsza o to - moje kieszenie potrzebują złota na odbudowę tego statku, może więc jesteś zainteresowany kupnem któregoś z moich towarów?~
-@8   = ~Pewnie, pokaż mi co masz na sprzedaż.~
-@9   = ~Może później.~
-@10  = ~*Beka* Przepraszam, znów odbija mi się rzepa. Chcesz obejrzeć moje towary?~
+@1  = ~*beknięcie* Pardon, odbiło mi się rzepą... Musisz mieć niebywale dużo szczęścia, skoro jesteś wciąż żyw po spotkaniu z tymi paskudnymi wielkoludami, biegającymi wściekle na zewnątrz.~ [F_JAN23] ~*beknięcie* Pardon, odbiło mi się rzepą... Musisz mieć niebywale dużo szczęścia, skoro jesteś wciąż żywa po spotkaniu z tymi paskudnymi wielkoludami, biegającymi wściekle na zewnątrz.~ [F_JAN23]
+@2  = ~Kimże jesteś i jak ten statek dostał się tu, skoro najbliższa rzeka jest kilometry stąd?~
+@3  = ~Ten statek nie pływa po wodzie, lecz szybuje po niebie.~
+@4  = ~Po niebie, ech...~
+@5  = ~Ech... tak, w rzeczy samej. To był wyśmienicie skonstruowany statek powietrzny, zanim te plugawe, lodowe olbrzymy trafiły w niego bryłą lodu. Mój kuzyn Jan Jansen z Waterdeep będzie raczej wkurzony, bo zbudował większą część tego statku.~
+@6  = ~Wy gnomy nigdy nie przestaniecie mnie zaskakiwać tymi waszymi wynalazkami...~
+@7  = ~Czyżby? Jednak od tamtego czasu moje kieszenie aż się proszą o złoto na odbudowanie go kawałek po kawałeczku, więc może zainteresowani bylibyście zobaczyć moje towary?~
+@8  = ~Tak, pokaż mi, co masz na sprzedaż.~
+@9  = ~Może później.~
+@10 = ~*beknięcie* Pardon, znowu mi się odbiło rzepą. Zechcesz zobaczyć moje towary?~ [F_JAN23]

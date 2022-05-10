@@ -1,7 +1,4 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
 // #BEARWAR translation file
-@1   = ~Pomocy! Potrzebuję twojej pomocy! Jest ich zbyt wielu! Musimy przedrzeć się do Gospody, gdzie ostali się ci, którzy przetrwali - i mieć nadzieję, że dziecko jest bezpieczne!~
-@2   = ~Twoje uczynki nie zostaną tu nigdy zapomniane.~
+@1 = ~Ratunku! Potrzebuję waszej pomocy! Jest ich zbyt wielu! Musimy przebić się do tej gospody, gdzie są ostatni z ocalałych. Miejmy nadzieję, że dziecko jest bezpieczne!~ 
+@2 = ~Wasze uczynki na zawsze zostaną w pamięci.~

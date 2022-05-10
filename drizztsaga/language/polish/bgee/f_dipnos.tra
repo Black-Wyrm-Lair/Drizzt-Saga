@@ -1,16 +1,13 @@
 // This file uses UTF8 encoding. Any edits of this file must preserve this encoding for BGEE compatibility
-
-// Strings in this file are identical to those in the non-BGEE version, no additional translation needed.
-
-@1  = ~Dziwne czasy mamy. Utknąłem w tej gospodzie, podczas gdy ci olbrzymi szaleją na zawnątrz.~ 
-@2  = ~A ty kim niby jesteś, jeśli wolno spytać?~
-@3  = ~Możesz nazywać mnie Wścibinos, jako że właśnie wtykam nos w nie swoje sprawy. A pomyśleć, że mam niezły plan ucieczki z tego miejsca przy pomocy zwoju skrzydlatego wiatru...~ 
-@4  = ~Zwoju skrzydlatego wiatru?~
-@5  = ~Ano tak. Jest to zwój teleportacji z już naniesionym miejscem przeznaczenia.~ 
-@6  = ~A więc co cię powstrzymuje od użycia go?~
-@7  = ~Bo miejsce widniejące na zwoju to Góry Wędrownych Burz. Dlatego wolę zostać tutaj. Ty jednak wyglądasz na podróżnika, kóry może być zainteresowany tamtymi regionami. Za skromną opłatą 100 sztuk złota mogę teleportować twoją drużynę przy pomocy zwoju.~
-@8  = ~Czemu po prostu nie odsprzedasz mi go?~ 
-@9  = ~Ponieważ jest magicznie związany ze swoim znalazcą, którym jestem ja. Nikt inny nie może go użyć.~
-@10 = ~Niech tak będzie, rzuć zaklęcie. Wiedz jednak, że moje ostrze szybko zareaguje, jeśli okażesz się oszustem.~ 
-@11 = ~Być może skuszę się w bardziej odpowiednim czasie. I gdy zawartość moich sakw na to pozwoli.~
-@12 = ~Już wróciłeś, podróżniku? Gotowy na wyprawę? Jedyne 100 sztuk złota za wspaniałą przygodę!~
+@1  = ~Dziwne to czasy nastały dla nas. Ugrzązłem w tej gospodzie, a ci wielkostopi szaleją na zewnątrz.~ 
+@2  = ~A kimże ty jesteś, jeśli wolno spytać?~
+@3  = ~Możesz mnie nazywać Wścibinos, bo chyba wetknąłem swój nochal, ale tym razem w nie swoje sprawy. Jednak mam niezły plan ucieczki z tego miejsca za pomocą zwoju chodzenia po wietrze.~ 
+@4  = ~Zwój chodzenia po wietrze?~
+@5  = ~Tak, zwój chodzenia po wietrze jest swego rodzaju zwojem teleportacji, na który to już naniesiono miejsce docelowe.~ 
+@6  = ~Co cię więc powstrzymuje od użycia go?~
+@7  = ~To, że naniesione na nim miejsce, to Góry Wędrujących Burz. Dlatego nie zamieniłbym tego miejsca na tamto, ale wy wyglądacie mi na podróżników, których być może zaciekawi ta sprawa. Mógłbym was tam przenieść, używając tego zwoju za sto sztuk złotych monet.~
+@8  = ~Dlaczego po prostu nie sprzedasz nam tego zwoju?~ 
+@9  = ~Bo jest związany ze swym znalazcą i nikt inny nie może rzucać czaru z tego zwoju.~
+@10 = ~Dobrze więc, rzuć czar, lecz jeśli to nikczemne oszustwo, moje ostrze skutecznie odpowie na nie.~ 
+@11 = ~Może później, gdy nastanie właściwy czas, a zawartość naszych sakiew pozwoli na to.~
+@12 = ~Powracacie podróżnicy, gotowyście na wyprawę? Sto sztuk złota za pierwszorzędną przygodę!~
