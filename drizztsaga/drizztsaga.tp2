@@ -57,7 +57,7 @@ ALWAYS
 	// Include macro definitions:
 	INCLUDE ~DRIZZTSAGA\lib\worldmap_update.tph~
 	INCLUDE ~DRIZZTSAGA\lib\del_are_trigger.tph~
-	INCLUDE ~DRIZZTSAGA\DS-Core.tpa~
+	INCLUDE ~DRIZZTSAGA\tpa\ds-core.tpa~
 		
 	OUTER_SET GameTypeDetected = 1
 		  	

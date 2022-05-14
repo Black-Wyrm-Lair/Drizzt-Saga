@@ -1,0 +1,37 @@
+
+
+DEFINE_ACTION_FUNCTION ~APPEND_SOUND~
+INT_VAR
+  StrRef = 0
+STR_VAR
+  MaleSound = ""
+  FemaleSound = ""
+BEGIN
+  ACTION_IF (StrRef != 0 ) THEN BEGIN
+    ACTION_GET_STRREF StrRef Male
+    ACTION_GET_STRREF_F StrRef Female
+    STRING_SET_EVALUATE StrRef ~%Male%~ [%MaleSound%] ~%Female%~ [%FemaleSound%]
+  END
+END
+
+///////////////////////////////////////////////////
+
+
+ACTION_IF (~%LANGUAGE%~ STR_EQ ~polish~) THEN BEGIN
+  ACTION_IF (GAME_IS ~BGEE~) THEN BEGIN
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 2444 STR_VAR MaleSound = "DRIZZT11" FemaleSound = "DRIZZT11" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 2449 STR_VAR MaleSound = "DRIZZT12" FemaleSound = "DRIZZT12" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 2450 STR_VAR MaleSound = "DRIZZT13" FemaleSound = "DRIZZT13" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 8977 STR_VAR MaleSound = "DRIZZT14" FemaleSound = "DRIZZT14" END
+  END
+  ACTION_IF (GAME_IS ~BG2 TOB BGT~) THEN BEGIN
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 58657 STR_VAR MaleSound = "DRIZZT15" FemaleSound = "DRIZZT15" END
+  END
+  ACTION_IF (GAME_IS ~EET~) THEN BEGIN
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 58657 STR_VAR MaleSound = "DRIZZT15" FemaleSound = "DRIZZT15" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 202444 STR_VAR MaleSound = "DRIZZT11" FemaleSound = "DRIZZT11" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 202449 STR_VAR MaleSound = "DRIZZT12" FemaleSound = "DRIZZT12" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 202450 STR_VAR MaleSound = "DRIZZT13" FemaleSound = "DRIZZT13" END
+    LAF ~APPEND_SOUND~ INT_VAR StrRef = 208977 STR_VAR MaleSound = "DRIZZT14" FemaleSound = "DRIZZT14" END
+  END
+END
