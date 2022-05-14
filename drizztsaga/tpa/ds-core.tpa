@@ -2467,9 +2467,16 @@ PRINT @361
 
 COPY ~DRIZZTSAGA/Audio/WAV~ ~override~		// WAVs
 
+COPY ~DRIZZTSAGA/Audio/WAV/english~ ~override~		// Localized sounds (default)
+ACTION_IF (DIRECTORY_EXISTS ~DRIZZTSAGA/Audio/WAV/%LANGUAGE%~) THEN BEGIN
+  COPY ~DRIZZTSAGA/Audio/WAV/%LANGUAGE%~ ~override~		// Localized sounds
+END
+
 ACTION_IF (DECODE_SOUNDS = 1) THEN BEGIN
 	LAF HANDLE_AUDIO END	// OGGs
 END
+
+INCLUDE ~DRIZZTSAGA/tpa/ds-audio.tpa~
 
 
 // Area data files & tilesets:
