@@ -1769,92 +1769,12 @@ COPY ~DRIZZTSAGA/CRE/F_MEDUSA.cre~ ~override~
   SAY DYING ~~ [F_MED07]
   WRITE_ASCIIE 0x3e4 ~%BG1RNDTRE_RICH%~
 
-  
-// BALDUR.GAM patch to add new joinable characters
-
-PRINT @488
-
-COPY - ~DRIZZTSAGA/misc/F_PATCH.2DA~ ~DRIZZTSAGA/misc~
-	COUNT_2DA_ROWS 5 GAM_count
-	READ_2DA_ENTRIES_NOW ~#GAM_patch_table~ 5	
-BUT_ONLY
-
-COPY_EXISTING ~BALDUR.GAM~ ~override~
-	READ_LONG 0x20 "PC_offset"
-	READ_LONG 0x28 "US_offset"
-	READ_LONG 0x30 "NPC_offset"
-	READ_LONG 0x38 "glob_offset"
-	READ_LONG 0x50 "jrnl_offset"
-	READ_LONG 0x34 "NPC_num"
-	READ_LONG 0x68 "famil_offset"
-	READ_LONG 0x6c "locat_offset"
-	READ_LONG 0x78 "US2_offset"
-	
-	SET "idx" = 0
-	WHILE ("%idx%" < "%GAM_count%") BEGIN
-	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 1 "cre_name"
-	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 2 "area_name"
-	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 3 "loc_x"
-	  READ_2DA_ENTRY_FORMER ~#GAM_patch_table~ "idx" 4 "loc_y"
-	  
-	  INSERT_BYTES "%NPC_offset%" 0x160
-	  WRITE_ASCIIE ("%NPC_offset%" + 0x0c) "%cre_name%" #8
-	  WRITE_ASCIIE ("%NPC_offset%" + 0x18) "%area_name%" #8
-	  WRITE_SHORT ("%NPC_offset%" + 0x20) "%loc_x%"
-	  WRITE_SHORT ("%NPC_offset%" + 0x22) "%loc_y%"
-	  WRITE_SHORT ("%NPC_offset%" + 0x8c) 0xffff
-	  WRITE_SHORT ("%NPC_offset%" + 0x8e) 0xffff
-	  WRITE_SHORT ("%NPC_offset%" + 0x90) 0xffff
-	  WRITE_SHORT ("%NPC_offset%" + 0x92) 0xffff
-	  WRITE_SHORT ("%NPC_offset%" + 0xb4) 0xffff
-	  WRITE_SHORT ("%NPC_offset%" + 0xb6) 0xffff
-	  WRITE_SHORT ("%NPC_offset%" + 0xb8) 0xffff	  
-	  SET "idx" = "%idx%" + 1
-	END
-	
-	PATCH_IF ("%idx%" > 0) BEGIN	
-	  SET "delta" = 0x160 * "%idx%"
-	  SET "NPC_num" = "%NPC_num%" + "%idx%"
-	  WRITE_LONG 0x34 "%NPC_num%"
-	  
-      PATCH_IF ("%PC_offset%">="%NPC_offset%") BEGIN
-        "PC_offset"="%PC_offset%"+"%delta%"
-        WRITE_LONG  0x20 "%PC_offset%"
-      END
-      PATCH_IF ("%US_offset%">="%NPC_offset%") BEGIN
-        "US_offset"="%US_offset%"+"%delta%"
-        WRITE_LONG  0x28  "%US_offset%"
-      END
-      PATCH_IF ("%glob_offset%">="%NPC_offset%") BEGIN
-        "glob_offset"="%glob_offset%"+"%delta%"
-        WRITE_LONG  0x38  "%glob_offset%"
-      END
-      PATCH_IF ("%jrnl_offset%">="%NPC_offset%") BEGIN
-        "jrnl_offset"="%jrnl_offset%"+"%delta%"
-        WRITE_LONG  0x50  "%jrnl_offset%"
-      END
-      PATCH_IF ("%famil_offset%">="%NPC_offset%") BEGIN
-        "famil_offset"="%famil_offset%"+"%delta%"
-        WRITE_LONG  0x68  "%famil_offset%"
-      END
-      PATCH_IF ("%locat_offset%">="%NPC_offset%") BEGIN
-        "locat_offset"="%locat_offset%"+"%delta%"
-        WRITE_LONG  0x6c  "%locat_offset%"
-      END
-      PATCH_IF ("%US2_offset%">="%NPC_offset%") BEGIN
-        "US2_offset"="%US2_offset%"+"%delta%"
-        WRITE_LONG  0x78  "%US2_offset%"
-      END
-	END
-BUT_ONLY
-
-
 // Placeholders for possible future expansions on NPC interaction
 // 2DA appends for new joinable characters
 
 PRINT @357
 
-ACTION_IF GAME_IS ~BGT~ BEGIN
+ACTION_IF GAME_IS ~BGT EET~ BEGIN
 	OUTER_SPRINT "PDialog_Appends"
 ~F_JARLAXE    F_JARLAP            F_JARLAJ          ***            ***                ***                ***                 ***
 F_ARTEMIS    F_ARTEMP            F_ARTEMJ          ***            ***                ***                ***                 ***
@@ -1879,7 +1799,7 @@ END
 APPEND ~PDIALOG.2DA~ ~%PDialog_Appends%~
 UNLESS ~F_REGIS2~
 
-ACTION_IF GAME_IS ~BGT~ BEGIN
+ACTION_IF GAME_IS ~BGT EET~ BEGIN
 	OUTER_SPRINT "Interdia_Appends"
 ~F_JARLAXE       F_JARLAB      ***
 F_CATTIBR       F_CATTIB      ***
