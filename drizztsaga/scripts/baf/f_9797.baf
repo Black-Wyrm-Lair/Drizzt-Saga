@@ -1,3 +1,14 @@
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+	CreateCreature("F_JARLAX",[392.258],14)
+	CreateCreature("F_ARTEMI",[443.222],14)
+	CreateCreature("F_CATTIB",[686.505],11)
+	Continue()
+END
+
 IF
   Global("F_Betrayal","MYAREA",1)
 THEN

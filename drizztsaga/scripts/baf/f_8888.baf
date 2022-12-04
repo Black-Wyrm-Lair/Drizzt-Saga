@@ -1,4 +1,12 @@
 IF
+	OnCreation()
+THEN
+	RESPONSE #100
+	CreateCreature("F_BRUENO",[662.1177],0)
+	Continue()
+END
+
+IF
 	Global("F_finalfight","GLOBAL",1)
 	!Exists("F_ROBED")
 THEN

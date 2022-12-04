@@ -1,0 +1,8 @@
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+	CreateCreature("F_WULFGA",[382.2796],2)
+	Continue()
+END

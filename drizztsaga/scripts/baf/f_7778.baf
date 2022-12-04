@@ -1,0 +1,8 @@
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+	CreateCreature("F_REGIS2",[398.257],0)
+	Continue()
+END
