@@ -404,7 +404,7 @@ Obra¿enia: 1K6 +4
 TraK0: +4
 Typ obra¿eñ: k³ute
 Specjalne:
- Przy trafieniu wprowadza do krwi ofiary truciznê (rzut obronny przeciw truciznom neguje)
+ 4 pkt. obra¿eñ od trucizny co sekundê przez 40 sekund (rzut obronny przeciw truciznom neguje)
 Waga: 3
 OpóŸnienie: 3
 Rodzaj bieg³oœci: krótki miecz
@@ -770,7 +770,7 @@ PARAMETRY:
 Obra¿enia: 1K4
 Typ obra¿eñ: pocisk (k³ute)
 Specjalne:
- 2 pkt. obra¿eñ od trucizny co sekundê przez 10 sekund
+ 2 pkt. obra¿eñ od trucizny co sekundê przez 10 sekund (rzut obronny przeciw truciznom neguje)
 Waga: 0
 OpóŸnienie: 2
 Rodzaj bieg³oœci: sztylet

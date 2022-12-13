@@ -401,10 +401,7 @@ Waga: 3~
 
 PARAMETRY:
 
-Specjalne:
-– Wprowadza do krwi ofiary truciznę, po trafieniu (rzut obronny przeciw truciznom neguje)
-
-Obrażenia: 1k6 +4
+Obrażenia: 1k6 +4, +4 obrażenia od trucizny na sekundę przez czterdzieści sekund (rzut obronny przeciw truciznom neguje)
 TraK0: +4
 Typ obrażeń: kłute
 Opóźnienie: 3
@@ -746,7 +743,7 @@ Waga: 0~
 
 PARAMETRY:
 
-Obrażenia: 1k4, +2 obrażenia od trucizny na sekundę, przez dziesięć sekund (rzut obronny przeciw śmierci neguje)
+Obrażenia: 1k4, +2 obrażenia od trucizny na sekundę przez dziesięć sekund (rzut obronny przeciw truciznom neguje)
 Typ obrażeń: pocisk
 Opóźnienie: 2
 Rodzaj biegłości: sztylet
