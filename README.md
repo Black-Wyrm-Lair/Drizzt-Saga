@@ -23,9 +23,10 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
     <summary>Upcoming release...</summary>
     
 - Drizzt Saga uploaded to GitHub!
-- Fix joinable NPC spawn issue on EET
-- Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra
-- New Polish translation by Bartek, formatted to EE by Roberciiik
+- Fix joinable NPC spawn issue on EET.
+- New Polish translation by Bartek, formatted to EE by Roberciiik.
+- Added missing Lore to identify the Moonsword.
+- Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra.
 - Moved english soundset to a different directory, so it can be replaced by localized sounds.
     
 </details>
