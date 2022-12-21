@@ -28,5 +28,6 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
 - Added missing Lore to identify the Moonsword.
 - Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra.
 - Moved english soundset to a different directory, so it can be replaced by localized sounds.
+- And other minor fixes (listed in GitHub commits)
     
 </details>
