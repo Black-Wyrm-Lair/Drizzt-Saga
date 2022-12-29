@@ -1337,6 +1337,100 @@ No lo pueden usar:
 @503 = ~Escudo~
 
 //------------------------------------------------------------------------------------------------
+// New for v4 
+//------------------------------------------------------------------------------------------------
+
+@504 = ~Amulet of the Master Harper~ // BG2 #73907
+@505 = ~Figurine~ // BG2 #38100
+@506 = ~Horn~ // BG2 #38531
+// BG2 #39659
+@507 = ~This is a small horn. Horns are typically made of bone or metal and can produce a large variety of sounds.
+
+STATISTICS:
+
+Weight: 1~ 
+// BG2 #66396
+@508 = ~Usually made of leather, a quiver can hold anywhere from 20 to 40 arrows or crossbow bolts.
+
+STATISTICS:
+
+Weight: 0~
+// BG2 #6862
+@509 = ~The longbow is similar to the shortbow, except that the staff is about as tall as the archer is - usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Weight: 3
+Proficiency Type: Longbow
+Type: 2-handed
+Requires: 6 Strength
+Not usable by:
+ Druid
+ Cleric
+ Mage
+ Thief
+ Monk
+ Kensai
+ Cavalier~
+// BG2 #39653
+@510 = ~This is a small animal figurine.
+
+STATISTICS:
+
+Weight: 0~
+// BG2 #6696
+@511 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. Magical battle axes are normally crafted by dwarves to help defend their warriors against their harsher neighbors. This magical axe has seen many battles, but its enchantments and craftsmanship make it a very capable weapon still.
+
+STATISTICS:
+
+Damage: 1d8+2
+THAC0: +2
+Damage Type:  Slashing
+Weight: 5
+Speed Factor: 5
+Proficiency Type: Axe
+Type: 1-handed
+Requires: 10 Strength
+Not usable by:
+ Druid
+ Cleric
+ Mage 
+ Thief~
+@512 = ~This is a small figurine that has runes engraved all over it.
+
+STATISTICS:
+
+Weight: 0~
+// BG2 #6652
+@513 = ~Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. 
+
+STATISTICS:
+
+Armor Class: 8
+Weight: 15
+Requires: 4 Strength
+Not Usable By:
+ Mage~
+// BG2 #6716
+@514 = ~Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this - the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.
+
+STATISTICS:
+
+Damage: 1d4+1
+Damage Type:  Crushing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 9 Strength
+Not usable by:
+ Druid
+ Mage 
+ Thief~
+
+//------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
 //------------------------------------------------------------------------------------------------
 

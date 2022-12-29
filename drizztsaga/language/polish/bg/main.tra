@@ -791,7 +791,7 @@ PARAMETRY:
 
 Specjalne:
  Leczy pij¹cemu 5 punktów ¿ycia
- Leczy choroby i neuatralizuje trucizny  
+ Leczy choroby i neutralizuje trucizny
  Nieznane skutki uboczne
 Waga: 2~
 @215  = ~Pierœcieñ~
@@ -1273,7 +1273,7 @@ Nie mo¿e u¿ywaæ:
  Druid
  Mag
  Z³odziej~
-@293  = ~Zbroja p³ytowa z czarnego opalu +1: 'Zbroja mroku'
+@293  = ~Pe³na zbroja p³ytowa z czarnego opalu +1: 'Zbroja mroku'
 
 Upiorny wata¿ka Bhaala przywdziewa³ tê zbrojê, gdy s³u¿y³ swojemu mistrzowi - Panu Mordu. Dowódca os³ab³ podczas Czasu Niepokojów i straci³ ¿ycie w starciu z Helmem.
 
@@ -1593,6 +1593,97 @@ Nie mo¿e u¿ywaæ:
  Mag
  Z³odziej~
 @503  = ~Tarcza~
+
+//------------------------------------------------------------------------------------------------
+// New for v4 
+//------------------------------------------------------------------------------------------------
+
+@504 = ~Amulet Mistrza Harfiarzy~ // BG2 #73907
+@505 = ~Figurka~ // BG2 #38100
+@506 = ~Róg~ // BG2 #38531
+// BG2 #39659
+@507 = ~To jest ma³y róg. Rogi przewa¿nie wyrabia siê z koœci albo metalu. Mog¹ one wydawaæ z siebie wiele rodzajów dŸwiêku.
+
+PARAMETRY:
+
+Waga: 1~ 
+// BG2 #66396
+@508 = ~Ko³czan, zazwyczaj wyprodukowany ze skóry, mo¿e pomieœciæ od 20 do 40 strza³ lub be³tów od kuszy.
+
+PARAMETRY:
+
+Waga: 0~
+// BG2 #6862
+@509 = ~D³ugi ³uk jest podobny do krótkiego, choæ o wiele od niego d³u¿szy. Mierzy, w zale¿noœci od wzrostu ³ucznika, od 1,8 do znacznie powy¿ej 2 metrów. Broñ ta ma wiêkszy zasiêg, dlatego pozwala na oddawanie znacznie celniejszych strza³ów.
+
+PARAMETRY:
+
+TraK0: +1
+Waga: 3
+OpóŸnienie: 7
+Rodzaj bieg³oœci: d³ugi ³uk
+Typ broni: 2-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+// BG2 #39653
+@510 = ~To ma³a figurka przedstawiaj¹ca jakieœ zwierzê.
+
+PARAMETRY:
+
+Waga: 0~
+// BG2 #6696
+@511 = ~Najpowszechniej u¿ywany rodzaj topora bojowego sk³ada siê ze styliska o d³ugoœci metra do pó³tora z osadzonym szerokim, pó³okr¹g³ym ostrzem, czêsto zaopatrzonym równie¿ w szpice, skierowane do ty³u i ku górze. Topór bojowy nazywany jest równie¿ toporem szerokim. Magiczne topory bojowe zwykle by³y dzie³em krasnoludów, których zamiarem by³o wyposa¿enie swoich wojowników do walki z bardziej hardymi od nich s¹siadami. Ten magiczny topór by³ œwiadkiem wielu bitew, ale dziêki swoim magicznym w³aœciwoœciom oraz kunsztowi z jakim zosta³ wykonany stanowi nadal potê¿n¹ broñ.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +2
+TraK0: +2
+Typ obra¿eñ: sieczne
+Waga: 5
+OpóŸnienie: 5
+Rodzaj bieg³oœci: topór
+Typ broni: 1-rêczna
+Wymagana si³a: 10
+Nie mo¿e u¿ywaæ:
+ Druid
+ Kap³an
+ Mag
+ Z³odziej~
+@512 = ~Ten ma³y pos¹¿ek jest pokryty wygrawerowanymi runami.
+
+PARAMETRY:
+
+Waga: 0~
+// BG2 #6652
+@513 = ~Zbroja skórzana, wbrew obiegowym opiniom, nie jest miêkka i elastyczna, jak skóra s³u¿¹ca do wyrobu butów ³owcy czy szaty druida. Taki rodzaj materii nie daje lepszej ochrony przed atakami ni¿ zwyk³e ubranie.
+
+PARAMETRY:
+
+Klasa Pancerza: 8
+Waga: 15
+Wymagana si³a: 4
+Nie mo¿e u¿ywaæ:
+ Mag~
+// BG2 #6716
+@514 = ~Konni rycerze nie mog¹ efektywnie u¿ywaæ d³ugich broni drzewcowych, co sprawi³o, ¿e wiele rodzajów broni zosta³o zaopatrzonych w krótsze drzewce, aby mog³y byæ u¿ywane jednorêcznie. Wekiery i cepy bojowe s¹ dwoma tego typu rodzajami broni drzewcowych - m³ot bojowy kolejnym. Ca³y jest wykonany ze stali, z dyskami, chroni¹cymi i wzmacniaj¹cymi uchwyt. Dyski te s¹ ma³e i metalowe, czêsto uk³adane w dekoracyjne kszta³ty. Drzewiec ma oko³o 60 cm d³ugoœci.
+
+PARAMETRY:
+
+Obra¿enia: 1K4 +1
+Typ obra¿eñ: obuchowe
+Waga: 6
+OpóŸnienie: 4
+Rodzaj bieg³oœci: m³ot bojowy
+Typ broni: 1-rêczna
+Wymagana si³a: 9
+Nie mo¿e u¿ywaæ:
+ Druid
+ Mag
+ Z³odziej~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries moved here from autotra dialog files for ADD_JOURNAL:

@@ -766,7 +766,7 @@ PARAMETRY:
 
 Specjalne:
 – Przywraca 5 punktów życia
-– Leczy choroby i neuatralizuje trucizny
+– Leczy choroby i neutralizuje trucizny
 – Nieznane skutki uboczne
 
 Waga: 2~
@@ -1233,7 +1233,7 @@ Wymagania:
 – Siła: 15
 
 Waga: 70~
-@293  = ~Zbroja płytowa z czarnego opalu +1: „Zbroja mroku”
+@293  = ~Pełna zbroja płytowa z czarnego opalu +1: „Zbroja mroku”
 
 Upiorny watażka Bhaala przywdziewał tę zbroję, gdy służył swojemu mistrzowi – Panu Mordu. Dowódca osłabł podczas Czasu Niepokojów i stracił życie w starciu z Helmem.
 
@@ -1545,6 +1545,94 @@ Wymagania:
 
 Waga: 10~
 @503  = ~Tarcza~
+
+//------------------------------------------------------------------------------------------------
+// New for v4 
+//------------------------------------------------------------------------------------------------
+
+@504 = ~Amulet Mistrza Harfiarzy~ // BG2 #73907
+@505 = ~Figurka~ // BG2 #38100
+@506 = ~Róg~ // BG2 #38531
+// BG2 #39659
+@507 = ~To jest mały róg. Rogi przeważnie wyrabia się z kości albo metalu. Mogą one wydawać z siebie wiele rodzajów dźwięku.
+
+PARAMETRY:
+
+Waga: 1~ 
+// BG2 #66396
+@508 = ~Kołczan, zazwyczaj wyprodukowany ze skóry, może pomieścić od 20 do 40 strzał lub bełtów od kuszy.
+
+PARAMETRY:
+
+Waga: 0~
+
+// BG2 #6862
+@509 = ~Długi łuk jest podobny do krótkiego, z wyjątkiem tego, że długość łęczyska wynosi prawie tyle, ile wzrost łucznika, zwykle jest to od metra osiemdziesięciu do dwóch metrów wysokości. Ma lepszy zasięg i celność niż łuk krótki, ale mniejszą szybkostrzelność.
+
+PARAMETRY:
+
+TraK0: +1
+Opóźnienie: 7
+Rodzaj biegłości: długi łuk
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 3~
+// BG2 #39653
+@510 = ~To mała figurka przedstawiająca jakieś zwierzę.
+
+PARAMETRY:
+
+Waga: 0~
+// BG2 #6696
+@511 = ~Najpowszechniejsza wersja topora bojowego składa się z solidnego trzonka o ponad metrowej długości, na którego końcu osadzono jednosieczne ostrze o zakrzywionym kształcie. Topory bojowe są również nazywane toporami szerokimi. Magiczne topory bojowe są zwykle dziełem krasnoludów, mającym pomóc krasnoludzkim wojownikom w obronie przed co bardziej hardymi sąsiadami. Ten topór był świadkiem wielu bitew, ale dzięki swym magicznym właściwościom oraz kunsztowi wykonania, nadal stanowi potężny oręż.
+
+PARAMETRY:
+
+Obrażenia: 1k8 +2
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 5
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 5~
+@512 = ~Ten mały posążek jest pokryty wygrawerowanymi runami.
+
+PARAMETRY:
+
+Waga: 0~
+// BG2 #6652
+@513 = ~Jest to podstawowa zbroja wykonana z grubej skóry, utwardzanej woskiem lub hartowanej wodą. Stanowi całkiem solidną osłonę przed ciosami, choć nie jest tak elastyczna, jak buty czy płaszcz. Miękka skórzana odzież, jak ta, nie zapewnia jednak wcale lepszej ochrony niż zwykłe ubranie.
+
+PARAMETRY:
+
+Klasa Pancerza: 8 (10 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 4
+
+Waga: 15~
+// BG2 #6716
+@514 = ~Konni rycerze nie są w stanie skutecznie używać długich broni drzewcowych, siedząc na końskim grzbiecie, w związku z czym wiele broni zostało zaopatrzonych w krótsze styliska, aby można się było nimi posługiwać jednorącz. Doskonałym tego przykładem są wekiery i cepy bojowe, kolejnym zaś, młot bojowy. Jeździecki młot bojowy wywodzi się od młota używanego przez lansjerów. Jest on wykonany w całości ze stali, z rondelkami chroniącymi i wzmacniającymi uchwyt. Rondelki te są małymi dyskami z metalu, o najczęściej dekoracyjnych kształtach. Stylisko młota bojowego ma około pół metra długości.
+
+PARAMETRY:
+
+Obrażenia: 1k4 +1
+Typ obrażeń: obuchowe
+Opóźnienie: 4
+Rodzaj biegłości: młot bojowy
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 9
+
+Waga: 6~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries moved here from autotra dialog files for ADD_JOURNAL:
