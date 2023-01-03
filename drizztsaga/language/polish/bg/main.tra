@@ -348,8 +348,8 @@ Specjalne:
  Osoba nosz¹ca medalion jest odporna na ciszê
 Waga: 3
 Mo¿e u¿ywaæ:
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @144  = ~Amulet ochrony przed wampirami~
 @145  = ~Ten amulet zosta³ zaklêty przez maga, gdy ten podró¿owa³ szukaj¹c artefaktu, o którym chodzi³y s³uchy, ¿e znajduje siê na Górze Œmierci w Dolinie Lodowego Wichru.
 
@@ -363,9 +363,9 @@ Specjalne:
 Waga: 1
 Nie mo¿e u¿ywaæ:
  Wojownik
- Z³odziej
+ £owca
  Paladyn
- £owca~
+ Z³odziej~
 @146  = ~Figurka paj¹ka~
 @147  = ~Ta ma³a figurka paj¹ka mieni siê czerwonym blaskiem.
 
@@ -393,8 +393,8 @@ Rodzaj bieg³oœci: krótki miecz
 Typ broni: 1-rêczna
 Wymagana si³a: 5
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag~
 @152  = ~To jest osobisty miecz Artemisa Entreri.
 
@@ -411,8 +411,8 @@ Rodzaj bieg³oœci: krótki miecz
 Typ broni: 1-rêczna
 Wymagana si³a: 5
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag~
 @153  = ~Dziecko przywódcy plemienia NiedŸwiedzia~
 @154  = ~To jest dziecko przywódcy plemienia NiedŸwiedzia. Wci¹¿ ¿ywe, nawet po tym co przesz³o.
@@ -445,7 +445,8 @@ Specjalne:
  +1 do Si³y
 Waga: 0
 Mo¿e u¿ywaæ:
- Kap³an o charakterze dobrym~
+ Kap³an
+ Postaæ o charakterze dobrym~
 @161  = ~Œwiêty symbol Helma~
 @162  = ~Te niezwykle potê¿ne œwiête symbole mog¹ otrzymaæ tylko najbardziej oddani s³udzy Stra¿nika.
 
@@ -457,7 +458,8 @@ Specjalne:
  +1 do Si³y
 Waga: 0
 Mo¿e u¿ywaæ:
- Kap³an o charakterze neutralnym~
+ Kap³an
+ Postaæ o charakterze neutralnym~
 @163  = ~Œwiêty symbol Talosa~
 @164  = ~Te niezwykle potê¿ne œwiête symbole mog¹ otrzymaæ tylko najbardziej oddani s³udzy Pana Burz.
 
@@ -469,7 +471,8 @@ Specjalne:
  +1 do Si³y
 Waga: 0
 Mo¿e u¿ywaæ:
- Kap³an o charakterze z³ym~
+ Kap³an
+ Postaæ o charakterze z³ym~
 @165  = ~Wekiera~
 @166  = ~Gwiazda burzy +3~
 @167  = ~Wekiera jest w prostej linii spadkobierczyni¹ zwyk³ej maczugi. Jest to po prostu drewniany trzonek, na którym zosta³a osadzona kamienna lub metalowa g³owica, uzbrojona w kolce, æwieki lub inne ostre zakoñczenia.
@@ -589,11 +592,11 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 10
 Nie mo¿e u¿ywaæ:
- Postaæ o charakterze z³ym
- Druid
  Kap³an
+ Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Postaæ o charakterze z³ym~
 @182  = ~He³m~
 @183  = ~He³m Bruenora Battlehammera~
 @184  = ~Ten he³m jest nieco powgniatany i porysowany, nawet jeden róg jest czêœciowo u³amany. Wci¹¿ jednak zapewnia on Bruenorowi doskona³¹ ochronê.
@@ -608,8 +611,8 @@ Specjalne:
 Waga: 1
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @185  = ~Pe³na zbroja p³ytowa~
 @186  = ~Mithrilowa pe³na zbroja p³ytowa +2~
 @187  = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
@@ -620,10 +623,10 @@ Klasa Pancerza: 1
 Waga: 70
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @188  = ~Mithrilowa pe³na zbroja p³ytowa +2
 
 To jest osobista zbroja Bruenora Battlehammera i trudno znaleŸæ lepszy pancerz. To prawdziwy cud rzemios³a p³atnerskiego.
@@ -634,10 +637,10 @@ Klasa Pancerza: -1
 Waga: 45
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @189  = ~Ciê¿ka kusza~
 @190  = ~Ciê¿ka kusza +1~
 @191  = ~Kusza jest ³ukiem zatkniêtym poprzecznie na drewnianym lub metalowym drzewcu. Zazwyczaj jest wykonana z jesionu albo cisu. Strzela pociskami, które zwane s¹ be³tami.
@@ -651,8 +654,8 @@ Rodzaj bieg³oœci: kusza
 Typ broni: 2-rêczna
 Wymagana si³a: 12
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @192  = ~Kusza jest ³ukiem zatkniêtym poprzecznie na drewnianym lub metalowym drzewcu. Zazwyczaj jest wykonana z jesionu albo cisu. Strzela pociskami, które zwane s¹ be³tami. Ten egzemplarz jest ulepszony za pomoc¹ podstawowej magii.
@@ -667,8 +670,8 @@ Rodzaj bieg³oœci: kusza
 Typ broni: 2-rêczna
 Wymagana si³a: 12
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @193  = ~Ko³czan~
@@ -702,8 +705,8 @@ Rodzaj bieg³oœci: d³ugi ³uk
 Typ broni: 2-rêczna
 Wymagana si³a: 6
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag~
 @199  = ~D³ugi miecz~
 @200  = ~Khazid-Zhea +3~
@@ -720,8 +723,8 @@ Rodzaj bieg³oœci: d³ugi miecz
 Typ broni: 1-rêczna
 Wymagana si³a: 6
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag~
 @202  = ~P³aszcz ze skóry œnie¿nego wilka~
 @203  = ~Ta bia³a skóra ze œnie¿nego wilka jest miêkka i luksusowa. Zosta³a umagiczniona przez krasnoludzkiego kowala Srebrnego M³ota. Mo¿na j¹ nosiæ jak p³aszcz.
@@ -860,9 +863,9 @@ Specjalne:
 Waga: 25
 Wymagana si³a: 8
 Nie mo¿e u¿ywaæ:
- Bard
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @227  = ~Sejmitary Drizzta~
 @228  = ~Sejmitary te, to osobiste bronie Drizzta: B³ysk i ¯agiew mrozu.~
 @229  = ~Kamieñ stra¿niczy~
@@ -988,8 +991,8 @@ Specjalne:
 Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @258  = ~Toporek~
 @259  = ~Lodo³amacz +2~
 @260  = ~Toporek to lekka odmiana topora bojowego, s³u¿¹ca g³ównie do ciskania w przeciwnika z pewnej odleg³oœci. Ciê¿ar ostrza jest równowa¿ony do pewnego stopnia przez ostry szpic, skierowany do ty³u. Krótkie stylisko jest zwykle ostro zakoñczone zarówno u do³u, jak i u góry.
@@ -1005,8 +1008,8 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 4
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @261  = ~Toporek +2: 'Lodo³amacz'
@@ -1027,8 +1030,8 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 4
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @262  = ~Lodo³amacz +5~
@@ -1053,8 +1056,8 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 4
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @264  = ~Odrêcznie napisany list~
@@ -1076,8 +1079,8 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 10
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @268  = ~Jest to osobisty topór Jarlaxle'a, zwany "bojowym toporem rozpraszaj¹cego ognia". Topór ten zosta³ wykuty i umagiczniony przez drowy. Plotki mówi¹, ¿e sama Lolth uczestniczy³a w odkuwaniu tego¿ niszczycielskiego orê¿a.
@@ -1095,8 +1098,8 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 10
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @269  = ~Zbroja p³ytowa~
@@ -1109,10 +1112,10 @@ Klasa Pancerza: 3
 Waga: 50
 Wymagana si³a: 12
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @272  = ~Osobista zbroja p³ytowa Jarlaxle'a zosta³a wykuta przez drowy i umagiczniona przez sam¹ Lolth. Zapewnia ochronê niema³ego sortu.
 
 PARAMETRY:
@@ -1123,10 +1126,10 @@ Specjalne:
 Waga: 18
 Wymagana si³a: 11
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @273  = ~Buty przemieszczania~
 @274  = ~Buty s¹ zwykle rêcznie wyrabiane przez szewców. Zwyk³e buty s¹ robione z u¿yciem jakiegoœ ogólnego modelu stopy, ale te dobre wykonywane s¹ na zamówienie i dopasowywane do stóp zamawiaj¹cego.
 
@@ -1196,8 +1199,8 @@ Rodzaj bieg³oœci: d³ugi miecz
 Typ broni: 1-rêczna
 Wymagana si³a: 6
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag~
 @283  = ~Demoniczna broñ wykorzystywana przez marilitha. Demon pos³uguje siê szeœcioma takimi mieczami.
 
@@ -1214,8 +1217,8 @@ Rodzaj bieg³oœci: d³ugi miecz
 Typ broni: 1-rêczna
 Wymagana si³a: 6
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag~
 @284  = ~Atak~
 @285  = ~Kolczuga~
@@ -1259,7 +1262,8 @@ Rodzaj bieg³oœci: d³ugi miecz
 Typ broni: 1-rêczna
 Wymagana si³a: 6
 Mo¿e u¿ywaæ tylko:
- Elf o charakterze dobrym lub neutralnym~
+ Elf
+ Postaæ o charakterze dobrym lub neutralnym~
 @291  = ~Zbroja mroku +1~
 @292  = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
 
@@ -1269,10 +1273,10 @@ Klasa Pancerza: 1
 Waga: 70
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @293  = ~Pe³na zbroja p³ytowa z czarnego opalu +1: 'Zbroja mroku'
 
 Upiorny wata¿ka Bhaala przywdziewa³ tê zbrojê, gdy s³u¿y³ swojemu mistrzowi - Panu Mordu. Dowódca os³ab³ podczas Czasu Niepokojów i straci³ ¿ycie w starciu z Helmem.
@@ -1287,10 +1291,10 @@ Specjalne:
 Waga: 35
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Bard~
 @294  = ~Figurka czarnej pantery~
 @295  = ~To jest figurka czarnej pantery Drizzta, któr¹ przyzywa ze Sfer Zewnêtrznych. Nazywa siê Guenhwyvar, a jej lojalnoœæ wobec Drizzta jest niepodwa¿alna.
 
@@ -1310,8 +1314,8 @@ Specjalne:
 Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @298  = ~Ten he³m niegdyœ nale¿a³ do szlachetnego wojownika, s³yn¹cego z zabicia meduzy.
 
 PARAMETRY:
@@ -1323,8 +1327,8 @@ Specjalne:
 Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @299  = ~Mikstura dodatkowego leczenia~
 @300  = ~Mikstury s¹ zazwyczaj przechowywane w ceramicznych, kryszta³owych, szklanych albo metalowych buteleczkach. Zawieraj¹ one wystarczaj¹co du¿o p³ynu, aby obj¹æ swym dzia³aniem jedn¹ osobê.
 
@@ -1420,8 +1424,8 @@ Rodzaj bieg³oœci: miecz oburêczny
 Typ broni: 2-rêczna
 Wymagana si³a: 14
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @318  = ~Miecz oburêczny +4: 'Ostrze wojny'
@@ -1439,8 +1443,8 @@ Rodzaj bieg³oœci: miecz oburêczny
 Typ broni: 2-rêczna
 Wymagana si³a: 14
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @319  = ~Miecz ¿alu Belhifeta +5~
@@ -1459,8 +1463,8 @@ Rodzaj bieg³oœci: miecz oburêczny
 Typ broni: 2-rêczna
 Wymagana si³a: 14
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @321  = ~Kaptur z³odziei~
@@ -1538,11 +1542,11 @@ Rodzaj bieg³oœci: m³ot bojowy
 Typ broni: 1-rêczna
 Wymagana si³a: 18
 Nie mo¿e u¿ywaæ:
- Postaæ o niechaotycznym charakterze
- Druid
  Kap³an
+ Druid
  Mag
- Z³odziej~
+ Z³odziej
+ Postaæ o niechaotycznym charakterze~
 @338  = ~Ten rodzaj otwartego he³mu, wykonywany z metalu lub wzmocnionej skóry, stanowi ochronê dla g³owy, jednak zwykle bez os³aniania twarzy i karku. Zazwyczaj jest równie¿ wyposa¿ony w ochronê nosa.
 
 PARAMETRY:
@@ -1553,8 +1557,8 @@ Specjalne:
 Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @339  = ~W³os olbrzyma +3~
 @340  = ~Ciê¿ka kusza +3: 'W³os olbrzyma'
 
@@ -1570,8 +1574,8 @@ Rodzaj bieg³oœci: kusza
 Typ broni: 2-rêczna
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @501  = ~Miecz oburêczny +2~
@@ -1588,8 +1592,8 @@ Rodzaj bieg³oœci: miecz oburêczny
 Typ broni: 2-rêczna
 Wymagana si³a: 13
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @503  = ~Tarcza~
@@ -1625,8 +1629,8 @@ Rodzaj bieg³oœci: d³ugi ³uk
 Typ broni: 2-rêczna
 Wymagana si³a: 6
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 // BG2 #39653
@@ -1649,8 +1653,8 @@ Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
 Wymagana si³a: 10
 Nie mo¿e u¿ywaæ:
- Druid
  Kap³an
+ Druid
  Mag
  Z³odziej~
 @512 = ~Ten ma³y pos¹¿ek jest pokryty wygrawerowanymi runami.
