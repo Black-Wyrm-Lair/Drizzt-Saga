@@ -7,41 +7,65 @@ DEFINE_ACTION_MACRO ~DS_CORE_COMPONENT~ BEGIN
 
 PRINT @358
 
+// ** Compatibility block **
+ACTION_IF (GAME_IS ~BGT Tutu_TotSC~) BEGIN
+  OUTER_SET ANIM_FG = 0xE710
+  OUTER_SET ANIM_BE = 0xE0D0
+  OUTER_SET ANIM_HA = 0xE0A0
+END ELSE BEGIN
+  OUTER_SET ANIM_FG = 0xE24F
+  OUTER_SET ANIM_BE = 0xE256
+  OUTER_SET ANIM_HA = 0xE252
+END
+
 OUTER_SET DECODE_SOUNDS = 0
-
 ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
-	OUTER_SET DECODE_SOUNDS = 1
-	COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~         //FROST GIANT
-	ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
-		COPY_EXISTING ~ORC06.cre~      ~override~
-	              ~HLOLAF.cre~         ~override~
-	              ~CHAK.cre~           ~override~
-	              ~AR18FIG.cre~        ~override~
-			WRITE_LONG 0x28  0xE700   //IC_OROG1 instead of IC_OROG2
-		BUT_ONLY
-	END
-	
-	COPY ~DRIZZTSAGA/Anim/MCYC~ ~override~         //Cyclop
-	
-	COPY ~DRIZZTSAGA/Anim/MTAN~ ~override~         //Merilith
+  OUTER_SET DECODE_SOUNDS = 1
+
+  ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
+    COPY_EXISTING ~ORC06.cre~      ~override~
+              ~HLOLAF.cre~         ~override~
+              ~CHAK.cre~           ~override~
+              ~AR18FIG.cre~        ~override~
+        WRITE_LONG 0x28  0xE700   //IC_OROG1 instead of IC_OROG2
+    BUT_ONLY
+  END
+
+  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)) < 0)) BEGIN
+    COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~         //FROST GIANT
+  END ELSE 
+    OUTER_SET ANIME_FG = IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)
+
+  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~Cyclops~)) < 0)) BEGIN
+    COPY ~DRIZZTSAGA/Anim/MCYC~ ~override~         //Cyclop
+  END
+
+  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~Marilith~)) < 0)) BEGIN
+    COPY ~DRIZZTSAGA/Anim/MTAN~ ~override~         //Merilith
+  END
 END
 
-ACTION_IF NOT (FILE_EXISTS ~data/TS-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
-	COPY ~DRIZZTSAGA/Anim/MUMB~ ~override~         //Belhifet
+ACTION_IF NOT (FILE_EXISTS ~data/CTB-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~Harpy~)) < 0)) BEGIN
+    COPY ~DRIZZTSAGA/Anim/MTIC~ ~override~           //Harpy
+  END ELSE 
+    OUTER_SET ANIME_HA = IDS_OF_SYMBOL (~animate~ ~Harpy~)
 END
 
-//ACTION_IF NOT (FILE_EXISTS ~data/CTB-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
-COPY ~DRIZZTSAGA/Anim/MTIC~ ~override~				//Harpy
-//END
+ACTION_IF NOT (FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~Belhifet~)) < 0)) BEGIN
+    COPY ~DRIZZTSAGA/Anim/MUMB~ ~override~         //Belhifet
+  END ELSE
+    OUTER_SET ANIME_BE = IDS_OF_SYMBOL (~animate~ ~Belhifet~)
+END
 
 ACTION_IF GAME_IS ~BGEE~ BEGIN
-	COPY ~DRIZZTSAGA/Anim/MCOR~ ~override~		// BGEE is missing Cornugon animations...
-	
-	APPEND ~ANIMATE.IDS~ ~0xE0E0 IC_CORNUGONSKI~
-	UNLESS ~0xE0E0 IC_CORNUGONSKI~
+  COPY ~DRIZZTSAGA/Anim/MCOR~ ~override~		// BGEE is missing Cornugon animations...
+  APPEND ~ANIMATE.IDS~ ~0xE0E0 IC_CORNUGONSKI~
+    UNLESS ~0xE0E0 IC_CORNUGONSKI~
 END ELSE BEGIN									// ... while BGT and Tutu need a fix for Drizzt's animation crashes
-	COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
-	COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
+  COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
+  COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
 END
 
 // Areas:
@@ -227,215 +251,11 @@ COPY ~DRIZZTSAGA/ARE/F_6666.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
 	WRITE_LONG 0x11c %SONGID_DUNG2%			// day song id
 	WRITE_LONG 0x120 %SONGID_DUNG2%			// night song id
 	WRITE_LONG 0x128 %SONGID_BD1%			// battle song id	
-	// Embedded CREs:
-	// Actor 1
-	SAY 0x922 @43
-	SAY 0x926 @43
-	SAY 0x9be @371
-	SAY 0x9e2 @372
-	SAY 0xa06 @373
-	SAY 0xa0a @374
-	SAY 0xa26 @375
-	SAY 0xad2 @375
-	WRITE_ASCIIE 0xb6a ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIT 0xb9a ~F_DEATHK~
-	WRITE_ASCIIE 0xd72 ~%_%HELM08~ #8
-	WRITE_ASCIIE 0xd86 ~%_%PLAT04~ #8
-	WRITE_ASCII 0xd9a ~F_SW2H08~ #8
-	// Actor 2
-	SAY 0xdb6 @46
-	SAY 0xdba @46
-	SAY 0xe76 @419
-	SAY 0xe7a @420
-	SAY 0xe7e @421
-	SAY 0xe82 @422
-	SAY 0xe9a @420
-	SAY 0xe9e @423
-	SAY 0xeba @419
-	SAY 0xebe @420
-	SAY 0xec2 @421
-	SAY 0xec6 @422
-	WRITE_ASCIIE 0x1016 ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIE 0x11e2 ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x11f6 ~%_%PLAT04~ #8
-	WRITE_ASCIIE 0x120a ~%_%RING95~ #8
-	WRITE_ASCIIE 0x121e ~%_%SW1H11~ #8
-	// Actor 3
-	SAY 0x123a @46
-	SAY 0x123e @46
-	SAY 0x12fa @419
-	SAY 0x12fe @420
-	SAY 0x1302 @421
-	SAY 0x1306 @422
-	SAY 0x131e @420
-	SAY 0x1322 @423
-	SAY 0x133e @419
-	SAY 0x1342 @420
-	SAY 0x1346 @421
-	SAY 0x134a @422
-	WRITE_ASCIIE 0x149a ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIE 0x1666 ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x167a ~%_%PLAT04~ #8
-	WRITE_ASCIIE 0x168e ~%_%RING95~ #8
-	WRITE_ASCIIE 0x16a2 ~%_%SW1H11~ #8
-	// Actor 4
-	SAY 0x16be @42
-	SAY 0x16c2 @42
-	SAY 0x175a @371
-	SAY 0x177e @372
-	SAY 0x17a2 @373
-	SAY 0x17a6 @374
-	SAY 0x17c2 @375
-	SAY 0x186e @375
-	WRITE_LONG 0x16de 0x2300	// DEATH_KNIGHT
-	WRITE_ASCIIE 0x1906 ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIE 0x1b0e ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x1b22 ~%_%PLAT05~ #8
-	WRITE_ASCIIE 0x1b4a ~%_%%BG%SW2H07~ #8
-	// Actor 5
-	SAY 0x1b66 @44
-	SAY 0x1b6a @44
-	SAY 0x1c02 @400
-	SAY 0x1c06 @401
-	SAY 0x1c26 @402
-	SAY 0x1c3a @403
-	SAY 0x1c3e @404
-	SAY 0x1c4a @405
-	SAY 0x1c4e @406
-	SAY 0x1c6a @407
-	SAY 0x1c6e @408
-	SAY 0x1c72 @409
-	WRITE_ASCIIE 0x1da6 ~F_TANARI~ #8
-	WRITE_ASCIIE 0x1dbe ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_BYTE 0x1dd3 9		// gender -> SUMMONED_DEMON
-	WRITE_SHORT 0x1f8e 1	// weapon slot selected
-	// Actor 6
-	SAY 0x2006 @43
-	SAY 0x200a @43	
-	SAY 0x20a2 @371	
-	SAY 0x20c6 @372	
-	SAY 0x20ea @373
-	SAY 0x20ee @374	
-	SAY 0x210a @375	
-	SAY 0x21b6 @375	
-	WRITE_ASCIIE 0x224e ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIT 0x227e ~F_DEATHK~
-	WRITE_ASCIIE 0x2456 ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x246a ~%_%PLAT04~ #8
-	WRITE_ASCII 0x247e ~F_SW2H08~ #8
-	// Actor 7
-	SAY 0x249a @43
-	SAY 0x249e @43	
-	SAY 0x2536 @371
-	SAY 0x255a @372	
-	SAY 0x257e @373	
-	SAY 0x2582 @374		
-	SAY 0x259e @375		
-	SAY 0x264a @375		
-	WRITE_ASCIIE 0x26e2 ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIT 0x2712 ~F_DEATHK~
-	WRITE_ASCIIE 0x28ea ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x28fe ~%_%PLAT04~ #8
-	WRITE_ASCIIE 0x2912 ~F_SW2H08~ #8
-	// Actor 8
-	SAY 0x292e @16
-	SAY 0x2932 @16
-    SAY 0x29ca ~~ [F_BEL01]
-    SAY 0x29ee ~~ [F_BEL01]
-    SAY 0x2a02 ~~ [F_BEL03]
-    SAY 0x2a06 ~~ [F_BEL04]
-    SAY 0x2a12 ~~ [F_BEL08]
-    SAY 0x2a16 ~~ [F_BEL09]
-    WRITE_LONG 0x294e 0xE0D0		// IC_UMBERHULK
-    WRITE_ASCIIE 0x2b86 ~%tutu_scriptw%TASIGHT~ #8
-    WRITE_LONG 0x293a 20000			// XP value (45k seems like overkill...)
-    // Actor 9
-    SAY 0x2dce @43
-    SAY 0x2dd2 @43
-	SAY 0x2e6a @371	
-	SAY 0x2e8e @372	
-	SAY 0x2eb2 @373
-	SAY 0x2eb6 @374	
-	SAY 0x2ed2 @375	
-	SAY 0x2f7e @375	
-	WRITE_ASCIIE 0x3016 ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIT 0x3046 ~F_DEATHK~
-	WRITE_ASCIIE 0x321e ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x3232 ~%_%PLAT04~ #8
-	WRITE_ASCII 0x3246 ~F_SW2H08~ #8
-	// Actor 10
-    SAY 0x3262 @43
-    SAY 0x3266 @43    
-	SAY 0x32fe @371	
-	SAY 0x3322 @372	
-	SAY 0x3346 @373
-	SAY 0x334a @374	
-	SAY 0x3366 @375	
-	SAY 0x3412 @375	
-	WRITE_ASCIIE 0x34aa ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIT 0x34da ~F_DEATHK~
-	WRITE_ASCIIE 0x36b2 ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x36c6 ~%_%PLAT04~ #8
-	WRITE_ASCII 0x36da ~F_SW2H08~ #8
-	// Actor 11
-	SAY 0x36f6 @42
-	SAY 0x36fa @42	
-	SAY 0x3792 @371
-	SAY 0x37b6 @372
-	SAY 0x37da @373
-	SAY 0x37de @374
-	SAY 0x37fa @375
-	SAY 0x38a6 @375
-	WRITE_LONG 0x3716 0x2300	// DEATH_KNIGHT
-	WRITE_ASCIIE 0x393e ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIE 0x3b46 ~%_%HELM08~ #8
-	WRITE_ASCIIE 0x3b5a ~%_%PLAT05~ #8
-	WRITE_ASCIIE 0x3b82 ~%_%%BG%SW2H07~ #8
-	// Actor 12
-	SAY 0x3b9e @99
-	SAY 0x3ba2 @99
-    SAY 0x3c3a @446
-    SAY 0x3c3e @447
-    SAY 0x3c5e @448
-    SAY 0x3c62 @449
-    SAY 0x3c66 @446
-    SAY 0x3c82 @450
-    SAY 0x3c86 @451
-    SAY 0x3ca2 @449
-    SAY 0x3d4e @448
-	WRITE_ASCIIE 0x3de6 ~%tutu_scriptw%TASIGHT~ #8
-	// Actor 13
-	SAY 0x405a @99
-	SAY 0x405e @99	
-    SAY 0x40f6 @446
-    SAY 0x40fa @447    
-    SAY 0x411a @448
-    SAY 0x411e @449    
-    SAY 0x4122 @446    
-    SAY 0x413e @450    
-    SAY 0x4142 @451    
-    SAY 0x415e @449    
-    SAY 0x420a @448
-	WRITE_ASCIIE 0x42a2 ~%tutu_scriptw%TASIGHT~ #8
-	// Actor 14
-    SAY 0x4516 @43
-    SAY 0x451a @43    
-	SAY 0x45b2 @371	
-	SAY 0x45d6 @372		
-	SAY 0x45fa @373
-	SAY 0x45fe @374	
-	SAY 0x461a @375	
-	SAY 0x46c6 @375	
-	WRITE_ASCIIE 0x475e ~%tutu_scriptw%TASIGHT~ #8
-	WRITE_ASCIIT 0x478e ~F_DEATHK~
 	// Containers:
-	WRITE_ASCIIE 0x5ae6 ~%_%PLAT04~ #8
-	WRITE_ASCIIE 0x5afa ~%_%HELM08~ #8
-	WRITE_ASCII  0x5b0e ~F_SW2H08~  #8
-	WRITE_ASCIIE 0x5b22 ~%_%POTN08~ #8
-	WRITE_ASCIIE 0x5b5e ~%_%POTN08~ #8
-	WRITE_ASCIIE 0x5b9a ~%_%POTN08~ #8
-	WRITE_ASCIIE 0x5bc2 ~%_%POTN12~ #8
+	WRITE_ASCIIE 0x1A9A ~%_%POTN08~ #8 // Stone Jaws
+	WRITE_ASCIIE 0x1AD6 ~%_%POTN08~ #8 // Stone Jaw
+	WRITE_ASCIIE 0x1B12 ~%_%POTN08~ #8 // Eye
+	WRITE_ASCIIE 0x1B3A ~%_%POTN12~ #8 // Eye
 
 COPY ~DRIZZTSAGA/ARE/F_6667.ARE~ ~DRIZZTSAGA/ARE-DATA~ //~override~
 	WRITE_ASCIIE 0x2cfc ~%_%POTN14~ #8
@@ -1476,7 +1296,7 @@ COPY ~DRIZZTSAGA/CRE/F_GIANTF.cre~ ~override~
   SAY BATTLE_CRY1 ~~ [F_GIANT1] // ABAZIGAL03
   SAY DAMAGE ~~ [F_GIANT4] // YAGA04
   SAY DYING ~~ [F_GIANT5] // YAGA04
-  WRITE_LONG 0x28 0xE710		// IC_OROG2
+  WRITE_LONG 0x28 ~%ANIM_FG%~
   WRITE_ASCIIE 0x258 ~%tutu_scriptw%TASIGHT~ #8
   WRITE_ASCIIE 0x40c ~%_%POTN11~ #8
 	
@@ -1519,7 +1339,7 @@ COPY ~DRIZZTSAGA/CRE/F_BEL.CRE~ ~override~
   SAY ATTACK2 ~~ [F_BEL04]
   SAY DAMAGE ~~ [F_BEL08]
   SAY DYING ~~ [F_BEL09]
-  WRITE_LONG 0x28 0xE0D0		// IC_UMBERHULK
+  WRITE_LONG 0x28 ~%ANIM_BE%~
   WRITE_ASCIIE 0x260 ~%tutu_scriptw%TASIGHT~ #8
 
 COPY ~DRIZZTSAGA/CRE/F_CYCLOP.cre~ ~override~
@@ -1578,7 +1398,7 @@ COPY ~DRIZZTSAGA/CRE/F_HARPY.CRE~ ~override~
   SAY DAMAGE ~~ [F_HARPY8]
   SAY DYING ~~ [F_HARPY9]
   SAY SELECT_COMMON1 ~~ [F_HARPY1]
-  WRITE_LONG 0x28 0xE0A0   //IC_ICE_TROLL
+  WRITE_LONG 0x28 ~%ANIM_HA%~
   WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
   WRITE_ASCIIE 0x444 ~%_%IMMUNE1~ #8
   WRITE_ASCIIE 0x46c ~%BG1RNDTRE_RICH%~
