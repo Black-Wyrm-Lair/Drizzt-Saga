@@ -24,16 +24,16 @@ ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF
   OUTER_SET DECODE_SOUNDS = 1
 
   ACTION_IF ((IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)) > 0) BEGIN
-     OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)
+    OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)
   END ELSE ACTION_IF ((IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~)) > 0) BEGIN
-     OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~)
+    OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~)
   END ELSE BEGIN
     COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~      //FROST GIANT
     COPY_EXISTING ~ORC06.cre~      ~override~
               ~HLOLAF.cre~         ~override~
               ~CHAK.cre~           ~override~
               ~AR18FIG.cre~        ~override~
-      WRITE_LONG 0x28  0xE700   				//IC_OROG1 instead of IC_OROG2
+      WRITE_LONG 0x28  0xE700   //IC_OROG1 instead of IC_OROG2
     BUT_ONLY
   END
 
@@ -44,7 +44,9 @@ ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF
   ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~MARILITH~)) < 0)) BEGIN
     COPY ~DRIZZTSAGA/Anim/MTAN~ ~override~      //MARILITH
   END
+END
 
+ACTION_IF NOT (FILE_EXISTS ~data/CTB-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
   ACTION_IF (IDS_OF_SYMBOL (~animate~ ~HARPY~) > 0) BEGIN
     OUTER_SET "ANIM_HA" = IDS_OF_SYMBOL (~animate~ ~HARPY~)
   END ELSE 
@@ -63,10 +65,14 @@ ACTION_IF GAME_IS ~BGEE~ AND (IDS_OF_SYMBOL (~animate~ ~CORNUGON~) > 0) BEGIN
   COPY ~DRIZZTSAGA/Anim/MCOR~ ~override~		// BGEE is missing Cornugon animations...
   APPEND ~ANIMATE.IDS~ ~0xE0E0 IC_CORNUGONSKI~  // CORNUGON
     UNLESS ~0xE0E0 IC_CORNUGONSKI~
-END ELSE ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmsca1.bam~ BEGIN									// ... while BGT and Tutu need a fix for Drizzt's animation crashes
-  COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
-END ELSE ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmfsa1.bam~ BEGIN									// ... while BGT and Tutu need a fix for Drizzt's animation crashes
-  COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
+END ELSE BEGIN
+  // ...while BGT and Tutu need a fix for Drizzt's animation crashes
+  ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmsca1.bam~ BEGIN									
+    COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
+  END
+  ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmfsa1.bam~ BEGIN
+    COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
+  END
 END
 
 // Areas:

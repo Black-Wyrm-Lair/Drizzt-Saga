@@ -23,7 +23,7 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
     <summary>Upcoming release...</summary>
     
 - Drizzt Saga uploaded to GitHub!
-- Fixed IWD animation compatibility issues on BGT and TuTu
+- Fixed IWD animations compatibility issues on BGEE, BGT and TuTu (thanks to TotoR).
 - Fixed joinable NPC spawn issue on EET.
 - New Polish translation by Bartek, formatted to EE by Roberciiik.
 - Reviewed and updated items (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/5) details).
