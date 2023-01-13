@@ -6,71 +6,7 @@ DEFINE_ACTION_MACRO ~DS_CORE_COMPONENT~ BEGIN
 // CRE Animations:
 
 PRINT @358
-
-// ** Compatibility block **
-ACTION_IF (GAME_IS ~BGT Tutu_TotSC~) BEGIN
-  OUTER_SET "ANIM_FG" = 0xE710 //FROST GIANT
-  OUTER_SET "ANIM_BE" = 0xE0D0 //BELHIFET
-  OUTER_SET "ANIM_HA" = 0xE320 //HARPY
-END ELSE BEGIN
-  OUTER_SET "ANIM_FG" = 0xE24F //FROST GIANT
-  OUTER_SET "ANIM_BE" = 0xE256 //BELHIFET
-  OUTER_SET "ANIM_HA" = 0xE252 //HARPY
-END
-
-OUTER_SET DECODE_SOUNDS = 0 // OGG files only for Frost Giants and Cyclops
-
-ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
-
-  ACTION_IF ((IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)) > 0) BEGIN
-    OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~)
-  END ELSE ACTION_IF ((IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~)) > 0) BEGIN
-    OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~)
-  END ELSE BEGIN
-    OUTER_SET DECODE_SOUNDS = 1
-    COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~      //FROST GIANT
-    COPY_EXISTING ~ORC06.cre~      ~override~
-              ~HLOLAF.cre~         ~override~
-              ~CHAK.cre~           ~override~
-              ~AR18FIG.cre~        ~override~
-      WRITE_LONG 0x28  0xE700   //IC_OROG1 instead of IC_OROG2
-    BUT_ONLY
-  END
-
-  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~CYCLOPS~)) < 0)) BEGIN
-    OUTER_SET DECODE_SOUNDS = 1
-    COPY ~DRIZZTSAGA/Anim/MCYC~ ~override~      //CYCLOP
-  END
-
-  ACTION_IF ((GAME_IS ~BGT Tutu_TotSC~) AND ((IDS_OF_SYMBOL (~animate~ ~MARILITH~)) < 0)) BEGIN
-    COPY ~DRIZZTSAGA/Anim/MTAN~ ~override~      //MARILITH
-  END
-END
-
-ACTION_IF (IDS_OF_SYMBOL (~animate~ ~HARPY~) > 0) BEGIN
-  OUTER_SET "ANIM_HA" = IDS_OF_SYMBOL (~animate~ ~HARPY~)
-END ELSE BEGIN
-  COPY ~DRIZZTSAGA/Anim/MGH3~ ~override~      //HARPY
-END
-
-ACTION_IF NOT (FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
-  ACTION_IF (IDS_OF_SYMBOL (~animate~ ~BELHIFET~) > 0) BEGIN
-    OUTER_SET "ANIM_BE" = IDS_OF_SYMBOL (~animate~ ~BELHIFET~)
-  END ELSE 
-    COPY ~DRIZZTSAGA/Anim/MUMB~ ~override~      //BELHIFET
-END
-
-ACTION_IF GAME_IS ~BGEE~ AND (IDS_OF_SYMBOL (~animate~ ~CORNUGON~) > 0) BEGIN
-  COPY ~DRIZZTSAGA/Anim/MCOR~ ~override~		// BGEE is missing Cornugon animations...
-END ELSE BEGIN
-  // ...while BGT and Tutu need a fix for Drizzt's animation crashes
-  ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmsca1.bam~ BEGIN									
-    COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
-  END
-  ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmfsa1.bam~ BEGIN
-    COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
-  END
-END
+INCLUDE ~DRIZZTSAGA/tpa/ds-anim.tpa~
 
 // Areas:
 

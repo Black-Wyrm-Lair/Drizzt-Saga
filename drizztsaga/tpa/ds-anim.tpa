@@ -1,0 +1,132 @@
+
+// ** Compatibility block **
+ACTION_IF (GAME_IS ~BGT Tutu_TotSC~) BEGIN
+    OUTER_SET "ANIM_FG" = 0xE710 //FROST GIANT
+    OUTER_SET "ANIM_BE" = 0xE0D0 //BELHIFET
+    OUTER_SET "ANIM_HA" = 0xE320 //HARPY
+    OUTER_SET ANIM_HARPY_EXISTS = (IDS_OF_SYMBOL (~animate~ ~HARPY~) > 0)
+    OUTER_SET ANIM_BELHIFET_EXISTS = (IDS_OF_SYMBOL (~animate~ ~BELHIFET~) > 0)
+    OUTER_SET ANIM_FROST_GIANT_EXISTS = (IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~) > 0)
+END
+ELSE ACTION_IF (GAME_IS ~BGEE EET~) BEGIN
+    OUTER_SET "ANIM_FG" = 0xE24F //FROST GIANT
+    OUTER_SET "ANIM_BE" = 0xE256 //BELHIFET
+    OUTER_SET "ANIM_HA" = 0xE252 //HARPY
+    OUTER_SET ANIM_HARPY_EXISTS = (IDS_OF_SYMBOL (~animate~ ~HARPY~) > 0 AND FILE_EXISTS_IN_GAME ~MHARA1.BAM~)
+    OUTER_SET ANIM_BELHIFET_EXISTS = (IDS_OF_SYMBOL (~animate~ ~BELHIFET~) > 0 AND FILE_EXISTS_IN_GAME ~MBE1A1.BAM~)
+    OUTER_SET ANIM_FROST_GIANT_EXISTS = (IDS_OF_SYMBOL (~animate~ ~GIANT_FROST~) > 0 AND FILE_EXISTS_IN_GAME ~MGFRA1.BAM~)
+END
+  
+OUTER_SET ANIM_CYCLOPS_EXISTS = (FILE_EXISTS_IN_GAME ~MCYCA1.BAM~)
+OUTER_SET ANIM_MARILITH_EXISTS = (FILE_EXISTS_IN_GAME ~MTANA1.BAM~)
+
+OUTER_SET DECODE_SOUNDS = 0 // OGG files only for Frost Giants and Cyclops
+  
+ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+    ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
+        ACTION_IF (ANIM_FROST_GIANT_EXISTS = 0) BEGIN
+            OUTER_SET DECODE_SOUNDS = 1
+            COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~      //FROST GIANT
+            COPY_EXISTING ~ORC06.cre~      ~override~
+                    ~HLOLAF.cre~         ~override~
+                    ~CHAK.cre~           ~override~
+                    ~AR18FIG.cre~        ~override~
+                WRITE_LONG 0x28  0xE700   //IC_OROG1 instead of IC_OROG2
+                BUT_ONLY
+        END
+        ELSE BEGIN
+            OUTER_SET "ANIM_FG" = IDS_OF_SYMBOL (~animate~ ~FROST_GIANT~) // 0x502b Frost Giant with IA
+        END
+    END
+    ELSE ACTION_IF GAME_IS ~BGEE EET~ BEGIN
+        ACTION_IF (ANIM_FROST_GIANT_EXISTS = 0) BEGIN
+            OUTER_SET DECODE_SOUNDS = 1
+	        ACTION_FOR_EACH ext IN bam 2da BEGIN
+                ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MNO2~ ~^.+\.%ext%$~ BEGIN
+                    OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
+                        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mno2~ ~mgfr~
+                    END
+                    ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
+                        COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
+                    END
+                END
+            END
+        END
+    END
+
+    ACTION_IF (ANIM_CYCLOPS_EXISTS = 0) BEGIN
+        OUTER_SET DECODE_SOUNDS = 1
+        COPY ~DRIZZTSAGA/Anim/MCYC~ ~override~      //CYCLOP
+    END
+
+    ACTION_IF (ANIM_MARILITH_EXISTS = 0) BEGIN
+        COPY ~DRIZZTSAGA/Anim/MTAN~ ~override~      //MARILITH
+    END
+END
+
+ACTION_IF NOT (FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
+    ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
+        ACTION_IF (ANIM_BELHIFET_EXISTS = 0) BEGIN
+            COPY ~DRIZZTSAGA/Anim/MUMB~ ~override~      //BELHIFET
+        END
+        ELSE BEGIN
+            OUTER_SET "ANIM_BE" = IDS_OF_SYMBOL (~animate~ ~BELHIFET~) // 0x502F Belhifet with IA
+        END
+    END
+    ELSE ACTION_IF GAME_IS ~BGEE EET~ BEGIN
+        ACTION_IF (ANIM_BELHIFET_EXISTS = 0) BEGIN
+            COPY ~DRIZZTSAGA/Anim/MBE1~ ~override~
+	        ACTION_FOR_EACH ext IN bam 2da BEGIN
+                ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MUMB~ ~^.+\.%ext%$~ BEGIN
+                    OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
+                        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mumb~ ~mbe1~
+                    END
+                    ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
+                        COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
+                    END
+                END
+            END
+        END
+    END
+END
+
+ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
+    ACTION_IF (ANIM_HARPY_EXISTS = 0) BEGIN
+        COPY ~DRIZZTSAGA/Anim/MGH3~ ~override~      //HARPY
+    END
+    ELSE BEGIN
+        OUTER_SET "ANIM_HA" = IDS_OF_SYMBOL (~animate~ ~HARPY~) // 0x5269 Harpy with IA
+    END
+END
+ELSE ACTION_IF GAME_IS ~BGEE EET~ BEGIN
+    ACTION_IF (ANIM_HARPY_EXISTS = 0) BEGIN
+        ACTION_FOR_EACH ext IN bam 2da BEGIN
+            ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MGH3~ ~^.+\.%ext%$~ BEGIN
+                OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mgh3~ ~mhar~
+                END
+                ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
+                    COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
+                END
+            END
+        END
+    END
+END
+
+ACTION_IF GAME_IS ~BGEE~ BEGIN
+    // BGEE without SoD is missing Cornugon animations...
+    ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MCOR~ ~^.+\.bam$~ BEGIN
+        ACTION_IF NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~ BEGIN
+            COPY ~%BASH_FOR_FILESPEC%~ ~override~
+        END
+    END
+END
+ELSE ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
+    // ...while BGT and Tutu need a fix for Drizzt's animation crashes
+    ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmsca1.bam~ BEGIN									
+        COPY ~DRIZZTSAGA/Anim/drizzt_fix/sc~ ~override~
+    END
+    ACTION_IF NOT FILE_EXISTS_IN_GAME ~wpmfsa1.bam~ BEGIN
+        COPY ~DRIZZTSAGA/Anim/drizzt_fix/fs~ ~override~
+    END
+END
