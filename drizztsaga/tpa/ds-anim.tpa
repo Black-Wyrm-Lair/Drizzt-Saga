@@ -27,7 +27,7 @@ ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF
         ACTION_IF (ANIM_FROST_GIANT_EXISTS = 0) BEGIN
             OUTER_SET DECODE_SOUNDS = 1
             COPY ~DRIZZTSAGA/Anim/MNO2~ ~override~      //FROST GIANT
-            COPY_EXISTING ~ORC06.cre~      ~override~
+            COPY_EXISTING ~ORC06.cre~    ~override~
                     ~HLOLAF.cre~         ~override~
                     ~CHAK.cre~           ~override~
                     ~AR18FIG.cre~        ~override~
@@ -41,14 +41,12 @@ ACTION_IF NOT (FILE_EXISTS ~data/TDD-RULE.bif~ OR FILE_EXISTS ~data/ROT-RULE.BIF
     ELSE ACTION_IF GAME_IS ~BGEE EET~ BEGIN
         ACTION_IF (ANIM_FROST_GIANT_EXISTS = 0) BEGIN
             OUTER_SET DECODE_SOUNDS = 1
-	        ACTION_FOR_EACH ext IN bam 2da BEGIN
-                ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MNO2~ ~^.+\.%ext%$~ BEGIN
-                    OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
-                        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mno2~ ~mgfr~
-                    END
-                    ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
-                        COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
-                    END
+            ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MNO2~ ~^.+\.bam$~ BEGIN
+                OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mno2~ ~mgfr~
+                END
+                ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
+                    COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
                 END
             END
         END
@@ -76,14 +74,12 @@ ACTION_IF NOT (FILE_EXISTS ~data/ROT-RULE.BIF~) THEN BEGIN
     ELSE ACTION_IF GAME_IS ~BGEE EET~ BEGIN
         ACTION_IF (ANIM_BELHIFET_EXISTS = 0) BEGIN
             COPY ~DRIZZTSAGA/Anim/MBE1~ ~override~
-	        ACTION_FOR_EACH ext IN bam 2da BEGIN
-                ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MUMB~ ~^.+\.%ext%$~ BEGIN
-                    OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
-                        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mumb~ ~mbe1~
-                    END
-                    ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
-                        COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
-                    END
+            ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MUMB~ ~^.+\.bam$~ BEGIN
+                OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mumb~ ~mbe1~
+                END
+                ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
+                    COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
                 END
             END
         END
@@ -100,14 +96,12 @@ ACTION_IF GAME_IS ~BGT Tutu_TotSC~ BEGIN
 END
 ELSE ACTION_IF GAME_IS ~BGEE EET~ BEGIN
     ACTION_IF (ANIM_HARPY_EXISTS = 0) BEGIN
-        ACTION_FOR_EACH ext IN bam 2da BEGIN
-            ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MGH3~ ~^.+\.%ext%$~ BEGIN
-                OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
-                    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mgh3~ ~mhar~
-                END
-                ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
-                    COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
-                END
+        ACTION_BASH_FOR ~DRIZZTSAGA/Anim/MGH3~ ~^.+\.bam$~ BEGIN
+            OUTER_PATCH_SAVE NewName ~%BASH_FOR_FILE%~ BEGIN
+                REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~mgh3~ ~mhar~
+            END
+            ACTION_IF NOT FILE_EXISTS_IN_GAME ~%NewName%~ BEGIN
+                COPY ~%BASH_FOR_FILESPEC%~ ~override/%NewName%~
             END
         END
     END
