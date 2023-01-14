@@ -23,9 +23,12 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
     <summary>Upcoming release...</summary>
     
 - Drizzt Saga uploaded to GitHub!
-- Fix joinable NPC spawn issue on EET.
+- Fixed IWD animations compatibility issues on BGEE, BGT and TuTu (thanks to TotoR).
+- Fixed joinable NPC spawn issue on EET.
 - New Polish translation by Bartek, formatted to EE by Roberciiik.
 - Reviewed and updated items (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/5) details).
+- Removed embedded CRE actors in F_6666.ARE and used proper CRE files instead.
+- Removed incorrect pile containers from F_6666.ARE.
 - Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra.
 - Moved english soundset to a different directory, so it can be replaced by localized sounds.
 - And other minor fixes (listed in GitHub commits)
