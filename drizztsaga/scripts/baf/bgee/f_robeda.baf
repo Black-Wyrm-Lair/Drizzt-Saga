@@ -60,7 +60,7 @@ IF
 	See([PC])
 THEN
 	RESPONSE #100
-		CreateCreature("F_TANARI",[413.495],0)
+		CreateCreature("GENEFN01",[413.495],0)
 		ReallyForceSpell([PC],POWERWORD_KILL)
 		ReallyForceSpell([PC],WIZARD_MELF_ACID_ARROW)
 		SetGlobal("#robedatk","LOCALS",3)
