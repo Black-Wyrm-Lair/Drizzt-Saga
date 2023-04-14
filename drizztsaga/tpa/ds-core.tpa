@@ -439,14 +439,6 @@ COPY_EXISTING ~%Undercity%.ARE~ ~override~
 	READ_ASCII AREA_SCRIPT ~Undercity_AreaScript~
 BUT_ONLY
 
-ACTION_IF FILE_EXISTS_IN_GAME ~%Undercity_AreaScript%.bcs~ THEN BEGIN
-	EXTEND_BOTTOM ~%Undercity_AreaScript%.bcs~ ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~
-END ELSE BEGIN
-	COPY ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~ ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
-	COMPILE ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
-END
-
-
 COPY_EXISTING ~%FishermansLake%.ARE~ ~override~
 	READ_ASCII AREA_SCRIPT ~FishermansLake_AreaScript~
 BUT_ONLY
