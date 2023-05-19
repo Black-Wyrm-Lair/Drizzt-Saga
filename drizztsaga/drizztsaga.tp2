@@ -82,6 +82,7 @@ LANGUAGE ~Spanish~								~spanish~	 ~DRIZZTSAGA/Language/Spanish/setup.tra~
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @1502
+DESIGNATED 0
 SUBCOMPONENT @0
 REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
 
@@ -131,6 +132,7 @@ END
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @489
+DESIGNATED 1
 SUBCOMPONENT @0
 REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
 
@@ -217,6 +219,7 @@ END
 ///////////////////////////////////////////////////////////////////
 
 BEGIN @1507  // Raise the XP cap
+DESIGNATED 2
 //REQUIRE_COMPONENT "drizztsaga.tp2" "0"  @1503
 REQUIRE_PREDICATE NOT GAME_IS ~BGT~ @1506
 
@@ -249,6 +252,7 @@ END
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @1508
+DESIGNATED 3
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 <<<<<<<< .../DS-inlined/P5empty.baf
@@ -355,19 +359,47 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
 	BUT_ONLY
 END
 
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
-//// New encounter: Valen in the Undercity - an optional component 			  /////////////////
+//// Nerf items: items are now "only" +3 and undroppable - an optional component/////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-BEGIN @1509
+BEGIN @1510
+DESIGNATED 4
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
-ACTION_IF FILE_EXISTS_IN_GAME ~%Undercity_AreaScript%.bcs~ THEN BEGIN
-	EXTEND_BOTTOM ~%Undercity_AreaScript%.bcs~ ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~
-END ELSE BEGIN
-	COPY ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~ ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
-	COMPILE ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
-END
+ACTION_FOR_EACH ~file~ IN
+				~F_SW2H17~ // Belhifet’s Sword of Grief +5
+				// ~F_ADAGGR~ // Snake Soul +5
+				// ~F_ARTSWD~ // Snake Bite +5
+				~F_SW2H09~ // Warblade +4
+				~F_ICEAX5~ // Ice Slasher +5
+				~F_BLUN35~ // Ice Star +4
+		COPY_EXISTING ~%file%.itm~ ~override~ // nerfing weapon into "only" +3 weapon
+			WRITE_SHORT 0x60 3
+			WRITE_SHORT 0x86 3
+			WRITE_SHORT 0x8c 3
+			PATCH_IF ~%file%~ STRING_EQUAL_CASE ~F_SW2H17~ BEGIN
+			  WRITE_SHORT 0x84 8
+			  LPF ALTER_EFFECT INT_VAR match_opcode = 12 dicenumber = 1 END
+			END
+			PATCH_IF ~%file%~ STRING_EQUAL_CASE ~F_SW2H17~ BEGIN
+			  WRITE_SHORT 0x84 8
+			  LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 12 dicenumber = 1 END
+			END
+			PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
+			  READ_LONG ~%offset%~ desc_strref
+			  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+			  READ_STRREF ~%offset%~ desc
+			  INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+				REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+5~ ~+3~ // change tach0 and damage modifier in name and description to +3
+				REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+4~ ~+3~ // change tach0 and damage modifier in name and description to +3
+				END
+			  END
+			  SAY_EVALUATED offset ~%desc%~
+			END
+		BUT_ONLY_IF_IT_CHANGES
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 // EOF

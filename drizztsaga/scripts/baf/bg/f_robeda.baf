@@ -5,6 +5,7 @@ IF
 THEN
 	RESPONSE #100
 		StartDialog("F_ROBEDA",LastSeenBy(Myself))
+		SetGlobal("F_finalfight","GLOBAL",3)
 END
 
 IF
@@ -82,5 +83,3 @@ THEN
 	RESPONSE #100
 		ClearAllActions()
 END
-
-
