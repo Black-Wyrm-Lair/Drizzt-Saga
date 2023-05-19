@@ -1,5 +1,6 @@
 IF
   Global("F_CreatValen","MYAREA",0)
+  Global("F_finalfight","GLOBAL",3)
 THEN
   RESPONSE #100
     CreateCreature("F_VALEN",[4600.2044],0)

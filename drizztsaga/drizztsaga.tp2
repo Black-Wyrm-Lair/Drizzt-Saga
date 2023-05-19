@@ -82,6 +82,7 @@ LANGUAGE ~Spanish~								~spanish~	 ~DRIZZTSAGA/Language/Spanish/setup.tra~
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @1502
+DESIGNATED 0
 SUBCOMPONENT @0
 REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
 
@@ -131,6 +132,7 @@ END
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @489
+DESIGNATED 1
 SUBCOMPONENT @0
 REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
 
@@ -217,6 +219,7 @@ END
 ///////////////////////////////////////////////////////////////////
 
 BEGIN @1507  // Raise the XP cap
+DESIGNATED 2
 //REQUIRE_COMPONENT "drizztsaga.tp2" "0"  @1503
 REQUIRE_PREDICATE NOT GAME_IS ~BGT~ @1506
 
@@ -249,6 +252,7 @@ END
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @1508
+DESIGNATED 3
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 <<<<<<<< .../DS-inlined/P5empty.baf
@@ -353,20 +357,6 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
     EraseJournalEntry(@10007)~
 		COMPILE_BAF_TO_BCS
 	BUT_ONLY
-END
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-//// New encounter: Valen in the Undercity - an optional component 			  /////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////
-
-BEGIN @1509
-REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
-
-ACTION_IF FILE_EXISTS_IN_GAME ~%Undercity_AreaScript%.bcs~ THEN BEGIN
-	EXTEND_BOTTOM ~%Undercity_AreaScript%.bcs~ ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~
-END ELSE BEGIN
-	COPY ~DRIZZTSAGA/scripts/SNIP/eValen.BAF~ ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
-	COMPILE ~DRIZZTSAGA/scripts/SNIP/%Undercity_AreaScript%.baf~
 END
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
