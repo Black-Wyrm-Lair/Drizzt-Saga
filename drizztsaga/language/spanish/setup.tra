@@ -8,7 +8,10 @@
 @489  = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~	// used to be: @489 = ~Instalando soporte para Worldmap v6~
 @1507 = ~Raise the XP cap~
 @1508 = ~Delayed start: Drizzt joins after Durlag's Tower~
-@1509 = ~New encounter: Valen in the Undercity~
+@1509 = ~Optional component: ~
+@1510 = ~More balanced Creatures, Items and XP~
+@1511 = ~More balanced Creatures and Items~
+@1512 = ~More balanced Creatures and XP~
 
 /* Setup feedback:  */
 
