@@ -6,10 +6,10 @@
 @489  = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~
 @1507 = ~Raise the XP cap~
 @1508 = ~Delayed start: Drizzt joins after Durlag's Tower~
-@1509 = ~Optional component: ~
-@1510 = ~More balanced Creatures, Items and XP~
-@1511 = ~More balanced Creatures and Items~
-@1512 = ~More balanced Creatures and XP~
+@1509 = ~Optional components: Nerfing~
+@1510 = ~Less loot~
+@1511 = ~Less powerfull Items~
+@1512 = ~Less XP, lowered by 1/4~
 
 /* Setup feedback:  */
 

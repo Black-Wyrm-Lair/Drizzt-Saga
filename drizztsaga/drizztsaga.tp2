@@ -58,7 +58,7 @@ ALWAYS
 	INCLUDE ~DRIZZTSAGA\lib\worldmap_update.tph~
 	INCLUDE ~DRIZZTSAGA\lib\del_are_trigger.tph~
 	INCLUDE ~DRIZZTSAGA\tpa\ds-core.tpa~
-	INCLUDE ~drizztsaga\tpa\items_creatures.tpa~
+	INCLUDE ~drizztsaga\tpa\ds-nerfing.tpa~
 		
 	OUTER_SET GameTypeDetected = 1
 		  	
@@ -361,33 +361,29 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
 END
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-//// Optional component: Creatures, Items and XP Rebalanced                   /////////////////
+//// Optional component: Creatures, Items and XP Rebalanced					  /////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @1510
+GROUP @1509
 DESIGNATED 4
-SUBCOMPONENT @1509
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
-LAM ~DS_ITEMS_NERFING~
-LAM ~DS_XP_NERFING~
 LAM ~DS_CREATURES_NERFING~
 
 BEGIN @1511
+GROUP @1509
 DESIGNATED 5
-SUBCOMPONENT @1509
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 LAM ~DS_ITEMS_NERFING~
-LAM ~DS_CREATURES_NERFING~
 
-BEGIN @1512
+BEGIN @1510
+GROUP @1509
 DESIGNATED 6
-SUBCOMPONENT @1509
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 LAM ~DS_XP_NERFING~
-LAM ~DS_CREATURES_NERFING~
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 // EOF
