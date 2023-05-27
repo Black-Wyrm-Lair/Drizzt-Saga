@@ -1,52 +1,52 @@
-IF
-	!InParty(Myself)
-	!InParty("f_drizzt")  // Drizzt
-	PartyHasItem("f_driwp1")  // Icingdeath +3: Frostbrand
-THEN
-	RESPONSE #100
-		TakePartyItem("f_driwp1")  // Icingdeath +3: Frostbrand
-END
 
 IF
 	!InParty(Myself)
-	!InParty("f_cattibr")  // Catti-Brie
-	OR(3)
-		PartyHasItem("f_catarw")  // Cattie-Brie Quiver
-		PartyHasItem("f_catsbw")  // Taurmaril +2
-		PartyHasItem("f_catswd")  // Khazid-Zhea +3
+	!InParty("F_DRIZZT")  // Drizzt
+	!Dead("F_DRIZZT")  // Drizzt
+	OR(2)
+		PartyHasItem("F_DRIWP1")  // Icingdeath +3
+		PartyHasItem("F_PANTH")  // Black Panther Figurine
 THEN
 	RESPONSE #100
-		TakePartyItem("f_catarw")  // Cattie-Brie Quiver
-		TakePartyItem("f_catsbw")  // Taurmaril +2
-		TakePartyItem("f_catswd")  // Khazid-Zhea +3
-END
-
-IF
-	!InParty(Myself)
-	!InParty("F_WULFGAR")  // Wulfgar
-	OR(3)
-		PartyHasItem("F_MITHCH")  // Mithril Chain Mail +4
-		PartyHasItem("F_WINTCL")  // Wulfgar’s Winter Wolf Pelt
-		PartyHasItem("F_WULFHM")  // Aegis-Fang +5
-THEN
-	RESPONSE #100
-		TakePartyItem("F_MITHCH")  // Mithril Chain Mail +4
-		TakePartyItem("F_WINTCL")  // Wulfgar’s Winter Wolf Pelt
-		TakePartyItem("F_WULFHM")  // Aegis-Fang +5
+		TakePartyItem("F_DRIWP1")  // Icingdeath +3
+		TakePartyItem("F_PANTH")  // Black Panther Figurine
 END
 
 IF
 	!InParty(Myself)
 	!InParty("F_BRUENOR")  // Bruenor
-	OR(4)
-		PartyHasItem("F_BRUEHL")  // Bruenor Battlehammer's Helmet
-		PartyHasItem("F_BRUEPL")  // Mithril Field Plate Armor +2
+	!Dead("F_BRUENOR")  // Bruenor
+	OR(2)
 		PartyHasItem("F_BRUEAX")  // Battle Axe +3
 		PartyHasItem("F_BRUEXB")  // Heavy Crossbow +1
 THEN
 	RESPONSE #100
-		TakePartyItem("F_BRUEHL")  // Bruenor Battlehammer's Helmet
-		TakePartyItem("F_BRUEPL")  // Mithril Field Plate Armor +2
 		TakePartyItem("F_BRUEAX")  // Battle Axe +3
 		TakePartyItem("F_BRUEXB")  // Heavy Crossbow +1
+END
+
+IF
+	!InParty(Myself)
+	!InParty("F_CATTIBR")  // Catti-Brie
+	!Dead("F_CATTIBR")  // Catti-Brie
+	OR(2)
+		PartyHasItem("F_CATSBW")  // Taurmaril +2
+		PartyHasItem("F_CATSWD")  // Khazid-Zhea +3
+THEN
+	RESPONSE #100
+		TakePartyItem("F_CATSBW")  // Taurmaril +2
+		TakePartyItem("F_CATSWD")  // Khazid-Zhea +3
+END
+
+IF
+	!InParty(Myself)
+	!InParty("F_WULFGAR")  // Wulfgar
+	!Dead("F_WULFGAR")  // Wulfgar
+	OR(2)
+		PartyHasItem("F_WULFHI")  // Hide
+		PartyHasItem("F_WULFHM")  // Aegis-Fang +5
+THEN
+	RESPONSE #100
+		TakePartyItem("F_WULFHI")  // Hide
+		TakePartyItem("F_WULFHM")  // Aegis-Fang +5
 END

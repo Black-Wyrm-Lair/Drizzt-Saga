@@ -171,34 +171,32 @@ DEFINE_ACTION_MACRO ~DS_CREATURES_NERFING~ BEGIN
 // ---------------------------------------------------------------------------------------------------
 
 COPY_EXISTING ~F_ARTEMI.CRE~ ~override~ 
-	WRITE_SHORT 0x18 ~0~
-	REPLACE_CRE_ITEM ~RING05~ #0 #0 #0 ~identified&unstealable&undroppable~ ~lring~
-	REPLACE_CRE_ITEM ~RING07~ #0 #0 #0 ~identified&unstealable&undroppable~ ~rring~
+	REPLACE_CRE_ITEM ~%_%RING05~ #0 #0 #0 ~identified&unstealable&undroppable~ ~lring~
+	REPLACE_CRE_ITEM ~%_%RING07~ #0 #0 #0 ~identified&unstealable&undroppable~ ~rring~
 	REPLACE_CRE_ITEM ~F_BOOTHS~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
 	BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~F_BRUENO.CRE~ ~override~ 
-	REPLACE_CRE_ITEM ~BRAC10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
+	REPLACE_CRE_ITEM ~F_BRUEHL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~helmet~
+	REPLACE_CRE_ITEM ~F_BRUEPL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~armor~
+	REPLACE_CRE_ITEM ~%_%BRAC10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
 	BUT_ONLY_IF_IT_CHANGES
 	
 COPY_EXISTING ~F_CATTIB.CRE~ ~override~ 
-	REPLACE_CRE_ITEM ~CHAN07~ #0 #0 #0 ~identified&unstealable&undroppable~ ~armor~
-	REPLACE_CRE_ITEM ~BRAC04~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
+	REPLACE_CRE_ITEM ~%_%BRAC04~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
 	BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~F_DEATHK.CRE~ ~override~
-	REPLACE_CRE_ITEM ~SW2H02~ #0 #0 #0 ~NONE~ ~inv1~
+	REPLACE_CRE_ITEM ~%_%SW2H02~ #0 #0 #0 ~NONE~ ~inv1~
 	BUT_ONLY_IF_IT_CHANGES	
 
-COPY_EXISTING ~F_deathl.CRE~ ~override~
+COPY_EXISTING ~F_DEATHL.CRE~ ~override~
 	REPLACE_CRE_ITEM ~F_SW2H08~ #0 #0 #0 ~unstealable&undroppable~ ~weapon1~
 	BUT_ONLY_IF_IT_CHANGES
 	
 COPY_EXISTING ~F_DRIZZT.CRE~ ~override~ 
-	REPLACE_CRE_ITEM ~F_PANTH~ #0 #0 #0 ~identified&unstealable&undroppable~ ~qitem1~		
-	REPLACE_CRE_ITEM ~CHAN06~ #0 #0 #0 ~identified&unstealable&undroppable~ ~armor~
-	REPLACE_CRE_ITEM ~AMUL17~ #0 #0 #0 ~identified&unstealable&undroppable~ ~amulet~
-	REPLACE_CRE_ITEM ~BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	REPLACE_CRE_ITEM ~%_%AMUL17~ #0 #0 #0 ~identified&unstealable&undroppable~ ~amulet~
+	REPLACE_CRE_ITEM ~%_%BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
 	REPLACE_CRE_ITEM ~F_ELFCLK~ #0 #0 #0 ~identified&unstealable&undroppable~ ~cloak~
 	BUT_ONLY_IF_IT_CHANGES
 	
@@ -207,13 +205,16 @@ COPY_EXISTING ~F_DROWPR.CRE~ ~override~
 	BUT_ONLY_IF_IT_CHANGES
 	
 COPY_EXISTING ~F_JARLAX.cre~ ~override~
-	WRITE_SHORT 0x18 ~0~
-	REPLACE_CRE_ITEM ~BRAC10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
-	REPLACE_CRE_ITEM ~BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	REPLACE_CRE_ITEM ~%_%BRAC10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
+	REPLACE_CRE_ITEM ~%_%BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
 	BUT_ONLY_IF_IT_CHANGES
 	
 COPY_EXISTING ~F_REGIS.CRE~ ~override~
-	REPLACE_CRE_ITEM ~BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	REPLACE_CRE_ITEM ~%_%BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~F_WULFGA.CRE~ ~override~ 
+	REPLACE_CRE_ITEM ~F_WINTCL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~cloak~
 	BUT_ONLY_IF_IT_CHANGES
 
 // Update base script of Drizzt's party to remorve special object from inventory of players if the they are no more in the party
