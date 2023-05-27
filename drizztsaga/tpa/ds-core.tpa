@@ -457,6 +457,8 @@ END ELSE BEGIN
 	COMPILE ~DRIZZTSAGA/scripts/SNIP/%FishermansLake_AreaScript%.baf~
 END
 
+// Update baldur.bcs to remorve special object from inventory of players
+EXTEND_BOTTOM ~baldur.bcs~ ~DRIZZTSAGA/scripts/SNIP/eRestorWeapon.BAF~
 
 // Add Medusas into the game, part 2
 
@@ -686,8 +688,8 @@ COPY ~DRIZZTSAGA/CRE/F_ARTEMI.CRE~ ~override~
   SAY SELECT_COMMON3 @6
   SAY BIO @11
   WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
-  WRITE_ASCIIE 0x4e8 ~%_%RING05~ #8
-  WRITE_ASCIIE 0x4fc ~%_%RING07~ #8
+  WRITE_ASCIIE 0x488 ~%_%RING05~ #8
+  WRITE_ASCIIE 0x49c ~%_%RING07~ #8
 
 COPY ~DRIZZTSAGA/CRE/F_BEARFM.cre~ ~override~
   SAY NAME1 @12
@@ -756,10 +758,10 @@ COPY ~DRIZZTSAGA/CRE/F_BRUENO.CRE~ ~override~
   SAY SELECT_COMMON1 @23
   SAY SELECT_COMMON2 @24
   SAY BIO @27
-  WRITE_ASCIIE 0x4fc ~%_%SHLD02~ #8
-  WRITE_ASCIIE 0x510 ~%_%BRAC10~ #8
-  WRITE_ASCIIE 0x538 ~%_%BOLT06~ #8
-  WRITE_ASCIIE 0x54c ~%_%POTN08~ #8
+  WRITE_ASCIIE 0x49c ~%_%SHLD02~ #8
+  WRITE_ASCIIE 0x4b0 ~%_%BRAC10~ #8
+  WRITE_ASCIIE 0x4d8 ~%_%BOLT06~ #8
+  WRITE_ASCIIE 0x4ec ~%_%POTN08~ #8
   
 COPY ~DRIZZTSAGA/CRE/F_CATTIB.CRE~ ~override~
   SAY NAME1 @28
@@ -772,9 +774,9 @@ COPY ~DRIZZTSAGA/CRE/F_CATTIB.CRE~ ~override~
   SAY SELECT_COMMON2 @29
   SAY 0x198 @34  
   SAY BIO @35
-  WRITE_ASCIIE 0x4a4 ~%_%CHAN07~ #8
-  WRITE_ASCIIE 0x4b8 ~%_%BRAC04~ #8
-  WRITE_ASCIIE 0x508 ~%_%POTN08~ #8
+  WRITE_ASCIIE 0x474 ~%_%CHAN07~ #8
+  WRITE_ASCIIE 0x488 ~%_%BRAC04~ #8
+  WRITE_ASCIIE 0x4d8 ~%_%POTN08~ #8
 
 COPY ~DRIZZTSAGA/CRE/F_DEADM2.CRE~ ~override~
   SAY NAME1 @40
@@ -901,7 +903,6 @@ COPY ~DRIZZTSAGA/CRE/F_DRIZZT.CRE~ ~override~
   SAY 0x198 @59  
   SAY BIO @60
   WRITE_ASCIIE 0x2cc ~%_%DRIZZT~ #8
-  WRITE_ASCIIE 0x5b8 ~%_%CHAN06~ #8
   WRITE_ASCIIE 0x5cc ~%_%AMUL17~ #8
   WRITE_ASCIIE 0x5e0 ~%_%BOOT01~ #8
 
@@ -1032,9 +1033,9 @@ COPY ~DRIZZTSAGA/CRE/F_JARLAX.cre~ ~override~
   SAY SELECT_COMMON3 @77
   SAY BIO @83
   WRITE_ASCIIE 0x268 ~%tutu_scriptw%TASIGHT~ #8
-  WRITE_ASCIIE 0x4b8 ~%_%BRAC10~ #8
-  WRITE_ASCIIE 0x4cc ~%_%BOOT01~ #8
-  WRITE_ASCIIE 0x508 ~%_%POTN06~ #8  
+  WRITE_ASCIIE 0x488 ~%_%BRAC10~ #8
+  WRITE_ASCIIE 0x49c ~%_%BOOT01~ #8
+  WRITE_ASCIIE 0x4d8 ~%_%POTN06~ #8  
   
 COPY ~DRIZZTSAGA/CRE/F_REGIS2.CRE~ ~override~
 	 ~DRIZZTSAGA/CRE/F_REGIS.CRE~ ~override~
@@ -1048,9 +1049,9 @@ COPY ~DRIZZTSAGA/CRE/F_REGIS2.CRE~ ~override~
   SAY SELECT_COMMON3 @95
   SAY BIO @96  
   PATCH_IF ("%SOURCE_RES%" STRING_EQUAL_CASE "F_REGIS2") BEGIN
-    WRITE_ASCIIE 0x3dc ~%_%LEAT07~ #8
-    WRITE_ASCIIE 0x3f0 ~%_%SW1H10~ #8
-    WRITE_ASCIIE 0x404 ~%_%POTN08~ #8
+    WRITE_ASCIIE 0x6f4 ~%_%LEAT07~ #8
+    WRITE_ASCIIE 0x708 ~%_%SW1H10~ #8
+    WRITE_ASCIIE 0x71c ~%_%POTN08~ #8
   END ELSE BEGIN
     WRITE_ASCIIE 0x2d4 ~%_%LEAT07~ #8
     WRITE_ASCIIE 0x2e8 ~%_%BOOT01~ #8
@@ -1198,9 +1199,9 @@ COPY ~DRIZZTSAGA/CRE/F_WULFGA.CRE~ ~override~
   SAY SELECT_COMMON4 @113
   SAY 0x198 @118
   SAY BIO @119
-  WRITE_ASCIIE 0x4cc ~%_%SHLD02~ #8
-  WRITE_ASCIIE 0x508 ~%_%POTN08~ #8
-  WRITE_ASCIIE 0x51c ~%_%POTN20~ #8
+  WRITE_ASCIIE 0x46c ~%_%SHLD02~ #8
+  WRITE_ASCIIE 0x4a8 ~%_%POTN08~ #8
+  WRITE_ASCIIE 0x4bc ~%_%POTN20~ #8
 
 COPY ~DRIZZTSAGA/CRE/F_DEATHK.CRE~ ~override~
   SAY NAME1 @42
@@ -2016,6 +2017,8 @@ COPY ~DRIZZTSAGA/ITM/F_RAISER.ITM~           ~override~
   SAY UNIDENTIFIED_DESC @307 
   SAY DESC @308
 
+COPY ~DRIZZTSAGA/ITM/F_REGAMU.ITM~          ~override~       
+
 COPY ~DRIZZTSAGA/ITM/F_SCIM03.ITM~           ~override~        
   SAY NAME1 @309 
   SAY NAME2 @310 
@@ -2162,8 +2165,9 @@ ACTION_IF GAME_IS ~BGEE~ BEGIN
 END	
 	
 COPY ~DRIZZTSAGA/Misc/F_DRIWP.SPL~ ~override~		// used to conjure F_DRIWP1.ITM in Drizzt's weapon slot upon joining
+COPY ~DRIZZTSAGA/Misc/F_DRIWP1.SPL~ ~override~		// used to conjure vanilla weapons in Drizzt's inventory upon leaving
+COPY ~DRIZZTSAGA/Misc/F_DRIWP2.SPL~ ~override~		// used to conjure vanilla weapons in Drizzt's inventory upon dying
 	 	 
-    
 // item icons:
 COPY ~DRIZZTSAGA/BAM_BMP~ ~override~
 ACTION_IF GAME_IS ~BGT~ BEGIN
@@ -2171,6 +2175,13 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
 END
 COPY ~DRIZZTSAGA/BAM_BMP/descr_%BAMvsBMP%~ ~override~
 
+// itemexcl.2da
+
+COPY_EXISTING ~itemexcl.2da~ ~override~
+	APPEND ~itemexcl.2da~ ~F_MITHCH  1~
+	APPEND ~itemexcl.2da~ ~F_BRUEPL  1~
+	APPEND ~itemexcl.2da~ ~F_OPALPL  1~
+	APPEND ~itemexcl.2da~ ~F_DRGPLA  1~
 
 // Sounds:
 

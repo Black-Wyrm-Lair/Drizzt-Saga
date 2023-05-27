@@ -1,18 +1,53 @@
 
+// After leaving, retore of vanilla Drizzt's scimitars and armor and destroy non-animated versions
+
+IF
+	Global("F_Drizztdie","LOCALS",1)
+	InParty("F_DRIZZT")  // Drizzt
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		TakePartyItem("F_PANTH")  // Black Panther Figurine
+		TakePartyItem("F_DRIWP1")  // Icingdeath +3
+		TakePartyItem("SW1H15")  // Icingdeath +3
+		TakePartyItem("SW1H16")  // Twinkle +3
+		TakePartyItem("CHAN06")  // Mithral Chain Mail +3
+		ApplySpellRES("F_DRIWP",Myself)  // <NO TEXT>
+		SetGlobal("F_Drizztdie","LOCALS",0)
+		SetInterrupt(TRUE)
+END
+
+IF
+	Die()
+	!Global("F_DrizztVanillaStuffDisposed","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("F_Drizztdie","LOCALS",1)
+		ReallyForceSpellDeadRES("F_DRIWP2",Myself)  // <NO TEXT>
+		SetInterrupt(TRUE)
+END
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	!Dead("F_DRIZZT")  // Drizzt
+	!Global("F_DrizztVanillaStuffDisposed","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		DestroyItem("F_DRIWP1")  // Icingdeath +3
+		ApplySpellRES("F_DRIWP1",Myself)  // <NO TEXT>
+		SetGlobal("F_DrizztVanillaStuffDisposed","LOCALS",0)
+		SetInterrupt(TRUE)
+END
+
 // After joining, dispose of vanilla Drizzt's scimitars, leaving only our non-animated versions
 IF
   Global("F_DrizztVanillaStuffDisposed","LOCALS",0)
   InParty(Myself)
-  OR(3)
-  	HasItem("SW1H15",Myself)
-  	HasItem("SW1H16",Myself)
-  	HasItem("F_DRIWP3",Myself)
 THEN
   RESPONSE #100
   	SetInterrupt(FALSE)
-  	DestroyItem("SW1H15")
-  	DestroyItem("SW1H16")
-  	DestroyItem("F_DRIWP3")
   	ApplySpellRES("F_DRIWP",Myself)
   	SetInterrupt(TRUE)
   	EquipMostDamagingMelee()
@@ -32,18 +67,21 @@ END
 
 // to prevent immersion-breaking multiple instances of Drizzt's scimitars (if pickpocketed drizzt before he joins)
 IF
-  Delay(10)
-  GlobalLT("F_DrizztVanillaStuffDisposed","LOCALS",3)
+  Delay(1)
+  GlobalLT("F_DrizztVanillaStuffDisposed","LOCALS",4)
   InParty(Myself)
-  OR(2)
+  OR(3)
   	PartyHasItem("SW1H15")
-  	PartyHasItem("SW1H16")  
+  	PartyHasItem("SW1H16")
+	PartyHasItem("CHAN06")
 THEN
   RESPONSE #100
   	TakePartyItem("SW1H15")
   	TakePartyItem("SW1H16")
+	TakePartyItem("CHAN06")
   	DestroyItem("SW1H15")
   	DestroyItem("SW1H16")
+	DestroyItem("CHAN06")
   	SetGlobal("F_DrizztVanillaStuffDisposed","LOCALS",3)
 END
 
