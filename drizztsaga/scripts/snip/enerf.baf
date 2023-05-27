@@ -40,13 +40,13 @@ END
 
 IF
 	!InParty(Myself)
-	!InParty("F_WULFGAR")  // Wulfgar
+	!InParty("F_WULFGAR")  // Wulfgar's Fur Armor
 	!Dead("F_WULFGAR")  // Wulfgar
 	OR(2)
 		PartyHasItem("F_WULFHI")  // Hide
 		PartyHasItem("F_WULFHM")  // Aegis-Fang +5
 THEN
 	RESPONSE #100
-		TakePartyItem("F_WULFHI")  // Hide
+		TakePartyItem("F_WULFHI")  // Wulfgar's Fur Armor
 		TakePartyItem("F_WULFHM")  // Aegis-Fang +5
 END
