@@ -8,10 +8,10 @@
 @489  = ~BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)~   // used to be: @489 = ~Installando il Supporto della Worldmap v6~
 @1507 = ~Raise the XP cap~
 @1508 = ~Delayed start: Drizzt joins after Durlag's Tower~
-@1509 = ~Optional components: Nerfing~
-@1510 = ~Less loot~
-@1511 = ~Less powerfull Items~
-@1512 = ~Less XP, lowered by 1/4~
+@1509 = ~Optional components: Overhall rebalancing~
+@1510 = ~Fewer NPC's items exploit~
+@1511 = ~Magical Items Nerfing~
+@1512 = ~XP from Creatures lowered by 3/4~
 
 /* Setup feedback:  */
 
