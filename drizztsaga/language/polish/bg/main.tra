@@ -1042,16 +1042,15 @@ Ten toporek zosta³ nie tylko doskonale wywa¿ony, aby mo¿na by³o nim rzucaæ, ale 
 
 PARAMETRY:
 
-Specjalne:
- Si³a: 25
- Zabija ogry
- Wraca do rêki w³aœciciela
-
 Obra¿enia (walka wrêcz): 1K6 +3, +2 pkt. obra¿eñ od zimna
 Obra¿enia (rzucony): 1K6 +5, +2 pkt. obra¿eñ od zimna
 TraK0: +5
 Typ obra¿eñ (walka wrêcz): sieczne
 Typ obra¿eñ (rzucony): pocisk (k³ute)
+Specjalne:
+ Si³a: 25
+ Zabija ogry
+ Wraca do rêki w³aœciciela
 Waga: 3
 OpóŸnienie: 2
 Rodzaj bieg³oœci: topór
@@ -1089,12 +1088,11 @@ Nie mo¿e u¿ywaæ:
 
 PARAMETRY:
 
-Specjalne:
- Przy ka¿dym trafieniu rzuca Rozproszenie magii
-
 Obra¿enia: 1K8 +4, +4 pkt. obra¿eñ od ognia
 TraK0: +4
 Typ obra¿eñ: sieczne
+Specjalne:
+ Przy ka¿dym trafieniu rzuca Rozproszenie magii
 Waga: 5
 OpóŸnienie: 1
 Rodzaj bieg³oœci: topór
