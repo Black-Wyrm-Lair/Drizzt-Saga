@@ -57,7 +57,7 @@ END
 // to prevent immersion-breaking multiple instances of Drizzt's scimitars (if pickpocketed drizzt before he joins)
 IF
   Delay(1)
-  GlobalLT("F_DrizztVanillaStuffDisposed","LOCALS",4)
+  GlobalGT("F_DrizztVanillaStuffDisposed","LOCALS",0)
   InParty(Myself)
   OR(3)
   	PartyHasItem("SW1H15")

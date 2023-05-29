@@ -302,7 +302,7 @@ STATISTICS:
 Combat abilities:
 – Each hit drains 5 hit points from its target and transfers it to the user.
 
-THACO: +5 
+THAC0: +5 
 Damage: 1d4+3 (piercing)
 Speed Factor: 2  
 Proficiency Type: Dagger
@@ -372,7 +372,7 @@ STATISTICS:
 Combat abilities:
 – Inflicts poison to its target if failing save vs poison.
 
-THACO: +4
+THAC0: +4
 Damage: 1d6+4 (piercing)
 Speed Factor: 3
 Proficiency Type: Short Sword 
@@ -435,8 +435,8 @@ Weight: 10~
 
 STATISTICS:
 
-THACO: +3 bonus
-Damage:  1d6+4 crushing, +1d6 electrical
+THAC0: +3 bonus
+Damage:  1d6+4 crushing, +1d6 extra electrical damage
 Speed Factor: 4
 Proficiency Type: Mace
 Type: One-handed
@@ -463,7 +463,7 @@ STATISTICS:
 
 +20% Fire Resistance
 
-THACO: +4
+THAC0: +4
 Damage: 2d4+4 crushing, +1d4 extra cold damage
 Speed Factor: 4
 Proficiency Type: Flail/Morningstar
@@ -581,7 +581,7 @@ Weight: 12~
 
 STATISTICS:
 
-THACO: +1 bonus
+THAC0: +1 bonus
 Damage: 1d6+1 (piercing)
 Launcher: Bow
 
@@ -609,7 +609,7 @@ Weight: 2~
 
 STATISTICS:
 
-THACO: +3 bonus
+THAC0: +3 bonus
 Damage: 1d8+3 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
@@ -691,7 +691,7 @@ Combat abilities:
 – Extra 1d6+3 damage vs. undead
 – Slay undead if failing save vs. death at -4 penalty
 
-THACO: +2 (strikes as a +5 weapon)
+THAC0: +2 (strikes as a +5 weapon)
 Damage: 1d6+3 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
@@ -809,7 +809,7 @@ STATISTICS:
 Combat abilities:
 – Returns to the wielder's hand when thrown
 
-THACO: +2
+THAC0: +2
 Damage: 1d6+3, +2 extra cold damage
 Damage type (melee): Slashing
 Damage type (thrown): Missile
@@ -832,7 +832,7 @@ Combat abilities:
 - Instant Slaying of Ogres
 – Returns to the wielder's hand when thrown
 
-THACO: +5
+THAC0: +5
 Damage (melee): 1d6+3 slashing, +2 extra cold damage
 Damage (thrown): 1d6+5 missile, +2 extra cold damage
 Speed Factor: 2
@@ -1088,7 +1088,7 @@ Weight: 4~
 
 STATISTICS:
   
-THACO: +3 bonus 
+THAC0: +3 bonus 
 Damage: 1d8+3 (slashing)
 Speed Factor: 3 
 Proficiency Type: Scimitar/Wakizashi/Ninja-Tō
@@ -1323,6 +1323,19 @@ Requires:
  9 Strength
 
 Weight: 6~
+// BG2 #55781
+@515 = ~Ruby Pendant~
+// BG2 #2309
+@516 = ~Ruby Pendant of Beguiling
+
+A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+
+STATISTICS
+
+Dire Charm abilities once per day.
+
+Not Usable By:
+ Wizard Slayer~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

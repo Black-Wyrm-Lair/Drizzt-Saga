@@ -10,7 +10,7 @@ ACTION_FOR_EACH ~file~ IN
 BEGIN
   COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +5 weapon into "only" +3 weapon
 	WRITE_SHORT 0x60 3 // Enchantment Level
-    LPF ALTER_ITEM_HEADER INT_VAR type = 1 thac0_bonus = 3 damage_bonus = 3 END
+    LPF ALTER_ITEM_HEADER INT_VAR thac0_bonus = 3 damage_bonus = 3 END
 	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
 	  READ_LONG ~%offset%~ desc_strref
 	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
@@ -34,12 +34,13 @@ ACTION_FOR_EACH ~file~ IN
 BEGIN
   COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +4 weapon into "only" +2 weapon
 	WRITE_SHORT 0x60 2 // Enchantment Level
-    LPF ALTER_ITEM_HEADER INT_VAR type = 1 thac0_bonus = 2 damage_bonus = 2 END
+    LPF ALTER_ITEM_HEADER INT_VAR thac0_bonus = 2 damage_bonus = 2 END
 	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
 	  READ_LONG ~%offset%~ desc_strref
 	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
 		READ_STRREF ~%offset%~ desc
 		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 4~ ~+ 2~ // change thac0 and damage modifier in description to + 2
 		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+4~ ~+2~ // change thac0 and damage modifier in name and description to +2
 		END
 	  END
@@ -62,7 +63,9 @@ BEGIN
 	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
 		READ_STRREF ~%offset%~ desc
 		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 3~ ~+ 2~ // change thac0 and damage modifier in name and description to +2
 		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+3~ ~+2~ // change thac0 and damage modifier in name and description to +2
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 5~ ~+ 4~ // change damage modifier in description to +4
 		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+5~ ~+4~ // change damage modifier in description to +4
 		END
 	  END
@@ -85,8 +88,8 @@ BEGIN
 	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
 		READ_STRREF ~%offset%~ desc
 		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
-		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+3 ~ ~+1 ~ // change AC and saves modifier in name and description to +1
-		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+2 ~ ~+1 ~ // change AC and saves modifier in name and description to +1
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+3~ ~+1~ // change AC and saves modifier in name and description to +1
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+2~ ~+1~ // change AC and saves modifier in name and description to +1
 		END
 	  END
 	  SAY_EVALUATED offset ~%desc%~
@@ -217,7 +220,7 @@ COPY_EXISTING ~F_WULFGA.CRE~ ~override~
 	REPLACE_CRE_ITEM ~F_WINTCL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~cloak~
 	BUT_ONLY_IF_IT_CHANGES
 
-// Update base script of Drizzt's party to remorve special object from inventory of players if the they are no more in the party
+// Update base script of Drizzt's party to remove special object from inventory of players if they are no more in the party
 EXTEND_BOTTOM ~f_drizzt.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
 EXTEND_BOTTOM ~f_brueno.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
 EXTEND_BOTTOM ~f_cattib.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~

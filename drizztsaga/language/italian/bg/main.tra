@@ -292,8 +292,8 @@ Non utilizzabile da:
 
 STATISTICHE:
 
-Danno:  1D4 +3
-THACO: +5 
+THAC0: bonus +5 
+Danno:  1D4 + 3
 Abilità Speciali: Ogni colpo andato a segno toglie 5 punti ferita dal bersaglio che vengono trasferiti a chi impugna il pugnale.
 Tipo di danno: da punta 
 Peso: 1 
@@ -370,8 +370,8 @@ Non utilizzabile da:
 
 STATISTICHE:
 
-Danno: 1D6+4
-THACO: +4
+THAC0: bonus +4
+Danno: 1D6 + 4
 Abilità Speciale: Infligge veleno al bersaglio se fallisce il tiro salvezza.
 Peso: 3
 Fattore Velocità: 3
@@ -446,7 +446,7 @@ Non utilizzabile da:
 
 STATISTICHE:
 
-THACO: bonus +3
+THAC0: bonus +3
 Danno:  1D6 + 4, +1D6 di danni da elettricità
 Tipo di danno: contundente
 Peso: 6
@@ -480,8 +480,8 @@ STATISTICHE:
 
 +20% di Resistenza al Fuoco
 
-THACO: +4
-Danno: 2D4 +4, +1-4 danni da freddo extra 
+THAC0: bonus +4
+Danno: 2D4 + 4, +1D4 danni da freddo extra 
 Tipo di danno: contundente
 Peso: 8
 Fattore Velocità: 4
@@ -527,8 +527,8 @@ Ho il presentimento che c'é qualcosa che non va bene; andrò a cercare Catti-Brie
 
 STATISTICHE:
 
-Danno: 1D8 +3
-THAC0: +3 bonus
+THAC0: bonus +3 bonus
+Danno: 1D8 + 3
 Tipo di danno: da taglio
 Peso: 2
 Fattore Velocità: 4
@@ -601,7 +601,7 @@ Non utilizzabile da:
 STATISTICHE:
 
 Danno: +3 (proiettile) 
-THACO: bonus +1 
+THAC0: bonus +1 
 Peso: 12 
 Fattore Velocità: 9 
 Tipo di Competenza: Balestre
@@ -618,7 +618,7 @@ Non utilizzabile da:
 STATISTICHE:
 
 Danno: 1D6 + 1
-THACO: bonus +1
+THAC0: bonus +1
 Tipo di danno: proiettile (perforante)
 Peso: 0
 Dispositivo di lancio: Arco
@@ -634,7 +634,7 @@ Questo é un altro famoso artefatto proveniente dalla Valle del Vento Gelido. Que
 
 STATISTICHE:
 
-THAC0: +2
+THAC0: bonus +2
 Danno: +2
 Peso: 2
 Fattore Velocità: 2
@@ -650,8 +650,8 @@ Non utilizzabile da:
 
 STATISTICHE:
 
-Danno: 1D8 +3
-THACO: +3 bonus
+THAC0: bonus +3 bonus
+Danno: 1D8 + 3
 Tipo di danno: tagliente
 Peso: 2
 Fattore Velocità: 3
@@ -742,8 +742,8 @@ Abilità Speciale:
 - Danno bonus contro i non morti: 1D6 + 3
 - Uccide i Non Morti se falliscono il tiro salvezza contro morte (penalita di -4)
 
+THAC0: bonus +2
 Danno: 1D6 + 3 
-THACO: +2
 Tipo di danno: da schiacciamento 
 Peso: 8 
 Fattore Velocità: 6 
@@ -864,9 +864,8 @@ Non utilizzabile da:
 
 STATISTICHE:
 
+THAC0: bonus +2 
 Danno: 1D6 + 3 
-THACO: +2 
-Incantata per Colpire: +2
 Bonus al danno da Freddo: 2
 Tipo di danno(in mischia): tagliente 
 Tipo di danno(da lancio): proiettile (perforante) 
@@ -878,13 +877,13 @@ Peso: 3~
 
 STATISTICHE:
 
-Danno (in mischia): 1D6 + 3
-Danno (in lancio): 1D6 + 5
-THACO: +5 
-Incantata per Colpire: +5
-Bonus al danno da Freddo: 2
 Bonus alle Caratteristiche: Forza portata a 25
 Abilità di Combattimento: Uccide gli Orchi all'istante
+
+THAC0: bonus +5 
+Danno (in mischia): 1D6 + 3
+Danno (in lancio): 1D6 + 5
+Bonus al danno da Freddo: 2
 Tipo di danno (in mischia): tagliente 
 Tipo di danno (da lancio): proiettile (perforante) 
 Speciale: Torna nelle mani del lanciatore dopo il lancio 
@@ -916,11 +915,12 @@ Quest'ascia è forgiata e incantata dal drow. Si dice che la stessa Lolth parteci
 
 STATISTICHE:
 
-Danno: 1D8 +4 
-THAC0:  +4  
 Abilità Speciali:
  Danno da Fuoco: 4
  Dissolvi Magie ad ogni colpo
+
+THAC0: bonus  +4  
+Danno: 1D8 + 4 
 Tipo di danno: tagliente 
 Peso: 5 
 Fattore Velocità: 1 
@@ -1156,8 +1156,8 @@ Non utilizzabile da:
 
 STATISTICHE:
 
-THACO: bonus +3 
-Danno: 1D8 +3 
+THAC0: bonus +3 
+Danno: 1D8 + 3 
 Tipo di danno: tagliente 
 Peso: 3 
 Fattore Velocità: 3 
@@ -1193,7 +1193,7 @@ Questa grande spada è una versione stregata di quelle barbariche delle tribù del
 STATISTICHE:
 
 THAC0: bonus +4
-Danno: 1D12 +4
+Danno: 1D12 + 4
 Tipo di danno: tagliente
 Peso: 11
 Fattore Velocità: 6
@@ -1215,7 +1215,7 @@ STATISTICHE:
 Capacità in Combattimento: 10% di probabilità di infliggere 2d12 danni da veleno 
 
 THAC0: bonus +5
-Danno:  1D10 +5
+Danno:  1D10 + 5
 Tipo di danno: tagliente
 Peso: 9
 Fattore Velocità: 5
@@ -1275,8 +1275,8 @@ Essendo un potente guerriero, Wulfgar ha bisogno di un arma forte. Questo bellis
 
 STATISTICHE:
 
+THAC0: bonus +5
 Danno: 2D4 +5
-THAC0: +5
 Tipo di danno: schiacciamento
 Peso: 8
 Fattore Velocità: 2
@@ -1325,8 +1325,8 @@ Non utilizzabile da:
 
 STATISTICHE:
 
+THAC0: bonus +2
 Danno: 1D10 + 2
-THACO: bonus +2
 Tipo di danno: tagliente
 Peso: 10
 Fattore Velocità: 8
@@ -1364,7 +1364,7 @@ Weight: 0~
 
 STATISTICS:
 
-THAC0: +1
+THAC0: bonus +1
 Speed Factor: 7
 Weight: 3
 Proficiency Type: Longbow
@@ -1390,7 +1390,7 @@ Weight: 0~
 STATISTICS:
 
 Damage: 1d8+2
-THAC0: +2
+THAC0: bonus +2
 Damage Type:  Slashing
 Weight: 5
 Speed Factor: 5
@@ -1433,6 +1433,19 @@ Not usable by:
  Druid
  Mage 
  Thief~
+// BG2 #55781
+@515 = ~Ruby Pendant~
+// BG2 #2309
+@516 = ~Ruby Pendant of Beguiling
+
+A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+
+STATISTICS
+
+Dire Charm abilities once per day.
+
+Not Usable By:
+ Wizard Slayer~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

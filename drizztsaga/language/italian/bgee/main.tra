@@ -296,7 +296,7 @@ Tipo: ad una mano~
 STATISTICHE:
 
 Danno:  1D4 +3
-THACO: +5 
+THAC0: +5 
 Abilità Speciali: Ogni colpo andato a segno toglie 5 punti ferita dal bersaglio che vengono trasferiti a chi impugna il pugnale.
 Tipo di danno: da punta 
 Peso: 1 
@@ -354,7 +354,7 @@ Tipo: ad una mano~
 STATISTICHE:
 
 Danno: 1D6+4
-THACO: +4
+THAC0: +4
 Abilità Speciale: Infligge veleno al bersaglio se fallisce il tiro salvezza.
 Peso: 3
 Fattore Velocità: 3
@@ -412,7 +412,7 @@ Tipo: ad una mano~
 
 STATISTICHE:
 
-THACO: bonus +3
+THAC0: bonus +3
 Danno:  1D6 + 4, +1D6 di danni da elettricità
 Tipo di danno: contundente
 Peso: 6
@@ -438,7 +438,7 @@ STATISTICHE:
 
 +20% di Resistenza al Fuoco
 
-THACO: +4
+THAC0: +4
 Danno: 2D4 +4, +1-4 danni da freddo extra 
 Tipo di danno: contundente
 Peso: 8
@@ -531,7 +531,7 @@ Tipo: a due mani~
 STATISTICHE:
 
 Danno: +3 (proiettile) 
-THACO: bonus +1 
+THAC0: bonus +1 
 Peso: 12 
 Fattore Velocità: 9 
 Tipo di Competenza: Balestre
@@ -543,7 +543,7 @@ Tipo: a due mani~
 STATISTICHE:
 
 Danno: 1D6 + 1
-THACO: bonus +1
+THAC0: bonus +1
 Tipo di danno: proiettile (perforante)
 Peso: 0
 Dispositivo di lancio: Arco~
@@ -568,7 +568,7 @@ Tipo di Arma: a due mani~
 STATISTICHE:
 
 Danno: 1D8 +3
-THACO: +3 bonus
+THAC0: +3 bonus
 Tipo di danno: tagliente
 Peso: 2
 Fattore Velocità: 3
@@ -646,7 +646,7 @@ Abilità Speciale:
 – Uccide i Non Morti se falliscono il tiro salvezza contro morte (penalita di -4)
 
 Danno: 1D6 + 3 
-THACO: +2
+THAC0: +2
 Tipo di danno: da schiacciamento 
 Peso: 8 
 Fattore Velocità: 6 
@@ -751,8 +751,7 @@ Tipo: ad una mano~
 STATISTICHE:
 
 Danno: 1D6 + 3 
-THACO: +2 
-Incantata per Colpire: +2
+THAC0: +2 
 Bonus al danno da Freddo: 2
 Tipo di danno(in mischia): tagliente 
 Tipo di danno(da lancio): proiettile (perforante) 
@@ -764,13 +763,13 @@ Peso: 3~
 
 STATISTICHE:
 
-Danno (in mischia): 1D6 + 3
-Danno (in lancio): 1D6 + 5
-THACO: +5 
-Incantata per Colpire: +5
-Bonus al danno da Freddo: 2
 Bonus alle Caratteristiche: Forza portata a 25
 Abilità di Combattimento: Uccide gli Orchi all'istante
+
+Danno (in mischia): 1D6 + 3
+Danno (in lancio): 1D6 + 5
+THAC0: +5 
+Bonus al danno da Freddo: 2
 Tipo di danno (in mischia): tagliente 
 Tipo di danno (da lancio): proiettile (perforante) 
 Speciale: Torna nelle mani del lanciatore dopo il lancio 
@@ -797,11 +796,12 @@ Quest'ascia è forgiata e incantata dal drow. Si dice che la stessa Lolth partec
 
 STATISTICHE:
 
-Danno: 1D8 +4 
-THAC0:  +4  
 Abilità Speciali:
  Danno da Fuoco: 4
  Dissolvi Magie ad ogni colpo
+
+THAC0:  +4  
+Danno: 1D8 +4 
 Tipo di danno: tagliente 
 Peso: 5 
 Fattore Velocità: 1 
@@ -983,7 +983,7 @@ Tipo: ad una mano~
 
 STATISTICHE:
 
-THACO: bonus +3 
+THAC0: bonus +3 
 Danno: 1D8 +3 
 Tipo di danno: tagliente 
 Peso: 3 
@@ -1114,7 +1114,7 @@ Richiede: 15 alla Forza~
 STATISTICHE:
 
 Danno: 1D10 + 2
-THACO: bonus +2
+THAC0: bonus +2
 Tipo di danno: tagliente
 Peso: 10
 Fattore Velocità: 8
@@ -1203,6 +1203,19 @@ Requires:
  9 Strength
 
 Weight: 6~
+// BG2 #55781
+@515 = ~Ruby Pendant~
+// BG2 #2309
+@516 = ~Ruby Pendant of Beguiling
+
+A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+
+STATISTICS
+
+Dire Charm abilities once per day.
+
+Not Usable By:
+ Wizard Slayer~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

@@ -457,8 +457,8 @@ END ELSE BEGIN
 	COMPILE ~DRIZZTSAGA/scripts/SNIP/%FishermansLake_AreaScript%.baf~
 END
 
-// Update baldur.bcs to remorve special object from inventory of players
-EXTEND_BOTTOM ~baldur.bcs~ ~DRIZZTSAGA/scripts/SNIP/eRestorWeapon.BAF~
+// Update baldur.bcs to remove special object from inventory of players
+EXTEND_BOTTOM ~baldur.bcs~ ~DRIZZTSAGA/scripts/SNIP/eRestoreWeapon.BAF~
 
 // Add Medusas into the game, part 2
 
@@ -2018,6 +2018,10 @@ COPY ~DRIZZTSAGA/ITM/F_RAISER.ITM~           ~override~
   SAY DESC @308
 
 COPY ~DRIZZTSAGA/ITM/F_REGAMU.ITM~          ~override~       
+  SAY NAME1 @515 
+  SAY NAME2 @515 
+  SAY UNIDENTIFIED_DESC @516 
+  SAY DESC @516
 
 COPY ~DRIZZTSAGA/ITM/F_SCIM03.ITM~           ~override~        
   SAY NAME1 @309 
@@ -2178,10 +2182,10 @@ COPY ~DRIZZTSAGA/BAM_BMP/descr_%BAMvsBMP%~ ~override~
 // itemexcl.2da
 
 COPY_EXISTING ~itemexcl.2da~ ~override~
-	APPEND ~itemexcl.2da~ ~F_MITHCH  1~
-	APPEND ~itemexcl.2da~ ~F_BRUEPL  1~
-	APPEND ~itemexcl.2da~ ~F_OPALPL  1~
-	APPEND ~itemexcl.2da~ ~F_DRGPLA  1~
+	APPEND ~itemexcl.2da~ ~F_MITHCH  1~ UNLESS ~F_MITHCH~
+	APPEND ~itemexcl.2da~ ~F_BRUEPL  1~ UNLESS ~F_BRUEPL~
+	APPEND ~itemexcl.2da~ ~F_OPALPL  1~ UNLESS ~F_OPALPL~
+	APPEND ~itemexcl.2da~ ~F_DRGPLA  1~ UNLESS ~F_DRGPLA~
 
 // Sounds:
 

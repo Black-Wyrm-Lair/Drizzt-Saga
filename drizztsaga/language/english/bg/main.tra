@@ -292,8 +292,9 @@ Not Usable By:
 
 STATISTICS:
 
-Damage:  1D4 +3
-THACO: +5 
+THAC0: +5 bonus
+Damage:  1D4 + 3
+		  
 Special Abilities: Each hit drains 5 hit points from its target and transfers it to the user.
 Damage type:  piercing 
 Weight: 1 
@@ -370,8 +371,8 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1D6+4
-THACO: +4
+THAC0: +4 bonus
+Damage: 1D6 + 4
 Special Ability: Inflicts poison to its target if failing save.
 Weight: 3
 Speed Factor: 3
@@ -446,7 +447,7 @@ Not Usable By:
 
 STATISTICS:
 
-THACO:  +3 bonus
+THAC0: +3 bonus
 Damage:  1D6 + 4, +1D6 electrical damage
 Damage type:  crushing
 Weight: 6
@@ -480,8 +481,8 @@ STATISTICS:
 
 +20% Fire Resistance
 
-THACO:  +4
-Damage:  2D4 +4, +1-4 extra cold damage
+THAC0: +4 bonus
+Damage:  2D4 + 4, +1D4 cold damage
 Damage type:  crushing
 Weight: 8
 Speed Factor: 4
@@ -527,8 +528,9 @@ I sense that something ain’t right; I will try to track Catti-Brie. I also told 
 
 STATISTICS:
 
-Damage: 1D8 +3
+			  
 THAC0: +3 bonus
+Damage: 1D8 + 3
 Damage type: slashing
 Weight: 2
 Speed Factor: 4
@@ -605,8 +607,9 @@ Not Usable By:
 
 STATISTICS:
 
+THAC0:  +1 bonus 
 Damage:  +3 (missile) 
-THACO:  +1 bonus 
+				 
 Weight: 12 
 Speed Factor: 9 
 Proficiency Type: Crossbows
@@ -622,8 +625,9 @@ Not Usable By:
 
 STATISTICS:
 
+THAC0: +1 bonus
 Damage: 1D6 + 1
-THACO: +1 bonus
+			   
 Damage Type: missile (piercing)
 Weight: 0
 Launcher: Bow
@@ -663,8 +667,9 @@ Not usable by:
 
 STATISTICS:
 
-Damage: 1D8 +3
-THACO: +3 bonus
+THAC0: +3 bonus
+Damage: 1D8 + 3
+			   
 Damage type: slashing
 Weight: 2
 Speed Factor: 3
@@ -755,8 +760,9 @@ Special:
 - Extra 1D6 + 3 damage vs. undead
 - Slay undead if failing save vs. death at -4 penalty
 
+THAC0:  +2 (strikes as a +5 weapon)
 Damage:  1D6 + 3   
-THACO:  +2 (strikes as a +5 weapon)
+								   
 Damage type:  crushing 
 Weight: 8 
 Speed Factor: 6 
@@ -878,9 +884,8 @@ Not Usable By:
 
 STATISTICS:
 
-Damage:  1D6 + 3 
-THACO:  +2 
-Enchanted To Hit: +2
+THAC0:  +2 
+Damage:  1D6 +3 
 Damage Bonus Cold: 2
 Damage type (melee):  slashing 
 Damage type (thrown):  missile
@@ -898,13 +903,13 @@ Not usable by:
 
 STATISTICS:
 
-Damage (Melee): 1D6 + 3
-Damage (Thrown): 1D6 + 5
-THACO: +5
-Enchanted To Hit: +5
-Damage Bonus Cold: 2
 Ability Bonus: Strength set to 25
 Combat Abilities: Instant Slaying of Ogres
+
+THAC0: +5
+Damage (Melee): 1D6 + 3
+Damage (Thrown): 1D6 + 5
+Damage Bonus Cold: 2
 Damage type (melee):  slashing 
 Damage type (thrown):  missile
 Special:  Returns to users hand once thrown
@@ -942,11 +947,11 @@ This axe is forged and enchanted by the drow. Rumors whisper that Lolth herself 
 
 STATISTICS:
 
-Damage:  1D8 +4 
-THAC0:  +4  
 Special Abilities:
- Fire Damage: 4
  Dispel Magic each hit
+
+THAC0:  +4  
+Damage:  1D8 + 4, +4 fire damage 
 Damage type:  slashing 
 Weight: 5 
 Speed Factor: 1 
@@ -1202,8 +1207,8 @@ Not Usable By:
 
 STATISTICS:
 
-THACO:  +3 bonus 
-Damage:  1D8 +3 
+THAC0:  +3 bonus 
+Damage:  1D8 + 3 
 Damage type:  slashing 
 Weight: 3 
 Speed Factor: 3 
@@ -1240,7 +1245,7 @@ This large sword is an enchanted version of the barbaric swords of the Northern 
 STATISTICS:
 
 THAC0: +4 bonus
-Damage:  1D12 +4
+Damage:  1D12 + 4
 Damage type:  slashing
 Weight:  11
 Speed Factor: 6
@@ -1262,7 +1267,7 @@ STATISTICS:
 Combat Abilities:  10% Chance of 2d12 poison damage
 
 THAC0: +5 bonus
-Damage:  1D10 +5
+Damage:  1D10 + 5
 Damage type:  slashing
 Weight:  9
 Speed Factor: 5
@@ -1323,8 +1328,9 @@ Being a mighty barbarian warrior, Wulfgar required a hefty weapon. This beautifu
 
 STATISTICS:
 
-Damage: 2D4 +5
-THAC0: +5
+THAC0: +5 bonus
+Damage: 2D4 + 5
+		 
 Damage type: crushing
 Weight: 8
 Speed Factor: 2
@@ -1374,8 +1380,9 @@ Not Usable By:
 
 STATISTICS:
 
+THAC0:  +2 bonus
 Damage:  1D10 + 2
-THACO:  +2 bonus
+				
 Damage Type:  Slashing
 Weight: 10
 Speed Factor: 8
@@ -1413,7 +1420,7 @@ Weight: 0~
 
 STATISTICS:
 
-THAC0: +1
+THAC0: +1 bonus
 Speed Factor: 7
 Weight: 3
 Proficiency Type: Longbow
@@ -1438,8 +1445,8 @@ Weight: 0~
 
 STATISTICS:
 
-Damage: 1d8+2
-THAC0: +2
+THAC0: +2 bonus
+Damage: 1d8 + 2
 Damage Type:  Slashing
 Weight: 5
 Speed Factor: 5
@@ -1471,7 +1478,7 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1d4+1
+Damage: 1d4 + 1
 Damage Type:  Crushing
 Weight: 6
 Speed Factor: 4
@@ -1482,6 +1489,19 @@ Not usable by:
  Druid
  Mage 
  Thief~
+// BG2 #55781
+@515 = ~Ruby Pendant~
+// BG2 #2309
+@516 = ~Ruby Pendant of Beguiling
+
+A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+
+STATISTICS
+
+Dire Charm abilities once per day.
+
+Not Usable By:
+ Wizard Slayer~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
