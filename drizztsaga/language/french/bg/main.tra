@@ -293,8 +293,8 @@ Non utilisable par :
 
 PARAMETRES :
 
+TAC0 : +5 bonus
 Dégats : 1D4 + 3
-TAC0 : +5
 Type de dégats : Perforant
 Capacités Spéciales : Chaque coup draine 5 points de vie à la cible et les transfère à l'utilisateur.
 Poids : 1
@@ -373,8 +373,8 @@ Non utilisable par :
 
 PARAMETRES :
  
+TAC0 : +4 bonus
 Dégats : 1D6 + 4
-TAC0 : +4
 Capacité spéciale : Empoisonne la cible si elle rate son jet de sauvegarde.
 Poids : 3
 Facteur de vitesse : 3
@@ -454,7 +454,7 @@ Non utilisable par :
 PARAMETRES :
 
 TAC0 : +3 bonus
-Dégâts : 1D6 +4, + 1D6 de dégâts électriques
+Dégâts : 1D6 + 4, + 1D6 de dégâts électriques
 Type de dégats : contondant
 Poids : 6
 Facteur de vitesse : 4
@@ -487,8 +487,8 @@ PARAMETRES :
 
 +20% de résistance au feu
 
-TAC0: +4
-Dégâts : 2D4 +4, +1-4 de dégats de froid
+TAC0: +4 bonus
+Dégâts : 2D4 + 4, +1D4 de dégats de froid
 Type de dégâts : Contondant
 Poids : 8
 Facteur de vitesse : 4
@@ -535,8 +535,8 @@ Je sens que quelque chose ne tourne pas rond ; je vais essayer de retrouver Catt
 
 PARAMETRES :
 
+TAC0 : +3 bonus
 Dégâts : 1D8 +3
-TAC0 : +3 de bonus
 Type de dégâts : Tranchant
 Poids : 2
 Facteur de vitesse : 4
@@ -555,7 +555,7 @@ PARAMETRES :
 
 Bonus à la Classe d'Armure : 1
 Spécial :
- +1 au TACO
+ +1 au TAC0
  +1 aux Jets de Sauvegardes
 Poids : 1
 Non utilisable par :
@@ -626,8 +626,8 @@ Non utilisable par :
 
 PARAMETRES :
 
-Dégâts : 1D6 + 1
 TAC0 : +1 bonus
+Dégâts : 1D6 + 1
 Type de dégâts : projectile (perforant)
 Poids : 0
 Arme de jet : Arc
@@ -642,8 +642,8 @@ Ceci est un autre artefact célèbre du côté du ValBise. Cet arc appartient en par
 
 PARAMETRES :
 
-Dégâts : +2
 TAC0 : +2
+Dégâts : +2
 Poids : 2
 Facteur de vitesse : 2
 Type d'arme : Arc long
@@ -658,8 +658,8 @@ Non utilisable par :
 
 PARAMETRES :
 
-Dégâts : 1D8 +3
-TAC0 : +3 de bonus
+TAC0 : +3 bonus
+Dégâts : 1D8 + 3
 Type de dégâts : tranchants
 Poids : 2
 Facteur de vitesse : 3
@@ -753,8 +753,8 @@ Capacité spéciale:
 - Bonus aux dégâts aux morts-vivants : 1D6+3
 - Tue directement un mort-vivant si il rate son jet de sauvegarde contre la mort.
 
-Dégâts : 1D6+3
-TAC0 : +2
+TAC0 : +2 bonus
+Dégâts : 1D6 + 3
 Type de dégâts : contondant
 Poids : 8
 Facteur de vitesse : 6
@@ -875,9 +875,8 @@ Voleur~
 
 PARAMETRES :
 
+TAC0 : +2 bonus
 Dégats: 1D6 + 3
-TAC0 : +2
-Enchantement d'arme : +2
 Dégats bonus de froid : +2
 Type de dégâts (mêlée) : tranchants
 Type de dégâts (lancer) : Projectile (perforant)
@@ -889,13 +888,13 @@ Poids : 3~
 
 PARAMETRES :
 
-Dégats (mêlée) : 1D6 + 3
-Dégats (lancer) : 1D6 + 5
-TAC0 : +5
-Enchantement d'arme : +5
-Dégâts Bonus de froid : 2
 Capacité : Force portée à 25
 Capacité de combat : Tue instantanémént les ogres.
+
+TAC0 : +5 bonus
+Dégats (mêlée) : 1D6 + 3
+Dégats (lancer) : 1D6 + 5
+Dégâts Bonus de froid : 2
 Type de dégâts (mêlée) : Tranchants
 Type de dégâts (lancer) : Projectile (perforant)
 Spécial : revient dans la main du lanceur
@@ -925,11 +924,12 @@ Non utilisable par :
 @268 = ~Il s'agit de la hache personnelle de Jarlaxle, la 'Hache de guerre de Dispersion de Flammes'. Elle a été forgée et enchantée par les drows. Des rumeurs courent comme quoi Lolth elle-même se serait impliquée dans la fabrication de cette arme dévastatrice.
 
 PARAMETRES :
-Dégâts : 1D8 +4
-Enchantement d'arme : +4
+
 Capacités spéciales :
-Dégâts de feu : 4
 Dissipation des effets magiques à chaque coup
+
+TAC0 : +4 bonus
+Dégâts : 1D8 + 4, +4 dégâts du feu
 Type de dégâts : tranchant
 Poids : 5
 Facteur de vitesse : 1
@@ -999,8 +999,10 @@ Capacités d'équipement :
  Invisibilité
  Immunité aux charmes
  Protection contre le mal
+
 Capacités de combat (chaque coup) : Dissipation de la magie
-TAC0 : +1
+
+TAC0 : +1 bonus
 Dégâts : 1D6 +1
 Type de dégât : contondant
 Poids : 4
@@ -1159,8 +1161,8 @@ Inutilisable par :
 
 PARAMETRES :
 
-TAC0 : +3
-Dégâts : 1D8 +3
+TAC0 : +3 bonus
+Dégâts : 1D8 + 3
 Type de Dégâts : tranchant
 Poids : 3
 Facteur de vitesse : 3
@@ -1195,8 +1197,8 @@ Cette immense épée est une version enchantée des épées barbares des tribus du gr
 
 PARAMETRES :
 
-TAC0 : +4
-Dégâts : 1D10 +4
+TAC0 : +4 bonus
+Dégâts : 1D10 + 4
 Type de dégât : tranchant
 Poids : 10
 Facteur de vitesse : 6
@@ -1215,8 +1217,8 @@ PARAMETRES :
 
 Capacité de combat: 10% de chance d'infliger 2D12 de dégats de poison à l'adversaire
 
-TAC0 : +5
-Dégâts : 1D10 +5
+TAC0 : +5 bonus
+Dégâts : 1D10 + 5
 Type de Dégats : tranchant
 Poids : 9
 Facteur de vitesse : 5
@@ -1281,8 +1283,8 @@ Cette arme a été faite spécifiquement pour Wulfgar par Bruenor Marteauguerre, et
 
 PARAMETRES :
  
-Dégâts :  2D4 +5
-TAC0 : +5
+TAC0 : +5 bonus
+Dégâts :  2D4 + 5
 Type de Dégâts :  Contondant
 Poids : 8
 Facteur de Vitesse : 2
@@ -1311,7 +1313,7 @@ Bien que ce soit difficile de le vérifier, il semblerait que la corde de cette a
 
 PARAMETRES :
 
-TAC0 : +3
+TAC0 : +3 bonus
 Dégâts (projectiles) : +5
 Poids : 11
 Facteur de vitesse : 7
@@ -1330,8 +1332,8 @@ Non utilisable par :
 
 STATISTIQUES:
 
+TAC0 : +2 bonus
 Dégats : 1D10 + 2
-TAC0 : +2
 Types de dégâts : tranchant
 Poids : 10
 Facteur de vitesse : 8
@@ -1438,6 +1440,15 @@ Not usable by:
  Druid
  Mage 
  Thief~
+// BG2 #55781
+@515 = ~Pendentif rubis~
+// BG2 #2309
+@516 = ~Pendentif rubis
+
+Un des jouets favoris du voleur Regis, idéal pour convaincre les gens qu’il a raison.
+
+PARAMÈTRES :
+Lance un Charme néfaste par jour.~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

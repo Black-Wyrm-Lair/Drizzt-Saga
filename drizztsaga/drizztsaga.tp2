@@ -58,6 +58,7 @@ ALWAYS
 	INCLUDE ~DRIZZTSAGA\lib\worldmap_update.tph~
 	INCLUDE ~DRIZZTSAGA\lib\del_are_trigger.tph~
 	INCLUDE ~DRIZZTSAGA\tpa\ds-core.tpa~
+	INCLUDE ~drizztsaga\tpa\ds-nerfing.tpa~
 		
 	OUTER_SET GameTypeDetected = 1
 		  	
@@ -358,6 +359,31 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
 		COMPILE_BAF_TO_BCS
 	BUT_ONLY
 END
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//// Optional component: Creatures, Items and XP Rebalanced					  /////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+BEGIN @1510
+GROUP @1509
+DESIGNATED 4
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+LAM ~DS_CREATURES_NERFING~
+
+BEGIN @1511
+GROUP @1509
+DESIGNATED 5
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+LAM ~DS_ITEMS_NERFING~
+
+BEGIN @1512
+GROUP @1509
+DESIGNATED 6
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+LAM ~DS_XP_NERFING~
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 // EOF

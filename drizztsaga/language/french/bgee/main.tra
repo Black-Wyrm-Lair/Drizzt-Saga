@@ -446,7 +446,7 @@ PARAMETRES :
 +20% de résistance au feu
 
 TAC0: +4
-Dégâts : 2D4 +4, +1-4 de dégats de froid
+Dégâts : 2D4 +4, +1D4 de dégats de froid
 Type de dégâts : Contondant
 Poids : 8
 Facteur de vitesse : 4
@@ -504,7 +504,7 @@ PARAMETRES :
 
 Bonus à la Classe d'Armure : 1
 Spécial :
- +1 au TACO
+ +1 au TAC0
  +1 aux Jets de Sauvegardes
 Poids : 1~ 
 @185 = ~Armure de plates complète~
@@ -763,7 +763,6 @@ PARAMETRES :
 
 Dégats: 1D6 + 3
 TAC0 : +2
-Enchantement d'arme : +2
 Dégats bonus de froid : +2
 Type de dégâts (mêlée) : tranchants
 Type de dégâts (lancer) : Projectile (perforant)
@@ -775,13 +774,13 @@ Poids : 3~
 
 PARAMETRES :
 
+Capacité : Force portée à 25
+Capacité de combat : Tue instantanémént les ogres.
+
 Dégats (mêlée) : 1D6 + 3
 Dégats (lancer) : 1D6 + 5
 TAC0 : +5
-Enchantement d'arme : +5
 Dégâts Bonus de froid : 2
-Capacité : Force portée à 25
-Capacité de combat : Tue instantanémént les ogres.
 Type de dégâts (mêlée) : Tranchants
 Type de dégâts (lancer) : Projectile (perforant)
 Spécial : revient dans la main du lanceur
@@ -806,11 +805,12 @@ Force nécessaire : 10~
 @268 = ~Il s'agit de la hache personnelle de Jarlaxle, la 'Hache de guerre de Dispersion de Flammes'. Elle a été forgée et enchantée par les drows. Des rumeurs courent comme quoi Lolth elle-même se serait impliquée dans la fabrication de cette arme dévastatrice.
 
 PARAMETRES :
-Dégâts : 1D8 +4
-Enchantement d'arme : +4
+
 Capacités spéciales :
-Dégâts de feu : 4
 Dissipation des effets magiques à chaque coup
+
+Dégâts : 1D8 +4, +4 dégâts du feu
+TAC0 : +4
 Type de dégâts : tranchant
 Poids : 5
 Facteur de vitesse : 1
@@ -1214,6 +1214,15 @@ Requires:
  9 Strength
 
 Weight: 6~
+// BG2 #55781
+@515 = ~Pendentif rubis~
+// BG2 #2309
+@516 = ~Pendentif rubis
+
+Un des jouets favoris du voleur Regis, idéal pour convaincre les gens qu’il a raison.
+
+PARAMÈTRES :
+Lance un Charme néfaste par jour.~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

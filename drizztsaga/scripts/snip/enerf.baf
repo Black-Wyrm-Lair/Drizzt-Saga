@@ -1,0 +1,52 @@
+
+IF
+	!InParty(Myself)
+	!InParty("F_DRIZZT")  // Drizzt
+	!Dead("F_DRIZZT")  // Drizzt
+	OR(2)
+		PartyHasItem("F_DRIWP1")  // Icingdeath +3
+		PartyHasItem("F_PANTH")  // Black Panther Figurine
+THEN
+	RESPONSE #100
+		TakePartyItem("F_DRIWP1")  // Icingdeath +3
+		TakePartyItem("F_PANTH")  // Black Panther Figurine
+END
+
+IF
+	!InParty(Myself)
+	!InParty("F_BRUENOR")  // Bruenor
+	!Dead("F_BRUENOR")  // Bruenor
+	OR(2)
+		PartyHasItem("F_BRUEAX")  // Battle Axe +3
+		PartyHasItem("F_BRUEXB")  // Heavy Crossbow +1
+THEN
+	RESPONSE #100
+		TakePartyItem("F_BRUEAX")  // Battle Axe +3
+		TakePartyItem("F_BRUEXB")  // Heavy Crossbow +1
+END
+
+IF
+	!InParty(Myself)
+	!InParty("F_CATTIBR")  // Catti-Brie
+	!Dead("F_CATTIBR")  // Catti-Brie
+	OR(2)
+		PartyHasItem("F_CATSBW")  // Taurmaril +2
+		PartyHasItem("F_CATSWD")  // Khazid-Zhea +3
+THEN
+	RESPONSE #100
+		TakePartyItem("F_CATSBW")  // Taurmaril +2
+		TakePartyItem("F_CATSWD")  // Khazid-Zhea +3
+END
+
+IF
+	!InParty(Myself)
+	!InParty("F_WULFGAR")  // Wulfgar
+	!Dead("F_WULFGAR")  // Wulfgar
+	OR(2)
+		PartyHasItem("F_WULFHI")  // Wulfgar's Fur Armor
+		PartyHasItem("F_WULFHM")  // Aegis-Fang +5
+THEN
+	RESPONSE #100
+		TakePartyItem("F_WULFHI")  // Wulfgar's Fur Armor
+		TakePartyItem("F_WULFHM")  // Aegis-Fang +5
+END

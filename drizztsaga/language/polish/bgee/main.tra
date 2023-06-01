@@ -1634,6 +1634,19 @@ Wymagania:
 – Siła: 9
 
 Waga: 6~
+// BG2 #55781
+@515 = ~Ruby Pendant~
+// BG2 #2309
+@516 = ~Ruby Pendant of Beguiling
+
+A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+
+STATISTICS
+
+Dire Charm abilities once per day.
+
+Not Usable By:
+ Wizard Slayer~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries moved here from autotra dialog files for ADD_JOURNAL:

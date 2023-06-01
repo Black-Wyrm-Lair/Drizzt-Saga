@@ -1,0 +1,231 @@
+// ---------------------------------------------------------------------------------------------------
+DEFINE_ACTION_MACRO ~DS_ITEMS_NERFING~ BEGIN
+// ---------------------------------------------------------------------------------------------------
+
+// +5 weapons into +3
+ACTION_FOR_EACH ~file~ IN
+				~F_ADAGGR~ // Snake Soul +5
+				~F_ICEAX5~ // Ice Slasher +5
+				~F_SW2H17~ // Belhifet's Sword of Grief +5
+BEGIN
+  COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +5 weapon into "only" +3 weapon
+	WRITE_SHORT 0x60 3 // Enchantment Level
+    LPF ALTER_ITEM_HEADER INT_VAR thac0_bonus = 3 damage_bonus = 3 END
+	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
+	  READ_LONG ~%offset%~ desc_strref
+	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+		READ_STRREF ~%offset%~ desc
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 5~ ~+ 3~ // change thac0 and damage modifier in description to + 3
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+5~ ~+3~ // change thac0 and damage modifier in name and description to +3
+		END
+	  END
+	  SAY_EVALUATED offset ~%desc%~
+	END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+// +4 weapons into +2
+ACTION_FOR_EACH ~file~ IN
+				~F_ARTSWD~ // Snake Bite +4
+				~F_BLUN35~ // Ice Star +4
+				~F_JARLAX~ // Battleaxe of Dispelling Fire +4
+				~F_SW2H09~ // Warblade +4
+BEGIN
+  COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +4 weapon into "only" +2 weapon
+	WRITE_SHORT 0x60 2 // Enchantment Level
+    LPF ALTER_ITEM_HEADER INT_VAR thac0_bonus = 2 damage_bonus = 2 END
+	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
+	  READ_LONG ~%offset%~ desc_strref
+	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+		READ_STRREF ~%offset%~ desc
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 4~ ~+ 2~ // change thac0 and damage modifier in description to + 2
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+4~ ~+2~ // change thac0 and damage modifier in name and description to +2
+		END
+	  END
+	  SAY_EVALUATED offset ~%desc%~
+	END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+// some +3 weapons into +2
+ACTION_FOR_EACH ~file~ IN
+				~F_XBOW08~ // Crossbow +3
+				~F_SCIM03~ // Scimitar +3
+BEGIN
+  COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +3 weapon into "only" +2 weapon
+	WRITE_SHORT 0x60 2 // Enchantment Level
+    LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 2 damage_bonus = 2 END
+    LPF ALTER_ITEM_HEADER INT_VAR header_type = 4 thac0_bonus = 3 damage_bonus = 4 END
+	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
+	  READ_LONG ~%offset%~ desc_strref
+	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+		READ_STRREF ~%offset%~ desc
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 3~ ~+ 2~ // change thac0 and damage modifier in name and description to +2
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+3~ ~+2~ // change thac0 and damage modifier in name and description to +2
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+ 5~ ~+ 4~ // change damage modifier in description to +4
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+5~ ~+4~ // change damage modifier in description to +4
+		END
+	  END
+	  SAY_EVALUATED offset ~%desc%~
+	END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_FOR_EACH ~file~ IN
+				~F_AMUL28~ // Amulet of the Master Harper
+				~F_GAXRNG~ // Ring of Kangaxx
+BEGIN
+  COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +x to AC and saves into "only" +1
+    PATCH_FOR_EACH ~opco~ IN 0 33 34 35 36 37 BEGIN
+      LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = EVAL ~%opco%~ parameter1 = 1 END
+    END
+    WRITE_LONG 0x60 1 // Enchantment Level
+	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
+	  READ_LONG ~%offset%~ desc_strref
+	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+		READ_STRREF ~%offset%~ desc
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+3~ ~+1~ // change AC and saves modifier in name and description to +1
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+2~ ~+1~ // change AC and saves modifier in name and description to +1
+		END
+	  END
+	  SAY_EVALUATED offset ~%desc%~
+	END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+END 	// DEFINE_ACTION_MACRO
+// ---------------------------------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------------------------------
+DEFINE_ACTION_MACRO ~DS_XP_NERFING~ BEGIN
+// ---------------------------------------------------------------------------------------------------
+
+ACTION_FOR_EACH ~file~ IN // XP nerfing: 1/4
+				~F_ARTEMI~
+				~F_BEARFM~
+				~F_BEAROL~
+				~F_BEARW1~
+				~F_BEARW2~
+				~F_BEL~
+				~F_CORN~
+				~F_CORN02~
+				~F_CYCLOP~
+				~F_DEADBO~
+				~F_DEADHR~
+				~F_DEADMA~
+				~F_DEADWM~
+				~F_DEATHK~
+				~F_DEATHL~
+				~F_DEMDRG~
+				~F_DEMSPI~
+				~F_DEMWAR~
+				~F_DIPNOS~
+				~F_DRAGON~
+				~F_DROMAG~
+				~F_DROWAR~
+				~F_DROWPR~
+				~F_DRSCUL~
+				~F_ELMINS~
+				~F_ERRTU~
+				~F_ETTIN~
+				~F_GHOST~
+				~F_GIANTF~
+				~F_GOBELE~
+				~F_GOBLIN~
+				~F_HARPY~
+				~F_JARLAX~
+				~F_LICH~
+				~F_MARI~
+				~F_MEDUSA~
+				~F_MUMMY~
+				~F_NIB~
+				~F_ORC~
+				~F_ROBED~
+				~F_ROBED2~
+				~F_SHFIEN~
+				~F_SLAYSH~
+				~F_SPIBEA~
+				~F_SPIDQU~
+				~F_TANARI~
+				~F_VALEN~
+				~F_VAMPF~
+				~F_WAILIN~
+				~F_WERECH~
+				~F_WERWGR~
+				~F_WLFSPR~
+				~F_WLFWGR~
+BEGIN
+  COPY_EXISTING ~%file%.cre~ ~override~ 
+	READ_SHORT 0x14 ~xp_org~
+	SET xp_value = (%xp_org% / 4)
+	WRITE_SHORT 0x14 ~%xp_value%~
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+END 	// DEFINE_ACTION_MACRO
+// ---------------------------------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------------------------------
+DEFINE_ACTION_MACRO ~DS_CREATURES_NERFING~ BEGIN
+// ---------------------------------------------------------------------------------------------------
+
+COPY_EXISTING ~F_ARTEMI.CRE~ ~override~ 
+	REPLACE_CRE_ITEM ~%_%RING05~ #0 #0 #0 ~identified&unstealable&undroppable~ ~lring~
+	REPLACE_CRE_ITEM ~%_%RING07~ #0 #0 #0 ~identified&unstealable&undroppable~ ~rring~
+	REPLACE_CRE_ITEM ~F_BOOTHS~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~F_BRUENO.CRE~ ~override~ 
+	REPLACE_CRE_ITEM ~F_BRUEHL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~helmet~
+	REPLACE_CRE_ITEM ~F_BRUEPL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~armor~
+	REPLACE_CRE_ITEM ~%_%BRAC10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
+	BUT_ONLY_IF_IT_CHANGES
+	
+COPY_EXISTING ~F_CATTIB.CRE~ ~override~ 
+	REPLACE_CRE_ITEM ~%_%BRAC04~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
+	BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~F_DEATHK.CRE~ ~override~
+	REPLACE_CRE_ITEM ~%_%SW2H02~ #0 #0 #0 ~NONE~ ~inv1~
+	BUT_ONLY_IF_IT_CHANGES	
+
+COPY_EXISTING ~F_DEATHL.CRE~ ~override~
+	REPLACE_CRE_ITEM ~F_SW2H08~ #0 #0 #0 ~unstealable&undroppable~ ~weapon1~
+	BUT_ONLY_IF_IT_CHANGES
+	
+COPY_EXISTING ~F_DRIZZT.CRE~ ~override~ 
+	REPLACE_CRE_ITEM ~%_%AMUL17~ #0 #0 #0 ~identified&unstealable&undroppable~ ~amulet~
+	REPLACE_CRE_ITEM ~%_%BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	REPLACE_CRE_ITEM ~F_ELFCLK~ #0 #0 #0 ~identified&unstealable&undroppable~ ~cloak~
+	BUT_ONLY_IF_IT_CHANGES
+	
+COPY_EXISTING ~F_DROWPR.CRE~ ~override~
+	REPLACE_CRE_ITEM ~HAMM02~ #0 #0 #0 ~NONE~ ~weapon1~
+	BUT_ONLY_IF_IT_CHANGES
+	
+COPY_EXISTING ~F_JARLAX.cre~ ~override~
+	REPLACE_CRE_ITEM ~%_%BRAC10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~gloves~
+	REPLACE_CRE_ITEM ~%_%BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	BUT_ONLY_IF_IT_CHANGES
+	
+COPY_EXISTING ~F_REGIS.CRE~ ~override~
+	REPLACE_CRE_ITEM ~%_%BOOT01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~boots~
+	BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~F_WULFGA.CRE~ ~override~ 
+	REPLACE_CRE_ITEM ~F_WINTCL~ #0 #0 #0 ~identified&unstealable&undroppable~ ~cloak~
+	BUT_ONLY_IF_IT_CHANGES
+
+// Update base script of Drizzt's party to remove special object from inventory of players if they are no more in the party
+EXTEND_BOTTOM ~f_drizzt.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
+EXTEND_BOTTOM ~f_brueno.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
+EXTEND_BOTTOM ~f_cattib.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
+EXTEND_BOTTOM ~f_regis2.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
+EXTEND_BOTTOM ~f_wulfga.bcs~ ~DRIZZTSAGA/scripts/SNIP/eNerf.BAF~
+
+END 	// DEFINE_ACTION_MACRO
+// ---------------------------------------------------------------------------------------------------

@@ -1,0 +1,54 @@
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	Dead("F_DRIZZT")  // Drizzt
+	HasItem("F_DRIWP1",Player1) // Icingdeath +3
+THEN
+	RESPONSE #100
+		TakeItemReplace("sw1h15","F_DRIWP1",Player1)
+END
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	Dead("F_DRIZZT")  // Drizzt
+	HasItem("F_DRIWP1",Player2) // Icingdeath +3
+THEN
+	RESPONSE #100
+		TakeItemReplace("sw1h15","F_DRIWP1",Player2)
+END
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	Dead("F_DRIZZT")  // Drizzt
+	HasItem("F_DRIWP1",Player3) // Icingdeath +3
+THEN
+	RESPONSE #100
+		TakeItemReplace("sw1h15","F_DRIWP1",Player3)
+END
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	Dead("F_DRIZZT")  // Drizzt
+	HasItem("F_DRIWP1",Player4) // Icingdeath +3
+THEN
+	RESPONSE #100
+		TakeItemReplace("sw1h15","F_DRIWP1",Player4)
+END
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	Dead("F_DRIZZT")  // Drizzt
+	HasItem("F_DRIWP1",Player5) // Icingdeath +3
+THEN
+	RESPONSE #100
+		TakeItemReplace("sw1h15","F_DRIWP1",Player5)
+END
+
+IF
+	!InParty("F_DRIZZT")  // Drizzt
+	Dead("F_DRIZZT")  // Drizzt
+	HasItem("F_DRIWP1",Player6) // Icingdeath +3
+THEN
+	RESPONSE #100
+		TakeItemReplace("sw1h15","F_DRIWP1",Player6)
+END

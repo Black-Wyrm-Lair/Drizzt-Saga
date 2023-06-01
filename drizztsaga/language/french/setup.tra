@@ -6,7 +6,10 @@
 @489  = ~Version BP-BGT Worldmap : ajout de toutes les zones a la carte du monde (requiert BP-BGT Worldmap)~
 @1507 = ~Eleve la limite d'XP~
 @1508 = ~Debut repousse : Drizzt revient apres la Tour de Durlag~
-@1509 = ~Nouvelle rencontre: Valen dans les ruines du temple de Bhaal~
+@1509 = ~Composants optionnels : reequilibrage global~
+@1510 = ~NPC moins genereux~
+@1511 = ~Objets moins puissants~
+@1512 = ~XP des creatures divisee 4~
 
 /* Setup feedback:  */
 

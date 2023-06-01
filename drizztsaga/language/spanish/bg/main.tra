@@ -292,8 +292,8 @@ No lo puede usar:
 
 ESTADÍSTICAS:
 
-Daño:  1d4+3
-THAC0: +5 
+THAC0: Bonificador +5 
+Daño:  1d4 + 3
 Habilidades especiales:
    Caga golpe absorbe 5 puntos de golpe del objetivo y los transfiere al usuario.
    
@@ -375,8 +375,8 @@ No lo puede usar:
 
 ESTADÍSTICAS:
 
-Daño: 1d6+4
-THAC0: +4
+THAC0: Bonificador +4
+Daño: 1d6 + 4
 Habilidad especial: 
    Inflige veneno en su objetivo si falla la tirada de salvación.
    
@@ -454,7 +454,7 @@ No lo puede usar:
 ESTADÍSTICAS:
 
 THAC0:  Bonificador +3
-Daño:  1d6+4, +1d6 de daño eléctrico
+Daño:  1d6 + 4, +1d6 de daño eléctrico
 Tipo de daño:   Contundente
 Peso: 6
 Factor de velocidad: 4
@@ -487,8 +487,8 @@ ESTADÍSTICAS:
 
 +20% Resistencia al fuego
 
-THAC0:  +4
-Daño:  2d4+4, +1-4 de daño por frío extra
+THAC0:  Bonificador +4
+Daño:  2d4 + 4, +1d4 de daño por frío extra
 Tipo de daño:   Contundente
 Peso: 8
 Factor de velocidad: 4
@@ -534,8 +534,8 @@ Presiento que algo no va bien; intentaré buscar a Catti-Brie. También le dije a 
 
 ESTADÍSTICAS:
 
-Daño: 1d8+3
 THAC0:  Bonificador +3
+Daño: 1d8 + 3
 Tipo de daño:  Perforante
 Peso: 2
 Factor de velocidad: 4
@@ -624,8 +624,8 @@ No lo puede usar:
 
 ESTADÍSTICAS:
 
-Daño: 1d6+1
 THAC0:  Bonificador +1
+Daño: 1d6 + 1
 Tipo de daño: proyectil (perforante)
 Peso: 0
 Lanzador: Arco
@@ -641,7 +641,7 @@ Este es otro famoso artefacto de la parte del Valle del Viento Helado. Este arco
 
 ESTADÍSTICAS:
 
-THAC0: +2
+THAC0: Bonificador +2
 Daño: +2
 Peso: 2
 Factor de velocidad: 2
@@ -657,8 +657,8 @@ No lo pueden usar:
 
 ESTADÍSTICAS:
 
-Daño: 1d8+3
 THAC0:  Bonificador +3
+Daño: 1d8 + 3
 Tipo de daño:  Perforante
 Peso: 2
 Factor de velocidad: 3
@@ -751,8 +751,8 @@ Especial:
 - El daño extra contra no muertos: 1d6+3
 - Mata a no muertos si fallan la salvación contra muerte (penalizador -4).
 
-Daño:  1d6+3 
-THAC0:  +2
+THAC0:  Bonificador +2
+Daño:  1d6 + 3 
 Tipo de daño:   Contundente 
 Peso: 8 
 Factor de velocidad: 6 
@@ -873,9 +873,8 @@ No lo puede usar:
 
 ESTADÍSTICAS:
 
-Daño:  1d6+3 
-THAC0:  +2 
-Encantada para golpear: +2
+THAC0:  Bonificador +2 
+Daño:  1d6 + 3 
 Bonificador al daño por frío: 2
 Tipo de daño (refriega):  Perforante 
 Tipo de daño (lanzado):  Proyectil (perforante) 
@@ -887,13 +886,13 @@ Peso: 3~
 
 ESTADÍSTICAS:
 
-Daño (refriega):  1d6+3
-Daño (lanzado):  1d6+5
-THAC0:  +5 
-Encantada para golpear: +5
-Bonificador al daño por frío: 2
 Bonificador de habilidad: Fuerza establecida en 25
 Habilidades en combate: Muerte instantánea de Ogros
+
+THAC0:  Bonificador +5 
+Daño (refriega):  1d6 + 3
+Daño (lanzado):  1d6 + 5
+Bonificador al daño por frío: 2
 Tipo de daño (refriega):  Perforante 
 Tipo de daño (lanzado):  Proyectil (perforante) 
 Especial:  Regresa al usuario una vez lanzada
@@ -925,11 +924,12 @@ Esta hacha está forjada y encantada por los drow. Los rumores dicen que la misma
 
 ESTADÍSTICAS:
 
-Daño:  1d8+4 
-Encantamiento:  +4  
 Habilidades especiales:
 Daño por fuego: 4
 Disipar magia en cada golpe
+
+THAC0:  Bonificador +4  
+Daño:  1d8 + 4 
 Tipo de daño:   Perforante 
 Peso: 5 
 Factor de velocidad: 1 
@@ -1154,7 +1154,7 @@ No lo puede usar:
 ESTADÍSTICAS:
 
 THAC0:  Bonificador +3
-Daño:  1d8+3 
+Daño:  1d8 + 3 
 Tipo de daño:   Perforante 
 Peso: 3 
 Factor de velocidad: 3 
@@ -1190,7 +1190,7 @@ Esta gran espada es una versión encantada de las espadas bárbaras de las tribus 
 ESTADÍSTICAS:
 
 THAC0:  Bonificador +4
-Daño:  1d12 +4
+Daño:  1d12 + 4
 Tipo de daño:   Perforante
 Peso:  11
 Factor de velocidad: 6
@@ -1212,7 +1212,7 @@ ESTADÍSTICAS:
 Habilidades en combate:  10% de posibilidades de 2d12 de daño por veneno
 
 THAC0: Bonificador +5
-Daño:  1d10+5
+Daño:  1d10 + 5
 Tipo de daño:   Perforante
 Peso:  9
 Factor de velocidad: 5
@@ -1272,8 +1272,8 @@ Siendo un poderoso guerrero bárbaro, Wulfgar necesitó un arma robusta. ¡Este mar
 
 ESTADÍSTICAS:
 
-Daño: 2d4+5
-THAC0: +5
+THAC0: Bonificador +5
+Daño: 2d4 + 5
 Tipo de daño:  Contundente
 Peso: 8
 Factor de velocidad: 2
@@ -1322,8 +1322,8 @@ No lo puede usar:
 
 ESTADÍSTICAS:
 
-Daño:  1d10+2
 THAC0:  Bonificador +2
+Daño:  1d10 + 2
 Tipo de daño:   Perforante
 Peso: 10
 Factor de velocidad: 8
@@ -1430,7 +1430,19 @@ Not usable by:
  Druid
  Mage 
  Thief~
+// BG2 #55781
+@515 = ~Colgante de rubí~
+// BG2 #2309
+@516 = ~Colgante de rubí de seducción
 
+Un juguete favorito del ladrón mediano Regis, perfecto para hacer que la gente vea su punto de vista.
+
+ESTADÍSTICAS
+
+Habilidades Dire Charm una vez al día.
+
+No utilizable por:
+ Asesino de magos~
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
 //------------------------------------------------------------------------------------------------
