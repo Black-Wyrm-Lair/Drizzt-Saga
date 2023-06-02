@@ -115,7 +115,7 @@ We wczeœniejszych jego podró¿ach po powierzchni, osobiœcie i serdecznie, choæ z 
 @101  = ~Demoniczny wioœlarz~
 @102  = ~Paj¹k przenikaj¹cy~
 @103  = ~Tanar'ri~
-@104  = ~Velen~ // Changed from Valen
+@104  = ~Valen~
 @105  = ~Wampir~
 @106  = ~Wyj¹ca œmieræ~
 @107  = ~Przywódca wilko³aków~
@@ -144,8 +144,7 @@ We wczeœniejszych jego podró¿ach po powierzchni, osobiœcie i serdecznie, choæ z 
 @130  = ~Tasloi~
 @131  = ~Wiêkszy wilko³ak~
 @132  = ~Wiêkszy ³akowilk~
-@133  = ~szlachetne ifryty~
-
+// @133-@340 below
 @341  = ~[ELMINSTER 1] Hola, wêdrowcze, zatrzymaj siê, gdy ciê prosi starzec.~ [%_%ELMIN01]
 @342  = ~[ELMINSTER 2]~
 @343  = ~[ELMINSTER 3] Irytuj¹ce jest, ¿eœcie sami wybrali ten kierunek. Cofam pomoc, i nie chcê d³u¿ej mieæ z wami do czynienia.~ [%_%ELMIN03]
@@ -1366,7 +1365,7 @@ Ber³o to umo¿liwia kap³anowi rzucenie Zmartwychwstania na martw¹ osobê, jakby po
 PARAMETRY:
 
 Specjalne:
- Zmartwychwstanie (1 ³adunek)
+ Pozwala rzucaæ Zmartwychwstanie (1 ³adunek)
 Waga: 3~
 @309  = ~Sejmitar~
 @310  = ~Sejmitar drowów +3~
@@ -1409,7 +1408,7 @@ Nie mo¿e u¿ywaæ:
 PARAMETRY:
 
 Specjalne:
- Jednorazowo pozwala na przyzwanie tanar'ri
+ Pozwala rzucaæ Przyzwanie tanar'ri
 Waga: 1~
 @315  = ~Miecz oburêczny~
 @316  = ~Ostrze wojny +4~
@@ -1690,18 +1689,21 @@ Nie mo¿e u¿ywaæ:
  Mag
  Z³odziej~
 // BG2 #55781
-@515 = ~Ruby Pendant~
+@515 = ~Rubinowy wisiorek zauroczeñ~
 // BG2 #2309
-@516 = ~Ruby Pendant of Beguiling
+@516 = ~Rubinowy wisiorek zauroczeñ
 
-A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+Wisior ten by³ ulubion¹ zabawk¹ z³odzieja z rasy nizio³ków o imieniu Regis. Dziêki niemu Regis potrafi³ idealnie przedstawiæ ludziom swój punkt widzenia.
 
-STATISTICS
+PARAMETRY:
 
-Dire Charm abilities once per day.
-
-Not Usable By:
- Wizard Slayer~
+Specjalne:
+ Raz dziennie mo¿na rzuciæ Okropne zauroczenie (rzut obronny przeciw czarom neguje)
+Waga: 1
+Nie mo¿e u¿ywaæ:
+ Zabójca magów~
+// BG2 #11438
+@517  = ~Szlachetny ifryt~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries moved here from autotra dialog files for ADD_JOURNAL:

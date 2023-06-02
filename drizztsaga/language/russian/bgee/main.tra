@@ -144,8 +144,7 @@
 @130  = ~Таслой~
 @131  = ~Великий Оборотень~
 @132  = ~Великий Оборотень~
-@133  = ~благородный ифрит~
-
+// @133-@340 below
 @341 = ~[ELMINSTER 1] Здравствуйте, странники, остановитесь и доставьте удовольствие поговорить старому человеку.~ [%_%ELMIN01]
 @342 = ~[ELMINSTER 2]~
 @343 = ~[ELMINSTER 3] Печально, что вы избрали такой путь. Я более не желаю иметь с вами дел.~ [%_%ELMIN03]
@@ -1330,10 +1329,9 @@ A favorite toy of the halfling thief Regis, perfect for making people see his po
 
 STATISTICS
 
-Dire Charm abilities once per day.
-
-Not Usable By:
- Wizard Slayer~
+Dire Charm abilities once per day.~
+// BG2 #11438
+@517  = ~благородный ифрит~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

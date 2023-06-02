@@ -144,8 +144,7 @@ Al principio de sus viajes por la superficie, Alustriel le dio la bienvenida tan
 @130  = ~Tasloi~
 @131  = ~Gran hombre lobo~
 @132  = ~Gran lobo-hombre~
-@133  = ~noble efreeti~
-
+// @133-@340 below
 @341 = ~[ELMINSTER 1] Alto ahí, vagabundo. Detened vuestro camino un momento y dad gusto a un viejo.~ [%_%ELMIN01]
 @342 = ~[ELMINSTER 2]~
 @343 = ~[ELMINSTER 3] Ah, es horrible que esta sea la actitud que habéis elegido. ¡Os retiraré mi apoyo y no tendré más trato con vos!~ [%_%ELMIN03]
@@ -1215,10 +1214,9 @@ Un juguete favorito del ladrón mediano Regis, perfecto para hacer que la gente 
 
 ESTADÍSTICAS
 
-Habilidades Dire Charm una vez al día.
-
-No utilizable por:
- Asesino de magos~
+Habilidades Dire Charm una vez al día.~
+// BG2 #11438
+@517  = ~Noble efreeti~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

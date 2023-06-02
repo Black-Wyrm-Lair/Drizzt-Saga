@@ -3,7 +3,7 @@
 #### Mod for BG1, BGEE, BG1Tutu and BGT
 #### Version 3
 ##### Created by: Flysoup
-##### WeiDU code & updates by: pro5, Badgert, Erebusant
+##### WeiDU code & updates by: pro5, Badgert, Erebusant, Roberciiik, TotoR
 
 ### General overview
 
@@ -21,7 +21,9 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
 
 <details>
     <summary>Upcoming release...</summary>
-    
+    <br/>
+
+By Roberciiik:
 - Drizzt Saga uploaded to GitHub!
 - Fixed IWD animations compatibility issues on BGEE, BGT and TuTu (thanks to TotoR).
 - Fixed joinable NPC spawn issue on EET.
@@ -31,6 +33,15 @@ With the Delayed Start component, the story begins after finishing Durlag's Towe
 - Removed incorrect pile containers from F_6666.ARE.
 - Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra.
 - Moved english soundset to a different directory, so it can be replaced by localized sounds.
-- And other minor fixes (listed in GitHub commits)
-    
+- And other minor fixes (listed in GitHub commits).
+
+By TotoR:
+- New balancing components: items expoilts, items nerfing and XP reduction.
+- Corrected NPC statistics, classes and their items.
+- Fixed bugs in various CRE files (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/8) details).
+- Fixed various items.
+- Used Drizzt Portrait, included in the mod, only for F_DRIZZT.cre.
+- Script file f_robedA.bcs will now summon a Noble Genie (consistency fix between games).
+- Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story. 
+
 </details>
