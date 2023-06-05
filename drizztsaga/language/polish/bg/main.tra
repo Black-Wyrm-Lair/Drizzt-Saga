@@ -1699,9 +1699,7 @@ PARAMETRY:
 
 Specjalne:
  Raz dziennie mo¿na rzuciæ Okropne zauroczenie (rzut obronny przeciw czarom neguje)
-Waga: 1
-Nie mo¿e u¿ywaæ:
- Zabójca magów~
+Waga: 1~
 // BG2 #11438
 @517  = ~Szlachetny ifryt~
 
