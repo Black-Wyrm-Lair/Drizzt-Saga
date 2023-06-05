@@ -116,7 +116,7 @@ We wcześniejszych jego podróżach po powierzchni, osobiście i serdecznie, cho
 @101  = ~Demoniczny wioślarz~
 @102  = ~Pająk przenikający~
 @103  = ~Tanar'ri~
-@104  = ~Velen~ // Changed from Valen
+@104  = ~Valen~
 @105  = ~Wampir~
 @106  = ~Wyjąca śmierć~
 @107  = ~Przywódca wilkołaków~
@@ -145,8 +145,7 @@ We wcześniejszych jego podróżach po powierzchni, osobiście i serdecznie, cho
 @130  = ~Tasloi~
 @131  = ~Większy wilkołak~
 @132  = ~Większy łakowilk~
-@133  = ~szlachetne ifryty~
-
+// @133-@340 below
 @341  = ~[ELMINSTER 1] Hola, wędrowcze, zatrzymaj się, gdy cię prosi starzec.~ [%_%ELMIN01]
 @342  = ~[ELMINSTER 2]~
 @343  = ~[ELMINSTER 3] Irytujące jest, żeście sami wybrali ten kierunek. Cofam pomoc, i nie chcę dłużej mieć z wami do czynienia.~ [%_%ELMIN03]
@@ -1635,18 +1634,21 @@ Wymagania:
 
 Waga: 6~
 // BG2 #55781
-@515 = ~Ruby Pendant~
+@515 = ~Rubinowy wisiorek zauroczeń~
 // BG2 #2309
-@516 = ~Ruby Pendant of Beguiling
+@516 = ~Wisior ten był ulubioną zabawką złodzieja z rasy niziołków o imieniu Regis. Dzięki niemu Regis potrafił idealnie przedstawić ludziom swój punkt widzenia.
 
-A favorite toy of the halfling thief Regis, perfect for making people see his point of view.
+PARAMETRY:
 
-STATISTICS
+Właściwości ładunków:
+– Okropne zauroczenie, raz dziennie (rzut obronny przeciw czarom neguje)
+Zasięg: 11 metrów
+Czas działania: 1 tura
+Obszar działania: 1 istota
 
-Dire Charm abilities once per day.
-
-Not Usable By:
- Wizard Slayer~
+Waga: 1~
+// BG2 #11438
+@517  = ~Szlachetny ifryt~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries moved here from autotra dialog files for ADD_JOURNAL:

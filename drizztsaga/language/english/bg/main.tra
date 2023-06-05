@@ -139,8 +139,7 @@ Early in his surface travels, Alustriel welcomed him as warmly and personally as
 @130  = ~Tasloi~
 @131  = ~Greater Werewolf~
 @132  = ~Greater Wolfwere~
-@133  = ~Noble Efreeti~
-
+// @133-@340 below
 @341 = ~[ELMINSTER 1] Ho there wanderer, stay thy course a moment to indulge an old man.~ [%_%ELMIN01]
 @342 = ~[ELMINSTER 2]~
 @343 = ~[ELMINSTER 3] It is most distressing that this is the course thou've chosen. I remove my support, and will have no further dealings with thee.~ [%_%ELMIN03]
@@ -1342,7 +1341,6 @@ Not usable by:
  Druid
  Mage
  Bard
- 
  Non-chaotic alignments~
 @338  = ~This class of open-face helmet, made of reinforced leather or metal, covers most of the head, save the face and neck.  These helmets commonly provide protection for the nose.  
 
@@ -1498,10 +1496,9 @@ A favorite toy of the halfling thief Regis, perfect for making people see his po
 
 STATISTICS
 
-Dire Charm abilities once per day.
-
-Not Usable By:
- Wizard Slayer~
+Dire Charm abilities once per day.~
+// BG2 #11438
+@517  = ~Noble Efreeti~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:

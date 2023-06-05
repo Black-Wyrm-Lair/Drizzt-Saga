@@ -144,8 +144,7 @@ Trés tôt dans ses voyages à la surface, Alustriel l'accueillit aussi chaleure
 @130 = ~Tasloi~
 @131 = ~Loup-Garou Majeur~
 @132 = ~Muloup Majeur~
-@133 = ~Efrit Noble~
- 
+// @133-@340 below
 @341 = ~[ELMINSTER 1] Hola passants, auriez un moment à accorder à un viel homme ?~ [%_%ELMIN01]
 @342 = ~[ELMINSTER 2]~
 @343 = ~[ELMINSTER 3] Cela m'enlève un poids si c'est le chemin que vous poursuivez. Je vous retire mon soutien, et n'aurais plus jamais aucune relation avec vous.~ [%_%ELMIN03]
@@ -1223,6 +1222,8 @@ Un des jouets favoris du voleur Regis, idéal pour convaincre les gens qu’il a
 
 PARAMÈTRES :
 Lance un Charme néfaste par jour.~
+// BG2 #11438
+@517 = ~Efrit Noble~
 
 //------------------------------------------------------------------------------------------------
 // Journal entries (moved here from autotra dialog files for ADD_JOURNAL:
