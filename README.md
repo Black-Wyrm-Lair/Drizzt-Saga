@@ -28,6 +28,7 @@ By Roberciiik:
 - Fixed IWD animations compatibility issues on BGEE, BGT and TuTu (thanks to TotoR).
 - Fixed joinable NPC spawn issue on EET.
 - New Polish translation by Bartek, formatted to EE by Roberciiik.
+- Biffing is now an optional component.
 - Reviewed and updated items (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/5) details).
 - Removed embedded CRE actors in F_6666.ARE and used proper CRE files instead.
 - Removed incorrect pile containers from F_6666.ARE.

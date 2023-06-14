@@ -115,21 +115,8 @@ ELSE BEGIN
 END
 
 
-PRINT @1505
-
-MAKE_BIFF DZTS-ARE BEGIN
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.ARE~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.TIS~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.WED~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.MOS~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*HT\.BMP~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*LM\.BMP~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*SR\.BMP~
-END
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-//// BP–BGT Worldmap version: access all new areas through worldmap /////////////////////////////////
+//// BP-BGT Worldmap version: access all new areas through worldmap /////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @489
@@ -200,19 +187,6 @@ COPY ~DRIZZTSAGA\ARE-DATA\F_8888.ARE~ ~DRIZZTSAGA\ARE-DATA~
 BUT_ONLY_IF_IT_CHANGES
 
 COPY ~DRIZZTSAGA\ARE-DATA\BPWM~ ~DRIZZTSAGA\ARE-DATA~
-
-
-PRINT @1505
-
-MAKE_BIFF DZTS-ARE BEGIN
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.ARE~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.TIS~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.WED~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*\.MOS~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*HT\.BMP~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*LM\.BMP~
-	~DRIZZTSAGA/ARE-DATA~ ~F_.*SR\.BMP~
-END
 
 
 ///////////////////////////////////////////////////////////////////
@@ -360,27 +334,48 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
 	BUT_ONLY
 END
 
+///////////////////////////////////////////////////////
+//// Optional Biffing /////////////////////////////////
+///////////////////////////////////////////////////////
+
+BEGIN @1513
+DESIGNATED 4
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+REQUIRE_PREDICATE GAME_IS ~Tutu_TotSC BGT~ @1514
+
+ACTION_IF GAME_IS ~Tutu_TotSC BGT~ THEN BEGIN
+	PRINT @1505
+	MAKE_BIFF DZTS-ARE BEGIN
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*\.ARE~
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*\.TIS~
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*\.WED~
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*\.MOS~
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*HT\.BMP~
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*LM\.BMP~
+		~DRIZZTSAGA/ARE-DATA~ ~F_.*SR\.BMP~
+	END
+END
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //// Optional component: Creatures, Items and XP Rebalanced					  /////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 BEGIN @1510
 GROUP @1509
-DESIGNATED 4
+DESIGNATED 5
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 LAM ~DS_CREATURES_NERFING~
 
 BEGIN @1511
 GROUP @1509
-DESIGNATED 5
+DESIGNATED 6
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 LAM ~DS_ITEMS_NERFING~
 
 BEGIN @1512
 GROUP @1509
-DESIGNATED 6
+DESIGNATED 7
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 
 LAM ~DS_XP_NERFING~
