@@ -2,16 +2,15 @@
 /* Components: */
 
 @0    = ~Saga Drizzta dla BG:EE/TuTu/BGT~
-
-// added/changed in v3/BGEE update:
 @1502 = ~Obszary polaczone poprzez krawedzie map (domyslnie)~
 @489  = ~Wszystkie obszary dodane do mapy swiata (wymaga BP-BGT Worldmap)~
 @1507 = ~Zwieksz limit doswiadczenia~
 @1508 = ~Opozniony poczatek: Drizzt dolaczy po ukonczeniu Wiezy Durlaga~
-@1509 = ~Optional components: Overhaul mod balance~
-@1510 = ~Fewer NPC's items exploit~
-@1511 = ~Magical Items Nerfing~
-@1512 = ~XP from Creatures lowered by 3/4~
+@1509 = ~Opcjonalnie: usprawnienia i balansowanie rozgrywki~
+@1510 = ~Usuniecie naduzyc zwiazanych z ekwipunkiem Bohaterow Niezaleznych~
+@1511 = ~Oslabienie magicznych przedmiotow~
+@1512 = ~Obnizenie PD za potwory o 3/4~
+@1513 = ~Kompresja zasobow~
 
 /* Setup feedback:  */
 
@@ -31,11 +30,10 @@
 @370 = ~Kopiuje rozne pliki...~
 @488 = ~Poprawianie BALDUR.GAM...~
 @1500 = ~Wykryto BG:EE, rozpoczeto instalacje...~
-
-// added/changed in v3/BGEE update:
 @1503 = ~Musisz najpierw zainstalowac skladnik glowny: Saga Drizzta.~
 @1504 = ~Rozpakowywanie obszarow...~
 @1505 = ~Kompresowanie obszarow...~
 @1506 = ~Ten skladnik nie jest wymagany w przypadku BGT.~
+@1514 = ~Ten skladnik nie jest wymagany w przypadku EE.~
 
 /* Everything else from this file was moved to MAIN.TRA as of v3 */

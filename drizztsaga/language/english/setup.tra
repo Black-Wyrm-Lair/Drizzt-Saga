@@ -10,6 +10,7 @@
 @1510 = ~Fewer NPC's items exploit~
 @1511 = ~Magical Items Nerfing~
 @1512 = ~XP from Creatures lowered by 3/4~
+@1513 = ~Resource biffing~
 
 /* Setup feedback:  */
 
@@ -32,6 +33,7 @@
 @1504 = ~Unpacking area tilesets...~
 @1505 = ~Biffing area data...~
 @1506 = ~This component is not needed for BGT.~
+@1514 = ~This component is not needed for EE.~
 
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
 

@@ -34,5 +34,9 @@
 @1505 = ~Creation de bif pour les donnees de zones...~
 @1506 = ~Ce composant n'est pas necessaire pour BGT.~
 
+/* New for v4 */
+@1513 = ~Resource biffing~
+@1514 = ~This component is not needed for EE.~
+
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
 
