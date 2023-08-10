@@ -334,12 +334,37 @@ ACTION_IF GAME_IS ~BGT~ BEGIN
 	BUT_ONLY
 END
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+//// Optional component: Creatures, Items and XP Rebalanced					  /////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+BEGIN @1510
+GROUP @1509
+DESIGNATED 4
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+LAM ~DS_CREATURES_NERFING~
+
+BEGIN @1511
+GROUP @1509
+DESIGNATED 5
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+LAM ~DS_ITEMS_NERFING~
+
+BEGIN @1512
+GROUP @1509
+DESIGNATED 6
+REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
+
+LAM ~DS_XP_NERFING~
+
 ///////////////////////////////////////////////////////
 //// Optional Biffing /////////////////////////////////
 ///////////////////////////////////////////////////////
 
 BEGIN @1513
-DESIGNATED 4
+DESIGNATED 1000
 REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
 REQUIRE_PREDICATE GAME_IS ~Tutu_TotSC BGT~ @1514
 
@@ -355,30 +380,6 @@ ACTION_IF GAME_IS ~Tutu_TotSC BGT~ THEN BEGIN
 		~override~ ~F_.*SR\.BMP~
 	END
 END
-///////////////////////////////////////////////////////////////////////////////////////////////
-//// Optional component: Creatures, Items and XP Rebalanced					  /////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////
-
-BEGIN @1510
-GROUP @1509
-DESIGNATED 5
-REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
-
-LAM ~DS_CREATURES_NERFING~
-
-BEGIN @1511
-GROUP @1509
-DESIGNATED 6
-REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
-
-LAM ~DS_ITEMS_NERFING~
-
-BEGIN @1512
-GROUP @1509
-DESIGNATED 7
-REQUIRE_PREDICATE MOD_IS_INSTALLED "drizztsaga.tp2" "0" OR MOD_IS_INSTALLED "drizztsaga.tp2" "1" @1503
-
-LAM ~DS_XP_NERFING~
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
 // EOF
