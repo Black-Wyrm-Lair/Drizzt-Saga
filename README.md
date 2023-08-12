@@ -34,6 +34,7 @@ By Roberciiik:
 - Removed incorrect pile containers from F_6666.ARE.
 - Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra.
 - Moved english soundset to a different directory, so it can be replaced by localized sounds.
+- Corrected doubled cpmvars.tpa entry for "Beregost_House08".
 - And other minor fixes (listed in GitHub commits).
 
 By TotoR:

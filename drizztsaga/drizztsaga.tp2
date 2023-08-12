@@ -23,22 +23,22 @@ ALWAYS
   // only do this once per Weidu session
   ACTION_IF NOT VARIABLE_IS_SET ~GameTypeDetected~ BEGIN
  	
-	ACTION_IF GAME_IS ~BGEE~ BEGIN	  
+	ACTION_IF GAME_IS ~BGEE~ BEGIN
 		// Enhanced Edition:
 		PRINT @1500
 		INCLUDE ~DRIZZTSAGA\lib\g3_bgee_cpmvars.tpa~
 	END
-	ELSE  
-	ACTION_IF GAME_IS ~Tutu_TotSC~ BEGIN	  
+	ELSE
+	ACTION_IF GAME_IS ~Tutu_TotSC~ BEGIN
 		// Tutu:
 		PRINT @353
-		INCLUDE ~DRIZZTSAGA\lib\g3_tutu_cpmvars.tpa~		
-	END			
+		INCLUDE ~DRIZZTSAGA\lib\g3_tutu_cpmvars.tpa~
+	END
 	ELSE
-	ACTION_IF GAME_IS ~BGT~ BEGIN	 
-	  	// BGT:	 	
+	ACTION_IF GAME_IS ~BG2 TOB BGT~ BEGIN
+		// BGT:
 		PRINT @354
-		INCLUDE ~DRIZZTSAGA\lib\g3_bgt_cpmvars.tpa~		
+		INCLUDE ~DRIZZTSAGA\lib\g3_bgt_cpmvars.tpa~
 	END
 
   	// copy ASCII or UTF8 versions of TRAs depending on the platform + finalize sound references while we're at it
