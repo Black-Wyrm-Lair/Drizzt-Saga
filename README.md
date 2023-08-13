@@ -46,4 +46,7 @@ By TotoR:
 - Script file f_robedA.bcs will now summon a Noble Genie (consistency fix between games).
 - Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story. 
 
+By AL|EM:
+ - Added Infinity Auto Packager
+ - Deprecation of 'Raise the XP cap' component in favour of well-maintaaned component from various Tweaks mods.
 </details>
