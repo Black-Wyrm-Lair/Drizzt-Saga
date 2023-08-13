@@ -16,7 +16,7 @@
 @353 = ~TUTU d‚tect‚, installation commenc‚e...~
 @354 = ~BGT d‚tect‚, installation commenc‚e...~
 @355 = ~BG1 original d‚tect‚, installation commenc‚e...~
-@356 = ~ce mod doit ˆtre install sur BGEE, BGT ou BG TUTU, et Totsc et ToB sont requis pour Tutu/BGT...~
+@356 = ~ce mod doit ˜tre install sur BGEE, BGT ou BG TUTU, et Totsc et ToB sont requis pour Tutu/BGT...~
 @357 = ~Installations des nouvelles rŠgles...~
 @358 = ~Installations des animations de cr‚atures...~
 @359 = ~Modification de la carte du monde avec les nouvelles zones...~
@@ -37,6 +37,5 @@
 /* New for v4 */
 @1513 = ~Resource biffing~
 @1514 = ~This component is not needed for EE.~
-
+@1515 = ~This component was removed.~
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
-
