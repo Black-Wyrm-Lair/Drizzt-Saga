@@ -37,6 +37,6 @@
 /* New for v4 */
 @1513 = ~Biffing des ressources~
 @1514 = ~Ce composant n'est pas necessaire pour les version EE.~
+@1515 = ~Attention ! Le composant "Elever la limite d'XP" a été supprimé.~
 
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
-
