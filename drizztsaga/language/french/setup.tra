@@ -1,26 +1,26 @@
 
 /* Components: */
 
-@0 = ~The Drizzt Saga pour BGEE/Tutu/BGT~
+@0 = ~The Drizzt Saga pour BGEE / Tutu / BGT~
 @1502 = ~Version par defaut : zones connectees par des declencheurs de voyage~
 @489  = ~Version BP-BGT Worldmap : ajout de toutes les zones a la carte du monde (requiert BP-BGT Worldmap)~
 @1507 = ~Eleve la limite d'XP~
 @1508 = ~Debut repousse : Drizzt revient apres la Tour de Durlag~
 @1509 = ~Composants optionnels : reequilibrage global~
-@1510 = ~NPC moins genereux~
-@1511 = ~Objets moins puissants~
-@1512 = ~XP des creatures divisee 4~
+@1510 = ~Empecher d'exploiter les objets des PNJ~
+@1511 = ~Reduire la puissance de certains objets~
+@1512 = ~XP recue pour les creatures reduite au 3/4~
 
 /* Setup feedback:  */
 
-@353 = ~TUTU d‚tect‚, installation commenc‚e...~
-@354 = ~BGT d‚tect‚, installation commenc‚e...~
-@355 = ~BG1 original d‚tect‚, installation commenc‚e...~
-@356 = ~ce mod doit ˆtre install sur BGEE, BGT ou BG TUTU, et Totsc et ToB sont requis pour Tutu/BGT...~
-@357 = ~Installations des nouvelles rŠgles...~
-@358 = ~Installations des animations de cr‚atures...~
+@353 = ~TUTU detecte, installation en cours...~
+@354 = ~BGT detecte, installation en cours...~
+@355 = ~BG1 original detecte, installation en cours...~
+@356 = ~ce mod doit etre installe sur BGEE, BGT ou BG TUTU, et Totsc et ToB sont requis pour Tutu/BGT...~
+@357 = ~Installations des nouvelles regles...~
+@358 = ~Installations des animations de creatures...~
 @359 = ~Modification de la carte du monde avec les nouvelles zones...~
-@360 = ~Installations des fichiers des cr‚atures...~
+@360 = ~Installations des fichiers des creatures...~
 @361 = ~Installations des fichiers de sons...~
 @362 = ~Installations des fichiers de zones...~
 @363 = ~Installation des fichiers d'objets...~
@@ -28,15 +28,15 @@
 @369 = ~Compilation des scripts et dialogues...~
 @370 = ~Copie des autres dossiers...~
 @488 = ~Patch du BALDUR.GAM...~
-@1500 = ~BGEE d‚tect‚, installation commenc‚e...~
+@1500 = ~BGEE detecte, installation en cours...~
 @1503 = ~Vous devez d'abord installer le composant principal de Drizzt Saga !~
-@1504 = ~Decompactage des graphismes des zones...~
+@1504 = ~Decompression des graphismes des zones...~
 @1505 = ~Creation de bif pour les donnees de zones...~
 @1506 = ~Ce composant n'est pas necessaire pour BGT.~
 
 /* New for v4 */
-@1513 = ~Resource biffing~
-@1514 = ~This component is not needed for EE.~
+@1513 = ~Biffing des ressources~
+@1514 = ~Ce composant n'est pas necessaire pour les version EE.~
 
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
 
