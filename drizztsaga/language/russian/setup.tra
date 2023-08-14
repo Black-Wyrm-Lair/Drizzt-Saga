@@ -34,7 +34,5 @@
 @1505 = ~Biffing area data...~
 @1506 = ~This component is not needed for BGT.~
 @1514 = ~This component is not needed for EE.~
-
+@1515 = ~Warning! The 'Raise the XP cap' component was removed.~
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
-
-

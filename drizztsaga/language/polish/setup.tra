@@ -30,10 +30,10 @@
 @370 = ~Kopiuje rozne pliki...~
 @488 = ~Poprawianie BALDUR.GAM...~
 @1500 = ~Wykryto BG:EE, rozpoczeto instalacje...~
-@1503 = ~Musisz najpierw zainstalowac skladnik glowny: Saga Drizzta.~
+@1503 = ~Musisz najpierw zainstalowac komponent glowny: Saga Drizzta.~
 @1504 = ~Rozpakowywanie obszarow...~
 @1505 = ~Kompresowanie obszarow...~
-@1506 = ~Ten skladnik nie jest wymagany w przypadku BGT.~
-@1514 = ~Ten skladnik nie jest wymagany w przypadku EE.~
-
+@1506 = ~Ten komponent nie jest wymagany w przypadku BGT.~
+@1514 = ~Ten komponent nie jest wymagany w przypadku EE.~
+@1515 = ~Uwaga! Komponent 'Zwieksz limit doswiadczenia' zostal usuniety.~
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
