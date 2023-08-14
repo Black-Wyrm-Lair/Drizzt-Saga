@@ -284,7 +284,10 @@ Poids : 1
 Facteur de vitesse : 2
 Type de compétence : Dague
 Type : arme à 1 main
-Force nécessaire : 3~
+Force nécessaire : 3
+
+Non utilisable par :
+ Clerc~
 @136 = ~Cette dague est l'une des plus redoutées des Royaumes. Artemis Enteri a mis la main sur cette dague et la combinaison de son acier et des talents mortels d'Artemis au combat font que seuls des héros peuvent espérer survivre à cette lame.
 
 PARAMETRES :
@@ -296,7 +299,10 @@ Capacités Spéciales : Chaque coup draine 5 points de vie à la cible et les trans
 Poids : 1
 Facteur de vitesse : 2
 Type d'arme : Dague
-Type : arme à une main~
+Type : arme à une main
+
+Non utilisable par : 
+ Clerc~
 @137 = ~Besantine~
 @138 = ~Âme du serpent~
 @139 = ~La besantine a peu de choses en commun avec une armure de cuir normale. L'armure de cuir est une protection renforcée, la besantine est souple et comporte des centaines de rivets. Ces derniers sont tellement rapprochés qu'ils forment une couche flexible de métal dur qui permet de contrer toute attaque cinglante et tranchante. Le renforcement de cuir souple n'est rien de plus qu'un moyen de maintenir les rivets en place. 
@@ -305,14 +311,20 @@ PARAMETRES :
 
 Classe d'Armure : 7
 Poids : 25
-Force nécessaire : 6~
+Force nécessaire : 6
+
+Non utilisable par :
+ Mage~
 @140 = ~Cette armure de cuir est l'armure personnelle d'Artemis Enteri.
 
 PARAMETRES :
 
 Capacité spéciale : Immunité contre le poison
 Classe d'Armure : 4
-Poids : 25~
+Poids : 25
+
+Non utilisable par : 
+ Mage~
 @141 = ~Amulette~
 @142 = ~Les amulettes sont généralement des objets magiques suspendus autour du cou par une chaîne. Le type de chaîne accompagnant l'amulette augmente souvent la valeur esthétique de l'objet, mais pas ses propriétés magiques. On ne peut porter qu'une seule amulette autour du cou.~
 @143 = ~Ce médaillon est recherchés à la fois par les voleurs et les bardes, pour des raisons différentes. En effet, en plus de fournir une protection magique contre les attaques physiques, le possesseur de l'amulette voit certaines de ses capacités de voleur augmentées. Mais plus importante encore, du point de vue des bardes, est la capacité de l'amulette à fournir une protection contre toutes les formes de silence.
@@ -321,12 +333,22 @@ PARAMETRES :
 
 +20% pour la détection des pièges
 +3 à la classe d'armure
-Immunité au Silence~ 
+Immunité au Silence
+
+Utilisable par: 
+ Bardes
+ Voleurs~ 
 @144 = ~Amulette de protection contre l'Absorption Vampirique.~
 @145 = ~Cette amulette fut enchantée par un mage tandis qu'il recherchait un artefact que l'on prétendait localisé dans la Montagne des Morts au Val de Bise.
 
 Capacité spéciale : Bénédiction sur le porteur et immunité contre le drain de vie vampirique.
-Celui qui porte l'amulette doit garder à l'esprit que si l'amulette le protège contre le drain de vie, elle annule tous les bonus de constitution.~
+Celui qui porte l'amulette doit garder à l'esprit que si l'amulette le protège contre le drain de vie, elle annule tous les bonus de constitution.
+
+Non utilisable par :
+ Guerrier
+ Voleur
+ Paladin
+ Rôdeur~
 @146 = ~Statuette d'araignée~
 @147 = ~ Cette petite statuette d'araignée brille d'un éclat rougeoyant.~
 @148 = ~ Cette petite figurine en forme d'araignée permet d'invoquer six araignées de phases.
@@ -344,7 +366,12 @@ Poids : 3
 Facteur de vitesse : 3
 Type de compétence : Épée courte
 Type : arme à 1 main
-Force nécessaire : 5~
+Force nécessaire : 5
+
+Non utilisable par :
+ Druide
+ Clerc 
+ Mage~
 @152 = ~L'épée personnelle d'Artemis Enteri.
 
 PARAMETRES :
@@ -355,7 +382,12 @@ Capacité spéciale : Empoisonne la cible si elle rate son jet de sauvegarde.
 Poids : 3
 Facteur de vitesse : 3
 Type d'arme : épée courte
-Type : arme à une main~
+Type : arme à une main
+
+Non utilisable par : 
+ Druide
+ Clerc
+ Mage~
 @153 = ~Enfant du chef de la tribu de l'ours~
 @154 = ~Il s'agit de l'enfant du chef de la tribu de l'ours. Il est toujours vivant malgré ce qu'il a enduré.~
 @155 = ~Corne Sacrée de l'Ours~
@@ -376,7 +408,10 @@ PARAMETRES
 Capacités d'équipement :
 Mémorisation de 1 sort additionnel du 6ème et du 7ème niveau.
 +5 % de Résistance magique.
-Force +1.~
+Force +1.
+
+Utilisable seulement par :
+Clercs bons.~
 @161 = ~Symbole Sacré de Heaume~
 @162 = ~Seuls les plus dévoués des serviteurs des Yeux Sans Sommeil peuvent espérer recevoir en présent ces anneaux sacrés.
 
@@ -385,7 +420,10 @@ PARAMETRES
 Capacités d'équipement :
 Mémorisation de 1 sort additionnel du 6ème et du 7ème niveau.
 +5 % de Résistance magique.
-Force +1.~
+Force +1.
+
+Utilisable seulement par :
+Clercs neutres~
 @163 = ~Symbole Sacré de Talos~
 @164 = ~Seuls les plus fidèles serviteurs du Dieu du Tonnerre peuvent espérer recevoir ces objets magiques.
 
@@ -394,7 +432,10 @@ PARAMETRES
 Capacités d'équipement :
 Mémorisation de 1 sort additionnel du 6ème et du 7ème niveau.
 +5 % de Résistance magique.
-Force +1.~
+Force +1.
+
+Utilisable seulement par :
+Clercs mauvais~
 @165 = ~Masse~
 @166 = ~Étoile des tempêtes +3~
 @167 = ~La masse descend directement du simple gourdin. C'est une simple hampe de bois avec une tête en pierre ou en fer fixée à son extrémité. La forme de la tête varie : certaines sont pointues, d'autres à rebord, et d'autres encore ont une tête pyramidale.
@@ -407,7 +448,12 @@ Poids : 10
 Facteur de vitesse : 7
 Type de compétence : Masse
 Type : arme à 1 main
-Force nécessaire : 10~
+Force nécessaire : 10
+
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
 @168 = ~Cette arme magique est de fabrication ancienne bien que fabriquée à Netheril. Elle crépite de spectaculaires éclairs apparaissent lorsqu'on l'utilise.
 
 PARAMETRES :
@@ -419,7 +465,12 @@ Poids : 6
 Facteur de vitesse : 4
 Type d'arme : Masse
 Type : Arme à 1 main
-Force nécessaire : 10~
+Force nécessaire : 10
+
+Non utilisable par:
+ Druide
+ Mage
+ Voleur~
 @169 = ~Étoile du matin~
 @170 = ~Étoile de glace +4~
 @171 = ~Cette arme est constituée d'un manche en bois terminé par une longue barre de métal. Ces armes mesurent environ 1,20m. Certaines sont dotées d'une tête ronde, ovale ou cylindrique couverte de pointes. Généralement, l'extrémité de ces armes est dotée d'une pointe pour frapper d'estoc.
@@ -431,7 +482,12 @@ Type de dégâts : Contondant
 Poids: 12
 Facteur de vitesse: 7
 Type d'arme: Fléau / Morgenstern
-Type: arme à 1 main~
+Type: arme à 1 main
+
+Non utilisable par:
+ Druide
+ Mage
+ Voleur~
 @172 = ~Cette arme est constituée d'un manche en bois terminé par une longue barre de métal. Ces armes mesurent environ 1,20m. Certaines sont dotées d'une tête ronde, ovale ou cylindrique couverte de pointes. Généralement, l'extrémité de ces armes est dotée d'une pointe pour frapper d'estoc.
 
 PARAMETRES :
@@ -445,7 +501,12 @@ Poids : 8
 Facteur de vitesse : 4
 Famille d'arme : Fléau / Morgenstern
 Type : Arme à 1 main
-Force nécessaire : 11~
+Force nécessaire : 11
+
+Non utilisable par:
+ Druide
+ Mage
+ Voleur~
 @173 = ~Bottes~
 @174 = ~Bottes de Rapidité~
 @175 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure. 
@@ -488,7 +549,13 @@ Type de dégâts : Tranchant
 Poids : 2
 Facteur de vitesse : 4
 Type d'arme : Hache
-Type : Arme à 1 main~
+Type : Arme à 1 main
+
+Non utilisable par :
+ Druide
+ Mage
+ Voleur
+ Personnage d'alignement mauvais~
 @182 = ~Casque~
 @183 = ~Casque de Bruenor~
 @184 = ~Ce casque est tout cabossé, il a même une corne partiellement brisée. Mais il donne toujours à Bruenor une excellente protection.
@@ -499,7 +566,12 @@ Bonus à la Classe d'Armure : 1
 Spécial :
  +1 au TAC0
  +1 aux Jets de Sauvegardes
-Poids : 1~ 
+Poids : 1
+
+Non utilisable par :
+ Mage
+ Barde
+ Voleur~ 
 @185 = ~Armure de plates complète~
 @186 = ~Armure de plates complète en mithril +2~
 @187 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, aussi bien d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups, et l'ensemble de la tunique est soigneusement orné de riches gravures et de détails en relief. 
@@ -508,7 +580,13 @@ PARAMETRES :
 
 Classe d'Armure : 1
 Poids : 70
-Force nécessaire : 15~
+Force nécessaire : 15
+
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
 @188 = ~Armure de plaque complète en Mithril +2
 
 C'est l'armure personnelle de Bruenor, et vous ne verrez jamais comparable matériel. C'est réellement un vrai travail d'artiste.
@@ -516,7 +594,13 @@ C'est l'armure personnelle de Bruenor, et vous ne verrez jamais comparable matér
 PARAMETRES :
 
 Classe d'armure : -1
-Poids : 45~
+Poids : 45
+
+Non utilisable par :
+ Voleur
+ Barde
+ Druide
+ Mage~
 @189 = ~Arbalète lourde~
 @190 = ~Arbalète lourde +1~
 @191 = ~Une arbalète est un arc monté en croix sur un manche en métal ou en bois, appelé alors un arbrier. L'arc est généralement fabriqué en bois de frêne ou d'if. L'arbalète décoche un carreau lourd (également appelé simplement carreau).
@@ -526,7 +610,13 @@ Poids : 14
 Facteur de vitesse : 10
 Type de compétence : arbalète
 Type : arme à 2 mains
-Force nécessaire : 12~
+Force nécessaire : 12
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
 @192 = ~Une arbalète est un arc monté en croix sur un manche en métal ou en bois, appelé alors un arbrier. L'arc est généralement fabriqué en bois de frêne ou d'if. L'arbalète décoche un carreau lourd (également appelé simplement carreau). Cette arbalète est magique
 
 PARAMETRES :
@@ -537,7 +627,13 @@ Poids : 12
 Facteur de vitesse : 9
 Type de compétence : arbalète
 Type : arme à 2 mains
-Force nécessaire : 12~
+Force nécessaire : 12
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
 @193 = ~Flèches~
 @194 = ~Carquois de Catti-Brie~
 @195 = ~Les flèches de ce carquois sont magiques et sont produites indéfiniment. Ce sont des flèches légères souvent utilisées pour la chasse. La plupart de ces flèches sont faites à partir de bois de cendre ou de bouleau, et font de 30 à 40 pouces de long.
@@ -548,7 +644,12 @@ Dégâts : 1D6 + 1
 TAC0 : +1 bonus
 Type de dégâts : projectile (perforant)
 Poids : 0
-Arme de jet : Arc~ 
+Arme de jet : Arc
+
+Non utilisable par :
+ Clerc
+ Druide
+ Mage~ 
 @196 = ~Arc long~
 @197 = ~Taurmaril~
 @198 = ~L'arc long Taurmaril: 'le Perce-coeur'
@@ -561,7 +662,12 @@ TAC0 : +2
 Poids : 2
 Facteur de vitesse : 2
 Type d'arme : Arc long
-Type : Arme à 2 mains~
+Type : Arme à 2 mains
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
 @199 = ~Épée longue~
 @200 = ~Khazid-Zhea~
 @201 = ~Une épée vorpale extrêmement chaotique. Catti-Brie a gagné l'épée dans une bataille psychologique pendant le Temps des Troubles, alors que les dieux marchaient parmi les hommes. Cette arme lui rend de fiers services.
@@ -574,7 +680,12 @@ Type de dégâts : tranchants
 Poids : 2
 Facteur de vitesse : 3
 Type d'arme : Épée longue
-Type : arme à 1 main~
+Type : arme à 1 main
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
 @202 = ~Fourrure enchantée du Loup Hivernal~
 @203 = ~Cette peau de loup hivernal d'un blanc pur est douce et voluptueuse. Elle fut enchantée par le forgeron nain Marteaudargent. Elle peut être portée en tant que cape.
 
@@ -591,7 +702,12 @@ Poids : 15
 Facteur de vitesse : 7
 Type de compétence : Fléau / Étoile du matin
 Type : arme à 1 main
-Force nécessaire : 13~ 
+Force nécessaire : 13
+
+Non utilisable par :
+Druide
+Mage 
+Voleur~ 
 @206 = ~Crâne~
 @207 = ~Dagues de jet~
 @208 = ~Dagues de jet empoisonnées~
@@ -605,7 +721,10 @@ Poids : 1
 Facteur de vitesse : 2
 Type de compétence : Dague
 Type : arme à 1 main
-Force nécessaire : 3~ 
+Force nécessaire : 3
+
+Non utilisable par :
+Clerc~ 
 @210 = ~Ces dagues de jet ont été enduites de poison. Elle est fréquemment utilisée par les gobelins durant leurs embuscades.~
 @211 = ~Gobelet rempli de sang~
 @212 = ~Gobelet de Corugnon~
@@ -639,7 +758,12 @@ Poids : 10
 Facteur de vitesse : 7
 Type de compétence : Masse
 Type : arme à 1 main
-Force nécessaire : 10~
+Force nécessaire : 10
+
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
 @222 = ~Cette masse a été créée pour répondre à un besoin unique : tuer les non-vivants. Toute créature de cette sorte touchée par la masse court le risque d'être purement et simplement volatilisée. Les légendes parlent d'un prêtre tellement saint que son simple toucher détruisait les vampires, mais on en sait s'il devait ce pouvoir à sa foi ou à son arme.
 Maintenant qu'elle a été recouverte d'illithium, cette masse procure également l'immunité contre le drainage de niveaux des plus puissants morts-vivants.
 
@@ -656,7 +780,12 @@ Poids : 8
 Facteur de vitesse : 6
 Type de compétence : masse
 Force nécessaire : 10
-Type : arme à 1 main~
+Type : arme à 1 main
+
+Non utilisable par : 
+Druide
+Magicien
+Voleur~
 @223 = ~Armure d'écailles~
 @224 = ~Armure d'écailles de Dragon Vert~
 @225 = ~L'armure d'écailles de Dragon Vert est une armure très légère, résistante à l'acide et au feu. Elle est souvent recherchée du fait de ces propriétés, mais trouver, sans parler de tuer, un ancien dragon puissant pour pouvoir en forger une relève de l'impossible; Il est plus facile d'en trouver une déjà existante, comme celle ci. Il faudra néanmoins être prudent, et ne pas la revêtir en présence d'un dragon, surtout si celui ci est vert.
@@ -667,7 +796,12 @@ Bonus : 50% de résistance au feu
 Bonus : 50% de résistance à l'acide
 Classe d'armure : -1
 Poids : 30
-Force nécessaire : 8~
+Force nécessaire : 8
+
+Non utilisable par :
+ Barde
+ Mage
+ Voleur~
 @227 = ~Cimeterres de Drizzt~
 @228 = ~Ce sont les cimeterres personnels de Drizzt: Étincelle et Morsure du Froid.~
 @229 = ~Pierre gardienne~
@@ -736,7 +870,12 @@ Capacités d'équipement :
  +10 % aux points de vie
  +1 aux chances de toucher
 Bonus de Classe d'Armure : aucun
-Poids : 2~
+Poids : 2
+
+Inutilisable par :
+ Mage
+ Barde
+ Voleur~
 @258 = ~Hache de jet~
 @259 = ~Tueuse des glaces +2~
 @260 = ~La hache à main, ou hache de jet, est également connue sous l'appellation de hachette. Sa lame comporte une lame d'acier tranchante, contrebalancée par une barbelure pointue. La courte poignée comporte une pointe en bas et la tête comporte parfois une pointe en haut. 
@@ -749,7 +888,13 @@ Poids : 5
 Facteur de vitesse : 4
 Type de compétence :  Hache
 Type : arme à 1 main
-Force nécessaire : 4~
+Force nécessaire : 4
+
+Non utilisable par :
+Druide
+Clerc
+Mage 
+Voleur~
 @261 = ~Cette hache de jet n'a pas seulement été parfaitement équilibrée pour son utilisation comme arme de lancer, mais à été également sujette à de grandes améliorations magiques. Ainsi, elle est à la fois plus dévastatrice et précise que n'importe quelle arme non-magique du même genre. Parce que son créateur nain Barbegelée est originaire du Val de Bise, cette arme tire son pouvoir d'enchantement d'un froid extrême. Il est dit qu'il l'a utilisé durant ses voyages dans les Monts de la Marche contre des Géants du Feu. Barbegelée n'a jamais fini de forger parfaitement son arme. Une fois combinée au Parchemin Runique de l'Hiver, sa forme complète serait achevée.
 
 PARAMETRES :
@@ -794,7 +939,13 @@ Poids : 7
 Facteur de vitesse : 7
 Type de compétence : Hache
 Type : Arme à 1 main
-Force nécessaire : 10~
+Force nécessaire : 10
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
 @268 = ~Il s'agit de la hache personnelle de Jarlaxle, la 'Hache de guerre de Dispersion de Flammes'. Elle a été forgée et enchantée par les elfes noirs. Des rumeurs courent comme quoi Lolth elle-même se serait impliquée dans la fabrication de cette arme dévastatrice.
 
 PARAMETRES :
@@ -817,7 +968,13 @@ PARAMETRES :
 
 Classe d'Armure : 3
 Poids : 50
-Force nécessaire : 12~
+Force nécessaire : 12
+
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
 @272 = ~L'armure personnelle de Jarlaxle a été forgée par les elfes noirs et enchantée par Lolth elle-même et revêt des protections de la plus grande puissance. 
 
 PARAMETRES :
@@ -826,7 +983,13 @@ Classe d'Armure : 0
 Capacités spéciales :
 Résistance à l'acide : 80%
 Poids: 18
-Force nécessaire : 11~
+Force nécessaire : 11
+
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
 @273 = ~Bottes de Phase~
 @274 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure. 
 
@@ -871,7 +1034,10 @@ Poids : 4
 Facteur de vitesse : 4
 Type de compétence : bâton
 Type : arme à 2 mains
-Force nécessaire : 5~
+Force nécessaire : 5
+
+Utilisable uniquement par :
+ Mage~
 @281 = ~Épée longue +4~
 @282 = ~Ces épées sont généralement appelées épées à double tranchant, épées de guerre ou épées militaires. Souvent, l'épée longue a une lame à simple tranchant. Le modèle et la longueur de l'épée varient d'un peuple à un autre, parfois même d'une époque à une autre. L'une des caractéristiques communes à toutes les épées de ce type est la longueur, comprise entre 90 cm et 1,20 m. Dans le cas des épées les plus longues, la lame couvre 1 m de la longueur totale. La plupart des épées longues ont une lame à double tranchant et un estoc pointu. Malgré son estoc, l'épée longue est une arme considérée comme tranchante, et non perforante. 
 
@@ -883,7 +1049,12 @@ Poids : 4
 Facteur de vitesse : 5
 Type de compétence : Épée longue
 Type : arme à 1 main
-Force requise : 6~
+Force requise : 6
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
 @283  = ~???~
 @284 = ~Attaque~
 @285 = ~Armure en cottes de mailles~
@@ -894,13 +1065,23 @@ PARAMETRES :
 
 Classe d'Armure : 5
 Poids : 40
-Force nécessaire : 8~
+Force nécessaire : 8
+
+Non utilisable par :
+ Druide 
+ Mage 
+ Voleur~
 @288 = ~Cette côte de mailles en Mithril à été forgée par Bruenor pour ses compagnons les plus proches.
 
 PARAMETRES :
 
 Classe d'Armure : 1
-Poids : 7~
+Poids : 7
+
+Non utilisable par :
+ Druide
+ Mage
+ Voleur~
 @289 = ~Lame de Lune~
 @290 = ~Cette arme puissante fut créée par les forgerons de l'ancienne Myth Drannor. Les Lames de Lunes sont employées dans le long procédé de sélection du souverain de l'île d'Eternelle-Rencontre. Une Lame de Lune choisit celui qui la porte, cependant, comme son précédent propriétaire a rejoint le royaume des morts, il y a une chance que la Lame de Lune se trouve un nouveau propriétaire. N'importe qui n'ayant pas du sang elfique dans les veines se trouvera incapable de la soulever. Cette Lame de Lune en particulier accorde une résistance au feu, ainsi qu'un bonus à la classe d'armure.
 
@@ -916,7 +1097,10 @@ Bonus :
 Poids : 4
 Facteur de vitesse : 2
 Famille d'arme : Épée longue
-Type : Arme à 1 main~
+Type : Arme à 1 main
+
+Non utilisable par :
+ Personnage d'alignement mauvais, ou sans aucun héritage elfique.~
 @291 = ~Armure de plates de Sombre Opale~
 @292 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, aussi bien d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups, et l'ensemble de la tunique est soigneusement orné de riches gravures et de détails en relief. 
 
@@ -924,7 +1108,13 @@ PARAMETRES :
 
 Classe d'Armure : 1
 Poids : 70
-Force nécessaire : 15~
+Force nécessaire : 15
+
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
 @293 = ~Armure de Sombre Opale + 1: « Armure des Ténèbres »
 Un seigneur de guerre démoniaque au service de Bhaal, portait cette pièce d'armure durant son service armé pour son maître, le 'Seigneur du Meurtre'. Il s'affaiblit durant le temps des troubles et perdit la vie lors d'un affrontement contre Heaume.
 
@@ -937,7 +1127,13 @@ Résistance au feu : 15%
 Résistance à l'électricité : 15%
 Résistance à la magie : 10%
 Réduction des dégâts infligés par un projectile : 20%
-Poids : 35~
+Poids : 35
+
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
 @294 = ~Statuette de panthère noire~
 @295 = ~Cette statuette appartenant à Drizzt représente une panthère noire, et est capable d'invoquer une grande panthère noire en provenance d'un autre plan d'existence. Son nom est Guenhwyvar et elle est d'une loyauté sans faille à Drizzt.
 
@@ -950,7 +1146,12 @@ PARAMETRES :
 
 Bonus à la Classe d'Armure : aucun
 Spécial : protège contre les coups critiques
-Poids : 2~
+Poids : 2
+
+Non utilisable par :
+Mage
+Barde
+Voleur~
 @298 = ~Ce casque appartenait à un guerrier noble entré dans la légende pour avoir triomphé d'une Méduse.
 
 Capacités:: 
@@ -984,7 +1185,12 @@ Poids : 4
 Facteur de Vitesse : 5
 Type de compétence : cimeterre/Wakizashi/Ninja-To
 Type : arme à 1 main
-Force nécessaire : 10~
+Force nécessaire : 10
+
+Inutilisable par :
+ Clerc
+ Mage
+ Voleur~
 @312 = ~Cimeterre +3: Ce cimeterre à été forgé par les elfes noirs dans le but d'être utilisée à la surface, car les armes en provenance de leur monde finissent en poussière à la lumière du soleil.
 
 PARAMETRES :
@@ -995,7 +1201,12 @@ Type de Dégâts : tranchant
 Poids : 3
 Facteur de vitesse : 3
 Type de Compétence : Cimeterre/Wakizashi
-Type : Arme à 1 main~
+Type : Arme à 1 main
+
+Non utilisable par :
+ Clerc
+ Mage
+ Voleur~
 @313 = ~Idole abyssale~
 @314 = ~Cette idole est recouverte de runes qui indiquent que le possesseur de l'idole peut invoquer un Tanar'ri pour lutter à ses cotés.~
 @315 = ~Épée à 2 mains~
@@ -1010,7 +1221,13 @@ Poids : 15
 Facteur de vitesse : 10
 Type de compétence : Épée à 2 mains
 Type : arme à 2 mains
-Force nécessaire : 14~
+Force nécessaire : 14
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
 @318 = ~Epée à deux mains +4, Lame de guerre
 Cette immense épée est une version enchantée des épées barbares des tribus du grand nord. Forgée au cours d'une bataille, les dieux barbares ont octroyé à cet acier trempé dans le sang des braves morts au combat une extraordinaire puissance magique.
 
@@ -1023,7 +1240,13 @@ Poids : 10
 Facteur de vitesse : 6
 Type de compétence : épée à 2 mains
 Type : arme à 2 mains
-Force nécessaire : 14~
+Force nécessaire : 14
+
+Inutilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
 @319 = ~Épées des Chagrins de Belhifet~
 @320 = ~Voici une des nombreuses armes du démon Belhifet. Cette lame est particulièrement tranchante et bien équilibrée. Sous une certaine lumière, on peut voir un image de serpent gravée sur la garde.
 
@@ -1038,16 +1261,30 @@ Poids : 9
 Facteur de vitesse : 5
 Type de Compétence : Épée à 2 mains
 Type : Arme à 2 mains
-Requis : 14 en force~
+Requis : 14 en force
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
 @321 = ~Cagoule du voleur~
-@322 = ~Malgré une aura magique assez évidente, cette cagoule ne semble pas posséder de pouvoir particuliers.~
+@322 = ~Malgré une aura magique assez évidente, cette cagoule ne semble pas posséder de pouvoir particuliers.
+
+PARAMETRES :
+
+Utilisable seulement par :
+Voleurs~
 @323 = ~Les voleurs n'ont pas d'honneur. C'est certainement pour ça que la Cagoule du Voleur a le pouvoir de protéger son porteur des mauvaises actions de ses congénères.
 
 PARAMETRES :
 
 Capacités d'équipement :
  Immunité à la maladie et aux poisons
- Flou~
+ Flou
+
+Utilisable seulement par :
+ Voleurs~
 @324 = ~Toucher de goule~
 @325 = ~Cape du loup-garou~
 @326 = ~Une cape peut avoir différentes formes et être réalisée à partir de tout type d'étoffe. Les formes les plus communes sont celles d'un morceau d'étoffe circulaire présentant un trou en son centre pour laisser passer la tête, ainsi que celle d'un grand morceau de tissu s'enroulant autours du cou, maintenu par une chaîne ou une broche.~
@@ -1073,7 +1310,10 @@ Résistance au froid: 50%~
 PARAMETRES :
 
 Classe d'Armure : 6
-Poids : 3~
+Poids : 3
+
+Non utilisable par :
+ Mage~
 @335 = ~Marteau de guerre~
 @336 = ~Aegis-Fang +5~
 @337 = ~Marteau de guerre +5: Aegis-Fang
@@ -1089,14 +1329,25 @@ Poids : 8
 Facteur de Vitesse : 2
 Type de compétence : Marteau de Guerre
 Type :  Arme à 1 main
-Force nécessaire : 18~
+Force nécessaire : 18
+
+Inutilisable par :
+ Druide
+ Mage 
+ Voleur
+ Alignements non chaotiques~
 @338 = ~Cette catégorie de cabasset, fabriquée en cuir ou en métal renforcé, couvre presque l'ensemble de la tête, à l'exception du visage et du cou. Ces casques protègent bien le nez.
 
 PARAMETRES :
 
 Bonus à la Classe d'Armure : aucun
 Spécial : protège contre les coups critiques
-Poids : 2~
+Poids : 2
+
+Non utilisable par :
+Mage
+Barde
+Voleur~
 @339 = ~Arbalète Cheveux de Géant +3~
 @340 = ~Arbalète lourde : Cheveux de Géant
 Bien que ce soit difficile de le vérifier, il semblerait que la corde de cette arbalète a été faite à partir de cheveux de Géant du givre. Quelle que soit la vérité, cette arme est incroyablement difficile à bander, bien que sa précision et ses dégâts conséquents vaillent bien la traction requise. (Force supérieur ou égale à 15)
@@ -1109,7 +1360,13 @@ Poids : 11
 Facteur de vitesse : 7
 Type de Compétence : Arbalète
 Type : Arme à 2 mains
-Force nécessaire : 15~
+Force nécessaire : 15
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
 
 @501 = ~Fierté de Durlag +2~
 @502 = ~Epée à 2 mains +2: La fierté de Durlag
@@ -1124,7 +1381,13 @@ Poids : 10
 Facteur de vitesse : 8
 Type de Compétence : Épée à 2 mains
 Type : Arme à 2 mains
-Force nécessaire : 13~
+Force nécessaire : 13
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
 @503 = ~Bouclier~
 
 //------------------------------------------------------------------------------------------------
@@ -1158,7 +1421,16 @@ Type : arme à deux mains
 Nécessite :
  6 en Force
 
-Poids : 3~
+Poids : 3
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur
+ Moine
+ Kensai
+ Cavalier~
 // BG2 #39653
 @510 = ~C'est une petite figurine d'animal.
 
@@ -1178,7 +1450,13 @@ Type : arme à une main
 Nécessite :
  10 en Force
 
-Poids : 5~
+Poids : 5
+
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
 @512 = ~C'est une petite figurine sur laquelle sont gravées de nombreuses runes.
 
 PARAMÈTRES :
@@ -1193,7 +1471,10 @@ Classe d'armure : 8 (10 contre les armes perforantes et les projectiles)
 Nécessite :
  4 en Force
 
-Poids : 15~
+Poids : 15
+
+Non utilisable par :
+ Mage~
 // BG2 #6716
 @514 = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont été munies de manches plus courts pouvant être tenus d'une seule main. La masse d'armes et le fléau d'armes sont deux exemples d'armes longues qui ont suivi cette évolution, le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entièrement fabriqué en acier, avec des rondelles pour protéger et renforcer la prise. Les rondelles sont de petits disques métalliques, souvent ornés de décorations. Le manche mesure environ 45 centimètres de long.
 
@@ -1206,7 +1487,12 @@ Type : arme à une main
 Nécessite :
  9 en Force
 
-Poids : 6~
+Poids : 6
+
+Non utilisable par :
+ Druide
+ Mage 
+ Voleur~
 // BG2 #55781
 @515 = ~Pendentif rubis~
 // BG2 #2309
