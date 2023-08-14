@@ -37,6 +37,6 @@
 /* New for v4 */
 @1513 = ~Resource biffing~
 @1514 = ~This component is not needed for EE.~
-@1515 = ~This component was removed.~
+@1515 = ~Warring! The 'Raise the XP cap' component was removed.~
     
 /* Everything else from this file was moved to MAIN.TRA as of v3 */
