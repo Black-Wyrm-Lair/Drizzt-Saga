@@ -197,7 +197,7 @@ BEGIN @1507  // Raise the XP cap
 DESIGNATED 2
 DEPRECATED @1515
 REQUIRE_PREDICATE NOT GAME_IS ~BGT~ @1506
-PRINT @1515
+WARN @1515
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //// Delayed start: Drizzt joins after Durlag's Tower - an optional component /////////////////
