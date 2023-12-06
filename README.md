@@ -7,15 +7,23 @@
 
 ### General overview
 
-The Drizzt Saga is a WeiDU-based modification for Baldur's Gate 1: Tales of the Sword Coast (BG1:TotSC), Baldur's Gate 1: Tutu conversion (Tutu), Baldur's Gate Trilogy conversion (BGT), and Baldur's Gate: Enhanced Edition (BGEE). There are two separate install packages of the mod - for BG1:TotSC and for BGEE/BGT/Tutu. Both packages can be downloaded from the mod's [homepage](http://www.blackwyrmlair.net/Mods/drizztsaga.php). Note that most of this readme's contents applies to the BGEE/BGT/Tutu package, BG1 version has not been updated since original v1 release. Tales of the Sword Coast expansion (in case of BG1 and Tutu) is required to install this mod. Drizzt Saga is available in the following languages: English, French, Italian, Polish, Russian and Spanish.
+The Drizzt Saga is a WeiDU-based modification for Baldur's Gate 1: Tales of the Sword Coast (BG1:TotSC), Baldur's Gate 1: Tutu conversion (Tutu), Baldur's Gate Trilogy conversion (BGT), and Baldur's Gate: Enhanced Edition (BGEE).
+There are two separate install packages of the mod - for BG1:TotSC and BGEE/BGT/Tutu. Both packages can be downloaded from the mod's [homepage](http://www.blackwyrmlair.net/Mods/drizztsaga.php).
+Note that most of this readme's contents apply to the BGEE/BGT/Tutu package, the BG1 version has not been updated since the original v1 release.
+Tales of the Sword Coast expansion (in the case of BG1 and Tutu) is required to install this mod.
 
-This mod brings Drizzt and his companions into the game as joinable characters with their own major quest and side quests, numerous new areas, items (some to be forged) and creatures. Also two secret joinable npcs to discover for those of evil alignment a bit further into the story.
+Drizzt Saga is available in the following languages: English, French, Italian, Polish, Russian and Spanish.
 
-Drizzt is on his way back to Icewind Dale from an errand in the Sword Coast. What he doesn't know is that dark times are upon the Dale and his companions will lead him and the protagonist to an adventure of epic proportions.
+This mod brings Drizzt and his companions into the game as joinable characters with their own major quest and side quests, numerous new areas, items (some to be forged) and creatures.
+Also, two secret joinable NPCs to discover for those of evil alignment a bit further into the story.
 
-In the normal version of the mod, you meet Drizzt at the original area fighting some gnolls. In the same area you will encounter Regis muttering something about a dark ranger. After joining Drizzt head back to Regis and the Drizzt Saga begins.
+Drizzt is on his way back to Icewind Dale from an errand in the Sword Coast. What he doesn't know is that dark times are upon Dale and his companions will lead him and the protagonist to an adventure of epic proportions.
 
-With the Delayed Start component, the story begins after finishing Durlag's Tower and gaining enough experience to be more of an equal to Drizzt and his friends (who are all high level characters). Provided you aided Drizzt in the initial gnoll encounter, he will meet you outside Durlag's Tower after finishing its main quest.
+In the normal version of the mod, you meet Drizzt at the original area fighting some gnolls. In the same area, you will encounter Regis muttering something about a dark ranger.
+After joining Drizzt head back to Regis and the Drizzt Saga begins.
+
+With the Delayed Start component, the story begins after finishing Durlag's Tower and gaining enough experience to be more of an equal to Drizzt and his friends (who are all high-level characters).
+Provided you aided Drizzt in the initial gnoll encounter, he will meet you outside Durlag's Tower after finishing its main quest.
 
 ### Version history
 
@@ -32,13 +40,13 @@ By Roberciiik:
 - Reviewed and updated items (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/5) details).
 - Removed embedded CRE actors in F_6666.ARE and used proper CRE files instead.
 - Removed incorrect pile containers from F_6666.ARE.
-- Fixed Regis journal entries, should use from setup.tra instead of f_regis.tra.
-- Moved english soundset to a different directory, so it can be replaced by localized sounds.
+- Fixed Regis journal entries, should use them from setup.tra instead of f_regis.tra.
+- Moved the English soundset to a different directory, so it can be replaced by localized sounds.
 - Corrected doubled cpmvars.tpa entry for "Beregost_House08".
 - And other minor fixes (listed in GitHub commits).
 
 By TotoR:
-- New balancing components: items expoilts, items nerfing and XP reduction.
+- New balancing components: items exploits, items nerfing and XP reduction.
 - Corrected NPC statistics, classes and their items.
 - Fixed bugs in various CRE files (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/8) details).
 - Fixed various items.
@@ -48,5 +56,5 @@ By TotoR:
 
 By AL|EM:
  - Added Infinity Auto Packager
- - Deprecation of 'Raise the XP cap' component in favour of well-maintaaned component from various Tweaks mods.
+ - Deprecation of the 'Raise the XP cap' component in favor of a well-maintained component from various Tweaks mods.
 </details>
