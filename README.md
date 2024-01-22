@@ -14,7 +14,7 @@ Tales of the Sword Coast expansion (in the case of BG1 and Tutu) is required to 
 
 Drizzt Saga is available in the following languages: English, French, Italian, Polish, Russian and Spanish.
 
-This mod brings Drizzt and his companions into the game as joinable characters with their own major quest and side quests, numerous new areas, items (some to be forged) and creatures.
+This mod brings Drizzt and his companions into the game as joinable characters with their own major quests and side quests, numerous new areas, items (some to be forged) and creatures.
 Also, two secret joinable NPCs to discover for those of evil alignment a bit further into the story.
 
 Drizzt is on his way back to Icewind Dale from an errand in the Sword Coast. What he doesn't know is that dark times are upon Dale and his companions will lead him and the protagonist to an adventure of epic proportions.
@@ -33,7 +33,7 @@ Provided you aided Drizzt in the initial gnoll encounter, he will meet you outsi
 
 By Roberciiik:
 - Drizzt Saga uploaded to GitHub!
-- Fixed IWD animations compatibility issues on BGEE, BGT and TuTu (thanks to TotoR).
+- Fixed IWD animation compatibility issues on BGEE, BGT and TuTu (thanks to TotoR).
 - Fixed joinable NPC spawn issue on EET.
 - New Polish translation by Bartek, formatted to EE by Roberciiik.
 - Biffing is now an optional component.
@@ -51,10 +51,10 @@ By TotoR:
 - Fixed bugs in various CRE files (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/8) details).
 - Fixed various items.
 - Used Drizzt Portrait, included in the mod, only for F_DRIZZT.cre.
-- Script file f_robedA.bcs will now summon a Noble Genie (consistency fix between games).
+- The script file f_robedA.bcs will now summon a Noble Genie (consistency fix between games).
 - Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story. 
 
-By AL|EM:
+By AL|EN:
  - Added Infinity Auto Packager
- - Deprecation of the 'Raise the XP cap' component in favor of a well-maintained component from various Tweaks mods.
+ - Deprecation of the 'Raise the XP cap' component in favor of well-maintained components from various Tweaks mods.
 </details>
