@@ -7,7 +7,7 @@ STR_VAR
   MaleSound = ""
   FemaleSound = ""
 BEGIN
-  ACTION_IF (StrRef != 0 ) THEN BEGIN
+  ACTION_IF (StrRef != 0) THEN BEGIN
     ACTION_GET_STRREF StrRef Male
     ACTION_GET_STRREF_F StrRef Female
     STRING_SET_EVALUATE StrRef ~%Male%~ [%MaleSound%] ~%Female%~ [%FemaleSound%]

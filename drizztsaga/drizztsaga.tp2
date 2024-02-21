@@ -5,6 +5,7 @@
  v1 initial WeiDU conversion and tp2 code by pro5
  v2 by Badgert and erebusant
  v3 BGEE update by pro5
+ v4 Maintanance update & bug fixes
  
 ------------------------------------------------------------------------------------------------------------- */
 
@@ -12,7 +13,7 @@
 BACKUP ~DRIZZTSAGA/backup~
 
 AUTHOR ~flysoup, http://forums.blackwyrmlair.net/index.php?showforum=103~
-VERSION ~v3.00~
+VERSION ~pre-v4.00~
 README ~DRIZZTSAGA\ReadMe.htm~
 
 ASK_EVERY_COMPONENT

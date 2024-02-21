@@ -55,6 +55,10 @@ By TotoR:
 - Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story. 
 
 By AL|EN:
- - Added Infinity Auto Packager
+ - Added Infinity Auto Packager.
  - Deprecation of the 'Raise the XP cap' component in favor of well-maintained components from various Tweaks mods.
+
+By Lzw104522773:
+- Added Simplified Chinese translation.
+
 </details>
