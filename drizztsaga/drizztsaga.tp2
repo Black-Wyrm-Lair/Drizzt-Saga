@@ -55,11 +55,12 @@ ALWAYS
 		READ_ASCII 0x0 ws(4) //detects any whitespace
 	END
 	
-	// Include macro definitions:
-	INCLUDE ~DRIZZTSAGA\lib\worldmap_update.tph~
-	INCLUDE ~DRIZZTSAGA\lib\del_are_trigger.tph~
-	INCLUDE ~DRIZZTSAGA\tpa\ds-core.tpa~
-	INCLUDE ~drizztsaga\tpa\ds-nerfing.tpa~
+	// Include macro definitions and other functions
+	INCLUDE ~%MOD_FOLDER%\lib\worldmap_update.tph~
+	INCLUDE ~%MOD_FOLDER%\lib\del_are_trigger.tph~
+	INCLUDE ~%MOD_FOLDER%\tpa\ds-core.tpa~
+	INCLUDE ~%MOD_FOLDER%\tpa\ds-nerfing.tpa~
+	INCLUDE ~%MOD_FOLDER%\tpa\ds-bpwm.tpa~
 		
 	OUTER_SET GameTypeDetected = 1
 		  	
@@ -93,28 +94,16 @@ LAM DS_CORE_COMPONENT
 // Worldmap
 
 PRINT @359
-
 LAM WORLDMAP_UPDATE
 
-
 //  BP-BGT Worldmap compatibility (yes, the default version will work in BWP install with Worldmap mod too):
-
-ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
-	COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
-	 APPEND_FILE ~DRIZZTSAGA/Worldmap/BPWM_areas_original.tbl~
-	COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
-	 APPEND_FILE ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_original.tbl~
-	COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
-	 APPEND_FILE ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~
-END
-ELSE BEGIN
-    MKDIR ~Worldmap~
-    //AT_UNINSTALL ~call DRIZZTSAGA/deldir.bat Worldmap~
-    COPY ~DRIZZTSAGA/Worldmap/BPWM_areas_original.tbl~ ~Worldmap/map_mods_areas.tbl~
-    COPY ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_original.tbl~ ~Worldmap/map_mods_links.tbl~
-    COPY ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~ ~Worldmap/map_mods_trans.tra~
-END
-
+LAF ADD_BP_BGT_WORLDMAP
+	STR_VAR
+		AreasFilename = "bpwm_areas.tbl"
+		AreasForHugeFilename = "bpwm_areas_huge.tbl"
+		LinksFilename = "bpwm_links_original.tbl"
+		TraFilename = "bpwm_worldmap.tra"
+	END
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //// BP-BGT Worldmap version: access all new areas through worldmap /////////////////////////////////
@@ -127,36 +116,26 @@ REQUIRE_PREDICATE GAME_IS ~BGEE BGT Tutu_TotSC~ @356
 
 LAM DS_CORE_COMPONENT
 
-
 // Worldmap
 
 PRINT @359
 
-/* Unnecessary, since BPWM will overwrite this stuff anyway and without BPWM this subcomponent won't work properly in any case because of the changes below
-
+/*
+Unnecessary, since BPWM will overwrite this stuff anyway and without BPWM this subcomponent won't work properly in any case because of the changes below
 LAUNCH_ACTION_MACRO ~WORLDMAP_UPDATE~
 */
 
-//  tell BP-BGT Worldmap what we need added to it:
-
-ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
-	COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
-	 APPEND_FILE ~DRIZZTSAGA/Worldmap/BPWM_areas_all.tbl~
-	COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
-	 APPEND_FILE ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_all.tbl~
-	COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
-	 APPEND_FILE ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~
-END
-ELSE BEGIN
-    MKDIR ~Worldmap~
-    //AT_UNINSTALL ~call DRIZZTSAGA/deldir.bat Worldmap~
-    COPY ~DRIZZTSAGA/Worldmap/BPWM_areas_all.tbl~ ~Worldmap/map_mods_areas.tbl~
-    COPY ~DRIZZTSAGA/Worldmap/%SrcFolderExact%/BPWM_links_all.tbl~ ~Worldmap/map_mods_links.tbl~
-    COPY ~DRIZZTSAGA/Language/%LANGUAGE%/BPWM_worldmap.tra~ ~Worldmap/map_mods_trans.tra~
-END
+// Tell BP-BGT Worldmap what we need added to it:
+LAF ADD_BP_BGT_WORLDMAP
+	STR_VAR
+		AreasFilename = "bpwm_areas.tbl"
+		AreasForHugeFilename = "bpwm_areas_huge.tbl"
+		LinksFilename = "bpwm_links_all.tbl"
+		TraFilename = "bpwm_worldmap.tra"
+	END
 
 // One of new areas now revealed via script
-EXTEND_TOP  ~F_0113.BCS~   ~DRIZZTSAGA/Scripts/SNIP/eF_0113.BAF~
+EXTEND_TOP ~F_0113.BCS~ ~DRIZZTSAGA/Scripts/SNIP/eF_0113.BAF~
 
 // For other areas, replace default travel triggers with searchmap WM regions
 COPY_EXISTING ~F_0111.ARE~ ~override~
