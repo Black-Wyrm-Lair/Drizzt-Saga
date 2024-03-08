@@ -43,6 +43,7 @@ By Roberciiik:
 - Fixed Regis journal entries, should use them from setup.tra instead of f_regis.tra.
 - Moved the English soundset to a different directory, so it can be replaced by localized sounds.
 - Corrected doubled cpmvars.tpa entry for "Beregost_House08".
+- Removed legacy links from BG1 areas connected to Drizzt Saga areas.
 - And other minor fixes (listed in GitHub commits).
 
 By TotoR:
@@ -52,7 +53,8 @@ By TotoR:
 - Fixed various items.
 - Used Drizzt Portrait, included in the mod, only for F_DRIZZT.cre.
 - The script file f_robedA.bcs will now summon a Noble Genie (consistency fix between games).
-- Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story. 
+- Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story.
+- Removed incorrect links to Dragon's Cave area linked from BG1 areas.
 
 By AL|EN:
  - Added Infinity Auto Packager.
