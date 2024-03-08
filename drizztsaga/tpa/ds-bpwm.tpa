@@ -1,0 +1,49 @@
+
+DEFINE_ACTION_FUNCTION ~ADD_BP_BGT_WORLDMAP~
+STR_VAR
+  AreasFilename = ""
+  AreasForHugeFilename = ""
+  LinksFilename = ""
+  TraFilename = ""
+BEGIN
+
+    ACTION_IF FILE_EXISTS ~worldmap/map_mods_areas.tbl~ THEN BEGIN
+        COPY ~worldmap/map_mods_areas.tbl~ ~worldmap~
+            APPEND_FILE ~%MOD_FOLDER%/worldmap/%AreasFilename%~
+        COPY ~worldmap/map_mods_links.tbl~ ~worldmap~
+            APPEND_FILE ~%MOD_FOLDER%/worldmap/%SrcFolderExact%/%LinksFilename%~
+        COPY ~worldmap/map_mods_trans.tra~ ~worldmap~
+            APPEND_FILE ~%MOD_FOLDER%/language/%LANGUAGE%/%TraFilename%~
+    END
+    ELSE BEGIN
+        MKDIR ~worldmap~
+        COPY ~%MOD_FOLDER%/worldmap/%AreasFilename%~ ~worldmap/map_mods_areas.tbl~
+        COPY ~%MOD_FOLDER%/worldmap/%SrcFolderExact%/%LinksFilename%~ ~worldmap/map_mods_links.tbl~
+        COPY ~%MOD_FOLDER%/language/%LANGUAGE%/%TraFilename%~ ~worldmap/map_mods_trans.tra~
+    END
+    
+    <<<<<<<< .../ds-inlined/bpwm_empty
+    >>>>>>>>
+
+    ACTION_IF !FILE_EXISTS ~worldmap/map_mods_huge_areas.tbl~ BEGIN
+        COPY ~.../ds-inlined/bpwm_empty~ ~worldmap/map_mods_huge_areas.tbl~
+    END
+
+    ACTION_IF !FILE_EXISTS ~worldmap/map_mods_huge_links.tbl~ BEGIN
+        COPY ~.../ds-inlined/bpwm_empty~ ~worldmap/map_mods_huge_links.tbl~
+    END
+
+    ACTION_IF !FILE_EXISTS ~worldmap/map_mods_huge_trans.tra~ BEGIN
+        COPY ~.../ds-inlined/bpwm_empty~ ~worldmap/map_mods_huge_trans.tra~
+    END
+
+    COPY ~worldmap/map_mods_huge_areas.tbl~ ~worldmap~
+        APPEND_FILE ~%MOD_FOLDER%/worldmap/%AreasForHugeFilename%~
+
+    COPY ~worldmap/map_mods_huge_links.tbl~ ~worldmap~
+        APPEND_FILE ~%MOD_FOLDER%/worldmap/%SrcFolderExact%/%LinksFilename%~
+
+    COPY ~worldmap/map_mods_huge_trans.tra~ ~worldmap~
+        APPEND_FILE ~%MOD_FOLDER%/language/%LANGUAGE%/%TraFilename%~
+
+END
