@@ -5,7 +5,7 @@
  v1 initial WeiDU conversion and tp2 code by pro5
  v2 by Badgert and erebusant
  v3 BGEE update by pro5
- v4 Maintanance update & bug fixes
+ v4 Maintenance update & bug fixes
  
 ------------------------------------------------------------------------------------------------------------- */
 
@@ -36,7 +36,7 @@ ALWAYS
 		INCLUDE ~DRIZZTSAGA\lib\g3_tutu_cpmvars.tpa~
 	END
 	ELSE
-	ACTION_IF GAME_IS ~BG2 TOB BGT~ BEGIN
+	ACTION_IF GAME_IS ~BGT~ BEGIN
 		// BGT:
 		PRINT @354
 		INCLUDE ~DRIZZTSAGA\lib\g3_bgt_cpmvars.tpa~
