@@ -1,8 +1,10 @@
 IF
 	OnCreation()
+	Global("F_BRUENO","GLOBAL",0)
 THEN
 	RESPONSE #100
 	CreateCreature("F_BRUENO",[662.1177],0)
+	SetGlobal("F_BRUENO","GLOBAL",1)
 	Continue()
 END
 
