@@ -34,7 +34,8 @@ ACTION_FOR_EACH ~file~ IN
 BEGIN
   COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +4 weapon into "only" +2 weapon
 	WRITE_SHORT 0x60 2 // Enchantment Level
-    LPF ALTER_ITEM_HEADER INT_VAR thac0_bonus = 2 damage_bonus = 2 END
+    LPF ALTER_ITEM_HEADER INT_VAR thac0_bonus = 2 damage_bonus = 2 END // thac0 and damage bonus = +2
+    LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 12 parameter1 = 2 END // Fire dmg = 2
 	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
 	  READ_LONG ~%offset%~ desc_strref
 	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
@@ -90,6 +91,28 @@ BEGIN
 		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
 		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+3~ ~+1~ // change AC and saves modifier in name and description to +1
 		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+2~ ~+1~ // change AC and saves modifier in name and description to +1
+		END
+	  END
+	  SAY_EVALUATED offset ~%desc%~
+	END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_FOR_EACH ~file~ IN
+				~F_MAGMAC~ // Special case: Magi Staff
+BEGIN
+  COPY_EXISTING ~%file%.itm~ ~override~ // nerfing +x to AC and saves into "only" +1 and strike as +3
+    PATCH_FOR_EACH ~opco~ IN 0 33 34 35 36 37 BEGIN
+      LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = EVAL ~%opco%~ parameter1 = 1 END
+    END
+    WRITE_LONG 0x60 3 // Enchantment Level
+	PATCH_FOR_EACH offset IN 0xc 0x54 BEGIN
+	  READ_LONG ~%offset%~ desc_strref
+	  PATCH_IF (desc_strref >= 0 && desc_strref < 2147483646) BEGIN
+		READ_STRREF ~%offset%~ desc
+		INNER_PATCH_SAVE desc ~%desc%~ BEGIN
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+2~ ~+1~ // change AC and saves modifier in name and description to +1
+		  REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~+5~ ~+3~ // change description to +3
 		END
 	  END
 	  SAY_EVALUATED offset ~%desc%~
