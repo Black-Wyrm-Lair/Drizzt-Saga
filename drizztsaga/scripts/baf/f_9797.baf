@@ -1,11 +1,13 @@
 
 IF
 	OnCreation()
+	Global("F_CATTIB","GLOBAL",0)
 THEN
 	RESPONSE #100
 	CreateCreature("F_JARLAX",[392.258],14)
 	CreateCreature("F_ARTEMI",[443.222],14)
 	CreateCreature("F_CATTIB",[686.505],11)
+	SetGlobal("F_CATTIB","GLOBAL",1)
 	Continue()
 END
 

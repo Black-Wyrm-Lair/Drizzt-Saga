@@ -1,8 +1,10 @@
 
 IF
 	OnCreation()
+	Global("F_REGIS2","GLOBAL",0)
 THEN
 	RESPONSE #100
 	CreateCreature("F_REGIS2",[398.257],0)
+	SetGlobal("F_REGIS2","GLOBAL",1)
 	Continue()
 END
