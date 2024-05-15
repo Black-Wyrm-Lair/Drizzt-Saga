@@ -37,6 +37,7 @@ By Roberciiik:
 - Fixed joinable NPC spawn issue on EET.
 - New Polish translation by Bartek, formatted to EE by Roberciiik.
 - Biffing is now an optional component.
+- Update of BP-BGT-Worldmap to support v13.1.0.
 - Reviewed and updated items (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/5) details).
 - Removed embedded CRE actors in F_6666.ARE and used proper CRE files instead.
 - Removed incorrect pile containers from F_6666.ARE.
@@ -49,8 +50,9 @@ By Roberciiik:
 By TotoR:
 - New balancing components: items exploits, items nerfing and XP reduction.
 - Corrected NPC statistics, classes and their items.
-- Fixed bugs in various CRE files (more in the [commit](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/8) details).
-- Fixed various items.
+- Fixed bugs in various CRE files (more in the commits [here](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/8) and [here](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/27)).
+- Fixed various items (more in the commits [here](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/11) and [here](https://github.com/Black-Wyrm-Lair/Drizzt-Saga/pull/27)).
+- Fixed NPC scripts: add triggers to prevent duplication of NPCs
 - Used Drizzt Portrait, included in the mod, only for F_DRIZZT.cre.
 - The script file f_robedA.bcs will now summon a Noble Genie (consistency fix between games).
 - Small rework of Valen encounter to be triggered only after finishing the Drizzt Saga story.
@@ -62,5 +64,8 @@ By AL|EN:
 
 By Lzw104522773:
 - Added Simplified Chinese translation.
+
+By JohnBob:
+- Updated French translation.
 
 </details>
