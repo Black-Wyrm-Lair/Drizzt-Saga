@@ -96,7 +96,7 @@ LAM DS_CORE_COMPONENT
 PRINT @359
 LAM WORLDMAP_UPDATE
 
-//  BP-BGT Worldmap compatibility (yes, the default version will work in BWP install with Worldmap mod too):
+// BP-BGT Worldmap compatibility (yes, the default version will work in BWP install with Worldmap mod too):
 LAF ADD_BP_BGT_WORLDMAP
 	STR_VAR
 		AreasFilename = "bpwm_areas.tbl"

@@ -44,6 +44,7 @@ By Roberciiik:
 - Fixed Regis journal entries, should use them from setup.tra instead of f_regis.tra.
 - Moved the English soundset to a different directory, so it can be replaced by localized sounds.
 - Corrected doubled cpmvars.tpa entry for "Beregost_House08".
+- Winter Wolf Ritual area can be fast-traveled now.
 - Removed legacy links from BG1 areas connected to Drizzt Saga areas.
 - And other minor fixes (listed in GitHub commits).
 
